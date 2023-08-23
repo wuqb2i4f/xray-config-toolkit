@@ -74,7 +74,6 @@ function parse_uri() {
     local security="$3"
     local filename="$4"
     local uri=""
-    network_security="$network&$security"
     protocol=$(extract ".outbounds[0].protocol" "$input")
 
     case "$protocol" in
