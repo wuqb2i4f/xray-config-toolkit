@@ -1,0 +1,30 @@
+name: Manual Fetch Configs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          mkdir -p output
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+          chmod +x src/bash/fetch
+
+      - name: Run Bash script
+        run: ./src/bash/fetch
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'wuqb2i4f'
+          git config --global user.email 'wuqb2i4f@duck.com'
+          git add .
+          git commit -m "Updated"
+          git push

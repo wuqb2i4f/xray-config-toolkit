@@ -1,0 +1,98 @@
+#!/bin/bash
+
+cleanup() {
+    echo "Script interrupted."
+    exit 1
+}
+
+trap cleanup INT
+trap '' SIGTERM
+
+base_dir="$GITHUB_WORKSPACE"
+output_dir="$base_dir/output"
+xray_app="$base_dir/src/xray/xray"
+
+function kill_process() {
+    local pid="$1"
+    if [[ -n "$pid" ]]; then
+        kill -9 "$pid"
+        while ps -p "$pid"; do
+            sleep 1
+        done
+    fi
+}
+
+function progress_bar() {
+    local count="$1"
+    local total="$2"
+    local width=75
+    local percent=$((count * 100 / total))
+    local progress=$((count * width / total))
+    printf "[%-${width}s] %d%%\r" "$(printf '%*s' "$progress" '' | tr ' ' '#')" "$percent"
+}
+
+function process_file() {
+    local file="$1"
+    local num_passed=0
+    local num_deleted=0
+    $xray_app run -c "$file" >/dev/null 2>&1 &
+    local pid=$!
+    sleep 2
+    local url="https://facebook.com"
+    local num_success=0
+    for i in {1..3}; do
+        response=$(curl -x http://127.0.0.1:10809 -s -I -m 3 "$url" | grep "HTTP/2 301")
+        if [[ -n "$response" ]]; then
+            ((num_success++))
+        fi
+    done
+    if [[ "$num_success" -ge 1 ]]; then
+        process_passed_file "$file"
+        ((num_passed++))
+    else
+        rm "$file"
+        ((num_deleted++))
+    fi
+    kill_process "$pid" >/dev/null 2>&1
+    echo "$num_deleted,$num_passed"
+}
+
+function process_passed_file() {
+    local file="$1"
+    local filename=$(basename "$file")
+    local pattern="^\[.*\] \[.*\] \[.*\]\.json$"
+    if [[ ! $filename =~ $pattern ]]; then
+        while true; do
+            response=$(curl -x http://127.0.0.1:10809 -s -m 3 https://api.country.is)
+            if [[ -n "$response" && $(jq -r '.country' <<<"$response") != "null" ]]; then
+                country_code=$(jq -r '.country' <<<"$response" | tr '[:upper:]' '[:lower:]')
+                filerename=$(sed -E "s/^(\[[^]]+])( \[[^]]+])(.json)$/\[$country_code] \1\2\3/" <<<"$filename")
+                mv "$file" "$output_dir/$filerename"
+                break
+            fi
+        done
+    fi
+}
+
+function check_configs() {
+    local num_count=0
+    local num_passed=0
+    local num_deleted=0
+    local num_total=$(find "$output_dir" -maxdepth 1 -type f -name "*.json" | wc -l)
+    echo "Processing $num_total file(s) in $output_dir directory."
+    for file in "$output_dir"/*.json; do
+        ((num_count++))
+        IFS=',' read -r deleted_count passed_count <<<"$(process_file "$file")"
+        num_deleted=$((num_deleted + deleted_count))
+        num_passed=$((num_passed + passed_count))
+        progress_bar "$num_count" "$num_total"
+    done
+    echo -ne "\n"
+    echo "TOTAL: $num_total - DELETED: $num_deleted - PASSED: $num_passed"
+}
+
+function main() {
+    check_configs
+}
+
+main

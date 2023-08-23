@@ -1,0 +1,31 @@
+name: Manual Check Configs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          mkdir -p output
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+          chmod +x src/xray/xray
+          chmod +x src/bash/check
+
+      - name: Run Bash script
+        run: ./src/bash/check
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'wuqb2i4f'
+          git config --global user.email 'wuqb2i4f@duck.com'
+          git add .
+          git commit -m "Updated"
+          git push

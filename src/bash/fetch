@@ -1,0 +1,421 @@
+#!/bin/bash
+
+cleanup() {
+    echo "Script interrupted."
+    exit 1
+}
+
+trap cleanup INT
+trap '' SIGTERM
+
+base_dir="$GITHUB_WORKSPACE"
+template_dir="$base_dir/src/template"
+output_dir="$base_dir/output"
+
+function progress_bar() {
+    local count="$1"
+    local total="$2"
+    local width=75
+    local percent=$((count * 100 / total))
+    local progress=$((count * width / total))
+    printf "[%-${width}s] %d%%\r" "$(printf '%*s' "$progress" '' | tr ' ' '#')" "$percent"
+}
+
+function string_to_md5() {
+    local input="$1"
+    local hash=$(md5sum <<<"$input" | cut -d' ' -f1)
+    local short_hash="${hash:0:8}"
+    echo "$short_hash"
+}
+
+function convert_percent_encoding() {
+    local input="$1"
+    printf '%b' "${input//%/\\x}"
+}
+
+function parse_protocol() {
+    local input="$1"
+    awk -F '://' '{print $1}' <<<"$input"
+}
+
+function parse_credentials() {
+    local input="$1"
+    local protocol="$2"
+
+    case "$protocol" in
+    vless | trojan)
+        awk -F '://' '{print $2}' <<<"$input" | awk -F '@' '{print $1}'
+        ;;
+    ss)
+        awk -F '://' '{print $2}' <<<"$input" | awk -F '@' '{print $1}' | base64 -d
+        ;;
+    vmess)
+        awk -F '://' '{print $2}' <<<"$input" | base64 -d
+        ;;
+    esac
+}
+
+function parse_address() {
+    local input=$1
+    local address=$(cut -d'@' -f2 <<<"$input" | cut -d'?' -f1 | cut -d'#' -f1 | rev | cut -d':' -f2- | rev | tr '[:upper:]' '[:lower:]')
+    if [[ ${address:0:1} == "[" && ${address: -1} == "]" ]]; then
+        address=${address:1:-1}
+    fi
+    echo "$address"
+}
+
+function parse_port() {
+    local input="$1"
+    awk -F '@' '{print $2}' <<<"$input" | awk -F '[?#]' '{print $1}' | awk -F ':' '{print $NF}'
+}
+
+function parse_query_string() {
+    local input="$1"
+    local query_string=""
+    local key
+    local value
+
+    input=$(awk -F '?' '{print $2}' <<<"$input" | awk -F '#' '{print $1}')
+    IFS='&' read -ra params <<<"$input"
+    for param in "${params[@]}"; do
+        IFS='=' read -r -a pair <<<"$param"
+        key=${pair[0]}
+        value=${pair[1]}
+        query_string="$query_string$key=$value;"
+    done
+    query_string=${query_string%?}
+    echo $query_string
+}
+
+function get_value() {
+    local key="$1"
+    local default_value="${2:-}"
+    local value=""
+    if [[ "$query_string" =~ "$key=" ]]; then
+        value=${query_string##*"$key="}
+        value=${value%%;*}
+    fi
+    if [[ -z "$value" ]]; then
+        value=$default_value
+    fi
+    echo "$value"
+}
+
+function parse_network() {
+    local default_value="$1"
+    local type=$(get_value "type" "$default_value")
+    local headerType=$(get_value "headerType")
+    if [[ "$headerType" == "http" ]]; then
+        network="${type}-${headerType}"
+    else
+        network="$type"
+    fi
+    echo "$network"
+}
+
+function parse_security() {
+    local default_value="$1"
+    local security=$(get_value "security" "$default_value")
+    echo "$security"
+}
+
+function short_name() {
+    input=$1
+    output=${input:0:2}
+    echo $output
+}
+
+function make_config_file() {
+    local protocol="$1"
+    local network="$2"
+    local security="$3"
+    local address="$4"
+    local port="$5"
+
+    data_base=$(<"$template_dir/0-base.md")
+    data_protocol=$(<"$template_dir/1-protocol-$protocol.md")
+    data_network=$(<"$template_dir/2-network-$network.md")
+    data_security=$(<"$template_dir/3-security-$security.md")
+
+    data_base="${data_base//\[PROTOCOL\]/$data_protocol}"
+    data_base="${data_base//\[NETWORK\]/$data_network}"
+    data_base="${data_base//\[SECURITY\]/$data_security}"
+
+    local pr=$(short_name "$protocol")
+    local ne=$(short_name "$network")
+    local se=$(short_name "$security")
+    local address_port=$(string_to_md5 "$address-$port")
+
+    local file_path="$output_dir/[$pr-$se-$ne] [$address_port].json"
+    echo "$data_base" >"$file_path"
+    echo "$file_path"
+}
+
+function sed_cmd_protocol_vless() {
+    local address="$1"
+    local port="$2"
+    local id="$3"
+    local encryption=$(get_value "encryption" "none")
+    local flow=$(get_value "flow")
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s#\[\s*PORT\s*\]#$port#g;
+        s#\[\s*ENCRYPTION\s*\]#$encryption#g;
+        s#\[\s*FLOW\s*\]#$flow#g;
+        s#\[\s*ID\s*\]#$id#g
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_protocol_trojan() {
+    local address="$1"
+    local port="$2"
+    local password="$3"
+    local flow=$(get_value "flow")
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s#\[\s*FLOW\s*\]#$flow#g;
+        s|\[\s*PASSWORD\s*\]|$password|g;
+        s#\[\s*PORT\s*\]#$port#g    
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_protocol_ss() {
+    local address="$1"
+    local port="$2"
+    local password="$3"
+    local method="$4"
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s#\[\s*METHOD\s*\]#$method#g;
+        s|\[\s*PASSWORD\s*\]|$password|g;
+        s#\[\s*PORT\s*\]#$port#g    
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_protocol_vmess() {
+    local address="$1"
+    local port=$(get_value "port")
+    local aid=$(get_value "aid")
+    local id=$(get_value "id")
+    local method=$(get_value "method")
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s#\[\s*PORT\s*\]#$port#g;
+        s#\[\s*ALTERID\s*\]#$aid#g;
+        s#\[\s*ID\s*\]#$id#g;
+        s#\[\s*METHOD\s*\]#$method#g  
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_network() {
+    local network="$1"
+    local sed_cmd
+
+    case "$network" in
+    http | tcp-http | ws)
+        local host=$(get_value "host")
+        local path=$(get_value "path" "/")
+        sed_cmd="
+            s#\[\s*HOST\s*\]#$host#g;
+            s#\[\s*PATH\s*\]#$path#g
+        "
+        ;;
+    grpc)
+        local serviceName=$(get_value "serviceName")
+        sed_cmd="s#\[\s*SERVICENAME\s*\]#$serviceName#g"
+        ;;
+    tcp)
+        #
+        ;;
+    esac
+
+    echo "$sed_cmd"
+}
+
+function sed_cmd_security() {
+    local security="$1"
+    local sed_cmd
+
+    case "$security" in
+    tls)
+        local alpn=$(get_value "alpn")
+        local fp=$(get_value "fp")
+        local sni=$(get_value "sni")
+        sed_cmd="
+            s#\[\s*ALPN\s*\]#$alpn#g;
+            s#\[\s*FP\s*\]#$fp#g;
+            s#\[\s*SNI\s*\]#$sni#g
+        "
+        ;;
+    reality)
+        local fp=$(get_value "fp")
+        local pbk=$(get_value "pbk")
+        local sni=$(get_value "sni")
+        local sid=$(get_value "sid")
+        local spx=$(get_value "spx")
+        sed_cmd="
+            s#\[\s*FP\s*\]#$fp#g;
+            s#\[\s*PBK\s*\]#$pbk#g;
+            s#\[\s*SNI\s*\]#$sni#g;
+            s#\[\s*SID\s*\]#$sid#g;
+            s#\[\s*SPX\s*\]#$spx#g
+        "
+        ;;
+    none)
+        #
+        ;;
+    esac
+
+    echo "$sed_cmd"
+}
+
+function extract_vless() {
+    local input="$1"
+    proxy_link=$(convert_percent_encoding "$input")
+    protocol=$(parse_protocol "$proxy_link")
+    id=$(parse_credentials "$proxy_link" "$protocol")
+    address=$(parse_address "$proxy_link")
+    port=$(parse_port "$proxy_link")
+    query_string=$(parse_query_string "$proxy_link")
+    network=$(parse_network "tcp")
+    security=$(parse_security "none")
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+
+    sed_cmd_protocol=$(sed_cmd_protocol_vless "$address" "$port" "$id")
+    sed_cmd_network=$(sed_cmd_network "$network")
+    sed_cmd_security=$(sed_cmd_security "$security")
+
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function extract_trojan() {
+    local input="$1"
+    proxy_link=$(convert_percent_encoding "$input")
+    protocol=$(parse_protocol "$proxy_link")
+    password=$(parse_credentials "$proxy_link" "$protocol")
+    address=$(parse_address "$proxy_link")
+    port=$(parse_port "$proxy_link")
+    query_string=$(parse_query_string "$proxy_link")
+    network=$(parse_network "tcp")
+    security=$(parse_security "tls")
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+
+    sed_cmd_protocol=$(sed_cmd_protocol_trojan "$address" "$port" "$password")
+    sed_cmd_network=$(sed_cmd_network "$network")
+    sed_cmd_security=$(sed_cmd_security "$security")
+
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function extract_ss() {
+    local input="$1"
+    proxy_link=$(convert_percent_encoding "$input")
+    protocol=$(parse_protocol "$proxy_link")
+    credentials=$(parse_credentials "$proxy_link" "$protocol")
+    method=$(awk -F ':' '{print $1}' <<<"$credentials")
+    password=$(awk -F ':' '{print $2}' <<<"$credentials")
+    address=$(parse_address "$proxy_link")
+    port=$(parse_port "$proxy_link")
+    query_string=$(parse_query_string "$proxy_link")
+    network=$(parse_network "tcp")
+    security=$(parse_security "none")
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+
+    sed_cmd_protocol=$(sed_cmd_protocol_ss "$address" "$port" "$password" "$method")
+    sed_cmd_network=$(sed_cmd_network "$network")
+    sed_cmd_security=$(sed_cmd_security "$security")
+
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function extract_vmess() {
+    local input="$1"
+    protocol=$(parse_protocol "$input")
+    credentials=$(parse_credentials "$input" "$protocol")
+    query_string=$(jq -r 'del(.ps, .v) | to_entries | map(select(.value != "") | "\(.key | gsub("type"; "headerType") | gsub("net"; "type") | gsub("scy"; "method") | gsub("security"; "method") | gsub("tls"; "security"))=\(.value|tostring)") | join(";")' <<<"$credentials")
+    address=$(get_value "add")
+    port=$(get_value "port")
+    network=$(parse_network)
+    security=$(parse_security "none")
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+
+    sed_cmd_protocol=$(sed_cmd_protocol_vmess "$address")
+    sed_cmd_network=$(sed_cmd_network "$network")
+    sed_cmd_security=$(sed_cmd_security "$security")
+
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function fetch_configs() {
+    local url="$1"
+    local base64_decode_url=$(curl -s "$url" | base64 -d)
+    local num_total=$(wc -l <<<"$base64_decode_url")
+    local num_count=0
+    local num_ss=0
+    local num_trojan=0
+    local num_vless=0
+    local num_vmess=0
+    query_string=
+
+    while IFS= read -r proxy_link_raw; do
+        ((num_count++))
+        unset query_string
+        case "$proxy_link_raw" in
+        vless://*)
+            extract_vless "$proxy_link_raw"
+            ((num_vless++))
+            ;;
+        trojan://*)
+            extract_trojan "$proxy_link_raw"
+            ((num_trojan++))
+            ;;
+        ss://*)
+            extract_ss "$proxy_link_raw"
+            ((num_ss++))
+            ;;
+        vmess://*)
+            extract_vmess "$proxy_link_raw"
+            ((num_vmess++))
+            ;;
+        ssr://*)
+            # echo "SSR NOT SUPPORTED"
+            ;;
+        *)
+            # echo "NOT SUPPORTED: $proxy_link_raw"
+            ;;
+        esac
+        progress_bar "$num_count" "$num_total"
+    done <<<"$base64_decode_url"
+    echo -ne "\n"
+    echo -e "URL: $url\nTOTAL: $num_total - VLESS: $num_vless - TROJAN: $num_trojan - SS: $num_ss - VMESS: $num_vmess\n------------------------------"
+}
+
+function main() {
+    urls=(
+        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/mix_base64"
+        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/donated_base64"
+        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/vmess_base64"
+        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/vless_base64"
+        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/reality_base64"
+        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/trojan_base64"
+        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/shadowsocks_base64"
+    )
+
+    for url in "${urls[@]}"; do
+        fetch_configs "$url"
+    done
+}
+
+main

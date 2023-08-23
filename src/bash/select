@@ -1,0 +1,40 @@
+#!/bin/bash
+
+cleanup() {
+    echo "Script interrupted."
+    exit 1
+}
+
+trap cleanup INT
+trap '' SIGTERM
+
+base_dir="$HOME/.config/xray"
+output_dir="$base_dir/output"
+
+function manage_service() {
+    sudo sv "$1" xray
+}
+
+function select_config() {
+    source_dirs=("$base_dir/main" "$output_dir")
+
+    echo "Select a source directory:"
+    for ((i = 0; i < ${#source_dirs[@]}; i++)); do
+        echo "$((i + 1)). ${source_dirs[i]}"
+    done
+
+    read -p "Enter the number of the source directory: " selection
+    source_dir="${source_dirs[$((selection - 1))]}"
+
+    ls $source_dir | cat -n
+    read -p "Enter the number of the proxy you want to copy: " selection
+    filename=$(ls $source_dir | sed -n "${selection}p")
+    cp "${source_dir}/${filename}" "${base_dir}/config.json"
+    manage_service restart
+}
+
+function main() {
+    select_config
+}
+
+main

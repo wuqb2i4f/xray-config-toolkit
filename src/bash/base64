@@ -1,0 +1,229 @@
+#!/bin/bash
+
+cleanup() {
+    echo "Script interrupted."
+    exit 1
+}
+
+trap cleanup INT
+trap '' SIGTERM
+
+base_dir="$GITHUB_WORKSPACE"
+output_dir="$base_dir/output"
+mix="$output_dir/mix"
+mix_base64="$output_dir/mix_base64"
+
+function progress_bar() {
+    local count="$1"
+    local total="$2"
+    local width=75
+    local percent=$((count * 100 / total))
+    local progress=$((count * width / total))
+    printf "[%-${width}s] %d%%\r" "$(printf '%*s' "$progress" '' | tr ' ' '#')" "$percent"
+}
+
+function extract() {
+    local query="$1"
+    local input="$2"
+    jq -r "$query" "$input"
+}
+
+remove_empty_values() {
+    local input="$1"
+    local prefix="${input%%\?*}"
+    local query_string="${input#*\?}"
+    local modified_query=""
+
+    IFS='&' read -ra pairs <<<"$query_string"
+    for pair in "${pairs[@]}"; do
+        IFS='=' read -ra parts <<<"$pair"
+        key="${parts[0]}"
+        value="${parts[1]:-}"
+        if [[ -n "$value" ]]; then
+            modified_query+="&$key=$value"
+        fi
+    done
+
+    modified_query="${modified_query#&}"
+    local output="$prefix?$modified_query"
+    echo "$output"
+}
+
+function url_encode() {
+    local input="$1"
+    local encoded_string=""
+    for ((i = 0; i < ${#input}; i++)); do
+        character="${input:i:1}"
+        if [[ "$character" =~ [a-zA-Z0-9._~-] ]]; then
+            encoded_string+="$character"
+        else
+            encoded_string+="$(printf '%%%02X' "'$character")"
+        fi
+    done
+    echo "$encoded_string"
+}
+
+base64_encode() {
+    local input="$1"
+    base64 <<<"$input" | tr -d '\n'
+}
+
+function parse_uri() {
+    local input="$1"
+    local network="$2"
+    local security="$3"
+    local filename="$4"
+    local uri=""
+    network_security="$network&$security"
+    protocol=$(extract ".outbounds[0].protocol" "$input")
+
+    case "$protocol" in
+    vless)
+        local query=".outbounds[0].settings.vnext[0]"
+        address=$(extract "$query.address" "$input")
+        port=$(extract "$query.port" "$input")
+        encryption=$(extract "$query.users[0].encryption" "$input")
+        flow=$(extract "$query.users[0].flow" "$input")
+        id=$(extract "$query.users[0].id" "$input")
+        uri="$protocol://$id@$address:$port?encryption=$encryption&flow=$flow"
+        ;;
+    trojan)
+        local query=".outbounds[0].settings.servers[0]"
+        address=$(extract "$query.address" "$input")
+        flow=$(extract "$query.flow" "$input")
+        password=$(extract "$query.password" "$input")
+        port=$(extract "$query.port" "$input")
+        uri="$protocol://$password@$address:$port?flow=$flow"
+        ;;
+    shadowsocks)
+        local query=".outbounds[0].settings.servers[0]"
+        address=$(extract "$query.address" "$input")
+        method=$(extract "$query.method" "$input")
+        password=$(extract "$query.password" "$input")
+        method_password_base64=$(base64_encode "$method:$password")
+        port=$(extract "$query.port" "$input")
+        uri="ss://$method_password_base64@$address:$port"
+        ;;
+    vmess)
+        local query=".outbounds[0].settings.vnext[0]"
+        address=$(extract "$query.address" "$input")
+        port=$(extract "$query.port" "$input")
+        alterId=$(extract "$query.users[0].alterId" "$input")
+        id=$(extract "$query.users[0].id" "$input")
+        scy=$(extract "$query.users[0].security" "$input")
+        code="{\"add\":\"$address\",\"aid\":$alterId,\"id\":\"$id\",\"port\":\"$port\",\"scy\":\"$scy\",\"v\":\"2\",\"net\":\"[type]\",\"host\":\"[host]\",\"path\":\"[path]\",\"type\":\"[headerType]\",\"tls\":\"[security]\",\"alpn\":\"[alpn]\",\"fp\":\"[fp]\",\"sni\":\"[sni]\",\"ps\":\"$filename\"}"
+        base64_part=$(base64_encode "$code")
+        uri="$protocol://$base64_part"
+        ;;
+    esac
+
+    if [[ $uri != "vmess://"* ]]; then
+        if [[ $uri != *"?"* ]]; then
+            uri="${uri}?"
+        fi
+        if [[ "${uri: -1}" != "?" ]]; then
+            uri="${uri}&"
+        fi
+        if [[ "${uri: -1}" != "&" ]]; then
+            uri="${uri}&"
+        fi
+        uri="${uri}${network}&${security}"
+        uri=$(remove_empty_values "$uri")
+        uri="${uri}#${filename}"
+    else
+        uri="${uri}"
+    fi
+
+    echo "$uri"
+}
+
+function parse_network() {
+    local input="$1"
+    local query=".outbounds[0].streamSettings"
+    network=$(extract "$query.network" "$input")
+
+    case "$network" in
+    grpc)
+        serviceName=$(extract "$query.grpcSettings.serviceName" "$input")
+        serviceName=$(url_encode "$serviceName")
+        echo "type=$network&serviceName=$serviceName"
+        ;;
+    h2)
+        host=$(extract "$query.httpSettings.host[]" "$input")
+        path=$(extract "$query.httpSettings.path" "$input")
+        path=$(url_encode "$path")
+        echo "type=$network&host=$host&path=$path"
+        ;;
+    tcp)
+        headerType=$(extract "$query.tcpSettings.header.type" "$input")
+        if [[ "$headerType" == "http" ]]; then
+            Host=$(extract "$query.tcpSettings.header.request.headers.Host[]" "$input")
+            path=$(extract "$query.tcpSettings.header.request.path[]" "$input")
+            path=$(url_encode "$path")
+            echo "type=$network&headerType=$headerType&host=$Host&path=$path"
+        else
+            echo "type=$network&headerType=$headerType"
+        fi
+        ;;
+    ws)
+        Host=$(extract "$query.wsSettings.headers.Host" "$input")
+        path=$(extract "$query.wsSettings.path" "$input")
+        path=$(url_encode "$path")
+        echo "type=$network&host=$Host&path=$path"
+        ;;
+    esac
+}
+
+function parse_security() {
+    local input="$1"
+    local query=".outbounds[0].streamSettings"
+    security=$(extract "$query.security" "$input")
+
+    case "$security" in
+    none)
+        echo "security=$security"
+        ;;
+    reality)
+        fingerprint=$(extract "$query.realitySettings.fingerprint" "$input")
+        publicKey=$(extract "$query.realitySettings.publicKey" "$input")
+        serverName=$(extract "$query.realitySettings.serverName" "$input")
+        shortId=$(extract "$query.realitySettings.shortId" "$input")
+        spiderX=$(extract "$query.realitySettings.spiderX" "$input")
+        spiderX=$(url_encode "$spiderX")
+        echo "security=$security&fp=$fingerprint&pbk=$publicKey&sni=$serverName&sid=$shortId&spx=$spiderX"
+        ;;
+    tls)
+        alpn=$(extract "$query.tlsSettings.alpn[]" "$input")
+        alpn=$(url_encode "$alpn")
+        fingerprint=$(extract "$query.tlsSettings.fingerprint" "$input")
+        serverName=$(extract "$query.tlsSettings.serverName" "$input")
+        echo "security=$security&alpn=$alpn&fp=$fingerprint&sni=$serverName"
+        ;;
+    esac
+}
+
+function base64_configs() {
+    >"$mix"
+    >"$mix_base64"
+    local num_count=0
+    local num_total=$(find "$output_dir" -maxdepth 1 -type f -name "*.json" | wc -l)
+    echo "Processing $num_total file(s) in $output_dir directory."
+    for file in "$output_dir"/*.json; do
+        ((num_count++))
+        filename=$(basename "$file" | sed 's/\.json$//')
+        network=$(parse_network "$file")
+        security=$(parse_security "$file")
+        uri=$(parse_uri "$file" "$network" "$security" "$filename")
+        echo "$uri" >>"$mix"
+
+        progress_bar "$num_count" "$num_total"
+    done
+    echo -ne "\n"
+    base64 <$mix | tr -d '\n' >"$mix_base64"
+}
+
+function main() {
+    base64_configs
+}
+
+main
