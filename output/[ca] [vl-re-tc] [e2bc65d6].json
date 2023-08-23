@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.alpha1.skin",
-            "port": 2096,
+            "address": "159.89.126.192",
+            "port": 56668,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "c72067ab-a769-4234-8e38-8ffa8b43c035",
+                "flow": "xtls-rprx-vision",
+                "id": "d90f2fda-40a6-41af-c1bc-3fc6921bacb3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "channel.alpha1.skin",
-          "show": false
+          "fingerprint": "ios",
+          "publicKey": "oBClkcSOp5rg28zZswTtk4G7EPChasIHQkMsmW2501I",
+          "serverName": "apple.com",
+          "shortId": "f6e67353",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

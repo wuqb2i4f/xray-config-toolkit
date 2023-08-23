@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.47.135.37",
-            "port": 2025,
+            "address": "cnamemt1.cdncisco4.co",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "addb499e-dccf-4c09-879a-545a750c7bdb",
+                "flow": "",
+                "id": "63779501-4c22-4a03-83d3-9f611b227e7b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "c1mt.cdncisco4.co"
+          },
+          "path": "/qdN9HJpSzf49IxeZJa"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "WJDjzFUSrfD2ChlRuTMqyVT8Bqe5bP7nTEgE7KoWtTQ",
-          "serverName": "www.theverge.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "c1mt.cdncisco4.co",
+          "show": false
         }
       },
       "tag": "proxy"

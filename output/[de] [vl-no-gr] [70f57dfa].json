@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "xv2rayng-xv2rayng-xv2rayng-xv2rayng-xv2rayng-xv2rayng-xv2rayng.vazagh.top",
+            "address": "88.99.63.43",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "Xv2rayNG-Xv2rayNG-Xv2rayNG-X2",
+                "flow": "",
+                "id": "4db38617-7f29-42ae-bd36-1a6e754e527d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@DarkTeam_VPN"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "vzUz28oZAE_UVjhGlPckcfFf7Xv9HZS66dWJ36rDLGQ",
-          "serverName": "appleid.cdn-apple.com",
-          "shortId": "a76509b2efc7",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

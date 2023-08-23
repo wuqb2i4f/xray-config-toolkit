@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.27.10.44",
-            "port": 31876,
+            "address": "miox3.putak.sbs",
+            "port": 30701,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a13f74f3-4d9f-4c53-8406-1d6d7912300b",
+                "id": "79e8918d-7ea1-40a1-a01f-d3737473ff9d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,34 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["Discord.com"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "lCaP9Oj772VAD9GbCh-vJy2yWCRmde1p81ojgr_CmX0",
-          "serverName": "ftp.debian.org",
-          "shortId": "5f514757",
+          "fingerprint": "chrome",
+          "publicKey": "d7My7LaVrI5smYqAkfWyJzufaVW7-acWZ2keisbg6kE",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "73a914bc",
           "show": false,
           "spiderX": "/"
         }

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "xv2rayng-xv2rayng-xv2rayng-xv2rayng-xv2rayng-xv2rayng-xv2rayng.vazagh.top",
-            "port": 443,
+            "address": "tel.arv2ray.host",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "Xv2rayNG-Xv2rayNG-Xv2rayNG-X2",
+                "flow": "",
+                "id": "e786cb11-196b-4a1e-99b8-d42f953cacd0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "vzUz28oZAE_UVjhGlPckcfFf7Xv9HZS66dWJ36rDLGQ",
-          "serverName": "appleid.cdn-apple.com",
-          "shortId": "a76509b2efc7",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "tag.YV2ray.link",
+          "show": false
         }
       },
       "tag": "proxy"
