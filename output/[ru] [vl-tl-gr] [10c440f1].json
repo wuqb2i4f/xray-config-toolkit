@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "xsv2ray.xalixv2ray.space",
+            "address": "m3.melov2ray.shop",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d376b370-4b4c-4c0a-b863-aca87d36a554",
+                "id": "8113a94d-490f-4e7e-a767-31d7522b532c",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray"
+          "serviceName": "@melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "ZPmUWk47jZisksibWS48wlo8kD8wOvXxy1z8kLMNdQ0",
-          "serverName": "www.speedtest.net",
-          "shortId": "9ce5bc61",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "bel.melov2ray.store",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "xsv2ray.xalixv2ray.space",
+            "address": "cdn-2.kiava.fun",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "d376b370-4b4c-4c0a-b863-aca87d36a554",
+                "flow": "xtls-rprx-vision",
+                "id": "768bd038-d320-4553-e29a-5c1b6af83fef",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "ZPmUWk47jZisksibWS48wlo8kD8wOvXxy1z8kLMNdQ0",
-          "serverName": "www.speedtest.net",
-          "shortId": "9ce5bc61",
+          "fingerprint": "chrome",
+          "publicKey": "6BHXwonC3mQUUmONB--4PuzaC4UDnWQoL6eTzP7Lr3A",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "c15a",
           "show": false,
           "spiderX": "/"
         }
