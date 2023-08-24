@@ -198,9 +198,9 @@ function sed_cmd_protocol_ss() {
 function sed_cmd_protocol_vmess() {
     local address="$1"
     local port=$(get_value "port")
-    local aid=$(get_value "aid")
+    local aid=$(get_value "aid" "0")
     local id=$(get_value "id")
-    local method=$(get_value "method")
+    local method=$(get_value "method" "auto")
     local sed_cmd="
         s#\[\s*ADDRESS\s*\]#$address#g;
         s#\[\s*PORT\s*\]#$port#g;
@@ -404,11 +404,11 @@ function fetch_configs() {
 
 function main() {
     urls=(
-        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/mix_base64"
-        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/donated_base64"
+        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/mix_base64"
+        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/donated_base64"
         # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/vmess_base64"
-        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/vless_base64"
-        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/reality_base64"
+        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/vless_base64"
+        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/reality_base64"
         # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/trojan_base64"
         # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/shadowsocks_base64"
     )
