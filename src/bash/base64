@@ -28,7 +28,7 @@ function extract() {
     jq -r "$query" "$input"
 }
 
-remove_empty_values() {
+function remove_empty_values() {
     local input="$1"
     local prefix="${input%%\?*}"
     local query_string="${input#*\?}"
@@ -49,6 +49,25 @@ remove_empty_values() {
     echo "$output"
 }
 
+function get_value() {
+    local key="$1"
+    local input="$2"
+    IFS="&" read -ra pairs <<<"$input"
+    for pair in "${pairs[@]}"; do
+        IFS="=" read -r k v <<<"$pair"
+        if [[ "$k" == "$key" ]]; then
+            echo "$v"
+            return
+        fi
+    done
+    echo ""
+}
+
+function convert_percent_encoding() {
+    local input="$1"
+    printf '%b' "${input//%/\\x}"
+}
+
 function url_encode() {
     local input="$1"
     local encoded_string=""
@@ -63,7 +82,7 @@ function url_encode() {
     echo "$encoded_string"
 }
 
-base64_encode() {
+function base64_encode() {
     local input="$1"
     base64 <<<"$input" | tr -d '\n'
 }
@@ -110,7 +129,49 @@ function parse_uri() {
         alterId=$(extract "$query.users[0].alterId" "$input")
         id=$(extract "$query.users[0].id" "$input")
         scy=$(extract "$query.users[0].security" "$input")
-        code="{\"add\":\"$address\",\"aid\":$alterId,\"id\":\"$id\",\"port\":\"$port\",\"scy\":\"$scy\",\"v\":\"2\",\"net\":\"[type]\",\"host\":\"[host]\",\"path\":\"[path]\",\"type\":\"[headerType]\",\"tls\":\"[security]\",\"alpn\":\"[alpn]\",\"fp\":\"[fp]\",\"sni\":\"[sni]\",\"ps\":\"$filename\"}"
+        net=$(get_value "type" "$network")
+        tls=$(get_value "security" "$security")
+        ps="\"ps\":\"$filename\""
+
+        case "$net" in
+        ws | h2)
+            host=$(get_value "host" "$network")
+            path=$(get_value "path" "$network")
+            path=$(convert_percent_encoding $path)
+            net="\"net\":\"$net\",\"host\":\"$host\",\"path\":\"$path\""
+            ;;
+        grpc)
+            path=$(get_value "path" "$network")
+            path=$(convert_percent_encoding $path)
+            net="\"net\":\"$net\",\"path\":\"$path\",\"type\":\"gun\""
+            ;;
+        tcp)
+            host=$(get_value "host" "$network")
+            path=$(get_value "path" "$network")
+            path=$(convert_percent_encoding $path)
+            type=$(get_value "headerType" "$network")
+            if [[ $type == "http" ]]; then
+                net="\"net\":\"$net\",\"host\":\"$host\",\"path\":\"$path\",\"type\":\"$type\""
+            else
+                net="\"net\":\"$net\",\"type\":\"$type\""
+            fi
+            ;;
+        esac
+
+        case "$tls" in
+        tls)
+            alpn=$(get_value "alpn" "$security")
+            alpn=$(convert_percent_encoding $alpn)
+            fp=$(get_value "fp" "$security")
+            sni=$(get_value "sni" "$security")
+            tls="\"tls\":\"$tls\",\"alpn\":\"$alpn\",\"fp\":\"$fp\",\"sni\":\"$sni\""
+            ;;
+        *)
+            tls="\"tls\":\"$tls\""
+            ;;
+        esac
+
+        code="{\"add\":\"$address\",\"aid\":$alterId,\"id\":\"$id\",\"port\":\"$port\",\"scy\":\"$scy\",\"v\":\"2\",$net,$tls,$ps}"
         base64_part=$(base64_encode "$code")
         uri="$protocol://$base64_part"
         ;;
