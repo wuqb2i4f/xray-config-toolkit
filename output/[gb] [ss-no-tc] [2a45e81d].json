@@ -45,21 +45,16 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "cdn-3.kiava.fun",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "768bd038-d320-4553-e29a-5c1b6af83fef",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "212.102.53.198",
+            "level": 8,
+            "method": "aes-128-gcm",
+            "ota": false,
+            "password": "shadowsocks",
+            "port": 443
           }
         ]
       },
@@ -70,16 +65,7 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "J9N0z9KJS1brB8Nx8BXw5sE4iTHn7V2iBlUVgzwPHxI",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "c15a",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn-3.kiava.fun",
-            "port": 443,
+            "address": "m2.melov2ray.shop",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "768bd038-d320-4553-e29a-5c1b6af83fef",
+                "flow": "",
+                "id": "833123d6-924b-4aed-af57-d2f7f5a0c223",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "J9N0z9KJS1brB8Nx8BXw5sE4iTHn7V2iBlUVgzwPHxI",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "c15a",
-          "show": false,
-          "spiderX": ""
+          "serverName": "de6.melov2ray.store",
+          "show": false
         }
       },
       "tag": "proxy"

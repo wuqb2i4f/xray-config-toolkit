@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn-3.kiava.fun",
-            "port": 443,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "768bd038-d320-4553-e29a-5c1b6af83fef",
+                "flow": "",
+                "id": "a5b066fc-a0f2-43c9-a5c7-f6df3720573f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "J9N0z9KJS1brB8Nx8BXw5sE4iTHn7V2iBlUVgzwPHxI",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "c15a",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Sni.PolProxy.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

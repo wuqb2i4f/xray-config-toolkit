@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn-3.kiava.fun",
-            "port": 443,
+            "address": "uciran.wallerman-come.gq",
+            "port": 58465,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "768bd038-d320-4553-e29a-5c1b6af83fef",
+                "flow": "",
+                "id": "1c3e580a-bd02-4bdb-9bfe-349903422037",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "J9N0z9KJS1brB8Nx8BXw5sE4iTHn7V2iBlUVgzwPHxI",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "c15a",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

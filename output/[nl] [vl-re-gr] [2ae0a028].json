@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn-3.kiava.fun",
+            "address": "94.228.168.155",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "768bd038-d320-4553-e29a-5c1b6af83fef",
+                "flow": "",
+                "id": "26166fbd-1f49-4fe7-8301-2a757e76b6d0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "J9N0z9KJS1brB8Nx8BXw5sE4iTHn7V2iBlUVgzwPHxI",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "c15a",
+          "publicKey": "rC8jtlNZ8z_PgK5OBmyfOL_Tf855V9Ueh33vc47Wwwo",
+          "serverName": "ftp.debian.org",
+          "shortId": "2dccf6cf",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
