@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.msv2ray.space",
-            "port": 2053,
+            "address": "64.68.192.1",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "d8fd35e7-25f7-452d-852a-6ad1cfb3c9b8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sftp.pardazesh.tech"
+          },
+          "path": "/IBKhLjYHCvBr0r2HZ1tSkA"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "sftp.pardazesh.tech",
           "show": false
         }
       },

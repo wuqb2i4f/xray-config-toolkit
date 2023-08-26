@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.msv2ray.space",
-            "port": 2053,
+            "address": "mrvshop.ddns.net",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "8fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "flow": "xtls-rprx-vision",
+                "id": "3541541d-35d1-4c09-8210-a7e8918201ce",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "Z7KWOcAQVX1n7ATF3K6wwh-hvtPnfkjN8K4z3vx5JQw",
+          "serverName": "www.speedtest.net",
+          "shortId": "07ee06aa",
+          "show": false,
+          "spiderX": "/atalmatal"
         }
       },
       "tag": "proxy"

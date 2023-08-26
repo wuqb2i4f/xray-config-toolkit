@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.msv2ray.space",
-            "port": 2053,
+            "address": "mtn-v2rayngfree3.ddns.net",
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "0e4c7fb0-a5a6-453d-bb8b-03d0902e627f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de1vl.cdn-03.live"
+          },
+          "path": "/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF/@IP_CF"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
