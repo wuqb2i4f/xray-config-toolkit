@@ -1,0 +1,135 @@
+{
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com"
+    },
+    "servers": [
+      "8.8.8.8"
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true
+      },
+      "tag": "socks"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "userLevel": 8
+      },
+      "tag": "http"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "482.outline-vpn.cloud",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "d8fd35e7-25f7-452d-852a-6ad1cfb3c9b8",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ftp.pardazesh.tech"
+          },
+          "path": "/1C1eEyrBbGr0r2HZ1tSkA"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "ftp.pardazesh.tech",
+          "show": false
+        }
+      },
+      "tag": "proxy"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    },
+    {
+      "protocol": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "ip": [
+          "8.8.8.8"
+        ],
+        "outboundTag": "proxy",
+        "port": "53",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "ext:iran.dat:ir",
+          "ext:iran.dat:other"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "ext:iran.dat:ads"
+        ],
+        "outboundTag": "block",
+        "type": "field"
+      }
+    ]
+  }
+}
