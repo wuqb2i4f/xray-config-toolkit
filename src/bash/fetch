@@ -382,7 +382,7 @@ function fetch_configs() {
             ((num_trojan++))
             ;;
         ss://*)
-            extract_ss "$proxy_link_raw"
+            # extract_ss "$proxy_link_raw"
             ((num_ss++))
             ;;
         vmess://*)
@@ -404,8 +404,8 @@ function fetch_configs() {
 
 function main() {
     urls=(
-        # "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/base64/mix"
-        "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"
+        "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/base64/mix"
+        # "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"
     )
 
     for url in "${urls[@]}"; do
