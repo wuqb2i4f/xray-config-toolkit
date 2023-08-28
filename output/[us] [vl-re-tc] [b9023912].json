@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all7.tel-parsashonam.website",
+            "address": "45.152.112.78",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "Parsashonam",
+                "flow": "xtls-rprx-vision",
+                "id": "b3e06eaa-f0f1-40bd-857c-31895fe8719e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "teh5QOb6hMqyxjWdtQ2RKVryi015dobpj2loTXaONE4",
+          "fingerprint": "firefox",
+          "publicKey": "7Z7Ak7Nv7I5BUOfwECqPXbjUTFpFcq5k8iWhlYW0n14",
           "serverName": "www.speedtest.net",
-          "shortId": "ccacdc7e",
+          "shortId": "3849c8ae",
           "show": false,
           "spiderX": "/"
         }

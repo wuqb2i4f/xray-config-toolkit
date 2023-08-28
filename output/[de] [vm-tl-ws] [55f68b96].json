@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "all7.tel-parsashonam.website",
+            "address": "kianoosh.ddns.net",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "Parsashonam",
+                "id": "759FD4DB-025E-4102-9DF5-7ABAA2AE8E94",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fn.aghamostafa.link"
+          },
+          "path": "/speedtest"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "teh5QOb6hMqyxjWdtQ2RKVryi015dobpj2loTXaONE4",
-          "serverName": "www.speedtest.net",
-          "shortId": "ccacdc7e",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "fn.aghamostafa.link",
+          "show": false
         }
       },
       "tag": "proxy"

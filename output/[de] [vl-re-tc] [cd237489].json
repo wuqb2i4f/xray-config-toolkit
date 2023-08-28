@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all7.tel-parsashonam.website",
+            "address": "128.140.121.218",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "Parsashonam",
+                "flow": "xtls-rprx-vision",
+                "id": "356c3eaa-80eb-4c35-8aac-143bcc1f22c5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "teh5QOb6hMqyxjWdtQ2RKVryi015dobpj2loTXaONE4",
-          "serverName": "www.speedtest.net",
-          "shortId": "ccacdc7e",
+          "publicKey": "6i8fGxL0DLDgtEggSbrf_rYPJXY95leuLhWHZVvLUyY",
+          "serverName": "www.hansknot.com",
+          "shortId": "8643d5800e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"
