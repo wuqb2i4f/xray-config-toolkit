@@ -1,9 +1,10 @@
-name: Auto Fetch & Check Configs
+name: Main
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '30 4 * * *'
+    - cron: '30 16 * * *'
 
 jobs:
   run-script:
