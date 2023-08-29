@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "s1223.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
-            "port": 80,
+            "address": "172.67.169.78",
+            "port": 2083,
             "users": [
               {
-                "alterId": 64,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "00a1da14-d55f-5f75-e346-79b985e1a723",
+                "id": "3e5b73cf-54fe-43dc-93cb-68a21e867c84",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "s1223.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou"
-          },
-          "path": "/opt/video/images"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "xw.vpnxw.eu.org"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "xw.vpnxw.eu.org",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

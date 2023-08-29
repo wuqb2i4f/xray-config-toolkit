@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.232.85.184",
+            "address": "193.227.99.66",
             "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2aec4b5f-aff1-46f6-ac42-3dac459f22ba",
+                "id": "e92f674c-f0c8-45b3-93f6-a50cfc32c1dd",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPNTelegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "oZyqDkGYAnzaAprGhiD8kiS8vVIRbQBjXq7IYhUjpQk",
-          "serverName": "cms.accuweather.com",
-          "shortId": "94efd03e",
-          "show": false,
-          "spiderX": "/wp-login.php"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

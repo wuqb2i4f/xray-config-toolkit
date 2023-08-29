@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "free.zayn2012vip2.top",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "421151a2-d6fc-49a4-a990-d0002c5364ce",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "15.188.229.119",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "ZAYN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "YQlHy8PH_hWIIvOe2WeVHeG2MvgS41kxU6cVl7U1-wI",
-          "serverName": "sourceforge.net",
-          "shortId": "63c1f9ee",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

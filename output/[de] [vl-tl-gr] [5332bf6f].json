@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "192.248.185.182",
-            "port": 2096,
+            "address": "104.16.106.32",
+            "port": 2083,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "3f9cf9f3-a8d4-4999-dd5e-8068fdc0c37e",
+                "id": "435330c1-6f7e-45af-9daa-4de546514e36",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@IRAN_V2RAY1"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "iran.kosbabaarzhang.fun",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

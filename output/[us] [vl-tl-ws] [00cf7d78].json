@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.32.153.201",
-            "port": 2096,
+            "address": "a.8333ht.eu.org",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "3f9cf9f3-a8d4-4999-dd5e-8068fdc0c37e",
+                "id": "fd3896bc-6d81-4e6a-9409-80399e13899e",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "a.8333ht.eu.org"
           },
-          "path": "/"
+          "path": "/iwwF7W5GQO7Mv0QfYtQ"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "a.8333ht.eu.org",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
