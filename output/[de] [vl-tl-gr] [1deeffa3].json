@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel.vmessorg.fun",
-            "port": 80,
+            "address": "45.67.215.70",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "569db5ad-8a5a-4e92-b1c9-4851c5328e88",
+                "id": "1b6c0ef9-1ba7-46ab-8184-949da5b98d6e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@L_AGVPN13"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "vipko.1lagvpn13.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

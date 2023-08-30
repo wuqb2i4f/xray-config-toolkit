@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.171.81",
-            "port": 8880,
+            "address": "104.31.16.65",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "00416aef-ae34-48d3-83ae-1dac2698758e",
+                "id": "1b6c0ef9-1ba7-46ab-8184-949da5b98d6e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "mat4.siasepid.sbs"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@L_AGVPN13"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "vipko.1lagvpn13.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
