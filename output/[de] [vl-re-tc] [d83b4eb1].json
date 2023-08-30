@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.65",
-            "port": 2053,
+            "address": "128.140.45.124",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "1b6c0ef9-1ba7-46ab-8184-949da5b98d6e",
+                "flow": "xtls-rprx-vision",
+                "id": "Id-telegram-CUSTOMVPNSERVER",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@L_AGVPN13"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "vipko.1lagvpn13.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "bsC1bIPbCmL9n5Vz38PV9ICgX6WRk3IZ9Vujonm4L3E",
+          "serverName": "www.discord.com",
+          "shortId": "3d9cbfa7",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

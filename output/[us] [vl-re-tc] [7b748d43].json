@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "irancelhamrahmci.ddns.net",
-            "port": 443,
+            "address": "sangusa.zoom121.cfd",
+            "port": 42849,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "943ae8a5-4cee-47da-a985-6a057abe0c66",
+                "id": "eceb5b8c-8a1d-4156-bd17-498cd694a39f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,34 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": [""],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "7HcPncESHwmlvn65n6fIBOn8c89l3Xb9OHT4SJ4ILCE",
-          "serverName": "discord.com",
-          "shortId": "73473389",
+          "publicKey": "ZpZ_f78Sq6G0t-fIoUpxknUAAGM9sh1Ktos8rghKnTE",
+          "serverName": "www.nasa.gov",
+          "shortId": "4b427b93",
           "show": false,
           "spiderX": "/"
         }

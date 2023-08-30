@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.88.212",
-            "port": 2086,
+            "address": "77.91.70.194",
+            "port": 42468,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "6388bd92-6cbc-4b72-a9a6-931f071d0ffa",
+                "id": "a2563a6d-3c63-4436-ab7c-017883529624",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev"
-          },
-          "path": "/phosphorylative.aurorainiceland.com/nimvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "X3527G2zZ32yV3ZGEitXDufuk5cDQYt7Cpcm0BZJUX8",
+          "serverName": "www.theverge.com",
+          "shortId": "028c50d3",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

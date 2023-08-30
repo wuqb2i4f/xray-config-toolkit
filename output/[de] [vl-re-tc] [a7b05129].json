@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mahsaamini.ddns.net",
+            "address": "185.161.251.250",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f604cdf1-ace9-4870-b90c-128a2fdbaa7b",
+                "id": "abd5ad7d-6755-4569-982e-3b3463423783",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ssv2ray.mostafago.tk"
-          },
-          "path": "/vless"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "ssv2ray.mostafago.tk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "c4-lOD1XmZ5uV-OqdqSBCz2jApj3Ud88zVyFbfJIUyw",
+          "serverName": "www.cloudflare.com",
+          "shortId": "7f5ca1ee",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

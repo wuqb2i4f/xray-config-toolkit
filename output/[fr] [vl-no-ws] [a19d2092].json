@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
-            "port": 2053,
+            "address": "frev2ray.miox.sbs",
+            "port": 11190,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1b6c0ef9-1ba7-46ab-8184-949da5b98d6e",
+                "id": "3eb577ea-400b-4bb4-b3a2-7e1d3517c120",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@L_AGVPN13"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "@frev2ray@frev2ray"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "vipko.1lagvpn13.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
