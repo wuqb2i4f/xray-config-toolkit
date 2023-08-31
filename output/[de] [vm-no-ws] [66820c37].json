@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "datacenter.ct.01.biqibao.site",
+            "port": 2052,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "08ccd541-efa8-4cf0-88ee-6e5f2ccfceef",
+                "id": "0043ba5b-7434-41ad-badc-c3453f968c79",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +68,9 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
+            "Host": "de.biqibao.site"
           },
-          "path": "/"
+          "path": "/public"
         },
         "security": "none"
       },

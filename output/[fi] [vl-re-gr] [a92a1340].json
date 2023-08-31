@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "7774join.outline-vpn.cloud",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "08ccd541-efa8-4cf0-88ee-6e5f2ccfceef",
+                "id": "a8c5590a-1601-4db1-9f7f-ae624d425646",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@L_AGVPN13"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "32Dg7wTSEzVsDiOUV86FpjwblBaa7WjbMhy964CnbVM",
+          "serverName": "www.speedtest.net",
+          "shortId": "3aded2a7",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

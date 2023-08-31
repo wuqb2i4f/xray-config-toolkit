@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "188.244.122.88",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "08ccd541-efa8-4cf0-88ee-6e5f2ccfceef",
+                "id": "5f6a4058-ffc8-481d-8da9-f18b6cf0cd05",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
+            "Host": "blog.iran-pars.top"
           },
-          "path": "/"
+          "path": "/cf5e70b17f/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "blog.iran-pars.top",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

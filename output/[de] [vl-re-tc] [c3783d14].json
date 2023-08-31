@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "freetell.globalnetvpn.site",
+            "port": 30996,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "08ccd541-efa8-4cf0-88ee-6e5f2ccfceef",
+                "id": "010bf4b0-769c-45a2-b966-fa61e0479c84",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "dVeQ5Fq0fGXs8egafpNiQyXF1iY__jXjA3ImTyVTIhk",
+          "serverName": "www.speedtest.net",
+          "shortId": "3b16504a",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

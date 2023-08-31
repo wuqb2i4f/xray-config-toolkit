@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "104.31.16.65",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "efc38d48-09d3-410a-b706-dc5b6d2af3f9",
-            "port": 443
+            "address": "all6.tel-parsashonam.website",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "Parsashonam",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "GVkY5t9l8eo6FUtxEo9pRQp7hi"
+          "serviceName": "@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "cdn.lovanjok.mom",
-          "show": false
+          "publicKey": "Z70SWl5UF5r1hJz41zvuxFiqQEa_n-1YfT0mZHTypjE",
+          "serverName": "www.speedtest.net",
+          "shortId": "9d08",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

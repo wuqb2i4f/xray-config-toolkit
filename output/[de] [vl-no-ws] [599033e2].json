@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "80.94.83.52",
-            "port": 2087,
+            "address": "104.31.16.250",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0b137bf3-8b48-41c0-806f-e8ad9997418b",
+                "id": "16122651-b2db-447e-e3dc-452b7737f29c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dashboard.culture-movies.watch"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "uggkffkuygkufkgkufukfkykuyk.irancel-mokhabera-mamad-raitel-mic-irancel-hamrah-aval-server.shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

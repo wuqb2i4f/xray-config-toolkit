@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "frev2ray.miox.sbs",
-            "port": 11190,
+            "address": "mtn.melov2ray.store",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3eb577ea-400b-4bb4-b3a2-7e1d3517c120",
+                "id": "82ccaf38-3a0c-40d3-8c84-0dd02e47765b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "@frev2ray@frev2ray"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "bel.melov2ray.store",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
