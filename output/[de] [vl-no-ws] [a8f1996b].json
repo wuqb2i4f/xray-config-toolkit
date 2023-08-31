@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.tel-parsashonam.website",
-            "port": 16172,
+            "address": "104.21.48.147",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "Parsashonam",
+                "id": "5b4f0b53-f641-4e0a-bd38-c6f70515d8ae",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "i.r.1.irancellserver.sbs"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "YHoYVNkpGg289SCcp8tipd15w3jQIDz5YX3sjXXaKTs",
-          "serverName": "eset.com",
-          "shortId": "85106878",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
