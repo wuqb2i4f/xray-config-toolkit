@@ -364,6 +364,7 @@ function fetch_configs() {
     local num_total=$(wc -l <<<"$base64_decode_url")
     local num_count=0
     local num_ss=0
+    local num_ssr=0
     local num_trojan=0
     local num_vless=0
     local num_vmess=0
@@ -391,6 +392,7 @@ function fetch_configs() {
             ;;
         ssr://*)
             # echo "SSR NOT SUPPORTED"
+            ((num_ssr++))
             ;;
         *)
             # echo "NOT SUPPORTED: $proxy_link_raw"
@@ -399,13 +401,15 @@ function fetch_configs() {
         progress_bar "$num_count" "$num_total"
     done <<<"$base64_decode_url"
     echo -ne "\n"
-    echo -e "URL: $url\nTOTAL: $num_total - VLESS: $num_vless - TROJAN: $num_trojan - SS: $num_ss - VMESS: $num_vmess\n------------------------------"
+    echo -e "URL: $url\nTOTAL: $num_total - VLESS: $num_vless - VMESS: $num_vmess - TROJAN: $num_trojan - SS: $num_ss - SSR: $num_ssr\n------------------------------"
 }
 
 function main() {
     urls=(
         "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/base64/mix"
         # "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"
+        # "https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_base64.txt"
+        # "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
     )
 
     for url in "${urls[@]}"; do
