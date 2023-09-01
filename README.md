@@ -3,7 +3,6 @@
 - [اجزای پروژه](#اجزای-پروژه)
 - [تمایز نسبت به ابزارهای مشابه](#تمایز-نسبت-به-ابزارهای-مشابه)
 - [استفاده](#استفاده)
-- [مجوز](#مجوز)
 
 ## اجزای پروژه
 
@@ -21,27 +20,6 @@
 
 ## استفاده
 
-<table>
-  <thead>
-    <tr>
-      <th>نوع پیکربندی</th>
-      <th>اشتراک عادی</th>
-      <th>اشتراک به صورت BASE64</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ترکیبی از همه</td>
-      <td>
-        <a href="https://raw.githubusercontent.com/wuqb2i4f/xray-config-toolkit/main/output/mix">اشتراک عادی</a>
-      </td>
-      <td>
-        <a href="https://raw.githubusercontent.com/wuqb2i4f/xray-config-toolkit/main/output/mix_base64">اشتراک به صورت BASE64</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-## مجوز
-
-این پروژه تحت مجوز عمومی GNU (GPL) منتشر شده است.
+```
+https://raw.githubusercontent.com/wuqb2i4f/xray-config-toolkit/main/output/mix_base64
+```
