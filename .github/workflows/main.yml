@@ -3,8 +3,7 @@ name: Main
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 4 * * *'
-    - cron: '30 16 * * *'
+    - cron: '30 4,12,20 * * *'
 
 jobs:
   run-script:
