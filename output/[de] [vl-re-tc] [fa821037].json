@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.melov2ray.store",
+            "address": "104.248.42.77",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "82ccaf38-3a0c-40d3-8c84-0dd02e47765b",
+                "flow": "xtls-rprx-vision",
+                "id": "73ad1661-b2da-4844-8427-890a9a8995b1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "bel.melov2ray.store",
-          "show": false
+          "publicKey": "WSoK4aff6cLPU2GrkECLOgqX3_XxLGry3aNn7b12MSw",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "73da32ed",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

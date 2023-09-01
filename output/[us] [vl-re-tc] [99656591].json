@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.64.80.28",
-            "port": 80,
+            "address": "sub.barfak123.eu.org",
+            "port": 2023,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "df7abf48-196d-4dbd-b981-4d0c4f4bb446",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "593aa7a9-890a-4409-b733-c6c69fa5d7e4",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sbl2.shabijichang.com"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "0JtNo6iZ1hvm2YZhi2UMDTItqu7D0WnijhUS16SEsH8",
+          "serverName": "www.speedtest.net",
+          "shortId": "21155d87",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

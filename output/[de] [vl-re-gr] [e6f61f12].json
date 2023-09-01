@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.32.153.201",
-            "port": 2053,
+            "address": "instagram.mmdtitaniom.top",
+            "port": 22751,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "4134efe7-d935-416c-c2cc-24943e4a80ca",
+                "id": "95e553ef-c144-4a2f-a3bd-75ecce67c534",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@TITAN_V2rayng,@TITAN_V2rayng,@TITAN_V2rayng,@TITAN_V2rayng,@TITAN_V2rayng"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "ssbtULQp-VuH8DCVWK3pxxo1WU6u7283iux6nHyJyU0",
+          "serverName": "ilovepdf.com",
+          "shortId": "f438b171",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

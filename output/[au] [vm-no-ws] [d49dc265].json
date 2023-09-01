@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.48.147",
+            "address": "au2-vmess.greenssh.xyz",
             "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "5b4f0b53-f641-4e0a-bd38-c6f70515d8ae",
+                "id": "bf86a617-e0c2-4f7f-8a3a-12364d2a4df9",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +68,9 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "i.r.1.irancellserver.sbs"
+            "Host": "au2-vmess.greenssh.xyz"
           },
-          "path": "/"
+          "path": "/vmess"
         },
         "security": "none"
       },

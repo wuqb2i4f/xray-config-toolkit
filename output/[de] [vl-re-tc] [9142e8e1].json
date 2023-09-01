@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.227.99.66",
-            "port": 8443,
+            "address": "cdn-9.kiava.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "ac7d369b-29ec-424d-8e1b-baa59069e197",
+                "flow": "xtls-rprx-vision",
+                "id": "2e726c67-6427-488e-e4d1-e21df7194b6d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "D_XkR1UUiye-tjrn6egxkz5jSYFgjvfT4MGMoGIT7mA",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "69",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
