@@ -45,33 +45,36 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "54.155.79.112",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "80.94.83.52",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "0b137bf3-8b48-41c0-806f-e8ad9997418b",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "serverName": "uggkffkuygkufkgkufukfkykuyk.irancel-mokhabera-mamad-raitel-mic-irancel-hamrah-aval-server.shop",
           "show": false
         }
       },
