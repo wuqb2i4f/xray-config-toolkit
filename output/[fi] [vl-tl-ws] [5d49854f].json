@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel.vmessorg.fun",
-            "port": 80,
+            "address": "dena.toopcard.work",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "335c7b75-955a-4269-81dd-8905cbbb3ada",
+                "id": "d5954831-a2e7-42dd-af8a-dbe656769362",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "padena.toopcard.work"
           },
           "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "randomized",
+          "serverName": "padena.toopcard.work",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

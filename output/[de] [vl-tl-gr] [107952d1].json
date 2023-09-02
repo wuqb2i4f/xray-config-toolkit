@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.123.139",
-            "port": 443,
+            "address": "104.25.254.88",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "freeconfig-wancloudfa-87541",
+                "id": "703ba0b4-d88d-4dc3-9fba-7634e8a9c735",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@wancloudfa"
+          "serviceName": "@NT_Safe"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "tc_ilUm-u2XSGy_0Eh7pF-JWfYpiu2HYp_fRhjI7rSQ",
-          "serverName": "zula.ir",
-          "shortId": "9d02d703",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "c.godrat.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
