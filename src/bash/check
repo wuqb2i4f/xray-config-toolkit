@@ -62,7 +62,8 @@ function process_passed_file() {
     local filename=$(basename "$file")
     local pattern="^\[.*\] \[.*\] \[.*\]\.json$"
     if [[ ! $filename =~ $pattern ]]; then
-        while true; do
+        local attempts=0
+        while ((attempts < 3)); do
             response=$(curl -x http://127.0.0.1:10809 -s -m 3 https://api.country.is)
             if [[ -n "$response" && $(jq -r '.country' <<<"$response") != "null" ]]; then
                 country_code=$(jq -r '.country' <<<"$response" | tr '[:upper:]' '[:lower:]')
@@ -70,7 +71,12 @@ function process_passed_file() {
                 mv "$file" "$output_dir/$filerename"
                 break
             fi
+            ((attempts++))
         done
+
+        if ((attempts == 3)); then
+            rm "$file"
+        fi
     fi
 }
 
