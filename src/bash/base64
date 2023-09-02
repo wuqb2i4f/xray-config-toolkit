@@ -280,6 +280,7 @@ function base64_configs() {
     done
     echo -ne "\n"
     base64 <$mix | tr -d '\n' >"$mix_base64"
+    rm "$mix"
 }
 
 function main() {
