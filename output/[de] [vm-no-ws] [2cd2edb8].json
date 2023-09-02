@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mamad.farzamv2.online",
-            "port": 443,
+            "address": "45.32.153.201",
+            "port": 2083,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "9436c518-627e-4da5-b697-f425f46df2d2",
+                "id": "ce03a832-d6bb-45a3-9121-f7bd6f189469",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@free_v2rayyy"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "45.32.153.201"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "bEPA-muN-3I_jNZU76s1BMZBS2TRQHQWUsnbLDxpdTY",
-          "serverName": "www.speedtest.net",
-          "shortId": "b9af6e92",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.199.42.219",
-            "port": 8443,
+            "address": "bia-to3.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "975a062a-2790-485e-9393-2f4877873216",
+                "id": "421657cf-d3b3-4030-9f46-16e9ee674b3e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "64LALz9ulaEdBP3uQuB5HATs8W4wzbPzYcg-tcDwQjc",
-          "serverName": "cms.accuweather.com",
-          "shortId": "8809c29d",
-          "show": false,
-          "spiderX": "/wp-login.php"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

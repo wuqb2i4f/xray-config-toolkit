@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "s1.service-002.tech",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "4d9ecb97-e296-4bed-b025-ca078e06b109",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.208.113.92",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Moft_Vpn:@Moft_Vpn:@Moft_Vpn:@Moft_Vpn:@Moft_Vpn"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "ZI1WvGcKUoPLyJmONSON2h_UFTBdMSLC-6adnJWHkVY",
-          "serverName": "www.speedtest.net",
-          "shortId": "712d38a3",
-          "show": false,
-          "spiderX": "/+@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

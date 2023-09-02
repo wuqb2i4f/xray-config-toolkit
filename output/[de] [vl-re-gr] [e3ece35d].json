@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.vpnprosec.com",
-            "port": 2053,
+            "address": "5.75.240.193",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6a0e6f42-6283-4498-9a64-8aa918339687",
+                "id": "00a8f2d4-d565-4d8d-89b3-5c20c1a615d0",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec,@VpnProSec"
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "",
-          "serverName": "V2ray.vpnxheykh.shop",
-          "show": false
+          "fingerprint": "random",
+          "publicKey": "qrWdM7lRUSiZgZW-sohUHuZVimTyjdGXejTnMUu_kWs",
+          "serverName": "www.iranserver.com",
+          "shortId": "4c226372",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
