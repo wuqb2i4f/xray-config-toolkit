@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "tel.arv2ray.host",
-            "port": 443,
+            "address": "185.143.234.83",
+            "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "id": "b4bf9170-5454-44d8-8f38-c3b3f7afb236",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "free-for-iran-stockholm.chert383pert.website"
+          },
+          "path": "/MahsaAmini"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tel.ArV2ray.link",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "arvancloud.ir",
           "show": false
         }
       },

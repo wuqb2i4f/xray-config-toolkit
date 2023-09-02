@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.238.167.100",
-            "port": 2087,
+            "address": "azadi-az-inja-migzare.dgi000.store",
+            "port": 31488,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "d5350465-ab63-4d30-ebda-5cbe0751cbd6",
+                "id": "d05d8462-0321-45ff-b4f2-4fc56e7408f9",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "PpqJBITRuVvYSd6dvREQBnBjpn4zRpsSF6HDJPraskQ",
+          "serverName": "telewebion.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all7.tel-parsashonam.website",
-            "port": 443,
+            "address": "128.140.45.124",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "Parsashonam",
+                "flow": "xtls-rprx-vision",
+                "id": "CUSTOMVPNSERVER",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam,Telegram:@Parsashonam"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "Vaxjdc1nlydZrPulCwlsYK1R6Q-oBHDfyCrXlBZ0MCA",
-          "serverName": "www.speedtest.net",
-          "shortId": "296899a9",
+          "publicKey": "RFGjMDXHBVRp6PtvmYZdwSafzP0j-MOxiTBsHdvP7DY",
+          "serverName": "www.discord.com",
+          "shortId": "3d9cbfa7",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

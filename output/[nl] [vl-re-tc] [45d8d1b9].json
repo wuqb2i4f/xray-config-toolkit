@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.135.80.142",
-            "port": 443,
+            "address": "pnl.dia726.site",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "faebb3a2-842d-4893-bf30-779c7377131e",
+                "flow": "xtls-rprx-vision",
+                "id": "6327c83e-0192-4d2e-aea7-d2f9875b18ce",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@dalidalton,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "VhvP623rqVRkN3YDteN_X1tYY3RmWlBk6GvZ1RCCNUg",
-          "serverName": "game-center.ir",
-          "shortId": "e02ba8a4",
+          "publicKey": "A6m2dMGFJP0WgcImlkl1I5DKp0R26RhuxZfTKSVc7RA",
+          "serverName": "nestle.ir",
+          "shortId": "2d893d",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

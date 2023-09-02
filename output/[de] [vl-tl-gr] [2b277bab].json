@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.115.178",
-            "port": 443,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "id": "6893e73b-8dc3-457f-f385-8990386bcc1c",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "TbXfTLS6gXV7EHaPEb7_UGTqfnw2GRzO5_0aFI0f-Hk",
-          "serverName": "gsmarena.com",
-          "shortId": "52a25e52",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Sni.PolProxy.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
