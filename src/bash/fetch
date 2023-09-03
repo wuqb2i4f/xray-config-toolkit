@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cleanup() {
+function cleanup() {
     echo "Script interrupted."
     exit 1
 }
@@ -9,8 +9,8 @@ trap cleanup INT
 trap '' SIGTERM
 
 base_dir="$GITHUB_WORKSPACE"
-template_dir="$base_dir/src/template"
 output_dir="$base_dir/output"
+template_dir="$base_dir/src/template"
 
 function progress_bar() {
     local count="$1"
@@ -383,7 +383,7 @@ function fetch_configs() {
             ((num_trojan++))
             ;;
         ss://*)
-            # extract_ss "$proxy_link_raw"
+            extract_ss "$proxy_link_raw"
             ((num_ss++))
             ;;
         vmess://*)
