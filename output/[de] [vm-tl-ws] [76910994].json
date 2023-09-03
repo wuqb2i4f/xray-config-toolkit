@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mci.bluemoien.space",
-            "port": 2096,
+            "address": "vde2.0bad.com",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "6893e73b-8dc3-457f-f385-8990386bcc1c",
+                "id": "927094d3-d678-4763-8591-e240d0bcae87",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "vde2.0bad.com"
+          },
+          "path": "/chat"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Sni.PolProxy.sbs",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "",
           "show": false
         }
       },

@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "3.67.209.140",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "azadi-az-inja-migzare.dgi000.store",
+            "port": 17979,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "5b4eaf57-b05f-4f41-b049-e7fd468c3628",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -66,13 +70,15 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "uINCft7W05pgw4ok29wOHFSfqaDhMvhgdE2AMc1fjQQ",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "de",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

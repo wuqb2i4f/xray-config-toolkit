@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.227.99.66",
-            "port": 8443,
+            "address": "172.232.146.213",
+            "port": 28933,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "051c52e8-e620-4b1d-a02f-377718ae7d41",
+                "id": "4d82fbcf-7da7-4b66-dc15-99b3e28c1f4b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "cS5u3gGI_Db1t2eKQ1rfPEo5BNgTHNXmXctjFCMsn1Q",
+          "serverName": "www.speedtest.net",
+          "shortId": "85b2e6b1",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

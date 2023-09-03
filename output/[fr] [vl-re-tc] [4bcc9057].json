@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.227.99.66",
-            "port": 8443,
+            "address": "b.irany.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "051c52e8-e620-4b1d-a02f-377718ae7d41",
+                "flow": "xtls-rprx-vision",
+                "id": "96bf53fc-c13b-49c3-aada-13ed89956fcb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "Kgw81FtN0e_C9ospavvyH61cBVHmGP7zXYsctSydiyw",
+          "serverName": "www.igap.net",
+          "shortId": "e44dab6861154a",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "pnl.dia726.site",
-            "port": 8443,
+            "address": "bia-to-channel.vmessorg.fun",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "6327c83e-0192-4d2e-aea7-d2f9875b18ce",
+                "flow": "",
+                "id": "c3b83dce-a060-4ed3-e6ce-d409b25621d3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "A6m2dMGFJP0WgcImlkl1I5DKp0R26RhuxZfTKSVc7RA",
-          "serverName": "nestle.ir",
-          "shortId": "2d893d",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

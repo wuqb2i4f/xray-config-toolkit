@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.227.99.66",
-            "port": 8443,
+            "address": "ggg.nazaraidi.space",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "051c52e8-e620-4b1d-a02f-377718ae7d41",
+                "id": "757a68fb-7f5e-4d8b-bd67-34dfcb20b762",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ggg.nazaraidi.space"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
