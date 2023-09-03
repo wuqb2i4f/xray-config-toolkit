@@ -45,27 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "167.88.63.107",
-            "level": 8,
-            "method": "aes-256-gcm",
-            "ota": false,
-            "password": "faBAoD54k87UJG7",
-            "port": 2376
+            "address": "mrvpn1403.rightel001.chaghooosazi.shop",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "ba8eb673-b4a2-41b8-a813-0e535e2cf374",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "rightel1.chaghooosazi.shop"
+          },
+          "path": "/9AYvqFVnWz0w4dr32c8Sz5kJF4Ehx3"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "rightel1.chaghooosazi.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

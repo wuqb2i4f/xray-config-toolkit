@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.232.146.213",
-            "port": 28933,
+            "address": "104.16.106.32",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4d82fbcf-7da7-4b66-dc15-99b3e28c1f4b",
+                "id": "d3a9ef28-9d39-4791-98bc-aa2176f85dc6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@IRAN_V2RAY1"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cS5u3gGI_Db1t2eKQ1rfPEo5BNgTHNXmXctjFCMsn1Q",
-          "serverName": "www.speedtest.net",
-          "shortId": "85b2e6b1",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "iran.kosbabaarzhang.fun",
+          "show": false
         }
       },
       "tag": "proxy"

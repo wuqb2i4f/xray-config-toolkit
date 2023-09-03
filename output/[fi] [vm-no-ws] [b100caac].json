@@ -45,25 +45,32 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "ak1847.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
-            "level": 8,
-            "method": "aes-256-gcm",
-            "ota": false,
-            "password": "VdaItKYmFf",
-            "port": 24576
+            "address": "komi3m.sbs",
+            "port": 47475,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "7a0792af-c660-40c9-8d4a-9e5cf57d05ec",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
         "security": "none"
       },

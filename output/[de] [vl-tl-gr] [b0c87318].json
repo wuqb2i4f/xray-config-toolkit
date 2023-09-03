@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "57.129.30.254",
-            "port": 53447,
+            "address": "join-v2raytz.sinotz.tk",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9e11fba8-5a59-484c-b786-434f066ced65",
+                "id": "4d33f9db-8549-4444-8704-c3a687927133",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,13 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "V2ray-Napsternet-Irancell-Iran-mkh.varzesh3-cdn.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

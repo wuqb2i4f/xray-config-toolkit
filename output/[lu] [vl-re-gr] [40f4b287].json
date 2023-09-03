@@ -45,27 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "51.141.11.92",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "ujbow8ZY46sUMEqvGfh7BT",
-            "port": 33131
+            "address": "300.outline-vpn.cloud",
+            "port": 54909,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "8ad49fd6-e2ca-4a04-a4e8-35f0850c1665",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "gouvernement.lu"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "9uTK-ie2m1lZl6eBRH3yANrnnOszAZUnCbB17ZI34j8",
+          "serverName": "gouvernement.lu",
+          "shortId": "284ad3e8",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

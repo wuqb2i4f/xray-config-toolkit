@@ -45,25 +45,32 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "212.102.53.198",
-            "level": 8,
-            "method": "aes-128-gcm",
-            "ota": false,
-            "password": "shadowsocks",
-            "port": 443
+            "address": "104.16.171.210",
+            "port": 2052,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "483fb52e-37df-4726-9bcb-15f0e5d40e54",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "us-miami.biqibao.site"
+          },
+          "path": "/public"
         },
         "security": "none"
       },

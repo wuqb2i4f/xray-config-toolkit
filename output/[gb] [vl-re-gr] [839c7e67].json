@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ggg.nazaraidi.space",
-            "port": 8080,
+            "address": "85.159.211.229",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "757a68fb-7f5e-4d8b-bd67-34dfcb20b762",
+                "id": "bb0b06a9-621d-45cb-8820-43a9befde60b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ggg.nazaraidi.space"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "RsVmtoNAkzAIb9_XFbUk1rjJgOAcWFLgf4ZGRbG4gj0",
+          "serverName": "www.zula.ir",
+          "shortId": "7f63d563",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

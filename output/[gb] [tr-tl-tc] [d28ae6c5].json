@@ -45,15 +45,16 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "212.102.53.80",
+            "address": "uk1.connecton.surf",
+            "flow": "",
             "level": 8,
-            "method": "aes-128-gcm",
+            "method": "chacha20-poly1305",
             "ota": false,
-            "password": "shadowsocks",
+            "password": "ee4657c907",
             "port": 443
           }
         ]
@@ -65,7 +66,14 @@
             "type": "none"
           }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "uk1.connecton.surf",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
