@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.tel-parsashonam.website",
-            "port": 8443,
+            "address": "mtn.melov2ray.store",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "Parsashonam",
+                "id": "c1d4a287-68da-4dbe-a3fc-00619ef79d33",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam"
+          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "wbrLAYmj4mr_D3Oy6WzMYIdUvl9l7B3-j8bTPuVu2FM",
-          "serverName": "eset.com",
-          "shortId": "b425ed33",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "arab.melov2ray.store",
+          "show": false
         }
       },
       "tag": "proxy"

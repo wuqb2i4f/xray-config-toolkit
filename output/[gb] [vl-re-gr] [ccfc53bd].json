@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "3.125.118.20",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "144.126.196.226",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "FLCFiS",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@FLCFiS"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "ZvW-Ca8Dea3R_NXaCgw4J03yS4LC-C0lxMcV63Ra0hM",
+          "serverName": "greenpepper.ir",
+          "shortId": "56703a40",
+          "show": false,
+          "spiderX": "/+@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO@LoRd_uL4mo+@LoRd_uL4mo+@LoRd_uL4mo+@LORD_UL4MO"
         }
       },
       "tag": "proxy"

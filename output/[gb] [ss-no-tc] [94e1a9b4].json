@@ -45,40 +45,27 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "azadi-az-inja-migzare.dgi000.store",
-            "port": 31488,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "d05d8462-0321-45ff-b4f2-4fc56e7408f9",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "212.102.53.80",
+            "level": 8,
+            "method": "aes-128-gcm",
+            "ota": false,
+            "password": "shadowsocks",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "PpqJBITRuVvYSd6dvREQBnBjpn4zRpsSF6HDJPraskQ",
-          "serverName": "telewebion.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

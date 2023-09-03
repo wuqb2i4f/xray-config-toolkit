@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "152.67.218.38",
-            "port": 443,
+            "address": "57.129.30.254",
+            "port": 53447,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4",
+                "id": "9e11fba8-5a59-484c-b786-434f066ced65",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,12 +64,11 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "none"
       },

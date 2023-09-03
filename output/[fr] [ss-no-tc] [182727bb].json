@@ -45,17 +45,16 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "16.16.150.142",
-            "flow": "",
+            "address": "92.222.167.23",
             "level": 8,
-            "method": "chacha20-poly1305",
+            "method": "chacha20-ietf-poly1305",
             "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "password": "M2ViN",
+            "port": 8388
           }
         ]
       },
@@ -66,14 +65,7 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

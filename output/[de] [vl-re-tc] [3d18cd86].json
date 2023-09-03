@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "telegram.wancloudfa.fun",
-            "port": 443,
+            "address": "94.228.168.155",
+            "port": 58834,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "FREE-CONFIG-WANCLOUDFA",
+                "id": "4ea492eb-f876-4302-ba17-41f37e522518",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@wancloudfa"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "AQjETVrGSIPWg6hkYpaWdZIt1sWuDjz7gSid6Mp7Ah4",
-          "serverName": "account.zula.ir",
-          "shortId": "f939fe91",
+          "fingerprint": "chrome",
+          "publicKey": "AtYTRBN1rdraQxuLbn2soionfXlIr3x0Mu_qCgcGnVo",
+          "serverName": "ftp.debian.org",
+          "shortId": "9bd9c441",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

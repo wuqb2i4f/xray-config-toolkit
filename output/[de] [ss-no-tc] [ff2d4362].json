@@ -45,17 +45,16 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "34.242.118.8",
-            "flow": "",
+            "address": "ak1847.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "level": 8,
-            "method": "chacha20-poly1305",
+            "method": "aes-256-gcm",
             "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "password": "VdaItKYmFf",
+            "port": 24576
           }
         ]
       },
@@ -66,14 +65,7 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
