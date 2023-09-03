@@ -382,13 +382,13 @@ function fetch_configs() {
             extract_trojan "$proxy_link_raw"
             ((num_trojan++))
             ;;
-        ss://*)
-            extract_ss "$proxy_link_raw"
-            ((num_ss++))
-            ;;
         vmess://*)
             extract_vmess "$proxy_link_raw"
             ((num_vmess++))
+            ;;
+        ss://*)
+            # extract_ss "$proxy_link_raw"
+            ((num_ss++))
             ;;
         ssr://*)
             # echo "SSR NOT SUPPORTED"
