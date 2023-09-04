@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join-v2raytz.sinotz.tk",
-            "port": 2096,
+            "address": "45.131.4.240",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4d33f9db-8549-4444-8704-c3a687927133",
+                "id": "ca1ecf58-c125-4543-bfe7-a9135a422f83",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sftp.pardazesh.tech"
+          },
+          "path": "/IBKhLjYHCvBr0r2HZ1tSkA"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["h2"],
-          "fingerprint": "",
-          "serverName": "V2ray-Napsternet-Irancell-Iran-mkh.varzesh3-cdn.site",
+          "fingerprint": "chrome",
+          "serverName": "sftp.pardazesh.tech",
           "show": false
         }
       },

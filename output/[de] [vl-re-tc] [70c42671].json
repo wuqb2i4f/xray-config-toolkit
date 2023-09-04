@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.moienmusic.space",
-            "port": 2053,
+            "address": "162.55.174.26",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "264a9bf6-c99c-4a55-a8a7-b9654640f5f7",
+                "flow": "xtls-rprx-vision",
+                "id": "ca1ecf58-c125-4543-bfe7-a9135a422f83",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Sni.PolProxy.sbs",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "4YsjhC_Fj2z7DsqyEVsy-tcW7R2eZ2G9Nguk1_ROZQo",
+          "serverName": "pinterest.com",
+          "shortId": "ee9b3344e531",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

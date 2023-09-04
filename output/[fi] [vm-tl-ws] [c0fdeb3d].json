@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.65",
-            "port": 8443,
+            "address": "0000:0000:0000:0000:0000:ffff:6811:495",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "f2f28d06-3660-4f28-b121-b529a749a41c",
+                "id": "6e2851de-0d5d-4d37-aa5e-01f1e274e683",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "amoza.amo2023.club"
+          },
+          "path": "/qoilvws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
+          "alpn": ["http/1.1"],
+          "fingerprint": "safari",
+          "serverName": "amoza.amo2023.club",
           "show": false
         }
       },

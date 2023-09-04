@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.115.178",
-            "port": 443,
+            "address": "host.parsservers.sbs",
+            "port": 54248,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "id": "17b978b0-0abc-4ed2-9edc-f85d7a1f1fe3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zula.ir"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "BRb29l9lsG0r5N4P37G6BBvWiJbImNuy75sAWA5l_Wk",
-          "serverName": "gsmarena.com",
-          "shortId": "52a25e52",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

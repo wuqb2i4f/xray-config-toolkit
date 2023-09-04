@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.65",
-            "port": 2052,
+            "address": "185.143.234.83",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "276b756f-2c4d-41f8-be53-80577c33f98a",
+                "id": "bd696af3-1abe-4fdc-a72d-f149148e2b40",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "s.s.turk-fun.fun"
-          },
-          "path": "/"
+        "network": "h2",
+        "httpSettings": {
+            "host": ["nuremberg.chert383pert.website"],
+            "path": "/MahsaAmini"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1,h2,h3"],
+          "fingerprint": "chrome",
+          "serverName": "arvancloud.ir",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
