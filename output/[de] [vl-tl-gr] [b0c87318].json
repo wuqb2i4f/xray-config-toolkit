@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "host.parsservers.sbs",
-            "port": 54248,
+            "address": "join-v2raytz.sinotz.tk",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "17b978b0-0abc-4ed2-9edc-f85d7a1f1fe3",
+                "id": "f6e2af8b-bdad-4359-f31f-c8a1973facde",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zula.ir"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "V2ray-Napsternet-Irancell-Iran-mkh.varzesh3-cdn.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

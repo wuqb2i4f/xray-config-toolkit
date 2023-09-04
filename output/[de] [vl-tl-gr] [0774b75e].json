@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ns80.ddns.net",
-            "port": 2087,
+            "address": "mtn.moienmusic.space",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "1f85f705-bef4-42c5-a1a4-14be16c2678b",
+                "id": "264a9bf6-c99c-4a55-a8a7-b9654640f5f7",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "amovir.virus2023.xyz"
-          },
-          "path": "/opypvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "safari",
-          "serverName": "hsiaao.virus2023.xyz",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Tm2.Bia-PolProxy.space",
           "show": false
         }
       },
