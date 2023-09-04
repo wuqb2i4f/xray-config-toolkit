@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.arv2ray.host",
+            "address": "49.12.245.202",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9c59d86d-8b65-40e3-8ac1-85e8803b6b2c",
+                "flow": "xtls-rprx-vision",
+                "id": "7f1352c6-0ba2-4b38-97a0-6c4d3784afc2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tel.ArV2ray.fun",
-          "show": false
+          "fingerprint": "random",
+          "publicKey": "K7C_pOD78XXS7D0fNVbwyjlfLc_MGQ_4BwfQU_DnbQY",
+          "serverName": "www.speedtest.net",
+          "shortId": "3dc679a73cf4bbf6",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.131.4.240",
-            "port": 443,
+            "address": "::ffff:bca6:5889",
+            "port": 333,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ca1ecf58-c125-4543-bfe7-a9135a422f83",
+                "id": "c88954a1-1a1a-4f8d-8874-3814c26d23a2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sftp.pardazesh.tech"
-          },
-          "path": "/IBKhLjYHCvBr0r2HZ1tSkA"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "sftp.pardazesh.tech",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "CjDgAn0d8FsrL_6FMDoVwhKfD3hvqkZ_V07jie8pWhk",
+          "serverName": "www.speedtest.net",
+          "shortId": "6ea2eb64",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

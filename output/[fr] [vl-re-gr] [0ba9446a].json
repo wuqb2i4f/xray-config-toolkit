@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "uk1.connecton.surf",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "ee4657c907",
-            "port": 443
+            "address": "5.196.156.223",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "82835a90-0945-4808-84d8-94cda4758d00",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "uk1.connecton.surf",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "BFdJmG4cp_Ks-vCliNGRbzP5CciinOvUH2gJn_FzgmQ",
+          "serverName": "www.zula.ir",
+          "shortId": "86514152",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

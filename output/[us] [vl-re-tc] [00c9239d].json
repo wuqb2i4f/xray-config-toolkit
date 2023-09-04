@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "52.47.194.77",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "bigscreen.dcmusic.ca",
+            "port": 53152,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "b99e44d4-e289-46aa-b7db-9b33cc51ca6f",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -66,13 +70,15 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "ios",
+          "publicKey": "GCqLSRw6TPOqjw-JTcbJoL8jbNJKtIg3RjDzfZksJH0",
+          "serverName": "www.speedtest.net",
+          "shortId": "c229fdd3",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
