@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "public504.host.republicofgamers.net",
-            "port": 443,
+            "address": "datacenter.cm.01.biqibao.site",
+            "port": 2052,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "d1b233c3-819e-43a2-854a-b666b90a7ecf",
+                "id": "05d60306-b718-407d-a02f-3a0d9b632e2e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de2.biqibao.site"
+          },
+          "path": "/public"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "q2awGmfQUfEKYUdaNuhD7WamAu3qq8YVNecl7rbh9Fc",
-          "serverName": "www.speedtest.net",
-          "shortId": "8d76594aecda",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

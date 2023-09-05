@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "85.159.211.229",
-            "port": 443,
+            "address": "104.31.16.65",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6f8476c4-e2b0-4196-8daa-f8f4ea58b48b",
+                "id": "486163d8-1333-456a-b85b-edc582778935",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "RsVmtoNAkzAIb9_XFbUk1rjJgOAcWFLgf4ZGRbG4gj0",
-          "serverName": "www.zula.ir",
-          "shortId": "7f63d563",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

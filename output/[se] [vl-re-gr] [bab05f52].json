@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "0000:0000:0000:0000:0000:ffff:6811:495",
-            "port": 2087,
+            "address": "172.232.129.183",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "6e2851de-0d5d-4d37-aa5e-01f1e274e683",
+                "id": "3744aad6-c8af-4741-ae4e-035dff802c13",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "amoza.amo2023.club"
-          },
-          "path": "/qoilvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "safari",
-          "serverName": "amoza.amo2023.club",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "mWQMdTlNzwZwIXoOgwFbpBAUFdwFDN5udWpeSy_F3Uw",
+          "serverName": "pinterest.com",
+          "shortId": "2ce9684e",
+          "show": false,
+          "spiderX": "/videos/"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.29.235.51",
+            "address": "128.140.45.124",
             "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e80f3e85-48a3-44b4-8f2e-ac035242a030",
+                "flow": "xtls-rprx-vision",
+                "id": "Id-telegram-CloudCityy",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "XQvUEe8eRPwiALmTgOXxetBxsAHOpg5p3sMSlTF5PWw",
-          "serverName": "cdn.accuweather.com",
-          "shortId": "fb385994",
+          "publicKey": "U2beAbmyA2KjgrUfBXOYxcxMtOtj1bhnjUGiLVrfw1c",
+          "serverName": "www.discord.com",
+          "shortId": "9d34f7fb",
           "show": false,
-          "spiderX": "/en/weather-forecasts"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

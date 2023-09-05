@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "185.143.234.83",
-            "port": 2053,
+            "address": "freetell.globalnetvpn.site",
+            "port": 36592,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "bd696af3-1abe-4fdc-a72d-f149148e2b40",
+                "id": "4d96cd74-a8f6-4469-b9e4-cd6d2de2abda",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nuremberg.chert383pert.website"
-          },
-          "path": "/MahsaAmini"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "arvancloud.ir",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "i_vrtldwk5TkOFP44rFAhjx_SDcusvNZpN9IP8fxXDQ",
+          "serverName": "www.speedtest.net",
+          "shortId": "93d996d9",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
