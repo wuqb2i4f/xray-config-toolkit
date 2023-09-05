@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "5.196.156.223",
-            "port": 443,
+            "address": "185.143.234.83",
+            "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "82835a90-0945-4808-84d8-94cda4758d00",
+                "id": "bd696af3-1abe-4fdc-a72d-f149148e2b40",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nuremberg.chert383pert.website"
+          },
+          "path": "/MahsaAmini"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "BFdJmG4cp_Ks-vCliNGRbzP5CciinOvUH2gJn_FzgmQ",
-          "serverName": "www.zula.ir",
-          "shortId": "86514152",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "arvancloud.ir",
+          "show": false
         }
       },
       "tag": "proxy"

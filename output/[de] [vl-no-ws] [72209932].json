@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "135.181.193.202",
-            "port": 443,
+            "address": "bia-to-channel2.unlimiteddev.cloud",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "Source-ipV2Ray",
+                "id": "08b48561-3558-4705-fcd0-83c7fc9ba89d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to3.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "S6rCZgqRnUVHyQoMrrurAiEiGOEZJ6WrtS--Fc0XeAQ",
-          "serverName": "gsmarena.com",
-          "shortId": "4e0eba1e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

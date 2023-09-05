@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ca1-vmess.greenssh.xyz",
-            "port": 80,
+            "address": "telchann1.v2pedia.xyz",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "2557e01c-dbcc-4d34-a259-11ae69f5f041",
+                "id": "f82c58eb-8c86-4ea3-9203-53d6a432e391",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ca1-vmess.greenssh.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "wovvnGzAiomgnuwvAi9W98obDn9oMNQnR4Hn959aAjU",
+          "serverName": "www.speedtest.net",
+          "shortId": "29",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

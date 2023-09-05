@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mtn.moienmusic.space",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "fdd789f9-9bfa-4640-f1c0-de7ee48794b0",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "54.170.187.155",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "Tm2.Bia-PolProxy.space",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

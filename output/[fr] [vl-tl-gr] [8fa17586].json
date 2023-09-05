@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bigscreen.dcmusic.ca",
-            "port": 53152,
+            "address": "www.zula.ir",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b99e44d4-e289-46aa-b7db-9b33cc51ca6f",
+                "id": "20c54ee3-9a65-4021-a472-fe977a145976",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ServerNett"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "ios",
-          "publicKey": "GCqLSRw6TPOqjw-JTcbJoL8jbNJKtIg3RjDzfZksJH0",
-          "serverName": "www.speedtest.net",
-          "shortId": "c229fdd3",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.servernet.cfd",
+          "show": false
         }
       },
       "tag": "proxy"
