@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "167.71.80.156",
-            "port": 8443,
+            "address": "cdn19.kiava.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "f448cd3b-595a-4c6e-916c-be05d6b292f6",
+                "flow": "xtls-rprx-vision",
+                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "sPuU8GOwdGNrzsEuUikNNsWLAJPyArO1rwCC51Vdvhc",
-          "serverName": "corporate.accuweather.com",
-          "shortId": "47eb9ca9",
+          "publicKey": "zatO0JacZn1z7DZP2sAfhFCD24AB_Z9eWvtRP23iuVQ",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "99",
           "show": false,
-          "spiderX": "/company/careers/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

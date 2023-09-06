@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "8.210.128.146",
-            "port": 36788,
+            "address": "mahsaamini.ddns.net",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "34ae890c-eada-4160-f7ba-a2d9fba215af",
+                "id": "82ee07ce-79e3-4286-924d-3feb9a808415",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "8.210.128.146"
+            "Host": "ssv2ray.mostafago.tk"
           },
-          "path": "/"
+          "path": "/vless"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "ssv2ray.mostafago.tk",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

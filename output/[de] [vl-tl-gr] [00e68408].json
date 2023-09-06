@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.228.168.155",
-            "port": 58834,
+            "address": "all.vpncustomize.website",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4ea492eb-f876-4302-ba17-41f37e522518",
+                "id": "8b8edc89-2663-415d-a1f3-553354bfe635",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "AtYTRBN1rdraQxuLbn2soionfXlIr3x0Mu_qCgcGnVo",
-          "serverName": "ftp.debian.org",
-          "shortId": "9bd9c441",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "uGGkffkuygV2raykufukfkyKuyk-irancel-Mokhabera-Mamad-raitel-MIc.Snapp.monster",
+          "show": false
         }
       },
       "tag": "proxy"
