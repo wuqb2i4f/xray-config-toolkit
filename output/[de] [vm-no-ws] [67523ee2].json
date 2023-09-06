@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "157.90.148.37",
-            "port": 42168,
+            "address": "45.77.141.170",
+            "port": 8443,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "e7965dfe-1f60-451d-8d56-fc97bf01f55d",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "3d0c8ee5-3329-4252-aa1c-65f3fdaa0343",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "BUym07_YZHDOIJvnPJ0MD0tWVNfUixso74vrRA2czww",
-          "serverName": "www.eset.com",
-          "shortId": "0f28f911",
-          "show": false,
-          "spiderX": "/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil/v2ray_swhil"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

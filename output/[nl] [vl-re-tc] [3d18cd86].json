@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.81.238",
-            "port": 2083,
+            "address": "94.228.168.155",
+            "port": 58834,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a856794d-1d7a-444b-8ab2-2f6b132e0a98",
+                "id": "4ea492eb-f876-4302-ba17-41f37e522518",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@L_AGVPN13"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "tel.1lagvpn13.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "AtYTRBN1rdraQxuLbn2soionfXlIr3x0Mu_qCgcGnVo",
+          "serverName": "ftp.debian.org",
+          "shortId": "9bd9c441",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

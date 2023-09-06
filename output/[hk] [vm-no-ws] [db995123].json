@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "2.tel-parsashonam.website",
-            "port": 443,
+            "address": "8.210.128.146",
+            "port": 36788,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "--Parsashonam--",
+                "id": "34ae890c-eada-4160-f7ba-a2d9fba215af",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "8.210.128.146"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "w3lRsBRyOFPI9AOk1CW_EE2DHMakIjRZYYf5TRGCL1Q",
-          "serverName": "eset.com",
-          "shortId": "3ce54ddb",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
