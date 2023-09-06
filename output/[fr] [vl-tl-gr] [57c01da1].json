@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn17.kiava.fun",
-            "port": 443,
+            "address": "ch.servernet.cfd",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
+                "flow": "",
+                "id": "42400546-283b-4be0-90f8-0d481f651ee9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dhWkfO4lv0bMytW1ckpAEydktXulqApJ3nDPiNkBDXc",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "99",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.servernet.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

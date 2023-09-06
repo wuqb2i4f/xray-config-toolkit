@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cdn19.kiava.fun",
-            "port": 443,
+            "address": "8.210.128.146",
+            "port": 36788,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "34ae890c-eada-4160-f7ba-a2d9fba215af",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "8.210.128.146"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "zatO0JacZn1z7DZP2sAfhFCD24AB_Z9eWvtRP23iuVQ",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "99",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

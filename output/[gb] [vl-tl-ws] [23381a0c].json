@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.65",
-            "port": 8443,
+            "address": "allnet-ipcf.ddns.net",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4fac6817-3d90-44c5-a693-ec59577c4c2d",
+                "id": "82ee07ce-79e3-4286-924d-3feb9a808415",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ssv2ray.mostafago.tk"
+          },
+          "path": "/vless"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "ssv2ray.mostafago.tk",
           "show": false
         }
       },

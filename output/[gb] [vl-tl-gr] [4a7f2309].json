@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.115.178",
+            "address": "www.zula.ir",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "id": "3017386b-fea1-48f3-963e-e67121c50492",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+          "serviceName": "Telegram:@ZED_VPN,Telegram:@ZED_VPN,Telegram:@ZED_VPN,Telegram:@ZED_VPN,Telegram:@ZED_VPN"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "t4b6WFro9QByQeiG-CG9lPfQ39qSaoBedFTGAsSOYxg",
-          "serverName": "gsmarena.com",
-          "shortId": "3ea5e64e",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "free-config.432clicks.website",
+          "show": false
         }
       },
       "tag": "proxy"

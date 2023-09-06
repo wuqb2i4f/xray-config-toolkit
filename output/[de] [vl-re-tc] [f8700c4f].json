@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cnamemt2.cdncisco4.co",
+            "address": "cdn12.kiava.fun",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e445f188-bc6d-4bc7-93fc-8ac0df132cfe",
+                "flow": "xtls-rprx-vision",
+                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "c2mt.cdncisco4.co"
-          },
-          "path": "/jmO20qnaI39wz4joktepC79oskvsQ"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "c2mt.cdncisco4.co",
-          "show": false
+          "publicKey": "dwMhPJpPTYzBKV59pL838W2ezBkjo_VZ-77V2qKVqlk",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "99",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

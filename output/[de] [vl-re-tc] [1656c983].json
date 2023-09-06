@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "nikashahkarami.ddns.net",
+            "address": "5.75.136.203",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "F9919381-E43B-40FB-A951-DE98C0785BCF",
+                "id": "3ece2573-5b77-498b-82bd-d5a16d80d1ae",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fn.mostafago.tk"
-          },
-          "path": "/speedtest"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "fn.mostafago.tk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "3uydXMcb942Ub0IR3h61yKVXEItn3YqjuD8PjNnZmk0",
+          "serverName": "greenpepper.ir",
+          "shortId": "cadf7a28",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
