@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "nl.melov2ray.store",
-            "port": 443,
+            "address": "mci-msv2ray.ddns.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5cd88d59-ae71-4aba-8336-f48ca89d5a12",
+                "id": "2fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "psmP9NRQVeT3xGxSjw7ymN6N2qntET22USdo8vDsWGQ",
-          "serverName": "www.speedtest.net",
-          "shortId": "107d257e",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "tel.MsV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

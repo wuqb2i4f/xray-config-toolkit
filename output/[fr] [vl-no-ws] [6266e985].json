@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "23.158.56.89",
-            "port": 22324,
+            "address": "45.67.215.70",
+            "port": 2082,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "04621bae-ab36-11ec-b909-0242ac120002",
+                "id": "ffc84013-b40b-4c52-9a38-691b1d1be29c",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,11 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr2vl.cdn-03.live"
+          },
+          "path": "@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf"
         },
         "security": "none"
       },

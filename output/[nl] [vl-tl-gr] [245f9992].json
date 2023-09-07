@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "xsv2ray.xalixv2ray.space",
+            "address": "159.223.5.229.sslip.io",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "eb5b10ad-9fdb-46af-8710-1c04e566675f",
+                "id": "e2ed9f3f-40ba-4cfe-879d-53c57f70ecb2",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray"
+          "serviceName": "JVLBEs9O5OIKWnQFzdIxIK96R"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "hbmwoSOK2SM0C_FmhWJJZM-up8d4dDOMscmyCA8gynk",
-          "serverName": "www.speedtest.net",
-          "shortId": "7e4e8776",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "159.223.5.229.sslip.io",
+          "show": false
         }
       },
       "tag": "proxy"
