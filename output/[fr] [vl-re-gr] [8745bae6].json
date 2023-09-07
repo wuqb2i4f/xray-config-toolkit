@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "allnet-ipcf.ddns.net",
-            "port": 443,
+            "address": "172.233.246.113",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "82ee07ce-79e3-4286-924d-3feb9a808415",
+                "id": "18072fc7-37a9-40a7-904d-9eda2211f669",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ssv2ray.mostafago.tk"
-          },
-          "path": "/vless"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "ssv2ray.mostafago.tk",
-          "show": false
+          "publicKey": "OVWinhYlQur0KeftkVoBYr0kfOwIFTUXhIXStQf-iGY",
+          "serverName": "developer.accuweather.com",
+          "shortId": "a805b051",
+          "show": false,
+          "spiderX": "/apis"
         }
       },
       "tag": "proxy"

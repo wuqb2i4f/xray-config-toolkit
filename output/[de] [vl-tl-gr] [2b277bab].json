@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "miox3.putak.sbs",
-            "port": 45195,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "73e13fa2-6643-49c2-be13-26cdab68b9b2",
+                "id": "f6779490-fb0b-4f16-979f-11a184b5b75d",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "hOgTFJH11wPK5NMTy_IWFSrZIDqI26jHR8-O2fHyYho",
-          "serverName": "www.speedtest.net",
-          "shortId": "943472a1",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Tm2.Bia-PolProxy.space",
+          "show": false
         }
       },
       "tag": "proxy"

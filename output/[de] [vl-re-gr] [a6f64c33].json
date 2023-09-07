@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "AllNet-IPCF.ddns.net",
+            "address": "join.shhproxy.cfd",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "F9919381-E43B-40FB-A951-DE98C0785BCF",
+                "id": "fc283366-782f-4a4f-9301-3bf7caa913f1",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fn.mostafago.tk"
-          },
-          "path": "/speedtest"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Shh_Proxy"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "fn.mostafago.tk",
-          "show": false
+          "publicKey": "u4DFt-PrivHRMh7R56mwDwkOS_R19q1ts5tSgQdxqnw",
+          "serverName": "www.speedtest.net",
+          "shortId": "a715cc23",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

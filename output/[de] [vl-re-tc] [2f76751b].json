@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.vpncustomize.website",
-            "port": 2096,
+            "address": "mrvshop.skyliner.site",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "bfbd0da6-d36b-4e72-8868-96f2eb51b9e3",
+                "flow": "xtls-rprx-vision",
+                "id": "51a5af6a-04a5-4a15-a1fe-8558d1fb8388",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "",
-          "serverName": "uGGkffkuygV2raykufukfkyKuyk-irancel-Mokhabera-Mamad-raitel-MIc.Snapp.monster",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "ADMnXEDZbTbJPEjEfSjsT3_KETLz-IG0ZQOCHsNt3xk",
+          "serverName": "www.speedtest.net",
+          "shortId": "756b1d",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

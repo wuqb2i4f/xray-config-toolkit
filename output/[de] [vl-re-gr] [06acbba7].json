@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.61",
-            "port": 80,
+            "address": "all.kilidstor.cfd",
+            "port": 11368,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "602a53c1-47ab-4bfc-a0e4-63731a0413b7",
+                "id": "c37ed13a-a3e0-46eb-bfb3-aa62a349a864",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "de4vm.cdn-03.live"
-          },
-          "path": "/@hopev2ray،@hopev2ray"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@KILID_STOR"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "5BlHAnZHULq51ckg01Ch2ar8xV6QACL1IbH4ICHypS4",
+          "serverName": "ftp.debian.org",
+          "shortId": "d2a76906",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

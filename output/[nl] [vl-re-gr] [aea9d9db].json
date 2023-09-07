@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.77.141.170",
-            "port": 2087,
+            "address": "128.199.42.219",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "d5350465-ab63-4d30-ebda-5cbe0751cbd6",
+                "id": "f69910f5-6d63-45a4-ac75-c24b0417189e",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "64LALz9ulaEdBP3uQuB5HATs8W4wzbPzYcg-tcDwQjc",
+          "serverName": "cms.accuweather.com",
+          "shortId": "8809c29d",
+          "show": false,
+          "spiderX": "/wp-login.php"
+        }
       },
       "tag": "proxy"
     },
