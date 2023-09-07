@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "vde2.0bad.com",
-            "port": 443,
+            "address": "eliv2ray.snapp.monster",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "927094d3-d678-4763-8591-e240d0bcae87",
+                "id": "72042d5a-6df9-40ee-86fc-a48f15312ffb",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "vde2.0bad.com"
-          },
-          "path": "/chat"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNS_IR"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "EliV2ray.Snapp.monster",
           "show": false
         }
       },

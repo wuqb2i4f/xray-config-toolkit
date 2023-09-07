@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "free.zayn2012vip2.top",
-            "port": 2096,
+            "address": "fd.shabijichang.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "77a41791-6bc4-42f4-8ed6-a11e453ab2ec",
+                "id": "f4d9baa8-9115-4f2a-8c29-d49993174bef",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "ZAYN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "shs.shabijichang.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "YQlHy8PH_hWIIvOe2WeVHeG2MvgS41kxU6cVl7U1-wI",
-          "serverName": "sourceforge.net",
-          "shortId": "63c1f9ee",
-          "show": false,
-          "spiderX": "/v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil/@v2ray_swhil"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
