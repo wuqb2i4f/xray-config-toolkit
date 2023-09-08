@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.67.215.70",
-            "port": 2082,
+            "address": "45.131.4.240",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ffc84013-b40b-4c52-9a38-691b1d1be29c",
+                "id": "d8fd35e7-25f7-452d-852a-6ad1cfb3c9b8",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "fr2vl.cdn-03.live"
+            "Host": "sftp.pardazesh.tech"
           },
-          "path": "@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf"
+          "path": "/IBKhLjYHCvBr0r2HZ1tSkA"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "sftp.pardazesh.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

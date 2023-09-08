@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sdfaassd.snappp.sbs",
-            "port": 49972,
+            "address": "bia-to-channel2.unlimiteddev.cloud",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6fc99b01-7b26-4222-ab80-e078ad6f54dc",
+                "id": "7adef259-d3f1-4039-e043-fe424f1ca132",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to3.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "LZg8onaCCr2g63YZ6bvpzcQyxSTYGw2wxln3axpdPBk",
-          "serverName": "zarpop.com",
-          "shortId": "7900c53a",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

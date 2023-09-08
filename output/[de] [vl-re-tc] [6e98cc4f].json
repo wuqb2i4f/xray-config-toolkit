@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "66.151.172.173",
-            "port": 53419,
+            "address": "mtnrevolt.r8volt.com",
+            "port": 80,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "d9257479-9462-4e7d-94ba-a8440a128a5d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -71,7 +70,16 @@
             "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "94dPgXWW8guItDHE1LtcEoAc1ZvyQAD1jIR0ccZOkRE",
+          "serverName": "booking.qatarairways.com",
+          "shortId": "55a9b2f3",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
