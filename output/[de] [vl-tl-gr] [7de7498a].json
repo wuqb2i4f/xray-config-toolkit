@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "23.158.56.89",
-            "port": 22324,
+            "address": "45.67.215.70",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "04621bae-ab36-11ec-b909-0242ac120002",
+                "id": "ab076b1a-d277-4caf-923b-2c66d5d4af4f",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,13 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "Freev2rayyy.Mamaliam.Site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

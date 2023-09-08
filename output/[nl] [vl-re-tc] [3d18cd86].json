@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "94.228.168.155",
+            "port": 58834,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d9575ea4-03a3-4af3-95d9-48ff04e9faee",
+                "id": "4ea492eb-f876-4302-ba17-41f37e522518",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "AtYTRBN1rdraQxuLbn2soionfXlIr3x0Mu_qCgcGnVo",
+          "serverName": "ftp.debian.org",
+          "shortId": "9bd9c441",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

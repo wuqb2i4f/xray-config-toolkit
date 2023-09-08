@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.131.4.240",
-            "port": 443,
+            "address": "reality.punisher-shop-v2rayng.cfd",
+            "port": 12608,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d8fd35e7-25f7-452d-852a-6ad1cfb3c9b8",
+                "id": "2d652817-16cd-45b3-bb1e-70f915145a5b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sftp.pardazesh.tech"
-          },
-          "path": "/IBKhLjYHCvBr0r2HZ1tSkA"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@puni_shop_v2rayNG"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "sftp.pardazesh.tech",
-          "show": false
+          "publicKey": "xEFvEL3nHURZhYSQMlSTogRaSz5BnbaHnxT3a09sInA",
+          "serverName": "www.speedtest.net",
+          "shortId": "37e6e694",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

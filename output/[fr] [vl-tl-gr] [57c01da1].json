@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.135.80.142",
-            "port": 989,
+            "address": "ch.servernet.cfd",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ccf93a9d-9313-4f11-aff1-8d83aef68862",
+                "id": "657ca48b-0a53-4e60-92cf-07a3af2acf86",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,@FOX_VPN66,"
+          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "zPDpOlz0HEw5f9nD4jKFPJzEIA71NxEDl8fTjEGrlDU",
-          "serverName": "game-center.ir",
-          "shortId": "291c632f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.servernet.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

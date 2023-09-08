@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "165.232.90.219",
-            "port": 333,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "e3e113e3-bcf4-48e7-83d9-d573bc25f541",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "uk1.connecton.surf",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "ee4657c907",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "tHnxHcmEs39vzV1h8czUCDVbGKDB5Ntl5C2aL2VOwgw",
-          "serverName": "discord.com",
-          "shortId": "5fe35e25",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "uk1.connecton.surf",
+          "show": false
         }
       },
       "tag": "proxy"

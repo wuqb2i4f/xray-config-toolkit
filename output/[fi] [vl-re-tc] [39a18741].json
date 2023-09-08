@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "fin.r8volt.com",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "d9575ea4-03a3-4af3-95d9-48ff04e9faee",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "TWytM4yPUClwONHoZHK5y3Oo8yv_GQO-nMIBjUroLy4",
+          "serverName": "www.helsinki.fi",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.133.117",
-            "port": 80,
+            "address": "37.120.191.150",
+            "port": 42519,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "392053a2-c18f-4914-890c-fd326ee27b4f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "1b22eae3-ae47-4b5a-8b0e-067de5178a4e",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "mm4.shabijichang.com"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "Ogfl32wXWXWDHzaNxFKPuxZ5CKna1ST9KUpAnVEsd0I",
+          "serverName": "aldon.rocketsoftware.com",
+          "shortId": "e8a89357",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

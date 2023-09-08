@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "104.21.65.133",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d9575ea4-03a3-4af3-95d9-48ff04e9faee",
+                "id": "ab076b1a-d277-4caf-923b-2c66d5d4af4f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "Freev2rayyy.Mamaliam.Site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

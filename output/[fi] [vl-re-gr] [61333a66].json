@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "65.109.240.249",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d9575ea4-03a3-4af3-95d9-48ff04e9faee",
+                "id": "telegram-id-ArV2ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "vzLqbLYKPTDhROp076M95Dcv66n1JMBbclDZaBpNplo",
+          "serverName": "gsmarena.com",
+          "shortId": "96e1fc1c",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "159.69.42.160",
-            "port": 46385,
+            "address": "104.31.16.189",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5ac2ac18-045b-431b-b5bc-f88bddd78276",
+                "id": "52eb924e-8c88-4b1f-af49-291dfc200ba5",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@therealaleph"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "_vCqupEn3Qcp0m1cdEYGS0b9QTVyL3z94Yd_Gglgbx0",
-          "serverName": "eset.com",
-          "shortId": "511ef97e",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "freenl.marksmancdn14.com",
+          "show": false
         }
       },
       "tag": "proxy"
