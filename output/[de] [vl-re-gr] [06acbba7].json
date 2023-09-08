@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.228.168.155",
-            "port": 48955,
+            "address": "all.kilidstor.cfd",
+            "port": 11368,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "63e3e9e1-ee04-4c2a-b6b7-6af6148cc676",
+                "id": "0072171d-3595-4f4c-9dca-b80a2cc96154",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["ftp.debian.org"],
-            "path": "/abdol"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@KILID_STOR"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "rxL9jPdkB_cwiFe2G7ImPPBtRJf0dPf2mBYPIQ97ISU",
+          "fingerprint": "firefox",
+          "publicKey": "5BlHAnZHULq51ckg01Ch2ar8xV6QACL1IbH4ICHypS4",
           "serverName": "ftp.debian.org",
-          "shortId": "6eaf3997",
+          "shortId": "d2a76906",
           "show": false,
           "spiderX": "/"
         }

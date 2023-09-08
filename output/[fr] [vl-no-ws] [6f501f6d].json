@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.45.124",
-            "port": 8443,
+            "address": "104.31.16.65",
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "Id-telegram-CloudCityy",
+                "flow": "",
+                "id": "ffc84013-b40b-4c52-9a38-691b1d1be29c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr2vl.cdn-03.live"
+          },
+          "path": "@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf,@ip_cf"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "U2beAbmyA2KjgrUfBXOYxcxMtOtj1bhnjUGiLVrfw1c",
-          "serverName": "www.discord.com",
-          "shortId": "9d34f7fb",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

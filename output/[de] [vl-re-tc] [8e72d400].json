@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "cf-test.q5wrff7jtkdg23.top",
-            "port": 2082,
+            "address": "sdfaassd.snappp.sbs",
+            "port": 49972,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "444602db-698c-49bd-b3b1-b171fb0543b9",
+                "id": "6fc99b01-7b26-4222-ab80-e078ad6f54dc",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nyc1.q5wrff7jtkdg23.top"
-          },
-          "path": "/nyc1"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "LZg8onaCCr2g63YZ6bvpzcQyxSTYGw2wxln3axpdPBk",
+          "serverName": "zarpop.com",
+          "shortId": "7900c53a",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
