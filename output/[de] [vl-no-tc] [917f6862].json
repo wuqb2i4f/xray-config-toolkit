@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ger.r8volt.com",
-            "port": 2096,
+            "address": "reality.punisher-shop-v2rayng.cfd",
+            "port": 31107,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
+                "flow": "",
+                "id": "58cbeced-985b-46de-9c34-fb5ce69b9c94",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,19 +67,25 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["speedtest.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "GWLTRxw3B1iy29ZW4SqQH113-Gjup6-4vkOMksfEHB0",
-          "serverName": "spiegel.de",
-          "shortId": "0d8de1aa",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

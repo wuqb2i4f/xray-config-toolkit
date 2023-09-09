@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "157.90.204.52",
-            "port": 42323,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "ea87065b-35ed-45b5-c060-06e0502855da",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "104.16.67.38",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "d8fd35e7-25f7-452d-852a-6ad1cfb3c9b8",
+            "port": 443
           }
         ]
       },
@@ -67,11 +63,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "ftp.pardazesh.tech"
           },
-          "path": "/"
+          "path": "/1C1eEyrBbGr0r2HZ1tSkA"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "ftp.pardazesh.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

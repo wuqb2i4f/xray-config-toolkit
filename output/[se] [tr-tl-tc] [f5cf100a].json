@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "164.90.229.166",
-            "port": 23189,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "fa4913c3-48dd-44e5-9ac7-c08c4b353ed6",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.50.57.23",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "6MxlyKNhcfj813sBQoqiu8F_6tgaWvSLMBREWX56tGw",
-          "serverName": "discord.com",
-          "shortId": "cd4e521a",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

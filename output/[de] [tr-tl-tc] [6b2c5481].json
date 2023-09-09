@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "join.mdvpnsec.cfd",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "2c6efac5-33e1-4bac-ab21-59c45aed72af",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "35.157.29.210",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MdVpnSec"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "9NFm9ttdkMfWsFePQj9UbqpVFudmtwKNAmjU0gelTQk",
-          "serverName": "www.speedtest.net",
-          "shortId": "871a52f0",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

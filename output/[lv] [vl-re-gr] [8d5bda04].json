@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mh14.academygama.online",
-            "port": 35278,
+            "address": "85.159.228.56",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6771eba9-2eb9-4881-b312-d4775e802274",
+                "id": "d7baa1c9-ab89-4f08-8f68-26af4455832f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,28 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["fast.com"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "BFC5LkEmynv9i-OJ_E2yhgWUZgh1x5hwEAKWQREu4Q0",
+          "serverName": "cdn.accuweather.com",
+          "shortId": "cc4d73e7",
+          "show": false,
+          "spiderX": "/en/weather-forecasts"
+        }
       },
       "tag": "proxy"
     },
