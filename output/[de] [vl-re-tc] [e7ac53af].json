@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.65",
-            "port": 8443,
+            "address": "140.82.39.11",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9c373bcd-1fa6-4877-bbee-4ae351aa0fec",
+                "flow": "xtls-rprx-vision",
+                "id": "874b15f4-7f43-436e-85d8-5142c3b748c0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "d1H_0miDHBvjPkygZfwG3ckMIpeo7S18xDwwZ8AYRCE",
+          "serverName": "translate.google.com",
+          "shortId": "d55342c47ff449",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

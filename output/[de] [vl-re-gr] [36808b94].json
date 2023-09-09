@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.61",
-            "port": 80,
+            "address": "vo.foxnt-telegram-foxnt.shop",
+            "port": 14523,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "602a53c1-47ab-4bfc-a0e4-63731a0413b7",
+                "id": "Azadi-az-inja-migzare",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "de4vm.cdn-03.live"
-          },
-          "path": "/@hopev2ray،@hopev2ray"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "wRwVLG9nBToz-UoNtMWfeywzlF4Drh43tR0T-aVw7V4",
+          "serverName": "www.speedtest.net",
+          "shortId": "e8a654f7",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

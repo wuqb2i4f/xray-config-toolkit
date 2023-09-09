@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "165.232.93.25",
+            "port": 17420,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d9575ea4-03a3-4af3-95d9-48ff04e9faee",
+                "id": "azadi-az-inja-migzare",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "kJeu6F6Npyfy3QDRn3XtV_LdwFdCIHiOUIAVas-Q_g4",
+          "serverName": "www.speedtest.net",
+          "shortId": "3d542b6f",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

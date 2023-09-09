@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "85.159.211.229",
-            "port": 443,
+            "address": "95.179.213.70",
+            "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "60656ec8-9aa5-48db-8c91-32127b36c1ac",
+                "id": "5fa15510-f712-4fcd-edc6-97555b2c3de3",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +68,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "RsVmtoNAkzAIb9_XFbUk1rjJgOAcWFLgf4ZGRbG4gj0",
-          "serverName": "www.zula.ir",
-          "shortId": "7f63d563",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "a.boredhot.cloud",
+          "show": false
         }
       },
       "tag": "proxy"

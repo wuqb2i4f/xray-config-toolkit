@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.moienmusic.space",
-            "port": 2053,
+            "address": "ger.r8volt.com",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "74032ed0-e72c-4178-8b52-5e6fae21bab4",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Tm2.Bia-PolProxy.space",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "GWLTRxw3B1iy29ZW4SqQH113-Gjup6-4vkOMksfEHB0",
+          "serverName": "spiegel.de",
+          "shortId": "0d8de1aa",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

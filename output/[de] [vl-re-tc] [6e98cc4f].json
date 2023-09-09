@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.27.77.90",
+            "address": "mtnrevolt.r8volt.com",
             "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a735cbbc-4f26-498c-a066-a4d89ad4485e",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "PedagOgY.MAhDAVIat.uK"
-          },
-          "path": "/backup"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "94dPgXWW8guItDHE1LtcEoAc1ZvyQAD1jIR0ccZOkRE",
+          "serverName": "booking.qatarairways.com",
+          "shortId": "55a9b2f3",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

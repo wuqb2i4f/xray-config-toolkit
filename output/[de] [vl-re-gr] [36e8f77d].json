@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "telegram.icv2ray.top",
-            "port": 2053,
+            "address": "164.90.229.166",
+            "port": 44807,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b459e4b6-1ae6-4eed-958f-dd078b17686c",
+                "id": "71a67a60-a0af-454c-906c-ae5046adace0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "tel.iCV2ray.space"
-          },
-          "path": "tel.iCV2ray.space"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@proxyforopeta"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "rPqaDnfQzbxT9gzaUnTKZNnr7tSpwQeiA_yv_ZKroFc",
+          "serverName": "discord.com",
+          "shortId": "cbd7cb0f",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
