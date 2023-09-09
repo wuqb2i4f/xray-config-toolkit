@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.78.109",
-            "port": 80,
+            "address": "128.140.45.124",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "23ee5ec7-ba2e-4967-bf4f-10ff3b7ba989",
+                "id": "53b295e7-f08c-4ba3-925c-628087f5ccdf",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "asb3.shabijichang.com"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "YZLZ1fcvcbKBNub1b2FRULWCaf2rVKGb6f_kUkZAZSs",
+          "serverName": "www.zula.ir",
+          "shortId": "f9ea1411",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
