@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "137.184.222.122",
-            "port": 54296,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "FOXNTazadi_az_inja_migzare",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.9.28.246",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@azadi_az_inja_migzare,@FOXNT,@FOXNT,@azadi_az_inja_migzare,@FOXNT,@azadi_az_inja_migzare,@azadi_az_inja_migzare,@FOXNT,@FOXNT,@azadi_az_inja_migzare,@FOXNT,@azadi_az_inja_migzare,@azadi_az_inja_migzare,@FOXNT,@FOXNT,@azadi_az_inja_migzare,@FOXNT,@azadi_az_inja_migzare,@FOXNT,@FOXNT,@azadi_az_inja_migzare,@azadi_az_inja_migzare,@azadi_az_inja_migzare,@FOXNT,@FOXNT,@FOXNT,@azadi_az_inja_migzare,@FOXNT,@FOXNT,@FOXNT"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "fiMi2OsNOHgMiCbkmI9enGHhwY2wuHGvJs7WJguVrVk",
-          "serverName": "up.20script.ir",
-          "shortId": "30925a1f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

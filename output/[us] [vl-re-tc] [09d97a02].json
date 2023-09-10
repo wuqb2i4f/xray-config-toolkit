@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.115.178",
+            "address": "135.148.133.103",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "flow": "xtls-rprx-vision",
+                "id": "cba260cc-60c6-427e-9bd1-3749d122c250",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NDfFHpA4IqIwIEGsC_K-j3j7HpSzwifTE4MxB4qIBlE",
-          "serverName": "gsmarena.com",
-          "shortId": "3ea5e64e",
+          "fingerprint": "chrome",
+          "publicKey": "fhIDuitWmw17R3EnO5537vFbVrKf02ezg8DM-cssY0M",
+          "serverName": "www.speedtest.net",
+          "shortId": "d5dfe67bd57ca98e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

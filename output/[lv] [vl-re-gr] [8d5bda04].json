@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.120.191.150",
-            "port": 42519,
+            "address": "85.159.228.56",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "1b22eae3-ae47-4b5a-8b0e-067de5178a4e",
+                "flow": "",
+                "id": "d7baa1c9-ab89-4f08-8f68-26af4455832f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS-Telegram-Channel:@HELIX_SERVERS"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "Ogfl32wXWXWDHzaNxFKPuxZ5CKna1ST9KUpAnVEsd0I",
-          "serverName": "aldon.rocketsoftware.com",
-          "shortId": "e8a89357",
+          "publicKey": "BFC5LkEmynv9i-OJ_E2yhgWUZgh1x5hwEAKWQREu4Q0",
+          "serverName": "cdn.accuweather.com",
+          "shortId": "cc4d73e7",
           "show": false,
-          "spiderX": "/"
+          "spiderX": "/en/weather-forecasts"
         }
       },
       "tag": "proxy"
