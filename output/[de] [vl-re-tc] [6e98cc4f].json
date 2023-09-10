@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ch.servernet.cfd",
-            "port": 2096,
+            "address": "mtnrevolt.r8volt.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a5cef287-e2d3-49a2-8bb3-4b20e32d8ffc",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.servernet.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "94dPgXWW8guItDHE1LtcEoAc1ZvyQAD1jIR0ccZOkRE",
+          "serverName": "booking.qatarairways.com",
+          "shortId": "55a9b2f3",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

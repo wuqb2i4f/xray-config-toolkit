@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.shhproxy.cfd",
-            "port": 2096,
+            "address": "116.203.1.14",
+            "port": 23704,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0ba643e7-9b89-40f8-8d83-590d1d4d167c",
+                "id": "255f5d38-bade-4410-8b98-3e3053bfc3d9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["speedtest.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "aFq8W28TMF5BZV-Z8Kp1-wJmOeXdcUbc3Y9QbTcPnQM",
-          "serverName": "www.speedtest.net",
-          "shortId": "25988b1f",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

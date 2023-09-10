@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "164.90.229.166",
-            "port": 29772,
+            "address": "162.55.174.26",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3074e66a-62d1-464a-9049-16afaf60745f",
+                "flow": "xtls-rprx-vision",
+                "id": "ca1ecf58-c125-4543-bfe7-a9135a422f83",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "jqIV1gy4e8Py_wzt_2uq4xZOzYY-POSey7qa2tcleyU",
-          "serverName": "discord.com",
-          "shortId": "49653049",
+          "publicKey": "aO_UFI-7oMciQwXycPWPbTQbAeZAsPe5EgrEMSARJVo",
+          "serverName": "pinterest.com",
+          "shortId": "ee9b3344ed43",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

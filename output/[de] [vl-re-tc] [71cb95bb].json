@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ch.servernet.cfd",
-            "port": 2096,
+            "address": "49.13.9.243",
+            "port": 28742,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a5cef287-e2d3-49a2-8bb3-4b20e32d8ffc",
+                "id": "b3f5ab1e-6cb9-4120-d8bd-458f6864fd51",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.servernet.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "9shK_rVIpQS5kgo39rNQ26wK8IMzS6fX2dbBl9tM6AI",
+          "serverName": "creativecommons.org",
+          "shortId": "087c8be8",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

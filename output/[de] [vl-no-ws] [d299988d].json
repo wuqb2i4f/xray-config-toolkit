@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ch.servernet.cfd",
-            "port": 2096,
+            "address": "bia-to3.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a5cef287-e2d3-49a2-8bb3-4b20e32d8ffc",
+                "id": "213ff855-44cd-48c0-9aba-ed06b922eae1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.servernet.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

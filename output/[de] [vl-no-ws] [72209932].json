@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "m1.melov2ray.shop",
-            "port": 443,
+            "address": "bia-to-channel2.unlimiteddev.cloud",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1173336d-392c-48e8-a54a-e8b0b876d948",
+                "id": "213ff855-44cd-48c0-9aba-ed06b922eae1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to3.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "arab.melov2ray.store",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
