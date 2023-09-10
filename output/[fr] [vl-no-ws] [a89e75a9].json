@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn-11.kiava.fun",
-            "port": 443,
+            "address": "0913.outline-vpn.cloud",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
+                "flow": "",
+                "id": "1ad269d2-de71-4b1f-b9c2-61745c9c005b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "TElEcOmmuNiCAtIOn.PReMimSHop.iR"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "2BlllExX7T-23OoapZvXFsHMzeTPNi1sNF5ZiykwCzs",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "99",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

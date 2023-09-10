@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "usa3.connecton.surf",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "3550ce3dec",
-            "port": 443
+            "address": "kinsta-public.v2shield.cloud",
+            "port": 18140,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "telegram-id-Kinsta_Service",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@kinsta_service,@kinsta_service"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "usa3.connecton.surf",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "EIx54S-rKJGJtDgijXXpia7BsF02bEj9jE-B4R6-bS0",
+          "serverName": "speedtest.net",
+          "shortId": "0f513a68",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "135.148.133.103",
+            "address": "mci.vpnprosec.com",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "cba260cc-60c6-427e-9bd1-3749d122c250",
+                "flow": "",
+                "id": "4ef95246-ae5f-4337-9e1e-40159554af4b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "fhIDuitWmw17R3EnO5537vFbVrKf02ezg8DM-cssY0M",
-          "serverName": "www.speedtest.net",
-          "shortId": "d5dfe67bd57ca98e",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2,h3"],
+          "fingerprint": "",
+          "serverName": "V2ray.vpnxheykh.shop",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "usa2.connecton.surf",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "29dbe98050",
-            "port": 443
+            "address": "vo.foxnt-telegram-foxnt.shop",
+            "port": 14523,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "Azadi-az-inja-migzare",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "usa2.connecton.surf",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "wRwVLG9nBToz-UoNtMWfeywzlF4Drh43tR0T-aVw7V4",
+          "serverName": "www.speedtest.net",
+          "shortId": "e8a654f7",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
