@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.163.123",
-            "port": 443,
+            "address": "162.159.129.187",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "4ef95246-ae5f-4337-9e1e-40159554af4b",
+                "id": "ce4a5b14-6927-40c4-9f23-531e8c61eaea",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sbl.shabijichang.com"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "",
-          "serverName": "V2ray.vpnxheykh.shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
