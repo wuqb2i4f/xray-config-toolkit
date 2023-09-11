@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mr.zayn2012.sbs",
-            "port": 2096,
+            "address": "104.31.16.70",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f2b9d220-71e1-41d6-bede-c1f79579411b",
+                "id": "89a03828-4203-4a54-984a-3ab8ee8690b5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "MT_TEAM_IRAN_MT_TEAM_IRAN_MT_TEAM_IRAN_MT_TEAM_IRAN_MT_TEAM_IRAN_MT_TEAM_IRAN_MT_TEAM_IRAN_MT_TEAM_IRAN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "test.sobhan.fun"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "znbQEeL-2d3Qh3Ze_y-rHJF1cgq5eY7ZlQf9b6GieRs",
-          "serverName": "sourceforge.net",
-          "shortId": "ae938db8",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

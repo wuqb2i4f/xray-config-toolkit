@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.101.131.16",
-            "port": 40165,
+            "address": "host.parsservers.sbs",
+            "port": 54248,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "58fe38d4-73e4-4059-b29f-7ca3642090ce",
+                "id": "17b978b0-0abc-4ed2-9edc-f85d7a1f1fe3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zula.ir"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "nb8mgMbcGePyxE6txmKoJa1jb3iYiQquJ5EL6k1z-w8",
-          "serverName": "discord.com",
-          "shortId": "37796f13",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

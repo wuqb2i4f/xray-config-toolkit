@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.101.131.16",
-            "port": 34163,
+            "address": "bia-to3.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "df819c34-da48-4baf-9491-850c515752b7",
+                "id": "213ff855-44cd-48c0-9aba-ed06b922eae1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "n80YY7chQ8FGXRL0yomuacPwiIRItYGYrbkNLLkxODA",
-          "serverName": "discord.com",
-          "shortId": "c30b3613",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
