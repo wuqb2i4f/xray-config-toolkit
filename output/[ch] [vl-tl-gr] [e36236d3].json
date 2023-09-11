@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "85.159.211.229",
-            "port": 443,
+            "address": "mci.irn-vpn-ay.online",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9ac74dab-b2eb-459b-bad8-5cf8e09a809c",
+                "id": "e168c97d-1858-4d5d-ba19-3e3a6e24976b",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "RsVmtoNAkzAIb9_XFbUk1rjJgOAcWFLgf4ZGRbG4gj0",
-          "serverName": "www.zula.ir",
-          "shortId": "7f63d563",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "heyzendegi.irn-vpn-ay.online",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "artemis.sbs",
-            "port": 80,
+            "address": "m2rel.siasepid.sbs",
+            "port": 446,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b16e70b4-f1a2-4955-97f1-35940b1c99fa",
+                "id": "f233e263-7a30-45e8-9dff-738f51d197d7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "free-02.artemis-28.sbs"
-          },
-          "path": "/@Artemis_vpn"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@V2rayNgMat,@V2rayNgMat"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "EOJ7g8MfowwlpZg3D4dXwI_wGpluzU8HCznSRE-h200",
+          "serverName": "tgju.org",
+          "shortId": "7d6e3cf8",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

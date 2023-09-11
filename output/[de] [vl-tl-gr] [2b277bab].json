@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.vmessprotocol.propae.sbs",
-            "port": 8443,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "890056e2-2124-4c08-88e6-8689b47d4587",
+                "id": "f0d31373-6c78-4a8a-e0ff-ba54ca6f13b7",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Wr7p23hXPqTosvIBNNzybqy7jY4b5IyGesVUeR2J0nY",
-          "serverName": "expat.com",
-          "shortId": "4f8f0bbb",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Tm2.Bia-PolProxy.space",
+          "show": false
         }
       },
       "tag": "proxy"

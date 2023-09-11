@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "5.182.36.245",
+            "port": 42402,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "213ff855-44cd-48c0-9aba-ed06b922eae1",
+                "id": "a73bd113-a752-4c6f-b795-65f758f26c59",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "v_iHVe4_t9xACwA7bbk8s10SKIHYBYeQR3OESAGsHQE",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "faf70714",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
