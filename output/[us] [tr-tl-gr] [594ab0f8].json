@@ -45,33 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "host.parsservers.sbs",
-            "port": 54248,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "17b978b0-0abc-4ed2-9edc-f85d7a1f1fe3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "45.159.216.33",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "5b000ca0-89fd-4f62-bd1a-a10c0b5dc026",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zula.ir"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "kTqz28iTRrc3MPmiK"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ku8.vsaripn.com",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

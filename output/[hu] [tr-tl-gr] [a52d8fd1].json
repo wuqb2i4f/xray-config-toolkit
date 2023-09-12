@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "78.47.46.218",
-            "port": 47937,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "1b4dcda8-19bd-46a3-9ce2-89dff109c7c4",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "104.17.229.103",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "gJT9RNBLzh",
+            "port": 2083
           }
         ]
       },
@@ -67,17 +63,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+          "serviceName": "grpc22369"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "U5sWFT4xKleUbXdX2RI1pzV94LKAexUwWUPsqQAQTjI",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "e4dc9e0f",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "hungary.hot-coffee.site",
+          "show": false
         }
       },
       "tag": "proxy"

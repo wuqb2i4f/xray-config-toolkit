@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "m2rel.siasepid.sbs",
-            "port": 446,
+            "address": "ch.servernet.cfd",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f233e263-7a30-45e8-9dff-738f51d197d7",
+                "id": "32b4fda0-f0e3-404a-b165-a3e4cc588fd7",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@V2rayNgMat,@V2rayNgMat"
+          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "EOJ7g8MfowwlpZg3D4dXwI_wGpluzU8HCznSRE-h200",
-          "serverName": "tgju.org",
-          "shortId": "7d6e3cf8",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.servernet.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.irn-vpn-ay.online",
-            "port": 8443,
+            "address": "104.31.16.70",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e168c97d-1858-4d5d-ba19-3e3a6e24976b",
+                "id": "89a03828-4203-4a54-984a-3ab8ee8690b5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "test.sobhan.fun"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "heyzendegi.irn-vpn-ay.online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
