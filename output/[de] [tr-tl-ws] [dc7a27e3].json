@@ -49,29 +49,30 @@
       "settings": {
         "servers": [
           {
-            "address": "99.80.116.167",
+            "address": "104.16.67.38",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "password": "d8fd35e7-25f7-452d-852a-6ad1cfb3c9b8",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ftp.pardazesh.tech"
+          },
+          "path": "/1C1eEyrBbGr0r2HZ1tSkA"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "serverName": "ftp.pardazesh.tech",
           "show": false
         }
       },

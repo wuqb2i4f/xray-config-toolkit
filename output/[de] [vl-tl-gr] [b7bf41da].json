@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "azadi-az-inja-migzare.dgi000.store",
-            "port": 48451,
+            "address": "193.227.99.66",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "azadi_az_inja_migzare_mtn",
+                "id": "b2ad1254-986f-490c-a471-565cf36e0394",
                 "level": 8,
                 "security": "auto"
               }
@@ -69,15 +69,13 @@
           "multiMode": false,
           "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "4-r24HkImGdzQTLj9lCUNRvyS58a1txlgOSwvvUGkWE",
-          "serverName": "telewebion.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

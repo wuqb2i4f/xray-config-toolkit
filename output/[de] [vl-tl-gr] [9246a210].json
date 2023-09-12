@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.shhproxy.cfd",
-            "port": 2096,
+            "address": "104.31.16.65",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d90156b7-a3ab-4334-a9bc-f64d473338a1",
+                "id": "b2ad1254-986f-490c-a471-565cf36e0394",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "aFq8W28TMF5BZV-Z8Kp1-wJmOeXdcUbc3Y9QbTcPnQM",
-          "serverName": "www.speedtest.net",
-          "shortId": "25988b1f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

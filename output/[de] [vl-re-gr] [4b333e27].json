@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "52.19.184.80",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "yarito.yaritomedia.sbs",
+            "port": 30157,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "9cc769cc-86f5-4069-b67d-a999f990c514",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@yarito_media"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "mtN2xerRFFAzjVvBOs8HVHq7nEuztGbjyeQ4LFxCVnQ",
+          "serverName": "www.speedtest.net",
+          "shortId": "2d6f1ade",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
