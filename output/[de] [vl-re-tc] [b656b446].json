@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "324-join-v2raytz.sinotz.tk",
+            "address": "18.184.119.229",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "flow": "xtls-rprx-vision",
+                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "eJEqYDtEPAv3vYqKax5yl9W0yAnZg7aSYRdskhG3C1c",
-          "serverName": "gsmarena.com",
-          "shortId": "3ea5e64e",
+          "fingerprint": "chrome",
+          "publicKey": "JuUa0v-SZbHIv6ZXk5NL_P1-mkOc-2KXvFUZBFokL2s",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "99",
           "show": false,
           "spiderX": "/"
         }

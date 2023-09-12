@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.135.80.142",
-            "port": 443,
+            "address": "5.182.36.245",
+            "port": 42402,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "vpn_xw",
+                "flow": "xtls-rprx-vision",
+                "id": "5ef92530-c638-4b94-a39c-ecaab154e985",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "VhFVNw6h97K0jFKtUCRPUiB4kYMinGKpsR8cbozg4E8",
-          "serverName": "game-center.ir",
-          "shortId": "e02ba8a4",
+          "publicKey": "v_iHVe4_t9xACwA7bbk8s10SKIHYBYeQR3OESAGsHQE",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "faf70714",
           "show": false,
           "spiderX": "/"
         }

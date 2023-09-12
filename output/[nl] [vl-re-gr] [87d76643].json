@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.143.233.120",
-            "port": 80,
+            "address": "165.232.93.25",
+            "port": 17420,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7991189d-514d-4f6a-863e-abb0adefbfb0",
+                "id": "azadi-az-inja-migzare",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ger6.appmeli1.top"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "kJeu6F6Npyfy3QDRn3XtV_LdwFdCIHiOUIAVas-Q_g4",
+          "serverName": "www.speedtest.net",
+          "shortId": "3d542b6f",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
