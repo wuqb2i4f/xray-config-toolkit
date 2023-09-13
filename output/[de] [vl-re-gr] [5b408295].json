@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "sg1.wyhkaa0.cf",
-            "port": 80,
+            "address": "xsv2ray.xalixv2ray.space",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "f4575c03-8145-4612-a1b2-7a48117f6fc2",
+                "id": "a89f5e91-d14a-49f2-8b24-c1ea581d7c92",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sg1.wyhkaa0.cf"
-          },
-          "path": "/TG:@hkaa0"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@XsV2ray,@XsV2ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "hbmwoSOK2SM0C_FmhWJJZM-up8d4dDOMscmyCA8gynk",
+          "serverName": "www.speedtest.net",
+          "shortId": "7e4e8776",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

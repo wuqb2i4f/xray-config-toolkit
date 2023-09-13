@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "telegram-id.bimnet.sbs",
-            "port": 25376,
+            "address": "bia-to-channel.vmessorg.fun",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4544626f-c31b-4a4e-ce54-4bee972c774d",
+                "id": "dcfb9798-cd2e-4944-944b-fccf0b3a5ca7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "nwYE40buQ-zQYfYWs-uhJwSyrui54ZkQ41TRUOc8mzk",
-          "serverName": "iranhost.com",
-          "shortId": "e70c9bf7",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
