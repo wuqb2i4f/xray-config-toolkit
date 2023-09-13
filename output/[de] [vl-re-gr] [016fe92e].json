@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "13.43.156.88",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "titan.v2rayng.mmdgogoli.top",
+            "port": 37588,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "cabd5271-f0c8-4219-b677-92bc7dc327d8",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@TITAN_V2rayng,@TITAN_V2rayng,@TITAN_V2rayng,@TITAN_V2rayng,@TITAN_V2rayng"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "0Zz9jLwgPkRd-fKFL42olEkZ7iCWQTMoNW0k_0wFzRE",
+          "serverName": "sourceforge.net",
+          "shortId": "8090dd8e",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

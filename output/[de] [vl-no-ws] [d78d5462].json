@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.bluemoien.space",
-            "port": 2096,
+            "address": "bia-to-channel.vmessorg.fun",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a2b1694d-39fc-4cb4-843b-ed39845a1f9c",
+                "id": "c86a8639-7f20-42ae-a74b-534d179e73ed",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Tm2.Bia-PolProxy.space",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

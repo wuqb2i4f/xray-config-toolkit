@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "m2rel.siasepid.sbs",
-            "port": 446,
+            "address": "162.159.129.187",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "5f690741-3287-4d7d-ae1e-fc1e4d51b7d5",
+                "id": "69db9965-a35c-4a77-bf4b-d15710548b06",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@V2rayNgMat,@V2rayNgMat"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sbl.shabijichang.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "EOJ7g8MfowwlpZg3D4dXwI_wGpluzU8HCznSRE-h200",
-          "serverName": "tgju.org",
-          "shortId": "7d6e3cf8",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
