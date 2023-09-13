@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.21.245",
-            "port": 38605,
+            "address": "bia-to-channel2.unlimiteddev.cloud",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0129f8a7-994e-4f42-d265-5a6cf605ad4c",
+                "id": "2f1bd418-63af-4824-ff8b-45a289ad9cd1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to3.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "20_CNGT1OPwtSW1HQgWHY7yxBTFaHQAQwDcxNkMhxkY",
-          "serverName": "temp-mail.org",
-          "shortId": "f9",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

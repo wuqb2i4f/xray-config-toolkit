@@ -45,35 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "104.16.67.38",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "d8fd35e7-25f7-452d-852a-6ad1cfb3c9b8",
-            "port": 443
+            "address": "m2rel.siasepid.sbs",
+            "port": 446,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "5f690741-3287-4d7d-ae1e-fc1e4d51b7d5",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ftp.pardazesh.tech"
-          },
-          "path": "/1C1eEyrBbGr0r2HZ1tSkA"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@V2rayNgMat,@V2rayNgMat"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "ftp.pardazesh.tech",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "EOJ7g8MfowwlpZg3D4dXwI_wGpluzU8HCznSRE-h200",
+          "serverName": "tgju.org",
+          "shortId": "7d6e3cf8",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

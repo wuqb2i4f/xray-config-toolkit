@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "rog.vizviz.online",
-            "port": 8443,
+            "address": "128.140.6.99",
+            "port": 969,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ad093cac-d8fc-48b6-b78c-b8b2c4e30040",
+                "id": "c45abaff-b293-441e-ba61-f6bcbda1b5d6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,28 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": [""],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@AntiFilterChV2"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "ytPLn3HLD604TLitIyM6E6kTUZ1xfJVDpracwPA3iF4",
+          "serverName": "hoog.AhV2ray.fun",
+          "shortId": "15ca221823",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

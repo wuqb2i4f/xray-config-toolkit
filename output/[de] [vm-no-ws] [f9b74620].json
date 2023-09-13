@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "xsv2ray.xalixv2ray.space",
-            "port": 443,
+            "address": "104.27.19.105",
+            "port": 2052,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "ef433bee-efae-40e5-aa99-f36c11ed23af",
+                "id": "345d8dde-084b-478e-aa8d-5fb062652889",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de2.biqibao.site"
+          },
+          "path": "/public?ed=4096"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "hbmwoSOK2SM0C_FmhWJJZM-up8d4dDOMscmyCA8gynk",
-          "serverName": "www.speedtest.net",
-          "shortId": "7e4e8776",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

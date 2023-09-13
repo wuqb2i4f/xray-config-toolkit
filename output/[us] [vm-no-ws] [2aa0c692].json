@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
-            "port": 8443,
+            "address": "asb3.shabijichang.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "6f4dee98-021d-4078-91ff-c29a61247db9",
+                "id": "ef591064-640a-48e0-a511-623d5c0e67e9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@L_AGVPN13"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "asb3.shabijichang.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "mAckkJCS1BAwhhfwJcmF9g3ExyxCA2PTJXjGkRoJvVs",
-          "serverName": "corporate.accuweather.com",
-          "shortId": "eee6f73a",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

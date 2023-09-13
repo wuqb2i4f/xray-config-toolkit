@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel.vmessorg.fun",
-            "port": 80,
+            "address": "158.179.22.94",
+            "port": 40398,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c86a8639-7f20-42ae-a74b-534d179e73ed",
+                "id": "azadi-az-inja-migzare-irancell",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "oj-UCJXKDb3TndPzqsmHOLTr6dGTMloMEulTv5X7Who",
+          "serverName": "telewebion.com",
+          "shortId": "7fe2d41c",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

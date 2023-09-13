@@ -45,20 +45,19 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "sw-15.235.45.203.nip.io",
-            "port": 443,
+            "address": "telegram-id.bimnet.sbs",
+            "port": 25376,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "eb713638-ec89-49e5-8358-b00a472f788e",
+                "id": "4544626f-c31b-4a4e-ce54-4bee972c774d",
                 "level": 8,
-                "security": "aes-128-gcm"
+                "security": "auto"
               }
             ]
           }
@@ -68,25 +67,19 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["internet.life.com.by"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "nwYE40buQ-zQYfYWs-uhJwSyrui54ZkQ41TRUOc8mzk",
+          "serverName": "iranhost.com",
+          "shortId": "e70c9bf7",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

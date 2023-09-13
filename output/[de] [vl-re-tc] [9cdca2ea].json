@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.vpnprosec.com",
-            "port": 8443,
+            "address": "cdn7.kiava.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "6ca015f2-fa9d-4b88-a69e-0fb146d8fcf1",
+                "flow": "xtls-rprx-vision",
+                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@free_v2rayyy"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "Freev2rayyy.Mamaliam.Site",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "FeT9A8Hv24ffvw5f_08B6SPzwT8-o-n7mGjiniFTGQ0",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "99",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
