@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.232.91.68",
-            "port": 22730,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1dd43aff-ecfa-4348-929d-ffe4f38b83aa",
+                "id": "ea69b7f2-a093-449f-b5c5-b1708175edd9",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "C3fiuPXQkDMM3hjBKYWmUVZ2lO4Sn2NpFK73JbIdj28",
-          "serverName": "discord.com",
-          "shortId": "4a59ca84",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Tm2.Bia-PolProxy.space",
+          "show": false
         }
       },
       "tag": "proxy"

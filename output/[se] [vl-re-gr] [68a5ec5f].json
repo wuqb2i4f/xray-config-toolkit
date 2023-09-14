@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.249.154",
-            "port": 443,
+            "address": "70.34.211.27",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "29148cc8-2ee2-4f9e-8567-f1b5bbbb502c",
+                "flow": "",
+                "id": "b8f70b8f-1d9e-48be-b513-78d09b3ed1e3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Q2PKO5dwZsjwXrzTrc78a7PofR6whNf8iRh9nJJRJxE",
-          "serverName": "www.speedtest.net",
-          "shortId": "051d0a50",
+          "fingerprint": "chrome",
+          "publicKey": "Czg5D2DthaGxguDD4j_Wij8o3sAV7KQooUUAP6gXHDk",
+          "serverName": "corporate.accuweather.com",
+          "shortId": "a08f0734",
           "show": false,
-          "spiderX": "/"
+          "spiderX": "/company/careers/"
         }
       },
       "tag": "proxy"
