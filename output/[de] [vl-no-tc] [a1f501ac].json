@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.117.241",
-            "port": 22081,
+            "address": "m2rel.siasepid.sbs",
+            "port": 234,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "80abafbf-26ce-4612-8716-a057dd42ad30",
+                "id": "Service-V2rayNgmat-",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["mat2.siavash.sbs"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "307qSh3OiZu40_Vt9UbjoCYqdV7ADcJ9At6qMldJPmE",
-          "serverName": "a.gsmarena.com",
-          "shortId": "c052cef8",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

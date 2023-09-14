@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci-msv2ray.ddns.net",
-            "port": 2087,
+            "address": "cdn3.kiava.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "8fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "flow": "xtls-rprx-vision",
+                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "tiRZRvBIepMObqLUQTx3l9Bw1rn0Cz3bq8SDObhxZFM",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "99",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

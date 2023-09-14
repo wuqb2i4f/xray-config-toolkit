@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.12.198.99",
-            "port": 31107,
+            "address": "srv.rayvps.link",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ae96e787-04f6-4cec-b9a6-bd7221d620c5",
+                "id": "5bda2f3e-7bc3-41e2-d63d-abf31aef79fe",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,28 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["speedtest.net"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@RayVPS,@RayVPS,@RayVPS,@RayVPS,@RayVPS,@RayVPS"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "iP7OWwNKIZkcGUFs3Gap-p-gkxzEQDRKwwSEjvxiUhA",
+          "serverName": "ea.com",
+          "shortId": "1f7d3c14",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
