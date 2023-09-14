@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "n.t.khoresht.xyz",
-            "port": 8880,
+            "address": "hw7.kaghazacharrangi.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "018f0720-11a8-48e3-93ac-ee8618e6e0f8",
+                "flow": "",
+                "id": "4acc4a4f-c235-48c7-cc49-cbd0cd0413b8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "salVPCCKQUee17ueTWmH3J49NI0tfA6eiAopG-PSQjc",
-          "serverName": "apple.com",
-          "shortId": "c8",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

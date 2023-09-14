@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "all.vpncustomize.cam",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1cf75eea-bee1-420c-80a8-fedd8656bceb",
+                "id": "bdb088e8-badf-4c28-9181-59d73a640602",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "V2ray-NAPSTERNET-IRANCELL-iran-fair-MKH.VARZESH3-cdn.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "gr.vpnmoon.tk",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1cf75eea-bee1-420c-80a8-fedd8656bceb",
+                "id": "d3e64b47-3627-420a-8830-02e6dc6f9d5e",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
+            "Host": ""
           },
           "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1,h2,h3"],
+          "fingerprint": "chrome",
+          "serverName": "",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "shabdiz.kermanshah.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "1cf75eea-bee1-420c-80a8-fedd8656bceb",
+                "flow": "xtls-rprx-vision",
+                "id": "e9285aa6-c169-4b00-a930-aec4eb571999",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "yvST7IS7c400DGyW4HwHI2c2ZrV8znWHZGV8jbiz4Wo",
+          "serverName": "pinterest.com",
+          "shortId": "8911ac48",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

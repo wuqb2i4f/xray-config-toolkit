@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "64.68.192.1",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1cf75eea-bee1-420c-80a8-fedd8656bceb",
+                "id": "e9285aa6-c169-4b00-a930-aec4eb571999",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
+            "Host": "xp0.pardazesh.tech"
           },
-          "path": "/"
+          "path": "/xoWpvGlwCsT4uWRYnp9ok"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "xp0.pardazesh.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

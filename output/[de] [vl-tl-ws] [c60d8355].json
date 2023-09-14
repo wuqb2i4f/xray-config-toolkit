@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "158.179.22.94",
-            "port": 14043,
+            "address": "104.18.202.232",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "azadi-az-inja-migzare-hamrah",
+                "id": "e9285aa6-c169-4b00-a930-aec4eb571999",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "0px.pardazesh.tech"
+          },
+          "path": "/xoWpvGlwCsT4uWRYnp9ok"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "VhxNu_aLUsA6RHPHolf4ohGYKUpus5ZCs8DUES5iWmc",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "e241d11f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "0px.pardazesh.tech",
+          "show": false
         }
       },
       "tag": "proxy"

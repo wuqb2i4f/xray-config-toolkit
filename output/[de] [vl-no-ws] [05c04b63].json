@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "70.34.211.27",
-            "port": 8443,
+            "address": "online.4zkaban.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b8f70b8f-1d9e-48be-b513-78d09b3ed1e3",
+                "id": "e277b61c-4b50-4b96-9703-6f71c566ede1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "13.ok-config-6.buzz"
+          },
+          "path": "/@Ok_Config"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Czg5D2DthaGxguDD4j_Wij8o3sAV7KQooUUAP6gXHDk",
-          "serverName": "corporate.accuweather.com",
-          "shortId": "a08f0734",
-          "show": false,
-          "spiderX": "/company/careers/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

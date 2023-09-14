@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.182.36.245",
-            "port": 42402,
+            "address": "mtn.moienmusic.space",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "5ef92530-c638-4b94-a39c-ecaab154e985",
+                "flow": "",
+                "id": "28978b45-df1b-431b-d4e1-7c47c7e242cc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "v_iHVe4_t9xACwA7bbk8s10SKIHYBYeQR3OESAGsHQE",
-          "serverName": "dash.cloudflare.com",
-          "shortId": "faf70714",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Tm2.Bia-PolProxy.space",
+          "show": false
         }
       },
       "tag": "proxy"
