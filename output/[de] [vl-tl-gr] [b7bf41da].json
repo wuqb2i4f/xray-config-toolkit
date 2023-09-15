@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "m2rel.siasepid.sbs",
-            "port": 446,
+            "address": "193.227.99.66",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d740b0da-b810-4145-a645-862f6b88862d",
+                "id": "ea3fc34c-aded-4226-adf0-f9c9dc307cf3",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@V2rayNgMat,@V2rayNgMat"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "EOJ7g8MfowwlpZg3D4dXwI_wGpluzU8HCznSRE-h200",
-          "serverName": "tgju.org",
-          "shortId": "7d6e3cf8",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

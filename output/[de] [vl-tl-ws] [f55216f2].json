@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join-v2raytz.sinotz.tk",
-            "port": 2087,
+            "address": "64.68.192.1",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "e9285aa6-c169-4b00-a930-aec4eb571999",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "xp0.pardazesh.tech"
+          },
+          "path": "/xoWpvGlwCsT4uWRYnp9ok"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "us.MsV2ray.cfd",
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "xp0.pardazesh.tech",
           "show": false
         }
       },
