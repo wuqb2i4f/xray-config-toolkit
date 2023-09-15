@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.45.124",
-            "port": 443,
+            "address": "5.182.36.245",
+            "port": 42402,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "1673cf06-6ca1-4047-b18d-c36d4fff1467",
+                "flow": "xtls-rprx-vision",
+                "id": "5ef92530-c638-4b94-a39c-ecaab154e985",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "YZLZ1fcvcbKBNub1b2FRULWCaf2rVKGb6f_kUkZAZSs",
-          "serverName": "www.zula.ir",
-          "shortId": "f9ea1411",
+          "publicKey": "v_iHVe4_t9xACwA7bbk8s10SKIHYBYeQR3OESAGsHQE",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "faf70714",
           "show": false,
           "spiderX": "/"
         }
