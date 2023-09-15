@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.moienmusic.space",
-            "port": 2053,
+            "address": "5.161.157.204",
+            "port": 7728,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "6bbe681a-f36e-4be4-cdf5-a5515a6ca4b5",
+                "flow": "xtls-rprx-vision",
+                "id": "c0e78686-c274-49dd-9536-23b10b90ac25",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Tm2.Bia-PolProxy.space",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "1Ae5mLdvRb1GUUmv_L-vL_M5Fz3MPsUC0P4On0lLOxE",
+          "serverName": "colorlib.com",
+          "shortId": "113195cd7e4808d0",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.135.78.32",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "5.75.235.33",
+            "port": 13269,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "f6a52502-425f-4fdd-b95f-5a63ca730448",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "-n6VkQUOW7XqE2fcHBqCMyaZL8P_magbLdmWFMkBjGI",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "a2e1119a",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

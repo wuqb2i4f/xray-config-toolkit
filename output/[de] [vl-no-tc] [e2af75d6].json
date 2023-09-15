@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "54.37.6.28",
-            "port": 2053,
+            "address": "116.203.145.173",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7b844b86-be8e-41ae-b296-b3f4eb5143e4",
+                "id": "7a3ad611-25dc-49c4-bc91-c17fb226f292",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "xyz"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "discordapp.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

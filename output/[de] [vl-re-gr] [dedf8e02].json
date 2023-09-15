@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.195.25.139",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "iran.v2shield.cloud",
+            "port": 50555,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "5cffc736-7853-467d-86f5-4a5917c8c71f",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "eHG9zt58nUJYLnECMhiBRD1VRsXN1T-Nt6auJxHpum8",
+          "serverName": "zakiehtejarat.com",
+          "shortId": "60368fae",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
