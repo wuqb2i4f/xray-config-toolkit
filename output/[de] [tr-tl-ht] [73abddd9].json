@@ -45,36 +45,32 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mci.vpnprosec.com",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "dbb2cf29-232e-42f1-89d8-9379bf64dd12",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "116.203.9.26",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "MSv52GMOzQ",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "SvnTeam,SvnTeam,SvnTeam,SvnTeam"
+        "network": "h2",
+        "httpSettings": {
+            "host": ["de1.connecton.surf"],
+            "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
+          "alpn": ["h2"],
           "fingerprint": "",
-          "serverName": "Site.SvnRealliTy.online",
+          "serverName": "de1.vpncustomize.website",
           "show": false
         }
       },
