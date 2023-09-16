@@ -49,29 +49,28 @@
       "settings": {
         "servers": [
           {
-            "address": "13.36.156.95",
+            "address": "173.245.58.9",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "password": "B3KnUEekhq",
+            "port": 2083
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "grpc56838"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
+          "alpn": ["h2"],
           "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "serverName": "exyu.flchlast.online",
           "show": false
         }
       },

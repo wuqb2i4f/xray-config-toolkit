@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.arv2ray.host",
-            "port": 443,
+            "address": "5.161.157.204",
+            "port": 7728,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "294a37e8-3f23-4cd4-aceb-b9c5d285dad5",
+                "flow": "xtls-rprx-vision",
+                "id": "c0e78686-c274-49dd-9536-23b10b90ac25",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tm.ArV2ray.fun",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "1Ae5mLdvRb1GUUmv_L-vL_M5Fz3MPsUC0P4On0lLOxE",
+          "serverName": "colorlib.com",
+          "shortId": "113195cd7e4808d0",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

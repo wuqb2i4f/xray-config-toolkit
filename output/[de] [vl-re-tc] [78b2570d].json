@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.83.240",
-            "port": 443,
+            "address": "exyu.flchlast.online",
+            "port": 36363,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "02DD674F-898E-4835-9958-97670C4CCA71",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "54d8b9fd-bbdb-46bb-96d6-c0cd1d45c605",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "steep-leaf-0f06.sourgalmb1379.workers.dev"
-          },
-          "path": "/speedtest/Dusseldorf.kotick.site"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "steep-leaf-0f06.sourgalmb1379.workers.dev",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "TO9hpVr4RyAJP2hd4aJw_fIcgVlATwruPNuv0haNHSk",
+          "serverName": "pinterest.com",
+          "shortId": "76a84981",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

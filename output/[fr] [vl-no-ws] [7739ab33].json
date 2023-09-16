@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "service.soltaneweb.site",
-            "port": 32945,
+            "address": "arvan.servermeli.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1dacf300-a608-467d-8e18-7f9b3ee07c1c",
+                "id": "c7afdb94-dfa4-4442-9dd8-d63130214750",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr6.appmeli1.top"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "IDVFfK7et6SzSqsUvY1PpfvmRP9Oa-Q4_piGtUX5xVU",
-          "serverName": "cms.accuweather.com",
-          "shortId": "aa4d5273",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

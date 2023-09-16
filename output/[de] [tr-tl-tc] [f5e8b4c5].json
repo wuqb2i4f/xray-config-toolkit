@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "cdn15.kiava.fun",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "beb7eade-bca7-4d97-9ac4-f13c6e32d178",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.79.81.112",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "NTGHbmmclNAtKlPGyOXXKpl_xqn0l1EYL-LdyORITRI",
-          "serverName": "cdn.kiava.fun",
-          "shortId": "99",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

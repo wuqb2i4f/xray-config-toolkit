@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.232",
-            "port": 443,
+            "address": "ahangb.ahangbox.xyz",
+            "port": 12345,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "e9285aa6-c169-4b00-a930-aec4eb571999",
+                "id": "3dd49faf-cf07-41bc-beb3-51279a174ee7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "0px.pardazesh.tech"
-          },
-          "path": "/xoWpvGlwCsT4uWRYnp9ok"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "0px.pardazesh.tech",
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "",
           "show": false
         }
       },
