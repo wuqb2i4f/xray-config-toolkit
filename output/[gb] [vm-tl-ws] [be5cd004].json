@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.254.123",
-            "port": 34196,
+            "address": "net-private001.ddns.net",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 1,
                 "encryption": "",
                 "flow": "",
-                "id": "8b10bfe9-fae5-408d-9bee-61f6a5af7161",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,13 +65,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ophelia.mom"
+          },
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ophelia.mom",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

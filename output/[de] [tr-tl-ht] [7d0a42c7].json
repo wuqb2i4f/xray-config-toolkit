@@ -45,39 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "reality.punisher-shop-v2rayng.cfd",
-            "port": 12608,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "2404f389-f097-44e8-bff0-14bf753b2477",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "de1.vpncustomize.website",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "TXmOZ10X9R",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@puni_shop_v2rayNG"
+        "network": "h2",
+        "httpSettings": {
+            "host": ["de1.connecton.surf"],
+            "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "xEFvEL3nHURZhYSQMlSTogRaSz5BnbaHnxT3a09sInA",
-          "serverName": "www.speedtest.net",
-          "shortId": "37e6e694",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2"],
+          "fingerprint": "safari",
+          "serverName": "de1.vpncustomize.website",
+          "show": false
         }
       },
       "tag": "proxy"

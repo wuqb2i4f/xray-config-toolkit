@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bythetimeicouldivedone.nolite-te-bastardes-carborun-dorum.sbs",
-            "port": 2086,
+            "address": "135.181.86.15",
+            "port": 56085,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "51f70867-f9e5-47ed-8abd-8e68bd5ac792",
+                "id": "f2e29b5d-cfab-428f-85af-c03c939da1c4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,26 +64,10 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["www.cloudflare.com"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy,@free_v2rayyy,@free_v2rayyy@free_v2rayyy"
         },
         "security": "none"
       },
