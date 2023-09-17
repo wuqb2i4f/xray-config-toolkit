@@ -49,28 +49,29 @@
       "settings": {
         "servers": [
           {
-            "address": "499-join-v2raytz.sinotz.tk",
+            "address": "18.194.71.121",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "yZOZ8GWc8K",
-            "port": 443
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["de1.connecton.surf"],
-            "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
+          "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "de1.vpncustomize.website",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

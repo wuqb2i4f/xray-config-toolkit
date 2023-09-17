@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.85.112",
-            "port": 443,
+            "address": "104.31.16.65",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "Source-ipV2Ray",
+                "id": "ec67bf33-3cd1-4e16-88aa-1bc5d566b30b",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ipV2Ray"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "SpPP_pJjr0CQZfTEdYAfyQ9vG8ui5cYjmreKS8cUuRE",
-          "serverName": "gsmarena.com",
-          "shortId": "a90ee22c",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

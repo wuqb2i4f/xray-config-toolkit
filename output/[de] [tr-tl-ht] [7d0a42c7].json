@@ -45,39 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "164.90.212.69",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "fce44004-a665-4010-ab0c-39e462bddb0b",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "de1.vpncustomize.website",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "yZOZ8GWc8K",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw"
+        "network": "h2",
+        "httpSettings": {
+            "host": ["de1.connecton.surf"],
+            "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "kfXlonSzifkzo3uRMa4BFiFkrafaRxriiaGyNHpp-Dw",
-          "serverName": "mihanyas.ir",
-          "shortId": "3ad6cc32",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "de1.vpncustomize.website",
+          "show": false
         }
       },
       "tag": "proxy"

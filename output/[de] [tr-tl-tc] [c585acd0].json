@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "167.235.200.144",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "dc27e58e-99d4-4521-b882-5f95ee9fd7c2",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "195.201.113.253",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "yZOZ8GWc8K",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "MftenN6zuL5e0MqPXegO"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "JRy9FWZT8NzWXqRDqUhMTDpqoL9klP1TucnTyeoY9zY",
-          "serverName": "wolf-chanellee.ir",
-          "shortId": "cce09792e2",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "de.vpncustomize.website",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:ace8:8439",
-            "port": 8443,
+            "address": "mci-msv2ray.ddns.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "384b0c77-1d60-4932-aeb6-ec3cdabd2c63",
+                "id": "2fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "CYG_tgk83MHPE8c9yQazJhg4buWR9jMHOttRcOGvSiQ",
-          "serverName": "pinterest.com",
-          "shortId": "0a75452b",
-          "show": false,
-          "spiderX": "/videos/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "tel.MsV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

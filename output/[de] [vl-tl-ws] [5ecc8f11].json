@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sanghou.zoom121.cfd",
-            "port": 59467,
+            "address": "in1rfsblhhoh.azborn.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ce998ac1-020e-4f5a-b1a4-f7e72e07fb53",
+                "id": "0f3baa1b-58fa-4cc2-a3d7-d834bb8d970c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,36 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": [""],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "aZ7-CXEviKMQOS9FCufx_to0_a6UYllL06q70px-Bh8",
-          "serverName": "www.nasa.gov",
-          "shortId": "23441480",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "in1rfsblhhoh.azborn.ir",
+          "show": false
         }
       },
       "tag": "proxy"
