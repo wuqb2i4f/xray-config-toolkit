@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "164.90.212.69",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a709a15a-65bc-4e95-8873-7f088c23ea55",
+                "id": "fce44004-a665-4010-ab0c-39e462bddb0b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "kfXlonSzifkzo3uRMa4BFiFkrafaRxriiaGyNHpp-Dw",
+          "serverName": "mihanyas.ir",
+          "shortId": "3ad6cc32",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

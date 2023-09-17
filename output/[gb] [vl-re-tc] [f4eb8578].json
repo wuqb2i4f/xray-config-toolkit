@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "telegram-id.vmessir.online",
+            "port": 25999,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a709a15a-65bc-4e95-8873-7f088c23ea55",
+                "id": "021592cf-5bc3-43b9-ea1e-da1496afb76f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "oiBe3mprt0wvVqf3E1kzb6dQYs1a0k8F62-Hpuq8fWg",
+          "serverName": "vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--",
+          "shortId": "ee",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "104.21.211.74",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a709a15a-65bc-4e95-8873-7f088c23ea55",
+                "id": "41881e43-05c4-445b-8844-9221fc9eeeae",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
+            "Host": "free.de.moh539.link"
           },
-          "path": "/"
+          "path": "/watashi_vpn"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "free.de.moh539.link",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

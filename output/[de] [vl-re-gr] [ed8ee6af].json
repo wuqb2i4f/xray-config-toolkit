@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "167.235.200.144",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a709a15a-65bc-4e95-8873-7f088c23ea55",
+                "id": "dc27e58e-99d4-4521-b882-5f95ee9fd7c2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "MftenN6zuL5e0MqPXegO"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "JRy9FWZT8NzWXqRDqUhMTDpqoL9klP1TucnTyeoY9zY",
+          "serverName": "wolf-chanellee.ir",
+          "shortId": "cce09792e2",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

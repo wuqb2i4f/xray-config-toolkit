@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel2.unlimiteddev.cloud",
-            "port": 80,
+            "address": "::ffff:ace8:2720",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a709a15a-65bc-4e95-8873-7f088c23ea55",
+                "id": "c57b4c56-7689-40ad-aa20-ebd8a423a307",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to3.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "yFy2atasIhStH8jIsbjO7CGpvVAgFuGlFswi2Iv-vHo",
+          "serverName": "zula.ir",
+          "shortId": "a0755826",
+          "show": false,
+          "spiderX": "/system-requirements"
+        }
       },
       "tag": "proxy"
     },
