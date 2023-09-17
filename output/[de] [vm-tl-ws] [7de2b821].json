@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "138.2.44.211",
-            "port": 20081,
+            "address": "162.159.254.0",
+            "port": 443,
             "users": [
               {
-                "alterId": 64,
+                "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "593b8525-0c48-4b0f-d9af-2d73a9148973",
+                "id": "DCE76061-EE65-49DB-997C-A6A880DADE3A",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,13 +65,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "rapid-queen-5b2c.barmasi4.workers.dev"
+          },
+          "path": "/speedtest/Dusseldorf.kotick.site"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "rapid-queen-5b2c.barmasi4.workers.dev",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

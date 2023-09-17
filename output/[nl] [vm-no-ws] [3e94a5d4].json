@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "in1rfsblhhoh.azborn.ir",
-            "port": 443,
+            "address": "185.162.235.250",
+            "port": 2054,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "0f3baa1b-58fa-4cc2-a3d7-d834bb8d970c",
+                "id": "6f117af4-cd52-40f8-9236-7c5e3f357cc8",
                 "level": 8,
                 "security": "auto"
               }
@@ -69,16 +70,9 @@
           "headers": {
             "Host": ""
           },
-          "path": "/"
+          "path": "/socket.io"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "in1rfsblhhoh.azborn.ir",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

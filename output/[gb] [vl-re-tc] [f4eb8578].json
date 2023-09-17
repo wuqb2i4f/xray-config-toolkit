@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mkh.arv2ray.host",
-            "port": 443,
+            "address": "telegram-id.vmessir.online",
+            "port": 25999,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e2f399b7-8818-4629-b5b8-b99f05f4feec",
+                "id": "c0620a03-fc6d-409d-f295-1e7d6f1f1129",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tm.ArV2ray.fun",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "oiBe3mprt0wvVqf3E1kzb6dQYs1a0k8F62-Hpuq8fWg",
+          "serverName": "vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--vmessir--",
+          "shortId": "ee",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

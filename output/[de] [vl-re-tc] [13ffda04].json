@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mkh.arv2ray.host",
+            "address": "91.107.137.115",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e2f399b7-8818-4629-b5b8-b99f05f4feec",
+                "flow": "xtls-rprx-vision",
+                "id": "f507ace0-5033-4d51-b653-3af027bd7d82",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tm.ArV2ray.fun",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "5bAubweYp3900spO1vJCKtPaWPCDCZZXpPXS73HB2lw",
+          "serverName": "ea.com",
+          "shortId": "92cebb1a362072fa",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
