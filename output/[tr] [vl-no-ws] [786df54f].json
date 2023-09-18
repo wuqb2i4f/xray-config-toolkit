@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.vpnprosec.com",
-            "port": 443,
+            "address": "78.135.80.74",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "15597f53-3f4b-499e-8c9c-98250f82eae7",
+                "id": "63dd9948-4015-47e2-9c1d-e193bd904c84",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "SvnTeam,SvnTeam,SvnTeam,SvnTeam"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "Site.SvnRealliTy.online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

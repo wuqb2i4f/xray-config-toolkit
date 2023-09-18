@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mci.vpnprosec.com",
-            "port": 443,
+            "address": "datacenter.ct.02.biqibao.site",
+            "port": 2052,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "15597f53-3f4b-499e-8c9c-98250f82eae7",
+                "id": "acf623fb-8975-41d3-891d-c9c6f19864c2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "SvnTeam,SvnTeam,SvnTeam,SvnTeam"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "us-miami.biqibao.site"
+          },
+          "path": "/public"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "Site.SvnRealliTy.online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mci.vpnprosec.com",
-            "port": 443,
+            "address": "172.67.184.53",
+            "port": 8443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "15597f53-3f4b-499e-8c9c-98250f82eae7",
+                "id": "aa0c4744-9568-4bee-a08b-73668a9b2a42",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "SvnTeam,SvnTeam,SvnTeam,SvnTeam"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cloudconebbb.gorgorchicken.one"
+          },
+          "path": "/cloudconebbb"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "Site.SvnRealliTy.online",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cloudconebbb.gorgorchicken.one",
           "show": false
         }
       },

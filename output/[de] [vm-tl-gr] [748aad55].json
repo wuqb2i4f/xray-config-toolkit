@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mci.vpnprosec.com",
-            "port": 443,
+            "address": "ahangb.ahangbox.xyz",
+            "port": 12345,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "15597f53-3f4b-499e-8c9c-98250f82eae7",
+                "id": "e780574d-34d4-43e7-8e03-936a2a1b2763",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,14 +68,14 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "SvnTeam,SvnTeam,SvnTeam,SvnTeam"
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["http/1.1,h2"],
           "fingerprint": "",
-          "serverName": "Site.SvnRealliTy.online",
+          "serverName": "",
           "show": false
         }
       },
