@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ahangb.ahangbox.xyz",
-            "port": 12345,
+            "address": "193.227.99.66",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "e780574d-34d4-43e7-8e03-936a2a1b2763",
+                "id": "c2010b37-8884-49da-9163-cf954bc39a53",
                 "level": 8,
                 "security": "auto"
               }
@@ -73,9 +72,9 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "",
-          "serverName": "",
+          "serverName": "ch.donaldvpn.sbs",
           "show": false
         }
       },

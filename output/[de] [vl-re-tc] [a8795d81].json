@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.176.26.3",
+            "address": "cdn-2.kiava.fun",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "ad003cb4-f642-4359-ae32-9b54d1b5beee",
+                "flow": "xtls-rprx-vision",
+                "id": "a5fdef7a-01f0-4413-989f-0941410914fb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "0px.pardazesh.tech"
-          },
-          "path": "/xoWpvGlwCsT4uWRYnp9ok"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "0px.pardazesh.tech",
-          "show": false
+          "publicKey": "3e6EfxpbZNdlubA10MMDji3B8IhOvehnALU0MtdQawk",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "10c7",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
