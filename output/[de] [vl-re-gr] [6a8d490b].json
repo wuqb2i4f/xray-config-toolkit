@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.135.26.135",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "95.179.163.172",
+            "port": 442,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "95fe9d5d-9e8a-4a60-a66b-57a5b37a0bf1",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,@MetalVPN66,"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "xv1y3qATx4ginm3Ap33GExz1fTPp--PA2AhA_NLI9iU",
+          "serverName": "sourceforge.net",
+          "shortId": "c325ad8c",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

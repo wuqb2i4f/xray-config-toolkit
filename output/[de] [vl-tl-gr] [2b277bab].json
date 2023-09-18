@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.89.119.200",
-            "port": 46933,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "92a32d3a-4c30-47cd-a69e-37187fdf93be",
+                "id": "7cbd932d-c6ac-4ff0-fa94-62914984e7be",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "s2fgCuh9yxCEK2n85wERxj585MakUGLA6ac77CKHcmQ",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "e8f32995",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Sni.BlueMoien.space",
+          "show": false
         }
       },
       "tag": "proxy"

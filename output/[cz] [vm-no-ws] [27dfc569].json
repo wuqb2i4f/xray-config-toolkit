@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "46.31.79.63",
-            "port": 45458,
+            "address": "free4.getn.eu.org",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "f9a5e327-8960-4123-b0ec-e037ec739224",
+                "id": "852b850a-561a-11ee-8658-52cf00e461ad",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,10 +65,12 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "free4.getn.eu.org"
+          },
+          "path": "/Telegram-SolidV2ray"
         },
         "security": "none"
       },
