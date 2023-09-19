@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tu.kilidstor.cfd",
-            "port": 24753,
+            "address": "94.131.104.172",
+            "port": 40360,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c7c08f07-f593-49f8-9bfa-9bb54d269da9",
+                "id": "e165d949-ee9d-482e-c672-e17274d8f204",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@KILID_STOR"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["ponisha.ir"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "BDR5tLM4aneFqk1jQ_Ep1u3tXIngWever30UwnvPazU",
-          "serverName": "www.speedtest.net",
-          "shortId": "b4854583",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

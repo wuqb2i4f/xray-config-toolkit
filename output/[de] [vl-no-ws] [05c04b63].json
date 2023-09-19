@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.65",
-            "port": 8443,
+            "address": "online.4zkaban.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "467d19c3-07a1-4284-a450-b266b9404f95",
+                "id": "519f88a6-dd0d-4534-b459-a40901a9dd22",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "13.ok-config-8.buzz"
+          },
+          "path": "/@Ok_Config"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

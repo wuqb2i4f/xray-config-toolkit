@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "130.162.47.123",
-            "port": 6854,
+            "address": "135.181.86.15",
+            "port": 56085,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "b5f7e932-f730-4ad2-b425-40977b9db332",
+                "id": "f2e29b5d-cfab-428f-85af-c03c939da1c4",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,21 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "dengpao.de"
-          },
-          "path": "/zBLPou"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy,@free_v2rayyy,@free_v2rayyy@free_v2rayyy"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "dengpao.de",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

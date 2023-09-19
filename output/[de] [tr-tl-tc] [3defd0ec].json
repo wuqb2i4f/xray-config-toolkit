@@ -45,33 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mci.divar.pro",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "110b53a0-3f93-4a5a-9298-2d473d3f0dc2",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "18.159.66.163",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "FurniTURe.EitAA.rUn"
-          },
-          "path": "/backup"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

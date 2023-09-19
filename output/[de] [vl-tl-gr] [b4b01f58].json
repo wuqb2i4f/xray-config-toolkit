@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel5.unlimiteddev.cloud",
-            "port": 80,
+            "address": "104.24.176.7",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "54d34b9d-fbbf-474c-83d3-4c6d08e5b541",
+                "id": "a24d30f3-45e4-4ca4-83a1-eb4ea4ce4ce1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "ch.nimserverr.xyz",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

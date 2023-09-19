@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.55.174.26",
-            "port": 443,
+            "address": "mc.webnoein.ir",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d1a7fe4f-ee23-44cf-87a7-22a4355b3b61",
+                "flow": "",
+                "id": "1335f611-f6b6-4245-9f96-8c8380bb6729",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "swe2.mahanmobile.site"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "aO_UFI-7oMciQwXycPWPbTQbAeZAsPe5EgrEMSARJVo",
-          "serverName": "www.theverge.com",
-          "shortId": "ee9b3344ed43",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

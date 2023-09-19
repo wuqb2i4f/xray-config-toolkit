@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.231.87",
+            "address": "tel.arv2ray.host",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "Source-ipV2Ray",
+                "id": "17b2a74e-f371-48cc-97aa-782f4a2f2f05",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ipV2Ray"
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "VSSyeNLzkMlEwuqos6SpWvtR7R7pEHo2E4QqJUxgvh4",
-          "serverName": "gsmarena.com",
-          "shortId": "50509d19",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "tm.ArV2ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"
