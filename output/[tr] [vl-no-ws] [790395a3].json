@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "587-join-v2raytz.sinotz.tk",
-            "port": 34891,
+            "address": "mci.divar.pro",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c713f876-5141-42cd-ac3e-1fd2126e0daa",
+                "id": "110b53a0-3f93-4a5a-9298-2d473d3f0dc2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "FurniTURe.EitAA.rUn"
+          },
+          "path": "/backup"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "VdPwMCY--7d91jIQxeJC1zQ0fwWIIap1TIEycp-EzQQ",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "31971b6f",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "135.181.86.15",
-            "port": 56085,
+            "address": "mci-maznet.ddns.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f2e29b5d-cfab-428f-85af-c03c939da1c4",
+                "id": "21ae2438-6653-42da-820e-dedc69020e04",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +67,16 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@free_v2rayyy,@free_v2rayyy,@free_v2rayyy@free_v2rayyy"
+          "serviceName": "@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "tel.maznet.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
