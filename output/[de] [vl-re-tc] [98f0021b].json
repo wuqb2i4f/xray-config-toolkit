@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.divar.pro",
-            "port": 80,
+            "address": "cdn-8.kiava.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "110b53a0-3f93-4a5a-9298-2d473d3f0dc2",
+                "flow": "xtls-rprx-vision",
+                "id": "a5fdef7a-01f0-4413-989f-0941410914fb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "FurniTURe.EitAA.rUn"
-          },
-          "path": "/backup"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "cAJzhKQ3hQvq4lb1AYmNqREpKBlcnAhXpAu6avnGdQA",
+          "serverName": "cdn.kiava.fun",
+          "shortId": "10c7",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "flyv2ray.ddns.net",
-            "port": 443,
+            "address": "fd.shabijichang.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "74ec0fc1-a9cf-4e79-861d-50596638ef1f",
+                "id": "b9837fb1-87e9-438b-8fc6-c0082a0d6c61",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@flyv2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "amstd.shabijichang.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "xq6RYOPcRTrtWBzj2q6iiecamHAREvsoffEgfgtgKm0",
-          "serverName": "greenpepper.ir",
-          "shortId": "15273896",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

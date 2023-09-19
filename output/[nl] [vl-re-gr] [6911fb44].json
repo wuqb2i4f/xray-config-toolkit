@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "free3.getn.eu.org",
-            "port": 80,
+            "address": "panel23.bestvipserviceirr.xyz",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "ab90d666-5618-11ee-9389-3384e0e85565",
+                "id": "8d02cf2b-3ef6-421c-9758-eb6915ef8da9",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "free3.getn.eu.org"
-          },
-          "path": "/Telegram-SolidV2ray"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "oUTGWHDpyGFqE9Hfd48l75w192X5ELLX94_D4UU-4kw",
+          "serverName": "discord.com",
+          "shortId": "70e13198",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

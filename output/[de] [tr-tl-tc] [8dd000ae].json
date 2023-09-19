@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "micirancellhop.ddns.net",
-            "port": 32870,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "2dcb2a13-955b-4ece-9bea-1453035bd613",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.124.72.209",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@servermomo@"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "tqkI_g2qxXXaD1fiC4dF2MoxrfR5Mf-0xJZxX_bV9yo",
-          "serverName": "www.discordapp.com",
-          "shortId": "7e1e0a30",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"
