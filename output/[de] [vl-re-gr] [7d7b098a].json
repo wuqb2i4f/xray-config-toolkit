@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "162.159.136.160",
-            "port": 8080,
+            "address": "65.109.231.87",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "c0d40e10-c828-4ea4-8494-56067cbbbc5e",
+                "id": "Source-ipV2Ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cf2.freek1.xyz"
-          },
-          "path": "/BR7cUfTm/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "MWTaO5y6KlDbY4sSfPsDuHjleTW_n__iNK7tGiPu_hQ",
+          "serverName": "gsmarena.com",
+          "shortId": "50509d19",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

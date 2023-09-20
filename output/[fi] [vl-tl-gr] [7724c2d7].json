@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join----to.outline-vpn.cloud",
-            "port": 46018,
+            "address": "mkh.arv2ray.host",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "4fa77ac4-397b-484d-8d1c-3217ee8e726c",
+                "flow": "",
+                "id": "6344b726-7363-4b3d-833f-2554893177dd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "eZ8Kg81ujyLWmPWdvWSG3BDiRtuyN-qGX6bgj1fkfRk",
-          "serverName": "ftp.debian.org",
-          "shortId": "c755c7e7",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "tm.ArV2ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"

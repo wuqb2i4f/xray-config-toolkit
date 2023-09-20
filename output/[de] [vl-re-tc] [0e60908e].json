@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "kurd----join.outline-vpn.cloud",
-            "port": 51662,
+            "address": "95.217.242.182",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "87370df2-41eb-4ab9-a884-dc28ba2d5ddb",
+                "flow": "xtls-rprx-vision",
+                "id": "e881102a-0288-4048-9319-c498d6913d8f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,25 +67,19 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["zula.ir"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "YsE55HgtP1a_x7HqZouHtsi-5YYGsfBAm4AQzIjKvEc",
+          "serverName": "eset.com",
+          "shortId": "24494b51",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
