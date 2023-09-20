@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mkh.arv2ray.host",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "6344b726-7363-4b3d-833f-2554893177dd",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "in1rfsblhhoh.azborn.ir",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "64005719-39a6-4ec7-9225-777bbe293cc3",
+            "port": 443
           }
         ]
       },
@@ -67,14 +63,14 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+          "serviceName": "Q69DtPZGrjkjhcLP64V"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tm.ArV2ray.fun",
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "in1rfsblhhoh.azborn.ir",
           "show": false
         }
       },

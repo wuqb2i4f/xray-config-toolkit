@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.msv2ray.space",
-            "port": 2053,
+            "address": "104.18.202.232",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "e6b3142c-caf9-468a-ac66-22c133105c49",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de.vpncustomize.website"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
+          "fingerprint": "chrome",
+          "serverName": "de.vpncustomize.website",
           "show": false
         }
       },

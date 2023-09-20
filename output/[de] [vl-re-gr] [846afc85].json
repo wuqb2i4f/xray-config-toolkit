@@ -45,35 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "66.235.200.0",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "98e142bb-ba07-4e05-8f70-7a2508f36cf7",
-            "port": 443
+            "address": "91.107.198.120",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "69f64642-2df6-48fc-a2aa-6474879cf327",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "xp0.pardazesh.tech"
-          },
-          "path": "/UZQIPHPSLhOrWRYnp9ok"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "xp0.pardazesh.tech",
-          "show": false
+          "publicKey": "15RFbLXhl0fDwCXo7pW39WcQ9cK-reFR6-fog1z48Vc",
+          "serverName": "www.discord.com",
+          "shortId": "7e9fd998",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

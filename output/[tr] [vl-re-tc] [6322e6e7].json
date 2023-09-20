@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "89.116.38.199",
-            "port": 3456,
+            "address": "62.204.58.240",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "32e49539-f569-403d-b4b6-a8978c040d5d",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "6a496ebf-abb3-4abb-90ba-3ed627b4198c",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,25 +67,19 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": [""],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "dhTqG4Bx63buZbtKyORqDi_r3EQPK5MZ7BRJbupEPDI",
+          "serverName": "users.sourceforge.net",
+          "shortId": "02b2c8ad",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

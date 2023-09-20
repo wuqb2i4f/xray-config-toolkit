@@ -45,39 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "89.23.103.148",
+            "address": "in1rfsblhhoh.azborn.ir",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "8a87b4d7-9488-4f86-b294-d3caf63bb202",
+                "id": "64005719-39a6-4ec7-9225-777bbe293cc3",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "in1rfsblhhoh.azborn.ir"
+          },
+          "path": "/dFnOP6B3hI9OFs"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "KuZOpuz0L4H-VNikILS8NP9oA6Ra9uTGEZLHH0FODFM",
-          "serverName": "www.speedtest.net",
-          "shortId": "83cdb009",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "in1rfsblhhoh.azborn.ir",
+          "show": false
         }
       },
       "tag": "proxy"

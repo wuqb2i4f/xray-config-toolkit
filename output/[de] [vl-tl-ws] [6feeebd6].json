@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel.vmessorg.fun",
-            "port": 80,
+            "address": "www.speedtest.net",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3f3e1aa2-ea5d-4731-d780-8ba931bc441e",
+                "id": "e6b3142c-caf9-468a-ac66-22c133105c49",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "de.vpncustomize.website"
           },
           "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "de.vpncustomize.website",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

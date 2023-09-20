@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.169.102.31",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "publictrue-never.give.up.republicofgamers.net",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "8846fc7f-1612-5f0d-b38d-537da2b5695e",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "safari",
+          "publicKey": "-0fADhlqr_BYOOKTMPwqlKcpfO8gkDTwuADME2lW3gE",
+          "serverName": "www.speedtest.net",
+          "shortId": "dec021147725",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

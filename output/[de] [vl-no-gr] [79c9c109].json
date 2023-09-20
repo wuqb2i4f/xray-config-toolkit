@@ -45,35 +45,31 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.168.5.43",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "135.181.86.15",
+            "port": 52075,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "aa924b65-75b6-44ef-8620-0076c71d4931",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy,@free_v2rayyy,@free_v2rayyy,@free_v2rayyy"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

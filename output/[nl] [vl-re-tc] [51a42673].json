@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.227.99.66",
-            "port": 8443,
+            "address": "176.57.212.213",
+            "port": 23661,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "42c8e27e-27b5-43cf-8763-9b1d67639982",
+                "id": "61fe83fb-31a7-4546-a772-2067996ff8f1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "7p7SJZH4EW3VzOUI0F2svoYTB6-9wGptgtizmua8oTs",
+          "serverName": "mega.io",
+          "shortId": "de6ccc9f",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

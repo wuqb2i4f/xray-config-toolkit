@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "rome2rio.com",
-            "port": 80,
+            "address": "49.13.72.189",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "54d34b9d-fbbf-474c-83d3-4c6d08e5b541",
+                "flow": "xtls-rprx-vision",
+                "id": "57472176-b5f6-4cef-803e-66491cc0eb49",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "kvq3JTPJ2_QEDCGf5l7mwLtxg-0QcfmDbJvlCVopNUg",
+          "serverName": "edudip.com",
+          "shortId": "63",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
