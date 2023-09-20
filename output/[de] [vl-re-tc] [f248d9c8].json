@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "rome2rio.com",
-            "port": 80,
+            "address": "shabdiz.kermanshah.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "54d34b9d-fbbf-474c-83d3-4c6d08e5b541",
+                "flow": "xtls-rprx-vision",
+                "id": "98e142bb-ba07-4e05-8f70-7a2508f36cf7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "yvST7IS7c400DGyW4HwHI2c2ZrV8znWHZGV8jbiz4Wo",
+          "serverName": "www.theverge.com",
+          "shortId": "8911ac48",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.87.45.117",
-            "port": 11548,
+            "address": "66.235.200.0",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "----Parsashonam----",
+                "id": "98e142bb-ba07-4e05-8f70-7a2508f36cf7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam,@Parsashonam"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "xp0.pardazesh.tech"
+          },
+          "path": "/xoWpvGlwCsT4uWRYnp9ok"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "9XeMR8nqa-Kh4iBNqUdE4IDLGSnHlytjQib3fT7fWnY",
-          "serverName": "Soft98.ir",
-          "shortId": "d393f8ce",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "xp0.pardazesh.tech",
+          "show": false
         }
       },
       "tag": "proxy"
