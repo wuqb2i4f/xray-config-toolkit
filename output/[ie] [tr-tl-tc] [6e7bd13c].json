@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "micirancellhop.ddns.net",
-            "port": 28754,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "60d0ca61-362f-4d67-8a1a-e88571a003f9",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "99.81.115.56",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "8bMYz44sbnOaEgrz93b26rIVjujNzr9TzrX9ljMTzxk",
-          "serverName": "discord.com",
-          "shortId": "68930614",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

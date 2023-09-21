@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.12.216.63",
-            "port": 777,
+            "address": "104.31.16.197",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f37afcc3-9bbd-489d-a953-bad5d49974d5",
+                "id": "8ab93098-d092-4670-96ec-1d733adafc2a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ENErgY.dL-VScODE.CoM"
+          },
+          "path": "/backup"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "KvdIhfIU1bagqaLIEG6ZOu8-NbOdaaUF2LalaWxhcHQ",
-          "serverName": "grseven.AhV2ray.cfd",
-          "shortId": "2c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

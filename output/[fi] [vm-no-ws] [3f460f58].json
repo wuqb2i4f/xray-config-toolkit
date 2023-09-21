@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "micirancellhop.ddns.net",
-            "port": 28754,
+            "address": "ko6598h.sbs",
+            "port": 56415,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "60d0ca61-362f-4d67-8a1a-e88571a003f9",
+                "id": "43809a10-829d-4d09-9677-5efabd6095d4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "8bMYz44sbnOaEgrz93b26rIVjujNzr9TzrX9ljMTzxk",
-          "serverName": "discord.com",
-          "shortId": "68930614",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

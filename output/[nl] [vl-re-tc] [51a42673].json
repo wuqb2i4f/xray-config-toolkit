@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "16.16.32.144",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "176.57.212.213",
+            "port": 23661,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "61fe83fb-31a7-4546-a772-2067996ff8f1",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -66,13 +70,15 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "7p7SJZH4EW3VzOUI0F2svoYTB6-9wGptgtizmua8oTs",
+          "serverName": "mega.io",
+          "shortId": "de6ccc9f",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

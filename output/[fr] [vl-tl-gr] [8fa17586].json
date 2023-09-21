@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "683-join-v2raytz.sinotz.tk",
-            "port": 46933,
+            "address": "www.zula.ir",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5803e7b0-503b-40c9-960e-5f4bcf14000f",
+                "id": "aff40e0b-a389-4e44-9b3b-323311aa8ad4",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+          "serviceName": "sshocean"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "s2fgCuh9yxCEK2n85wERxj585MakUGLA6ac77CKHcmQ",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "e8f32995",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "0x646531de1.havenabank.de",
+          "show": false
         }
       },
       "tag": "proxy"

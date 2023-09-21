@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "0x666931fi1.havenabank.de",
-            "port": 2096,
+            "address": "mk.webnoein.ir",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3632fe24-2769-4dd5-bb57-5608670b8839",
+                "id": "3622f04c-edc8-4746-a829-76dc2edd1bd3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "sshocean"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fin.newmtn.tech"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "0x666931fi1.havenabank.de",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
