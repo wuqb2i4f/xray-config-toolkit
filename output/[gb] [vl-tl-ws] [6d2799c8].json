@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "cdn.narutos.top",
-            "port": 8880,
+            "address": "h.migmig.sbs",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "4b5e4565-322f-4223-a891-78a84f189726",
+                "id": "a8c2ef2a-6596-4b9d-ad9c-4a8f1b546dce",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "luxembourg.yj2022.gq"
+            "Host": "h.migmig.sbs"
           },
-          "path": "/GdtYWlsLmNvbSJ9LCJjb3V"
+          "path": "/QBhqaM2UGmxpZGkceZ"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "h.migmig.sbs",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "135.181.86.15",
-            "port": 56085,
+            "address": "four.felinetest.site",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "f2e29b5d-cfab-428f-85af-c03c939da1c4",
+                "flow": "xtls-rprx-vision",
+                "id": "fbe02c0b-775f-4431-8615-a9497255c876",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,12 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@free_v2rayyy,@free_v2rayyy,@free_v2rayyy@free_v2rayyy"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
+          "serverName": "none.felinetest.site",
+          "shortId": "6f9deca7",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

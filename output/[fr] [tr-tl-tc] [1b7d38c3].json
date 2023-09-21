@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "m2rel.siasepid.sbs",
-            "port": 446,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "390e708d-b878-40e7-8a28-01a10517b61d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.37.186.92",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@V2rayNgMat,@V2rayNgMat"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "EOJ7g8MfowwlpZg3D4dXwI_wGpluzU8HCznSRE-h200",
-          "serverName": "tgju.org",
-          "shortId": "7d6e3cf8",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

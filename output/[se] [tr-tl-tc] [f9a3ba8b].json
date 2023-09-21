@@ -49,28 +49,29 @@
       "settings": {
         "servers": [
           {
-            "address": "in1rfsblhhoh.azborn.ir",
+            "address": "16.16.175.205",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "64005719-39a6-4ec7-9225-777bbe293cc3",
-            "port": 443
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Q69DtPZGrjkjhcLP64V"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "in1rfsblhhoh.azborn.ir",
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },
