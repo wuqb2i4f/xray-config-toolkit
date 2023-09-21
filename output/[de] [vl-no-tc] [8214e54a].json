@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "micirancellhop.ddns.net",
-            "port": 28754,
+            "address": "157.90.238.202",
+            "port": 29834,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7fff6b23-f8cc-4cc5-9fbd-2c7cb16483e4",
+                "id": "17f7a5f1-4561-48e2-d749-4e60e7538069",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["divarcdn.com"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "8bMYz44sbnOaEgrz93b26rIVjujNzr9TzrX9ljMTzxk",
-          "serverName": "discord.com",
-          "shortId": "68930614",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

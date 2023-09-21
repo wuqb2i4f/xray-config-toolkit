@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "micirancellhop.ddns.net",
-            "port": 28754,
+            "address": "129.146.247.135",
+            "port": 42598,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "7fff6b23-f8cc-4cc5-9fbd-2c7cb16483e4",
+                "id": "1773b226-0bdb-43c5-87d8-270d26211dda",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree@ipcloudflaree"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "8bMYz44sbnOaEgrz93b26rIVjujNzr9TzrX9ljMTzxk",
-          "serverName": "discord.com",
-          "shortId": "68930614",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
