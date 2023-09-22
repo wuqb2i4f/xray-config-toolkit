@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "721-join-v2raytz.sinotz.tk",
+            "address": "::ffff:51.255.154.255",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "Source-ipV2Ray",
+                "flow": "xtls-rprx-vision",
+                "id": "347486b0-604e-48b0-a525-f84042fd97c3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "erzU5G7FiAmcWPq8bbIrkF9V9RaEMgRZWKRUUXkmSU8",
-          "serverName": "gsmarena.com",
-          "shortId": "50509d19",
+          "fingerprint": "safari",
+          "publicKey": "npS0hQkDnuSkVqqkuW5uyMW3v1BptFarf82eRBuBh1A",
+          "serverName": "status.wallex.ir",
+          "shortId": "bf3418",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

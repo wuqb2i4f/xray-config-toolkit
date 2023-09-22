@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.235.33",
-            "port": 443,
+            "address": "all-network.aparat.lol",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a63641fc-1458-4b9d-a9c5-e82930102f7b",
+                "id": "c1ea54c4-2c89-46b2-86cb-8cd285c2c720",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN,@IRN_VPN"
+          "serviceName": "CDN"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "86Kzvni2dWQ4mAU0pX-0dkRYnfUAw8JimRv0HXOD13s",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "0104c530",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "sorn.TrV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

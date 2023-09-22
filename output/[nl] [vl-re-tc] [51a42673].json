@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "8.208.13.33",
-            "port": 2083,
+            "address": "176.57.212.213",
+            "port": 23661,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "220563ec-fbcd-43e5-938f-a865ea6aa435",
+                "id": "61fe83fb-31a7-4546-a772-2067996ff8f1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "ch.nimserverr.xyz",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "7p7SJZH4EW3VzOUI0F2svoYTB6-9wGptgtizmua8oTs",
+          "serverName": "mega.io",
+          "shortId": "de6ccc9f",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
