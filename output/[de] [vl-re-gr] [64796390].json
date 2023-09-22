@@ -45,35 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "h.migmig.sbs",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "a8c2ef2a-6596-4b9d-ad9c-4a8f1b546dce",
-            "port": 443
+            "address": "721-join-v2raytz.sinotz.tk",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "Source-ipV2Ray",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "h.migmig.sbs"
-          },
-          "path": "/ecWgPu75ewsDeHNpZGkceZ"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "h.migmig.sbs",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "erzU5G7FiAmcWPq8bbIrkF9V9RaEMgRZWKRUUXkmSU8",
+          "serverName": "gsmarena.com",
+          "shortId": "50509d19",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

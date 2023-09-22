@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "publictrue-never.give.up.republicofgamers.net",
-            "port": 443,
+            "address": "193.227.99.66",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8846fc7f-1612-5f0d-b38d-537da2b5695e",
+                "id": "800d535d-e550-4b2c-a130-30319be04ba2",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504,@Public504"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "-0fADhlqr_BYOOKTMPwqlKcpfO8gkDTwuADME2lW3gE",
-          "serverName": "www.speedtest.net",
-          "shortId": "dec021147725",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

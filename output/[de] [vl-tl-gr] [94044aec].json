@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ec8.kiava.fun",
-            "port": 8443,
+            "address": "8.208.13.33",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "783164cb-6410-4a96-e432-832489e4848c",
+                "flow": "",
+                "id": "220563ec-fbcd-43e5-938f-a865ea6aa435",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "BsQQkQsTsQrpLFCX-qOsfzyYqcw7wACAIYkUTwMhsG0",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": "/new"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "ch.nimserverr.xyz",
+          "show": false
         }
       },
       "tag": "proxy"
