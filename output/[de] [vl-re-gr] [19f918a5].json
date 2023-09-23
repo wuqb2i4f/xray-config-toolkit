@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "750-join-v2raytz.sinotz.tk",
-            "port": 2097,
+            "address": "139.162.184.231",
+            "port": 777,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fa60f07c-d758-47c7-b195-edba0887390b",
+                "id": "13616019-d862-464a-a9b2-881670cc0717",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sourceforge.net"
-          },
-          "path": "@CLICK_VPNN"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "freeflow"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "s57VsnuhbeVQwa2eRWJTsV6ZdMlF5HITSxEhdIET4WA",
+          "serverName": "www.googletagmanager.com",
+          "shortId": "856c3f40",
+          "show": false,
+          "spiderX": "/hlkewrosdi"
+        }
       },
       "tag": "proxy"
     },

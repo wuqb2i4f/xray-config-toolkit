@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.210.138",
-            "port": 443,
+            "address": "bia-to-channel.vmessorg.fun",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "738c5e99-7faa-4893-81a8-4d6655adde33",
+                "id": "2d4590f1-613d-4d62-9dcd-d04c0de6fa1b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Digiv2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "e2VGvHwmGudsNxadrgFCv3ENvRLyD_8x9csN6tTMGns",
-          "serverName": "www.speedtest.net",
-          "shortId": "ab7b40b2",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

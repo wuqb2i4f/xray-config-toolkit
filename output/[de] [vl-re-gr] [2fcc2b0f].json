@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.88.252",
-            "port": 2082,
+            "address": "vpncustomize.cam",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "6388bd92-6cbc-4b72-a9a6-931f071d0ffa",
+                "id": "6bc3c5ae-9f28-4e4b-960d-b0fb0d26f997",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev"
-          },
-          "path": "/phosphorylative.aurorainiceland.com/nimvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I",
+          "serverName": "www.iranserver.com",
+          "shortId": "6b0541cd",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
