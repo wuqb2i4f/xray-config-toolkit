@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.89.119.200",
-            "port": 46933,
+            "address": "104.31.16.65",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "acb0463d-41be-4e02-b6eb-df978d73798b",
+                "id": "1d0d7f6e-a8f4-4403-b492-65e702f8a481",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "36.表维基百科16.tech"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "s2fgCuh9yxCEK2n85wERxj585MakUGLA6ac77CKHcmQ",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "e8f32995",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.89.119.200",
-            "port": 46933,
+            "address": "0000:0000:0000:0000:0000:ffff:33ff:9aff",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "acb0463d-41be-4e02-b6eb-df978d73798b",
+                "flow": "xtls-rprx-vision",
+                "id": "347486b0-604e-48b0-a525-f84042fd97c3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "s2fgCuh9yxCEK2n85wERxj585MakUGLA6ac77CKHcmQ",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "e8f32995",
+          "fingerprint": "safari",
+          "publicKey": "npS0hQkDnuSkVqqkuW5uyMW3v1BptFarf82eRBuBh1A",
+          "serverName": "subs.theverge.com",
+          "shortId": "bf3418",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

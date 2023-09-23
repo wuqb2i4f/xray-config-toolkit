@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "m.xmahan.tech",
-            "port": 2052,
+            "address": "freev2ray.xalixv2ray.space",
+            "port": 16365,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "443f2b90-db54-40d8-a3b9-954f823da76e",
+                "id": "d07ed0cf-de5b-41ff-aa5c-fe2b1177838c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "t2.sarab.eu.org"
-          },
-          "path": "/wp-admin"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "d8d0JT4TfH90pKiWEb7nAJkLcWZ8nwlRygL4AmewsTw",
+          "serverName": "www.speedtest.net",
+          "shortId": "3d2cafad",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

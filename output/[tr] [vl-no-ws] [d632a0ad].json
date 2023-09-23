@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mxv2ray.xalixv2ray.space",
-            "port": 36507,
+            "address": "749-join-v2raytz.sinotz.tk",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "30140b0c-70b4-45c3-94f4-e6bc6e755598",
+                "id": "9e1c68c7-b78e-40ed-82d4-c9df350c39f0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray@XsV2ray,@XsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sourceforge.net"
+          },
+          "path": "@CLICK_VPNN"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "WQO4ft_VZau6xK1jjFURUS2YQSqkPUTCfJ06J-XCQTI",
-          "serverName": "www.speedtest.net",
-          "shortId": "1c9ce6c9",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
