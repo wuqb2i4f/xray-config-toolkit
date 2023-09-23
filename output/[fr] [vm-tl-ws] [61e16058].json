@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "h1.bestvipserviceirr.xyz",
+            "address": "104.16.32.142",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "e70281da-7520-4f0b-94e5-44f7979791eb",
+                "id": "795CAC68-4CF8-42D6-BCF6-EDAA8EDCC435",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "white-dawn-4be8.walidfree5.workers.dev"
+          },
+          "path": "/speedtest/Amsterdam.kotick.site"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "Cypw8ijWAoJlg2jYEAHfHnSQzpriIH1gkLRAuBCtqjc",
-          "serverName": "discord.com",
-          "shortId": "875ffc69",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "white-dawn-4be8.walidfree5.workers.dev",
+          "show": false
         }
       },
       "tag": "proxy"

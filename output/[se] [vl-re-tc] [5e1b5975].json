@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "h1.bestvipserviceirr.xyz",
-            "port": 443,
+            "address": "5.42.77.104",
+            "port": 5349,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e70281da-7520-4f0b-94e5-44f7979791eb",
+                "id": "57cc5830-3735-4661-ae39-9dbd6044e718",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,36 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["wordpress.org"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "Cypw8ijWAoJlg2jYEAHfHnSQzpriIH1gkLRAuBCtqjc",
-          "serverName": "discord.com",
-          "shortId": "875ffc69",
+          "publicKey": "GHFxUbBvF_9z3xwmIA6d-KmSb1SWZxVng8FuCndjEww",
+          "serverName": "debian.org",
+          "shortId": "b5e5ba7e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": "/Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro"
         }
       },
       "tag": "proxy"
