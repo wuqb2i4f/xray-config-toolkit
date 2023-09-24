@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.2",
-            "port": 8880,
+            "address": "45.95.232.89",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "eb46c717-3f24-4b58-a9d4-82df392e4eb6",
+                "id": "faebb3a2-842d-4893-bf30-779c7377131e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nor.newmtn.tech"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,@vpn_xw,"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "Jq7b6bSKWIP-BygqChp8M2O-dhxIXiuhZA8qPYs7Jwo",
+          "serverName": "game-center.ir",
+          "shortId": "e02ba8a4",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
