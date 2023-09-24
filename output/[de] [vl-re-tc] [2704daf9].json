@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
+            "address": "download.oapdis.com",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9eb0967f-8c35-4aa5-b6be-a2e46f4c2348",
+                "flow": "xtls-rprx-vision",
+                "id": "6be7ac76-a575-4d2d-b4c0-62d21467bf60",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@LAGVPN13"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA",
-          "serverName": "gsmarena.com",
-          "shortId": "464f8607",
+          "publicKey": "xceYgV2SBE6XSZqe3RCWmpGb3GLEPcc4_IcR3TQ_3Bk",
+          "serverName": "download.oapdis.com",
+          "shortId": "316d5439a4ae2184",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
+            "address": "188.114.97.3",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "9eb0967f-8c35-4aa5-b6be-a2e46f4c2348",
+                "id": "162FCBB7-F296-484E-A567-680E20DD5D55",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@LAGVPN13"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "v.cr0064.workers.dev"
+          },
+          "path": "/Lille.kotick.site/speedtest"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA",
-          "serverName": "gsmarena.com",
-          "shortId": "464f8607",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "safari",
+          "serverName": "v.cr0064.workers.dev",
+          "show": false
         }
       },
       "tag": "proxy"

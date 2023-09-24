@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.57.212.213",
-            "port": 23661,
+            "address": "acetu1000.deltamar.space",
+            "port": 1011,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "61fe83fb-31a7-4546-a772-2067996ff8f1",
+                "id": "74c8c7f8-e1ec-49e7-801c-bc5d4322dbb5",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,19 +67,25 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["check-host.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "7p7SJZH4EW3VzOUI0F2svoYTB6-9wGptgtizmua8oTs",
-          "serverName": "mega.io",
-          "shortId": "de6ccc9f",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

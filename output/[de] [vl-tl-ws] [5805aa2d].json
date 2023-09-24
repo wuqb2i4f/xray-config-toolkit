@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "melo-join-------to.outline-vpn.cloud",
+            "address": "66.235.200.0",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c02bfe8e-7424-4288-8616-1fe252653c0c",
+                "id": "98e142bb-ba07-4e05-8f70-7a2508f36cf7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPNTelegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPNTelegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "xp0.pardazesh.tech"
+          },
+          "path": "/xoWpvGlwCsT4uWRYnp9ok"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "MhnfKxQpAEwP2TcEUtPXLpaPDEIrQImaY4jhwk5pPSU",
-          "serverName": "www.eset.com",
-          "shortId": "256a6273",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "xp0.pardazesh.tech",
+          "show": false
         }
       },
       "tag": "proxy"

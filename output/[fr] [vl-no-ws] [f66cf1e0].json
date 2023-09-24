@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "789-join-v2raytz.sinotz.tk",
-            "port": 42628,
+            "address": "188.114.97.2",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6ea16c7d-8cd1-4385-bd85-6877b9a2852d",
+                "id": "285c21e6-6add-4daf-9ef8-2eac2cbf36a2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "frlin.iranianshop.site"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Rx970nnP-35xF4gbPGzxlHPGcsiyL3JztY8r7w611w8",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "5fd9b215",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
