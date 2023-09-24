@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
-            "port": 443,
+            "address": "ec20.kiava.fun",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "cbdc6f7c-563a-4e4b-82b4-6ab423e12f3e",
+                "flow": "xtls-rprx-vision",
+                "id": "783164cb-6410-4a96-e432-832489e4848c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@LAGVPN13"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA",
-          "serverName": "gsmarena.com",
-          "shortId": "464f8607",
+          "fingerprint": "chrome",
+          "publicKey": "Hi4uABqkDSg6VnmiUrbMJ9ceMPdXkmrvr12kkleAZHU",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

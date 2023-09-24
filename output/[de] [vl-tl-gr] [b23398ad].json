@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
-            "port": 443,
+            "address": "193.227.99.241",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cbdc6f7c-563a-4e4b-82b4-6ab423e12f3e",
+                "id": "135d6171-a88a-40ea-abb0-5610c80a59fb",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@LAGVPN13"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA",
-          "serverName": "gsmarena.com",
-          "shortId": "464f8607",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

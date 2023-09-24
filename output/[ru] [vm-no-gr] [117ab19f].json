@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
-            "port": 443,
+            "address": "141.98.233.36",
+            "port": 8443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "cbdc6f7c-563a-4e4b-82b4-6ab423e12f3e",
+                "id": "24315c24-6af2-4f60-853c-72edc04a0bd7",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,9 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@LAGVPN13"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA",
-          "serverName": "gsmarena.com",
-          "shortId": "464f8607",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

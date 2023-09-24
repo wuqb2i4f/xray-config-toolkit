@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
+            "address": "192.46.238.123",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "cbdc6f7c-563a-4e4b-82b4-6ab423e12f3e",
+                "flow": "xtls-rprx-vision",
+                "id": "944f7d1e-9662-4766-8e49-632fd414af82",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@LAGVPN13"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA",
-          "serverName": "gsmarena.com",
-          "shortId": "464f8607",
+          "publicKey": "BjvUz10OdEllabQjWm47a5x7Bu3qEIeyc7t7WKgIjQY",
+          "serverName": "www.googletagmanager.com",
+          "shortId": "8abb1348",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.1lagvpn13.cfd",
-            "port": 443,
+            "address": "104.25.255.254",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cbdc6f7c-563a-4e4b-82b4-6ab423e12f3e",
+                "id": "306a3bc7-2eae-428d-b6fb-04c3f3b51d1c",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@LAGVPN13"
+          "serviceName": "sshocean"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "uX1V5lrEbOrtXi-2dQyPNVJ6sf80g19HYujUUWN5nxA",
-          "serverName": "gsmarena.com",
-          "shortId": "464f8607",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "0x656531ee1.havenabank.de",
+          "show": false
         }
       },
       "tag": "proxy"
