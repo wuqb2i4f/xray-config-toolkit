@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "51.38.82.132",
-            "port": 80,
+            "address": "49.12.216.63",
+            "port": 777,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "aca76f27-cda3-47f7-af79-7873034fd3bc",
+                "id": "edc01e66-e6af-4d03-af36-84f46c75ffbc",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/vmess"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "N4hWreSCZzRrBan55fS4BMxw6V7Y-dd9U68k8WnY4Do",
+          "serverName": "grseven.AhV2ray.cfd",
+          "shortId": "e6",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

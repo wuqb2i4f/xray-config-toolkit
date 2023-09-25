@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.203.61.217",
-            "port": 40609,
+            "address": "mtn.melov2ray.store",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "866cfee8-a822-49ca-8fc4-1d4ebbdd0634",
+                "id": "7196c11f-bdb2-49a7-8e6c-a08dde2d2edd",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "KDPNyPaOFNV4cTy517Ps3FfYK6jDa6VUacJsd6XoeFE",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "efd4b006",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "arab.melov2ray.store",
+          "show": false
         }
       },
       "tag": "proxy"

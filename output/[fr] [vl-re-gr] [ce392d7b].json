@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.238.2.186",
-            "port": 2087,
+            "address": "819-join-v2raytz.sinotz.tk",
+            "port": 42628,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "268c8ed4-32c4-49b1-c1fe-7e54c393592d",
+                "id": "63d2daa5-2531-4df5-97e5-da2dd328c491",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "speedtest.net"
-          },
-          "path": "/@DarkTeam_VPN"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "Rx970nnP-35xF4gbPGzxlHPGcsiyL3JztY8r7w611w8",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "5fd9b215",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

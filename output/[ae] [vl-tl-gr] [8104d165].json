@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.238.2.186",
-            "port": 2053,
+            "address": "m1.melov2ray.shop",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6219e121-da64-4fdc-d172-d0593b011b50",
+                "id": "7196c11f-bdb2-49a7-8e6c-a08dde2d2edd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "speedtest.net"
-          },
-          "path": "/@DarkTeam_VPN"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "arab.melov2ray.store",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

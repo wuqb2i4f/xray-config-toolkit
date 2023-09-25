@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.238.2.186",
-            "port": 2096,
+            "address": "telchann1.v2pedia.xyz",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "14ec3c69-5456-4666-bb57-4f906dd91691",
+                "id": "65218b9a-76c3-4e17-8535-e27070182995",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "speedtest.net"
-          },
-          "path": "/@DarkTeam_VPN"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "8h75tSdwxj_Cw6C6DiAqrDZ6tp1fI-_EcnsRBSFjrEo",
+          "serverName": "www.speedtest.net",
+          "shortId": "22c8ef128b",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
