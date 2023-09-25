@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.20.164.38",
-            "port": 443,
+            "address": "micirancellhop.ddns.net",
+            "port": 32870,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "D8813DCB-426C-4952-B384-8951B0444EC1",
+                "id": "4e840a6a-1edd-49fd-9d96-0da6a914d643",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "noisy-wave-9582.sourgalma3363.workers.dev"
-          },
-          "path": "/speedtest/Amsterdam.kotick.site"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "noisy-wave-9582.sourgalma3363.workers.dev",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "tqkI_g2qxXXaD1fiC4dF2MoxrfR5Mf-0xJZxX_bV9yo",
+          "serverName": "www.discordapp.com",
+          "shortId": "7e1e0a30",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
