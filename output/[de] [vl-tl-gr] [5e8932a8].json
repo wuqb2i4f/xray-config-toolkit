@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "141.95.111.79",
-            "port": 42628,
+            "address": "104.22.51.241",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c47338a0-c7d6-4a51-82c1-de79303e7211",
+                "id": "8d62e109-5115-458d-82f5-6cda2d67caf0",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Rx970nnP-35xF4gbPGzxlHPGcsiyL3JztY8r7w611w8",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "5fd9b215",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "ch.donaldvpn.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
