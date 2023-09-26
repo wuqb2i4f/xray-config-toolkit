@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "154.17.8.16",
-            "port": 36113,
+            "address": "join-v2raytz.sinotz.tk",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "ba57f911-3b94-4dbe-c735-5927197ce17b",
+                "id": "04eb113f-adab-4c94-9ec6-6dd922f7ac96",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,13 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "QvssvpfpV2ray-Soyosha-IranCCrl-mcisk-mtn-mciaoaovpn.SNAPP.monster",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

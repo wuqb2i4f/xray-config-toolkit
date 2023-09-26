@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "141.95.111.79",
-            "port": 42628,
+            "address": "104.18.22.93",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "33da2cf2-3f72-43dd-8024-07ecc93ced7b",
+                "id": "795CAC68-4CF8-42D6-BCF6-EDAA8EDCC435",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fancy-dream-7440.walidfree9.workers.dev"
+          },
+          "path": "/speedtest/Dusseldorf.kotick.site"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "Rx970nnP-35xF4gbPGzxlHPGcsiyL3JztY8r7w611w8",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "5fd9b215",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "fancy-dream-7440.walidfree9.workers.dev",
+          "show": false
         }
       },
       "tag": "proxy"

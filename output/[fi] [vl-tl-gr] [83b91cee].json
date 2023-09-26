@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "reza.punisher-shop-v2.site",
-            "port": 12608,
+            "address": "all.arv2ray.host",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3fea10d8-347b-4cd5-9f6a-6ccf0af76043",
+                "id": "f163ee17-a949-4df8-8348-6b58f014c454",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@puni_shop_v2rayNG"
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "xEFvEL3nHURZhYSQMlSTogRaSz5BnbaHnxT3a09sInA",
-          "serverName": "www.speedtest.net",
-          "shortId": "37e6e694",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "tm.ArV2ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"

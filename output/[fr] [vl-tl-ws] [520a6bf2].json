@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "reza.punisher-shop-v2.site",
-            "port": 31107,
+            "address": "xn--mgbf0aa1hx1bea.plusultra.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6c15b471-15c4-4c9f-a144-14fb0de40ae4",
+                "id": "7802a9d7-d0c1-460a-b87f-bc22d45fa6a9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,28 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["speedtest.net"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "c-d-n.plusultra.fun"
+          },
+          "path": "/OMbHgIHAqEwi1P8s9LVpKyrHaXO"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "c-d-n.plusultra.fun",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

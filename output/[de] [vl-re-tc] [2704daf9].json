@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cloud.barfak123.eu.org",
-            "port": 2096,
+            "address": "download.oapdis.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3e31964b-74da-4c94-929b-379900e1438d",
+                "flow": "xtls-rprx-vision",
+                "id": "6be7ac76-a575-4d2d-b4c0-62d21467bf60",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "MoEfRWT7rYzseY2HvDICg9-D4bHHwdHOyowca5R7fiw",
-          "serverName": "www.speedtest.net",
-          "shortId": "09c2e0ea",
+          "fingerprint": "chrome",
+          "publicKey": "xceYgV2SBE6XSZqe3RCWmpGb3GLEPcc4_IcR3TQ_3Bk",
+          "serverName": "download.oapdis.com",
+          "shortId": "316d5439a4ae2184",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

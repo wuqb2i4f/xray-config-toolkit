@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "free4.6114514.xyz",
-            "port": 2052,
+            "address": "198.41.202.5",
+            "port": 2053,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "8204f631-8a71-4f6a-821d-6c117edaf0fa",
+                "id": "5aa68884-9bb2-4434-a99c-4425ecbef3da",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "downloads3.6114514.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "a.boredhot.cloud",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

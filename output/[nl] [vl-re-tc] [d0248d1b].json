@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "185.162.235.250",
-            "port": 2054,
+            "address": "89.23.103.148",
+            "port": 27707,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "6f117af4-cd52-40f8-9236-7c5e3f357cc8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "a90b90dd-1ba3-442f-88b1-ea0eef4bda06",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/socket.io"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "6_aICn9u4g6mZo-htT7OD95yt58IUChCDfe9-u_LGxs",
+          "serverName": "aparat.com",
+          "shortId": "2147fdf3",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

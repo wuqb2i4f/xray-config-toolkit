@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.217.5.104",
+            "address": "mkh.arv2ray.host",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "r4d",
+                "flow": "",
+                "id": "41c0ff8d-8f6f-4afa-ac35-2a68004461ea",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "zLMpqsx0bz2SWMz2GbW7JlcCh4C6jvtVrcTXHDkTnwU",
-          "serverName": "upmusics.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "tm.ArV2ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"
