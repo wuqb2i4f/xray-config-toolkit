@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.22.51.241",
-            "port": 8443,
+            "address": "95.217.5.104",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "343df2d2-354d-47f3-9552-65b7d81a7f70",
+                "flow": "xtls-rprx-vision",
+                "id": "r4d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ch.donaldvpn.sbs",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "zLMpqsx0bz2SWMz2GbW7JlcCh4C6jvtVrcTXHDkTnwU",
+          "serverName": "upmusics.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

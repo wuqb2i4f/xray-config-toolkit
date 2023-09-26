@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
+            "address": "free2.6114514.xyz",
+            "port": 2052,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "4bee1a3f-661e-4e69-bceb-a7a3d9f3b280",
+                "id": "8204f631-8a71-4f6a-821d-6c117edaf0fa",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "de.vpncustomize.Website"
+            "Host": "downloads3.6114514.xyz"
           },
           "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "de.vpncustomize.Website",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

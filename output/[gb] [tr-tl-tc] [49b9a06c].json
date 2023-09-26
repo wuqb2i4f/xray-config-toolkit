@@ -45,33 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mkn.gamecentervip.sbs",
-            "port": 13687,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "5dfbc900-e99e-4a3a-9930-03fc64ee18e2",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.42.144.159",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil،@v2ray_swhil"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

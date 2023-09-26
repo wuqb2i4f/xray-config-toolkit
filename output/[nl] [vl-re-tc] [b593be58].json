@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "t-me-helix-servers.srv3h3lix.space",
-            "port": 443,
+            "address": "95.211.244.8",
+            "port": 48022,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9bf33c23-17db-4fef-84e2-c42a7cf59338",
+                "flow": "xtls-rprx-vision",
+                "id": "7c028948-755a-4204-b5e7-80bf5fa24fa7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "IIaam5yHC7Ay4TLYskxOIJJiTbUoAcympGEuLcFDHQo",
-          "serverName": "zula.ir",
-          "shortId": "d946ad87",
+          "publicKey": "rwjbVU_pqcGyxEcMwK-RHSsF8vgZuBQBChOAawuD-1I",
+          "serverName": "ilovepdf.com",
+          "shortId": "c0693290",
           "show": false,
-          "spiderX": "/system-requirements"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

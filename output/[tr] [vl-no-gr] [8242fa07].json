@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.174.136.11",
-            "port": 40484,
+            "address": "46.31.79.63",
+            "port": 45458,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "azadi-az-inja-migzare-mci",
+                "id": "f9a5e327-8960-4123-b0ec-e037ec739224",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "c4r5G0tkg_rdE-xjAXYBq_szluIHFOZNNg7-5b48ayY",
-          "serverName": "www.speedtest.net",
-          "shortId": "598db020",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
