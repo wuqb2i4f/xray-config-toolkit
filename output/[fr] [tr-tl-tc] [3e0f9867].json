@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "185.174.136.11",
-            "port": 40484,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "azadi-az-inja-migzare-mci",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.39.170.191",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "c4r5G0tkg_rdE-xjAXYBq_szluIHFOZNNg7-5b48ayY",
-          "serverName": "www.speedtest.net",
-          "shortId": "598db020",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

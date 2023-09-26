@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "16.171.188.33",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "reza.punisher-shop-v2.site",
+            "port": 12608,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "3fea10d8-347b-4cd5-9f6a-6ccf0af76043",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@puni_shop_v2rayNG"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "xEFvEL3nHURZhYSQMlSTogRaSz5BnbaHnxT3a09sInA",
+          "serverName": "www.speedtest.net",
+          "shortId": "37e6e694",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
