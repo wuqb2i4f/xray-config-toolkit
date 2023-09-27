@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "198.41.202.5",
-            "port": 2053,
+            "address": "mk.webnoein.ir",
+            "port": 8880,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "5aa68884-9bb2-4434-a99c-4425ecbef3da",
+                "id": "3622f04c-edc8-4746-a829-76dc2edd1bd3",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fin.newmtn.tech"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "a.boredhot.cloud",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

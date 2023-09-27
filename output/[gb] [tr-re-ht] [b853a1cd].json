@@ -45,37 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mtn.msv2ray.space",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "2fac0e66-13a0-443f-fd7a-8c0b027e4632",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "139.162.245.72",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8TP5kwlU3Q",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "h2",
+        "httpSettings": {
+            "host": ["www.python.org"],
+            "path": "/ftp/python"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "H1cLoWIXYBfZYyGL8ulK1zZXTCzM69RKcEDSo-b7lkc",
+          "serverName": "www.python.org",
+          "shortId": "48f7d1f2",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

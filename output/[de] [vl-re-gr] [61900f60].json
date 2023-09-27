@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
+            "address": "5.75.210.138",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "04eb113f-adab-4c94-9ec6-6dd922f7ac96",
+                "id": "738c5e99-7faa-4893-81a8-4d6655adde33",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "de.vpncustomize.Website"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Digiv2ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "de.vpncustomize.Website",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "e2VGvHwmGudsNxadrgFCv3ENvRLyD_8x9csN6tTMGns",
+          "serverName": "www.speedtest.net",
+          "shortId": "ab7b40b2",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

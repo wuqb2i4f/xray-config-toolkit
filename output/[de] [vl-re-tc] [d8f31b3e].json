@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "rhazd.raahazad.com",
-            "port": 44200,
+            "address": "49.12.245.202",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "788de4f0-49f0-4622-ea5d-7b72456d9052",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "7f1352c6-0ba2-4b38-97a0-6c4d3784afc2",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,25 +67,19 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": [""],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "random",
+          "publicKey": "K7C_pOD78XXS7D0fNVbwyjlfLc_MGQ_4BwfQU_DnbQY",
+          "serverName": "www.speedtest.net",
+          "shortId": "3dc679a73cf4bbf6",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

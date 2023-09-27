@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ru1a.ai88888.top",
-            "port": 80,
+            "address": "helix-servers-channel.srv3h3lix.space",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "c97cf46e-1554-36cb-8b36-c3556b883dc4",
+                "id": "dc1e3d02-7ba8-431c-8dc1-5f35e65a7638",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ru1a.ai88888.top"
-          },
-          "path": "/ru1a-Rayj8xxW9bW"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "WoLXJT_u04B4DrivxQ2dbF2dYvRn5peStpGa_fcXMH0",
+          "serverName": "zula.ir",
+          "shortId": "9e051bbe",
+          "show": false,
+          "spiderX": "/system-requirements"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join-v2raytz.sinotz.tk",
-            "port": 2096,
+            "address": "mc.webnoein.ir",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "04eb113f-adab-4c94-9ec6-6dd922f7ac96",
+                "id": "eb46c717-3f24-4b58-a9d4-82df392e4eb6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nor.newmtn.tech"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "",
-          "serverName": "QvssvpfpV2ray-Soyosha-IranCCrl-mcisk-mtn-mciaoaovpn.SNAPP.monster",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
