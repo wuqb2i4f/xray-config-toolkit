@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ab0rhaunting-in-venicepor1.irandarkpro.gq",
-            "port": 5349,
+            "address": "all.arv2ray.host",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "eaa49244-6cd5-43b7-99f1-2248a5ff3b35",
+                "id": "979fcb3d-2dc2-4dec-85e8-fe324a9d9e0b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["ftp.debian.org"],
-            "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Cdd9-CVl_Z1lXt7nTH9BBgNvk-WfDwmU74Y6TH8mqR0",
-          "serverName": "mega.io",
-          "shortId": "a2ff1446",
-          "show": false,
-          "spiderX": "/Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro-Telegram-id-DarkVPNpro"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "tm.ArV2ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"

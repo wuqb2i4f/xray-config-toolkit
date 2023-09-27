@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "136.244.113.208",
-            "port": 443,
+            "address": "ec36.kiava.fun",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "Telegram--MsV2ray--MsV2ray---",
+                "flow": "xtls-rprx-vision",
+                "id": "783164cb-6410-4a96-e432-832489e4848c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "9tsqhUODzZKBketrQipySgfbjxuYF2TxDhTcx5yERQE",
-          "serverName": "ftp.debian.org",
-          "shortId": "d5e1f24d",
+          "publicKey": "0xxkgkEA8E7jn1vX0GqppG1MCLaN666b_kVsS4RHSh0",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": "/new"
         }
       },
       "tag": "proxy"

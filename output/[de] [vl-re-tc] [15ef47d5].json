@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.227.99.234",
-            "port": 2096,
+            "address": "128.140.91.61",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "azadi-az-inja-migzare-cdn",
+                "flow": "xtls-rprx-vision",
+                "id": "r4d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@azadi_az_inja_migzare"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "EhDai.DGI000.StorE",
-          "show": false
+          "publicKey": "irQHVS1VWXzNk6tEmEzoTqEL8h5h0PzcGtRBF0TRQFw",
+          "serverName": "upmusics.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "helix-servers-channel.srv3h3lix.space",
-            "port": 443,
+            "address": "ec38.kiava.fun",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "dc1e3d02-7ba8-431c-8dc1-5f35e65a7638",
+                "flow": "xtls-rprx-vision",
+                "id": "783164cb-6410-4a96-e432-832489e4848c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "WoLXJT_u04B4DrivxQ2dbF2dYvRn5peStpGa_fcXMH0",
-          "serverName": "zula.ir",
-          "shortId": "9e051bbe",
+          "fingerprint": "chrome",
+          "publicKey": "D0zBEAoPe48R7pH25CQGpB0WNuaSrEk4UFkjik8OQkM",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": "/system-requirements"
+          "spiderX": "/new"
         }
       },
       "tag": "proxy"

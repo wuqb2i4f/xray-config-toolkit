@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mkh.arv2ray.host",
-            "port": 443,
+            "address": "xn--mgbf0aa1hx1bea.plusultra.fun",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7b9e35fb-7ac7-4e8c-adf4-e753eea08a9c",
+                "id": "1dfa58eb-2c62-4284-a941-16ae09ab7c78",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "c-d-n.plusultra.fun"
+          },
+          "path": "/OMbHgIHAqEwi1P8s9LVpKyrHaXO"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tm.ArV2ray.fun",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

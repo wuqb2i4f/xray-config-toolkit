@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mk.webnoein.ir",
-            "port": 8880,
+            "address": "172.104.231.137",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3622f04c-edc8-4746-a829-76dc2edd1bd3",
+                "flow": "xtls-rprx-vision",
+                "id": "77945d83-ba69-43c1-8aa3-8ef90b2fb6af",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fin.newmtn.tech"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "3DlooiQ7X7uooX77Zpa2ItdFnR4U-j-tSQJ42UyUqAU",
+          "serverName": "free4.meetamir.tk",
+          "shortId": "667b2de3",
+          "show": false,
+          "spiderX": "/aseoiox"
+        }
       },
       "tag": "proxy"
     },

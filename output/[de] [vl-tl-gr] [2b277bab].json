@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "telchann1.v2pedia.xyz",
-            "port": 443,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "938b0e19-7c76-49b8-e00a-82eee7866875",
+                "id": "e0d51012-efb6-4eb1-c816-c75c7095d0d1",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "8h75tSdwxj_Cw6C6DiAqrDZ6tp1fI-_EcnsRBSFjrEo",
-          "serverName": "www.speedtest.net",
-          "shortId": "22c8ef128b",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Sni.BlueMoien.space",
+          "show": false
         }
       },
       "tag": "proxy"

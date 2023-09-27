@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "iranmtn-iranmci-granturism00je3annebarry.irandarkpro.gq",
-            "port": 8280,
+            "address": "tel.arv2ray.host",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "407e7c8e-b0d1-4331-b7c3-9dad20c025ba",
+                "id": "af45c957-edad-459e-b8dc-43e25ffded9f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["mega.io"],
-            "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "MZCs8pvIfZAvY3nmmbl5NDrkQl5sKJ0fDYWfv8bKxDM",
-          "serverName": "datadoghq.com",
-          "shortId": "5489b4ad",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "tm.ArV2ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"

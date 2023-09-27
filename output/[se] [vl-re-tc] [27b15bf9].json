@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mkh.arv2ray.host",
-            "port": 443,
+            "address": "ec40.kiava.fun",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "7b9e35fb-7ac7-4e8c-adf4-e753eea08a9c",
+                "flow": "xtls-rprx-vision",
+                "id": "783164cb-6410-4a96-e432-832489e4848c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "tm.ArV2ray.fun",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "F3Yd7DIw3sCUuMfBPi0EwHbXhPp0ERQvAxe5fvTdm3g",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
+          "show": false,
+          "spiderX": "/new"
         }
       },
       "tag": "proxy"
