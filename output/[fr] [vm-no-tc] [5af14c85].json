@@ -45,19 +45,20 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "141.98.233.95",
-            "port": 1518,
+            "address": "135.125.134.177",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "840fce73-112f-44e1-8bdf-cee760ed7a03",
+                "id": "d4734bd8-906b-4426-b9ff-9dbc388d56da",
                 "level": 8,
-                "security": "auto"
+                "security": "aes-128-gcm"
               }
             ]
           }
@@ -71,7 +72,7 @@
             "request": {
               "headers": {
                 "Connection": ["keep-alive"],
-                "Host": ["speed.cloudflare.com"],
+                "Host": ["www.baidu.com"],
                 "Pragma": "no-cache",
                 "Accept-Encoding": ["gzip, deflate"],
                 "User-Agent": [

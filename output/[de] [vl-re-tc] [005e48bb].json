@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ophelia.mom",
-            "port": 443,
+            "address": "91.107.161.41",
+            "port": 2260,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
-                "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "f8b3ef79-b62b-4451-8b28-213dec73bb8e",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ophelia.mom"
-          },
-          "path": "linkvws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "",
-          "show": false
+          "publicKey": "UB6mYnLSVvho1lEq998fGMgQ27LzhiPeIICrjTAZoCc",
+          "serverName": "www.steadfast.net",
+          "shortId": "d4fd93e6",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
