@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.168.17.185",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "103.13.210.11",
+            "port": 40783,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "56cce2e9-66ea-42c2-a7a3-eb0abe5e14f7",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "OeehwQvbGKL2wLb9nHb3KuRoxt55jw7T77kvqBsCKXU",
+          "serverName": "civicplus.com",
+          "shortId": "ec7472e3",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

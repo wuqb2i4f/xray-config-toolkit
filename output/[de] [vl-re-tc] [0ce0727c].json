@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "discord.gg",
-            "port": 80,
+            "address": "167.235.150.17",
+            "port": 35523,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "b8be7c80-592d-11ee-b832-205c6d5f5d78",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "80ce8385-cf8e-44cf-88ec-7af7eea7fd03",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lu.0rd.net"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "HY5gbQIeNZv8lbd6fLcVaHbmgfZ0MZ0YPA7eE3PD2xU",
+          "serverName": "discord.gg",
+          "shortId": "85d103e1",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

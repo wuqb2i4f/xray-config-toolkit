@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "source-helix-servers.srv3h3lix.space",
-            "port": 443,
+            "address": "yd1.992688.xyz",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "0b4b0bdb-8c8d-4894-91f8-cf0db4142cdc",
+                "id": "b390dfa3-b095-4373-ce80-ca2463978c96",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "eu2.vpn66.eu.org"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "owXZo34uwP0af-Xh9Bvc8KNhOhUeXWR1JS2DFRPE3T4",
-          "serverName": "zula.ir",
-          "shortId": "c5d653ae",
-          "show": false,
-          "spiderX": "/system-requirements"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
