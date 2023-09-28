@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci-msv2ray.ddns.net",
-            "port": 2087,
+            "address": "city.torudonline.shop",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "b0181c73-8980-4ccc-8625-cc967bec78e9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "dlGoooNTaJ1fznMDPGAxwFTjoQgMlEO6EbdyIBRxHGE",
+          "serverName": "yahoo.com",
+          "shortId": "3c1d64af",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

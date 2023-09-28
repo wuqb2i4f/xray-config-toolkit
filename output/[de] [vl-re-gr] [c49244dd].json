@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci-msv2ray.ddns.net",
-            "port": 2087,
+            "address": "159.69.191.180",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "Source-ipV2Ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+          "serviceName": "@ipV2Ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "eX6hHR9sbAcl93_KIpiOLhlELkI_GXKenG3qeSb3U0M",
+          "serverName": "gsmarena.com",
+          "shortId": "a90ee22c",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
