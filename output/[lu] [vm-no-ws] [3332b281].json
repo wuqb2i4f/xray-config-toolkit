@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "baloti9900.ddns.net",
-            "port": 25756,
+            "address": "discord.gg",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "fa6674db-92ab-4230-9201-98517532ba3a",
+                "id": "b8be7c80-592d-11ee-b832-205c6d5f5d78",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP@FREE_VlP"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "lu.0rd.net"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "EnhkHcCezN5LtknUo3XpzJBebwH2GMpgeRZQPV2rly0",
-          "serverName": "www.qatarairways.com",
-          "shortId": "b425f5c9",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
