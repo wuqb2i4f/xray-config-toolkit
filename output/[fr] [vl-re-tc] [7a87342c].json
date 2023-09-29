@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "telegram-helix-servers.srv3h3lix.space",
+            "address": "141.94.37.191",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "0f49753c-84b7-422f-9351-9e916f8d5dcf",
+                "flow": "xtls-rprx-vision",
+                "id": "2f300fbc-2078-4084-8fa7-9562e6303563",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "DouMmhKYqb9LVF-RtlfIfbrSlaB9kFQVii7CaIRC6FE",
-          "serverName": "zula.ir",
-          "shortId": "661a9eb7",
+          "publicKey": "VgUSjovLVQytOts_2jida86jbLpEYFiY1-DiEGICpEk",
+          "serverName": "cloudflare.com",
+          "shortId": "68ab22c0",
           "show": false,
-          "spiderX": "/system-requirements"
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

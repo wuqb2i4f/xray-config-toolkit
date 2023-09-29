@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "159.69.191.180",
+            "address": "135.181.35.207",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "Source-ipV2Ray",
+                "flow": "xtls-rprx-vision",
+                "id": "7080c05d-a32d-45cd-8ef4-de8a310dbb3e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "LjyyEfgJhJvul8gQQXB4ocFIaOLCg9oqQ1IHxvJZJXU",
-          "serverName": "gsmarena.com",
-          "shortId": "a90ee22c",
+          "fingerprint": "chrome",
+          "publicKey": "GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU",
+          "serverName": "www.yahoo.com",
+          "shortId": "6bb85179e30d4fc2",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

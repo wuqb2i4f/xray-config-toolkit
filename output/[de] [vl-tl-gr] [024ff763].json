@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ec38.kiava.fun",
-            "port": 8443,
+            "address": "104.16.68.30",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "783164cb-6410-4a96-e432-832489e4848c",
+                "flow": "",
+                "id": "17a8dbcb-6a1d-4473-999f-12ab99a3a906",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@AFC_vpn.@AFC_vpn.@AFC_vpn"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "D0zBEAoPe48R7pH25CQGpB0WNuaSrEk4UFkjik8OQkM",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": "/new"
+          "serverName": "www.snapppfood.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

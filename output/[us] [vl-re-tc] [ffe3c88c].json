@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "fd.shabijichang.com",
-            "port": 80,
+            "address": "138.2.229.42",
+            "port": 15552,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "4732350b-14a1-421e-985a-155a78e9ae80",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "643a75ba-ff59-440b-b4d1-ea6b2ea5caf8",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bl.shabijichang.com"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "random",
+          "publicKey": "eG9YHzIKps4Vi4pi7NWTCTuAHCGti49dDfN-bkk3KBo",
+          "serverName": "itunes.apple.com",
+          "shortId": "b51c6bcc",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
