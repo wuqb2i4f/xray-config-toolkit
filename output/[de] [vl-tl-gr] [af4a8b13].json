@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "167.235.150.17",
-            "port": 35523,
+            "address": "162.159.136.232",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "80ce8385-cf8e-44cf-88ec-7af7eea7fd03",
+                "flow": "",
+                "id": "c9e26401-9a32-40f2-f5c6-e5ad47cdae77",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "snapp.ir"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "HY5gbQIeNZv8lbd6fLcVaHbmgfZ0MZ0YPA7eE3PD2xU",
-          "serverName": "discord.gg",
-          "shortId": "85d103e1",
-          "show": false,
-          "spiderX": ""
+          "serverName": "join.cl0udflar3.com",
+          "show": false
         }
       },
       "tag": "proxy"

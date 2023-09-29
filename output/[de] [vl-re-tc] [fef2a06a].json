@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "139.180.169.227",
-            "port": 443,
+            "address": "167.235.150.17",
+            "port": 45029,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "906ad798-a877-4254-96a9-a2bb1e75fcd2",
+                "flow": "xtls-rprx-vision",
+                "id": "f2dc2068-04d4-4551-8b6d-85087156d8a5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "ofYRRYKU5_REIaNjgc0vzGC3No6idNj9wnv-GSB_ATg",
-          "serverName": "www.speedtest.net",
-          "shortId": "951422ef",
+          "publicKey": "h8KYjkC57prybISobaw3Ds5BWOiXr9qBhAceZcfinX8",
+          "serverName": "openstreetmap.org",
+          "shortId": "ed5d43f4",
           "show": false,
           "spiderX": ""
         }

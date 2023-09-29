@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "138.68.136.50",
-            "port": 65500,
+            "address": "38.54.12.106",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "6b2e381c-8214-47c7-aa73-54c803ef1d22",
+                "id": "b0181c73-8980-4ccc-8625-cc967bec78e9",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "dlGoooNTaJ1fznMDPGAxwFTjoQgMlEO6EbdyIBRxHGE",
+          "serverName": "yahoo.com",
+          "shortId": "3c1d64af",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

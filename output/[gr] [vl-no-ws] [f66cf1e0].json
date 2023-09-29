@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mh.lagvpn13.cfd",
-            "port": 8443,
+            "address": "188.114.97.2",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "57bcfedc-ace9-4de8-b733-f6121a545e99",
+                "id": "058bdc8d-cfd9-40b8-8f58-ce0615277069",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@L_AGVPN13"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "gr1.futuremm1.store"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "SzQJsB8a1cxwhk9RhpfKEX0fWVLouZ08EBp325ZXLRE",
-          "serverName": "gsmarena.com",
-          "shortId": "80d94228",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
