@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.12.216.63",
-            "port": 777,
+            "address": "0000:0000:0000:0000:0000:ffff:334b:563f",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "edc01e66-e6af-4d03-af36-84f46c75ffbc",
+                "flow": "xtls-rprx-vision",
+                "id": "dabf909f-228d-449c-821d-c0566982e264",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "N4hWreSCZzRrBan55fS4BMxw6V7Y-dd9U68k8WnY4Do",
-          "serverName": "grseven.AhV2ray.cfd",
-          "shortId": "e6",
+          "publicKey": "C-RXE9kdwXpUEwpdUVjRk2TGE23FU-nG5Ia54s_FowM",
+          "serverName": "www.flightradar24.com",
+          "shortId": "0c",
           "show": false,
           "spiderX": ""
         }

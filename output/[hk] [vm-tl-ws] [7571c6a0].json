@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "49.12.216.63",
-            "port": 777,
+            "address": "hkt.123ddns.xyz",
+            "port": 55455,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "edc01e66-e6af-4d03-af36-84f46c75ffbc",
+                "id": "d2ce45e6-9f22-492d-d81d-d639067a7583",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "hkt.123ddns.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "N4hWreSCZzRrBan55fS4BMxw6V7Y-dd9U68k8WnY4Do",
-          "serverName": "grseven.AhV2ray.cfd",
-          "shortId": "e6",
-          "show": false,
-          "spiderX": ""
+          "serverName": "",
+          "show": false
         }
       },
       "tag": "proxy"

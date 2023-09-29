@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.12.216.63",
-            "port": 777,
+            "address": "armin.wedbazforlife.cfd",
+            "port": 29067,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "edc01e66-e6af-4d03-af36-84f46c75ffbc",
+                "id": "fc79dbeb-e1d8-4365-bc61-5406c7a7444a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "telewebion.com,+user.telewebion.com,+plus.telewebion.com,+api.telewebion.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "N4hWreSCZzRrBan55fS4BMxw6V7Y-dd9U68k8WnY4Do",
-          "serverName": "grseven.AhV2ray.cfd",
-          "shortId": "e6",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.12.216.63",
-            "port": 777,
+            "address": "51.89.156.155",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "edc01e66-e6af-4d03-af36-84f46c75ffbc",
+                "flow": "xtls-rprx-vision",
+                "id": "ee4dee89-b79f-4d72-b1dc-0a112f523e2a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "N4hWreSCZzRrBan55fS4BMxw6V7Y-dd9U68k8WnY4Do",
-          "serverName": "grseven.AhV2ray.cfd",
-          "shortId": "e6",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "www.cloudflare.com",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }
