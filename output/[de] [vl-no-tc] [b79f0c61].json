@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.159.136.232",
-            "port": 2087,
+            "address": "v2parsin.site",
+            "port": 19837,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c9e26401-9a32-40f2-f5c6-e5ad47cdae77",
+                "id": "eac90573-24ca-4ddd-8f91-ec1ecc05a00a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "snapp.ir"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["speedtest.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "join.cl0udflar3.com",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

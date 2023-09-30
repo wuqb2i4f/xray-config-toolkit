@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "141.193.213.31",
-            "port": 2087,
+            "address": "140.82.39.11",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "916c9035-b5d2-4afa-a00a-93c44324db48",
+                "flow": "xtls-rprx-vision",
+                "id": "874b15f4-7f43-436e-85d8-5142c3b748c0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY,Telegram:@XNXV2RAY"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "xnxv2ray.mioRay.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "d1H_0miDHBvjPkygZfwG3ckMIpeo7S18xDwwZ8AYRCE",
+          "serverName": "translate.google.com",
+          "shortId": "d55342c47ff449",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
