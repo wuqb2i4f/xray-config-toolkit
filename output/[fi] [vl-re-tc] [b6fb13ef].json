@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "v2parsin.site",
-            "port": 19837,
+            "address": "::ffff:65.109.200.159",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "eac90573-24ca-4ddd-8f91-ec1ecc05a00a",
+                "flow": "xtls-rprx-vision",
+                "id": "cc171bf9-2a69-4680-9c7a-d9124ab51f2f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,25 +67,19 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["telewebion.com"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "i1Lnd2fsmBXp5wCdnNQbo-lf_AlzdTbBWe71Q62WV2c",
+          "serverName": "greenpepper.ir",
+          "shortId": "ec51f7f8",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

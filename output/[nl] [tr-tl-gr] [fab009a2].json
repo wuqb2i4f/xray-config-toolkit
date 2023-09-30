@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "v2line.telegram.channel.1280.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "42406fb4-686d-49fa-f276-c52deb8db26a",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "maradona4.history-paint.art",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "saMgiangGt",
+            "port": 443
           }
         ]
       },
@@ -67,17 +63,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "grpc17224"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
-          "serverName": "addons.mozilla.org",
-          "shortId": "b91500c5",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "teo.history-paint.art",
+          "show": false
         }
       },
       "tag": "proxy"

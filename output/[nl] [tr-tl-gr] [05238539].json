@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "nl.melov2ray.store",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "f01a8ba9-c9d9-4f5e-b85f-888f9383067f",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "art5.history-paint.art",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "saMgiangGt",
+            "port": 443
           }
         ]
       },
@@ -67,17 +63,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
+          "serviceName": "grpc17224"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "dL0hvTpI3kaKW7-pySLVR5A72m9igzF9idfet57893c",
-          "serverName": "www.speedtest.net",
-          "shortId": "677e9107",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "teo.history-paint.art",
+          "show": false
         }
       },
       "tag": "proxy"

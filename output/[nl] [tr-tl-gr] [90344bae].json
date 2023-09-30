@@ -45,40 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "140.82.39.11",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "874b15f4-7f43-436e-85d8-5142c3b748c0",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "maradona1.history-paint.art",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "saMgiangGt",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "grpc17224"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "d1H_0miDHBvjPkygZfwG3ckMIpeo7S18xDwwZ8AYRCE",
-          "serverName": "translate.google.com",
-          "shortId": "d55342c47ff449",
-          "show": false,
-          "spiderX": ""
+          "serverName": "teo.history-paint.art",
+          "show": false
         }
       },
       "tag": "proxy"

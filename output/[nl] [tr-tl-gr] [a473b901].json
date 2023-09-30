@@ -45,40 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "m1.kurdshop.store",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "a3d266fa-187c-4a8d-a5f5-b5f78fa3005e",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "art4.history-paint.art",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "saMgiangGt",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "grpc17224"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "2Dt29qQIpsej5TryyTjMh0UFbmQxU_WbpUE7jHk4kF4",
-          "serverName": "www.azaronline.com",
-          "shortId": "0c15bdbf",
-          "show": false,
-          "spiderX": ""
+          "serverName": "teo.history-paint.art",
+          "show": false
         }
       },
       "tag": "proxy"

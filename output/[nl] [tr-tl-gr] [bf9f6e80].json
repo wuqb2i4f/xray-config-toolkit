@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "176.117.59.32",
-            "port": 50050,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "c695824d-75d7-42a4-ae05-a13ca34d497e",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "art1.history-paint.art",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "saMgiangGt",
+            "port": 443
           }
         ]
       },
@@ -67,17 +63,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "TELEGRAM:@Shaxerver"
+          "serviceName": "grpc17224"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "-pLP-KdBKO8tD8TOKlfYAOxBiMcFNnLqyfm3u46cwkY",
-          "serverName": "www.speedtest.net",
-          "shortId": "b14e0bf0",
-          "show": false,
-          "spiderX": ""
+          "serverName": "teo.history-paint.art",
+          "show": false
         }
       },
       "tag": "proxy"
