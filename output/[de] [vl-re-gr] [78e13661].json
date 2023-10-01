@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "aidarostami.ddns.net",
+            "address": "188.34.180.94",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "F7A61C9C-7B1F-4970-8CDD-9714A2D8755C",
+                "id": "9c089c57-bd72-4bac-f98c-2ac80d05e803",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fn.mostafago.tk"
-          },
-          "path": "/speedtest"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "fn.mostafago.tk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "IFOPeKWPu9F2beCVWFu1LgggCmC1n5_sL7mBuXuzv2Q",
+          "serverName": "grseven.AhV2ray.cfd",
+          "shortId": "8dbd",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

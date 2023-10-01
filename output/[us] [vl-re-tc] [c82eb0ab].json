@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.62.193",
-            "port": 8088,
+            "address": "192.3.105.40",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "faadae77-1316-46e3-8524-0bd58b300a81",
+                "flow": "xtls-rprx-vision",
+                "id": "23a1db4f-3583-4a4f-b05d-0d1656b6703d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "WhWa8mRmPsCw5CI2Vsem57h0oYGfi1nucgToOhfx1Uw",
-          "serverName": "www.coinmarketcap.com",
-          "shortId": "04b5d922",
+          "fingerprint": "chrome",
+          "publicKey": "k83aEyUjQ2FGNtiqcrykJSZH5-CqpD4InEj4IFZYdxk",
+          "serverName": "sephora.com",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }

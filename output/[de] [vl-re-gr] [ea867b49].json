@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.19.212.135",
-            "port": 50203,
+            "address": "join.shhproxy.cfd",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f1d539bb-21f1-402a-a19d-3a2358bd5f71",
+                "id": "bd7d08d5-773a-47c1-af09-f5aa1a68f71b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Shh_Proxy,@Shh_Proxy"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "qDV6qkJIYmHjfDdxCzSnMS2ggis2UZNYZj3AdlMnu0c",
+          "publicKey": "GxGzAVN9xi1aXGv_-EUwj8qLldhHG0oVQ-OOgVkoMlU",
           "serverName": "www.speedtest.net",
-          "shortId": "04270cca",
+          "shortId": "25988b1f",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
