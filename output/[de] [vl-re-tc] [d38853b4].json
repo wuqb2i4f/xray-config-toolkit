@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "v.carrns.site",
-            "port": 80,
+            "address": "49.13.81.157",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "abf8e75e-5561-460d-ba53-fa59865b3ee6",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "GWLTRxw3B1iy29ZW4SqQH113-Gjup6-4vkOMksfEHB0",
+          "serverName": "spiegel.de",
+          "shortId": "0d8de1aa",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

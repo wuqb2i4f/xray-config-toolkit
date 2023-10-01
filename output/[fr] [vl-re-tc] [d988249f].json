@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "143.42.58.5",
+            "address": "0000:0000:0000:0000:0000:ffff:334b:563f",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "7d1c9925-0839-442f-9032-660e0a0e56e3",
+                "flow": "xtls-rprx-vision",
+                "id": "0db3c325-90cf-4974-b7c8-c3bad39136f5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS-Telegram:@HELIX_SERVERS"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "nksiJnAeaqMxH6ShiTJ_-PU1kt5wAPL9lPHyC7fk11Y",
-          "serverName": "zula.ir",
-          "shortId": "97e0b8fc",
+          "fingerprint": "edge",
+          "publicKey": "8KrRFPrX8M-4-lF_jmBWf-KpCa4J0IBYxth90uAWbjY",
+          "serverName": "www.flightradar24.com",
+          "shortId": "53cb",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/data/airports/"
         }
       },
       "tag": "proxy"

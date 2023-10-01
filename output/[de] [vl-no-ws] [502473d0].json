@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.234.42.77",
-            "port": 443,
+            "address": "x138-join.outline-vpn.cloud",
+            "port": 34787,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "e7413008-0256-406f-8d64-04cb75aaaf2a",
+                "flow": "",
+                "id": "c64a93e7-0102-4cde-8397-ed568f737b8a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "L3ASIEECqkh_U2hgtE2zcHEFrEG_nZ8g1Nop3EzsAl8",
-          "serverName": "ftp.debian.org",
-          "shortId": "7677b119",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
