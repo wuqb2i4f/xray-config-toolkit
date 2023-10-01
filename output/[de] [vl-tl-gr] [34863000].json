@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.198.82",
-            "port": 8880,
+            "address": "mtn.vippas72.site",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "248e07d7-a0d3-4bd8-afff-a5ffaec92eb4",
+                "flow": "",
+                "id": "e96b8001-c026-43e2-a1b6-732ce821613b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "it1hniwA2tnE7iXyJQNUpfUM-s4NOzFLZmc12sDWbhM",
-          "serverName": "yahoo.com",
-          "shortId": "6a752d20",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "70.vippas72.site",
+          "show": false
         }
       },
       "tag": "proxy"

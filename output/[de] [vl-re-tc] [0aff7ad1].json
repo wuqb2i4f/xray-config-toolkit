@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "168.119.158.63",
-            "port": 443,
+            "address": "128.140.112.130",
+            "port": 31161,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ab45d76e-7223-44dd-8139-656e3313c2cc",
+                "id": "f0e97e4f-f2a6-4db8-8b60-94b9ee113cbf",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "KuZOpuz0L4H-VNikILS8NP9oA6Ra9uTGEZLHH0FODFM",
-          "serverName": "www.speedtest.net",
-          "shortId": "83cdb009",
+          "fingerprint": "chrome",
+          "publicKey": "M4Nlu4BsdjF05W4yzsTjAG9V6HVI3yYcN_HXrWpmaRs",
+          "serverName": "ftp.debian.org",
+          "shortId": "a3e9a7b5",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
