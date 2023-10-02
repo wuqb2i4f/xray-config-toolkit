@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "sub2.nabarbest.online",
-            "port": 333,
+            "address": "107.189.13.72",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "63a1e6b3-4f04-433a-c280-e547838317c4",
+                "id": "d1709890-60a4-11ee-b435-205c6d5f5d78",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "speedtest.net"
+          },
+          "path": "/gxawfm12"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "CjDgAn0d8FsrL_6FMDoVwhKfD3hvqkZ_V07jie8pWhk",
-          "serverName": "www.speedtest.net",
-          "shortId": "6ea2eb64",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
