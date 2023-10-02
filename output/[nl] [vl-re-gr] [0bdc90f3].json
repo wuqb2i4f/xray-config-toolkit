@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "107.189.13.72",
-            "port": 80,
+            "address": "45.91.168.94",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "d1709890-60a4-11ee-b435-205c6d5f5d78",
+                "id": "ItsLegendaryking",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "speedtest.net"
-          },
-          "path": "/gxawfm12"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "HMpADH9bW2QkPUEv9fFytc1haHxHGE7_2YLsfHxPmlA",
+          "serverName": "h12.hostdl.com",
+          "shortId": "ed69fc03",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
