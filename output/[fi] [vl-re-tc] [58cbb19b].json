@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.159.136.232",
-            "port": 2087,
+            "address": "65.109.200.159",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "c9e26401-9a32-40f2-f5c6-e5ad47cdae77",
+                "flow": "xtls-rprx-vision",
+                "id": "0de89eee-c9db-4e9e-bbc7-5f6cc61406b6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "snapp.ir"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "join.cl0udflar3.com",
-          "show": false
+          "publicKey": "i1Lnd2fsmBXp5wCdnNQbo-lf_AlzdTbBWe71Q62WV2c",
+          "serverName": "greenpepper.ir",
+          "shortId": "ec51f7f8",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

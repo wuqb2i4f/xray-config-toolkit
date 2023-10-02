@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.25.156.181",
-            "port": 2087,
+            "address": "49.12.245.202",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "c9e26401-9a32-40f2-f5c6-e5ad47cdae77",
+                "flow": "xtls-rprx-vision",
+                "id": "7f1352c6-0ba2-4b38-97a0-6c4d3784afc2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "snapp.ir"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "join.cl0udflar3.com",
-          "show": false
+          "fingerprint": "random",
+          "publicKey": "K7C_pOD78XXS7D0fNVbwyjlfLc_MGQ_4BwfQU_DnbQY",
+          "serverName": "www.speedtest.net",
+          "shortId": "3dc679a73cf4bbf6",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
