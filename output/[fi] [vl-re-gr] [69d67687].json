@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "5.161.139.105",
+            "address": "static.120.29.181.135.clients.your-server.de",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "3d1fab6e-3bd6-472b-8d9c-9934c04eaf40",
+                "id": "8ca98c98-fb0b-4007-a6e8-c8294e546763",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,28 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["internet.life.com.by"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "6eenmFpWJ6RknrPH6qK9"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "EwDqXy7Y1vZTco-H12ftBu7xX0k0s0lvuSJ4MiQFnBo",
+          "serverName": "news.google.com",
+          "shortId": "af",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

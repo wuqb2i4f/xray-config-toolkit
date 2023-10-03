@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "138.68.136.50",
-            "port": 65500,
+            "address": "172.67.81.238",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "6b2e381c-8214-47c7-aa73-54c803ef1d22",
+                "id": "WANCLOUDFA",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@wancloudfa"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "tml.wancloudfa.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

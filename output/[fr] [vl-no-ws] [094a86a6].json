@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.34.141.72",
-            "port": 51541,
+            "address": "104.18.202.232",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3e996b98-742f-4142-83fe-c109751b21cf",
+                "id": "af3ecce2-4187-4a03-9398-ba7babc77166",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de1vl.cdn-03.live"
+          },
+          "path": "/vless"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "cB6e7dhObiv8tApjmo8sBusF9XfYVL4UINXimDBP4A8",
-          "serverName": "proq.ppqtyuvax.gq",
-          "shortId": "54f114d7",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

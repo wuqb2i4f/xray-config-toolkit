@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "209.38.217.5",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "8438483a-da43-4a55-ba05-c84bf6cbd7bc",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "de1.connecton.surf",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "e4bfb6fe1e",
+            "port": 443
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "UNXkSxj4pFtkei20Z_EVEypNvUKs3XJJCGg_zzbSAmo",
-          "serverName": "marstagram.com",
-          "shortId": "b2a902d6",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "de1.connecton.surf",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.12.192",
-            "port": 80,
+            "address": "172.104.231.137",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "92092f30-7e08-48b2-a6b0-cfe3b9112982",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "77945d83-ba69-43c1-8aa3-8ef90b2fb6af",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "rodican08vm.mr-radwan-daoud.de"
-          },
-          "path": "/vmess"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "BGXSES8vvEJ26AkK8QIjIzDP1ZwYbHDkoNqigopgklk",
+          "serverName": "free4.meetamir.tk",
+          "shortId": "667b2de3",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
