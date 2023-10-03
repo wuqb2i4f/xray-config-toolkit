@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "v133.runba.gq",
-            "port": 80,
+            "address": "167.235.135.168",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "2a8a10fb-9ca3-367e-a234-cf09f841be4f",
+                "id": "06835401-db2e-43ec-8163-f2257a389d21",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/v133PDXkklxLEcOvD"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "ZAYN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "2b9_2cIEfdwjWDNN0wp3Uyvi42Pdt4m4iGCmCJI5ZzQ",
+          "serverName": "sourceforge.net",
+          "shortId": "ec98d623",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

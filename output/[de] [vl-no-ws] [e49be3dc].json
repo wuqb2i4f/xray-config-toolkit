@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.203.182.178",
-            "port": 12608,
+            "address": "91.107.178.178",
+            "port": 34787,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "42702c2c-6580-4158-a751-d0eefe56a35b",
+                "id": "c64a93e7-0102-4cde-8397-ed568f737b8a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@puni_shop_v2rayNG"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "xEFvEL3nHURZhYSQMlSTogRaSz5BnbaHnxT3a09sInA",
-          "serverName": "www.speedtest.net",
-          "shortId": "37e6e694",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

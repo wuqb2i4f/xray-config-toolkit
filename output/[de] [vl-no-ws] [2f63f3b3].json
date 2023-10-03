@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.22.209.40",
-            "port": 443,
+            "address": "3bia-channel.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1f3ddf87-be66-4b8f-857c-4bd5be5b98d3",
+                "id": "0fbc9e57-16a6-42c1-b07a-c6b2fba45b27",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["account.zula.ir"],
-            "path": "/"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "gyBWSFMLx98sw6XV58NS6dWtTfgC2JvWMz08V8uAfwE",
-          "serverName": "bitcommand.com",
-          "shortId": "82e8c269",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

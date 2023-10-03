@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "dl3.doushimeng.com",
-            "port": 2082,
+            "address": "128.140.89.173",
+            "port": 19159,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "19afeba5-7d6f-4d4c-9cae-95bb3899c238",
+                "id": "26cc8dd2-907d-4c12-9922-59ca70b992f3",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cf-de4.doushimeng.com"
-          },
-          "path": "/asdas"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNWEDBAZ-@VPNWEDBAZ"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "AXYthmeaZPdn8f732Sl8p8dbRx4z_dfRsBhTwuUvORk",
+          "serverName": "www.sourceforge.net",
+          "shortId": "4fd92c0e",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
