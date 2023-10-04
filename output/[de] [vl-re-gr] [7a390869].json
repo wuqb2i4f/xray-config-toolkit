@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "3bia-channel.unlimiteddev.xyz",
-            "port": 80,
+            "address": "1042-join-v2raytz.sinotz.tk",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0fbc9e57-16a6-42c1-b07a-c6b2fba45b27",
+                "id": "Source-ipV2Ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "hA5X0hsLIUN21CNu2BPKDB1x2QRK0Dxfzorh1DZ0Ang",
+          "serverName": "gsmarena.com",
+          "shortId": "8cbc18de",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.232",
-            "port": 80,
+            "address": "ca.noml.app",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "af3ecce2-4187-4a03-9398-ba7babc77166",
+                "id": "175533cf-ccb3-4af7-aac0-357e8d02d640",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +68,9 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "de1vl.cdn-03.live"
+            "Host": "ca.noml.app"
           },
-          "path": "/vless"
+          "path": "/re"
         },
         "security": "none"
       },

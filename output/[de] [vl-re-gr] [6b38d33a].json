@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "hotdog.sajad.sbs",
-            "port": 8080,
+            "address": "1041-join-v2raytz.sinotz.tk",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "48929c40-a530-409c-804e-be9624452bba",
+                "flow": "",
+                "id": "Source-ipV2Ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "edge",
-          "publicKey": "mivZSgiBqVFunz6UZHJgAosdhKNA0mhb-myqPO1g7VY",
-          "serverName": "server-18667.prod.hosts.ooklaserver.net",
-          "shortId": "b98e6538",
+          "fingerprint": "firefox",
+          "publicKey": "7uxF2TFYvEKmpi3W6PC_kN5UxclpbxsDfoGwfhFDRwM",
+          "serverName": "gsmarena.com",
+          "shortId": "a90ee22c",
           "show": false,
-          "spiderX": "/v2platSajadi"
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

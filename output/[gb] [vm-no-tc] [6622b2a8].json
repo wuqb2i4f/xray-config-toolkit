@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "128.140.89.173",
-            "port": 19159,
+            "address": "217.197.162.28",
+            "port": 30938,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "26cc8dd2-907d-4c12-9922-59ca70b992f3",
+                "id": "d7063e6e-12bb-4af7-b7af-e05afb73b618",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNWEDBAZ-@VPNWEDBAZ"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "AXYthmeaZPdn8f732Sl8p8dbRx4z_dfRsBhTwuUvORk",
-          "serverName": "www.sourceforge.net",
-          "shortId": "4fd92c0e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
