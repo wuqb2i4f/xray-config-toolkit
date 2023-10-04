@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.141.149.131",
-            "port": 48093,
+            "address": "5.75.210.114",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "ef8890a0-7d18-4987-90e4-b4adbbf8ffd8",
+                "flow": "xtls-rprx-vision",
+                "id": "fbe02c0b-775f-4431-8615-a9497255c876",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "vP1UPRq3jzcETQwbsANUPaStwZpJO_hiHIkgVcqK0Tk",
-          "serverName": "zula.ir",
-          "shortId": "",
+          "publicKey": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
+          "serverName": "none.felinetest.site",
+          "shortId": "6f9deca7",
           "show": false,
           "spiderX": ""
         }

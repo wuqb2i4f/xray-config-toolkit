@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
+            "address": "94.131.99.218",
+            "port": 42555,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bfa97e71-394a-474d-9de1-a601d3faafe3",
+                "id": "486ecc57-f330-4536-96e5-07ce8e4f4bb0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "de.vpncustomize.Website"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "de.vpncustomize.Website",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "gRMwKm7Q1LyfPhHNQdsLvN0NjT7egOOD2e5GUnB_9xk",
+          "serverName": "www.discordapp.com",
+          "shortId": "c4a210bb",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

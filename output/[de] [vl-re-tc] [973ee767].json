@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "valhallacallingme.ddns.net",
+            "address": "104.248.253.40",
             "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3a2e7a88-c5ed-4a02-9359-ab120b0bbe86",
+                "id": "22efcffc-6e74-4c13-b435-ef1e45b6a351",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "oqSd-8GfmEL8uHIiBQnCMdftTXx5lJ86J7N6q5SSgmA",
-          "serverName": "ilovepdf.com",
-          "shortId": "2c33b306",
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"
