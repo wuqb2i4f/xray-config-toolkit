@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "65.109.178.186",
-            "port": 3305,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "40ce4fc3-db07-4ea6-a55d-d776f058ebb1",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "15.237.86.179",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["www.spotify.com"],
-            "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "tSQydrslbbw9n2_X1XYpQnjCwjF8ycFdubnPQVXvMXg",
-          "serverName": "ftp.debian.org",
-          "shortId": "be3079d5",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"
