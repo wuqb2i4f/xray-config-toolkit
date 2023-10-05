@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:65.109.200.159",
-            "port": 2053,
+            "address": "5.22.209.40",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "cc171bf9-2a69-4680-9c7a-d9124ab51f2f",
+                "flow": "",
+                "id": "1f3ddf87-be66-4b8f-857c-4bd5be5b98d3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "h2",
+        "httpSettings": {
+            "host": ["account.zula.ir"],
+            "path": "/"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "i1Lnd2fsmBXp5wCdnNQbo-lf_AlzdTbBWe71Q62WV2c",
-          "serverName": "greenpepper.ir",
-          "shortId": "ec51f7f8",
+          "publicKey": "gyBWSFMLx98sw6XV58NS6dWtTfgC2JvWMz08V8uAfwE",
+          "serverName": "bitcommand.com",
+          "shortId": "82e8c269",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

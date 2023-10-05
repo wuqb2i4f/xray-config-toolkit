@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "54.229.103.48",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "45.89.127.210",
+            "port": 1626,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "df7f5452-227a-4909-9e2c-fa43c522bbaa",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "8AD_ubXLkiXejg_5bO0CHA220L2NwG52RJLjPCz_DSQ",
+          "serverName": "sni.vickiphone.top",
+          "shortId": "fb2adfad",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mi-v2ray.ddns.net",
-            "port": 2082,
+            "address": "static.120.29.181.135.clients.your-server.de",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d497be69-4b87-4f22-8a74-fff1c09a8fa7",
+                "id": "8ca98c98-fb0b-4007-a6e8-c8294e546763",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "gb2vl.cdn-03.live"
-          },
-          "path": "@mi_v2ray"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "6eenmFpWJ6RknrPH6qK9"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "EwDqXy7Y1vZTco-H12ftBu7xX0k0s0lvuSJ4MiQFnBo",
+          "serverName": "azaronline.com",
+          "shortId": "af",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

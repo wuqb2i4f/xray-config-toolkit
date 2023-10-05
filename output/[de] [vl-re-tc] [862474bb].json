@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "142.132.228.201",
+            "address": "ger.r8volt.com",
             "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "4d810e9f-f2d3-4708-ba36-a39d04b96277",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "c3R5_lORnQd1X3A2E0ulHJn396G2X_ZYIs66ldEVQWI",
-          "serverName": "www.speedtest.net",
-          "shortId": "28f58957",
+          "fingerprint": "chrome",
+          "publicKey": "GWLTRxw3B1iy29ZW4SqQH113-Gjup6-4vkOMksfEHB0",
+          "serverName": "spiegel.de",
+          "shortId": "0d8de1aa",
           "show": false,
           "spiderX": ""
         }

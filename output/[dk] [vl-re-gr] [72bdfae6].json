@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "16.16.155.137",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "38.180.20.30",
+            "port": 16702,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "e2a93873-53e2-4745-bcd3-0a173e438e5e",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "bNfWbvrD7ZevE4wW7oc9x6SdZkpOs38S-ArdG-hKSSw",
+          "serverName": "www.speedtest.net",
+          "shortId": "91396a9f",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
