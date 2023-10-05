@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "fd.shabijichang.com",
-            "port": 80,
+            "address": "shop1.galaxy-v.cfd",
+            "port": 2059,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "5e48a497-f4ae-4129-afd6-ba26d75b792a",
+                "id": "432335d9-03e6-42d2-8c9e-ab3c80a57103",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "mrb.shabijichang.com"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "publicKey": "uRn1GPKbm7tERw8eYdDiOUuAkEtrWNZHQfu3HcjAhkQ",
+          "serverName": "digital.galaxy-v.cfd",
+          "shortId": "4312e24b",
+          "show": false,
+          "spiderX": "/iran"
+        }
       },
       "tag": "proxy"
     },

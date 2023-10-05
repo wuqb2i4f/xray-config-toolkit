@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.232.106.167",
-            "port": 2096,
+            "address": "95.216.214.58",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "0c28ce0a-3beb-442d-86d7-43503eafe047",
+                "flow": "",
+                "id": "Source-ipV2Ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "v6_hEvnAnokrsSduwPs0pFv-rQqJQYwgvpNM2FZ1aVQ",
-          "serverName": "discord.com",
-          "shortId": "feb215ea",
+          "fingerprint": "firefox",
+          "publicKey": "9of3JTnO9Z3-gwIOxtdNmdypO3eRDtYBQ-3vsZ0FSjQ",
+          "serverName": "gsmarena.com",
+          "shortId": "8cbc18de",
           "show": false,
           "spiderX": "/"
         }

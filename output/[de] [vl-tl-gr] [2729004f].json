@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.217.232.109",
-            "port": 2053,
+            "address": "cleanmtn.barfak123.eu.org",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5d482704-06e2-4fa5-ec7e-3a515658414a",
+                "id": "86548d62-d359-4b30-8762-3443e38b860d",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
-          "serverName": "addons.mozilla.org",
-          "shortId": "b91500c5",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cloud.barfak123.eu.org",
+          "show": false
         }
       },
       "tag": "proxy"
