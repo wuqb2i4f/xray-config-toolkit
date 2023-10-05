@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "ipstore.business",
-            "port": 443,
+            "address": "173.245.49.20",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "2d108394-56db-4523-a8ae-bd7ba6de10cc",
+                "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "seeing-cruise-netherlands-tube.trycloudflare.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Kb87OWrViwqYeR7NV3xg406NRviqZ6d0MdzcGf89qjI",
-          "serverName": "upmusics.com",
-          "shortId": "57b65cc1b228c7c1",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

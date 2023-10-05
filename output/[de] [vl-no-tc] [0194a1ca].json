@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "h1.bestvipserviceirr.xyz",
-            "port": 443,
+            "address": "65.108.251.89",
+            "port": 1518,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e1719f39-57ae-4f57-b9aa-d73829e84f83",
+                "id": "df1d2c83-d865-4afb-b18a-224e82e8a372",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["who.int"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Cypw8ijWAoJlg2jYEAHfHnSQzpriIH1gkLRAuBCtqjc",
-          "serverName": "discord.com",
-          "shortId": "875ffc69",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

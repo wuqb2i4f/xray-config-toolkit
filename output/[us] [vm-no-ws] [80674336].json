@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "38.180.20.30",
-            "port": 16702,
+            "address": "141.101.113.89",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "e2a93873-53e2-4745-bcd3-0a173e438e5e",
+                "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "soil-helen-birmingham-compatible.trycloudflare.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "bNfWbvrD7ZevE4wW7oc9x6SdZkpOs38S-ArdG-hKSSw",
-          "serverName": "www.speedtest.net",
-          "shortId": "91396a9f",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

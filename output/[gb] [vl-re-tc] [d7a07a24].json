@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.vippas72.site",
+            "address": "165.232.106.167",
             "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e96b8001-c026-43e2-a1b6-732ce821613b",
+                "flow": "xtls-rprx-vision",
+                "id": "0c28ce0a-3beb-442d-86d7-43503eafe047",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "70.vippas72.site",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "v6_hEvnAnokrsSduwPs0pFv-rQqJQYwgvpNM2FZ1aVQ",
+          "serverName": "discord.com",
+          "shortId": "feb215ea",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

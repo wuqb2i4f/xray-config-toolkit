@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.131.99.218",
-            "port": 42555,
+            "address": "135.181.35.207",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "486ecc57-f330-4536-96e5-07ce8e4f4bb0",
+                "flow": "xtls-rprx-vision",
+                "id": "7080c05d-a32d-45cd-8ef4-de8a310dbb3e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "gRMwKm7Q1LyfPhHNQdsLvN0NjT7egOOD2e5GUnB_9xk",
-          "serverName": "www.discordapp.com",
-          "shortId": "c4a210bb",
+          "fingerprint": "chrome",
+          "publicKey": "GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU",
+          "serverName": "www.yahoo.com",
+          "shortId": "6bb85179e30d4fc2",
           "show": false,
           "spiderX": ""
         }

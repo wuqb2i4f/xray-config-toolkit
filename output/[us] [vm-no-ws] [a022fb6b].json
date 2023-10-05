@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "91.107.160.18",
-            "port": 22001,
+            "address": "104.25.255.254",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "205a71ee-83dd-4b41-ac80-5231fcbc10a0",
+                "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "irf"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "photoshop-hall-diving-provinces.trycloudflare.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "yi-3ZKmcgSqiqclyFTZi1jr0O4W73tbFfR-qQNfrvXU",
-          "serverName": "www.speedtest.net",
-          "shortId": "e321fde9",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
