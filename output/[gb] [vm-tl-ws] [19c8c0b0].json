@@ -49,29 +49,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.1.211.52",
-            "port": 3000,
+            "address": "octavi.cfd",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 1,
                 "encryption": "",
                 "flow": "",
-                "id": "b97ad283-287e-4e20-a741-f16f7d074590",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
-                "security": "auto"
+                "security": "aes-128-gcm"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "octavi.cfd"
+          },
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "octavi.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
