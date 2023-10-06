@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cleanmtn.barfak123.eu.org",
-            "port": 2096,
+            "address": "188.114.97.2",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "86548d62-d359-4b30-8762-3443e38b860d",
+                "id": "eb46c717-3f24-4b58-a9d4-82df392e4eb6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nor.newmtn.tech"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "cloud.barfak123.eu.org",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

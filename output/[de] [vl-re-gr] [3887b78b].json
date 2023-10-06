@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "13.50.163.197",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "49.13.62.193",
+            "port": 8088,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "faadae77-1316-46e3-8524-0bd58b300a81",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "WhWa8mRmPsCw5CI2Vsem57h0oYGfi1nucgToOhfx1Uw",
+          "serverName": "www.coinmarketcap.com",
+          "shortId": "04b5d922",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "173.245.49.20",
-            "port": 80,
+            "address": "168.119.243.238",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+                "id": "61a8054e-400e-4120-9b04-98c62f43cb27",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "seeing-cruise-netherlands-tube.trycloudflare.com"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "t7hAdop55Mnv5UzgpEYSezXGCtMEO_RHZo-fs545Vmk",
+          "serverName": "gsmarena.com",
+          "shortId": "a90ee22c",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

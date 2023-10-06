@@ -45,39 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "94.228.169.27",
+            "address": "amini1.ddns.net",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "ItsLegendaryking",
+                "id": "172dc69f-3b43-4457-8ef8-d555b2d37f4a",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "service4.karop.homes"
+          },
+          "path": "/aHFYCl4zLtepo0YwKHeQ"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "kN0MNJedfKPoVALOkTuH36Qa9OG7b9u2S_EkRQyW6G0",
-          "serverName": "h12.hostdl.com",
-          "shortId": "548be1db",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "service4.karop.homes",
+          "show": false
         }
       },
       "tag": "proxy"
