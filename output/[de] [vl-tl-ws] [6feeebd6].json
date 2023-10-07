@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fin.melov2ray.store",
+            "address": "www.speedtest.net",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e77f6066-3799-4aa4-a9de-a6b58d1bafd8",
+                "id": "f8f6ca20-eac3-446d-9c56-2089e0335c40",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de.vpncustomize.Website"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "SQ4X51JrHzzX7zkRUQZqAXg2ihoCfr7W-PA5coSAbF8",
-          "serverName": "eset.com",
-          "shortId": "a8399439",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "de.vpncustomize.Website",
+          "show": false
         }
       },
       "tag": "proxy"

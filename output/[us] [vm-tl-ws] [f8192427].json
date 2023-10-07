@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:178.255.222.122",
+            "address": "pzl.p237875155.buzz",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "3a68137d-0eab-4bd0-a086-c9911b892076",
+                "id": "9b78b7fe-47a3-41eb-d695-22692ac835a0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pzl.p237875155.buzz"
+          },
+          "path": "/pzl237875155"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "5hXLAyOP3PX8ByGN4X1mzEbMgvz1v5aW9ry7mAA3qVc",
-          "serverName": "ftp.debian.org",
-          "shortId": "25096965",
-          "show": false,
-          "spiderX": ""
+          "serverName": "pzl.p237875155.buzz",
+          "show": false
         }
       },
       "tag": "proxy"

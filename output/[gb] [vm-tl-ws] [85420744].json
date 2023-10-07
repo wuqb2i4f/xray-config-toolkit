@@ -45,39 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "nl.melov2ray.store",
+            "address": "ophelia.mom",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "e301bbf9-417c-4afd-b17b-56626d91d041",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
-                "security": "auto"
+                "security": "aes-128-gcm"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ophelia.mom"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "dL0hvTpI3kaKW7-pySLVR5A72m9igzF9idfet57893c",
-          "serverName": "www.speedtest.net",
-          "shortId": "677e9107",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "ophelia.mom",
+          "show": false
         }
       },
       "tag": "proxy"

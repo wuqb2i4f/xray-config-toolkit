@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.14",
-            "port": 80,
+            "address": "5.75.214.191",
+            "port": 18420,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5f69ce77-e06a-4405-bedf-e579a6784be0",
+                "id": "62be9926-6400-44d0-8d2b-13f4e1e586e0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "gb3vl.cdn-03.live"
-          },
-          "path": "/@hopev2ray"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "NbeYuqm0c6M9l5lVTlBYE_UotmpPZJZhcpEemG8bzFg",
+          "serverName": "www.speedtest.net",
+          "shortId": "af53e81a",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
