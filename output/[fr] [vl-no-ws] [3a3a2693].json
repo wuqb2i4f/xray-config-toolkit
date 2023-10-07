@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "168.119.243.238",
-            "port": 2087,
+            "address": "104.31.16.14",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "61a8054e-400e-4120-9b04-98c62f43cb27",
+                "id": "5f69ce77-e06a-4405-bedf-e579a6784be0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "gb3vl.cdn-03.live"
+          },
+          "path": "/@hopev2ray"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "t7hAdop55Mnv5UzgpEYSezXGCtMEO_RHZo-fs545Vmk",
-          "serverName": "gsmarena.com",
-          "shortId": "a90ee22c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

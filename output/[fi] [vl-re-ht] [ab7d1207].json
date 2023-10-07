@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "217.197.162.28",
-            "port": 30938,
+            "address": "5.22.209.40",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "d7063e6e-12bb-4af7-b7af-e05afb73b618",
+                "id": "1f3ddf87-be66-4b8f-857c-4bd5be5b98d3",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "h2",
+        "httpSettings": {
+            "host": ["account.zula.ir"],
+            "path": "/"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "gyBWSFMLx98sw6XV58NS6dWtTfgC2JvWMz08V8uAfwE",
+          "serverName": "bitcommand.com",
+          "shortId": "82e8c269",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

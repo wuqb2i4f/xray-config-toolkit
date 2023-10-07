@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ipstore.business",
+            "address": "0000:0000:0000:0000:0000:ffff:334b:563f",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2d108394-56db-4523-a8ae-bd7ba6de10cc",
+                "flow": "xtls-rprx-vision",
+                "id": "d0e657b8-c01b-433c-b605-2bd475da74d9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Kb87OWrViwqYeR7NV3xg406NRviqZ6d0MdzcGf89qjI",
-          "serverName": "upmusics.com",
-          "shortId": "57b65cc1b228c7c1",
+          "fingerprint": "edge",
+          "publicKey": "UDABcxpKzAYkuyE4pmST0OSzEUJpQNuSgYIKcgppeh8",
+          "serverName": "www.flightradar24.com",
+          "shortId": "d73382b02fa94fc2",
           "show": false,
           "spiderX": ""
         }

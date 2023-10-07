@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "baloti9900.ddns.net",
+            "address": "join-nofilterin2.ddns.net",
             "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "af4ea41c-31b0-40de-a058-7cc5d547ff97",
+                "flow": "",
+                "id": "78136d9c-7651-4f80-a068-c2dacaa3fa5c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "discordapp.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "serverName": "cert.nofiltering2.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
