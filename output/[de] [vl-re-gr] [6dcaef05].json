@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
+            "address": "167.235.143.177",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f8f6ca20-eac3-446d-9c56-2089e0335c40",
+                "id": "2d108394-56db-4523-a8ae-bd7ba6de10cc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "de.vpncustomize.Website"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "de.vpncustomize.Website",
-          "show": false
+          "publicKey": "Kb87OWrViwqYeR7NV3xg406NRviqZ6d0MdzcGf89qjI",
+          "serverName": "upmusics.com",
+          "shortId": "57b65cc1b228c7c1",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

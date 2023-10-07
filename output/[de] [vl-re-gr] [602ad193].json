@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "pzl.p237875155.buzz",
+            "address": "ipstore.business",
             "port": 443,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "9b78b7fe-47a3-41eb-d695-22692ac835a0",
+                "id": "2d108394-56db-4523-a8ae-bd7ba6de10cc",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pzl.p237875155.buzz"
-          },
-          "path": "/pzl237875155"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "pzl.p237875155.buzz",
-          "show": false
+          "publicKey": "Kb87OWrViwqYeR7NV3xg406NRviqZ6d0MdzcGf89qjI",
+          "serverName": "upmusics.com",
+          "shortId": "57b65cc1b228c7c1",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

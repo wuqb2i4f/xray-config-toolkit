@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "vpncustomize.cam",
-            "port": 443,
+            "address": "173.245.49.227",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f8f6ca20-eac3-446d-9c56-2089e0335c40",
+                "id": "edd3dff8-b89a-49fc-a530-0afe83a4a9d8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nanOTEchNology.TahaRat.App"
+          },
+          "path": "/backup"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I",
-          "serverName": "www.iranserver.com",
-          "shortId": "6b0541cd",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
