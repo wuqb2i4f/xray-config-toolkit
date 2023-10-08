@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:37.59.166.156",
-            "port": 48576,
+            "address": "104.24.255.191",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7445f41b-c6f2-4c02-9948-3a895ed25961",
+                "id": "ed16c5c2-54e8-4623-f33a-e1e56e54465a",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Alfred_Config"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "SpK3BAXSaKxWOuLRACdwp3qdM_UFGKGGd8-XuFEdG1Y",
-          "serverName": "ea.com",
-          "shortId": "b1b454f6",
-          "show": false,
-          "spiderX": ""
+          "serverName": "vip.Lockey-vip.site",
+          "show": false
         }
       },
       "tag": "proxy"

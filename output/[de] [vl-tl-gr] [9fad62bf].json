@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.12.103.238",
-            "port": 23056,
+            "address": "104.16.106.177",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2dc95f06-774d-4cf6-a22b-417ef415f663",
+                "id": "ed16c5c2-54e8-4623-f33a-e1e56e54465a",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Alfred_Config"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "sETwywE38iYBGASG9HJscP0eJ9einccE8kixsnTGnHw",
-          "serverName": "www.telewebion.com",
-          "shortId": "e429954c",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "vip.Lockey-vip.site",
+          "show": false
         }
       },
       "tag": "proxy"

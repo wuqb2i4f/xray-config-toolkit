@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "ec71.kiava.fun",
-            "port": 8443,
+            "address": "fd.shabijichang.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "783164cb-6410-4a96-e432-832489e4848c",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "783b0d65-49fa-45a0-a490-f5f264e6674c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sls.shabijichang.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "fud6PNbWSTSp5vxXftbyG5KOW5pJUj7tGSXOfdf9WgY",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": "/new"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
