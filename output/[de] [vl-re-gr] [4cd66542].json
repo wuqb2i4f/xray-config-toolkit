@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.49.227",
-            "port": 80,
+            "address": "5.75.196.139",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "edd3dff8-b89a-49fc-a530-0afe83a4a9d8",
+                "id": "cb51738a-1a61-4b67-8bee-972f7fde8476",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nanOTEchNology.TahaRat.App"
-          },
-          "path": "/backup"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "nsXXgIAjPt9_hLaCjLY6vLRQer30q_JYqGRTDBUd5EE",
+          "serverName": "www.zula.ir",
+          "shortId": "86514152",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

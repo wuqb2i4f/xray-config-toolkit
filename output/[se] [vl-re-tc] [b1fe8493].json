@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "f1.bestvipserviceirr.xyz",
-            "port": 443,
+            "address": "speedtest.mitowear.com",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e0f25748-0788-4dda-8a64-c8e1c68c123a",
+                "flow": "xtls-rprx-vision",
+                "id": "0293c2ca-1dd0-41f2-8955-f20ca9380af1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "BKrFelicMk7ZesuJkjcoXvYra6HTQj5LCVLfVifa-zE",
-          "serverName": "discord.com",
-          "shortId": "9d671316",
+          "publicKey": "_ncj48ZXXaES59DJJBXaG3ip4HlwfywJkSsD-fMX_2c",
+          "serverName": "zoom.us",
+          "shortId": "d9a90b3a",
           "show": false,
-          "spiderX": "/"
+          "spiderX": "/join"
         }
       },
       "tag": "proxy"
