@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
+            "address": "::ffff:142.132.167.95",
+            "port": 27721,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c5dba486-2d11-49b4-ac69-bd5fecb02a14",
+                "id": "3ec80ab1-f83c-4cae-a965-d7a708a2795c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "de.vpncustomize.Website"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "de.vpncustomize.Website",
-          "show": false
+          "publicKey": "bnlFxTwIumgBzn0ZT6HTA0alh_J28cwgT0IaDSfkowU",
+          "serverName": "flutter.dev",
+          "shortId": "3bb5e87b",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

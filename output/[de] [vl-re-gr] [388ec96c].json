@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.12.245.202",
+            "address": "128.140.97.4",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "7f1352c6-0ba2-4b38-97a0-6c4d3784afc2",
+                "flow": "",
+                "id": "382cfa8e-84d4-45f0-8524-85dd0cb100ea",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "K7C_pOD78XXS7D0fNVbwyjlfLc_MGQ_4BwfQU_DnbQY",
-          "serverName": "www.speedtest.net",
-          "shortId": "3dc679a73cf4bbf6",
+          "fingerprint": "firefox",
+          "publicKey": "55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I",
+          "serverName": "www.iranserver.com",
+          "shortId": "6b0541cd",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

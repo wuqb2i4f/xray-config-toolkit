@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "fd.shabijichang.com",
-            "port": 80,
+            "address": "join.vpnconectd.cfd",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "783b0d65-49fa-45a0-a490-f5f264e6674c",
+                "id": "831be0d2-0077-4c62-a2c3-422a8426ada4",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sls.shabijichang.com"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNconectd,@VPNconectd"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "Und7L3NOwIuh4rxQdQpRtN9zp9fWpL-oB7AqETkVXh8",
+          "serverName": "www.speedtest.net",
+          "shortId": "465b8fe2",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

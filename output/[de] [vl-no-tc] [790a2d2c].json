@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "14.melov2ray.store",
-            "port": 443,
+            "address": "91.107.243.238",
+            "port": 8081,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "123d527e-7a85-4cee-8465-152cd167314e",
+                "id": "ef848bfe-ef59-4116-a114-0ebe8e24e58c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "9jD2yAMu1rI5pKK_dow_NmeCXL5Qf9lJZpPZXfFrFzU",
-          "serverName": "eset.com",
-          "shortId": "4373557b",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
