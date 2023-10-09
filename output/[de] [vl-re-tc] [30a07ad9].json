@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "fd.shabijichang.com",
-            "port": 80,
+            "address": "195.201.130.7",
+            "port": 57706,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "783b0d65-49fa-45a0-a490-f5f264e6674c",
+                "id": "698a1505-b335-4ce2-97bc-8a4ffd67da4b",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sls.shabijichang.com"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "F6wV-NlEVPipP6-0IXq4gM9UEbXB2XAUCrGyFS0_1wU",
+          "serverName": "google.com",
+          "shortId": "fdc11189",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

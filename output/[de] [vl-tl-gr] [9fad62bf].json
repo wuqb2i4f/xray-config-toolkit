@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.34.180.94",
-            "port": 991,
+            "address": "104.16.106.177",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7263dcf0-f7dd-4226-bb3b-3cc47160013d",
+                "id": "ed16c5c2-54e8-4623-f33a-e1e56e54465a",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee,@proxy_kafee"
+          "serviceName": "@Alfred_Config"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cW3KTJox_26WNDvc5M2Pjsw1D7VeIUx3bgg_8mP-fQs",
-          "serverName": "grseven.AhV2ray.cfd",
-          "shortId": "8dbd",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "vip.Lockey-vip.site",
+          "show": false
         }
       },
       "tag": "proxy"

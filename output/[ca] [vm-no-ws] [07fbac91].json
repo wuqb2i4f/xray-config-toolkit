@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "th.ostad.website",
-            "port": 21984,
+            "address": "172.67.229.25",
+            "port": 2086,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "da43dc9f-c34e-42e2-b0a1-f8af94481c29",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ca6.tehme100.fun"
+          },
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "q8Zk-KkVeTZDkeYcGtMK1oXzbogXekFBe2N1DDXgiX0",
-          "serverName": "www.speedtest.net",
-          "shortId": "1d1700dd",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

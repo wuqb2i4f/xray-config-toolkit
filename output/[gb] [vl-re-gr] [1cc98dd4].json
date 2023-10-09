@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "38.180.21.198",
-            "port": 35644,
+            "address": "134.122.97.236",
+            "port": 32482,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8387e7f5-81fe-4dc4-8202-34991cc390e5",
+                "id": "7789a973-05cc-46e8-b220-ac86058e1920",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,28 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["telewebion.com"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "WuJDYL9pOtMm0qmVLhj-q9YGbFowVPRNmYX9dYy0wyU",
+          "serverName": "discord.com",
+          "shortId": "ad5e40ed",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
