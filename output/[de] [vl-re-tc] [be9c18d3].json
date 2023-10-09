@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.30.157",
-            "port": 8443,
+            "address": "baloti9900.ddns.net",
+            "port": 15827,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "ed16c5c2-54e8-4623-f33a-e1e56e54465a",
+                "flow": "xtls-rprx-vision",
+                "id": "aaa0159c-2101-4ed4-a637-5ad0b395e3f3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Alfred_Config"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "vip.Lockey-vip.site",
-          "show": false
+          "publicKey": "7XWnexfNYHYIXK3d13ASXBMLFgbQY3FVTEww3oR0rXc",
+          "serverName": "www.emirates.com",
+          "shortId": "a712bf73",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

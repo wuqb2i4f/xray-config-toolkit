@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.106.177",
-            "port": 8443,
+            "address": "x103-join.outline-vpn.cloud",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ed16c5c2-54e8-4623-f33a-e1e56e54465a",
+                "id": "edd3dff8-b89a-49fc-a530-0afe83a4a9d8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Alfred_Config"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nanOTEchNology.TahaRat.App"
+          },
+          "path": "/backup"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "vip.Lockey-vip.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

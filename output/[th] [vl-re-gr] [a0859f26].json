@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.49.227",
-            "port": 80,
+            "address": "103.253.73.171",
+            "port": 24455,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "edd3dff8-b89a-49fc-a530-0afe83a4a9d8",
+                "id": "ed670715-b237-45e3-93e2-4b6b07fb6d72",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nanOTEchNology.TahaRat.App"
-          },
-          "path": "/backup"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "Y_XScinModjbNAjX32icYAU3m6zTJORA2OPXuA8Mezs",
+          "serverName": "tha3.redreimu.xyz",
+          "shortId": "67cb92cd",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

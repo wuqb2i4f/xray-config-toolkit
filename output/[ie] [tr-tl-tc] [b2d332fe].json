@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "78.47.29.59",
-            "port": 38955,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "510ffdf3-4cbb-4e1b-92aa-51554b8e5741",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "99.81.6.0",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "B3OSH3e4cM53VIJ2UBwaBQWQF6cGWDH8lBk3QOA-tCk",
-          "serverName": "Speed.cloudflare.com",
-          "shortId": "488387e2",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"
