@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jdjjxkckxkxjkxkxn.ddns.net",
-            "port": 44938,
+            "address": "gernew.3utilities.com",
+            "port": 991,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "de9b6e7e-ab11-489e-a838-bb7f730f757a",
+                "id": "b7705fd7-9e85-4bf8-a07a-f6f3527724ab",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cQd-SFOh8B1NmoGw2XvOSpUZZFVVwUzoAv08BVz0VlM",
-          "serverName": "ftp.debian.org",
-          "shortId": "46db55d5",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

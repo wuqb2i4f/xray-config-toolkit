@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "1166-join-v2raytz.sinotz.tk",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "637c8201-88fd-4155-cf06-9abe6bc92abc",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "fra1.connecton.surf",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "95532c1dcc",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "O21fCCSYGZWbnJw8otjPOHPq4Y223CDnm1eEoyZ8jDY",
-          "serverName": "gsmarena.com",
-          "shortId": "638ca3d3",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "fra1.connecton.surf",
+          "show": false
         }
       },
       "tag": "proxy"

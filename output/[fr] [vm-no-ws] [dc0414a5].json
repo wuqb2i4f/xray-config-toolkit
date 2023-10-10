@@ -45,17 +45,22 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "22.opo.nishbakh.site",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "310b9ceb-8de0-48b5-8395-b7f38ac29a8e",
-            "port": 443
+            "address": "ns1.v2-vip.fun",
+            "port": 8880,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "22.opo.nishbakh.site"
+            "Host": "fr7.tehme100.fun"
           },
-          "path": "/JcL5AGInak7wFTZVO8HHEF"
+          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "22.opo.nishbakh.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

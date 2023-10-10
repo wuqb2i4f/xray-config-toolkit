@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jdjjxkckxkxjkxkxn.ddns.net",
-            "port": 44938,
+            "address": "49.13.81.157",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "de9b6e7e-ab11-489e-a838-bb7f730f757a",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cQd-SFOh8B1NmoGw2XvOSpUZZFVVwUzoAv08BVz0VlM",
-          "serverName": "ftp.debian.org",
-          "shortId": "46db55d5",
+          "fingerprint": "chrome",
+          "publicKey": "GWLTRxw3B1iy29ZW4SqQH113-Gjup6-4vkOMksfEHB0",
+          "serverName": "spiegel.de",
+          "shortId": "0d8de1aa",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

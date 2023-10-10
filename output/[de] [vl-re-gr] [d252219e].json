@@ -45,34 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "22.opo.nishbakh.site",
-            "port": 80,
+            "address": "91.107.177.66",
+            "port": 11341,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "310b9ceb-8de0-48b5-8395-b7f38ac29a8e",
+                "id": "fe423671-e289-487a-84ce-203440d53ec9",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "22.opo.nishbakh.site"
-          },
-          "path": "/Y870uZKkRnak7wFTZVO8HHEF"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "q2zEvnATcH2Ppvn-y8wgkKvdFHlG1YXRID1grRAwGRM",
+          "serverName": "www.eset.com",
+          "shortId": "5049c794",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

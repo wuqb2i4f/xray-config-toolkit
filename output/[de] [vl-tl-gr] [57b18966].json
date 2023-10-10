@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jdjjxkckxkxjkxkxn.ddns.net",
-            "port": 44938,
+            "address": "jointov2kingchannel.v2vol.online",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "de9b6e7e-ab11-489e-a838-bb7f730f757a",
+                "id": "15bfe4c7-0b6f-4bc2-b966-9cf15d1fc7d4",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@v2kingconfigBot"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cQd-SFOh8B1NmoGw2XvOSpUZZFVVwUzoAv08BVz0VlM",
-          "serverName": "ftp.debian.org",
-          "shortId": "46db55d5",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "chrome",
+          "serverName": "jointov2kingchannel.v2vol.online",
+          "show": false
         }
       },
       "tag": "proxy"

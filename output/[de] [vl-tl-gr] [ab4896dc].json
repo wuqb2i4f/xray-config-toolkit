@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jdjjxkckxkxjkxkxn.ddns.net",
-            "port": 44938,
+            "address": "join-v2raytz.sinotz.tk",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "de9b6e7e-ab11-489e-a838-bb7f730f757a",
+                "id": "35a79ce9-3f42-46d1-85ed-e1d759ac083d",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "SvnTeam,SvnTeam,SvnTeam,SvnTeam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cQd-SFOh8B1NmoGw2XvOSpUZZFVVwUzoAv08BVz0VlM",
-          "serverName": "ftp.debian.org",
-          "shortId": "46db55d5",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "Site.SvnRealliTy.online",
+          "show": false
         }
       },
       "tag": "proxy"

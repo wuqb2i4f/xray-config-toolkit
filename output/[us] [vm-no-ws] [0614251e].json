@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "baloti9900.ddns.net",
-            "port": 15827,
+            "address": "104.26.12.8",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "aaa0159c-2101-4ed4-a637-5ad0b395e3f3",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "617b2009-8eb3-4d07-e29c-6be1552875b0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "airusa.daozhang.link"
+          },
+          "path": "/cdn"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "7XWnexfNYHYIXK3d13ASXBMLFgbQY3FVTEww3oR0rXc",
-          "serverName": "www.emirates.com",
-          "shortId": "a712bf73",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "103.253.73.171",
-            "port": 24455,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "ed670715-b237-45e3-93e2-4b6b07fb6d72",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "18.159.56.158",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Y_XScinModjbNAjX32icYAU3m6zTJORA2OPXuA8Mezs",
-          "serverName": "tha3.redreimu.xyz",
-          "shortId": "67cb92cd",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"
