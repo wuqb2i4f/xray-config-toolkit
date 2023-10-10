@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.46",
-            "port": 2082,
+            "address": "91.107.177.66",
+            "port": 11341,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "id": "fe423671-e289-487a-84ce-203440d53ec9",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ca5.tehme100.fun"
-          },
-          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "q2zEvnATcH2Ppvn-y8wgkKvdFHlG1YXRID1grRAwGRM",
+          "serverName": "www.eset.com",
+          "shortId": "5049c794",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

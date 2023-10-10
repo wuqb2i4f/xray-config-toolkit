@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.27",
-            "port": 80,
+            "address": "::ffff:128.140.97.183",
+            "port": 20521,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "id": "732fd7ef-a7b9-4c6c-9e03-4dc3a8a40ce7",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ca5.tehme2.fun"
-          },
-          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "gzvFCEZcMTrbz2NNVuTs7txbgBObNa3rTZmb3OE_uWA",
+          "serverName": "canva.com",
+          "shortId": "6c804bb1",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

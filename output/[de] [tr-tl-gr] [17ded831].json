@@ -45,40 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "thc.thcvpn.sbs",
-            "port": 22642,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "19645302-eb90-4009-b2cc-687bfd205c88",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "5.75.254.127",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8802124a-e0e1-4f5e-9d1f-910f2ce331f2",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "6PQbFwJBKjVk1LYld"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Tq6eKYANpi3VpxQzPB2NxjLDBYBRgc2LkN8tfaCOvTg",
-          "serverName": "sourceforge.net",
-          "shortId": "5146d2eb",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "b2.talamala.co",
+          "show": false
         }
       },
       "tag": "proxy"

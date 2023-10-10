@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cleanmci.barfak123.eu.org",
-            "port": 2096,
+            "address": "fh.news-mobile-liqgroup69.site",
+            "port": 43636,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f63f598c-90a6-424b-a010-a9d138be396f",
+                "id": "124c3086-49c3-4095-896c-693ebf433307",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "cloud.barfak123.eu.org",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "zUK8lBn8X9KxBcBT7AdThI3Ta5jywhnzM3aEMMM8NBs",
+          "serverName": "cloudflare.com",
+          "shortId": "c3c3e732",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

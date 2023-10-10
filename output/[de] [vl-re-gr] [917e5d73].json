@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "de1.connecton.surf",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "517ccb0754",
-            "port": 443
+            "address": "reza.punisher-shop-v2.site",
+            "port": 12608,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "a21d6ab0-7b7d-46d4-86b1-241994727e8f",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@puni_shop_v2rayNG"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "de1.connecton.surf",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "5u2fl_WBgUuzeKAbZ1-LwY6ShOIKR5BliIcoC-cfTh0",
+          "serverName": "www.speedtest.net",
+          "shortId": "cca9d0b0",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
