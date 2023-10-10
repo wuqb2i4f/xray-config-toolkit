@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "91.107.132.179",
-            "port": 443,
+            "address": "104.31.16.27",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "b870956e-4ada-4d9b-8be6-8134b05f97df",
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "ZCcIWWaP0LE8H9qQE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ca5.tehme2.fun"
+          },
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "NYr3ZeBX7okk0wTOomp785Dnilse_mcPsnHZ5FF52iw",
-          "serverName": "gmail.com",
-          "shortId": "6f0aa7b548cf45",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
