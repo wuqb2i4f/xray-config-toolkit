@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "forward2.maryam1300.top",
-            "port": 8443,
+            "address": "bia-to5.unlimiteddev.xyz",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "bbfefd52-af00-4f3e-a33c-536cd0297d35",
+                "id": "dd9b28a0-4d44-4a98-f67b-c8e1d5737a88",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,9 +67,18 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@unlimiteddev"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "3ZKR3NHSCkrX47BIAu2Gxbfzg2hpgyCBIpcUbvqmTWs",
+          "serverName": "account.zula.ir",
+          "shortId": "afe8",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

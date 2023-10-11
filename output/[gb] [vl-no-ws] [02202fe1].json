@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "181.215.32.231",
-            "port": 2086,
+            "address": "138.68.144.102",
+            "port": 56655,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f8a79a4a-3397-45ac-bd59-e8d31f97032c",
+                "id": "29a20e69-7641-4ae9-ccc6-8a3ff6c02fbc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "Alibaba.ir"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "TL7umtLqzP5z8ykNp4nVlekMa08sLfA2d4lGzbV3qnY",
-          "serverName": "zula.ir",
-          "shortId": "f352aa57",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

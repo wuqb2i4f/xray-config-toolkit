@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "13.melov2ray.store",
+            "address": "codepen.io",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "aac21d98-15c9-4afc-a5d8-d6f3488f0ec6",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sub.yifenjichang.top"
+          },
+          "path": "/octavi.cfd:443/linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "dSVEQtvtffLWkH3XjEY-KVmtS1me9_Iw2ZFZKpse4VM",
-          "serverName": "eset.com",
-          "shortId": "25146608",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "sub.yifenjichang.top",
+          "show": false
         }
       },
       "tag": "proxy"

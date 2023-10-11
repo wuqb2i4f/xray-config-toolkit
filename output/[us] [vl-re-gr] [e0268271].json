@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to-channel.vmessorg.fun",
-            "port": 80,
+            "address": "45.158.15.229",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5a8ebbaa-0c9a-49c3-c939-68026e44a028",
+                "id": "dalidalton",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@VPN_XW-Telegram:@VPN_XW-Telegram:@VPN_XW-Telegram:@VPN_XW-Telegram:@VPN_XW-"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "Dl0PcaKFBtrTRYgWbmrIrsOEa116GrjZs_v-tnWhozk",
+          "serverName": "bus.biletyplus.com.tr",
+          "shortId": "f6bdc4d9",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
