@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "gernew.3utilities.com",
-            "port": 991,
+            "address": "143.42.205.35",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b7705fd7-9e85-4bf8-a07a-f6f3527724ab",
+                "id": "963dc629-46b0-4155-bf72-1f719a93e6d8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "Z60U7nFtH0upOkcvw19XGdWcPBUaezaI1wYLg57joxo",
+          "serverName": "www.speedtest.net",
+          "shortId": "81666a1c",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

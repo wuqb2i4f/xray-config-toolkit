@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "fh.news-mobile-liqgroup69.site",
-            "port": 43636,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "124c3086-49c3-4095-896c-693ebf433307",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "16.170.63.147",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "zUK8lBn8X9KxBcBT7AdThI3Ta5jywhnzM3aEMMM8NBs",
-          "serverName": "cloudflare.com",
-          "shortId": "c3c3e732",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

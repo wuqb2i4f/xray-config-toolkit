@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "138.68.136.50",
-            "port": 65500,
+            "address": "1224-join-v2raytz.sinotz.tk",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "6b2e381c-8214-47c7-aa73-54c803ef1d22",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "9241d224-8bee-4b45-91fc-86c31eb444c5",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "SrIriv7MjDIKFX9o5hPZqwjEuuGaqhsjrnSloV0DkhY",
+          "serverName": "www.cdn77.com",
+          "shortId": "a91552f9",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
