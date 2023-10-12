@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.239.42",
-            "port": 8443,
+            "address": "goandsee.beingpopular.sbs",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "783164cb-6410-4a96-e432-832489e4848c",
+                "flow": "",
+                "id": "eba4ac7f-e1cd-4190-ac79-f8d3dd292045",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,19 +67,25 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["cdn.accuweather.com"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "keSfNSq9ft69KzHFWFg5WTk4BwIap5JapEwOy0Lz6QA",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

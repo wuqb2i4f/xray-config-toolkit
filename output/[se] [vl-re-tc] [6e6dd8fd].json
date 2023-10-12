@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "134.122.97.236",
-            "port": 32482,
+            "address": "speedtest.mitowear.com",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "7789a973-05cc-46e8-b220-ac86058e1920",
+                "flow": "xtls-rprx-vision",
+                "id": "a97a56f7-a339-4a61-9265-3ddeff6735e5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "WuJDYL9pOtMm0qmVLhj-q9YGbFowVPRNmYX9dYy0wyU",
-          "serverName": "discord.com",
-          "shortId": "ad5e40ed",
+          "fingerprint": "chrome",
+          "publicKey": "GdePcD3Vfc84LAvTBsUhQrvHRRgdQBd69GA2b2EQcUM",
+          "serverName": "www.nasa.gov",
+          "shortId": "840a1e8b",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/newsletters"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "free.h3lixchannel.fun",
-            "port": 443,
+            "address": "168.119.127.114",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "4310872c-961a-4bc3-9e84-5edc7eb5be35",
+                "flow": "xtls-rprx-vision",
+                "id": "3a704af7-08b7-47f9-8d74-5fd1d658aaf0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "Lb_4_MjK1Z-aKXM2udwy9nf_T5muEcsfVogH81XiMhg",
-          "serverName": "zula.ir",
-          "shortId": "1ba26657",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "www.medium.com",
+          "shortId": "",
           "show": false,
-          "spiderX": "/system-requrements"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

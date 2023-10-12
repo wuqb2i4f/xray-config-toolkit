@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "141.98.233.95",
-            "port": 1518,
+            "address": "91.107.252.217",
+            "port": 22001,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "840fce73-112f-44e1-8bdf-cee760ed7a03",
+                "id": "35adeb59-52f4-4633-bff9-bfecacade1b7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,28 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["speed.cloudflare.com"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "irf"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "yi-3ZKmcgSqiqclyFTZi1jr0O4W73tbFfR-qQNfrvXU",
+          "serverName": "www.speedtest.net",
+          "shortId": "e321fde9",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

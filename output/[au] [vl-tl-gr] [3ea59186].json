@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "142.132.162.169",
-            "port": 443,
+            "address": "104.31.16.149",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8fc0e9a4-279d-4917-937b-9b1470737ba5",
+                "id": "d1a039ac-9856-4c0b-928c-36880319ff5b",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "Yebekhe"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "gmj7z1V6hwQkeCqB6E4ymuSJ6ol5nX2lI6vas8TPJB8",
-          "serverName": "cloudflare.com",
-          "shortId": "f29def41",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "azadi-az-inja-migzare-D2.dgi000.store",
+          "show": false
         }
       },
       "tag": "proxy"

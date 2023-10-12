@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "45.158.15.229",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "dalidalton",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "54.36.173.159",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "4452b6961b",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@VPN_XW-Telegram:@VPN_XW-Telegram:@VPN_XW-Telegram:@VPN_XW-Telegram:@VPN_XW-"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Dl0PcaKFBtrTRYgWbmrIrsOEa116GrjZs_v-tnWhozk",
-          "serverName": "bus.biletyplus.com.tr",
-          "shortId": "f6bdc4d9",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "pol1.connecton.surf",
+          "show": false
         }
       },
       "tag": "proxy"
