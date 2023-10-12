@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.232.146.140",
+            "address": "159.69.150.150",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "edf94ccb-e076-472b-b2e3-a11ba669d0fc",
+                "flow": "xtls-rprx-vision",
+                "id": "031a2d6c-ce91-4167-bcb8-012d346a6e70",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "rW_BTQ5EiomL4nMuvj3EbxqjRdLYt9Q0rpCaS9Iy8Eo",
-          "serverName": "www.speedtest.net",
-          "shortId": "804894e8",
+          "publicKey": "CPLcMRb5VAd149rnWt2xOoYzNn_L7bPXxH-mnXfe-lM",
+          "serverName": "sn.hfafn.site",
+          "shortId": "eb2224c8",
           "show": false,
           "spiderX": ""
         }

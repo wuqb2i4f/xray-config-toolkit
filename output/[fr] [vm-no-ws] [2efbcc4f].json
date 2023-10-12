@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "137.74.8.119",
-            "port": 443,
+            "address": "www.speedtest.net",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "00e3f40e-f817-4714-b7a3-4c304c49c322",
+                "id": "6bf1b342-2bf0-4608-b288-8ee515e2d594",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@savagev2ray@ohvpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de1vm.cdn-03.live"
+          },
+          "path": "/@hopev2ray،@hopev2ray"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "DfYoJbJFNx_IVbDpMDpeX0nJaveOayQUvtNUUuOzTQA",
-          "serverName": "mihanyas.ir",
-          "shortId": "3ff2adb4",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

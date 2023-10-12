@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.160.36.169",
+            "address": "nl.melov2ray.store",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ff4dcc66-920c-4868-b98e-cb58c2928bae",
+                "flow": "",
+                "id": "61c1477e-d8ec-4cd0-866e-ca72a3450acb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "SltmCDZOy3yBaMjip6pvnZEaPXQ_Z6ANp_Nt_BXvXQk",
-          "serverName": "yahoo.com",
-          "shortId": "256c9334",
+          "fingerprint": "chrome",
+          "publicKey": "dL0hvTpI3kaKW7-pySLVR5A72m9igzF9idfet57893c",
+          "serverName": "www.speedtest.net",
+          "shortId": "677e9107",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

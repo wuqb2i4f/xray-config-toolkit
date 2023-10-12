@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "138.68.75.58",
-            "port": 31631,
+            "address": "::ffff:5.75.206.143",
+            "port": 31743,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "70ae0055-a142-47eb-910c-3e573540344b",
+                "id": "aff90348-5f84-48ab-8e98-aefa5f9312fe",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "XeXegzwuUdKLGSuIDmGb1D1oYhOwbAVnlgdC8ccHQWs",
-          "serverName": "discord.com",
-          "shortId": "4f91fd0e",
+          "fingerprint": "chrome",
+          "publicKey": "X0-POH2S1bhoTEk-A70IPhYdYiZaL0Bzpantw86sVT8",
+          "serverName": "ftp.debian.org",
+          "shortId": "e1194a38",
           "show": false,
           "spiderX": ""
         }

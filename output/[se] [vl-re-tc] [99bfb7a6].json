@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bitcommand.com",
-            "port": 2082,
+            "address": "13.50.106.50",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a21d9051-6b06-4af4-8ef5-02e1b70c30a7",
+                "flow": "xtls-rprx-vision",
+                "id": "783164cb-6410-4a96-e432-832489e4848c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fr1vl.cdn-03.live"
-          },
-          "path": "Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "pvqdD2TAfCZRW6BjgpyvZbL_CjS3__kfvYEDZo2xyDI",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "p1.09vpn.com",
-            "port": 80,
+            "address": "azadi-az-inja-migzare-d2.dgi000.store",
+            "port": 31231,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9c0a7430-8234-4764-9618-73f54410b72a",
+                "id": "Ehdai-be-ye-be-khe2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/vless/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "-xg79ExLrnUSjWISteqYaaRburE6o1BM3UECgpTTqz0",
+          "serverName": "www.speedtest.net",
+          "shortId": "",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
