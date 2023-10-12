@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "91.107.177.66",
-            "port": 21924,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "5e57804b-2966-4fdb-a479-644cf12e1483",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "5.199.143.230",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "517ccb0754",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TohGOM8sCb9oiqGq99Jn9OyE0pY1FTy0e_qIKqsxC2g",
-          "serverName": "www.eset.com",
-          "shortId": "a95efa3f",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "de1.connecton.surf",
+          "show": false
         }
       },
       "tag": "proxy"

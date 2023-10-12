@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "1250-join-v2raytz.sinotz.tk",
-            "port": 38263,
+            "address": "bitcommand.com",
+            "port": 2082,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cf458870-4e89-4b30-b8be-b849fdd70e08",
+                "id": "a21d9051-6b06-4af4-8ef5-02e1b70c30a7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr1vl.cdn-03.live"
+          },
+          "path": "Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "tXtvnIrQnitlqjW9Aa3DrX95qho8rmt2PWSzISq4QWQ",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "4d09fa0e",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

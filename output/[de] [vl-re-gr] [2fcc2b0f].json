@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.252.97",
-            "port": 8443,
+            "address": "vpncustomize.cam",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "783164cb-6410-4a96-e432-832489e4848c",
+                "flow": "",
+                "id": "be5b7fb5-48e8-425f-8b18-363541bbaa9b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "s_OCQXQ8kJ_VYO--XwQGLFPx215tdE_Q3fMPahphEl8",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
+          "fingerprint": "firefox",
+          "publicKey": "55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I",
+          "serverName": "www.iranserver.com",
+          "shortId": "6b0541cd",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

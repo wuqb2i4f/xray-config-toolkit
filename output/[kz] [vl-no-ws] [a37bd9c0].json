@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "f1.bestvipserviceirr.xyz",
-            "port": 443,
+            "address": "p1.09vpn.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bd1db2a9-9e8c-4ed4-adfa-42ef05f5a5e8",
+                "id": "9c0a7430-8234-4764-9618-73f54410b72a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vless/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "BKrFelicMk7ZesuJkjcoXvYra6HTQj5LCVLfVifa-zE",
-          "serverName": "discord.com",
-          "shortId": "9d671316",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
