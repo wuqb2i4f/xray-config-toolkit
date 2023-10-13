@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.177.66",
-            "port": 46435,
+            "address": "172.67.165.82",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "89958cfd-e8c6-4252-9be0-837fa4081d4c",
+                "id": "2aa03d61-43a6-454f-a2dc-33cc40c6ab76",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "j2c3JVEZzhZeDOU_gmkmE_QFDVX_R0ONasUx5xBpV1I",
-          "serverName": "www.eset.com",
-          "shortId": "81873fbb",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "QvssvpfpV2ray-Soyosha-IranCCrl-mcisk-mtn-mciaoaovpn.SNAPP.monster",
+          "show": false
         }
       },
       "tag": "proxy"

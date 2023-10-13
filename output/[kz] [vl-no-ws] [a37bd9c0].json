@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jjdjdjdsbjdkd.ddns.net",
-            "port": 42555,
+            "address": "p1.09vpn.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2e66d892-a4fa-4ed2-99e5-5a0f49897f10",
+                "id": "c311baeb-5bd9-4ed7-b375-916ebf22b98e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,Telegramjoin:@servermomo,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vless/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "gRMwKm7Q1LyfPhHNQdsLvN0NjT7egOOD2e5GUnB_9xk",
-          "serverName": "ftp.debian.org",
-          "shortId": "c4a210bb",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
