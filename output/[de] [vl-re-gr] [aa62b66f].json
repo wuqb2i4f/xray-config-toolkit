@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.160.36.169",
-            "port": 443,
+            "address": "37.27.5.68",
+            "port": 12832,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ff4dcc66-920c-4868-b98e-cb58c2928bae",
+                "flow": "",
+                "id": "f255e079-30f5-470d-aa2c-de573d894c0a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@jd_vpn"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "SltmCDZOy3yBaMjip6pvnZEaPXQ_Z6ANp_Nt_BXvXQk",
-          "serverName": "yahoo.com",
-          "shortId": "256c9334",
+          "publicKey": "eyRHf7RIVks5wfM7QVxNj5-z3pRFDtM4gQQHaMZgoiU",
+          "serverName": "hetzner.com",
+          "shortId": "68fc6c69",
           "show": false,
           "spiderX": ""
         }

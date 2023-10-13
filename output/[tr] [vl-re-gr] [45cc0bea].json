@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "13.37.65.30",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "88.209.249.34",
+            "port": 20239,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "bbdae740-21b0-42ee-9e62-e84420ca4b50",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@deragv2ray@deragv2ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "LP292q8SkuBRf63wWOQxOxQuT7FW3u646-IXAplOTDU",
+          "serverName": "mihanyas.ir",
+          "shortId": "393e5556",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
