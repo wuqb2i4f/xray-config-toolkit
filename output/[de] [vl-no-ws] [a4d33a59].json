@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "nl.melov2ray.store",
-            "port": 443,
+            "address": "x111-join.outline-vpn.cloud",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "61c1477e-d8ec-4cd0-866e-ca72a3450acb",
+                "id": "1d0d7f6e-a8f4-4403-b492-65e702f8a481",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray,Telegram:@melov2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dbdid89lh.事出场次以运7.tech"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dL0hvTpI3kaKW7-pySLVR5A72m9igzF9idfet57893c",
-          "serverName": "www.speedtest.net",
-          "shortId": "677e9107",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

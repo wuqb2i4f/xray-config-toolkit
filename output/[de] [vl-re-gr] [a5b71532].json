@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.155.249.151",
-            "port": 80,
+            "address": "0000:0000:0000:0000:0000:ffff:5b6b:a120",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "9d5e69d2-46cf-4865-95fe-a2ee8c52a013",
+                "id": "1bec9d48-7c8a-4617-8a74-b4b49162b288",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN-------------"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "UzKliiiCRsaLdkBC2CF0thQB_u-T7yHIj6_H5AEPljg",
+          "serverName": "stadt-bad-salzuflen.de",
+          "shortId": "13bd026d",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

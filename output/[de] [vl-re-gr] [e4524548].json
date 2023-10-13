@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.117.203.25",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "91.107.177.66",
+            "port": 11697,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "7f4ea2cf-8b05-4836-9c49-4cc40ca3d703",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "BR0a6ZD0sYL-FcgE7-4LiGOLhuegVPmT1VmIKz3zflU",
+          "serverName": "www.eset.com",
+          "shortId": "afa4bcd7",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
