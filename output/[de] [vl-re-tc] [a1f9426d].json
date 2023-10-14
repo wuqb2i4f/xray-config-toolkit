@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "107.173.70.156",
+            "address": "135.181.35.207",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "b642bb3b-6fcf-4de3-8a5e-a8a84c6deac0",
+                "flow": "xtls-rprx-vision",
+                "id": "7080c05d-a32d-45cd-8ef4-de8a310dbb3e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@viran_service"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "sxhQNK3B4j01AFLGA2Ma3GsoC4tyorYw3poREKI5-jk",
-          "serverName": "www.speedtest.net",
-          "shortId": "1c3b7480",
+          "publicKey": "GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU",
+          "serverName": "www.yahoo.com",
+          "shortId": "6bb85179e30d4fc2",
           "show": false,
           "spiderX": ""
         }

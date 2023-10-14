@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "107.173.70.156",
-            "port": 443,
+            "address": "mc.webnoein.ir",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b642bb3b-6fcf-4de3-8a5e-a8a84c6deac0",
+                "id": "b8ac1b2d-7da3-4c60-d20d-15f563f82088",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@viran_service"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "stoo.shoomali.tech"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "sxhQNK3B4j01AFLGA2Ma3GsoC4tyorYw3poREKI5-jk",
-          "serverName": "www.speedtest.net",
-          "shortId": "1c3b7480",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "107.173.70.156",
-            "port": 443,
+            "address": "::ffff:128.140.97.183",
+            "port": 20521,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b642bb3b-6fcf-4de3-8a5e-a8a84c6deac0",
+                "id": "732fd7ef-a7b9-4c6c-9e03-4dc3a8a40ce7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@viran_service"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "sxhQNK3B4j01AFLGA2Ma3GsoC4tyorYw3poREKI5-jk",
-          "serverName": "www.speedtest.net",
-          "shortId": "1c3b7480",
+          "publicKey": "gzvFCEZcMTrbz2NNVuTs7txbgBObNa3rTZmb3OE_uWA",
+          "serverName": "canva.com",
+          "shortId": "6c804bb1",
           "show": false,
           "spiderX": ""
         }
