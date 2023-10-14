@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.97.183",
-            "port": 20521,
+            "address": "ir1.v-mizban.info",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "732fd7ef-a7b9-4c6c-9e03-4dc3a8a40ce7",
+                "id": "c6d2be57-36b0-4a00-881a-8a6f2b74a062",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ir1.v-mizban.info"
+          },
+          "path": "/vqkubV5xX0Tulg7tx5HRa"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "gzvFCEZcMTrbz2NNVuTs7txbgBObNa3rTZmb3OE_uWA",
-          "serverName": "canva.com",
-          "shortId": "6c804bb1",
-          "show": false,
-          "spiderX": ""
+          "serverName": "ir1.v-mizban.info",
+          "show": false
         }
       },
       "tag": "proxy"

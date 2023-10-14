@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.20.231.210",
-            "port": 80,
+            "address": "91.107.177.66",
+            "port": 29685,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "72d46152-ee0b-4610-efb1-ffb0f786b848",
+                "id": "488a4cc1-3244-407e-85bb-5cac15dbabe4",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "my.designlion.buzz"
-          },
-          "path": "/?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "Lyc0fCKplJrMiqW5qtGhQgLGAv28c2ahlLmtKipygxI",
+          "serverName": "www.eset.com",
+          "shortId": "65f380d1",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

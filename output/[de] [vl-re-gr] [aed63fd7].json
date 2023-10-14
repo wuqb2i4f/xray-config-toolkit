@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.27.2",
-            "port": 80,
+            "address": "titaniom.official.mmdtitaniom.com",
+            "port": 47419,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "72d46152-ee0b-4610-efb1-ffb0f786b848",
+                "id": "27f3ee8a-aa65-4217-8c85-c8430279774f",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "my2.gamedaylion.buzz"
-          },
-          "path": "/?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "g6pnXceT0uPe_6W6fiujWW-c_sQ4UFTIYosIuA0RiS4",
+          "serverName": "sourceforge.net",
+          "shortId": "687bdea7",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

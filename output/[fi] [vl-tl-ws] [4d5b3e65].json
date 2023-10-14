@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "1315-join-v2raytz.sinotz.tk",
-            "port": 37328,
+            "address": "ir2.v-mizban.info",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c853089a-3a0a-48d2-95ad-7b8e543440a8",
+                "id": "c6d2be57-36b0-4a00-881a-8a6f2b74a062",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ir2.v-mizban.info"
+          },
+          "path": "/vqkubV5xX0Tulg7tx5HRa"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "YKdzjIef6jNLzRFUFeCzJSZ5JGW9SJl5xi-tLqO2RBY",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "b3d6585b",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "ir2.v-mizban.info",
+          "show": false
         }
       },
       "tag": "proxy"
