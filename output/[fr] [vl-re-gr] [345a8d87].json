@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "cloudconeaaa.gorgorchicken.one",
-            "port": 8443,
+            "address": "45.95.233.206",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "1cec1ebc-b489-4769-f2d9-e079b5832a60",
+                "id": "ItsLegendaryking",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cloudconeaaa.gorgorchicken.one"
-          },
-          "path": "/cloudconeaaa"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "",
-          "show": false
+          "publicKey": "kF5qxgxivuWXVMvCguJUa_dSyXMh4jOuxki3dB2Cb0A",
+          "serverName": "help.mega.io",
+          "shortId": "f83af3f9",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

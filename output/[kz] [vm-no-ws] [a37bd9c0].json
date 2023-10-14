@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "16.16.173.27",
-            "port": 8443,
+            "address": "p1.09vpn.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "783164cb-6410-4a96-e432-832489e4848c",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "cfcd898e-37fc-4ac7-8a65-9d1a35c96181",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vmess/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "RNFYKvYCevaCa409KgwcsUz5pU7sZCnpUQptqwDUHx4",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

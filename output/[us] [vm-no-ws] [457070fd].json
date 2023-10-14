@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "1309-join-v2raytz.sinotz.tk",
-            "port": 25394,
+            "address": "104.17.27.2",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "6bf051a1-f40c-4347-9557-317a8a4c2b67",
+                "id": "72d46152-ee0b-4610-efb1-ffb0f786b848",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "my2.gamedaylion.buzz"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "SJL0YAoKfZdbr-F36MqteSQYkRRURwaUbgfa9TxvjAs",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "05a3677f",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
