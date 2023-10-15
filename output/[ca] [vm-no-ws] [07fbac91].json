@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "91.107.173.213",
-            "port": 54163,
+            "address": "172.67.229.25",
+            "port": 2086,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "b8b24ca2-69a3-4dc2-8378-0fbbb6ceb2b2",
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN@RZAVPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ca6.tehme100.fun"
+          },
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "7LKAsnqllUK3JxrrhVP54468vh6NRPQBN0dpilA_uAQ",
-          "serverName": "static.a123.dns.www.speedtest.net.jabot.top",
-          "shortId": "771cbe22",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

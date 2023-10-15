@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "3.77.11.168",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "128.140.97.183",
+            "port": 20521,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "732fd7ef-a7b9-4c6c-9e03-4dc3a8a40ce7",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -66,13 +70,15 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "gzvFCEZcMTrbz2NNVuTs7txbgBObNa3rTZmb3OE_uWA",
+          "serverName": "canva.com",
+          "shortId": "6c804bb1",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
