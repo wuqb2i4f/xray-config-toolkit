@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "146.56.180.216",
-            "port": 52020,
+            "address": "104.17.27.2",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "507a5305-1e20-4f31-9b8a-3591a0c21965",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "72d46152-ee0b-4610-efb1-ffb0f786b848",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "my2.gamedaylion.buzz"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "XK2z6ZWjDVKlCmDHYvvH9u9ImXVTscfbe9tFyZN0skM",
-          "serverName": "steamcdn-a.akamaihd.net",
-          "shortId": "036d4f8e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

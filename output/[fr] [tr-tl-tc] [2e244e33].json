@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "::ffff:128.140.81.161",
-            "port": 36121,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "46c8e43b-060b-483d-aba1-f7c4d49565a4",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "35.181.197.78",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "itKa2CfeIHc585_GDEgnXnRK81yIDE8sPUyfsDJfVlc",
-          "serverName": "ea.com",
-          "shortId": "118ec04c",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

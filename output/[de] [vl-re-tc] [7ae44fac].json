@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.2",
-            "port": 8880,
+            "address": "gernew.3utilities.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3622f04c-edc8-4746-a829-76dc2edd1bd3",
+                "flow": "xtls-rprx-vision",
+                "id": "8dc2bc6c-22e9-42e0-92df-0ff0869112da",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fin.newmtn.tech"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "P68S6QW32alMFZVtoi5vLLNPtOtyG_9eebAMr4CLfSM",
+          "serverName": "discordapp.com",
+          "shortId": "bf198cb8",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
