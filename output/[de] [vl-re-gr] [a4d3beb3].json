@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "thc.thcvpn.sbs",
-            "port": 22642,
+            "address": "s2.ferfere.de",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e4ccf768-5919-4846-814f-2f5abe8b2dad",
+                "id": "8dfd1bf6-1efd-4ac6-9361-665713490079",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "xyz"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Tq6eKYANpi3VpxQzPB2NxjLDBYBRgc2LkN8tfaCOvTg",
-          "serverName": "sourceforge.net",
-          "shortId": "5146d2eb",
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

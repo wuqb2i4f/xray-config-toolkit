@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "209.250.244.245",
+            "address": "95.217.185.226",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "01596265-168b-46a7-bcb7-25662c7a9546",
+                "flow": "",
+                "id": "Source-ipV2Ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "OpqpQzXN7zSlM-P4YhdjProDaYJt0KzzpdsCMUqQmm0",
-          "serverName": "dweb.link",
-          "shortId": "7519cb",
+          "fingerprint": "firefox",
+          "publicKey": "DOZdeyeZ3fWpH5P1virmQXkNFv2b2sLhqm2PxHGeiHE",
+          "serverName": "gsmarena.com",
+          "shortId": "0e596c3b",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "forward3.maryam1500.top",
-            "port": 8443,
+            "address": "188.114.97.2",
+            "port": 8880,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "efdf1e4b-6bca-4bf9-8561-1af0e8d2cf85",
+                "id": "3622f04c-edc8-4746-a829-76dc2edd1bd3",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,10 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fin.newmtn.tech"
+          },
+          "path": "/"
         },
         "security": "none"
       },
