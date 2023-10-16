@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.30.157",
-            "port": 8443,
+            "address": "104.17.62.27",
+            "port": 2086,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "ed16c5c2-54e8-4623-f33a-e1e56e54465a",
+                "id": "66489208-412a-443f-9260-dd20fe97d219",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Alfred_Config"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cf-de7.doushimeng.com"
+          },
+          "path": "/asdas"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "vip.Lockey-vip.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,33 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "104.21.202.55",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "2fee540f-d475-46d8-926f-07ab76ba30f7",
-            "port": 443
+            "address": "94.130.110.200",
+            "port": 20315,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "704497df-f3f5-4154-8c4a-c890d8e82954",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "W7RfbbiLXkwg7c77nOp2OO8SeT"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "firefox",
-          "serverName": "cloud.sobhan.fun",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "2FW_-RzBf62oSROWOS43U5KQz-DTH80lyz3BLUFKTkA",
+          "serverName": "sourceforge.net",
+          "shortId": "dcb83232",
+          "show": false,
+          "spiderX": "/linoux"
         }
       },
       "tag": "proxy"

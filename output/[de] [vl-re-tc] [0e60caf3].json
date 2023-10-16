@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "52.48.21.116",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "thc.thcvpn.sbs",
+            "port": 22642,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "e4ccf768-5919-4846-814f-2f5abe8b2dad",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -66,13 +70,15 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "Tq6eKYANpi3VpxQzPB2NxjLDBYBRgc2LkN8tfaCOvTg",
+          "serverName": "sourceforge.net",
+          "shortId": "5146d2eb",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.252.59",
-            "port": 5005,
+            "address": "thc.thcvpn.sbs",
+            "port": 11549,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "95e2e860-b033-4847-a9b6-a57fbfd99ce7",
+                "id": "6fecffb0-0b4a-475f-9ebe-5f3f8f1a4ce5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["aaz.ae"],
-            "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["Zula.ir"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "WUNUWH5kDYjUwilXutGFwIYtO3RBYrvFaA7qDNmrogM",
-          "serverName": "mega.io",
-          "shortId": "ef2a7868",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
