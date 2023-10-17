@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "3.75.71.127",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "49.13.63.200",
+            "port": 4462,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "c103d791-492e-406e-8f6b-e114ebe7dbb6",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "inFrOOCyOVi-BZU-Ek1qQBVGXzMV7cDAiIFxYmQ-l0g",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "230cecb5",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

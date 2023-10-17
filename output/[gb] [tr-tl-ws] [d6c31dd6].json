@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "116.202.111.87",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "9e3ffb13-bcaa-4c82-bf2c-ee1b42d69275",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "havij.ianrossi.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "2e0ba37c-39ba-441d-8382-9c42b9ab5488",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "havij.ianrossi.com"
+          },
+          "path": "/nVHYOsikp6ExU2IIaTMHdt"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "c3R5_lORnQd1X3A2E0ulHJn396G2X_ZYIs66ldEVQWI",
-          "serverName": "www.speedtest.net",
-          "shortId": "28f58957",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "havij.ianrossi.com",
+          "show": false
         }
       },
       "tag": "proxy"

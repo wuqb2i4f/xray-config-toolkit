@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.62.27",
-            "port": 2082,
+            "address": "::ffff:37.59.166.156",
+            "port": 48576,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "66489208-412a-443f-9260-dd20fe97d219",
+                "id": "7445f41b-c6f2-4c02-9948-3a895ed25961",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cf-nl.nicehand.top"
-          },
-          "path": "/asdas"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "SpK3BAXSaKxWOuLRACdwp3qdM_UFGKGGd8-XuFEdG1Y",
+          "serverName": "ea.com",
+          "shortId": "b1b454f6",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

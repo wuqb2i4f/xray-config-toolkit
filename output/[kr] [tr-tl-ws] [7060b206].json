@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "84.32.230.148",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "78cc1016-b691-40b0-9086-8b5f79640135",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "aws-kr-seoul-1.f1cflineb.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "your_password",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "DuJhhl7FqRtIVzqaQxLF0Q"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "aws-kr-seoul-1.f1cflineb.com"
+          },
+          "path": "/f1rocket"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "RhTOlJEOl2kuyAZzF7WE26u2glC0KWzQDYuMkzuMRyA",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "d6df",
-          "show": false,
-          "spiderX": ""
+          "serverName": "aws-kr-seoul-1.f1cflineb.com",
+          "show": false
         }
       },
       "tag": "proxy"

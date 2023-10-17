@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "134.122.110.127",
-            "port": 37256,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "a99926eb-27e4-4f91-8bab-de67a4e55ba4",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "x4.mehdimoghaddam.fun",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "GmOUswOWsd",
+            "port": 2096
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/FORWARDV2RAY"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Cn8TcMxXGXMoxmxIOxuhwTAEJ_j854siYiyfFrOWfQ8",
-          "serverName": "yahoo.com",
-          "shortId": "91ecf4ba",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "x5.mehdimoghaddam.fun",
+          "show": false
         }
       },
       "tag": "proxy"

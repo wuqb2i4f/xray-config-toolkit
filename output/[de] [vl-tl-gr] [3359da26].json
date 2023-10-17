@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.2",
-            "port": 8880,
+            "address": "104.31.16.61",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3622f04c-edc8-4746-a829-76dc2edd1bd3",
+                "id": "8d7405ca-200e-4d0b-8d87-5a30011376bb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fin.newmtn.tech"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@P_tech2024"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "free.forcedparadise.store",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

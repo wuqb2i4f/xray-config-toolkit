@@ -45,33 +45,36 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "3.139.5.185",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "cleanmci.barfak123.eu.org",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "33f6ac4b-c922-476d-b7d3-26fb77747a4b",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cloud.barfak123.eu.org",
           "show": false
         }
       },

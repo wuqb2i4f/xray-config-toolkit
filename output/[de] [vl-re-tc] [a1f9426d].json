@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.62.27",
-            "port": 2086,
+            "address": "135.181.35.207",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "66489208-412a-443f-9260-dd20fe97d219",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "7080c05d-a32d-45cd-8ef4-de8a310dbb3e",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cf-de7.doushimeng.com"
-          },
-          "path": "/asdas"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU",
+          "serverName": "www.yahoo.com",
+          "shortId": "6bb85179e30d4fc2",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

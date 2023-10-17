@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "QR",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "aws-us-oregon-1.f1cflinea.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "your_password",
+            "port": 443
           }
         ]
       },
@@ -67,16 +63,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "de.vpncustomize.Website"
+            "Host": "aws-us-oregon-1.f1cflinea.com"
           },
-          "path": "/"
+          "path": "/f1rocket"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "de.vpncustomize.Website",
+          "serverName": "aws-us-oregon-1.f1cflinea.com",
           "show": false
         }
       },
