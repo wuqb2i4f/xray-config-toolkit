@@ -45,34 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "havij.ianrossi.com",
-            "port": 80,
+            "address": "91.107.252.59",
+            "port": 4843,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "dd6e5503-84e2-4aec-afba-bc504df63957",
+                "id": "afdbb659-7910-4d9c-8949-21e6222f48a8",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "havij.ianrossi.com"
-          },
-          "path": "/dKhLQvgAxtWU2IIaTMHdt"
+        "network": "h2",
+        "httpSettings": {
+            "host": ["fandomwire.com"],
+            "path": "/"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "safari",
+          "publicKey": "mjjOs4ePzCwR8ywUkP7JzgUjJTi6_ATwq7FtyKWcZFg",
+          "serverName": "cdn.accuweather.com",
+          "shortId": "8021ea31",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

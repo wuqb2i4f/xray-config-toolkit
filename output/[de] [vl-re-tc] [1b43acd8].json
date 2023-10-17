@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cleanmci.barfak123.eu.org",
-            "port": 2096,
+            "address": "91.107.166.211",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "33f6ac4b-c922-476d-b7d3-26fb77747a4b",
+                "flow": "xtls-rprx-vision",
+                "id": "8dc2bc6c-22e9-42e0-92df-0ff0869112da",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "cloud.barfak123.eu.org",
-          "show": false
+          "publicKey": "P68S6QW32alMFZVtoi5vLLNPtOtyG_9eebAMr4CLfSM",
+          "serverName": "discordapp.com",
+          "shortId": "bf198cb8",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

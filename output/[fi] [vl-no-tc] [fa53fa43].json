@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.228.165.186",
-            "port": 2096,
+            "address": "65.109.196.89",
+            "port": 30105,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "112877d0-f28f-4c81-b9ca-de2e4057a221",
+                "id": "a8d430ef-2eb6-471f-8c5c-8f0b1a4bec61",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "84afba79"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["http://sourceforge.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "7xiEbTSZjLDkZI34Ecpm4HaT7YG_yw9_Kd_7fGLdPBQ",
-          "serverName": "ieeexplore.ieee.org",
-          "shortId": "f8830cf5dfaafc6e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
