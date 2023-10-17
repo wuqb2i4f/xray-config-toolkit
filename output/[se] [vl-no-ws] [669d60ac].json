@@ -45,34 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "havij.ianrossi.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "dd6e5503-84e2-4aec-afba-bc504df63957",
-            "port": 443
+            "address": "5.42.77.221",
+            "port": 43810,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "071552a0-cf3c-43a4-ba2f-9b0658fea19e",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "nVHYOsikp6ExUhdjXao"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "havij.ianrossi.com",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

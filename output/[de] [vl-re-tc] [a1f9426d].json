@@ -45,35 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "havij.ianrossi.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "2e0ba37c-39ba-441d-8382-9c42b9ab5488",
-            "port": 443
+            "address": "135.181.35.207",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "7080c05d-a32d-45cd-8ef4-de8a310dbb3e",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "havij.ianrossi.com"
-          },
-          "path": "/nVHYOsikp6ExU2IIaTMHdt"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "havij.ianrossi.com",
-          "show": false
+          "publicKey": "GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU",
+          "serverName": "www.yahoo.com",
+          "shortId": "6bb85179e30d4fc2",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

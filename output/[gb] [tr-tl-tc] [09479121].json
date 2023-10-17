@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "91.107.252.59",
-            "port": 5010,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "aecd793f-131d-4b4f-a39a-f58cd1aba99d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.43.69.5",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["en.wikipedia.org"],
-            "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "YYDKYMPAtdrXnceMLLK96bOaWad6K9yiafEDrMbX1TA",
-          "serverName": "n4g.com",
-          "shortId": "fca4c698",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"
