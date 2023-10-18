@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.214.191",
-            "port": 18420,
+            "address": "185.142.238.35",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "62be9926-6400-44d0-8d2b-13f4e1e586e0",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NbeYuqm0c6M9l5lVTlBYE_UotmpPZJZhcpEemG8bzFg",
-          "serverName": "www.speedtest.net",
-          "shortId": "af53e81a",
+          "fingerprint": "chrome",
+          "publicKey": "imTeVCUujulNZ2LJNaZrWlOGcN0tgm0km15N8jc55j4",
+          "serverName": "guerrilla-games.com",
+          "shortId": "dcd651ed",
           "show": false,
           "spiderX": ""
         }

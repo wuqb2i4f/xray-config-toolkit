@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "codepen.io",
-            "port": 443,
+            "address": "104.31.16.9",
+            "port": 80,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "b7c27529-24fd-482f-fbfb-26bfe4574fc9",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,18 +67,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "sub.yifenjichang.top"
+            "Host": "AsTRONOmy.DiVaR.prO"
           },
-          "path": "/octavi.cfd:443/linkvws"
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "sub.yifenjichang.top",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

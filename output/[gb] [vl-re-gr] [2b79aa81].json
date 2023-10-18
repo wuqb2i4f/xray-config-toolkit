@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mc.webnoein.ir",
-            "port": 8880,
+            "address": "178.62.76.106",
+            "port": 22247,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b8ac1b2d-7da3-4c60-d20d-15f563f82088",
+                "id": "374958dc-b0a0-4999-a33f-547dc94a641e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "stoo.shoomali.tech"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@proxyforopeta"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "_coLSSJnV6OnXqeDUO-e49mwsVvdvpYkYNMKBd04zgM",
+          "serverName": "yahoo.com",
+          "shortId": "b0b1c377",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

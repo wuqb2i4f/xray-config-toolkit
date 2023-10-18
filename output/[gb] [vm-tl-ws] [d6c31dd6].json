@@ -45,33 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "35.181.188.250",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "havij.ianrossi.com",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "112b427a-7f02-4ea9-bdc9-2614ff0b2844",
+                "level": 8,
+                "security": "chacha20-poly1305"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "havij.ianrossi.com"
+          },
+          "path": "/dKhLQvgAxtWU2IIaTMHdt"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "fingerprint": "chrome",
+          "serverName": "havij.ianrossi.com",
           "show": false
         }
       },

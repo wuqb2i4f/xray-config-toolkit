@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "52.47.48.116",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "134.122.110.127",
+            "port": 55700,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "4e05da74-9e67-4d23-a569-229c4723636a",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@proxyforopeta"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "NHURFARnWmvvMKmXgGISV3hDHNkE5mR4kgSbA-SORUw",
+          "serverName": "yahoo.com",
+          "shortId": "a2d074e4",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

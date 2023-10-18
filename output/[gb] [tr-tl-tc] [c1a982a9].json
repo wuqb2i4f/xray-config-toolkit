@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "vhhvbjjjvcc.ddns.net",
-            "port": 40898,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "1632df36-42e3-4b90-b7fc-112f90f1880c",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.41.62.21",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "uGxKPMYMMUSC_3JpxaL_dkQ5E3XZGCelzGYZEPjgaWA",
-          "serverName": "www.discordapp.com",
-          "shortId": "deb45a8d",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"
