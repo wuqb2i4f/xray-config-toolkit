@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "49.13.75.84",
-            "port": 443,
+            "address": "104.20.231.210",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "fd1978e7-9322-42ab-8ee4-e312925b53fb",
+                "id": "72d46152-ee0b-4610-efb1-ffb0f786b848",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "my.designlion.buzz"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "XIEk3pxb9msDy259wVijWyVaT3f_Rua0J10CnQWOFys",
-          "serverName": "www.zula.ir",
-          "shortId": "821c3479",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
