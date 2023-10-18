@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.77.221",
-            "port": 37156,
+            "address": "telegram.globalnetvpn.site",
+            "port": 39383,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "59cb05a6-8cfd-4692-a2ff-55b9c9c82d16",
+                "id": "ffdb64f2-98d9-4188-a8b9-139a21411379",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "hMIjVzrsbfpx3tHrKO_FKG1xjgAQ0wbp6oMvvVfKFGs",
+          "serverName": "www.zula.ir",
+          "shortId": "364fc518",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

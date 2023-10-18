@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.88.3.133",
-            "port": 20095,
+            "address": "134.122.108.80",
+            "port": 56709,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "7235ada8-2a28-400d-9dbd-9f856e483b5f",
+                "id": "31cc7ba6-17c9-4e71-8ca6-721f03731cca",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@proxyforopeta"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "AhXUESpT_kL53_4Opf4M3qE0PcjiucdWn4u6YXlnZx8",
+          "serverName": "discord.com",
+          "shortId": "48560e8c",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

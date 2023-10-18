@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.88.3.133",
-            "port": 23298,
+            "address": "49.13.75.84",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a7c78672-1952-4b4f-b045-05e083c41940",
+                "id": "fd1978e7-9322-42ab-8ee4-e312925b53fb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER-Telegram:@CUSTOMVPNSERVER"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "XIEk3pxb9msDy259wVijWyVaT3f_Rua0J10CnQWOFys",
+          "serverName": "www.zula.ir",
+          "shortId": "821c3479",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
