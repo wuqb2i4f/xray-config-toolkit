@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.62.76.106",
-            "port": 22247,
+            "address": "45.137.151.22",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "374958dc-b0a0-4999-a33f-547dc94a641e",
+                "flow": "xtls-rprx-vision",
+                "id": "112b427a-7f02-4ea9-bdc9-2614ff0b2844",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "_coLSSJnV6OnXqeDUO-e49mwsVvdvpYkYNMKBd04zgM",
-          "serverName": "yahoo.com",
-          "shortId": "b0b1c377",
+          "fingerprint": "chrome",
+          "publicKey": "VGVvqMo6MhIsK7GhYCDCkdr1H6axLXYq2GxHJKfTiFY",
+          "serverName": "iyfglobal.org",
+          "shortId": "8c21",
           "show": false,
           "spiderX": ""
         }

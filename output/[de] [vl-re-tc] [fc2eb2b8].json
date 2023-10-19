@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.62.76.106",
-            "port": 22247,
+            "address": "5.61.35.231",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "374958dc-b0a0-4999-a33f-547dc94a641e",
+                "flow": "xtls-rprx-vision",
+                "id": "48279f5b-1d6e-4784-9b7a-423d5404cc33",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "_coLSSJnV6OnXqeDUO-e49mwsVvdvpYkYNMKBd04zgM",
-          "serverName": "yahoo.com",
-          "shortId": "b0b1c377",
+          "fingerprint": "chrome",
+          "publicKey": "jJ2XUdt8HTSGC98lQIFjZbaaQhyax5CZAe2uIl8X31Q",
+          "serverName": "www.linuxfoundation.org",
+          "shortId": "272b57b8",
           "show": false,
           "spiderX": ""
         }

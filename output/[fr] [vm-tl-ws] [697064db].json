@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "178.62.76.106",
-            "port": 22247,
+            "address": "104.21.24.168",
+            "port": 8443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "374958dc-b0a0-4999-a33f-547dc94a641e",
+                "id": "874a60cd-f099-499a-8aee-e4606ccf3e86",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@proxyforopeta"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nomore.hideip.tk"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "firefox",
-          "publicKey": "_coLSSJnV6OnXqeDUO-e49mwsVvdvpYkYNMKBd04zgM",
-          "serverName": "yahoo.com",
-          "shortId": "b0b1c377",
-          "show": false,
-          "spiderX": ""
+          "serverName": "nomore.hideip.tk",
+          "show": false
         }
       },
       "tag": "proxy"

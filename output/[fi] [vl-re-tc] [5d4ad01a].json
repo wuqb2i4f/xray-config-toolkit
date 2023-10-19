@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.62.76.106",
-            "port": 22247,
+            "address": "135.181.192.223",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "374958dc-b0a0-4999-a33f-547dc94a641e",
+                "flow": "xtls-rprx-vision",
+                "id": "0eda758e-9a00-460d-b288-14308379ef50",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "_coLSSJnV6OnXqeDUO-e49mwsVvdvpYkYNMKBd04zgM",
-          "serverName": "yahoo.com",
-          "shortId": "b0b1c377",
+          "fingerprint": "chrome",
+          "publicKey": "mKKl-KLZEx4kPQPVD_HygxKSMdS1RseUNJpbiI4E1Qg",
+          "serverName": "ftp.debian.org",
+          "shortId": "49aa87e2",
           "show": false,
           "spiderX": ""
         }
