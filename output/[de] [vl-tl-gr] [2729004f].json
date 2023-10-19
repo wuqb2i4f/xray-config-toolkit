@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "181.215.32.231",
-            "port": 2086,
+            "address": "cleanmtn.barfak123.eu.org",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f8a79a4a-3397-45ac-bd59-e8d31f97032c",
+                "id": "33f6ac4b-c922-476d-b7d3-26fb77747a4b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "TL7umtLqzP5z8ykNp4nVlekMa08sLfA2d4lGzbV3qnY",
-          "serverName": "zula.ir",
-          "shortId": "f352aa57",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cloud.barfak123.eu.org",
+          "show": false
         }
       },
       "tag": "proxy"
