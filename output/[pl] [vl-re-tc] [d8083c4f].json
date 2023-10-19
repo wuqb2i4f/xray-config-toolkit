@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.171.22.54",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "185.161.251.119",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "97315a02-269e-4951-9ad3-f8727e1684fe",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -66,13 +70,15 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "random",
+          "publicKey": "kpvS94NTNtPCgCKc1QIuu6gCEW-pMqWW_M1-UWdJwTc",
+          "serverName": "speedtest.23m.com.prod.hosts.ooklaserver.net",
+          "shortId": "bd747589",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
