@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.24.168",
-            "port": 8443,
+            "address": "128.140.3.196",
+            "port": 42564,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "874a60cd-f099-499a-8aee-e4606ccf3e86",
+                "id": "5f69e922-8dd7-4873-bc7b-b56c4c6bfc68",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nomore.hideip.tk"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "firefox",
-          "serverName": "nomore.hideip.tk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "8LdoR2K0NThL9acZXOdXrfYg70y3pNMqSNcUIeoPWQg",
+          "serverName": "www.brookings.edu",
+          "shortId": "99029e8e",
+          "show": false,
+          "spiderX": "/msr"
         }
       },
       "tag": "proxy"
