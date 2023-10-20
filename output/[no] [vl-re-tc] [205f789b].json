@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.214.191",
-            "port": 18420,
+            "address": "194.5.98.94",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "62be9926-6400-44d0-8d2b-13f4e1e586e0",
+                "flow": "xtls-rprx-vision",
+                "id": "9da1693d-9e4c-4a41-841a-f085bf90e70d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NbeYuqm0c6M9l5lVTlBYE_UotmpPZJZhcpEemG8bzFg",
-          "serverName": "www.speedtest.net",
-          "shortId": "af53e81a",
+          "fingerprint": "chrome",
+          "publicKey": "NTxE5fnbrIwMXvWbWAKBYRzMfixaioo3NWEewIVrxjg",
+          "serverName": "drive.google.com",
+          "shortId": "3d5f458e28",
           "show": false,
           "spiderX": ""
         }

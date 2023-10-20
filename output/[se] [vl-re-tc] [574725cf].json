@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.73.58",
-            "port": 46910,
+            "address": "16.16.97.157",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "db69628e-11a9-46ab-b45b-eb60ce6c8e6f",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "i2w0QHxxyyulRMWWyAwqt6sEEv6vjO5iHeD1p75WnR4",
-          "serverName": "zula.ir",
-          "shortId": "de9874b2",
+          "fingerprint": "chrome",
+          "publicKey": "ERpnS3VZj6dh1x4tj6j_4QhwaA1K7dWMbKyVUK0_lFU",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
           "spiderX": ""
         }

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.202.168",
-            "port": 32632,
+            "address": "::ffff:128.140.44.66",
+            "port": 10770,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "de78aa1b-64b7-4fc4-a452-63febf48c7a2",
+                "id": "3a76633d-c039-4ea5-acc9-ba62d43f1a72",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,25 +67,19 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["Bmw.com"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "ajkf5tQv6WVxD05-C75P-pHaTroArxVuWnirh6gyLxw",
+          "serverName": "canva.com",
+          "shortId": "c19d3d2e",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

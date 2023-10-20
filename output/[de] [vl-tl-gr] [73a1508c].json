@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.137.151.22",
-            "port": 443,
+            "address": "1582-join-v2raytz.sinotz.tk",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "112b427a-7f02-4ea9-bdc9-2614ff0b2844",
+                "flow": "",
+                "id": "5710ec3d-3b55-4014-bb03-20d5e2c38ffd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy@free_v2rayyy@free_v2rayyy"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "VGVvqMo6MhIsK7GhYCDCkdr1H6axLXYq2GxHJKfTiFY",
-          "serverName": "iyfglobal.org",
-          "shortId": "8c21",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "freev2rayyy.clashnv.site",
+          "show": false
         }
       },
       "tag": "proxy"

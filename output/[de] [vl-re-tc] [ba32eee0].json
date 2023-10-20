@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "triple.mipnoffice.shop",
-            "port": 44420,
+            "address": "::ffff:128.140.83.20",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "c5db9274-5439-437c-bc0f-3cd9b077680a",
+                "flow": "xtls-rprx-vision",
+                "id": "679a9dfa-333e-4503-a06c-01083e01d2e0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,@Mi_Pn_Official,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "WMdFJnLBGbwdvMSfY2DYjRhnGbH0GqaMBY65PCEUQhE",
-          "serverName": "QvssvpfpV2ray-Soyosha-IranCCrl-mcisk-mtn-mciaoaovpn.SNAPP.monster",
-          "shortId": "9782df58",
+          "fingerprint": "chrome",
+          "publicKey": "tJ9BprkBBxC1bPkoRoQKtDNmSlRcSxsWWByiqnkdeRs",
+          "serverName": "sourceforge.net",
+          "shortId": "458580c1",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

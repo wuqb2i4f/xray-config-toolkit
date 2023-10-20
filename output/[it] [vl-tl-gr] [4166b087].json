@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.232.206.137",
-            "port": 2087,
+            "address": "m.xmahan.tech",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "59f94972-680f-4b1e-818d-296c6fef05af",
+                "id": "54b94d4d-34f6-4031-b7f7-508d4279eb3b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "AoVVD-FGx5-IC2fwjqH3B_0M3T-muzmULO73sw4BLGw",
-          "serverName": "mega.io",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "serverName": "ita.kurdbazar.online",
+          "show": false
         }
       },
       "tag": "proxy"
