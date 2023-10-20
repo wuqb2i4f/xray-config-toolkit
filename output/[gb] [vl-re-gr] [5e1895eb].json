@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:128.140.83.20",
-            "port": 443,
+            "address": "178.62.76.106",
+            "port": 23672,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "679a9dfa-333e-4503-a06c-01083e01d2e0",
+                "flow": "",
+                "id": "480d0983-14c0-4a30-a452-2c4426c22bc3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@proxyforopeta"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "tJ9BprkBBxC1bPkoRoQKtDNmSlRcSxsWWByiqnkdeRs",
-          "serverName": "sourceforge.net",
-          "shortId": "458580c1",
+          "publicKey": "3XOf8C2c6mk-GCD7j8_ySEqc40crBfnGVJ58mP7x_Wg",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "0d99ccc1",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.40.156",
-            "port": 2082,
+            "address": "91.107.180.163",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "8c188497-269f-4aa0-cd19-63e93a83d6da",
+                "id": "8dfd1bf6-1efd-4ac6-9361-665713490079",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "jd001.mianfenyun012.eu.org"
-          },
-          "path": "/wdsk"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "xyz"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

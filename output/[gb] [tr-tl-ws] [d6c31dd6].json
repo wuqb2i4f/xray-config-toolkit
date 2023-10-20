@@ -45,40 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "193.57.136.34",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "dbad7acf-6b0c-4594-aa77-be6c7be47679",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "havij.ianrossi.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "4c1a4baa-4976-4531-b358-53f9d21ca97c",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "havij.ianrossi.com"
+          },
+          "path": "/nVHYOsikp6ExU2IIaTMHdt"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "s1FTXOP1bRS0QaNyql55HfVLseVzQvMR9b3cCWchO0s",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "bd77697b",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "havij.ianrossi.com",
+          "show": false
         }
       },
       "tag": "proxy"

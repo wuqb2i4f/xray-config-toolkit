@@ -45,19 +45,20 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "3bia-channel.unlimiteddev.xyz",
-            "port": 80,
+            "address": "havij.ianrossi.com",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "d283ed46-5671-48db-bbcd-5e544c023630",
+                "id": "4c1a4baa-4976-4531-b358-53f9d21ca97c",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
@@ -67,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "bia-to-channel.unlimiteddev.xyz"
+            "Host": "havij.ianrossi.com"
           },
-          "path": "/"
+          "path": "/dKhLQvgAxtWU2IIaTMHdt"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "havij.ianrossi.com",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
