@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "13.39.215.90",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "configms.mmdtitaniom.com",
+            "port": 25750,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "606694a5-a7d7-47c8-a321-82c0c20e96f9",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@configms,@configms,@configms,@configms,@configms"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "TwnWpUoUS1oY2pW2CTu5MgGvz-RKDZPfC2tfUYaxTxk",
+          "serverName": "ilovepdf.com",
+          "shortId": "5ee171b7",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

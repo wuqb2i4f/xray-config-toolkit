@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "23.94.122.147",
-            "port": 60222,
+            "address": "144.76.167.84",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "84134d90-e4fe-4a86-c8d6-4d7bedb3c333",
+                "id": "DamonConfig",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/vmess"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "vl2SIAtSvZtMsmioAMT63BaQJfWhMF6rGyEVeLYqOiw",
+          "serverName": "www.speedtest.net",
+          "shortId": "84",
+          "show": false,
+          "spiderX": "/www.speedtest.net/run"
+        }
       },
       "tag": "proxy"
     },
