@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.5.98.94",
-            "port": 443,
+            "address": "bia-to5.unlimiteddev.xyz",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "9da1693d-9e4c-4a41-841a-f085bf90e70d",
+                "flow": "",
+                "id": "3dd9a7b2-127f-4539-98d9-c6fa2246435c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@unlimiteddev"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "NTxE5fnbrIwMXvWbWAKBYRzMfixaioo3NWEewIVrxjg",
-          "serverName": "drive.google.com",
-          "shortId": "3d5f458e28",
+          "publicKey": "BfwMmZi-tTkRMXKZaY_eWb7nbjHuEJ27fiJTaXgtSiE",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "08",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

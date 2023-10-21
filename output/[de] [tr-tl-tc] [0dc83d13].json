@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "128.140.3.196",
-            "port": 42564,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "5f69e922-8dd7-4873-bc7b-b56c4c6bfc68",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.58.60.84",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "8LdoR2K0NThL9acZXOdXrfYg70y3pNMqSNcUIeoPWQg",
-          "serverName": "www.brookings.edu",
-          "shortId": "99029e8e",
-          "show": false,
-          "spiderX": "/msr"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

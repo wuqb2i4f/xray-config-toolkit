@@ -49,16 +49,16 @@
       "settings": {
         "vnext": [
           {
-            "address": "havij.ianrossi.com",
-            "port": 443,
+            "address": "23.94.122.147",
+            "port": 60222,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "4c1a4baa-4976-4531-b358-53f9d21ca97c",
+                "id": "84134d90-e4fe-4a86-c8d6-4d7bedb3c333",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
@@ -68,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "havij.ianrossi.com"
+            "Host": ""
           },
-          "path": "/dKhLQvgAxtWU2IIaTMHdt"
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "havij.ianrossi.com",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
