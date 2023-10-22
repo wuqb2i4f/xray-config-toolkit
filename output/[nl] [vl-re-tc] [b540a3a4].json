@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "den.melov2ray.store",
+            "address": "65.109.188.136",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "dd7d3197-e9c3-401a-8940-825bbb7ba2fc",
+                "flow": "xtls-rprx-vision",
+                "id": "3ceb1d68-2b99-482e-bb3e-246c9cfbf47a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "0lnsH9jOLa5uBg8qOH2TaMNHv12tqHO4a5fjC8S9CyA",
-          "serverName": "www.tradingview.com",
-          "shortId": "1c78a9a6",
+          "fingerprint": "firefox",
+          "publicKey": "F4SzdmyBbTOj4btOa5xO2_lJwmwnFHKJuiqaU9Xq0Ro",
+          "serverName": "anandtech.com",
+          "shortId": "",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.62.76.106",
-            "port": 23672,
+            "address": "sunder.r4d.site",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "480d0983-14c0-4a30-a452-2c4426c22bc3",
+                "flow": "xtls-rprx-vision",
+                "id": "r4d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "3XOf8C2c6mk-GCD7j8_ySEqc40crBfnGVJ58mP7x_Wg",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "0d99ccc1",
+          "publicKey": "xsDzzxNU6bfxRcqdpsVw9n1f4nXxc9_LGT270x39Bhk",
+          "serverName": "images.ctfassets.net",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "23.88.102.224",
-            "port": 443,
+            "address": "mtnproxystore11.ddns.net",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "031a2d6c-ce91-4167-bcb8-012d346a6e70",
+                "flow": "",
+                "id": "a41dc39a-828f-489c-9046-ea84ce7555c6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "CPLcMRb5VAd149rnWt2xOoYzNn_L7bPXxH-mnXfe-lM",
-          "serverName": "sn.hfafn.site",
-          "shortId": "eb2224c8",
-          "show": false,
-          "spiderX": ""
+          "serverName": "proxystore11.miladphotoshop.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
