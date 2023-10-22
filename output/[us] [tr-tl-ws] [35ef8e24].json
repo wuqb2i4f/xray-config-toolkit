@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "94.228.169.211",
-            "port": 24508,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "9593382e-625c-47f0-adb1-00a5becf02a1",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "tracking.betarays.ir",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "613a2659-7320-4308-9397-94f1cd974976",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tracking.betarays.ir"
+          },
+          "path": "/ECJIMZVCZDD0Oyd1AEUEUd"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "TZD5MwFUnrd33HVHFWMrdwWcbLQAICwGSeov26rtkwM",
-          "serverName": "aws.amazon.com",
-          "shortId": "fb637b21",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "tracking.betarays.ir",
+          "show": false
         }
       },
       "tag": "proxy"

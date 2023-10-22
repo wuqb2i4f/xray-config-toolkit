@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "94.228.169.211",
-            "port": 24508,
+            "address": "104.17.14.48",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "9593382e-625c-47f0-adb1-00a5becf02a1",
+                "id": "5c46bc3a-a2f1-4b3c-904b-2b5731f0403b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr-v.sshmax.xyz"
+          },
+          "path": "/vmess"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "TZD5MwFUnrd33HVHFWMrdwWcbLQAICwGSeov26rtkwM",
-          "serverName": "aws.amazon.com",
-          "shortId": "fb637b21",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "fr-v.sshmax.xyz",
+          "show": false
         }
       },
       "tag": "proxy"

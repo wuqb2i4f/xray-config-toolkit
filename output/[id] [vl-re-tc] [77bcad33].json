@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.228.169.211",
-            "port": 24508,
+            "address": "172.232.225.106",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9593382e-625c-47f0-adb1-00a5becf02a1",
+                "id": "ab13034d-4a32-4ba5-a54c-5530c91cb5f2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "TZD5MwFUnrd33HVHFWMrdwWcbLQAICwGSeov26rtkwM",
-          "serverName": "aws.amazon.com",
-          "shortId": "fb637b21",
+          "publicKey": "DB8VuiDArfcJyZxpeDroFqmDOviVrqK5WzfIeSWWow0",
+          "serverName": "ftp.debian.org",
+          "shortId": "797ceb42",
           "show": false,
           "spiderX": "/"
         }

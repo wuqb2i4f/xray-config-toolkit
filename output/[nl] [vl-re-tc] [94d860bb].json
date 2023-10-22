@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.228.169.211",
-            "port": 24508,
+            "address": "allrevolt.r8volt.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9593382e-625c-47f0-adb1-00a5becf02a1",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "TZD5MwFUnrd33HVHFWMrdwWcbLQAICwGSeov26rtkwM",
-          "serverName": "aws.amazon.com",
-          "shortId": "fb637b21",
+          "publicKey": "imTeVCUujulNZ2LJNaZrWlOGcN0tgm0km15N8jc55j4",
+          "serverName": "guerrilla-games.com",
+          "shortId": "dcd651ed",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"
