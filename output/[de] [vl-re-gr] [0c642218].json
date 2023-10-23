@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "eu27.kiava.fun",
-            "port": 8443,
+            "address": "5.75.209.22",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
+                "flow": "",
+                "id": "738c5e99-7faa-4893-81a8-4d6655adde30",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Digiv2ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "9t0CBL-5xchtBhrCWtikTx9nOYRaV7QGq9mM5i5VJDc",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
+          "fingerprint": "firefox",
+          "publicKey": "e2VGvHwmGudsNxadrgFCv3ENvRLyD_8x9csN6tTMGns",
+          "serverName": "www.speedtest.net",
+          "shortId": "ab7b40b2",
           "show": false,
-          "spiderX": "/new"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

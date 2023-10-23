@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "for.forcedparadise.store",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "8c770847-99b0-4ae1-9152-62644d4bee25",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.11.11.241",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "YCQlYXMxEe2ZQXErzfYZFZI4bRyh-E89QEQoo6NK7R8",
-          "serverName": "peyman",
-          "shortId": "57d225c7",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

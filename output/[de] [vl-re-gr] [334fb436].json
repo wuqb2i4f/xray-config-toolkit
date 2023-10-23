@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "108.181.10.17",
-            "port": 80,
+            "address": "49.12.234.249",
+            "port": 433,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "474e8680-701f-11ee-b436-205c6d5f5d78",
+                "id": "f66a277d-0990-45ab-c7cb-22c07a8e919d",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "teams.microsoft.com"
-          },
-          "path": "/0vixdm74"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "VZBW4ZiScdRuWl0PfVoYmgbJc-3sZVMvd6BXZg4ycws",
+          "serverName": "mega.io",
+          "shortId": "7a3a52136c",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

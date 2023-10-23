@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "143.110.170.255",
-            "port": 46946,
+            "address": "it.motacell.fun",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "05f61c73-bbb3-450f-a54a-f8cfec0a9105",
+                "id": "335b24c2-8c88-411f-9bed-e33b8a40032c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["speedtest.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NA5NP2JyoBfIIeROpRpOrfGVSKt4i1QJCOIwan8eziI",
-          "serverName": "discord.com",
-          "shortId": "da2a9375",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
