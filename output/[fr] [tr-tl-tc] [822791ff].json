@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "49.13.83.153",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "88316868-e7c2-4d13-9641-c9b61101fc2b",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "15.237.232.238",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPNTelegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPNTelegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "tHa9lm63yIpaSYqya4Lx4Un7QjPAUTZfP87lw_xzKg8",
-          "serverName": "www.tradingview.com",
-          "shortId": "2254b919",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

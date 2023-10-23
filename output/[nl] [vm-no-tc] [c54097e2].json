@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "49.13.83.153",
-            "port": 443,
+            "address": "164.92.152.63",
+            "port": 19101,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "88316868-e7c2-4d13-9641-c9b61101fc2b",
+                "id": "e2e6813a-695d-499b-8f69-929ac0f04b61",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPNTelegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPNTelegram:@Outline_VPN-Telegram:@Outline_VPN-Telegram:@Outline_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "tHa9lm63yIpaSYqya4Lx4Un7QjPAUTZfP87lw_xzKg8",
-          "serverName": "www.tradingview.com",
-          "shortId": "2254b919",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
