@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "edeen.makeup",
-            "port": 443,
+            "address": "173.245.58.111",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "120ef6d2-904f-44fd-9c7f-0ecdb23446f0",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "edeen.makeup"
-          },
-          "path": "linkvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "",
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "ch.puzzlemobile.info",
           "show": false
         }
       },

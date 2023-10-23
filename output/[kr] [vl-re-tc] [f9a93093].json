@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.161.155.211",
+            "address": "146.56.47.172",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "34264397-f499-4be8-aae2-7c80771a4df6",
+                "flow": "xtls-rprx-vision",
+                "id": "dc7fec7c-9cf6-4e82-b19f-3b938b124b29",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "5hZtBKe9avkHHfQlTkEDfQ_GO4BG3yASLQDsLLs2jjU",
-          "serverName": "booking.com",
-          "shortId": "c914091d",
+          "fingerprint": "chrome",
+          "publicKey": "XK2z6ZWjDVKlCmDHYvvH9u9ImXVTscfbe9tFyZN0skM",
+          "serverName": "m.media-amazon.com",
+          "shortId": "036d4f8e",
           "show": false,
           "spiderX": ""
         }

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ger.r8volt.com",
-            "port": 2096,
+            "address": "143.110.170.255",
+            "port": 46946,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
+                "flow": "",
+                "id": "05f61c73-bbb3-450f-a54a-f8cfec0a9105",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@proxyforopeta"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "GWLTRxw3B1iy29ZW4SqQH113-Gjup6-4vkOMksfEHB0",
-          "serverName": "spiegel.de",
-          "shortId": "0d8de1aa",
+          "fingerprint": "firefox",
+          "publicKey": "NA5NP2JyoBfIIeROpRpOrfGVSKt4i1QJCOIwan8eziI",
+          "serverName": "discord.com",
+          "shortId": "da2a9375",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "164.90.212.186",
-            "port": 42497,
+            "address": "tracking.betarays.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "98caa36e-5827-43b3-b134-26eb5951d6e9",
+                "id": "1f63833f-40aa-4bb4-834c-da860bc7d590",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tracking.betarays.ir"
+          },
+          "path": "/l30EqE63yd1AEUEUd"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "TJFVco_sRc62sQDgFsZ8fObsULV9y3rNyCjD8ELe52k",
-          "serverName": "bitcommand.com",
-          "shortId": "71267ab0",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "tracking.betarays.ir",
+          "show": false
         }
       },
       "tag": "proxy"

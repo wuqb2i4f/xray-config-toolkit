@@ -45,36 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mtn.msv2ray.space",
-            "port": 2053,
+            "address": "tracking.betarays.ir",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "6fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "1f63833f-40aa-4bb4-834c-da860bc7d590",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tracking.betarays.ir"
+          },
+          "path": "/tjLblfjyd1AEUEUd"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "us.MsV2ray.cfd",
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "tracking.betarays.ir",
           "show": false
         }
       },
