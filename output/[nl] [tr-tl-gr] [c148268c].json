@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "hiva.hafeza.link",
-            "port": 2096,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "c006e7fd-b16d-489a-a4e6-d74d6fc774af",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "discord.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "22dxmxezsm",
+            "port": 443
           }
         ]
       },
@@ -67,17 +63,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@vpn_xw"
+          "serviceName": "Amsterdam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "UiXzyCVZDVkTZZhOStPCaiQBoyXfAR-TcQzCg7fSuhI",
-          "serverName": "dash.cloudflare.com",
-          "shortId": "585a8fca",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2,h3"],
+          "fingerprint": "chrome",
+          "serverName": "brec3xLN7Zl2.pouriya.cf",
+          "show": false
         }
       },
       "tag": "proxy"

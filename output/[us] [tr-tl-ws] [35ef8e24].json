@@ -49,29 +49,30 @@
       "settings": {
         "servers": [
           {
-            "address": "3.10.159.115",
+            "address": "tracking.betarays.ir",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "password": "d971aa94-81e6-4c2a-8672-a09cbbdeb450",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tracking.betarays.ir"
+          },
+          "path": "/ECJIMZVCZDD0Oyd1AEUEUd"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "fingerprint": "chrome",
+          "serverName": "tracking.betarays.ir",
           "show": false
         }
       },

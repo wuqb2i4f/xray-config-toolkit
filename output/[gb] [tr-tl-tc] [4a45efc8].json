@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "65.109.220.228",
-            "port": 50383,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "2c7fdc9e-6878-48dd-b834-29790bc9342d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "35.177.239.62",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@vpnserverrr-@vpnserverrr-@vpnserverrr"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "kpaBvwIVpss-7ZEUHzDmvbP0dDtw5ntFaMi5WXaQkF8",
-          "serverName": "microsoft.com",
-          "shortId": "0ed978",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "23.234.233.21",
-            "port": 80,
+            "address": "23.88.102.224",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "c78614f6-d18f-4994-c530-501f6c7f8a48",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "031a2d6c-ce91-4167-bcb8-012d346a6e70",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/bb"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "CPLcMRb5VAd149rnWt2xOoYzNn_L7bPXxH-mnXfe-lM",
+          "serverName": "sn.hfafn.site",
+          "shortId": "eb2224c8",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

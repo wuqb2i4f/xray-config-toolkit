@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "167.235.207.226",
+            "address": "tracking.betarays.ir",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "XsV2ray",
+                "id": "d971aa94-81e6-4c2a-8672-a09cbbdeb450",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tracking.betarays.ir"
+          },
+          "path": "/l30EqE63yd1AEUEUd"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "jNUJT2tnKrteerSeMMKqoC1qO1M7oECcNh-yRUKsxTM",
-          "serverName": "tgju.org",
-          "shortId": "2a718e4a",
-          "show": false,
-          "spiderX": ""
+          "serverName": "tracking.betarays.ir",
+          "show": false
         }
       },
       "tag": "proxy"
