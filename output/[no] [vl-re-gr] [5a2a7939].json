@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "discord.com",
-            "port": 2053,
+            "address": "185.125.171.13",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "32b58171-8941-4039-a2e6-f26fbf0ece14",
+                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cLr5th7cRaha.pouriya.cf"
-          },
-          "path": "/Amsterdam"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "g2com"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
           "fingerprint": "chrome",
-          "serverName": "dr7N90onaxlw.pouriya.cf",
-          "show": false
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "partner.g2.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

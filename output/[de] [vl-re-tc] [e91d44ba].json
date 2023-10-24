@@ -45,35 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "tracking.betarays.ir",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "d971aa94-81e6-4c2a-8672-a09cbbdeb450",
-            "port": 443
+            "address": "79.133.57.169",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "dc01b9a2-79b3-48ac-b3f4-0184fb614cae",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "tracking.betarays.ir"
-          },
-          "path": "/ECJIMZVCZDD0Oyd1AEUEUd"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "tracking.betarays.ir",
-          "show": false
+          "publicKey": "viOXuxSsxFoVkpBRYk8sqzOBKuWfP64OoM0dUo6LyXk",
+          "serverName": "tradingview.com",
+          "shortId": "4e9ba837",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
