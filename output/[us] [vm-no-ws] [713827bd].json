@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "138.68.137.73",
-            "port": 19534,
+            "address": "23.94.136.9",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "1c273d2c-1c3e-412b-9b13-faa8176647a2",
+                "id": "cd1a8e9e-292e-499c-8266-79d636c28de5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/acc"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "zWr4AX8ac4FDIf0twvJBQv0x_5j4wPfo96MWIiq-r0Y",
-          "serverName": "discord.com",
-          "shortId": "21790e62",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

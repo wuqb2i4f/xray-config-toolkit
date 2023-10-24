@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "138.68.137.73",
-            "port": 19534,
+            "address": "franc.digires.shop",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "1c273d2c-1c3e-412b-9b13-faa8176647a2",
+                "id": "1af4ba3d-e60f-4f83-b38b-23fc181f676d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "franc.digires.shop"
+          },
+          "path": "/11201"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "zWr4AX8ac4FDIf0twvJBQv0x_5j4wPfo96MWIiq-r0Y",
-          "serverName": "discord.com",
-          "shortId": "21790e62",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "",
+          "show": false
         }
       },
       "tag": "proxy"
