@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "176.124.198.9",
-            "port": 8443,
+            "address": "23.234.233.21",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "1ca81bfc-9bee-4f74-9c8e-c669d1a52d74",
+                "id": "c78614f6-d18f-4994-c530-501f6c7f8a48",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/bb"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "fj6XjWmzmOLtPKCYlstAWrGIftLt8XtMuzrEIAyY4iU",
-          "serverName": "www.jsdelivr.net",
-          "shortId": "e0bcf9b7",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

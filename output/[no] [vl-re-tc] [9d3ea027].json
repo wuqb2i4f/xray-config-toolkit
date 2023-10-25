@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "88.198.118.235",
-            "port": 8443,
+            "address": "185.125.171.13",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "cc1e4ad6-4b23-4b7f-8eda-514aa1c20002",
+                "flow": "xtls-rprx-vision",
+                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TelegramID:@iranbaxvpn"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
-          "serverName": "iranserver.com",
-          "shortId": "9825",
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "partner.g2.com",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "170.130.55.49",
-            "port": 32727,
+            "address": "104.21.24.168",
+            "port": 8443,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fb7647bd-c796-4d0e-8c01-0818f610ba5e",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "874a60cd-f099-499a-8aee-e4606ccf3e86",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nomore.hideip.tk"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "firefox",
-          "publicKey": "JTc4V8EcC9X5M0KZHOgVtw2J97zkSgkDf4m7wJGSuV8",
-          "serverName": "tradingview.com",
-          "shortId": "f41ec7f0",
-          "show": false,
-          "spiderX": ""
+          "serverName": "nomore.hideip.tk",
+          "show": false
         }
       },
       "tag": "proxy"
