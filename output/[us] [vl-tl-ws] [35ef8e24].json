@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.5.98.94",
+            "address": "tracking.betarays.ir",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "9da1693d-9e4c-4a41-841a-f085bf90e70d",
+                "flow": "",
+                "id": "de27457d-038b-4fb1-a9a0-221eb2d83590",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tracking.betarays.ir"
+          },
+          "path": "/l30EqE63yd1AEUEUd"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "NTxE5fnbrIwMXvWbWAKBYRzMfixaioo3NWEewIVrxjg",
-          "serverName": "drive.google.com",
-          "shortId": "3d5f458e28",
-          "show": false,
-          "spiderX": ""
+          "serverName": "tracking.betarays.ir",
+          "show": false
         }
       },
       "tag": "proxy"

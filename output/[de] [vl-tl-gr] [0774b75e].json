@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "64.227.66.170",
-            "port": 41309,
+            "address": "mtn.moienmusic.space",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a4ea253b-973d-46e2-821c-c813002226a5",
+                "id": "d78371c9-0410-4c15-ba43-22d262d5715f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Zwqh3HulvCjjonKdChJGj-LdJ0QiLBk6OQm1FpdR418",
-          "serverName": "freepik.com",
-          "shortId": "47a335c8",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Sni.Tlgram-Polproxy.space",
+          "show": false
         }
       },
       "tag": "proxy"

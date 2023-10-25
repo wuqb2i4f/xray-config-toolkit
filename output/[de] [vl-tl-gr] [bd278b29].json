@@ -45,39 +45,36 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "tracking.betarays.ir",
-            "port": 443,
+            "address": "cleanmci.barfak123.eu.org",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "de27457d-038b-4fb1-a9a0-221eb2d83590",
+                "id": "08400df9-bc17-4acb-b6f5-8497cc84211f",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "tracking.betarays.ir"
-          },
-          "path": "/tjLblfjyd1AEUEUd"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "tracking.betarays.ir",
+          "serverName": "cloud.barfak123.eu.org",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "142.132.180.186",
-            "port": 12517,
+            "address": "143.110.170.255",
+            "port": 26257,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2eb543a2-690d-486e-a9bb-35f0776de5cd",
+                "flow": "",
+                "id": "a0d671f9-9e5d-4c22-bd95-14186588f5bb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@proxyforopeta"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "vPeL9AgCBVQcGOp3T5FLTiH2qZRyOvFuy_Dr6Ke2vAQ",
-          "serverName": "advertisements.indexer-staging.ipfs.cloudflare.com",
-          "shortId": "1d969a26",
+          "fingerprint": "chrome",
+          "publicKey": "OwcJp-GmgMEWncVxqOInbEQrvImQc7UB4QccFnVFlBo",
+          "serverName": "de.vpncustomize.Website",
+          "shortId": "8caac1cb",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
