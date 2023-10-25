@@ -45,40 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "amini1.ddns.net",
+            "address": "23.88.102.224",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "172dc69f-3b43-4457-8ef8-d555b2d37f4a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "031a2d6c-ce91-4167-bcb8-012d346a6e70",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "service4.karop.homes"
-          },
-          "path": "/aHFYCl4zLtepo0YwKHeQ"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "service4.karop.homes",
-          "show": false
+          "publicKey": "CPLcMRb5VAd149rnWt2xOoYzNn_L7bPXxH-mnXfe-lM",
+          "serverName": "sn.hfafn.site",
+          "shortId": "eb2224c8",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "79.133.57.169",
-            "port": 443,
+            "address": "fra.mahdivps.tk",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "dc01b9a2-79b3-48ac-b3f4-0184fb614cae",
+                "flow": "",
+                "id": "cac2a33c-5bf3-40e4-9ee0-7f4dd24c4d50",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "SMT"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "viOXuxSsxFoVkpBRYk8sqzOBKuWfP64OoM0dUo6LyXk",
-          "serverName": "tradingview.com",
-          "shortId": "4e9ba837",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "",
+          "show": false
         }
       },
       "tag": "proxy"

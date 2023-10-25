@@ -45,39 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "45.82.13.52",
+            "address": "tracking.betarays.ir",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "9115a3cf-d98e-4982-8b4f-6daa6b4430ad",
+                "id": "de27457d-038b-4fb1-a9a0-221eb2d83590",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tracking.betarays.ir"
+          },
+          "path": "/tjLblfjyd1AEUEUd"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "g8--ibOI7lu0tuWD4iLizDryMhC7zB-u0sTICsAE3nI",
-          "serverName": "cloudflare.com",
-          "shortId": "9c5d",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "tracking.betarays.ir",
+          "show": false
         }
       },
       "tag": "proxy"

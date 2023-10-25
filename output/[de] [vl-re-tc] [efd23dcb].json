@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "23.234.233.21",
-            "port": 80,
+            "address": "::ffff:128.140.44.66",
+            "port": 20164,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "c78614f6-d18f-4994-c530-501f6c7f8a48",
+                "id": "7aa5bbd4-a368-4abd-939a-e56e0784dd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/bb"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "ajkf5tQv6WVxD05-C75P-pHaTroArxVuWnirh6gyLxw",
+          "serverName": "ea.com",
+          "shortId": "c19d3d2e",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

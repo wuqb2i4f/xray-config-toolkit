@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.24.168",
-            "port": 8443,
+            "address": "146.56.156.226",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "874a60cd-f099-499a-8aee-e4606ccf3e86",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "dc7fec7c-9cf6-4e82-b19f-3b938b124b29",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nomore.hideip.tk"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "firefox",
-          "serverName": "nomore.hideip.tk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "XK2z6ZWjDVKlCmDHYvvH9u9ImXVTscfbe9tFyZN0skM",
+          "serverName": "m.media-amazon.com",
+          "shortId": "036d4f8e",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
