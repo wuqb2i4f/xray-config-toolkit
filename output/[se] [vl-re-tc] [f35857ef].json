@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.100.144",
-            "port": 13723,
+            "address": "13.49.127.104",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "0d246145-7c73-4f14-bbd9-f0accb4e9d54",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "bAV6Al-Ikm0V6dDfZyTZVkoGWW0u38jOZO6znsvmEw0",
-          "serverName": "fast.com",
-          "shortId": "9a8133e6",
+          "fingerprint": "chrome",
+          "publicKey": "yKwUKR7C2q9N_nJXPM9VkbrxSE4hEL08L1CUMo5WEik",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

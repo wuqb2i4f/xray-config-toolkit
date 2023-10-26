@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "88.99.85.225",
+            "address": "ifi1.kaghazacharrangi.sbs",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "637c8201-88fd-4155-cf06-9abe6bc92abc",
+                "id": "a26d01a2-0c63-4a59-a1a0-3b6ee222fd85",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "ieoOiG06uCKkWCBtmP_IuAXWrAa-UL6A0HVVeCvFHBo",
-          "serverName": "ftp.debian.org",
-          "shortId": "638ca3d3",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "ifi1.kaghazacharrangi.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
