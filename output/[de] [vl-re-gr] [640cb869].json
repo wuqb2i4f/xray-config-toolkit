@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "allrevolt.r8volt.com",
+            "address": "88.99.85.225",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
+                "flow": "",
+                "id": "637c8201-88fd-4155-cf06-9abe6bc92abc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "imTeVCUujulNZ2LJNaZrWlOGcN0tgm0km15N8jc55j4",
-          "serverName": "guerrilla-games.com",
-          "shortId": "dcd651ed",
+          "fingerprint": "firefox",
+          "publicKey": "ieoOiG06uCKkWCBtmP_IuAXWrAa-UL6A0HVVeCvFHBo",
+          "serverName": "ftp.debian.org",
+          "shortId": "638ca3d3",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

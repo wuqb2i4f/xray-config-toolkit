@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.shhproxy.cfd",
-            "port": 2096,
+            "address": "1701-join-v2raytz.sinotz.tk",
+            "port": 58952,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "4aeebd8c-6d5c-4d75-9cf1-c732073ace98",
+                "flow": "xtls-rprx-vision",
+                "id": "9ffa3184-5aca-47ba-84c8-73aa7d506879",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@shh_proxy,@shh_proxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "GxGzAVN9xi1aXGv_-EUwj8qLldhHG0oVQ-OOgVkoMlU",
+          "publicKey": "jUhwXcMjbLWWGaPbF3WmBjkQfUiB_m_Sv_e_o5Wt1lo",
           "serverName": "www.speedtest.net",
-          "shortId": "25988b1f",
+          "shortId": "222a0b22",
           "show": false,
           "spiderX": "/"
         }
