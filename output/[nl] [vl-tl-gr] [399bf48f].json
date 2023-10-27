@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "allrevolt.r8volt.com",
-            "port": 443,
+            "address": "104.21.48.84",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
+                "flow": "",
+                "id": "eb4e87f7-6422-4117-95b6-8a5153786898",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF,Telegram:@IP_CF"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "imTeVCUujulNZ2LJNaZrWlOGcN0tgm0km15N8jc55j4",
-          "serverName": "guerrilla-games.com",
-          "shortId": "dcd651ed",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "jyyfyuuytfyiytfuygjfc.mic-mokhaderat-irancell-shatel-irancel.shop",
+          "show": false
         }
       },
       "tag": "proxy"

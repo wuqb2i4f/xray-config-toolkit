@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "azadi-az-inja-migzare-d2.dgi000.store",
-            "port": 51370,
+            "address": "194.5.98.94",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "azadi-az-inja-migzare-grpc",
+                "flow": "xtls-rprx-vision",
+                "id": "9da1693d-9e4c-4a41-841a-f085bf90e70d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "S59Ahht6GWLxKG58m184bESkuvfEnm3JXd4VmFxTZxs",
-          "serverName": "www.speedtest.net",
-          "shortId": "",
+          "fingerprint": "chrome",
+          "publicKey": "NTxE5fnbrIwMXvWbWAKBYRzMfixaioo3NWEewIVrxjg",
+          "serverName": "drive.google.com",
+          "shortId": "3d5f458e28",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

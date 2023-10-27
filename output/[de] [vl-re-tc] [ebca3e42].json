@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "164.92.152.63",
-            "port": 19101,
+            "address": "128.140.49.29",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "e2e6813a-695d-499b-8f69-929ac0f04b61",
+                "id": "5fea461d-9dd5-4c30-9dfa-63b966b6d411",
                 "level": 8,
                 "security": "auto"
               }
@@ -71,7 +70,16 @@
             "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "random",
+          "publicKey": "ssfcbUE7g67nECKXytt9CbDMZzu-X9ECtfgkIqIsWhk",
+          "serverName": "cdnjs.com",
+          "shortId": "7a8275aa7bd14661",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

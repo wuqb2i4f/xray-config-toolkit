@@ -45,39 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "www.zula.ir",
-            "port": 443,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "7a948591-06a5-42eb-b806-d8f540a4d93a",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.11.50.174",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "arv.whaleproject.tech"
-          },
-          "path": "/@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "arv.whaleproject.tech",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },
