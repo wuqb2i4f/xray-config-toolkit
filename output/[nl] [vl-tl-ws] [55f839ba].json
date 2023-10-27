@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.108.61.241",
-            "port": 49972,
+            "address": "discord.com",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4696704f-dc0b-46df-9ffd-37c1a674b06c",
+                "id": "32b58171-8941-4039-a2e6-f26fbf0ece14",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cLr5th7cRaha.pouriya.cf"
+          },
+          "path": "/Amsterdam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "LZg8onaCCr2g63YZ6bvpzcQyxSTYGw2wxln3axpdPBk",
-          "serverName": "zarpop.com",
-          "shortId": "7900c53a",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "dr7N90onaxlw.pouriya.cf",
+          "show": false
         }
       },
       "tag": "proxy"

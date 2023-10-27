@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "128.140.112.73",
-            "port": 31082,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "30c89ced-d16c-495c-8d6c-4adb7769f3d5",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.37.198.114",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "basalam.com"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "qhHfhXMXdIda4MBPC1n9OaPDpOfVvR82dwJWRiNaq0M",
-          "serverName": "www.speedtest.net",
-          "shortId": "f3e04f8f",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.shhproxy.cfd",
-            "port": 2096,
+            "address": "104.18.203.232",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c73f6b14-2d71-4acc-aa26-99bcda3349bc",
+                "id": "35b4341e-66a5-432f-ad21-ad9093e65dd0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@shh_proxy,@shh_proxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de11.vlessx.us"
+          },
+          "path": "@freeiranweb"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "GxGzAVN9xi1aXGv_-EUwj8qLldhHG0oVQ-OOgVkoMlU",
-          "serverName": "www.speedtest.net",
-          "shortId": "25988b1f",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

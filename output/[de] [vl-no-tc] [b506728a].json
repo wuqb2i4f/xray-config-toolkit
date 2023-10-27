@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "1726-join-v2raytz.sinotz.tk",
-            "port": 8443,
+            "address": "95.216.204.122",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bb0aa02f-5954-4785-9e87-296a88d44dc5",
+                "id": "fbd132f1-7f21-477b-cf1b-13cb45606d05",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@vpnconectd,vpnconectd,vpnconectd,vpnconectd,vpnconectd,vpnconectd"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "GVIQY4P_OMdwnWQWscpa0kYykD9d_3ay3j3WCMkLEhs",
-          "serverName": "www.speedtest.net:443",
-          "shortId": "d4722782",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

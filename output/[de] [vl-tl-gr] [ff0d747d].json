@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "kuroit.yebekhe.link",
-            "port": 48087,
+            "address": "173.245.58.111",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a59da032-ab8e-4e47-e661-1aeb9141ef55",
+                "id": "120ef6d2-904f-44fd-9c7f-0ecdb23446f0",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@v2raycollectorbot"
+          "serviceName": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Dc7U6PtCPqwS3bSST0dpGcSZlphwGccrUXBhHNtohD8",
-          "serverName": "microsoft.com",
-          "shortId": "00",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "ch.puzzlemobile.info",
+          "show": false
         }
       },
       "tag": "proxy"

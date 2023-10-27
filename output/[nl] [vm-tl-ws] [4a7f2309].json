@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "freeiranwebtest.ddns.net",
-            "port": 80,
+            "address": "www.zula.ir",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "560a81fe-8157-4e74-b8d2-c0ff39e49582",
+                "id": "7a948591-06a5-42eb-b806-d8f540a4d93a",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "de1.vlessx.us"
+            "Host": "arv.whaleproject.tech"
           },
-          "path": "@freeiranweb"
+          "path": "/@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal@VPN_whal"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "arv.whaleproject.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

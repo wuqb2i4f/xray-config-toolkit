@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "74.211.104.159",
-            "port": 1234,
+            "address": "164.92.152.63",
+            "port": 19101,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "f10fa30b-19d1-44a4-b1d4-2e27de3e6976",
+                "id": "e2e6813a-695d-499b-8f69-929ac0f04b61",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,12 +65,11 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/lz"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "none"
       },
