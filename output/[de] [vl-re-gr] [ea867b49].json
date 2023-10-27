@@ -45,34 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "tracking.betarays.ir",
-            "port": 80,
+            "address": "join.shhproxy.cfd",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "11e41082-8593-4286-974c-1cf42dda0491",
+                "id": "c73f6b14-2d71-4acc-aa26-99bcda3349bc",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "tracking.betarays.ir"
-          },
-          "path": "/tjLblfjyd1AEUEUd"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@shh_proxy,@shh_proxy,"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "GxGzAVN9xi1aXGv_-EUwj8qLldhHG0oVQ-OOgVkoMlU",
+          "serverName": "www.speedtest.net",
+          "shortId": "25988b1f",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
