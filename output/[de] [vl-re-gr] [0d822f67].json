@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "discord.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "22dxmxezsm",
-            "port": 443
+            "address": "116.203.75.81",
+            "port": 38843,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "3b069d18-74d6-42c5-9301-21a7b0bfa212",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Amsterdam"
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "brec3xLN7Zl2.pouriya.cf",
-          "show": false
+          "publicKey": "PdC_BxVko9J4wwMqHwAQbVQHENt1F6uYSlQMTxMhZ2s",
+          "serverName": "khor.sarezh.click",
+          "shortId": "bf6ca27c",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

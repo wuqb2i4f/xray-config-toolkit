@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.22.86.111",
-            "port": 44295,
+            "address": "104.31.16.103",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "abf8f98a-fb58-400f-beb8-773daa4e6c19",
+                "id": "14d14c80-c5f8-45f5-9c75-56ab8dae3e6f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn.darkpack.tech"
+          },
+          "path": "/DGDnaoeyGCg1AHU"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "koek9kEUFy-VRS1SaNe0x-t5MuJ-tF1cjlIhW7-QoAw",
-          "serverName": "www.google.com",
-          "shortId": "e576060a",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "cdn.darkpack.tech",
+          "show": false
         }
       },
       "tag": "proxy"

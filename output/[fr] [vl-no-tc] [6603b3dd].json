@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.22.86.111",
-            "port": 50676,
+            "address": "51.210.110.248",
+            "port": 24057,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f00521ae-3cd1-4afc-a27c-4f7eebc173ef",
+                "id": "5bb60c3f-c1dd-4168-9a09-ec4c5ada17ce",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "hxx8Y3N8kF4ZGxqDgwBnQMl7Ss221FPj41Y0hiZ2Zws",
-          "serverName": "CaNNectV2ray-OnlyIRAN-mCi-iraracnzsk-rgt-mkh.varzesh3-CDN.site",
-          "shortId": "710cbf40",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

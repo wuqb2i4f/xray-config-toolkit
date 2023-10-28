@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "dlf.ornam.tech",
-            "port": 443,
+            "address": "sht2.s25id.buzz",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "bdd00939-26be-4c99-9f4f-2a94df83a9c6",
+                "flow": "",
+                "id": "41a7fa90-ebde-4c61-b723-9a7bf08f677d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zoro.diablozoro.buzz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "hNVOQ6YXqVOT71Fe-dptYmqMBDHsGE_LYu6mipfgExU",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "cb69dab2",
-          "show": false,
-          "spiderX": ""
+          "serverName": "zoro.diablozoro.buzz",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.216.204.122",
-            "port": 80,
+            "address": "185.176.26.71",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fbd132f1-7f21-477b-cf1b-13cb45606d05",
+                "id": "14d14c80-c5f8-45f5-9c75-56ab8dae3e6f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn.darkpack.tech"
+          },
+          "path": "/DGDnaoeyGCg1AHU"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "cdn.darkpack.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

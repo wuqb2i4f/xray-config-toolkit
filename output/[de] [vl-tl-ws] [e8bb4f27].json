@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.100.144",
-            "port": 26920,
+            "address": "xn--wgbag6ft6a.plusultra.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1e620dbe-0548-43c7-a074-dbbd5f811084",
+                "id": "5a3125e0-741c-4271-b14a-dc30365ceead",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y@v_2ra_y"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/16381/sourceforge.net"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "WZNfM0ityqWJftr60-NcEMXip9Tuxgk7tAMAjdM-7ls",
-          "serverName": "fsat.com",
-          "shortId": "f632e916",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "",
+          "show": false
         }
       },
       "tag": "proxy"
