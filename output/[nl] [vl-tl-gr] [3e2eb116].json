@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "195.201.46.160",
-            "port": 8443,
+            "address": "vip.mahdivps.tk",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "50e2a82b-06c8-453e-b17a-b304a277434c",
+                "id": "3725c1e2-8d2b-4394-9036-2761192581ad",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@TrwNeT"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4",
-          "serverName": "www.speedtest.net",
-          "shortId": "11",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "",
+          "show": false
         }
       },
       "tag": "proxy"

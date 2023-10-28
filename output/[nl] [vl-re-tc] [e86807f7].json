@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sht2.s25id.buzz",
-            "port": 2096,
+            "address": "185.142.238.35",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "41a7fa90-ebde-4c61-b723-9a7bf08f677d",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zoro.diablozoro.buzz"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "zoro.diablozoro.buzz",
-          "show": false
+          "publicKey": "94dPgXWW8guItDHE1LtcEoAc1ZvyQAD1jIR0ccZOkRE",
+          "serverName": "booking.qatarairways.com",
+          "shortId": "55a9b2f3",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

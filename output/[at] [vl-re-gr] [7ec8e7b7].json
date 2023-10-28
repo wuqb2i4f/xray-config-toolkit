@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "103.70.115.24",
-            "port": 80,
+            "address": "94.228.169.27",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "831596b2-fed1-4239-af88-e0630394545a",
+                "id": "ItsLegendaryking",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "dl.kgvn.garenanow.com"
-          },
-          "path": "/vpngiare.net"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "bgYdHYTCSxLQLot0bxQO1S1PKpSR4pLNfJVJjQm6Om8",
+          "serverName": "mihanyas.ir",
+          "shortId": "eff98dbb",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
