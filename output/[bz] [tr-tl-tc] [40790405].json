@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "116.203.75.81",
-            "port": 38843,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "3b069d18-74d6-42c5-9301-21a7b0bfa212",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "ru1.connecton.surf",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "a77ad20a55",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "PdC_BxVko9J4wwMqHwAQbVQHENt1F6uYSlQMTxMhZ2s",
-          "serverName": "khor.sarezh.click",
-          "shortId": "bf6ca27c",
-          "show": false,
-          "spiderX": ""
+          "serverName": "ru1.connecton.surf",
+          "show": false
         }
       },
       "tag": "proxy"
