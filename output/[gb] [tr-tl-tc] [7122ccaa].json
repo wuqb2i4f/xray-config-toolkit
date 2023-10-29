@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "185.113.223.10",
-            "port": 47053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "eb138531-1614-45f1-b714-91001308deb3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.56.79.9",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Turkiye"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "_qVYAI4tXKUVbZ1NZ_qkjsDb6TBl7bUFYQUXaqkyPBo",
-          "serverName": "www.unhcr.org",
-          "shortId": "0a30f8d3",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

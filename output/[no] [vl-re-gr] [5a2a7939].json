@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join-v2raytz.sinotz.tk",
-            "port": 2096,
+            "address": "185.125.171.13",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e4e8c00b-8a21-4603-be4b-7cea73d4a405",
+                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+          "serviceName": "g2com"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "ConfigForV2rayng.Snapp.monster",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "partner.g2.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

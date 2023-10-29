@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "168.119.153.222",
-            "port": 443,
+            "address": "2bia-channel.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ItsLegendaryking",
+                "id": "e7a388b2-9d10-46bf-e2bf-5f89bc6f5a42",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "RR6KqVguWm1sMItHoS37FOBAEgYMND7j_ZsjB6dp-V8",
-          "serverName": "mihanyas.ir",
-          "shortId": "4e14a342",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

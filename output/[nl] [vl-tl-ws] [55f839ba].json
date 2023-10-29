@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.210.110.248",
-            "port": 24057,
+            "address": "discord.com",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5bb60c3f-c1dd-4168-9a09-ec4c5ada17ce",
+                "id": "32b58171-8941-4039-a2e6-f26fbf0ece14",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cLr5th7cRaha.pouriya.cf"
+          },
+          "path": "/Amsterdam"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "dr7N90onaxlw.pouriya.cf",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

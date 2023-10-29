@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join-v2raytz.sinotz.tk",
-            "port": 8080,
+            "address": "91.107.243.227",
+            "port": 723,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e4e8c00b-8a21-4603-be4b-7cea73d4a405",
+                "id": "94f92623-fc9b-4f74-8ccc-5ce2e965d03e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "de.vpncustomize.Website"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "LLFNilqoCIdxX-iLYwrLlNYGayHRnrSEPU6I7exy3RY",
+          "serverName": "www.speedtest.net",
+          "shortId": "a1f189",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
