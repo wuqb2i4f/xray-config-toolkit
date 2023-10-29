@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.117.223",
-            "port": 59164,
+            "address": "xn--wgbag6ft6a.plusultra.fun",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ecaee776-c9b3-44df-b276-9ead9c095202",
+                "id": "5a3125e0-741c-4271-b14a-dc30365ceead",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,12 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/16381/sourceforge.net"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

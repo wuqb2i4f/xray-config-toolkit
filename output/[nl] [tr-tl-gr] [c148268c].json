@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "94.131.99.218",
-            "port": 37619,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "50a09ec4-32d1-4b8d-9fdb-47874e839581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "discord.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "22dxmxezsm",
+            "port": 443
           }
         ]
       },
@@ -67,17 +63,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-Telegramjoin:@V2ray_ip-"
+          "serviceName": "Amsterdam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "M0HEj2O6_WVN7iAji1ZRjBGV3hMKwHYEileJEVaAf0k",
-          "serverName": "zula.ir",
-          "shortId": "1973486c",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "brec3xLN7Zl2.pouriya.cf",
+          "show": false
         }
       },
       "tag": "proxy"

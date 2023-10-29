@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.8",
-            "port": 80,
+            "address": "45.145.6.107",
+            "port": 55873,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f86103ba-e161-4e39-adb7-8006acc5ec0f",
+                "id": "1ca41642-10ec-4c5e-83e4-1c1345d1553d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ZOoloGY.KasHTi.woRld"
-          },
-          "path": "/backup"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "Xn6mfPVXYmqFl1-22IuoUZzfMI0w0SS2uXV-2r50vRs",
+          "serverName": "www.speedtest.net",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

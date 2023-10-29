@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "2bia-channel.unlimiteddev.xyz",
-            "port": 80,
+            "address": "51.210.110.248",
+            "port": 24057,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e7a388b2-9d10-46bf-e2bf-5f89bc6f5a42",
+                "id": "5bb60c3f-c1dd-4168-9a09-ec4c5ada17ce",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,12 +64,11 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "none"
       },
