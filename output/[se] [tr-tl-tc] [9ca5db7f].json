@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "51.210.110.248",
-            "port": 24057,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "5bb60c3f-c1dd-4168-9a09-ec4c5ada17ce",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "16.16.181.86",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
@@ -70,7 +66,14 @@
             "type": "none"
           }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

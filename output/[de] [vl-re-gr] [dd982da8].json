@@ -45,34 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.27",
-            "port": 80,
+            "address": "1837-join-v2raytz.sinotz.tk",
+            "port": 15340,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "id": "659806e9-fa03-4d6a-9c90-807eb1bd2e7d",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ca5.tehme2.fun"
-          },
-          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "zkVrJcF9hBKayNRh9iVggD524MP9GBwzrLIzeW67QUU",
+          "serverName": "sourceforge.net",
+          "shortId": "559c50a7",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
