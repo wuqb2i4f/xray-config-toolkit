@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "m30.miox.sbs",
-            "port": 58037,
+            "address": "vip.mahdivps.tk",
+            "port": 10720,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8a744794-0b92-4f1a-8864-c7eb15af6933",
+                "id": "4b64215f-d015-43f7-bc5e-bc263802b589",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray@frev2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["exo.ir"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "G-_mQ-w52yrX1VdtzibOh2P1eWWjWN7hpg_StmK1RxE",
-          "serverName": "www.bhphotovideo.com",
-          "shortId": "e4fd77d6",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

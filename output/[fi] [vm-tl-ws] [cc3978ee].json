@@ -45,39 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "168.119.64.225",
-            "port": 2053,
+            "address": "amini1.ddns.net",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "304d89a8-58a7-4d43-a5af-71b5d0cb7072",
+                "id": "172dc69f-3b43-4457-8ef8-d555b2d37f4a",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@vmessorg"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "service4.karop.homes"
+          },
+          "path": "/aHFYCl4zLtepo0YwKHeQ"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "CabAOOr6qW7yp1rAFAeTZrZ_QFh5rqxYaiW9rYidkEg",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "1346e687",
-          "show": false,
-          "spiderX": ""
+          "serverName": "service4.karop.homes",
+          "show": false
         }
       },
       "tag": "proxy"
