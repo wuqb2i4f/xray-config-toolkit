@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.170.160.249",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "join.tel.hafnetwork.site",
+            "port": 44405,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "34046aba-15e9-45de-9da8-aedd72c527e5",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,16 +67,33 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["khamenei.ir"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "gDr_3XoDIGvt3etGUXjiPSVEZE_rZzMRpq3hicxyimE",
+          "serverName": "www.speedtest.net",
+          "shortId": "7cd94357",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

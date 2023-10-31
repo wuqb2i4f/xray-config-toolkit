@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "1837-join-v2raytz.sinotz.tk",
-            "port": 15340,
+            "address": "mtn.moienmusic.space",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "659806e9-fa03-4d6a-9c90-807eb1bd2e7d",
+                "id": "63dcc67d-32f3-487b-8e69-3526f8a31156",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "zkVrJcF9hBKayNRh9iVggD524MP9GBwzrLIzeW67QUU",
-          "serverName": "sourceforge.net",
-          "shortId": "559c50a7",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Iran.Polproxy.Space",
+          "show": false
         }
       },
       "tag": "proxy"
