@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:91.107.181.102",
-            "port": 29790,
+            "address": "23.88.45.201",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a667f066-6991-4351-bc0c-8476d30acd96",
+                "id": "03ce038e-bb20-4659-95dd-dba8681ce742",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "internet.life.com.by"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "gHpgh7fQoB9kzze4I6Pwvo8sXiAPIbja2ieX03dVjkE",
-          "serverName": "ea.com",
-          "shortId": "1bd52d06",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

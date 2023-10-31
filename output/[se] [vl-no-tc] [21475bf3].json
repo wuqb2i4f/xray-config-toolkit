@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "159.69.25.131",
-            "port": 39178,
+            "address": "ygvbhutfcdcfcv.beingpopular.sbs",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7c8d8f96-ac0c-43a9-8ae6-33e65846009a",
+                "id": "b682f1e3-7631-47ec-b59c-d5520b7ca4ab",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["support.cloudflare.com"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "EonBNppW_iUTs2fCRV7u0gMT9S0Iqnt0btULw2ZVBh0",
-          "serverName": "sourceforge.net",
-          "shortId": "d92e8a2c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
