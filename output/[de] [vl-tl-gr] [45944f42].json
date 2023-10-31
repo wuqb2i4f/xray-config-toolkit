@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "134.209.184.190",
-            "port": 24558,
+            "address": "all.tlgram-polproxy.space",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f5557bc8-c9af-496d-b858-4c8bb18498bc",
+                "id": "e5c62772-7538-4075-8315-2c71f81314d5",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@proxyforopeta"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "YkCjEM4m33UeYVXTuMSceuAopGfhco7THK6WyWxGITc",
-          "serverName": "discord.com",
-          "shortId": "a33c317b",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "chrome",
+          "serverName": "Sni.Tlgram-Polproxy.space",
+          "show": false
         }
       },
       "tag": "proxy"

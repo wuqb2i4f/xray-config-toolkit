@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "134.209.184.190",
-            "port": 24558,
+            "address": "13.53.186.204",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "f5557bc8-c9af-496d-b858-4c8bb18498bc",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "YkCjEM4m33UeYVXTuMSceuAopGfhco7THK6WyWxGITc",
-          "serverName": "discord.com",
-          "shortId": "a33c317b",
+          "fingerprint": "chrome",
+          "publicKey": "pSUlJvWgQCx8zPLbgt0pKBYeO6wiTXfbKtEp-pRJcms",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
           "spiderX": ""
         }

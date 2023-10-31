@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "134.209.184.190",
-            "port": 24558,
+            "address": "194.146.26.184",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "f5557bc8-c9af-496d-b858-4c8bb18498bc",
+                "flow": "xtls-rprx-vision",
+                "id": "850c022d-96c9-44a0-b941-40f47de1907a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "YkCjEM4m33UeYVXTuMSceuAopGfhco7THK6WyWxGITc",
-          "serverName": "discord.com",
-          "shortId": "a33c317b",
+          "fingerprint": "randomized",
+          "publicKey": "tubQ9E4StkIz0rMeYujtNQDTjuYfy9imxtOcwxbS3hs",
+          "serverName": "www.speedtest.net",
+          "shortId": "4027e5",
           "show": false,
           "spiderX": ""
         }
