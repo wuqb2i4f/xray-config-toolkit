@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.19.12.153",
-            "port": 15778,
+            "address": "discord.com",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "df268b6a-2583-44d9-9472-91043b7f718e",
+                "id": "32b58171-8941-4039-a2e6-f26fbf0ece14",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cLr5th7cRaha.pouriya.cf"
+          },
+          "path": "/Amsterdam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cZyMaVHE27T3G2NGq5_Ond_3CbPx5ElJ01rNAmVngx4",
-          "serverName": "ilovepdf.com",
-          "shortId": "b0959ff3",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "dr7N90onaxlw.pouriya.cf",
+          "show": false
         }
       },
       "tag": "proxy"

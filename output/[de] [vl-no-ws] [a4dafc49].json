@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.202.218.165",
-            "port": 36515,
+            "address": "2bia-channel.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3520ab94-c015-47fb-a997-5d15e089c3ca",
+                "flow": "",
+                "id": "ed8a6491-8563-4b73-80e5-2034f6962039",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NEpk6jE-mAPuakOjF8ytEEdpuOBWTwAlaJlWBo2rGAg",
-          "serverName": "hostinger.com",
-          "shortId": "895dcd2f",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
