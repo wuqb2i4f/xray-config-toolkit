@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "1bia-channel.unlimiteddev.xyz",
-            "port": 80,
+            "address": "16-join.v2raytz.sbs",
+            "port": 18651,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ed8a6491-8563-4b73-80e5-2034f6962039",
+                "id": "58949290-0d33-46a1-95f7-e622e0009346",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "MIx8CzzA7x2M-BCOX_4-WnmZFEZcdVBVPNsW-uN-1VM",
+          "serverName": "www.speedtest.net",
+          "shortId": "d4dc1dd9",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

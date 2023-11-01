@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "2bia-channel.unlimiteddev.xyz",
-            "port": 80,
+            "address": "159.69.25.131",
+            "port": 39178,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ed8a6491-8563-4b73-80e5-2034f6962039",
+                "id": "7c8d8f96-ac0c-43a9-8ae6-33e65846009a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "EonBNppW_iUTs2fCRV7u0gMT9S0Iqnt0btULw2ZVBh0",
+          "serverName": "sourceforge.net",
+          "shortId": "d92e8a2c",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

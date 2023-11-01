@@ -45,38 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "discord.com",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "32b58171-8941-4039-a2e6-f26fbf0ece14",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "ru1.connecton.surf",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "a77ad20a55",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cLr5th7cRaha.pouriya.cf"
-          },
-          "path": "/Amsterdam"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "dr7N90onaxlw.pouriya.cf",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "ru1.connecton.surf",
           "show": false
         }
       },

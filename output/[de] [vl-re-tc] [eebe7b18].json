@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "139.59.210.222",
-            "port": 36100,
+            "address": "::ffff:91.107.159.81",
+            "port": 57204,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3f272918-a213-4cb0-9c17-5c1ba0894fc5",
+                "id": "91cacaea-e6da-4e3a-b9b2-f939afe64e07",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-DaSaaADXI5tOuXRGdZVHLtoGIPCZ-QARscFK8MgnGQ",
-          "serverName": "de.vpncustomize.Website",
-          "shortId": "4caf4964",
+          "fingerprint": "chrome",
+          "publicKey": "cRSOxRQLxSCNKbLeIJSypOE7a-jyvS0xd2IEVi2aI1g",
+          "serverName": "canva.com",
+          "shortId": "710e0f31",
           "show": false,
           "spiderX": ""
         }
