@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "eu65.kiava.fun",
-            "port": 8443,
+            "address": "tm.vpnfreesec.shop",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
+                "flow": "",
+                "id": "1deba941-2f73-4b1e-9aea-50783ed55936",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "hgRqYM_ItZo4xqo6tEUIAw_jH4l-FGTzkybkVRU8kGI",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": "/new"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "FreeSec.AgV2ray.Cfd",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "5.42.72.194",
+            "address": "alvvin.click",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2fb17e69-5b6f-49d4-991f-8bf26c001eb3",
+                "alterId": 1,
+                "encryption": "",
+                "flow": "",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "alvvin.click"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "IOJu9lxe2-fXVJ9z0-v2_5puh1NFagIr_nFHsBQty0w",
-          "serverName": "ftp.debian.org",
-          "shortId": "e241272d",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "alvvin.click",
+          "show": false
         }
       },
       "tag": "proxy"
