@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "162.19.12.153",
-            "port": 15778,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "88e7269f-034f-4a03-807c-029946e1bd7f",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "usa2.connecton.surf",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "52c020954a",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray,@MrV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "cZyMaVHE27T3G2NGq5_Ond_3CbPx5ElJ01rNAmVngx4",
-          "serverName": "ilovepdf.com",
-          "shortId": "b0959ff3",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "usa2.connecton.surf",
+          "show": false
         }
       },
       "tag": "proxy"

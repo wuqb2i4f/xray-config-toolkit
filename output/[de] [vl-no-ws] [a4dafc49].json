@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "139.162.188.153",
-            "port": 443,
+            "address": "2bia-channel.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fe2de3f7-978f-4e6d-be46-0ab448f5a9cc",
+                "flow": "",
+                "id": "b3b18cbe-96e5-4504-b3a5-7e41b5e53769",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "t5__3qMSiv0ujd3niFxo-hVp6YhQ3oV84VOPliccaiQ",
-          "serverName": "wordpress.org",
-          "shortId": "f99cd880",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

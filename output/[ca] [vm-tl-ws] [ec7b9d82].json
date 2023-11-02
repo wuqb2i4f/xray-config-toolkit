@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "128.140.124.180",
-            "port": 30218,
+            "address": "oliv.beauty",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "ad34ff1d-c34b-445b-a964-d85dff380ac2",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "oliv.beauty"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "yNll80XTUpQhk-9ZVmT3wzRKsUFgxV7844CMBWjzfwA",
-          "serverName": "a.gsmarena.com",
-          "shortId": "72dd187c",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "oliv.beauty",
+          "show": false
         }
       },
       "tag": "proxy"
