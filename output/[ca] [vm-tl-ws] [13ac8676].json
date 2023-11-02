@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "38.95.233.82",
-            "port": 80,
+            "address": "104.21.50.177",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 1,
                 "encryption": "",
                 "flow": "",
-                "id": "34d79d0b-d5af-4a33-dc57-11cac68e24ed",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "38.95.233.82"
+            "Host": "alvvin.click"
           },
-          "path": "/"
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "alvvin.click",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
