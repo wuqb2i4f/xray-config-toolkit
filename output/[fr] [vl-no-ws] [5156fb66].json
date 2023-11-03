@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "turk.liq-english-78.site",
-            "port": 443,
+            "address": "freeiranweb.ddns.net",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f6d9a607-c536-4014-84ab-98283da6b436",
+                "id": "80d5769a-fb31-4cad-8b4b-71ff8482884e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de12.vlessx.us"
+          },
+          "path": "Telegram+:+@freeiranweb"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "ZjS9KeJlI9rp7JQV0HqDeLDnfJ9w3az_dffh_sVcfVc",
-          "serverName": "cloudflare.com",
-          "shortId": "c457500b",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
