@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.214.191",
-            "port": 43209,
+            "address": "193.42.36.57",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d0df4a05-d01d-4aba-acea-40329562d3e3",
+                "id": "f3fd7208-5844-494c-bece-379656a99f2f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NbeYuqm0c6M9l5lVTlBYE_UotmpPZJZhcpEemG8bzFg",
-          "serverName": "www.speedtest.net",
-          "shortId": "af53e81a",
+          "fingerprint": "chrome",
+          "publicKey": "eNSNLwzuRilbAyYZ2j_clgq0o3MOAJemQ5b9p3gprW8",
+          "serverName": "www.cloudflare.com",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }
