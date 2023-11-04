@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.108.153.20",
-            "port": 28909,
+            "address": "::ffff:128.140.84.193",
+            "port": 22843,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "98b9fd30-49c4-441f-a546-c3b05275fcdc",
+                "flow": "xtls-rprx-vision",
+                "id": "5d2333ed-5008-4395-af1a-b4d19613493a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "y0ScW0n6W5QVoDzxkc6xdX8Vgcbkr02pQ7YBZDYu7jg",
-          "serverName": "ftp.debian.org",
-          "shortId": "6d6f348c",
+          "fingerprint": "chrome",
+          "publicKey": "jeF2t1ZbkBDPflw5T91hEcJAs1teE7r8_8kaET1lJW4",
+          "serverName": "flutter.dev",
+          "shortId": "9468e4e1",
           "show": false,
           "spiderX": ""
         }

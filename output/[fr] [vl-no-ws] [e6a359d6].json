@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "alvvin.click",
-            "port": 443,
+            "address": "104.16.124.175",
+            "port": 8080,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "d92f2c5c-5fe5-4034-b48a-6e50ff820877",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,18 +67,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "alvvin.click"
+            "Host": "de7.vlessx.us"
           },
-          "path": "linkvws"
+          "path": "Telegram:@Npvtunnell,Telegram:@Npvtunnell,Telegram:@Npvtunnell,Telegram:@Npvtunnell"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "alvvin.click",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
