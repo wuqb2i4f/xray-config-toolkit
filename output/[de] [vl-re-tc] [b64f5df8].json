@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.vpncustomize.cam",
+            "address": "128.140.80.196",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "59e91ba3-2bb8-4e43-b540-5eaf4b377aa5",
+                "flow": "xtls-rprx-vision",
+                "id": "181d2b64-e4d2-424c-a714-688354a46627",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "configforV2rayng.vpncustomize.Website",
-          "show": false
+          "publicKey": "lVvrP7g9ZFI0cgsrT81Rkre1Q-TjXgBC1B_mp78171g",
+          "serverName": "Check-host.net",
+          "shortId": "069dd1b0",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

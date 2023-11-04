@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "kuroit.yebekhe.link",
-            "port": 48087,
+            "address": "eu74.kiava.fun",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a59da032-ab8e-4e47-e661-1aeb9141ef55",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@v2raycollectorbot"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Dc7U6PtCPqwS3bSST0dpGcSZlphwGccrUXBhHNtohD8",
-          "serverName": "microsoft.com",
-          "shortId": "00",
+          "fingerprint": "chrome",
+          "publicKey": "8aLRZ1XB3c7XIpvn87H_9McCYzJ8YDCtR2_WBWqhx0o",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": "/new"
         }
       },
       "tag": "proxy"

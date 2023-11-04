@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "lightning6-joinbedee.mamd.sbs",
-            "port": 8080,
+            "address": "162.19.242.43",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2eb8b32e-2d9d-4957-9edd-86f89f8fde0b",
+                "flow": "xtls-rprx-vision",
+                "id": "8b976689-0dc0-4453-91b0-dbebb76eca92",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@LIGHTNING6"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "4OTfR6IQ_6Z-5EiAi08sSfUjZtC30c2x6jl9BE9KFwg",
-          "serverName": "www.speedtest.net",
-          "shortId": "356dc0",
+          "publicKey": "iPbP-dXgPfFh3Y5aIHggXmzj0DfpSvQLg-5hNzsZqWg",
+          "serverName": "androidcentral.com",
+          "shortId": "08853449",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"
