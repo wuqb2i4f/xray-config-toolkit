@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 2087,
+            "address": "tixorey.ddns.net",
+            "port": 57711,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "6fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "flow": "xtls-rprx-vision",
+                "id": "0eae74fa-bcf5-47d7-abbf-fc66500ad55f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "24CmZiJ_r67axcR5bGUgwXYqnmBbfZxtdJc78eqkYQM",
+          "serverName": "discord.com",
+          "shortId": "54686bda",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

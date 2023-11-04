@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "accpremium.outlineprivate.store",
+            "address": "84.32.230.57",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3003c4dc-66c7-446c-b4ba-5f3ee893ec66",
+                "flow": "xtls-rprx-vision",
+                "id": "eef6784a-7d0f-4331-954a-d72d638ec0f3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@OUTLINEIRAN,@OUTLINEIRAN,@OUTLINEIRAN,@OUTLINEIRAN,@OUTLINEIRAN,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "yoHjp5HEO2ARYm5i6xGYgAeGR-5oNcRgV2dYEK--vzs",
-          "serverName": "ftp.debian.org",
-          "shortId": "1e0a2f1a",
+          "fingerprint": "chrome",
+          "publicKey": "G4qOh1TQj6HSGs7NvmwFOSw2MlrdqbHe5ON-BZtbkXM",
+          "serverName": "www.speedtest.net",
+          "shortId": "72a66ecce6",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

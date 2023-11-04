@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.75.208.222",
-            "port": 8443,
+            "address": "185.143.234.122",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "08bf74c0-d627-4a95-b564-b2edaf8baa66",
+                "id": "2529123b-cc2c-4c9e-ab9e-058990c895dc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ac15.nikatel.shop"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "x_q--vqUcnA9FcYFc5qCgWI5_Fn863B0PyRziPoWiy0",
-          "serverName": "ftp.debian.org",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
