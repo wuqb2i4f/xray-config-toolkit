@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.151.28.133",
-            "port": 443,
+            "address": "142.132.182.46",
+            "port": 37968,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "779245dc-6e0a-4ac4-919f-a9a7b08d716d",
+                "flow": "",
+                "id": "9bd2c308-5ef1-45ea-bc45-d0c136aaf483",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy@free_v2rayyy"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "mLWSbAOwR8mgIduaUeEHdoTN78XHPRR0wZZuP7zxIzU",
-          "serverName": "bigcommerce.com",
-          "shortId": "61b4f177",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
