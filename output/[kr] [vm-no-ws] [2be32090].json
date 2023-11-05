@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "159.69.25.131",
-            "port": 443,
+            "address": "172.64.204.174",
+            "port": 2086,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "54ce117a-fd26-4b2e-b540-15f95ba3cc63",
+                "id": "652df2bb-9eef-4372-904a-324760952cfa",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cf-kr2.fanqiecloud.top"
+          },
+          "path": "/sssddd"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1_NaRFGvbJUim7_qlQ8Dibh_27d3X_p_w2xUvrGZlhg",
-          "serverName": "www.xbox.com",
-          "shortId": "751ba1a6",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

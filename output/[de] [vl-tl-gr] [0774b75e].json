@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "182-join.v2raytz.sbs",
-            "port": 23982,
+            "address": "mtn.moienmusic.space",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "433316fc-b214-40de-b27f-b3004cd41af2",
+                "id": "63dcc67d-32f3-487b-8e69-3526f8a31156",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "tXtvnIrQnitlqjW9Aa3DrX95qho8rmt2PWSzISq4QWQ",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "4d09fa0e",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Iran.Polproxy.Space",
+          "show": false
         }
       },
       "tag": "proxy"
