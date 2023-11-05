@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.143.234.122",
-            "port": 2052,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2529123b-cc2c-4c9e-ab9e-058990c895dc",
+                "id": "b63b90ba-9380-473c-ef69-805ecdb9c8a9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ac15.nikatel.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Iran.Polproxy.Space",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

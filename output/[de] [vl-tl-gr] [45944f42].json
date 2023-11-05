@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.158.251.36",
-            "port": 26876,
+            "address": "all.tlgram-polproxy.space",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b79979f7-c949-4018-97c5-7db7cbd8af16",
+                "flow": "",
+                "id": "405d1184-1be8-4584-ff1d-983145d61920",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1,h3"],
           "fingerprint": "chrome",
-          "publicKey": "cSOBsUEAERNrF9g_3UlSIdij8wOSSFBZrCKNCaHijEw",
-          "serverName": "tradingview.com",
-          "shortId": "d01e82c7",
-          "show": false,
-          "spiderX": ""
+          "serverName": "Iran.Polproxy.Space",
+          "show": false
         }
       },
       "tag": "proxy"

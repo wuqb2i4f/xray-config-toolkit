@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "168.119.97.46",
-            "port": 993,
+            "address": "proxystore11.ddns.net",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8ae2dfe6-8e53-4936-c131-acc837dadaf7",
+                "id": "e5d6b75e-83c0-4eb3-981d-0b2c21faa573",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@proxy_kafee,@proxy_kafee,@proxy_kafee"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1vuWshgAbJUP6OiL5vfttyA1_kmNdFjUmEQLyH4KNRE",
-          "serverName": "grseven.AhV2ray.cfd",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "cdn.proxystore11.site",
+          "show": false
         }
       },
       "tag": "proxy"

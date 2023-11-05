@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "84.32.230.57",
+            "address": "177-join.v2raytz.sbs",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "eef6784a-7d0f-4331-954a-d72d638ec0f3",
+                "flow": "",
+                "id": "637c8201-88fd-4155-cf06-9abe6bc92abc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "G4qOh1TQj6HSGs7NvmwFOSw2MlrdqbHe5ON-BZtbkXM",
-          "serverName": "www.speedtest.net",
-          "shortId": "72a66ecce6",
+          "fingerprint": "firefox",
+          "publicKey": "eC_IMf5-kfUWKaMbq1PAPzGIHUhzR3TgH_cwv9asvk4",
+          "serverName": "greenpepper.ir",
+          "shortId": "638ca3d3",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

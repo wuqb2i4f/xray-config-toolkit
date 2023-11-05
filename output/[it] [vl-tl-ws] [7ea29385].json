@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.3.116",
-            "port": 443,
+            "address": "iran.ir",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "181d2b64-e4d2-424c-a714-688354a46627",
+                "flow": "",
+                "id": "5241d7a7-2789-4d90-a2bd-e84086c2ffff",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "network383.online"
+          },
+          "path": "/Milan"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "lVvrP7g9ZFI0cgsrT81Rkre1Q-TjXgBC1B_mp78171g",
-          "serverName": "Check-host.net",
-          "shortId": "069dd1b0",
-          "show": false,
-          "spiderX": ""
+          "serverName": "skyroom.online",
+          "show": false
         }
       },
       "tag": "proxy"

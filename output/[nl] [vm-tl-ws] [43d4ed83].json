@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:91.107.159.81",
-            "port": 57204,
+            "address": "discord.com",
+            "port": 2096,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "91cacaea-e6da-4e3a-b9b2-f939afe64e07",
+                "id": "49dc7300-1fc1-4c93-866f-aa493c4a3e5b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "yuxORu6Ljohicef9.pouriya.cf"
+          },
+          "path": "/Amsterdam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "cRSOxRQLxSCNKbLeIJSypOE7a-jyvS0xd2IEVi2aI1g",
-          "serverName": "canva.com",
-          "shortId": "710e0f31",
-          "show": false,
-          "spiderX": ""
+          "serverName": "0pefestL0udust8z.pouriya.cf",
+          "show": false
         }
       },
       "tag": "proxy"

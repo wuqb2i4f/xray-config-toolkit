@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "bia-to6.unlimiteddev.xyz",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "dd55d67d-25e9-4f92-c643-da61029c250c",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "discord.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "lI5gROLlVN",
+            "port": 2083
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@unlimiteddev"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "yibosiblcLva8lse.pouriya.cf"
+          },
+          "path": "/Amsterdam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "WzG277Rfqkxg1MRht2w379qHD0rrCCAUN9wB26JSIw0",
-          "serverName": "ftp.debian.org",
-          "shortId": "c1",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "yibosiblcLva8lse.pouriya.cf",
+          "show": false
         }
       },
       "tag": "proxy"
