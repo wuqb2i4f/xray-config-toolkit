@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.229.35",
-            "port": 2086,
+            "address": "162.159.130.234",
+            "port": 443,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ca6.tehme100.fun"
+            "Host": "octavi.cfd"
           },
-          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "octavi.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
