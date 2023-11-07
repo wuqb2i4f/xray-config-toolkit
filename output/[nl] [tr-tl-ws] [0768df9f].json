@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "128.140.125.179",
-            "port": 30220,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "ef0d1dc8-a569-4be8-ad6b-6c9b21c3b4b5",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "discord.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "0oA8mLmVNA",
+            "port": 2083
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s-@Funza-@Funza-@ShadowSocks_s"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sPuylnOt5a.pouriya.cf"
+          },
+          "path": "/Amsterdam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "1Z2HxTPZhR9rgybJIEcmjcn_F0pp8mkA80FM2Wc_rAc",
-          "serverName": "a.gsmarena.com",
-          "shortId": "5a76ebb9",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "hit68pHiha.pouriya.cf",
+          "show": false
         }
       },
       "tag": "proxy"
