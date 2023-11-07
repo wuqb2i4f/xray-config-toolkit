@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.233.15.250",
-            "port": 443,
+            "address": "france.blueberryvpn.online",
+            "port": 333,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "97fa0486-400c-4da2-a61e-cf68f82f88c7",
+                "flow": "xtls-rprx-vision",
+                "id": "609190af-d9a6-4864-84b8-211772e6b7dd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "pNpRrx3XfjXdlQY-6OKyYuvDhhX57FiVDZNVvBoyKBU",
+          "publicKey": "R5JhCiodctBYq93BbYx_GzSqAXlqHeF32tCxBERF4l0",
           "serverName": "www.speedtest.net",
-          "shortId": "96306603",
+          "shortId": "bb313e7a",
           "show": false,
           "spiderX": ""
         }
