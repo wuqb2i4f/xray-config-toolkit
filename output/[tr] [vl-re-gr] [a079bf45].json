@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "odelia.autos",
-            "port": 443,
+            "address": "91.151.93.69",
+            "port": 8080,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "e5f264b2-4ef8-41b8-835e-c0be22b2f1b4",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "linkvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "",
-          "show": false
+          "publicKey": "UxvbIy3zbYQNftyNqZk7vTTjibN45vRmZ0MaJSIVQH8",
+          "serverName": "haendlerbund.de",
+          "shortId": "47b8abb6",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

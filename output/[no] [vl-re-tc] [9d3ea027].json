@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "panel.miladfaryad.cf",
+            "address": "185.125.171.13",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9ae9a665-d3a5-47fb-af2c-3ebb3f515992",
+                "flow": "xtls-rprx-vision",
+                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "2GbqHqibX8MrGWVN1ct9nq"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "U1p823jAw-2EwkAUeF1huB9GLBRqm5l8oszKaKOdvSM",
-          "serverName": "www.economist.com",
-          "shortId": "019433542d19",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "partner.g2.com",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.20.231.21",
-            "port": 2087,
+            "address": "91.107.181.102",
+            "port": 29790,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "d0857f50-9b89-4d9c-d0b1-3f3d09a81e1c",
+                "id": "a667f066-6991-4351-bc0c-8476d30acd96",
                 "level": 8,
                 "security": "auto"
               }
@@ -70,13 +69,15 @@
           "multiMode": false,
           "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "my2.gamedaylion.buzz",
-          "show": false
+          "publicKey": "gHpgh7fQoB9kzze4I6Pwvo8sXiAPIbja2ieX03dVjkE",
+          "serverName": "ea.com",
+          "shortId": "1bd52d06",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
