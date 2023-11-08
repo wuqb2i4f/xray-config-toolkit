@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:128.140.81.161",
-            "port": 57070,
+            "address": "152.228.161.253",
+            "port": 22396,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5c3546e9-5699-4f66-a7c1-c9ad5ae07ce7",
+                "id": "50336682-7307-4f38-ec30-172304ea1362",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MTPV2RAY"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "0qy3MupqxofQJG-tjfFEGeaqWX1SkqNuqm0LI8N0OVA",
-          "serverName": "canva.com",
-          "shortId": "4356dd2d",
+          "fingerprint": "firefox",
+          "publicKey": "rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w",
+          "serverName": "discord.gg",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }

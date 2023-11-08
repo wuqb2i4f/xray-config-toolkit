@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "219-join.v2raytz.sbs",
-            "port": 2053,
+            "address": "49.13.89.52",
+            "port": 49706,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "62257498-b275-4cbf-8019-9ef6d02ca749",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "tel.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "wWDbN-9HD9eWtVtwcct64yJwrunZSz-TjkOkgfFiOFM",
+          "serverName": "www.speedtest.net",
+          "shortId": "924aa522",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
