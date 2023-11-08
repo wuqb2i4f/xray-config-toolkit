@@ -45,17 +45,22 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "discord.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "0oA8mLmVNA",
-            "port": 2083
+            "address": "v2line.telegram.channel.1337.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
+            "port": 80,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "00a1da14-d55f-5f75-e346-79b985e1a723",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "sPuylnOt5a.pouriya.cf"
+            "Host": "internet.life.com.by"
           },
-          "path": "/Amsterdam"
+          "path": "/opt/video/images"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "hit68pHiha.pouriya.cf",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

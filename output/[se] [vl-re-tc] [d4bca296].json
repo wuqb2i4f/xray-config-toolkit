@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "azadi-az-inja-migzare-d2.dgi000.store",
-            "port": 51370,
+            "address": "13.50.242.137",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "azadi-az-inja-migzare-grpc",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "S59Ahht6GWLxKG58m184bESkuvfEnm3JXd4VmFxTZxs",
-          "serverName": "www.speedtest.net",
-          "shortId": "",
+          "fingerprint": "chrome",
+          "publicKey": "yCeWFmERtuMjcx7RhJ7ndTw11waOoZvNu7QbH6k-JT4",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

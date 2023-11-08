@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:128.140.84.193",
-            "port": 22843,
+            "address": "172.233.56.23",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "5d2333ed-5008-4395-af1a-b4d19613493a",
+                "flow": "",
+                "id": "acf520a4-3bf0-45d3-be1b-fe074f611971",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "jeF2t1ZbkBDPflw5T91hEcJAs1teE7r8_8kaET1lJW4",
-          "serverName": "flutter.dev",
-          "shortId": "9468e4e1",
+          "publicKey": "YFjzhEj6_FooW8d9awygj1qhM7XzOOuFIeWSjSQj_gc",
+          "serverName": "www.speedtest.net",
+          "shortId": "ddbf2d3c",
           "show": false,
           "spiderX": ""
         }

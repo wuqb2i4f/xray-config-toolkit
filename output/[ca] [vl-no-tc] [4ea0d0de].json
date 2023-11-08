@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.74.72",
-            "port": 3900,
+            "address": "149.56.3.53",
+            "port": 47390,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "87a4424e-0082-436e-b995-eae5e76cff39",
+                "id": "a6d1a1ae-579b-4773-e200-b156fa69e5d2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Jd6EM4Z2dkX0wm-z-77JYjzmxKxGorVHWn2KjaHWoBk",
-          "serverName": "vipsni.rcelf.me",
-          "shortId": "8e8993ab",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
