@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "35.181.74.182",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "128.140.74.72",
+            "port": 3900,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "87a4424e-0082-436e-b995-eae5e76cff39",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "Jd6EM4Z2dkX0wm-z-77JYjzmxKxGorVHWn2KjaHWoBk",
+          "serverName": "vipsni.rcelf.me",
+          "shortId": "8e8993ab",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

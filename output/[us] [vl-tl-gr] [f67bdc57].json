@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "149.56.3.53",
-            "port": 47390,
+            "address": "mci-msv2ray.ddns.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a6d1a1ae-579b-4773-e200-b156fa69e5d2",
+                "id": "8fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,13 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "us.MsV2ray.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

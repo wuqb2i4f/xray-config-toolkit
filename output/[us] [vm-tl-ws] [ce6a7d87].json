@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "v2line.telegram.channel.1337.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
-            "port": 80,
+            "address": "alvvin.click",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 1,
                 "encryption": "",
                 "flow": "",
-                "id": "00a1da14-d55f-5f75-e346-79b985e1a723",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "internet.life.com.by"
+            "Host": "alvvin.click"
           },
-          "path": "/opt/video/images"
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "alvvin.click",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
