@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "hackteam.link",
-            "port": 2083,
+            "address": "128.140.81.161",
+            "port": 57070,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "ce03a832-d6bb-45a3-9121-f7bd6f189469",
+                "id": "5c3546e9-5699-4f66-a7c1-c9ad5ae07ce7",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "0qy3MupqxofQJG-tjfFEGeaqWX1SkqNuqm0LI8N0OVA",
+          "serverName": "canva.com",
+          "shortId": "4356dd2d",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

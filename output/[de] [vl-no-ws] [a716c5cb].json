@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "hafnetwork.myzooom.site",
-            "port": 22846,
+            "address": "6bia-channel.unlimiteddev.xyz",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d7017849-8272-4abf-b251-495c1fcda092",
+                "id": "88fa109a-5fde-429e-97e6-f9156a07ad20",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "e87ab478.com"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel.unlimiteddev.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-xvYJMKM-jSLLxfQsjM4n6xPzgaOiFPgWCa5ltnfUwQ",
-          "serverName": "www.speedtest.net",
-          "shortId": "52726bdc",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

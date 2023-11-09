@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.187.109",
-            "port": 80,
+            "address": "www.speedtest.net",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 1,
                 "encryption": "",
                 "flow": "",
-                "id": "2e87cebc-977b-4fec-b079-b1ddc55b19c8",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ee1.xv2ray.net"
+            "Host": "ophelia.mom"
           },
-          "path": "/vmess"
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "ophelia.mom",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
