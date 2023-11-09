@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "den.waky-melo.site",
-            "port": 443,
+            "address": "168.119.177.49",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a4d1b760-aebd-4639-ba1e-b1e0136ce492",
+                "id": "bd6fa3a5-68a0-49f4-9f7f-78e38612245f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/melov2ray"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "TelegramID:@iranbaxvpn"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "chrome",
-          "serverName": "den.waky-melo.site",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "iWgxGQVQZUfOCw4EqmHQToaQPqYt0V5hAfnDo6p-Izg",
+          "serverName": "iranserver.com",
+          "shortId": "33fb",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

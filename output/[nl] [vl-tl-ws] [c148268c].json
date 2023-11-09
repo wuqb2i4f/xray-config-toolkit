@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "azadi-az-inja-migzare-d3.dgi000.store",
-            "port": 40082,
+            "address": "discord.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "kuroit-azadi-az-inja-migzare",
+                "id": "97d26fd0-e2ac-4b1f-a098-f422fc49bd30",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "singbox.cypherpunks.asia"
+          },
+          "path": "/cypherpunks"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "YNGhrDRb5uvIPq_xGMoaQ42NXZESKGheaCcxG1kWsEU",
-          "serverName": "www.speedtest.net",
-          "shortId": "31680f8e",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "singbox.cypherpunks.asia",
+          "show": false
         }
       },
       "tag": "proxy"

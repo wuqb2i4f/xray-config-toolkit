@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "odelia.autos",
+            "address": "185.113.223.129",
             "port": 443,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "e313427c-da42-4f52-9922-057aa6e5da1e",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "linkvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@iranbaxvpn"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "",
-          "show": false
+          "publicKey": "DnbLcTb0Q3MgaCfJ8s7NPk_8kz6PxShHVw9rnnQbd2c",
+          "serverName": "greenpepper.ir",
+          "shortId": "d8",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
