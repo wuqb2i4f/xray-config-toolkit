@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "128.140.114.39",
-            "port": 53285,
+            "address": "45.155.249.151",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "caafb022-ed9a-47a5-f35f-cffe760c9d22",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "9d5e69d2-46cf-4865-95fe-a2ee8c52a013",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tms.dingtalk.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "mbok0ZF27k8XOyqh6r_hwou60jUhw7vctMjlQdsj_Ec",
-          "serverName": "eset.com",
-          "shortId": "3282a4",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

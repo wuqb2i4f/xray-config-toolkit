@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "5.181.21.32",
-            "port": 11839,
+            "address": "5.75.199.248",
+            "port": 15905,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "efd757ae-ccd0-491e-8614-49fc87d3dfbc",
+                "id": "f378ba1d-0dd2-4ac3-a65b-32468032b909",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MrV2Ray,@MrV2Ray,@MrV2Ray,@MrV2Ray,@MrV2Ray,@MrV2Ray,@MrV2Ray,@MrV2Ray,@MrV2Ray,@MrV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "mTEeDnRIfbAUJQB9MbjmGkekRJF2AR3xtTkB0vvLZjQ",
-          "serverName": "ilovepdf.com",
-          "shortId": "8b1639d1",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

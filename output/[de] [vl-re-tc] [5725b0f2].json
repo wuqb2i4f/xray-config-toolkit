@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "telegram.cloudsnapbot.tech",
-            "port": 2053,
+            "address": "91.107.254.173",
+            "port": 27738,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "5ee58902-ad14-419d-88dc-d2a74f2c1482",
+                "flow": "xtls-rprx-vision",
+                "id": "f0eda2df-c0bf-4324-9413-9cd93ffeb913",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ",Telegram:@CloudSnapBot"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "Appleid.cdn-apple.com",
-          "shortId": "",
+          "fingerprint": "chrome",
+          "publicKey": "K4vv1_N3GF7TyMWfsaWuYhua1EHdE0h7uFuwHCXRORo",
+          "serverName": "www.discord.com",
+          "shortId": "1bd8c244",
           "show": false,
           "spiderX": ""
         }

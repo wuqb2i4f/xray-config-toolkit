@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.255.119.232",
+            "address": "den.waky-melo.site",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "32b7f1f4-be65-44a8-92fa-46cd0340eed7",
+                "flow": "",
+                "id": "a4d1b760-aebd-4639-ba1e-b1e0136ce492",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1,h2"],
           "fingerprint": "chrome",
-          "publicKey": "qECCM25qutFf4j3tppU_P0tYPejgNJMbJqKzK2SJTVM",
-          "serverName": "cdn.discord.com",
-          "shortId": "8f5bd8b9",
-          "show": false,
-          "spiderX": ""
+          "serverName": "den.waky-melo.site",
+          "show": false
         }
       },
       "tag": "proxy"
