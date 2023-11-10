@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "iran.ir",
+            "address": "195.201.228.3",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0cf5c7a5-6508-4776-a247-8e198b3ad207",
+                "id": "54ce117a-fd26-4b2e-b540-15f95ba3cc63",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["par.fonix.tech"],
-            "path": "/paris"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "skyroom.online",
-          "show": false
+          "publicKey": "1_NaRFGvbJUim7_qlQ8Dibh_27d3X_p_w2xUvrGZlhg",
+          "serverName": "www.xbox.com",
+          "shortId": "751ba1a6",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

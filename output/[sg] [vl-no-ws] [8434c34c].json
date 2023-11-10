@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.64.193.50",
-            "port": 8443,
+            "address": "104.16.60.79",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "73debc2a-65c5-49c9-b66d-0cde1e030bee",
+                "flow": "",
+                "id": "636b1684-b26c-4a9c-bc6e-8e1197a36d74",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "workerr.hashdiler.workers.dev"
+          },
+          "path": "Telegram+Channel+:+@freeiranweb"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "v9kQRkrqIGdwItPd5EEeBSLaRe8SH101MMOazwilJVA",
-          "serverName": "yahoo.com",
-          "shortId": "1249e9c0",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

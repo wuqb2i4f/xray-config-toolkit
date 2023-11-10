@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "23.94.122.147",
-            "port": 60222,
+            "address": "discord.com",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "84134d90-e4fe-4a86-c8d6-4d7bedb3c333",
+                "id": "97d26fd0-e2ac-4b1f-a098-f422fc49bd30",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "singbox.cypherpunks.asia"
           },
-          "path": "/vmess"
+          "path": "/cypherpunks"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "singbox.cypherpunks.asia",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
