@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.232.148.220",
-            "port": 443,
+            "address": "185.220.204.38",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "edf94ccb-e076-472b-b2e3-a11ba669d0fc",
+                "flow": "xtls-rprx-vision",
+                "id": "282bed58-1451-419f-a5b3-ed6f65ab8850",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "rW_BTQ5EiomL4nMuvj3EbxqjRdLYt9Q0rpCaS9Iy8Eo",
-          "serverName": "www.speedtest.net",
-          "shortId": "804894e8",
+          "publicKey": "x-Zv8k40O3rJ8sjJknVpimNI4dhEk3WRCyKeRb5NeEU",
+          "serverName": "www.datadoghq.com",
+          "shortId": "b756e372b9623b22",
           "show": false,
           "spiderX": ""
         }

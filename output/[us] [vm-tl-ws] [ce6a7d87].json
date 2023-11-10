@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "172.233.154.109",
-            "port": 8443,
+            "address": "alvvin.click",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "034ea35b-50f8-4870-9ff7-14a9abff3ac9",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "alvvin.click"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "PEW6KhRXOQlebt_QcCOq_FEJGyT_qeP0nqyiMhv-f1o",
-          "serverName": "www.speedtest.net",
-          "shortId": "b584e671",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "alvvin.click",
+          "show": false
         }
       },
       "tag": "proxy"

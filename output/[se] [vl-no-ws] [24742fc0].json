@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ec8.kiava.fun",
-            "port": 8443,
+            "address": "freeiranweb.ddns.net",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
+                "flow": "",
+                "id": "f1e7852a-0498-497f-b8c8-3ce117222fe1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "se1.vlessx.xyz"
+          },
+          "path": "Telegram+Channel+:+@freeiranweb"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "m7XEOSzcc5V5DFdzb4eMT_-qlPPDMRi_bq2AWSZrGWk",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": "/new"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
