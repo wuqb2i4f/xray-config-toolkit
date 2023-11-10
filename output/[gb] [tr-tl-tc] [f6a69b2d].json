@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "aall-maznet.ddns.net",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "233a53e7-a761-4df2-8b85-0076bff2002a",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "18.133.191.145",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
+          "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "channel.maznet.cfd",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

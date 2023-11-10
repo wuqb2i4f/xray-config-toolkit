@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "138.68.144.102",
-            "port": 56655,
+            "address": "5.75.214.191",
+            "port": 43209,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "29a20e69-7641-4ae9-ccc6-8a3ff6c02fbc",
+                "id": "d0df4a05-d01d-4aba-acea-40329562d3e3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "internet.life.com.by"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "NbeYuqm0c6M9l5lVTlBYE_UotmpPZJZhcpEemG8bzFg",
+          "serverName": "www.speedtest.net",
+          "shortId": "af53e81a",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

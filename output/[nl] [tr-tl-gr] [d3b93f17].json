@@ -45,33 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "freeiranweb.ddns.net",
-            "port": 2095,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "f1e7852a-0498-497f-b8c8-3ce117222fe1",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "cdnjs.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "IRnRhGfXmw",
+            "port": 2087
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "se1.vlessx.xyz"
-          },
-          "path": "Telegram+Channel+:+@freeiranweb"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Amsterdam"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1,h2,h3"],
+          "fingerprint": "chrome",
+          "serverName": "amsb.carfin.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "free.zayn2014.sbs",
-            "port": 2053,
+            "address": "www.speedtest.net",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "f9adae21-d910-4c01-970c-55d8497647a5",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "ZAYN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_VPN_ZAYN_VPN_ZAYN_VPN_ZAYN_VPN_ZAYN_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "edeen.makeup"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "30Knoza8XrogNtBeXEhrDoXGDsXt5TD7ReIeHEuigiQ",
-          "serverName": "Appleid.cdn-apple.com",
-          "shortId": "bf3a002b",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "edeen.makeup",
+          "show": false
         }
       },
       "tag": "proxy"
