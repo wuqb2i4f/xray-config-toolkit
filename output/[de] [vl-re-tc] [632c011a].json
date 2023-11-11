@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "iran.ir",
+            "address": "s0.narde.org",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0cf5c7a5-6508-4776-a247-8e198b3ad207",
+                "id": "9974e899-f131-40fe-ae82-4cdc39d8944b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["par.fonix.tech"],
-            "path": "/paris"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "skyroom.online",
-          "show": false
+          "publicKey": "fNJIVjRaZgVD0UmjEqsCkU4cfaM0G4wEa7lSvLaX3W8",
+          "serverName": "yahoo.com",
+          "shortId": "ddf07dc7",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

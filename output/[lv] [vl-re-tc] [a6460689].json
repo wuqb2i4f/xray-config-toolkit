@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.60.79",
-            "port": 2052,
+            "address": "91.197.0.224",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "636b1684-b26c-4a9c-bc6e-8e1197a36d74",
+                "flow": "xtls-rprx-vision",
+                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "workerr.hashdiler.workers.dev"
-          },
-          "path": "Telegram+Channel+:+@freeiranweb"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
+          "serverName": "microsoft.com",
+          "shortId": "2d123271",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

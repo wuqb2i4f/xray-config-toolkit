@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.202.179.176",
-            "port": 2096,
+            "address": "freeiranweb.ddns.net",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "058660e1-645d-49e1-8dbe-1e5ee1272035",
+                "id": "f1e7852a-0498-497f-b8c8-3ce117222fe1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "se1.vlessx.xyz"
+          },
+          "path": "Telegram+Channel+:+@freeiranweb"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "r5LFjPIxjnynQaDT5eQiRSogLmvDr_yoDWMlIoeoJQ0",
-          "serverName": "www.speedtest.net",
-          "shortId": "44f6e394",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

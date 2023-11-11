@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tixorey.ddns.net",
-            "port": 29977,
+            "address": "all.vpncustomize.cam",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d8e0e0e6-8124-417c-b073-3462981bb49b",
+                "flow": "",
+                "id": "3a381760-2a74-4e5f-87bd-28dbf2691d60",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Iy5gbTYMQffzlz2HaSqw4lGNkVQg6ZPSvDCK0uutu0Q",
-          "serverName": "sourceforge.net",
-          "shortId": "d738cf38",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "chh.cheetahmh45.shop",
+          "show": false
         }
       },
       "tag": "proxy"

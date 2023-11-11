@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "telegram.cloudsnapbot.tech",
-            "port": 2053,
+            "address": "freeyx.cloudflare88.eu.org",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "5ee58902-ad14-419d-88dc-d2a74f2c1482",
+                "id": "08b2ceb1-5917-42da-b02c-0f942754aac6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ",Telegram:@CloudSnapBot"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "buyvm.iiio.wiki"
+          },
+          "path": "/aries?ed=2048"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "Appleid.cdn-apple.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

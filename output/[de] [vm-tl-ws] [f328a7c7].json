@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "172.232.148.220",
-            "port": 443,
+            "address": "cdnjs.com",
+            "port": 2096,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "edf94ccb-e076-472b-b2e3-a11ba669d0fc",
+                "id": "0809f6b2-f5d8-472e-831e-48c2e61e461f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "frab.carfin.tech"
+          },
+          "path": "/Frankfurt"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1,h2,h3"],
           "fingerprint": "chrome",
-          "publicKey": "rW_BTQ5EiomL4nMuvj3EbxqjRdLYt9Q0rpCaS9Iy8Eo",
-          "serverName": "www.speedtest.net",
-          "shortId": "804894e8",
-          "show": false,
-          "spiderX": ""
+          "serverName": "frab.carfin.tech",
+          "show": false
         }
       },
       "tag": "proxy"

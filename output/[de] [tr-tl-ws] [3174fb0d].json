@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "65.108.56.15",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "04ba3531-57a5-4ef6-aba5-971867e3c9e4",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "cdnjs.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "dhDFXF0n9Y",
+            "port": 2083
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "frab.carfin.tech"
+          },
+          "path": "/Frankfurt"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "2O80zaqgqaTL3QBIEjqHZ3gIAu_4sraScNfcFSr8KFg",
-          "serverName": "ftp.debian.org",
-          "shortId": "0e596c3b",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2,h3"],
+          "fingerprint": "chrome",
+          "serverName": "frab.carfin.tech",
+          "show": false
         }
       },
       "tag": "proxy"
