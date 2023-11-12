@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.53.169.119",
-            "port": 8443,
+            "address": "topo--join.outline-vpn.cloud",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
+                "flow": "",
+                "id": "6afb242a-1518-40fd-9dcd-b68ff220f345",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "XoJEGgwKmOwnthb_OMPPhVaSd2uSk-zvpdVR6BgxgXc",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": ""
+          "serverName": "de.melobigg.site",
+          "show": false
         }
       },
       "tag": "proxy"
