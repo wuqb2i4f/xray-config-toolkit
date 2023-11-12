@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.moienmusic.space",
-            "port": 2053,
+            "address": "silverzebra.uk",
+            "port": 27912,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "b1aca64b-9b29-4cf2-cf88-4e616f087d80",
+                "flow": "xtls-rprx-vision",
+                "id": "354e8dcb-66ba-4400-9807-6e76b3796b40",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Iran.Polproxy.Space",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "qqO_yryB-JgHiwyDwtx8J0sviC_YeAgZpLlubp48w3I",
+          "serverName": "discord.com",
+          "shortId": "bd4d617c",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

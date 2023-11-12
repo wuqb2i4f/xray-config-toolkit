@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.161.35.180",
-            "port": 443,
+            "address": "greenwolf.uk",
+            "port": 50438,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "6e871e2b-8fe6-44e5-98c3-b4cc0ed1af01",
+                "flow": "xtls-rprx-vision",
+                "id": "a1faa49b-053c-41a8-9908-f7247cf6e163",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "EQjDHU-Dd2r46F7fUxQ_GJ5XClZUkDtgGbwVPZZ99go",
-          "serverName": "booking.com",
-          "shortId": "85189f18",
+          "publicKey": "7cCo0jfSxaNdh96kDsy14msm4fiXH6B5Ug_iS_tKqjI",
+          "serverName": "discord.com",
+          "shortId": "d0898362",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
