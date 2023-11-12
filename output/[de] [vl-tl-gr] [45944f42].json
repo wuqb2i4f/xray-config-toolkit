@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.63.200",
-            "port": 27113,
+            "address": "all.tlgram-polproxy.space",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f696d735-a126-4f81-82e0-98600d08aefa",
+                "id": "e8c619d7-f8ea-48c4-c036-734127fceea9",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Q5X_0VeMXqg8xh448F71x85Ned1ZvXHm3EfGT4jPIW4",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "a7647e4d",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "chrome",
+          "serverName": "Iran.Polproxy.Space",
+          "show": false
         }
       },
       "tag": "proxy"

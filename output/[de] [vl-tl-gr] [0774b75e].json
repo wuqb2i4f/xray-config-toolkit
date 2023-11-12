@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 2096,
+            "address": "mtn.moienmusic.space",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "0809f6b2-f5d8-472e-831e-48c2e61e461f",
+                "id": "b1aca64b-9b29-4cf2-cf88-4e616f087d80",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "frab.carfin.tech"
-          },
-          "path": "/Frankfurt"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "chrome",
-          "serverName": "frab.carfin.tech",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Iran.Polproxy.Space",
           "show": false
         }
       },

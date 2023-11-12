@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "shay.v2rayngz.com",
-            "port": 25081,
+            "address": "172.99.190.12",
+            "port": 22324,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "19f60514-df19-4e9a-89a1-83ea8e70cf9b",
+                "id": "04621bae-ab36-11ec-b909-0242ac120002",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "ZP-SkeP39EoSfCHGHF1L0lEoCjfMK5ltsZhXKCPTET0",
-          "serverName": "sourceforge.net",
-          "shortId": "da64e955",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

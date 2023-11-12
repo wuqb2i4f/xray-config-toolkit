@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.34.157.56",
-            "port": 8443,
+            "address": "185.220.204.38",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3817df2d-3a24-484b-90f9-ab7282c98fde",
+                "flow": "xtls-rprx-vision",
+                "id": "282bed58-1451-419f-a5b3-ed6f65ab8850",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "feWsx6Z1kuDqhCPZziRDzc6cYBGZGUuhtvFbm5ahkH0",
-          "serverName": "iranserver.com",
-          "shortId": "32",
+          "fingerprint": "chrome",
+          "publicKey": "x-Zv8k40O3rJ8sjJknVpimNI4dhEk3WRCyKeRb5NeEU",
+          "serverName": "www.datadoghq.com",
+          "shortId": "b756e372b9623b22",
           "show": false,
           "spiderX": ""
         }

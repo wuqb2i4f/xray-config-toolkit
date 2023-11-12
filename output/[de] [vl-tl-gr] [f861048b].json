@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.108.56.15",
-            "port": 443,
+            "address": "join.v2raytz.sbs",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "04ba3531-57a5-4ef6-aba5-971867e3c9e4",
+                "id": "9fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ipV2Ray"
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "DYoGdIMqd1ecOaT32bQVR1vd9PVSJtCnnDxV-iU-E3E",
-          "serverName": "ftp.debian.org",
-          "shortId": "0e596c3b",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "de.MsV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

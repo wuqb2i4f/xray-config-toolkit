@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "109.107.190.170",
+            "address": "5.42.76.106",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b10fb41c-d3f9-4701-9995-79dbce6fd655",
+                "id": "df3ac8c2-6f72-4c98-9613-f32cd4af0966",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["divar.ir"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "1XiC5-NCnTKlKdcVsBw9rPYKP2chm0ZAe3vtGhkQ2H4",
-          "serverName": "discord.com",
-          "shortId": "33a8a5c9",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

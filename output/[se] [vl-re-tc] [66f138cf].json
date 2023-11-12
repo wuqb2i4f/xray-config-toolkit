@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.16",
-            "port": 80,
+            "address": "13.50.111.182",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e926558e-f6de-40d5-cee6-178e72f5586b",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "neT.MiCrosOfTS.doWnLOAd"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "7hHGiwMf-lVhALF7TO6t-UCBA-jrKu2nNqqQdbtE-Eg",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

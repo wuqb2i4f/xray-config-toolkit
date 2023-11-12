@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "5.75.194.154",
-            "port": 38538,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "667e0619-011c-4411-8010-057643dab6ad",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.39.45.140",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Dp38hV9bxJxqO6PBtFjbNtyr1IRXjqoNfO8G_dQZ-RU",
-          "serverName": "zula.ir",
-          "shortId": "21e8a53c12",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.108.56.15",
-            "port": 443,
+            "address": "13.50.225.19",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "04ba3531-57a5-4ef6-aba5-971867e3c9e4",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "DYoGdIMqd1ecOaT32bQVR1vd9PVSJtCnnDxV-iU-E3E",
-          "serverName": "ftp.debian.org",
-          "shortId": "0e596c3b",
+          "fingerprint": "chrome",
+          "publicKey": "BXQX4UNTuAVyetRP4f-D99D6547VHGX2_G5UIRNkByQ",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 443,
+            "address": "join.v2raytz.sbs",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "594a21bf-0e5e-48aa-8135-78f3773415ed",
+                "id": "9fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "frab.carfin.tech"
-          },
-          "path": "/Frankfurt"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "chrome",
-          "serverName": "frab.carfin.tech",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "de.MsV2ray.cfd",
           "show": false
         }
       },

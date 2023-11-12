@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "15.157.80.1",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "allrevolt.r8volt.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "eefcf749-fcfc-4321-b974-2828d4acb15c",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -66,13 +70,15 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "imTeVCUujulNZ2LJNaZrWlOGcN0tgm0km15N8jc55j4",
+          "serverName": "guerrilla-games.com",
+          "shortId": "dcd651ed",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
