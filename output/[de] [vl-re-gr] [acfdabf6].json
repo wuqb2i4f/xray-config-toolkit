@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "0000:0000:0000:0000:0000:ffff:681a:0e94",
-            "port": 443,
+            "address": "91.107.181.102",
+            "port": 29790,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "f81a6ebb-6fa5-41a5-a62d-a17035e15401",
+                "id": "a667f066-6991-4351-bc0c-8476d30acd96",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "hello-world-floral-fire-2112.mrzm2r18.workers.dev"
-          },
-          "path": "/f81a6ebb-6fa5-41a5-a62d-a17035e15401?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "hello-world-floral-fire-2112.mrzm2r18.workers.dev",
-          "show": false
+          "publicKey": "gHpgh7fQoB9kzze4I6Pwvo8sXiAPIbja2ieX03dVjkE",
+          "serverName": "ea.com",
+          "shortId": "1bd52d06",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

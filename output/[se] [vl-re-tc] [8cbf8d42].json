@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.bluemoien.space",
-            "port": 2096,
+            "address": "5.42.72.194",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "b4ea47e0-8417-47fb-ab15-4d887e877e94",
+                "flow": "xtls-rprx-vision",
+                "id": "2fb17e69-5b6f-49d4-991f-8bf26c001eb3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Sni.Tlgram-Polproxy.space",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "IOJu9lxe2-fXVJ9z0-v2_5puh1NFagIr_nFHsBQty0w",
+          "serverName": "ftp.debian.org",
+          "shortId": "e241272d",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
