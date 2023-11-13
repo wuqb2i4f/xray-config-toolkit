@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "13.43.210.18",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "49.12.237.4",
+            "port": 35157,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "4f5dcf41-6530-43f0-b6a7-709ed1152434",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@V2rayNgMat,@V2rayNgMat,@V2rayNgMat"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "p1Wj590By1y2zAXin9w6d2Anqk7cnTthvp6qDjwajCE",
+          "serverName": "www.tradingview.com",
+          "shortId": "1a1a2466",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

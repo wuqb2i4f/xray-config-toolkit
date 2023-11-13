@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "qo.vpnxw.eu.org",
-            "port": 2053,
+            "address": "188.114.97.1",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "7765cb7d-317b-425f-a9a0-a578be6ed54c",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "vpnxw"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "odelia.autos"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "VXmwDXPWacZ9e1dE1NasosJ_K0p-VRKw22J5ho6fA0Y",
-          "serverName": "dash.cloudflare.com",
-          "shortId": "a74c8fa7",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "odelia.autos",
+          "show": false
         }
       },
       "tag": "proxy"
