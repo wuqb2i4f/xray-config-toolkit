@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fraa.carfin.tech",
-            "port": 8888,
+            "address": "blacktiger.uk",
+            "port": 14135,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3e223f59-2147-441e-90c3-ab31e27650c3",
+                "flow": "xtls-rprx-vision",
+                "id": "9751e5a0-8713-45e5-8c74-de49e1c43b96",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Frankfurt"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "yV2k3jkmtStO-GiKKl35qhGf7X2sWrie9y9e79Lkizk",
+          "fingerprint": "firefox",
+          "publicKey": "r9i73gk3Nzit61WPVqaNePCjTYvjfcx9OvSqLXOoQUc",
           "serverName": "discord.com",
-          "shortId": "40de36eb",
+          "shortId": "b7f1bf51",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

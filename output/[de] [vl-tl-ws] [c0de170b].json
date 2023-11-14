@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "209.250.244.245",
+            "address": "cdnjs.com",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "01596265-168b-46a7-bcb7-25662c7a9546",
+                "flow": "",
+                "id": "594a21bf-0e5e-48aa-8135-78f3773415ed",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "frab.carfin.tech"
+          },
+          "path": "/Frankfurt"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1,h2,h3"],
           "fingerprint": "chrome",
-          "publicKey": "OpqpQzXN7zSlM-P4YhdjProDaYJt0KzzpdsCMUqQmm0",
-          "serverName": "dweb.link",
-          "shortId": "7519cb",
-          "show": false,
-          "spiderX": ""
+          "serverName": "frab.carfin.tech",
+          "show": false
         }
       },
       "tag": "proxy"
