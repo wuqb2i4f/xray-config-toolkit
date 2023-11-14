@@ -45,19 +45,20 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "16.16.123.208",
-            "port": 8443,
+            "address": "205.185.116.20",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "d43ee5e3-1b07-56d7-b2ea-8d22c44fdc66",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
@@ -70,16 +71,7 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "JDdhyd58G1fQ2TJ9Z05X2W7Bv_cLZUBJPrtCp-9HLzA",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

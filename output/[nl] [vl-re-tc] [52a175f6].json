@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "195.206.164.117",
-            "port": 8443,
+            "address": "185.220.204.38",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e61eebb2-3751-48f4-ad8d-77db025c7028",
+                "flow": "xtls-rprx-vision",
+                "id": "282bed58-1451-419f-a5b3-ed6f65ab8850",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "8443vless"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "ssfcbUE7g67nECKXytt9CbDMZzu-X9ECtfgkIqIsWhk",
-          "serverName": "",
-          "shortId": "7a8275aa7bd14661",
+          "fingerprint": "chrome",
+          "publicKey": "x-Zv8k40O3rJ8sjJknVpimNI4dhEk3WRCyKeRb5NeEU",
+          "serverName": "www.datadoghq.com",
+          "shortId": "b756e372b9623b22",
           "show": false,
           "spiderX": ""
         }

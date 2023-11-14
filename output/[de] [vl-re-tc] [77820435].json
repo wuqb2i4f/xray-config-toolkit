@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.17.231.69",
-            "port": 2083,
+            "address": "63.250.59.26",
+            "port": 2030,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "d199009b-e002-4ac5-ab2f-d72ae9fea01e",
+                "flow": "xtls-rprx-vision",
+                "id": "282bed58-1451-419f-a5b3-ed6f65ab8850",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "grpc17979"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "",
-          "serverName": "rayeganvasehame.flchlast.online",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "dmTTVeliJTAj35kMyQPCfA0_LS8aULh234eKzIFzxX8",
+          "serverName": "www.datadoghq.com",
+          "shortId": "b756e372b9623b22",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
