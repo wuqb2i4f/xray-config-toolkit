@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "3bia-channel.unlimiteddev.xyz",
-            "port": 80,
+            "address": "94.237.101.192",
+            "port": 42081,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "516f1aaf-3fea-4ead-f089-d6cfa9fbba16",
+                "flow": "xtls-rprx-vision",
+                "id": "ba0f2d19-7d8f-46ad-99bf-9cdc6621478e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel.unlimiteddev.xyz"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "DVNL2WytzKrObBLki55tCo3xsWi0PGZ2uKg2xQy_wkE",
+          "serverName": "discord.com",
+          "shortId": "585f43e3",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

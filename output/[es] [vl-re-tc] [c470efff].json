@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 2053,
+            "address": "94.237.91.101",
+            "port": 10324,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "46bb613e-a9e3-48c5-9f92-491f3939dcc1",
+                "flow": "xtls-rprx-vision",
+                "id": "ddaccd22-3e2a-4718-8c8c-1a52f7bbc207",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "copy-az.kanal-tel-nufilter.store"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "copy-az.kanal-tel-nufilter.store",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "BNGsrrgz_4ir0uwFeC4lBWbIQ-mdR8yIPSOLrTEm6WY",
+          "serverName": "discord.com",
+          "shortId": "5fb4866c",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

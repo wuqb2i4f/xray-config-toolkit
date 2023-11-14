@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 2096,
+            "address": "94.237.82.76",
+            "port": 20314,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "0809f6b2-f5d8-472e-831e-48c2e61e461f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "4366f490-856d-49c3-b97f-309196b51838",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "frab.carfin.tech"
-          },
-          "path": "/Frankfurt"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "chrome",
-          "serverName": "frab.carfin.tech",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "DibZURLyHdbx_IHJHEfk5EPJwiOM-N3h9FKoeRO1xXs",
+          "serverName": "discord.com",
+          "shortId": "16e1ae84",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

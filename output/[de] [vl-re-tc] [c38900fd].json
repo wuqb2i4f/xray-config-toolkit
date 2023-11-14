@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "346-join.v2raytz.sbs",
-            "port": 32428,
+            "address": "45.76.90.117",
+            "port": 23939,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "702122c7-ae41-48a9-96e9-8c894e631103",
+                "flow": "xtls-rprx-vision",
+                "id": "2bd86511-2c0a-49dc-8a63-ead3d089013a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "apSAwGG3-N5uThV-8iNjG_f9iFHslK0mrUaNgLoSiis",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "3e5f9cb2",
+          "fingerprint": "firefox",
+          "publicKey": "GELGYyOiAobACBGIx3OzKhLz_sxQPQlLMwiw0Ti-H0g",
+          "serverName": "discord.com",
+          "shortId": "b9410c8d",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all-msv2ray.ddns.net",
-            "port": 2083,
+            "address": "94.237.86.213",
+            "port": 50551,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "flow": "xtls-rprx-vision",
+                "id": "bc519466-f65b-4130-90ba-b6f8ffc19bb3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "de.MsV2ray.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "8Ki-SHFg0sAmQ17y95-DTUSDm0QJj6NnI2UzjPxjfxs",
+          "serverName": "discord.com",
+          "shortId": "08bca785",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

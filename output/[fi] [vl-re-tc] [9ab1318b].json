@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 443,
+            "address": "94.237.82.198",
+            "port": 56704,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "594a21bf-0e5e-48aa-8135-78f3773415ed",
+                "flow": "xtls-rprx-vision",
+                "id": "ef471033-60b9-4018-9355-851e03891d71",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "frab.carfin.tech"
-          },
-          "path": "/Frankfurt"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "chrome",
-          "serverName": "frab.carfin.tech",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "Y5Dado9xhHwa_8Aa6MHVcw678cZfpb4_LG2OqJtBr1k",
+          "serverName": "discord.com",
+          "shortId": "05b02dd4",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
