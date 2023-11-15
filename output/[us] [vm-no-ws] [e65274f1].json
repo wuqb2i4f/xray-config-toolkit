@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 2096,
+            "address": "172.233.194.102",
+            "port": 80,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "0809f6b2-f5d8-472e-831e-48c2e61e461f",
+                "id": "29b88e63-9092-4375-a551-c4ee4702cfbe",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "frab.carfin.tech"
+            "Host": "tms.dingtalk.com"
           },
-          "path": "/Frankfurt"
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "chrome",
-          "serverName": "frab.carfin.tech",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

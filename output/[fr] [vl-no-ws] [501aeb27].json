@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.vpnprosec.com",
-            "port": 443,
+            "address": "104.31.16.92",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "573012ae-f872-462d-9f9c-80e7a0d1af0b",
+                "id": "eaad2ef2-fb41-491b-8f3c-d38f11b9c288",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "poland.heydasip.com"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "V2ray.SvnReallity.Online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

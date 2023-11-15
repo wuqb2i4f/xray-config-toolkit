@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.64.193.50",
-            "port": 38525,
+            "address": "185.220.204.38",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "efea0320-df96-49b6-a1a8-0959d956ee60",
+                "flow": "xtls-rprx-vision",
+                "id": "282bed58-1451-419f-a5b3-ed6f65ab8850",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "x-Zv8k40O3rJ8sjJknVpimNI4dhEk3WRCyKeRb5NeEU",
+          "serverName": "www.datadoghq.com",
+          "shortId": "b756e372b9623b22",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

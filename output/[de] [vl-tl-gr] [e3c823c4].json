@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "amsa.carfin.tech",
-            "port": 2086,
+            "address": "104.22.11.129",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7d8bc402-232e-4936-ba34-49f85a67b945",
+                "id": "d199009b-e002-4ac5-ab2f-d72ae9fea01e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "discord.com"
-          },
-          "path": "/Amsterdam"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "grpc17979"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "rayeganvasehame.flchlast.online",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
