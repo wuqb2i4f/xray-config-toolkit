@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.76.106",
-            "port": 42829,
+            "address": "::ffff:91.107.146.245",
+            "port": 17511,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "dd2a7544-c60c-4576-9565-2ddd97c6b238",
+                "id": "3b98048b-e573-44e0-bc48-ec9a5c07bdce",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "pTj7XyvnzpUEx7oPtBgN8q4cP5w6iosy_Ts7obpAvB4",
+          "serverName": "canva.com",
+          "shortId": "a0862038",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
