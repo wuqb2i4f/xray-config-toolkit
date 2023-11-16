@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "216.9.227.236",
-            "port": 8443,
+            "address": "join.v2raytz.sbs",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c3024a15-0cd5-461a-d99c-14c64efea3f8",
+                "id": "65558017-45ad-4264-ae69-6cb997745ff2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TelegramID:@iranbaxvpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "copy-az.kanal-tel-nufilter.store"
+          },
+          "path": "/,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
-          "serverName": "greenpepper.ir",
-          "shortId": "9825",
-          "show": false,
-          "spiderX": ""
+          "serverName": "copy-az.kanal-tel-nufilter.store",
+          "show": false
         }
       },
       "tag": "proxy"

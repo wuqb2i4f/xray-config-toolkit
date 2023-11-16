@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "maskvpn.de",
-            "port": 4444,
+            "address": "104.22.11.129",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "968eadc2-276a-4cc6-8f7f-10af5521110f",
+                "flow": "",
+                "id": "d199009b-e002-4ac5-ab2f-d72ae9fea01e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "grpc17979"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "ciPKFr9TEbF41ECucqPFlAaHkG54CoZ0CFfHcX3i3iI",
-          "serverName": "www.speedtest.net",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "rayeganvasehame.flchlast.online",
+          "show": false
         }
       },
       "tag": "proxy"

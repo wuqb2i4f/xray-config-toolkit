@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "dl.greencat.at",
-            "port": 22711,
+            "address": "p1.09vpn.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "a66f846d-8db2-4d32-b212-87e79fadbc6e",
+                "flow": "",
+                "id": "3ffe889b-9584-4eb7-9973-6af1cc820a7c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vless/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "srsnpXhNU-G6DSQk0cM6C42LbonInSqOl_I0IUQ6HFs",
-          "serverName": "discord.com",
-          "shortId": "28e724af",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "facelessvoid.uk",
-            "port": 43183,
+            "address": "mic.eightysixshop.site",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "0900109a-342c-4ffe-8f76-6a3c81562263",
+                "flow": "",
+                "id": "e9fae9aa-2fd2-4113-9f9c-cb11b1f73c3c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "subtest.eightysixshop.site"
+          },
+          "path": "/wss2087"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "olROB6yrb_M2pU0EnH9a-TiBUhQo8oTS-zgOwoYQ9W0",
-          "serverName": "discord.com",
-          "shortId": "e2b32a33",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "android",
+          "serverName": "subtest.eightysixshop.site",
+          "show": false
         }
       },
       "tag": "proxy"

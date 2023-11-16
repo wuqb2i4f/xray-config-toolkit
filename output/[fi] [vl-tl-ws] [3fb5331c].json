@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.237.81.106",
-            "port": 10353,
+            "address": "104.27.197.159",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "24ea84bd-beda-4ced-bab2-fab8ddebb406",
+                "flow": "",
+                "id": "7a0a0b04-ebf5-41ad-97bd-ff5512261272",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "146.sinfagram.tech"
+          },
+          "path": "/TJRetVjSLYlGvC82CwFbni2egUte"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "firefox",
-          "publicKey": "HxxH4R50YgipsKumYSLgg4zxecuWQ9-Yc53H65XDsTU",
-          "serverName": "digikala.com",
-          "shortId": "3c10cd6a",
-          "show": false,
-          "spiderX": ""
+          "serverName": "146.sinfagram.tech",
+          "show": false
         }
       },
       "tag": "proxy"

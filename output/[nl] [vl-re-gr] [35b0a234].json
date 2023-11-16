@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "13.39.138.188",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "fu.kilidstor.sbs",
+            "port": 13066,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "4e53631b-467b-4ff9-92cf-c54509f6dfe2",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@KILID_STOR"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "b4S-Y6iNJRWQ0nYYlprLbgJxxJJgC-BHZODdCZpPFj4",
+          "serverName": "mega.io",
+          "shortId": "f298ad53",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
