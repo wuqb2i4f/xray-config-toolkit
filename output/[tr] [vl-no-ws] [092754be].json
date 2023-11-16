@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:65.109.192.132",
-            "port": 2096,
+            "address": "212.64.193.50",
+            "port": 38525,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1bed9d58-7c8b-4619-8a74-b4a49562a281",
+                "id": "efea0320-df96-49b6-a1a8-0959d956ee60",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN--------------@HinaVPN-------------"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "9yEuQHxhfVG58YYTjjpnnTOFDjsydNb6ukEJF6bXNAc",
-          "serverName": "hirensbootcd.net",
-          "shortId": "13bd026d",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "95.164.62.204",
-            "port": 80,
+            "address": "63.250.59.26",
+            "port": 2030,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "2ba1c86f-789f-4dd8-b52a-17d21164f2ba",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "282bed58-1451-419f-a5b3-ed6f65ab8850",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "be1.xv2ray.net"
-          },
-          "path": "/vmess"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "dmTTVeliJTAj35kMyQPCfA0_LS8aULh234eKzIFzxX8",
+          "serverName": "www.datadoghq.com",
+          "shortId": "b756e372b9623b22",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

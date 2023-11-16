@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "372-join.v2raytz.sbs",
-            "port": 443,
+            "address": "142.171.123.109",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "baaceb01-331f-4e97-a4df-a9f0010bfc70",
+                "flow": "xtls-rprx-vision",
+                "id": "0e13099d-0a5a-4641-950a-03628980db36",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "1pIMNU597OPiAm7BkxsHQYjvZewD9DU6-Ab_5KEycWs",
-          "serverName": "ftp.debian.org",
-          "shortId": "288aab26",
+          "fingerprint": "random",
+          "publicKey": "16MhqclNVsYnxzGr2o22nzYmAwTAEGMPU-tBOG6mZXM",
+          "serverName": "learn.microsoft.com",
+          "shortId": "c0ed769713f54ce0",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

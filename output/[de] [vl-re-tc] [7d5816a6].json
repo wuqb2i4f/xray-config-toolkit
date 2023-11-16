@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "discord.com",
-            "port": 443,
+            "address": "78.46.142.188",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "97d26fd0-e2ac-4b1f-a098-f422fc49bd30",
+                "id": "616a131c-4ef0-47c2-989c-4476f0b7df04",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "singbox.cypherpunks.asia"
-          },
-          "path": "/cypherpunks"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "singbox.cypherpunks.asia",
-          "show": false
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "discordapp.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

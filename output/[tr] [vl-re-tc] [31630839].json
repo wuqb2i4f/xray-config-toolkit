@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.92",
-            "port": 80,
+            "address": "0000:0000:0000:0000:0000:ffff:2d9e:0fe1",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "eaad2ef2-fb41-491b-8f3c-d38f11b9c288",
+                "flow": "xtls-rprx-vision",
+                "id": "IP-CF",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "poland.heydasip.com"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "KSyXwLRUUn-yZv2wE1PpHEikyy9hkK6Z3AamdSxPz0o",
+          "serverName": "for-ip-cf-98765432100000000.ghbi.ir",
+          "shortId": "13a7ca3d",
+          "show": false,
+          "spiderX": "/directory/"
+        }
       },
       "tag": "proxy"
     },
