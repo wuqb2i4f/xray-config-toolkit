@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 443,
+            "address": "172.67.229.24",
+            "port": 8880,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "VPNCUSTOMIZE",
+                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE,@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr7.tehme100.fun"
+          },
+          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "conflgforV2rayng.vpncustomize.Website",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

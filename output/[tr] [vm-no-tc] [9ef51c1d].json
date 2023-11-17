@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mtn.vpnprosec.com",
-            "port": 443,
+            "address": "212.64.193.50",
+            "port": 32445,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "e4a51420-f0a0-44d6-bd20-1c5f1c31b40a",
+                "id": "855ed0e3-d670-41b5-b542-75f864762fcd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "V2ray.SvnBuy.Online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
