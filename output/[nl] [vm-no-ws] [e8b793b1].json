@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "fu.kilidstor.sbs",
-            "port": 13066,
+            "address": "162.159.137.232",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "4e53631b-467b-4ff9-92cf-c54509f6dfe2",
+                "id": "65599e84-c384-40eb-a00c-c6ee01bf8665",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@KILID_STOR"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl2-vmess.sshmax.xyz"
+          },
+          "path": "/vmess"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "b4S-Y6iNJRWQ0nYYlprLbgJxxJJgC-BHZODdCZpPFj4",
-          "serverName": "mega.io",
-          "shortId": "f298ad53",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

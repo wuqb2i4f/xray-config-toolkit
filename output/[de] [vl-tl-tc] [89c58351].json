@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.229.24",
-            "port": 8880,
+            "address": "50.7.85.219",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "0a707c67-adf3-4f94-b681-d41d548e6a09",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fr7.tehme100.fun"
-          },
-          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "guixgnu.com",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

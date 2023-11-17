@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "arvancloud.ir",
-            "port": 8880,
+            "address": "49.13.11.249",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "255ba398-849d-456f-98e3-355f3ebe62fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "96bbbba8-eac5-4bf7-916d-52c34ed5117c",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "1800.naji21.click"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "zC5dRSgRznzVgsc8qyb6NR-KZ0LShVCjU6kWJ2TgdyI",
+          "serverName": "time.com",
+          "shortId": "55e25a2b",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

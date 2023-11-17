@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.131.210.31",
-            "port": 80,
+            "address": "join.v2raytz.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b6224dd6-234c-4477-b510-dbf6465f4156",
+                "id": "VPNCUSTOMIZE",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "TecHnoLOGY.Dl-vScodE.Com"
-          },
-          "path": "/backup"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE,@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "conflgforV2rayng.vpncustomize.Website",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
