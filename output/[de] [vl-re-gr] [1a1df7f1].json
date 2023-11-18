@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "50.7.85.219",
+            "address": "91.107.190.232",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "0a707c67-adf3-4f94-b681-d41d548e6a09",
+                "flow": "",
+                "id": "---GozargahVPN---",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN---@GozargahVPN"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "guixgnu.com",
-          "show": false
+          "publicKey": "oNw70MueB6_w0854UW3t-qcV7IcEPFuia5UJjYGXxFE",
+          "serverName": "mihanyas.ir",
+          "shortId": "16",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -45,17 +45,22 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vmess",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "de.melobigg.site",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "lgdOMYUTaj",
-            "port": 443
+            "address": "alvvin.click",
+            "port": 443,
+            "users": [
+              {
+                "alterId": 1,
+                "encryption": "",
+                "flow": "",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,16 +68,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "alvvin.click"
           },
-          "path": "/Outline_vpn"
+          "path": "linkvws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "de.melobigg.site",
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "alvvin.click",
           "show": false
         }
       },
