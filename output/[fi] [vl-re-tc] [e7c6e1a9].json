@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "undead.freedomundead.store",
-            "port": 443,
+            "address": "maskvpn.de",
+            "port": 4444,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "a37193e9-c621-486f-a720-77ada635c78f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "968eadc2-276a-4cc6-8f7f-10af5521110f",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Vip.freedomundead.online"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "ciPKFr9TEbF41ECucqPFlAaHkG54CoZ0CFfHcX3i3iI",
+          "serverName": "www.speedtest.net",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

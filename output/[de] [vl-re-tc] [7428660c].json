@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "167.235.234.119",
+            "address": "ir.space.spaceboy.tech",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2e86a45a-9515-409c-bf99-9ea12ad9e0ad",
+                "id": "ac74ce8c-74c5-42dc-a4ad-e931f2ec3322",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "eJS8LjzoIE6I1-iDCrfgs3wSszP78QNUkjBFQSyIPXM",
-          "serverName": "mihanyas.ir",
-          "shortId": "f5361167",
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "www.speedtest.net",
+          "shortId": "",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

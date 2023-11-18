@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "45.77.54.93",
-            "port": 41777,
+            "address": "172.67.229.25",
+            "port": 2086,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c86dd833-c086-433a-91cd-d4ca0ce1cb0c",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ca6.tehme100.fun"
+          },
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "5ze_mwm3YxTOav0WHDmC99dATftDm8UxOH4lF_vLE2U",
-          "serverName": "discord.com",
-          "shortId": "d06c87aa",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
