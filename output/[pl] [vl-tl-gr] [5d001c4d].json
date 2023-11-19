@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.78.82.33",
-            "port": 3024,
+            "address": "154.83.2.77",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "---Telegram-Parsashonam---",
+                "id": "b9f65d70-2725-40c4-8575-afc7cdca536d",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "tapsi"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "M4TgFMGG8Dcgr_oN8_I-TNe1K-VfveXG7ONDHJOx60s",
-          "serverName": "CloudFlare.com",
-          "shortId": "62efcd9d",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "tApSI.onlINEvISIonstORe.SIte",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "5.75.214.191",
-            "port": 43209,
+            "address": "66.181.33.108",
+            "port": 22555,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "d0df4a05-d01d-4aba-acea-40329562d3e3",
+                "id": "f2e8c8c1-7d7d-491a-c791-67bce71758ae",
                 "level": 8,
                 "security": "auto"
               }
@@ -69,16 +70,7 @@
           "multiMode": false,
           "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NbeYuqm0c6M9l5lVTlBYE_UotmpPZJZhcpEemG8bzFg",
-          "serverName": "www.speedtest.net",
-          "shortId": "af53e81a",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

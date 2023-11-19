@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "95.164.38.223",
-            "port": 443,
+            "address": "alllll-join.outline-vpn.cloud",
+            "port": 8080,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "b30a8598-2620-48a0-8b49-d29d149a1d3a",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,12 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "server-53651.prod.hosts.ooklaserver.net",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
