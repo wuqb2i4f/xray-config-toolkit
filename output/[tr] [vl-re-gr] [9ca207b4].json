@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.126.200",
-            "port": 8443,
+            "address": "185.113.223.102",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
+                "flow": "",
+                "id": "e1e94d76-6989-4bb3-aa29-b0f2dd5ba0d9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "Uk_u4awRG1w36h6IqkYdgG-MJMlILDbfbVBo84rC9TM",
-          "serverName": "coinmarketcap.com",
-          "shortId": "5e",
+          "publicKey": "UJu9wcbdCvQL9Q1B5CsvRbwIntbfM94Cc_rA6Z__GAo",
+          "serverName": "dest.acc1shop.shop",
+          "shortId": "d62c829c",
           "show": false,
           "spiderX": ""
         }

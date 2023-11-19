@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "154.83.2.77",
-            "port": 2083,
+            "address": "alvvin.click",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "b9f65d70-2725-40c4-8575-afc7cdca536d",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "tapsi"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "alvvin.click"
+          },
+          "path": "linkvws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "tApSI.onlINEvISIonstORe.SIte",
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "alvvin.click",
           "show": false
         }
       },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "162.55.209.153",
+            "address": "www.unpkg.com",
             "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "78c3c8d5-a0fb-4e5f-cc16-7520ce3e2858",
+                "id": "80835c4b-5816-4554-ae09-88c71e7fd49f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@iranbaxvpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dIGIkAlA.ONlINeviSioNsTore.sITE"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "DnbLcTb0Q3MgaCfJ8s7NPk_8kz6PxShHVw9rnnQbd2c",
-          "serverName": "greenpepper.ir",
-          "shortId": "d8",
-          "show": false,
-          "spiderX": ""
+          "serverName": "dIGIkAlA.ONlINeviSioNsTore.sITE",
+          "show": false
         }
       },
       "tag": "proxy"
