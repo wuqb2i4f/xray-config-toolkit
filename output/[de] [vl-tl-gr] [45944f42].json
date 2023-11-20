@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.213.12",
-            "port": 443,
+            "address": "all.tlgram-polproxy.space",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "b4983efe-4abc-48c6-97e4-1a193130e619",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sub.xn--9kq89d4y0g.top"
-          },
-          "path": "/octavi.cfd:443/linkvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "sub.xn--9kq89d4y0g.top",
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "chrome",
+          "serverName": "Sni.Tlgram-Polproxy.space",
           "show": false
         }
       },

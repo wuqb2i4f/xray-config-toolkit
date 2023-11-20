@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.55.209.153",
-            "port": 443,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7d61649d-69a5-47fb-b26a-b45246640c5e",
+                "id": "6054f5f5-6149-4c69-91f7-f6a782a4097c",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@iranbaxvpn-@iranbaxvpn-@iranbaxvpn-@iranbaxvpn"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "D_GaALhflCjd9CUDkPPOwOq-CWv9g1FTTYLgcBDRyU0",
-          "serverName": "greenpepper.ir",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Sni.Tlgram-Polproxy.space",
+          "show": false
         }
       },
       "tag": "proxy"
