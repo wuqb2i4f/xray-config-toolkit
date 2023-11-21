@@ -45,39 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "54.38.136.254",
+            "address": "104.17.42.10",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "a15840dc-6888-476f-bd51-b26ce4e00838",
+                "id": "b3bc1c09-0064-4abd-9676-6f6f53541d80",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "speed.cloudflare.com"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "mahyar.6box.ir"
+          },
+          "path": "/dF1X3nD5MszOWi8OAaMkMvrK"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "GsxVeXHFXdVX6R6DiRUPUmAXWJ4kNVs22whPsN4_SDg",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "3df4ed37",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "random",
+          "serverName": "mahyar.6box.ir",
+          "show": false
         }
       },
       "tag": "proxy"

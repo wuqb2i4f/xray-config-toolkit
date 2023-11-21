@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.55.209.153",
-            "port": 2053,
+            "address": "ec54.kiava.fun",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "78c3c8d5-a0fb-4e5f-cc16-7520ce3e2858",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@iranbaxvpn"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "DnbLcTb0Q3MgaCfJ8s7NPk_8kz6PxShHVw9rnnQbd2c",
-          "serverName": "greenpepper.ir",
-          "shortId": "d8",
+          "publicKey": "qnbr59Qag2lQxUhi1mDYZmvZbZMa1UpWQ5xYdrGFdXs",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

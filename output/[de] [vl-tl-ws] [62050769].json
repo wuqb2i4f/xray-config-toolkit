@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.151.93.69",
-            "port": 8080,
+            "address": "pap.bagsale.click",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e5f264b2-4ef8-41b8-835e-c0be22b2f1b4",
+                "id": "f87a8749-e9b1-4974-b1de-c2ee9fb2bd8d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR@UCIRANIR"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "paper.bagsale.click"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "UxvbIy3zbYQNftyNqZk7vTTjibN45vRmZ0MaJSIVQH8",
-          "serverName": "haendlerbund.de",
-          "shortId": "47b8abb6",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "randomized",
+          "serverName": "paper.bagsale.click",
+          "show": false
         }
       },
       "tag": "proxy"
