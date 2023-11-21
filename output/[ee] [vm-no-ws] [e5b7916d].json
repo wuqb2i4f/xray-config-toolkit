@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mtn.moienmusic.space",
-            "port": 2053,
+            "address": "v2line.telegram.channel.1377.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "0eb3a39d-6015-4b0d-a42a-a2bc4aeda937",
+                "id": "788744c4-968d-4263-a38b-f2952bf12db2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ee1.xv2ray.net"
+          },
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Sni.Tlgram-Polproxy.space",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

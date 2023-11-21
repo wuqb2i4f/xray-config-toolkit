@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mci.bluemoien.space",
-            "port": 2096,
+            "address": "vandaa.hesam.link",
+            "port": 56235,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6054f5f5-6149-4c69-91f7-f6a782a4097c",
+                "id": "f67c676b-47c9-4c38-95ab-6623b9ff0b34",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Sni.Tlgram-Polproxy.space",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "2C-ZweJpZ3rRAU8xFllorGtJtE-p6pnN3LR9FGx7QRc",
+          "serverName": "zula.ir",
+          "shortId": "5aa910f0",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

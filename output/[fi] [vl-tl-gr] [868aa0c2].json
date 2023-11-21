@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "109.61.80.233",
+            "address": "join.v2raytz.sbs",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9974e899-f131-40fe-ae82-4cdc39d8944b",
+                "id": "eed7b88f-71bb-4c60-b242-9c4f80260f60",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "fNJIVjRaZgVD0UmjEqsCkU4cfaM0G4wEa7lSvLaX3W8",
-          "serverName": "yahoo.com",
-          "shortId": "ddf07dc7",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "tm.ArV2ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"
