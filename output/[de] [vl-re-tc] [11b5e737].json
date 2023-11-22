@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.3",
-            "port": 443,
+            "address": "91.107.191.14",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "f9ef9b02-aded-4d72-8639-3dbfa5b0de84",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "waynn.makeup"
-          },
-          "path": "linkvws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "waynn.makeup",
-          "show": false
+          "fingerprint": "randomized",
+          "publicKey": "15eEmc-vTfWm1EueLGT180XDuhtOKIjegs2nRgFcJ2o",
+          "serverName": "ftp.debian.org",
+          "shortId": "037871d1025c8a86",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

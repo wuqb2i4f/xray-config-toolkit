@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.180.163",
+            "address": "mtn.moienmusic.space",
             "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8dfd1bf6-1efd-4ac6-9361-665713490079",
+                "id": "b1aca64b-9b29-4cf2-cf88-4e616f087d80",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "xyz"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Kanal-Ma.Polproxy.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
