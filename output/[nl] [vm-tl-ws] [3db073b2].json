@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "167.235.18.246",
-            "port": 443,
+            "address": "198.41.217.5",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "fc824602-80a5-4c34-ae07-daf8713e4d4b",
+                "id": "bd3b8d59-709d-4af4-89be-851d1440ff68",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "docs2.obneh247.ir"
+          },
+          "path": "/2v2rayTEAM"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "VBkUa21HtTb3H8-rIDtQPgrR_DDndo6xEm0tSx3A9hs",
-          "serverName": "bahmanbroker.com",
-          "shortId": "6977c5bb",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "docs2.obneh247.ir",
+          "show": false
         }
       },
       "tag": "proxy"
