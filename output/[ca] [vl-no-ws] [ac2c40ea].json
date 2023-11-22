@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.21.107.227",
-            "port": 443,
+            "address": "2ca1.09vpn.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "017f481c-9450-47ca-9b89-f15ce14add6f",
+                "id": "3d88057b-2655-4dbb-819a-32753a5f8246",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vless/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "5fmz-rLoMJVxV6S75T5z9bcRc-D6x2kAbYI1iZ7s1TM",
-          "serverName": "greenpepper.ir",
-          "shortId": "174e30c7",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

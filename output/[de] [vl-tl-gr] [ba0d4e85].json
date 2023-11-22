@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.203.236.17",
-            "port": 443,
+            "address": "all.vipxali.cfd",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "r4d",
+                "id": "372f3c06-aefc-4d06-8b07-1b30cf748ef6",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw"
+          "serviceName": "@XsV2ray,@XsV2ray@XsV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "randomized",
-          "publicKey": "vrtsr-jytn5gO0snkZhwspowgKW1TaoCzgoI6Iob8W0",
-          "serverName": "promax.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "fe.XsV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

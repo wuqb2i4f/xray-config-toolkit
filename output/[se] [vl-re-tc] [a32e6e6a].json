@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "504-join.v2raytz.sbs",
-            "port": 443,
+            "address": "13.53.124.55",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "flow": "xtls-rprx-vision",
+                "id": "b30a8598-2620-48a0-8b49-d29d149a1d3a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "uQVO94q2oYXUKzo_LKeWMuBbon4_KxNdKnaljemSSgY",
-          "serverName": "gsmarena.com",
-          "shortId": "b08638",
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "server-53651.prod.hosts.ooklaserver.net",
+          "shortId": "",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

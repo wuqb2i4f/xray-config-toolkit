@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.203.236.17",
-            "port": 443,
+            "address": "ge1.09vpn.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "r4d",
+                "id": "612d8c1e-7126-4d53-9b90-34ab4a5defc6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vless/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "publicKey": "vrtsr-jytn5gO0snkZhwspowgKW1TaoCzgoI6Iob8W0",
-          "serverName": "promax.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

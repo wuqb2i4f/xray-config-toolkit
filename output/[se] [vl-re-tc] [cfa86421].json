@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.122.189",
-            "port": 443,
+            "address": "13.53.43.199",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2e86a45a-9515-409c-bf99-9ea12ad9e0ad",
+                "flow": "xtls-rprx-vision",
+                "id": "6b7376dd-11d8-443c-804a-996072aefd81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "h0xk0sp5XDFnjD_JV0Szoa3I3b9d1r-3hn1WpvdsmF0",
-          "serverName": "dnschecker.org",
-          "shortId": "f5361167",
+          "fingerprint": "chrome",
+          "publicKey": "OaRjhJeRQOd-7GUHCaNK2fC_a8MuGLZ139WSw7-uNlk",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
           "show": false,
           "spiderX": "/"
         }

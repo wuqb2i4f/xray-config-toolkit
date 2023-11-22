@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.161.142.96",
-            "port": 443,
+            "address": "fr1.09vpn.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c06f821f-188d-4d0b-a1ed-8c4b041ce6cd",
+                "id": "07187a48-6d47-4086-a0cf-11edc0b1f629",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vless/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "egQ-npewfqXF6p_MX2PTsGRC287gBDu4bVUk2RaIEgw",
-          "serverName": "elastic.co",
-          "shortId": "5c11a15b",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

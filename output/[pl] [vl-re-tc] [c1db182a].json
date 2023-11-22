@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.161.134.166",
-            "port": 443,
+            "address": "70.34.247.131",
+            "port": 999,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "3b180ecb-14bb-4997-a1d7-d6cd94b7abca",
+                "flow": "xtls-rprx-vision",
+                "id": "3f2d2ba4-7f52-4ded-8580-890461bc0005",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "wmZcdX9_xE1aNz44ukR5n7mkLyQE5bmTzGbpJYI7FSM",
-          "serverName": "elastic.co",
-          "shortId": "56bd5399",
+          "fingerprint": "chrome",
+          "publicKey": "9wfsGBdHj4v57u3U-YDUrqyHcBzZP_43xYXw0aT_UHE",
+          "serverName": "ghbi.ir",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }

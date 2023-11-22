@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "116.203.236.17",
+            "address": "95.164.38.223",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "r4d",
+                "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,9 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "publicKey": "vrtsr-jytn5gO0snkZhwspowgKW1TaoCzgoI6Iob8W0",
-          "serverName": "promax.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
