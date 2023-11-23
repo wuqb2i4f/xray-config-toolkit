@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mci.bluemoien.space",
-            "port": 2096,
+            "address": "docs.digitalocean.com",
+            "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "a4df02db-46f6-49f4-b73c-3920a069bcda",
+                "id": "a0b620ef-c0ae-409e-ce33-15c0a7beebae",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dIGIKAlA.ESmaIlKoReA.sHOp"
+          },
+          "path": "/?ed=2048"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Kanal-Ma.Polproxy.sbs",
+          "fingerprint": "chrome",
+          "serverName": "dIGIKAlA.ESmaIlKoReA.sHOp",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.78.224",
-            "port": 443,
+            "address": "212.64.193.50",
+            "port": 18160,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bd6c61f0-edde-4769-8bab-6a579b567712",
+                "id": "9436a138-762d-4e92-9b81-3e24740d150b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["digikala.com"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "jCP7nYwmtOn9N2bpFGhyVjn2kJwwdSoIDh59I7ydlDs",
-          "serverName": "tuyacn.com",
-          "shortId": "095fa193",
-          "show": false,
-          "spiderX": "/Telegram-v2rayNGcloud-Telegram-@v2rayNGcloud-Telegram-@v2rayNGcloudTelegram-v2rayNGcloud-Telegram-@v2rayNGcloud-Telegram-@v2rayNGcloud"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

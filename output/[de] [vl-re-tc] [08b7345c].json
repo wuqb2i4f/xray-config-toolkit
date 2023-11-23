@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.85",
-            "port": 2096,
+            "address": "5.75.254.127",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b7d93487-fead-4a80-b142-722be51e4caf",
+                "id": "6b394b88-2fc6-4e65-be1c-c8d60dc1a178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "free2.h3lixchannel.fun",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "D-cNGgrrJDKuQTLPCaxM9lO3r-d4u_yorJS8f4Ij22I",
+          "serverName": "google.com",
+          "shortId": "1e19b907",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

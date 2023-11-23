@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.vipxali.cfd",
-            "port": 2083,
+            "address": "116.203.126.111",
+            "port": 6006,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "49d01b86-37d1-46ae-9162-251c60d78db9",
+                "id": "9789674e-6903-415a-ba07-1db4d207607c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray@XsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "fe.XsV2ray.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "xjsFF_ujrEnqVcR8pbV4aAnHHInbUJ9epkbT76d_7Fc",
+          "serverName": "lit.dev",
+          "shortId": "9e20a9863c3c8d7d",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

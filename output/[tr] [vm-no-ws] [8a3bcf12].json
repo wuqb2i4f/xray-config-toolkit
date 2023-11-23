@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "5.42.76.106",
-            "port": 443,
+            "address": "212.64.193.50",
+            "port": 37272,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "ef463b12-ecad-4d7c-8275-251b70cdcab4",
+                "id": "b31c2a7f-3ab7-4fc1-b0ec-4fbbd11d5065",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "BlWGjPXAZCDHtyIMs"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "upu.nishbakh.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

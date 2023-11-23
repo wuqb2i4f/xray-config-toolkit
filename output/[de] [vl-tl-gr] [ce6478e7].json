@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "free1.h3lixchannel.fun",
-            "port": 443,
+            "address": "45.131.5.41",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1d3a5fcd-2073-436b-8459-10bfb03e34c7",
+                "id": "WANCLOUDFA1",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers"
+          "serviceName": "TE:@wancloudfa"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "bQeqHsCsG1Ge92b6wv21hg3QPqjYB3zDyyRBu-aTJCI",
-          "serverName": "ea.com",
-          "shortId": "b0ad1a74",
-          "show": false,
-          "spiderX": "/commitments"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "wancloud1.wancloudfa.shop",
+          "show": false
         }
       },
       "tag": "proxy"

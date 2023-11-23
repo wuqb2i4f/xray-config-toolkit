@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.132.209",
-            "port": 80,
+            "address": "65.109.141.38",
+            "port": 2086,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "7e67dfca-3f0d-4ba1-a7e8-b272bcfc156f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "1d578715-0ec5-4ed0-bb45-ea44f18598b9",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "is2-vmess.sshmax.xyz"
-          },
-          "path": "/vmess"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "OaG6KyVKAnKmV48Dz_WP75knBSrtmWaveuT5HViL-Vo",
+          "serverName": "ghbi.ir",
+          "shortId": "050d0672",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
