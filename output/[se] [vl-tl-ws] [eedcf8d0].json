@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "p1.09vpn.com",
-            "port": 80,
+            "address": "sweden.bolbolteam.shop",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "34bf0b72-7ecb-4539-a594-de3e1d9ad749",
+                "id": "1cbfc0ce-5f0e-4bd9-9e83-96e07825778d",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "sweden.bolbolteam.shop"
           },
-          "path": "/vless/"
+          "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "safari",
+          "serverName": "sweden.bolbolteam.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

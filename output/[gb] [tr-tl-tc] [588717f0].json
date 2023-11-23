@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mahsang-2.dgi000.store",
-            "port": 30757,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "mahsa-azadi-az-inja-migzare",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "18.132.109.205",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "l1t-0TqUc98jgUfaJ8SSJEucC35jbJOahQ2e-Z59BW4",
-          "serverName": "www.ghbi.ir",
-          "shortId": "a4d76fb1",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "198.41.217.5",
-            "port": 2087,
+            "address": "bia-to4.unlimiteddev.shop",
+            "port": 8880,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "bd3b8d59-709d-4af4-89be-851d1440ff68",
+                "id": "b2c4ff72-602e-4726-af22-594a22530e6e",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,18 +67,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "docs2.obneh247.ir"
+            "Host": "bia-to-channel2.unlimiteddev.shop"
           },
-          "path": "/2v2rayTEAM"
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "docs2.obneh247.ir",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

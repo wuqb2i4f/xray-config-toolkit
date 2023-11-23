@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mahsang-2.dgi000.store",
-            "port": 30757,
+            "address": "209.250.244.245",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "mahsa-azadi-az-inja-migzare",
+                "flow": "xtls-rprx-vision",
+                "id": "01596265-168b-46a7-bcb7-25662c7a9546",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "l1t-0TqUc98jgUfaJ8SSJEucC35jbJOahQ2e-Z59BW4",
-          "serverName": "www.ghbi.ir",
-          "shortId": "a4d76fb1",
+          "fingerprint": "chrome",
+          "publicKey": "OpqpQzXN7zSlM-P4YhdjProDaYJt0KzzpdsCMUqQmm0",
+          "serverName": "dweb.link",
+          "shortId": "7519cb",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

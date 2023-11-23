@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "66.181.33.108",
-            "port": 22555,
+            "address": "mci.icv2ray.top",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "f2e8c8c1-7d7d-491a-c791-67bce71758ae",
+                "id": "d7224877-6d4c-4dc4-fbe1-08e47229953e",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,9 +67,16 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray"],
+          "fingerprint": "",
+          "serverName": "Antiv2ray-MCI-Mokhaderat-Irancell.GrV2ray.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

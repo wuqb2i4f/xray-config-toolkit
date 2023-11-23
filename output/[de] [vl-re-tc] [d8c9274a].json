@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fr1.09vpn.com",
-            "port": 80,
+            "address": "91.107.180.163",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "07187a48-6d47-4086-a0cf-11edc0b1f629",
+                "id": "8dfd1bf6-1efd-4ac6-9361-665713490079",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/vless/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

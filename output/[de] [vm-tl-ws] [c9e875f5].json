@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mahsang-2.dgi000.store",
-            "port": 30757,
+            "address": "www.unpkg.com",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "mahsa-azadi-az-inja-migzare",
+                "id": "1f1aa854-f237-4c00-adf1-803df276ce65",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zUla.eSMaIlkOrEa.sHOp"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "l1t-0TqUc98jgUfaJ8SSJEucC35jbJOahQ2e-Z59BW4",
-          "serverName": "www.ghbi.ir",
-          "shortId": "a4d76fb1",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "zUla.eSMaIlkOrEa.sHOp",
+          "show": false
         }
       },
       "tag": "proxy"

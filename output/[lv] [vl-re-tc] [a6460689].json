@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.179.213.82",
-            "port": 22142,
+            "address": "91.197.0.224",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "046780d6-51ee-4d69-8c19-39cc8d7ca134",
+                "flow": "xtls-rprx-vision",
+                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "----------telegram:funza----------telegram:funza----------telegram:funza----------telegram:funza----------telegram:funza----------"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "097HsvrEaNcM54oJNQqk2_iS7Vqisq9pfgeRS7tE3A8",
-          "serverName": "act.ran.org",
-          "shortId": "3ba88c27",
+          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
+          "serverName": "microsoft.com",
+          "shortId": "2d123271",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

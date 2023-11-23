@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sfp.dominogolden.eu.org",
-            "port": 2083,
+            "address": "mtn.icv2ray.top",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "vpn-xw",
+                "id": "87743a0c-cddb-46c5-cf74-0dfe7fdf9681",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "vpnxw"
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "5dgAH7NFzlzF43vsXAjpFDYFK-GQDvBBmq4WdPX4kCc",
-          "serverName": "live.nixos.org",
-          "shortId": "46955e6f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "udp.HiV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ca1.09vpn.com",
-            "port": 80,
+            "address": "91.107.191.14",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "09737c13-8399-408b-827f-36a7988067c7",
+                "flow": "xtls-rprx-vision",
+                "id": "f9ef9b02-aded-4d72-8639-3dbfa5b0de84",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/vless/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "publicKey": "15eEmc-vTfWm1EueLGT180XDuhtOKIjegs2nRgFcJ2o",
+          "serverName": "ftp.debian.org",
+          "shortId": "037871d1025c8a86",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
