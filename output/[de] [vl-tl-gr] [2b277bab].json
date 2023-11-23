@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "v2rayzs.ddns.net",
-            "port": 2087,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ffe38ad2-a995-44ae-ee5d-5351c80b888b",
+                "id": "a4df02db-46f6-49f4-b73c-3920a069bcda",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@V2rayZs"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "ZzwSPpZwEpagSJRY1qTvKp4Jkbciw5tGnqOARDNlmn4",
-          "serverName": "greenpepper.ir",
-          "shortId": "80d440e7",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Kanal-Ma.Polproxy.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

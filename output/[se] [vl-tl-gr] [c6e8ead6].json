@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "un1.09vpn.com",
-            "port": 80,
+            "address": "172.66.43.176",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "813a5324-5f84-4038-8e5f-33e9ed83706f",
+                "id": "bdbcabfa-e710-4599-a9b9-910269425edd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/vless/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "IP_CF"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "kyyugkuyuygutf.mic-mokhaderat-shatel-irancel-digikala.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

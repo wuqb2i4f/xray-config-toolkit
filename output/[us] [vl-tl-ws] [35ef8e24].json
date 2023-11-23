@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "2ca1.09vpn.com",
-            "port": 80,
+            "address": "tracking.betarays.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3d88057b-2655-4dbb-819a-32753a5f8246",
+                "id": "3a1352bb-26b8-488c-9ef1-307f1fe52d67",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "tracking.betarays.ir"
           },
-          "path": "/vless/"
+          "path": "/l30EqE63yd1AEUEUd"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "tracking.betarays.ir",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

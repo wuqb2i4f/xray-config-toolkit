@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sweden.bolbolteam.shop",
-            "port": 2053,
+            "address": "all-msv2ray.ddns.net",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1cbfc0ce-5f0e-4bd9-9e83-96e07825778d",
+                "id": "5fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "sweden.bolbolteam.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "safari",
-          "serverName": "sweden.bolbolteam.shop",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "de.MsV2ray.cfd",
           "show": false
         }
       },
