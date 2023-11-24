@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.229.14",
-            "port": 80,
+            "address": "mahsang-1.dgi000.store",
+            "port": 20179,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
+                "id": "mahsa-azadi-az-inja-migzare",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fr9.tehme100.fun"
-          },
-          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "NiLbMrihxRX8EiSRutSOFRkkR6eOa6P_fxNiSIiMMCE",
+          "serverName": "www.ghbi.ir",
+          "shortId": "31c991f8",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

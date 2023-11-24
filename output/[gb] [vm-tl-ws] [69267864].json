@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "5.161.66.171",
+            "address": "172.67.207.114",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "adadadef-ba5a-41bd-8eaf-71829f82e1a8",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ophelia.mom"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "3NtImSwWCalVdq7ViPXCQtMAATn7AMSTX3_jOed1IVE",
-          "serverName": "tuyacn.com",
-          "shortId": "102db47a",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "ophelia.mom",
+          "show": false
         }
       },
       "tag": "proxy"

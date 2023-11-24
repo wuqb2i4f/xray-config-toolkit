@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.180.163",
-            "port": 8443,
+            "address": "wancloudfa.ddns.net",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8dfd1bf6-1efd-4ac6-9361-665713490079",
+                "id": "wancloudfa",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@wancloudfa"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "",
+          "fingerprint": "firefox",
+          "publicKey": "fvLdmACG-oEhkn72_K_yGsg-6xIGyBlYd4rcufTiyCQ",
+          "serverName": "zula.ir",
+          "shortId": "1cd19861",
           "show": false,
           "spiderX": ""
         }
