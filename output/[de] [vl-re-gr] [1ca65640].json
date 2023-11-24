@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.162.228.3",
-            "port": 2087,
+            "address": "128.140.78.224",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "WANCLOUDFA1",
+                "id": "c74abb39-5c8f-4314-8412-352ce37e493c",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "TE:@wancloudfa"
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "wancloud1.wancloudfa.shop",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "jCP7nYwmtOn9N2bpFGhyVjn2kJwwdSoIDh59I7ydlDs",
+          "serverName": "tuyacn.com",
+          "shortId": "095fa193",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

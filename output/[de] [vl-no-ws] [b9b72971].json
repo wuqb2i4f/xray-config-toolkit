@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all-msv2ray.ddns.net",
-            "port": 2083,
+            "address": "173.245.59.16",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "25fb8bff-3826-4c21-808d-1b97622ffa36",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pErfORmingarts.DLoNlInEdoCTOR.oNLinE"
+          },
+          "path": "/backup"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "de.MsV2ray.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

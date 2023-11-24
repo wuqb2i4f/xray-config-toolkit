@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.155.249.17",
-            "port": 80,
+            "address": "46.31.79.109",
+            "port": 44165,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "9fd713f3-0896-4d67-8a97-038b388ee017",
+                "id": "dc83bcde-e6ec-45d8-aa20-36bc4eef04e6",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "ix2-jkthgUJBbSbW6_foOUtPjl0Ov2LHpaKBqFwUTgI",
+          "serverName": "film2movie.asia",
+          "shortId": "104a881d",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
