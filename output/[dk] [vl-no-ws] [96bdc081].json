@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.207.114",
-            "port": 443,
+            "address": "176.120.64.12",
+            "port": 80,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "f2823d10-2fa8-4064-ab49-bf69250ee309",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,18 +67,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ophelia.mom"
+            "Host": "internet.life.com.by"
           },
-          "path": "linkvws"
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "ophelia.mom",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
