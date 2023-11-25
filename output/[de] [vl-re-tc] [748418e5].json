@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "66.181.33.108",
-            "port": 22555,
+            "address": "49.13.11.249",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "f2e8c8c1-7d7d-491a-c791-67bce71758ae",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "96bbbba8-eac5-4bf7-916d-52c34ed5117c",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,12 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "zC5dRSgRznzVgsc8qyb6NR-KZ0LShVCjU6kWJ2TgdyI",
+          "serverName": "time.com",
+          "shortId": "55e25a2b",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
