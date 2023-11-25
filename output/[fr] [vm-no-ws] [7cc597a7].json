@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "wancloudfa.ddns.net",
-            "port": 443,
+            "address": "172.67.229.14",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "wancloudfa",
+                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@wancloudfa"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr9.tehme100.fun"
+          },
+          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "fvLdmACG-oEhkn72_K_yGsg-6xIGyBlYd4rcufTiyCQ",
-          "serverName": "zula.ir",
-          "shortId": "1cd19861",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

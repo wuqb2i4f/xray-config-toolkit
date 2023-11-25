@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 2087,
+            "address": "zula.ir",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "7f8e6028-78f7-47b6-94aa-4a0fe0939588",
+                "id": "753d0d83-3f5b-4821-860e-082f0b3db609",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "no1-vmess.sshmax.xyz"
+          },
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "V2ray.SvnBuy.Online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
