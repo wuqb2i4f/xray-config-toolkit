@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "www.unpkg.com",
-            "port": 2053,
+            "address": "v2rayzs.ddns.net",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "26ce2cda-b12a-469b-e066-a6503f635dcb",
+                "id": "ffe38ad2-a995-44ae-ee5d-5351c80b888b",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zUla.eSMaIlkOrEa.sHOp"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@V2rayZs"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "zUla.eSMaIlkOrEa.sHOp",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "ZzwSPpZwEpagSJRY1qTvKp4Jkbciw5tGnqOARDNlmn4",
+          "serverName": "greenpepper.ir",
+          "shortId": "80d440e7",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

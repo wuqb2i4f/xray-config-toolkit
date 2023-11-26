@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "172.233.57.6",
-            "port": 48713,
+            "address": "family.mgtajhiz.ir",
+            "port": 2052,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "523f323f-da43-4ca0-b124-39ac6948cdce",
+                "id": "544f2e93-51b0-4d47-fd72-e7d858021bbd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,10 +65,12 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "family.mgtajhiz.ir"
+          },
+          "path": "/"
         },
         "security": "none"
       },
