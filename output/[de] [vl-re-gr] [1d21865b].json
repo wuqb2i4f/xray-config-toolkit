@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sdsdf.numal.site",
-            "port": 8880,
+            "address": "217.196.101.125",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "64c19590-4c9a-48d2-b27d-92ece8513146",
+                "id": "f33a4835-e8f6-4922-82f3-c6dbbcb432cc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram---------@V2RayTz---------@ConfigTzBoT---------Telegram---------@V2RayTz---------@ConfigTzBoT---------Telegram---------@V2RayTz---------@ConfigTzBoT---------Telegram---------@V2RayTz---------@ConfigTzBoT---------"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

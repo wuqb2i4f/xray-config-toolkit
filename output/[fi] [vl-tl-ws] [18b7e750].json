@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sdsdf.numal.site",
-            "port": 8880,
+            "address": "ipnufilter2.totinp.pw",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "64c19590-4c9a-48d2-b27d-92ece8513146",
+                "id": "5523bf57-cb05-48cc-b075-3ab18dcf6126",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "de.kanal-tel-nufilter.site"
           },
           "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "de.kanal-tel-nufilter.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

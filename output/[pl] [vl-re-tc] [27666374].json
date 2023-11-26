@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sdsdf.numal.site",
-            "port": 8880,
+            "address": "51.83.249.136",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "64c19590-4c9a-48d2-b27d-92ece8513146",
+                "flow": "xtls-rprx-vision",
+                "id": "de27bea3-5198-4772-be69-0da876f99101",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "YcIeOtT780PAvxmgnMWSKfFh8GCZjAiLaAi3TnTGtUQ",
+          "serverName": "www.speedtest.net",
+          "shortId": "e3149ae7",
+          "show": false,
+          "spiderX": "/hitfszeHyrtyKLUIPC"
+        }
       },
       "tag": "proxy"
     },

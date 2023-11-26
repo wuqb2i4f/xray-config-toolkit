@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "sdsdf.numal.site",
-            "port": 8880,
+            "address": "95.164.62.204",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "64c19590-4c9a-48d2-b27d-92ece8513146",
+                "id": "2ba1c86f-789f-4dd8-b52a-17d21164f2ba",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +68,9 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "be1.xv2ray.net"
           },
-          "path": "/"
+          "path": "/vmess"
         },
         "security": "none"
       },

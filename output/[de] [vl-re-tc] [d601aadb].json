@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "95.164.38.223",
+            "address": "0000:0000:0000:0000:0000:ffff:310d:17b2",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "70d05b47-5b77-4a81-bedd-971e1893e34b",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,12 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "wjxVN8ldpyYeVhqShOuxLmZL5QXvX7R-V6x_PBsxTlA",
+          "serverName": "DooDooL.ghbi.ir",
+          "shortId": "59402d93",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

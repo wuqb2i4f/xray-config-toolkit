@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
-            "port": 80,
+            "address": "51.75.90.211",
+            "port": 51129,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "3fd9190e-a132-42ca-a33b-4a37b4b3e0cd",
+                "id": "b1e4fe2d-0513-5b9f-b8a8-91efc97db47a",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pl2-vmess.sshmax.xyz"
-          },
-          "path": "/vmess"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "tHUQkJ8gpxjTgeOkCrswR_pXx39S45SnTUv_FUP8Fis",
+          "serverName": "www.speedtest.net",
+          "shortId": "7fe29733",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
