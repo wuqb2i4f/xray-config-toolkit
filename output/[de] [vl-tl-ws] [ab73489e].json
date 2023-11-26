@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "free10.v2rayn.cfd",
-            "port": 2087,
+            "address": "sky1.bbv2ry.pics",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "035bbc33-ff0d-4524-d213-7f014bca56f4",
+                "id": "4b05c4ff-6715-4bdf-9906-a9441cc59484",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TelegramID:@iranbaxvpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "iWgxGQVQZUfOCw4EqmHQToaQPqYt0V5hAfnDo6p-Izg",
-          "serverName": "iranserver.com",
-          "shortId": "33fb",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "chrome",
+          "serverName": "web.bbv2ry.pics",
+          "show": false
         }
       },
       "tag": "proxy"

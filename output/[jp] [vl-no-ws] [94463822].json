@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "644-join.v2raytz.sbs",
-            "port": 443,
+            "address": "188.114.96.3",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "--MsV2ray--",
+                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "jp10.vlessx.xyz"
+          },
+          "path": "tel.mehrosaboran"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "i52GVgZ_w5LIPV6ecB7kYWxJSz2yMwqFbKL5OBe1C3k",
-          "serverName": "tuyacn.com",
-          "shortId": "f643e4e30c96",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

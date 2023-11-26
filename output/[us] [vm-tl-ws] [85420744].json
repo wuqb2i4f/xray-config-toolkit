@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "free10.v2rayn.cfd",
-            "port": 2087,
+            "address": "ophelia.mom",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "035bbc33-ff0d-4524-d213-7f014bca56f4",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TelegramID:@iranbaxvpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ophelia.mom"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "iWgxGQVQZUfOCw4EqmHQToaQPqYt0V5hAfnDo6p-Izg",
-          "serverName": "iranserver.com",
-          "shortId": "33fb",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ophelia.mom",
+          "show": false
         }
       },
       "tag": "proxy"

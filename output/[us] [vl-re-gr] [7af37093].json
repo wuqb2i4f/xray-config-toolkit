@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.120.64.12",
-            "port": 80,
+            "address": "eliv2ray-eiiv2ray.mci.ink",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f2823d10-2fa8-4064-ab49-bf69250ee309",
+                "id": "27b68070-7cc1-43ae-807c-6f6ae6567b07",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "internet.life.com.by"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "J_LHcaf6LJ0aB1k7-0Zy-RXTjlRLkDehnZhFLxDAThM",
+          "serverName": "tuyacn.com",
+          "shortId": "fcb6ec6b",
+          "show": false,
+          "spiderX": "/@eLiV2ray-@eLiV2ray-@eLiV2ray-@eLiV2ray"
+        }
       },
       "tag": "proxy"
     },
