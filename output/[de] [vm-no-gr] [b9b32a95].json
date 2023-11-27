@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "198.57.27.212",
-            "port": 22324,
+            "address": "188.34.179.119",
+            "port": 8443,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "04621bae-ab36-11ec-b909-0242ac120002",
+                "id": "35d246fc-6bcc-45a8-a9b8-ab8e92821260",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,11 +65,10 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "none"
       },

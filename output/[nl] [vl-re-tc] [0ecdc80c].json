@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.120.64.12",
-            "port": 80,
+            "address": "papercrafts.origamipassion.shop",
+            "port": 2565,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "f2823d10-2fa8-4064-ab49-bf69250ee309",
+                "flow": "xtls-rprx-vision",
+                "id": "dd8f2445-5d95-4b8c-82a7-a3671c820a8e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "internet.life.com.by"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "4FrUU-xUEW07hK15lua0w7WML-czQ-N-xBLVM3Du8BU",
+          "serverName": "www.speedtest.net",
+          "shortId": "c5dce9b439679390",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

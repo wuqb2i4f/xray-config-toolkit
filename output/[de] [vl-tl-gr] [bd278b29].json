@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "kamyarservers.ddns.net",
-            "port": 443,
+            "address": "cleanmci.barfak123.eu.org",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8ed31e1e-ba29-47bb-a212-3ed1e461a65c",
+                "id": "7f41c78a-7a72-4157-8a28-d224af534a4f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@configMs"
+          "serviceName": "@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN@Private_Access_Guard_VPN"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "bl_WgZJU4-XnjnZ1HWu6tAWaz8rvdgy2pGmaFpOgcQ0",
-          "serverName": "mihanyas.ir",
-          "shortId": "0960546b",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cloud.barfak123.eu.org",
+          "show": false
         }
       },
       "tag": "proxy"

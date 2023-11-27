@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "674-join.v2raytz.sbs",
-            "port": 443,
+            "address": "154.83.2.83",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "---MsV2ray---",
+                "id": "3f89f386-90a3-41ee-9202-1bf3bf6d84e0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tAPSI.haSMAIlkOREa.sTOrE"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "vUt0xRjXoLmn0QGSJS5B3HQDYoH4ccg6wy_ccn4vaUs",
-          "serverName": "tuyacn.com",
-          "shortId": "7576",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "tAPSI.haSMAIlkOREa.sTOrE",
+          "show": false
         }
       },
       "tag": "proxy"

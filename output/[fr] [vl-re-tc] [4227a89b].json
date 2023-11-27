@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "673-join.v2raytz.sbs",
+            "address": "193.168.145.2",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "---MsV2ray---",
+                "flow": "xtls-rprx-vision",
+                "id": "58aec3a8-5d65-4acf-9ed3-f34edf157d68",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "G3x1XPHJdHBWhLT4RgqVupuQRgf1T3fo3S-djHWsj0s",
-          "serverName": "tuyacn.com",
-          "shortId": "69ab",
+          "publicKey": "3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY",
+          "serverName": "fr.4cdn.de",
+          "shortId": "",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"
