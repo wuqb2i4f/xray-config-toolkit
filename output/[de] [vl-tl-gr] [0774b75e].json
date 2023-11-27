@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.233.57.6",
-            "port": 20397,
+            "address": "mtn.moienmusic.space",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ff29cc7f-ca47-4e79-80c9-36672acf7d3a",
+                "id": "34f7d720-8f71-423d-c4c0-7f182c92f2f9",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +67,16 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Kanal-Ma.Polproxy.sbs",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

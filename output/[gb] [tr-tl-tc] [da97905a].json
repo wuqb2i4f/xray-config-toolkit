@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "papercrafts.origamipassion.shop",
-            "port": 2565,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "dd8f2445-5d95-4b8c-82a7-a3671c820a8e",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "18.135.120.59",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "4FrUU-xUEW07hK15lua0w7WML-czQ-N-xBLVM3Du8BU",
-          "serverName": "www.speedtest.net",
-          "shortId": "c5dce9b439679390",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

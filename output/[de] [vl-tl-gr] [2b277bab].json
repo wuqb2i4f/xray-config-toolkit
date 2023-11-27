@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.78.224",
-            "port": 443,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "17aa1216-b86b-4b99-96c4-fee8c309b446",
+                "id": "d09aed53-df20-4df8-bf40-780c251eea83",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "jCP7nYwmtOn9N2bpFGhyVjn2kJwwdSoIDh59I7ydlDs",
-          "serverName": "tuyacn.com",
-          "shortId": "095fa193",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Sni.Tlgram-Polproxy.space",
+          "show": false
         }
       },
       "tag": "proxy"

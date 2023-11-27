@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.217.242.70",
-            "port": 444,
+            "address": "gold.rovamask.top",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "17aa1216-b86b-4b99-96c4-fee8c309b446",
+                "id": "ea6a02c9-8bd2-48a2-abda-5cbb3baf0e51",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "yG7cc9wpuCzIWkbKBB3okrIArto3g7MUPAemqKEmGlg",
-          "serverName": "tuyacn.com",
-          "shortId": "5c53e327",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "gold.rovamask.top",
+          "show": false
         }
       },
       "tag": "proxy"

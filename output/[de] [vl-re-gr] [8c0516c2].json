@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.72.194",
-            "port": 443,
+            "address": "116.202.101.134",
+            "port": 18064,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2fb17e69-5b6f-49d4-991f-8bf26c001eb3",
+                "flow": "",
+                "id": "bf6657eb-175a-4134-88cf-66aaad28ba7b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ",Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER,Telegram:@NUFiLTER"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "IOJu9lxe2-fXVJ9z0-v2_5puh1NFagIr_nFHsBQty0w",
-          "serverName": "ftp.debian.org",
-          "shortId": "e241272d",
+          "publicKey": "D2fuWG9S91W0KeraZzhkxHO2qgS_soPWURf140HTQUw",
+          "serverName": "www.nixos.org",
+          "shortId": "e9634d3f",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
