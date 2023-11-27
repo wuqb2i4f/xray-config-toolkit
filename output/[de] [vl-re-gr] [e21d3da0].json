@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "www.unpkg.com",
+            "address": "kamyarservers.ddns.net",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "1f1aa854-f237-4c00-adf1-803df276ce65",
+                "id": "8ed31e1e-ba29-47bb-a212-3ed1e461a65c",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zUla.eSMaIlkOrEa.sHOp"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@configMs"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "zUla.eSMaIlkOrEa.sHOp",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "bl_WgZJU4-XnjnZ1HWu6tAWaz8rvdgy2pGmaFpOgcQ0",
+          "serverName": "mihanyas.ir",
+          "shortId": "0960546b",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

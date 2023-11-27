@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.217.242.70",
-            "port": 444,
+            "address": "jioin-severnett7.numal.site",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "VPNCUSTOMIZE",
+                "id": "b344fdd9-3b86-4cec-9f58-678c6e7253e4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "yG7cc9wpuCzIWkbKBB3okrIArto3g7MUPAemqKEmGlg",
-          "serverName": "tuyacn.com",
-          "shortId": "5c53e327",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
