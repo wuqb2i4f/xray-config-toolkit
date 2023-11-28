@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.tlgram-polproxy.space",
-            "port": 2087,
+            "address": "tfr-vx.zoverv.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "39823e98-0a3a-453b-f20b-d015cedeba1e",
+                "id": "99815db5-dda1-4f43-a7eb-fc23293c6112",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["telewebion.com"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1,h3"],
-          "fingerprint": "chrome",
-          "serverName": "Kanal-Ma.Polproxy.sbs",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "edeen.makeup",
+            "address": "tde-rx.zoverv.com",
             "port": 443,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
-                "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "99815db5-dda1-4f43-a7eb-fc23293c6112",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "edeen.makeup"
-          },
-          "path": "linkvws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "edeen.makeup",
-          "show": false
+          "fingerprint": "randomized",
+          "publicKey": "1P6YaEJhKKpMU6CYR8p0p6DvpVI8TObYV2J54h4DGXk",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "0123456789abcdef",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

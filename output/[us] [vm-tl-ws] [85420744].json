@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "65.109.211.236",
+            "address": "ophelia.mom",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "8e4b249d-1543-424f-92a7-3b1f51bfecb5",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ophelia.mom"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
-          "serverName": "ghbi.ir",
-          "shortId": "a786cf49",
-          "show": false,
-          "spiderX": ""
+          "serverName": "ophelia.mom",
+          "show": false
         }
       },
       "tag": "proxy"

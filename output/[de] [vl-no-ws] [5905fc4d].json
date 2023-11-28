@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.193.181",
-            "port": 20041,
+            "address": "104.17.219.222",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ce6b09e1-ad36-453e-d2f9-192fa7619979",
+                "flow": "",
+                "id": "3cbaf436-93cc-4db1-be69-c5353076be15",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "v6jJJe6.talamala.store"
+          },
+          "path": "/graphql"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "publicKey": "zyDyJchACrc8CuthaWp5IAv21TmakOJDNVvek_sTlxY",
-          "serverName": "ce6b09e1.com",
-          "shortId": "2027872c",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

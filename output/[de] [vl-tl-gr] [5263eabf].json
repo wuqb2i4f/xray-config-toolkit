@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.211.236",
-            "port": 443,
+            "address": "198.41.202.5",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8e4b249d-1543-424f-92a7-3b1f51bfecb5",
+                "id": "5a7e1694-edd9-4b60-b56d-72d26f4bc790",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
-          "serverName": "ghbi.ir",
-          "shortId": "a786cf49",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["@mehrosaboran,@mehrosaboran"],
+          "fingerprint": "",
+          "serverName": "Antiv2ray-MCI-Mokhaderat-Irancell.GrV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"
