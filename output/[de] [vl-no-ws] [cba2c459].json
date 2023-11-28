@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.232.90.49",
-            "port": 443,
+            "address": "vmessorg.bia.tosh.mokhin.me",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d8429501-626b-4f55-8ae2-7eb8699fe1ac",
+                "id": "373ee779-d52e-416d-aea0-20bc38da5e14",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@KILID_STOR"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "join.bede.vmessorg.mokhin.me"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "V14XzsAGo2iOc30dJk4Agw43Z_dKmXTvAU8N4AFCN1M",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "2de39bfd",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

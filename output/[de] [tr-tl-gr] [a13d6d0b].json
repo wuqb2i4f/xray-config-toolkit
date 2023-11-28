@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "mahsang-2.dgi000.store",
-            "port": 58390,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "mahsanet-azadi-az-inja-migzare",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "chatgpt.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "pHM6lQGOG7",
+            "port": 443
           }
         ]
       },
@@ -69,15 +65,13 @@
           "multiMode": false,
           "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "Xg55y7LrRYQNLrPmgnXWW8x4qtpF_qFUFfmKi_APQks",
-          "serverName": "www.speedtest.net",
-          "shortId": "b1323ad0",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "chrome",
+          "serverName": "de.melov2ray.shop",
+          "show": false
         }
       },
       "tag": "proxy"

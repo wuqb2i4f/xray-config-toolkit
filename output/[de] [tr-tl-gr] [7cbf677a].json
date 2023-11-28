@@ -49,29 +49,28 @@
       "settings": {
         "servers": [
           {
-            "address": "13.41.209.49",
+            "address": "chat.openai.com",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "password": "pHM6lQGOG7",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "chrome",
+          "serverName": "de.melov2ray.shop",
           "show": false
         }
       },
