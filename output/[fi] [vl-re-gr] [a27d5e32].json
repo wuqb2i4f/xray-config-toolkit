@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "95.164.38.223",
+            "address": "65.109.211.236",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
+                "id": "8e4b249d-1543-424f-92a7-3b1f51bfecb5",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,9 +67,18 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Everyday_VPN"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
+          "serverName": "ghbi.ir",
+          "shortId": "a786cf49",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
