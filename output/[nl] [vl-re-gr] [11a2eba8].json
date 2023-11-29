@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.215.202",
+            "address": "fu.kilidstor.sbs",
             "port": 443,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "d8429501-626b-4f55-8ae2-7eb8699fe1ac",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "octavi.cfd"
-          },
-          "path": "linkvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@KILID_STOR"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "octavi.cfd",
-          "show": false
+          "publicKey": "V14XzsAGo2iOc30dJk4Agw43Z_dKmXTvAU8N4AFCN1M",
+          "serverName": "cdn.discordapp.com",
+          "shortId": "2de39bfd",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "95.164.38.223",
-            "port": 443,
+            "address": "mci.dgi000.store",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
+                "id": "42d197f0-99ac-4837-9493-6bc416f951b9",
                 "level": 8,
                 "security": "auto"
               }
@@ -70,7 +69,14 @@
           "multiMode": false,
           "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "mah2.hAsmailKorea.storE",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

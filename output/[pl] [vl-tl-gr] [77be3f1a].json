@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.8",
-            "port": 80,
+            "address": "www.unpkg.com",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f86103ba-e161-4e39-adb7-8006acc5ec0f",
+                "id": "e7519d7a-0956-4263-aaf0-1354a34df1c9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ZOoloGY.KasHTi.woRld"
-          },
-          "path": "/backup"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "digikala"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "telEwebIoN.hAsmAIlkORea.stORe",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

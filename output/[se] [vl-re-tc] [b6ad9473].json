@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 8080,
+            "address": "13.50.105.228",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "dfcdd618-cc97-4654-bbad-212050a916e7",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "gr-cl.whaleproject.tech"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "RqWfJidjaUvL2X_ZqYSyFZIaeQH5hfcwSaFq18D-r3E",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
