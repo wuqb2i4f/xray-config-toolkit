@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "167.235.247.16",
-            "port": 443,
+            "address": "ho1one.09vpn.com",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "--MsV2ray--",
+                "id": "29a193d2-aed5-4090-ba54-ac33788cb4d3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vless/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "i52GVgZ_w5LIPV6ecB7kYWxJSz2yMwqFbKL5OBe1C3k",
-          "serverName": "tuyacn.com",
-          "shortId": "f643e4e30c96",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "jioin-severnett7.numal.site",
-            "port": 8880,
+            "address": "95.164.38.223",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "487ecbf9-412b-44d1-a3a0-50003d9910e0",
+                "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,12 +65,10 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "none"
       },

@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "accpremium.outlineprivate.store",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "3003c4dc-66c7-446c-b4ba-5f3ee893ec66",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "35.176.24.128",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@OUTLINEIRAN,@OUTLINEIRAN,@OUTLINEIRAN,@OUTLINEIRAN,@OUTLINEIRAN,"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "yoHjp5HEO2ARYm5i6xGYgAeGR-5oNcRgV2dYEK--vzs",
-          "serverName": "ftp.debian.org",
-          "shortId": "1e0a2f1a",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

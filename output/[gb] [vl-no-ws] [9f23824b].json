@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "alvvin.click",
-            "port": 443,
+            "address": "104.31.16.8",
+            "port": 80,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "f86103ba-e161-4e39-adb7-8006acc5ec0f",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,18 +67,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "alvvin.click"
+            "Host": "ZOoloGY.KasHTi.woRld"
           },
-          "path": "linkvws"
+          "path": "/backup"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

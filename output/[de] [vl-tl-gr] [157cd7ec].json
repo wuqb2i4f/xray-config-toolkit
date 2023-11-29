@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fu.kilidstor.sbs",
-            "port": 443,
+            "address": "172.67.221.114",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d8429501-626b-4f55-8ae2-7eb8699fe1ac",
+                "id": "45676281-ab4e-4696-d1cd-cb1b141960ad",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@KILID_STOR"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "V14XzsAGo2iOc30dJk4Agw43Z_dKmXTvAU8N4AFCN1M",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "2de39bfd",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "pan-4.eoeo.cam",
+          "show": false
         }
       },
       "tag": "proxy"
