@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.147.250.11",
-            "port": 2096,
+            "address": "104.31.16.8",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b9814af7-75f0-4ffe-bd02-d52792c3771b",
+                "flow": "",
+                "id": "f86103ba-e161-4e39-adb7-8006acc5ec0f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ZOoloGY.KasHTi.woRld"
+          },
+          "path": "/backup"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "x-Zv8k40O3rJ8sjJknVpimNI4dhEk3WRCyKeRb5NeEU",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "e3cf4772268c17e1",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

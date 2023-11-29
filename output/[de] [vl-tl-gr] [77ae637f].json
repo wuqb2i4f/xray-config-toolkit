@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fu.kilidstor.sbs",
-            "port": 443,
+            "address": "::ffff:6817:6efe",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d8429501-626b-4f55-8ae2-7eb8699fe1ac",
+                "id": "66cd5673-f603-4b16-89fe-154df28aaa8d",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@KILID_STOR"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "V14XzsAGo2iOc30dJk4Agw43Z_dKmXTvAU8N4AFCN1M",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "2de39bfd",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "tofan.coffeeshop-smart.shop",
+          "show": false
         }
       },
       "tag": "proxy"
