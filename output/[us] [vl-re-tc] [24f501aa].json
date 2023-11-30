@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "discord.gg",
-            "port": 443,
+            "address": "5.161.198.1",
+            "port": 6006,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "dd3b2971-2e5e-49c4-8de9-62aca12ff466",
+                "id": "9789674e-6903-415a-ba07-1db4d207607c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "2GbqHqibX8MrGWVN1ct9nq"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "cdn.miladfaryad.cf",
-          "show": false
+          "publicKey": "xjsFF_ujrEnqVcR8pbV4aAnHHInbUJ9epkbT76d_7Fc",
+          "serverName": "lit.dev",
+          "shortId": "9e20a9863c3c8d7d",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

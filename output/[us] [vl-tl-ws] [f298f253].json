@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "77.83.246.217",
-            "port": 443,
+            "address": "m1002.s25id.buzz",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d9a48722-eaf3-478f-8262-04361b89bb94",
+                "flow": "",
+                "id": "be443dbb-9a1e-4f15-bca0-241a270508f9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zoro.zerozoro.cfd"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "A0tfr7R9a2LF4O-3jn2Wg3XURIy3uIv2VWG469oXQ1Y",
-          "serverName": "yandex.com",
-          "shortId": "96f5014f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "zoro.zerozoro.cfd",
+          "show": false
         }
       },
       "tag": "proxy"
