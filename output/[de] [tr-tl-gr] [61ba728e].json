@@ -45,33 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "jioin-severnett7.numal.site",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "b12f9362-c562-4389-9f42-5d8a9c60d0ff",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "185.238.228.253",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "93f1de92-bb07-43de-bfa6-a754b21f7768",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "w9x8jcNwkA2zUaju4sCZhUIO4M"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "sub1.ipsycho.pro",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

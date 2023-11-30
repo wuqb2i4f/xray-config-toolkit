@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jioin-severnett7.numal.site",
-            "port": 8880,
+            "address": "13.50.105.228",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "b12f9362-c562-4389-9f42-5d8a9c60d0ff",
+                "flow": "xtls-rprx-vision",
+                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "RqWfJidjaUvL2X_ZqYSyFZIaeQH5hfcwSaFq18D-r3E",
+          "serverName": "coinmarketcap.com",
+          "shortId": "5e",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

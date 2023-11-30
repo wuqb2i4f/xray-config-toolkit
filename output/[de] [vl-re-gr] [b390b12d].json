@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jioin-severnett7.numal.site",
-            "port": 8880,
+            "address": "128.140.73.200",
+            "port": 18234,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b12f9362-c562-4389-9f42-5d8a9c60d0ff",
+                "id": "---Telegram-Parsashonam---",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "jCIwbRZlaYTc_VyPpInewFijTH9dv3OfS5KFSRjt1DY",
+          "serverName": "www.speedtest.net",
+          "shortId": "f32bad6d",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

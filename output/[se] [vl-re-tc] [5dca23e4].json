@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jioin-severnett7.numal.site",
-            "port": 8880,
+            "address": "103.45.246.58",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "b12f9362-c562-4389-9f42-5d8a9c60d0ff",
+                "flow": "xtls-rprx-vision",
+                "id": "4f3da57b-66b0-4745-a98d-a1de5c07fac0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "x-Zv8k40O3rJ8sjJknVpimNI4dhEk3WRCyKeRb5NeEU",
+          "serverName": "www.speedtest.net",
+          "shortId": "e3cf4772268c17e1",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

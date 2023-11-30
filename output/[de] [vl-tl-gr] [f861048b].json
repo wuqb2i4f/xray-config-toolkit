@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.27.20.203",
-            "port": 443,
+            "address": "join.v2raytz.sbs",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "830e2828-9a40-4bee-ac4e-50681f0df8e6",
+                "id": "1fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray@XsV2ray,@XsV2ray"
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "11hU_uMz8RrzVi6EflmUUhN3MYnYtE5hWLQNZy5JZlo",
-          "serverName": "www.speedtest.net",
-          "shortId": "f6c9b4d0",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "de.MsV2ray.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

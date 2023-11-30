@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "jioin-severnett7.numal.site",
-            "port": 8880,
+            "address": "51.75.94.173",
+            "port": 30757,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b12f9362-c562-4389-9f42-5d8a9c60d0ff",
+                "id": "6db3a0b1-cc4c-5d2e-b7ab-30b0eee50ae7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "l1t-0TqUc98jgUfaJ8SSJEucC35jbJOahQ2e-Z59BW4",
+          "serverName": "www.ghbi.ir",
+          "shortId": "a4d76fb1",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
