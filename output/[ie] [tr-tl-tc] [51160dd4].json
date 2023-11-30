@@ -49,28 +49,29 @@
       "settings": {
         "servers": [
           {
-            "address": "185.238.228.253",
+            "address": "34.254.88.91",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "93f1de92-bb07-43de-bfa6-a754b21f7768",
-            "port": 443
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "w9x8jcNwkA2zUaju4sCZhUIO4M"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
+          "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "sub1.ipsycho.pro",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

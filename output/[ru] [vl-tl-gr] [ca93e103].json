@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.197.0.224",
-            "port": 443,
+            "address": "tgju.org",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
+                "flow": "",
+                "id": "81ecc690-b7cd-474d-b22b-d9c2b436acc7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1,h2"],
           "fingerprint": "chrome",
-          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
-          "serverName": "microsoft.com",
-          "shortId": "2d123271",
-          "show": false,
-          "spiderX": ""
+          "serverName": "pol.melov2ray.shop",
+          "show": false
         }
       },
       "tag": "proxy"
