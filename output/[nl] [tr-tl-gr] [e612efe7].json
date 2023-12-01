@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "167.235.247.16",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "---MsV2ray---",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "proxystore11.ddns.net",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "dd3b2971-2e5e-49c4-8de9-62aca12ff466",
+            "port": 443
           }
         ]
       },
@@ -67,17 +63,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+          "serviceName": "RGikK8PMHRUZX8MrGWVN1ct9nq"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "i52GVgZ_w5LIPV6ecB7kYWxJSz2yMwqFbKL5OBe1C3k",
-          "serverName": "tuyacn.com",
-          "shortId": "f643e4e30c96",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "cdn.miladfaryad.cf",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "800-join.v2raytz.sbs",
+            "address": "104.21.85.30",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "telegram-id-ArV2ray",
+                "id": "a5caca7b-9c8c-4825-b186-8fb70db0ddc0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zula.moaidownloader.info"
+          },
+          "path": "/download.zula_v1.8.10"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "OWFSLX9w4_YbVHwTgfuSfMV3M_lB3gnljXqbvHCZ2Hk",
-          "serverName": "greenpepper.ir",
-          "shortId": "d1a8b512",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "zula.moaidownloader.info",
+          "show": false
         }
       },
       "tag": "proxy"

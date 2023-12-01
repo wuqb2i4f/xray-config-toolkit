@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.53.164.136",
-            "port": 55594,
+            "address": "tel.icv2ray.top",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bdbd3e1b-c480-482e-9072-ac2f2db7519c",
+                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "jp10.vlessx.xyz"
+          },
+          "path": "tel.mehrosaboran"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-xhIXlm-n_0CAvbjAyYTzndvdD5wjyznabelgSU3NGU",
-          "serverName": "tuyacn.com",
-          "shortId": "15b2b41e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

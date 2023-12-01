@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "m1002.s25id.buzz",
-            "port": 8443,
+            "address": "65.109.211.236",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "be443dbb-9a1e-4f15-bca0-241a270508f9",
+                "id": "68ade786-efac-40f4-8119-3f1b511d6b56",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zoro.zerozoro.cfd"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Everyday_VPN"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "zoro.zerozoro.cfd",
-          "show": false
+          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
+          "serverName": "ghbi.ir",
+          "shortId": "a786cf49",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

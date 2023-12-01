@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.53.164.136",
-            "port": 55594,
+            "address": "104.31.16.92",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bdbd3e1b-c480-482e-9072-ac2f2db7519c",
+                "id": "f317ca19-233e-4145-96eb-7ed7d0d0b450",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "vipfinlandcdn.heydasip.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-xhIXlm-n_0CAvbjAyYTzndvdD5wjyznabelgSU3NGU",
-          "serverName": "tuyacn.com",
-          "shortId": "15b2b41e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

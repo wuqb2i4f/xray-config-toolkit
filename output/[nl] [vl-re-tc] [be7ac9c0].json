@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.53.164.136",
-            "port": 55594,
+            "address": "209.250.244.245",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "bdbd3e1b-c480-482e-9072-ac2f2db7519c",
+                "flow": "xtls-rprx-vision",
+                "id": "01596265-168b-46a7-bcb7-25662c7a9546",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-xhIXlm-n_0CAvbjAyYTzndvdD5wjyznabelgSU3NGU",
-          "serverName": "tuyacn.com",
-          "shortId": "15b2b41e",
+          "fingerprint": "chrome",
+          "publicKey": "OpqpQzXN7zSlM-P4YhdjProDaYJt0KzzpdsCMUqQmm0",
+          "serverName": "dweb.link",
+          "shortId": "7519cb",
           "show": false,
           "spiderX": ""
         }

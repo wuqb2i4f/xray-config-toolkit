@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.53.164.136",
-            "port": 55594,
+            "address": "104.21.12.150",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bdbd3e1b-c480-482e-9072-ac2f2db7519c",
+                "id": "290cba8a-4eb3-4c8e-80e9-25f1e1438992",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl1.vlessx.us"
+          },
+          "path": "CHANNEL-@ARCHIVE_ANDROID-@ARCHIVE_ANDROIDTelegram-@Archive_Android-@Archive_Android-Telegram-@Archive_Android-Telegram-@Archive_Android"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-xhIXlm-n_0CAvbjAyYTzndvdD5wjyznabelgSU3NGU",
-          "serverName": "tuyacn.com",
-          "shortId": "15b2b41e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
