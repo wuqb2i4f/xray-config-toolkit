@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.53.164.136",
-            "port": 55594,
+            "address": "ip.nofiltering2.sbs",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bdbd3e1b-c480-482e-9072-ac2f2db7519c",
+                "id": "3cbaf436-93cc-4db1-be69-c5353076be15",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "v6jJJe6.talamala.store"
+          },
+          "path": "/graphql"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-xhIXlm-n_0CAvbjAyYTzndvdD5wjyznabelgSU3NGU",
-          "serverName": "tuyacn.com",
-          "shortId": "15b2b41e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "proxystore11.ddns.net",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "dd3b2971-2e5e-49c4-8de9-62aca12ff466",
-            "port": 443
+            "address": "no.darkmood.cfd",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "d6a6dc1c-af20-47b8-afb4-1e8ca2414e98",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "RGikK8PMHRUZX8MrGWVN1ct9nq"
+          "serviceName": "own.darkmood.cfd"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "cdn.miladfaryad.cf",
-          "show": false
+          "publicKey": "XteYj_ylV5rpqBE_oGtsp_lokxvtWE3CQd-N8MQ2_G0",
+          "serverName": "own.darkmood.cfd",
+          "shortId": "6a1ec1e6",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
