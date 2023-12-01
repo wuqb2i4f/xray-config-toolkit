@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.85.30",
-            "port": 443,
+            "address": "172.67.221.114",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a5caca7b-9c8c-4825-b186-8fb70db0ddc0",
+                "id": "45676281-ab4e-4696-d1cd-cb1b141960ad",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zula.moaidownloader.info"
-          },
-          "path": "/download.zula_v1.8.10"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "zula.moaidownloader.info",
+          "serverName": "pan-4.eoeo.cam",
           "show": false
         }
       },

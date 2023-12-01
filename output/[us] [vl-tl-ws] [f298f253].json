@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sdsdf.numal.site",
-            "port": 8880,
+            "address": "m1002.s25id.buzz",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f9eaef22-91b8-490a-ae49-663c4acf4a9c",
+                "id": "be443dbb-9a1e-4f15-bca0-241a270508f9",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "zoro.zerozoro.cfd"
           },
           "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "zoro.zerozoro.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

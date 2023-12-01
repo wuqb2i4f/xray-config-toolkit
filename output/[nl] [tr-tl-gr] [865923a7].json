@@ -45,40 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "trch.blueberrynetwork.icu",
-            "port": 333,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ff2cb43b-a093-4372-a19c-37ff6f6d741f",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "188.114.99.29",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "a6292090-afe1-4640-97a7-4f1d1d877cf1",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "8bHUAD5IX0lC5KffvrsN6rqb"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "o0eRV4p7lizgJXVxPt9fbOzqKzL9UlyhHjnZJGVAUQo",
-          "serverName": "www.kukala.ir",
-          "shortId": "80c7292c",
-          "show": false,
-          "spiderX": ""
+          "serverName": "hdfy8c1.foriran.me",
+          "show": false
         }
       },
       "tag": "proxy"
