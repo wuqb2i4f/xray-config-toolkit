@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "188.114.99.29",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "a6292090-afe1-4640-97a7-4f1d1d877cf1",
-            "port": 443
+            "address": "free3.h3lixchannel.fun",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "a95cb979-589a-4b00-b68c-a76eebaa895a",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "8bHUAD5IX0lC5KffvrsN6rqb"
+          "serviceName": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "hdfy8c1.foriran.me",
-          "show": false
+          "publicKey": "0Ckov-4qL39Uei6IVu6z85AU7W4aHY_6DSioz3TfmFM",
+          "serverName": "eset.com",
+          "shortId": "ba525fd6",
+          "show": false,
+          "spiderX": "/int/policy-hub/privacy/"
         }
       },
       "tag": "proxy"

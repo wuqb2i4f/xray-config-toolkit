@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "91.121.37.242",
-            "port": 44221,
+            "address": "104.17.74.206",
+            "port": 8880,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "2afa20e9-39ab-4d68-a86a-72e1e595b9d3",
+                "id": "67510daa-8c41-41a8-86cd-868f554cfa20",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "br8.redbullplus.xyz"
+          },
+          "path": "/phonk/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "P59mBBoHAjIKU90URgcUmeFZyMXO8kd5A2ksu6eTVSM",
-          "serverName": "yahoo.com",
-          "shortId": "a631babe",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

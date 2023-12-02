@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "turkserverspeed.dragonrzm.sbs",
-            "port": 2053,
+            "address": "188.114.96.3",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d2088a4e-ed3d-474c-84cf-b4d16fb9386e",
+                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "xyz"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "jp10.vlessx.xyz"
+          },
+          "path": "tel.mehrosaboran"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

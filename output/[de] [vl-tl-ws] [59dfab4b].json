@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "free.networknim.site",
-            "port": 8080,
+            "address": "188.114.97.7",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "932f7774-5983-4b97-a262-00a14d502869",
+                "id": "97d26fd0-e2ac-4b1f-a098-f422fc49bd30",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "configvip7.site"
+            "Host": "singbox.cypherpunks.asia"
           },
-          "path": "/"
+          "path": "/cypherpunks"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "singbox.cypherpunks.asia",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

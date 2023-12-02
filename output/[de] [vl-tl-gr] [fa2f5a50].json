@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.121.37.242",
-            "port": 44221,
+            "address": "190.93.246.219",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2afa20e9-39ab-4d68-a86a-72e1e595b9d3",
+                "id": "beb47747-5ec2-4971-fb01-c1a0a516490f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "P59mBBoHAjIKU90URgcUmeFZyMXO8kd5A2ksu6eTVSM",
-          "serverName": "yahoo.com",
-          "shortId": "a631babe",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["@bored_vpn,@bored_vpn"],
+          "fingerprint": "",
+          "serverName": "fn.AnV2ray.site",
+          "show": false
         }
       },
       "tag": "proxy"

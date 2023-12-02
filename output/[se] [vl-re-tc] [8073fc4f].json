@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.27.202.236",
-            "port": 2083,
+            "address": "13.53.140.24",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "19be65ea-2790-420a-b2f7-1755945db3d5",
+                "flow": "xtls-rprx-vision",
+                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "kugkgkhgliyggy.mic-mokhaderat-shatel-irancel-digikala.shop"
-          },
-          "path": "@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF@IP_CF"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "kugkgkhgliyggy.mic-mokhaderat-shatel-irancel-digikala.shop",
-          "show": false
+          "publicKey": "fp-RvC2NYNxlOeLCFhqU6o4H_so-3l_2OHvTCQs3iFU",
+          "serverName": "ddragon.leagueoflegends.com",
+          "shortId": "34",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

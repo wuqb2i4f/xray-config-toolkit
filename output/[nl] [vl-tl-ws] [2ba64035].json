@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.121.37.242",
-            "port": 44221,
+            "address": "104.17.245.1",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2afa20e9-39ab-4d68-a86a-72e1e595b9d3",
+                "id": "f32794af-c5ad-4496-ba0d-8449cd394b3c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "own.darkmood.cfd"
+          },
+          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "P59mBBoHAjIKU90URgcUmeFZyMXO8kd5A2ksu6eTVSM",
-          "serverName": "yahoo.com",
-          "shortId": "a631babe",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "own.darkmood.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

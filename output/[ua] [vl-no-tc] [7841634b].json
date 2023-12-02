@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.121.37.242",
-            "port": 44221,
+            "address": "193.203.202.7",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2afa20e9-39ab-4d68-a86a-72e1e595b9d3",
+                "id": "ec35852e-9b67-40bb-a98c-d3003dbfccd7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "P59mBBoHAjIKU90URgcUmeFZyMXO8kd5A2ksu6eTVSM",
-          "serverName": "yahoo.com",
-          "shortId": "a631babe",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

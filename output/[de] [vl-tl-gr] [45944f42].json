@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.121.37.242",
-            "port": 44221,
+            "address": "all.tlgram-polproxy.space",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2afa20e9-39ab-4d68-a86a-72e1e595b9d3",
+                "id": "39823e98-0a3a-453b-f20b-d015cedeba1e",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "P59mBBoHAjIKU90URgcUmeFZyMXO8kd5A2ksu6eTVSM",
-          "serverName": "yahoo.com",
-          "shortId": "a631babe",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "chrome",
+          "serverName": "Kanal-Ma.Polproxy.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
