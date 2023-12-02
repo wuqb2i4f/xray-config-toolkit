@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "no.darkmood.cfd",
-            "port": 888,
+            "address": "104.16.125.175",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "129f9f67-0f8f-4dac-b2af-3874e9f560fb",
+                "id": "e7519d7a-0956-4263-aaf0-1354a34df1c9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,36 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["sourceforge.net"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "digikala"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "vMn-DvlHEhVHbHx7N_K1rzChtPV9cDURVsapjyuIjAI",
-          "serverName": "sourceforge.net",
-          "shortId": "f6528dd7",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "telEwebIoN.hAsmAIlkORea.stORe",
+          "show": false
         }
       },
       "tag": "proxy"

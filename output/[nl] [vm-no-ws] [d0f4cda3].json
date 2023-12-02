@@ -49,16 +49,16 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.215.202",
-            "port": 443,
+            "address": "172.67.1.143",
+            "port": 80,
             "users": [
               {
-                "alterId": 1,
+                "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "dcf4f57f-5d72-466a-ac4a-7c2a771088b0",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
@@ -68,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "octavi.cfd"
+            "Host": "own.darkmood.cfd"
           },
-          "path": "linkvws"
+          "path": "/p8bsEwkXbQHouGLnhc3w9Wy5O"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "octavi.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

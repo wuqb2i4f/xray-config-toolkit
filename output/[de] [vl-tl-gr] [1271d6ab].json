@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.53.140.24",
-            "port": 8443,
+            "address": "v2ray-fark4.ddns.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
+                "flow": "",
+                "id": "-----v2ray_fark-----",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@v2ray_fark@v2ray_fark"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1,h2,h3"],
           "fingerprint": "chrome",
-          "publicKey": "fp-RvC2NYNxlOeLCFhqU6o4H_so-3l_2OHvTCQs3iFU",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "34",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "df.foxnt-telegram-foxnt.shop",
+          "show": false
         }
       },
       "tag": "proxy"

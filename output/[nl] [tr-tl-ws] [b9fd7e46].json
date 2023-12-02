@@ -45,40 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "5.75.254.127",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "276a0c12-4946-4b6b-af2f-702b760769f7",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "193.227.99.55",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "dd3b2971-2e5e-49c4-8de9-62aca12ff466",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn.miladfaryad.cf"
+          },
+          "path": "/RGikK8PMHRUZInjQYjx"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "8iCD6o9aO4FLbf250c4VCZJETncaoAKFu8YvObau4is",
-          "serverName": "yahoo.com",
-          "shortId": "303d8004",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "cdn.miladfaryad.cf",
+          "show": false
         }
       },
       "tag": "proxy"
