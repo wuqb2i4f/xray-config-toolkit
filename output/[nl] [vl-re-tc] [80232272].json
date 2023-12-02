@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 443,
+            "address": "no.darkmood.cfd",
+            "port": 888,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1f225ad3-db5a-4f71-b834-8afc484843e2",
+                "id": "129f9f67-0f8f-4dac-b2af-3874e9f560fb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,36 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["sourceforge.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "ShprxyV2rayy.digitalciity.Tech",
-          "show": false
+          "publicKey": "vMn-DvlHEhVHbHx7N_K1rzChtPV9cDURVsapjyuIjAI",
+          "serverName": "sourceforge.net",
+          "shortId": "f6528dd7",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

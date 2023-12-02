@@ -45,34 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "66.181.33.108",
-            "port": 22666,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "9f096c70-478a-4fef-b29f-0f14d6a06583",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "proxystore11.ddns.net",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "dd3b2971-2e5e-49c4-8de9-62aca12ff466",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/a?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "RGikK8PMHRUZX8MrGWVN1ct9nq"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "cdn.miladfaryad.cf",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

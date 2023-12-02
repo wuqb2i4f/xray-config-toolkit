@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "54.38.136.254",
+            "address": "188.114.96.7",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "a15840dc-6888-476f-bd51-b26ce4e00838",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "speed.cloudflare.com"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "octavi.cfd"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "GsxVeXHFXdVX6R6DiRUPUmAXWJ4kNVs22whPsN4_SDg",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "3df4ed37",
-          "show": false,
-          "spiderX": ""
+          "serverName": "octavi.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

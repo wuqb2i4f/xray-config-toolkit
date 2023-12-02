@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:49.13.153.20",
-            "port": 2083,
+            "address": "172.67.215.202",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "40c9013e-b1c8-4de5-b473-c66db5a9624e",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray,@melov2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "octavi.cfd"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "M9LqjUEzbQHIPc2s1J2Slm7-BbE9GRyMsl7Khg1yTC8",
-          "serverName": "amd.com",
-          "shortId": "906cb53b",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "octavi.cfd",
+          "show": false
         }
       },
       "tag": "proxy"
