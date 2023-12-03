@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.197.0.224",
+            "address": "mahsa2.afdiran.org",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
+                "flow": "",
+                "id": "248981d6-8044-40c2-b501-b4547cf153af",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "mahsa2.afdiran.org"
+          },
+          "path": "/G4fjFBtvJKagDEz9zGbmOX0O"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
-          "serverName": "microsoft.com",
-          "shortId": "2d123271",
-          "show": false,
-          "spiderX": ""
+          "serverName": "mahsa2.afdiran.org",
+          "show": false
         }
       },
       "tag": "proxy"

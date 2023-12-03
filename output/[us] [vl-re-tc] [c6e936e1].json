@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "54.38.136.254",
-            "port": 443,
+            "address": "23.94.48.229",
+            "port": 13656,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a15840dc-6888-476f-bd51-b26ce4e00838",
+                "flow": "xtls-rprx-vision",
+                "id": "7c0d7e16-79e2-4aab-b475-480e72753e07",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "speed.cloudflare.com"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "GsxVeXHFXdVX6R6DiRUPUmAXWJ4kNVs22whPsN4_SDg",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "3df4ed37",
+          "publicKey": "HXcBIa45l96IBhTDbB4isDimt_7lV0meAhNHY7tRYSo",
+          "serverName": "sephora.com",
+          "shortId": "",
           "show": false,
           "spiderX": ""
         }

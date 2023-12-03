@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.53.43.90",
-            "port": 8443,
+            "address": "sweden.beingpopular.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
+                "flow": "",
+                "id": "b9ca8341-0d2a-4365-aaf6-9a9165229936",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "sweden.beingpopular.sbs"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "prDQNaN7bfygVay4jSBh0wxp5lRxmVSNlIbTdoJrZUA",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "34",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "sweden.beingpopular.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

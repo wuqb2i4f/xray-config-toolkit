@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 443,
+            "address": "turkws.configforvpn.fun",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d2cf27f3-09a4-4edf-b252-00a1ee89551a",
+                "id": "f265ecd2-4f70-4693-b10d-8f018f19acad",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "ShprxyV2rayy.digitalciity.Tech",
+          "serverName": "turkws.configforvpn.fun",
           "show": false
         }
       },

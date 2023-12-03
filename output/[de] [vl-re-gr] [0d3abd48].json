@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "docs.digitalocean.com",
-            "port": 2096,
+            "address": "lightning6-joinbedee.mamd.sbs",
+            "port": 8080,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "c0ec8bd0-ddc1-48cd-b352-9dfe15bbead0",
+                "id": "d19de985-e8b6-4162-b196-6099bdb476e8",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "tElEWebIOn.hAsMAIlkOrEa.sTORe"
-          },
-          "path": "/?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@LIGHTNING6"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "firefox",
-          "serverName": "tElEWebIOn.hAsMAIlkOrEa.sTORe",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "4OTfR6IQ_6Z-5EiAi08sSfUjZtC30c2x6jl9BE9KFwg",
+          "serverName": "www.speedtest.net",
+          "shortId": "356dc0",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

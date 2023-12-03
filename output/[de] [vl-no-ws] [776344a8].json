@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.43.63",
-            "port": 2083,
+            "address": "vmessorg.bia.to.mokhin.me",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "45676281-ab4e-4696-d1cd-cb1b141960ad",
+                "id": "d7277cb7-a1c5-498d-9a86-19b5d8b0dd70",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "join.bede.vmessorg.mokhin.me"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "pan-4.eoeo.cam",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
