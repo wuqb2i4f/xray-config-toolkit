@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "def.irimcs.org",
-            "port": 2087,
+            "address": "104.25.64.85",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3c1395ac-0f01-45ff-b7be-fd3021914577",
+                "id": "93f1de92-bb07-43de-bfa6-a754b21f7768",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@CatVpns"
+          "serviceName": "Y6Gomkc3jju4sCZhUIO4M"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "nw5p42lKknkOxt2REHCHPwThSaNIqbwGrz5WNCfh9U4",
-          "serverName": "greenpepper.ir",
-          "shortId": "df91",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "sub1.ipsycho.pro",
+          "show": false
         }
       },
       "tag": "proxy"

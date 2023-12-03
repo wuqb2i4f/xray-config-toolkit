@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.240.183",
-            "port": 8443,
+            "address": "172.67.57.252",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
+                "flow": "",
+                "id": "3cbaf436-93cc-4db1-be69-c5353076be15",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "v6jJJe6.talamala.store"
+          },
+          "path": "/graphql"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "hcZc68ApuOBfBEWpNKSLEuyR5qAGuHxxNUdHEIR3_mw",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "34",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

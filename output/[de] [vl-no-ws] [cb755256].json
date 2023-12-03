@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "845-join.v2raytz.sbs",
-            "port": 18234,
+            "address": "104.16.117.47",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "---Telegram-Parsashonam---",
+                "id": "3cbaf436-93cc-4db1-be69-c5353076be15",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "v6jJJe6.talamala.store"
+          },
+          "path": "/graphql"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "trAMz4EaIS6mhEghJbzvdpUMhQrZa9y-tm09E_mqzzs",
-          "serverName": "www.speedtest.net",
-          "shortId": "43e75a29",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

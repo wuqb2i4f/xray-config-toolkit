@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 443,
+            "address": "5.75.254.127",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3630319b-665a-4b7c-a8fd-3505e19cad92",
+                "id": "276a0c12-4946-4b6b-af2f-702b760769f7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "V2ray.join-svnteam.online",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "8iCD6o9aO4FLbf250c4VCZJETncaoAKFu8YvObau4is",
+          "serverName": "yahoo.com",
+          "shortId": "303d8004",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

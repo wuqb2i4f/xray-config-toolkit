@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.240.183",
-            "port": 8443,
+            "address": "tel.icv2ray.top",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
+                "flow": "",
+                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "jp10.vlessx.xyz"
+          },
+          "path": "tel.iCV2ray.space"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "hcZc68ApuOBfBEWpNKSLEuyR5qAGuHxxNUdHEIR3_mw",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "34",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

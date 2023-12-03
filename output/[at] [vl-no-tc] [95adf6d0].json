@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.240.183",
-            "port": 8443,
+            "address": "d1.futurevpn.fun",
+            "port": 38083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
+                "flow": "",
+                "id": "26834f5f-1e90-469d-98a8-aba9e9a6cd3f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,19 +67,25 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["telewebion.com"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "hcZc68ApuOBfBEWpNKSLEuyR5qAGuHxxNUdHEIR3_mw",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "34",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

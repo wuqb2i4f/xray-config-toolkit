@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.240.183",
-            "port": 8443,
+            "address": "104.18.78.200",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "78a21ddc-dc26-4a8a-85fd-9ec5d8729955",
+                "flow": "",
+                "id": "344b1740-f72b-408c-9ffb-eddfd06e8d27",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "background.eitaa.run"
+          },
+          "path": "/backup"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "hcZc68ApuOBfBEWpNKSLEuyR5qAGuHxxNUdHEIR3_mw",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "34",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
