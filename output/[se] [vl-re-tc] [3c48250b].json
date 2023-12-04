@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.153.45",
-            "port": 443,
+            "address": "13.48.127.145",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "d7f1be3a-7542-4178-81a9-dd6444a9ab5e",
+                "flow": "xtls-rprx-vision",
+                "id": "c6d1260e-d2dd-4e52-a265-2d0c731aa607",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNwedbaz"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "2uEIMiFhabdzWyUpGlNjK7EcfhpnO8EapYAAfcPXZWg",
-          "serverName": "greenpepper.ir",
-          "shortId": "7060aa96",
+          "fingerprint": "chrome",
+          "publicKey": "GnhdmWAwfFfad4nqp6QmFB9GB1I1EY3Zi1s3A0mjl3o",
+          "serverName": "ddragon.leagueoflegends.com",
+          "shortId": "a0",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

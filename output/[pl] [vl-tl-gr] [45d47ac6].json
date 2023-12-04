@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.17.219.222",
-            "port": 80,
+            "address": "waw.afdiran.org",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3cbaf436-93cc-4db1-be69-c5353076be15",
+                "id": "3e40ef4b-ca39-4f8c-b335-640ee74ab20d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "v6jJJe6.talamala.store"
-          },
-          "path": "/graphql"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "73rPz5ohTJjDetARJH5cO"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "waw.afdiran.org",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

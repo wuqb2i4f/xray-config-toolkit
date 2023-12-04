@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "free3.h3lixchannel.fun",
-            "port": 443,
+            "address": "13.50.111.188",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a95cb979-589a-4b00-b68c-a76eebaa895a",
+                "flow": "xtls-rprx-vision",
+                "id": "c6d1260e-d2dd-4e52-a265-2d0c731aa607",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "0Ckov-4qL39Uei6IVu6z85AU7W4aHY_6DSioz3TfmFM",
-          "serverName": "eset.com",
-          "shortId": "ba525fd6",
+          "publicKey": "UGHN8rSIsIe7XF-Y9dTjAtokwr6fVYQdlHMH9nhdV1w",
+          "serverName": "ddragon.leagueoflegends.com",
+          "shortId": "a0",
           "show": false,
-          "spiderX": "/int/policy-hub/privacy/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

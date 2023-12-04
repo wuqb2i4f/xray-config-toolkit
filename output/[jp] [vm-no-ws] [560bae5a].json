@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "154.53.164.136",
-            "port": 444,
+            "address": "jp.takeshi.wiki",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "6da55996-aff8-45a4-b411-abed1d7204d2",
+                "id": "59517e0b-ae1c-41d3-9c44-c44cea6f7546",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dl.kgvn.garenanow.com"
+          },
+          "path": "/takeshi.wiki"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "hceWs03FhstYL3E9-lnEzIMNHRqJpgLazubE2ZZXKzg",
-          "serverName": "kukala.ir",
-          "shortId": "0d277ae3",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "hdfy1d1.cpionline.co",
-            "port": 443,
+            "address": "152.69.211.235",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b2fbaeb0-e27b-4434-a8e3-9c5ad41885e6",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "d345916f-1673-4a98-f37d-49357c84ce03",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,19 +68,25 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": [""],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "EEdYwWnUDb8mHEydop69C-oUacORf-aA5JFrRhIW8CI",
-          "serverName": "www.wikimedia.org",
-          "shortId": "15d928cc4f9042",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
