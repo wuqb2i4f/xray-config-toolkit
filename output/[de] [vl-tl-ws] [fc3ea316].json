@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.203.217.38",
-            "port": 18234,
+            "address": "d2.gamiq.tech",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "---Telegram-Parsashonam---",
+                "id": "90c0dcd7-ae6a-40e0-9e3c-9150ebc0dca0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "d2.gamiq.tech"
+          },
+          "path": "/CbrpTgQ5B0ZiEaxUQUeaOv"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "trAMz4EaIS6mhEghJbzvdpUMhQrZa9y-tm09E_mqzzs",
-          "serverName": "www.speedtest.net",
-          "shortId": "43e75a29",
-          "show": false,
-          "spiderX": ""
+          "serverName": "d2.gamiq.tech",
+          "show": false
         }
       },
       "tag": "proxy"

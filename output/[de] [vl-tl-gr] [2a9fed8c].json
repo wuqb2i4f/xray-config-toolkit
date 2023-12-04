@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.203.217.38",
-            "port": 18234,
+            "address": "all.shhproxy.cam",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "---Telegram-Parsashonam---",
+                "id": "d2cf27f3-09a4-4edf-b252-00a1ee89551a",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Shh_Proxy,@Shh_Proxy"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "trAMz4EaIS6mhEghJbzvdpUMhQrZa9y-tm09E_mqzzs",
-          "serverName": "www.speedtest.net",
-          "shortId": "43e75a29",
-          "show": false,
-          "spiderX": ""
+          "serverName": "ShprxyV2rayy.digitalciity.Tech",
+          "show": false
         }
       },
       "tag": "proxy"
