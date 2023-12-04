@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "49.13.153.208",
-            "port": 443,
+            "address": "tel.icv2ray.top",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "tgr4d",
+                "id": "3ab1e793-7cd7-49a1-bb14-b68043888482",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw-Telegram:@vpn_xw"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl25.vlessx.us"
+          },
+          "path": "tel.mehrosaboran"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "3paHosZ3dY_WuBpvYY92eSFMBVqyBAsndrbpZCBYGXs",
-          "serverName": "report-a-concern.de",
-          "shortId": "37651666",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "randomized",
+          "serverName": "nl25.vlessx.us",
+          "show": false
         }
       },
       "tag": "proxy"

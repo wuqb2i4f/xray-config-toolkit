@@ -45,40 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mahsang-2.dgi000.store",
-            "port": 21975,
+            "address": "s1.19kala.co",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "mahsa-azadi-az-inja-migzaretcp",
+                "id": "5775de7e-0c2e-4e7c-8b9c-c48704d8facb",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "s1.19kala.co"
+          },
+          "path": "/OWTu4RMkF9V12oO5NLlQk"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "M4XOEJhUbjzyH1nSfJQjgMqzDymoaMt7zMD7bhdOoAs",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "9c96",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "s1.19kala.co",
+          "show": false
         }
       },
       "tag": "proxy"

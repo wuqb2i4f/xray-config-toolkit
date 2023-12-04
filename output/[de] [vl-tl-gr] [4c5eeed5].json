@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.111.188",
+            "address": "104.18.122.59",
             "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c6d1260e-d2dd-4e52-a265-2d0c731aa607",
+                "flow": "",
+                "id": "4b825a61-71f8-4398-9250-78014297b9b4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@V2rayMask@V2rayMask"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "UGHN8rSIsIe7XF-Y9dTjAtokwr6fVYQdlHMH9nhdV1w",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "a0",
-          "show": false,
-          "spiderX": ""
+          "serverName": "gold.rovamask.top",
+          "show": false
         }
       },
       "tag": "proxy"

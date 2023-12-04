@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "65.108.251.177",
-            "port": 4056,
+            "address": "ulmo.manwe.ir",
+            "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "---Telegram-Parsashonam---",
+                "id": "2d0f9a60-de6c-4494-bacc-424652364b97",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "varda2.manwe.ir"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "CU31Q6una5A-lj-WXmCSY6lKKUpRETAZqLxc8KNVZlQ",
-          "serverName": "tuyaus.com",
-          "shortId": "39378cc4",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "randomized",
+          "serverName": "varda2.manwe.ir",
+          "show": false
         }
       },
       "tag": "proxy"

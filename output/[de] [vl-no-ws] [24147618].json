@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.48.127.145",
-            "port": 8443,
+            "address": "germany.sabasubreza.top",
+            "port": 1080,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c6d1260e-d2dd-4e52-a265-2d0c731aa607",
+                "flow": "",
+                "id": "9f150074-23ab-4888-eeba-8fed9e978653",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "GnhdmWAwfFfad4nqp6QmFB9GB1I1EY3Zi1s3A0mjl3o",
-          "serverName": "ddragon.leagueoflegends.com",
-          "shortId": "a0",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

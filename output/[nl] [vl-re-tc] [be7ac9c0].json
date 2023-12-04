@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.162.228.3",
-            "port": 80,
+            "address": "209.250.244.245",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2014e8ab-f385-40e2-8c59-46b138c4c4dc",
+                "flow": "xtls-rprx-vision",
+                "id": "01596265-168b-46a7-bcb7-25662c7a9546",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cDAvHA.dL-oNlInEdOcTOR.Bio"
-          },
-          "path": "/backup"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "OpqpQzXN7zSlM-P4YhdjProDaYJt0KzzpdsCMUqQmm0",
+          "serverName": "dweb.link",
+          "shortId": "7519cb",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

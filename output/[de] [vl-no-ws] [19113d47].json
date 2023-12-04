@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "waw.afdiran.org",
-            "port": 443,
+            "address": "germany.sabasubreza.top",
+            "port": 55952,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3e40ef4b-ca39-4f8c-b335-640ee74ab20d",
+                "id": "ecd55dbb-5b75-4641-8585-100ee72acfd9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "73rPz5ohTJjDetARJH5cO"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "waw.afdiran.org",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
