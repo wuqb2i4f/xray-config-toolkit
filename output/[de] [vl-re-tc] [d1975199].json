@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn.darkmood.cfd",
-            "port": 2096,
+            "address": "116.203.126.111",
+            "port": 6006,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "528f9f65-4a00-47a6-fd5b-0fcd31afc0de",
+                "id": "9789674e-6903-415a-ba07-1db4d207607c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pnl.darkmood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "pnl.darkmood.cfd",
-          "show": false
+          "publicKey": "xjsFF_ujrEnqVcR8pbV4aAnHHInbUJ9epkbT76d_7Fc",
+          "serverName": "lit.dev",
+          "shortId": "9e20a9863c3c8d7d",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -45,19 +45,20 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cdn.darkmood.cfd",
-            "port": 2096,
+            "address": "fx.iranray.online",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "528f9f65-4a00-47a6-fd5b-0fcd31afc0de",
+                "id": "7300c5af-8657-48ea-ba35-4cc1176c5220",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "pnl.darkmood.cfd"
+            "Host": "de5.v2-teh.fun"
           },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+          "path": "/RO4vpgRqVSLPRRQi97uOJujdeO"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "pnl.darkmood.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,19 +45,20 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cdn.darkmood.cfd",
-            "port": 2096,
+            "address": "s1.19kala.co",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "528f9f65-4a00-47a6-fd5b-0fcd31afc0de",
+                "id": "5775de7e-0c2e-4e7c-8b9c-c48704d8facb",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
@@ -67,16 +68,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "pnl.darkmood.cfd"
+            "Host": "s1.19kala.co"
           },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+          "path": "/OWTu4RMkF9V12oO5NLlQk"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "pnl.darkmood.cfd",
+          "serverName": "s1.19kala.co",
           "show": false
         }
       },

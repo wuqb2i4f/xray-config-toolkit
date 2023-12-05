@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn.darkmood.cfd",
-            "port": 2096,
+            "address": "::ffff:128.140.84.193",
+            "port": 22843,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "528f9f65-4a00-47a6-fd5b-0fcd31afc0de",
+                "flow": "xtls-rprx-vision",
+                "id": "5d2333ed-5008-4395-af1a-b4d19613493a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pnl.darkmood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "pnl.darkmood.cfd",
-          "show": false
+          "publicKey": "jeF2t1ZbkBDPflw5T91hEcJAs1teE7r8_8kaET1lJW4",
+          "serverName": "flutter.dev",
+          "shortId": "9468e4e1",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

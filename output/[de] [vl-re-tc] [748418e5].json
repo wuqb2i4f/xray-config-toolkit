@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn.darkmood.cfd",
-            "port": 2096,
+            "address": "49.13.11.249",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "528f9f65-4a00-47a6-fd5b-0fcd31afc0de",
+                "flow": "xtls-rprx-vision",
+                "id": "96bbbba8-eac5-4bf7-916d-52c34ed5117c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pnl.darkmood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "pnl.darkmood.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "zC5dRSgRznzVgsc8qyb6NR-KZ0LShVCjU6kWJ2TgdyI",
+          "serverName": "time.com",
+          "shortId": "55e25a2b",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

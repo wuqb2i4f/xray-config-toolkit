@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn.darkmood.cfd",
-            "port": 2096,
+            "address": "lightning6-joinbedee.mamd.sbs",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "528f9f65-4a00-47a6-fd5b-0fcd31afc0de",
+                "id": "fbc41bfb-32c1-463c-b9d8-6d750d8a1390",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pnl.darkmood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@LIGHTNING6"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "pnl.darkmood.cfd",
-          "show": false
+          "publicKey": "4OTfR6IQ_6Z-5EiAi08sSfUjZtC30c2x6jl9BE9KFwg",
+          "serverName": "www.speedtest.net",
+          "shortId": "356dc0",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

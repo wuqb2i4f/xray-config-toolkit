@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn.darkmood.cfd",
-            "port": 2096,
+            "address": "45.67.215.26",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "528f9f65-4a00-47a6-fd5b-0fcd31afc0de",
+                "id": "87c7f4f7-d87c-41fd-b7fb-8e7fcb33f879",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pnl.darkmood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Shh_Proxy,@Shh_Proxy"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "pnl.darkmood.cfd",
+          "serverName": "ShprxyV2rayy.digitalciity.Tech",
           "show": false
         }
       },
