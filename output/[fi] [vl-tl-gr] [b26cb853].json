@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.47.206.184",
-            "port": 2087,
+            "address": "cltechip-mci.argha-v2pedia.monster",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4c080474-f6c0-4500-85d0-99ba994f8a37",
+                "id": "ee797f86-e248-40be-b8fc-200b977f4bfb",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "-FJ39r74kpiTshb4xuc6mxgAqvc4P_qJEE5IahxK2wE",
-          "serverName": "greenpepper.ir",
-          "shortId": "80d440e7",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "footlo.argha-v2pedia.monster",
+          "show": false
         }
       },
       "tag": "proxy"

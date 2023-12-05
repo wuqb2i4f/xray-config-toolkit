@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "de1-vmess.greenssh.xyz",
-            "port": 80,
+            "address": "910-join.v2raytz.sbs",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "12612b4e-e426-4b7c-84bd-4a02850abb1e",
+                "id": "b0d2e8f5-64a2-46b8-8e1d-42335bbd2e0a",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/vmess"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "758qoYALcJRjzvSSgkpaEJlpR1YpxdF66gSiH8_w_38",
+          "serverName": "greenpepper.ir",
+          "shortId": "07f57087",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
