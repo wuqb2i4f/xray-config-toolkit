@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "154.83.2.57",
-            "port": 2053,
+            "address": "49.13.11.249",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "ef9e887a-c26c-4cda-a731-1dbbc5263c77",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "96bbbba8-eac5-4bf7-916d-52c34ed5117c",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zUla.eSMAIlkOrEa.sHOp"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "zUla.eSMAIlkOrEa.sHOp",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "zC5dRSgRznzVgsc8qyb6NR-KZ0LShVCjU6kWJ2TgdyI",
+          "serverName": "time.com",
+          "shortId": "55e25a2b",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -45,36 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 2083,
+            "address": "s1.19kala.co",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "5fac0e66-13a0-443f-fd7a-8c0b027e4632",
+                "id": "5775de7e-0c2e-4e7c-8b9c-c48704d8facb",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "s1.19kala.co"
+          },
+          "path": "/OWTu4RMkF9V12oO5NLlQk"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "de.MsV2ray.sbs",
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "s1.19kala.co",
           "show": false
         }
       },

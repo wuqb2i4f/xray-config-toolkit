@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "panel.aryanrayan.xyz",
-            "port": 443,
+            "address": "116.203.126.111",
+            "port": 6006,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c45e038c-976c-4c65-b3a3-eb5c03519b71",
+                "id": "9789674e-6903-415a-ba07-1db4d207607c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "panel.aryanrayan.xyz"
-          },
-          "path": "/srv1"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "panel.aryanrayan.xyz",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "xjsFF_ujrEnqVcR8pbV4aAnHHInbUJ9epkbT76d_7Fc",
+          "serverName": "lit.dev",
+          "shortId": "9e20a9863c3c8d7d",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

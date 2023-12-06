@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "free.megaazarakhsh.site",
-            "port": 8880,
+            "address": "193.227.99.66",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "231c0c6a-93f9-4205-ba9c-3a4dac98c4c8",
+                "id": "c002de93-caa5-4774-b284-57ff171f7575",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "free_v2ray_confing.megaazarakhsh.site"
-          },
-          "path": "/https://t.me/free_v2ray_confing"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "sad1.donaldvpn.sbs",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
