@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "all.legions.sbs",
-            "port": 443,
+            "address": "off.darkmood.cfd",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "02ac0c4d-5d18-4f16-9c8e-f457b28ec5f1",
+                "id": "bfade899-c457-45eb-8d8e-775de8297f38",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,14 +68,14 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "TelegramHosseinStore_Za-TelegramHosseinStore_Za-TelegramHosseinStore_Za-TelegramHosseinStore_Za-TelegramHosseinStore_Za-TelegramHosseinStore_Za"
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "Txt.legions.sbs",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "tunnel.darkmood.cfd",
           "show": false
         }
       },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "trojan-panel.alphav.top",
-            "port": 37138,
+            "address": "95.217.242.237",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "d56fd71b-f819-43fd-a61d-3593d742d682",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "896efe15-7363-4d6c-97aa-cb0bb5499228",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "trojan-panel.alphav.top"
-          },
-          "path": "/BIA-Telegram-V2ray_Alpha"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "gB2mHBv8PQXA0HSxOlOcB91nq5luio58GPdkjAgmk2M",
+          "serverName": "www.speedtest.net",
+          "shortId": "10ff054b",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

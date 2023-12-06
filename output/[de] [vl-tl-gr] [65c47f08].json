@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.parcsolan.top",
-            "port": 22358,
+            "address": "104.21.50.254",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1507686d-929a-4e7d-ac66-9b11c15eb014",
+                "id": "86debb60-4965-4e43-b30d-ac8c0d8d9db2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "ONAHAdZDE0HVo8W0SfccXO6uAi7tEqLX3keCOJekEz4",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "b240c35f",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "adolf.globalonlinup.shop",
+          "show": false
         }
       },
       "tag": "proxy"

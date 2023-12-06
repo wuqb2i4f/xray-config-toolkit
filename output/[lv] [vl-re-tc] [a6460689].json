@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.25.254.88",
-            "port": 8443,
+            "address": "91.197.0.224",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "c002de93-caa5-4774-b284-57ff171f7575",
+                "flow": "xtls-rprx-vision",
+                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "sad1.donaldvpn.sbs",
-          "show": false
+          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
+          "serverName": "microsoft.com",
+          "shortId": "2d123271",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

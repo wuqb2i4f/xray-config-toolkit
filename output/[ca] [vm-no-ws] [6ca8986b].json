@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 443,
+            "address": "104.31.16.28",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "5f1e2327-e08b-424e-96b4-e6353f94104f",
+                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ca4.tehme2.fun"
+          },
+          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "V2ray.SvnReallity.Online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.203.169",
-            "port": 8880,
+            "address": "209.250.244.245",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "4b5e4565-322f-4223-a891-78a84f189726",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "01596265-168b-46a7-bcb7-25662c7a9546",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "usd.yj2022.gq"
-          },
-          "path": "/XSjeg73o6ZdsheahCb5JG"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "OpqpQzXN7zSlM-P4YhdjProDaYJt0KzzpdsCMUqQmm0",
+          "serverName": "dweb.link",
+          "shortId": "7519cb",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

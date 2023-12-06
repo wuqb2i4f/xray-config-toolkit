@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.200.85",
-            "port": 443,
+            "address": "77.91.103.67",
+            "port": 10004,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2eb71c1e-3caf-4f91-9fe6-35ba81590280",
+                "id": "94953376-9385-11ee-8335-9f4201f4a728",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vpnjantit"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
-          "serverName": "ghbi.ir",
-          "shortId": "a786cf49",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

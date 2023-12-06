@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "178.157.58.94",
-            "port": 39495,
+            "address": "tel.icv2ray.top",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "95822f3c-42a5-4f35-b9ed-edd67a4724d0",
+                "id": "3ab1e793-7cd7-49a1-bb14-b68043888482",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "nl25.vlessx.us"
           },
-          "path": "/?ed=2048"
+          "path": "tel.iCV2ray.top"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "randomized",
+          "serverName": "nl25.vlessx.us",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
