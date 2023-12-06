@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "sdsdf.numal.site",
-            "port": 8880,
+            "address": "digitalocean.com",
+            "port": 2096,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "460e6f4c-c97a-4952-8a57-81daaf04459b",
+                "id": "b855d4ce-206d-4acc-8318-6efdcb10afed",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "tElEWebIOn.hAsMAIlkOrEa.sTORe"
           },
-          "path": "/"
+          "path": "/?ed=2048"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "tElEWebIOn.hAsMAIlkOrEa.sTORe",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

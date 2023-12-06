@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "910-join.v2raytz.sbs",
+            "address": "173.245.59.101",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b0d2e8f5-64a2-46b8-8e1d-42335bbd2e0a",
+                "id": "5961ec7a-6dfb-4936-a0bd-19765de63ff9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "myistanbul.cloud"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "758qoYALcJRjzvSSgkpaEJlpR1YpxdF66gSiH8_w_38",
-          "serverName": "greenpepper.ir",
-          "shortId": "07f57087",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "myistanbul.cloud",
+          "show": false
         }
       },
       "tag": "proxy"

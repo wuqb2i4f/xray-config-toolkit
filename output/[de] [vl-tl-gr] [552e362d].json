@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "v2rayngcloud.ddns.net",
-            "port": 2083,
+            "address": "918-join.v2raytz.sbs",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0b3fc91e-2b92-473f-847a-eebfe7334e50",
+                "id": "5fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nl45.vlessx.us"
-          },
-          "path": "Telegram-v2rayNGcloud-Telegram-@V2rayNGcloud"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "randomized",
-          "serverName": "nl45.vlessx.us",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "de.MsV2ray.sbs",
           "show": false
         }
       },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "49.13.153.45",
+            "address": "95.164.38.223",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "078e58a1-cf2c-4978-93be-df7a44d7c8fe",
+                "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,9 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@VPNwedbaz"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "2uEIMiFhabdzWyUpGlNjK7EcfhpnO8EapYAAfcPXZWg",
-          "serverName": "greenpepper.ir",
-          "shortId": "7060aa96",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.125.171.13",
-            "port": 8443,
+            "address": "108.162.196.21",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+                "id": "0bf5d1c6-4bb5-4154-8b97-65494fd6ee6b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "g2com"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdnhid.vpweb.cfd"
+          },
+          "path": "/XwFwwXRySM8UlqCvGVMHKx1"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "partner.g2.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "serverName": "cdnhid.vpweb.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

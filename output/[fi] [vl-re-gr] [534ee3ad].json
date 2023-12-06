@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sh1001.s25id.buzz",
-            "port": 8443,
+            "address": "65.109.142.20",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "706a9e3e-89a6-4ebe-baba-3f348aa635b1",
+                "id": "b0d2e8f5-64a2-46b8-8e1d-42335bbd2e0a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zoro.zerozoro.cfd"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "zoro.zerozoro.cfd",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "svTJmpLfXcSCBavnucImIZH_z-MwEF9j0HCf0ezoG1Y",
+          "serverName": "greenpepper.ir",
+          "shortId": "07f57087",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
