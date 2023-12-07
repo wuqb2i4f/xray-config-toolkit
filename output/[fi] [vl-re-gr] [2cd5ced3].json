@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.3",
-            "port": 2052,
+            "address": "65.109.184.213",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
+                "id": "8d8dc622-e1b0-4026-8055-3bf550b5c596",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "jp10.Vlessx.xyz"
-          },
-          "path": "tel.mehrosaboran"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Everyday_VPN"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
+          "serverName": "gsmarena.com",
+          "shortId": "a786cf49",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

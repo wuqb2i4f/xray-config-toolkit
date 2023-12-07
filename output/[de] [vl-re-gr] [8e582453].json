@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.3",
-            "port": 2052,
+            "address": "935-join.v2raytz.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
+                "id": "738c5e99-7faa-4893-81a8-4d6655adde65",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "jp10.Vlessx.xyz"
-          },
-          "path": "tel.mehrosaboran"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Digiv2ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "44pa79d1pgsXBDhuaoAorrir4k2OSTNdOuMEXFw9zXc",
+          "serverName": "www.speedtest.net",
+          "shortId": "ab7b40b2",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

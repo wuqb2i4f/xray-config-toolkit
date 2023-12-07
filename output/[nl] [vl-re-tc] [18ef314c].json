@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.3",
-            "port": 2052,
+            "address": "45.91.169.59",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
+                "flow": "xtls-rprx-vision",
+                "id": "ca314b11-7178-4650-b832-56330e630610",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "jp10.Vlessx.xyz"
-          },
-          "path": "tel.mehrosaboran"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "QMAyRuDAvoaZ4Ri0hR6rFAUYi4H2au0a7N3ZCS29a2g",
+          "serverName": "www.dioptima.nl",
+          "shortId": "df26337c07733e89",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

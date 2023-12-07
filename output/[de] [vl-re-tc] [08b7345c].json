@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.3",
-            "port": 2052,
+            "address": "5.75.254.127",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
+                "id": "6b394b88-2fc6-4e65-be1c-c8d60dc1a178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "jp10.Vlessx.xyz"
-          },
-          "path": "tel.mehrosaboran"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "D-cNGgrrJDKuQTLPCaxM9lO3r-d4u_yorJS8f4Ij22I",
+          "serverName": "google.com",
+          "shortId": "1e19b907",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
