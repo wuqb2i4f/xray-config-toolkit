@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "159.69.43.123",
-            "port": 49193,
+            "address": "172.67.187.109",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "a21c127a-054b-463d-ab1a-9b9524290520",
+                "id": "2e87cebc-977b-4fec-b079-b1ddc55b19c8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ee1.xv2ray.net"
+          },
+          "path": "/vmess"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "b3ybIyfay5HKxmq3LpI3TZXH9kcaxhUSTezc-Qz4AE4",
-          "serverName": "www.speedtest.net",
-          "shortId": "73fa2a0d",
-          "show": false,
-          "spiderX": "/@ELiV2ray-@ELiV2ray-@ELiV2ray"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
