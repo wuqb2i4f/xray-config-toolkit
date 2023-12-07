@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "65.109.184.213",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "8d8dc622-e1b0-4026-8055-3bf550b5c596",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.11.27.57",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
-          "serverName": "gsmarena.com",
-          "shortId": "a786cf49",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "45.91.169.59",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "ca314b11-7178-4650-b832-56330e630610",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.19.152.108",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "QMAyRuDAvoaZ4Ri0hR6rFAUYi4H2au0a7N3ZCS29a2g",
-          "serverName": "www.dioptima.nl",
-          "shortId": "df26337c07733e89",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.197.193",
-            "port": 443,
+            "address": "bia-to4.unlimiteddev.shop",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8ef3cffd-bd08-48be-9220-abb50cfd6663",
+                "id": "323bb776-a9eb-4c00-b754-bd17e022dbee",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel3.unlimiteddev.shop"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
-          "serverName": "gsmarena.com",
-          "shortId": "a786cf49",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

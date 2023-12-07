@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "dl3.fanqiecloud.top",
-            "port": 2086,
+            "address": "216.9.227.236",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "3745f73a-f8c2-49f6-b8b8-a2abb87749c8",
+                "id": "c3024a15-0cd5-461a-d99c-14c64efea3f8",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cf-fr2.fanqiecloud.top"
-          },
-          "path": "/sssddd"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "TelegramID:@iranbaxvpn"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
+          "serverName": "greenpepper.ir",
+          "shortId": "9825",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
