@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
-            "port": 443,
+            "address": "16.16.199.98",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "5961ec7a-6dfb-4936-a0bd-19765de63ff9",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "myistanbul.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "myistanbul.cloud",
-          "show": false
+          "publicKey": "GwQCySg9_ZMYlHEZM7RsEyNVXRV3BqZDpnFxKen6hgw",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "netherlands-05.ptu.ink",
-            "port": 443,
+            "address": "38.75.137.27",
+            "port": 22324,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "1ee94d6b-84a8-6c1a-a4aa-7dac98f3e3f3",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "04621bae-ab36-11ec-b909-0242ac120002",
                 "level": 8,
                 "security": "auto"
               }
@@ -70,16 +71,7 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "m_Pq2SisG71zK0lSlmCQydFk6Vu-dWorYXTndYbN0FQ",
-          "serverName": "www.microsoft.com",
-          "shortId": "bf7100035cd1f3b0",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "m1001.s25id.buzz",
-            "port": 8443,
+            "address": "104.21.65.133",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "706a9e3e-89a6-4ebe-baba-3f348aa635b1",
+                "id": "976d4c58-f56a-486b-9458-1af6b6ffb819",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zoro.zerozoro.cfd"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "IP_CF"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "zoro.zerozoro.cfd",
+          "serverName": "kyyugkuyuygutf.mic-mokhaderat-shatel-irancel-digikala.shop",
           "show": false
         }
       },

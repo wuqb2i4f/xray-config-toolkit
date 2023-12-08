@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "free3.v2rayn.cfd",
-            "port": 443,
+            "address": "81.28.6.228",
+            "port": 25010,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "124b431a-dde8-40c3-d000-50cfc5ba8f88",
+                "id": "fcaf5da5-ff63-4493-8ec1-90c46b26022d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@iranbaxvpn-@iranbaxvpn-@iranbaxvpn-@iranbaxvpn"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["ghbi.ir"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "skowtu_zROaa0Y7h0Gss2-4mPXvEAngSPxQVukyWO1U",
-          "serverName": "iranbax.spacex.com",
-          "shortId": "9ff0c049e20b",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

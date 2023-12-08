@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.28",
-            "port": 80,
+            "address": "mtn.msv2ray.space",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "58fe1542-5290-40ad-815a-77707a81afe5",
+                "id": "6fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ca4.tehme2.fun"
-          },
-          "path": "/IOebhLMhl1CTbFHbL95myfRX2"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "de.MsV2ray.sbs",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

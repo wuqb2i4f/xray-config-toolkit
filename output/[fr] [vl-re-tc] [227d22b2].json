@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.icv2ray.top",
-            "port": 2052,
+            "address": "57.128.122.148",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c255f68f-18f7-488a-b7fc-06a5676564f0",
+                "id": "6e0afdc3-aafa-4a13-d275-fd204840d743",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "jp10.vlessx.xyz"
-          },
-          "path": "tel.iCV2ray.space"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "edge",
+          "publicKey": "JBU3u_7Af5O-Y6MWSePv4YCLajQ7t60XI6Hmlr4QVWo",
+          "serverName": "yahoo.com",
+          "shortId": "c7c78b",
+          "show": false,
+          "spiderX": "/qwe"
+        }
       },
       "tag": "proxy"
     },
