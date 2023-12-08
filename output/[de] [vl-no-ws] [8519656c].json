@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "190.93.246.241",
-            "port": 2087,
+            "address": "104.22.13.10",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f2d7ab89-5f5f-4d76-dc3f-26972c7c8bbc",
+                "id": "384193af-acf4-4e3d-a570-5720befa42ee",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "Okhvod.KAshTI.WOrLd"
+          },
+          "path": "/backup"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["TELEGRAM:+@proxy_mtm+|+TELEGRAM:+@proxy_mtm+"],
-          "fingerprint": "chrome",
-          "serverName": "udp.HiV2ray.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

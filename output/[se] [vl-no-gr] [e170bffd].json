@@ -45,32 +45,29 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "fx.iranray.online",
-            "port": 2095,
+            "address": "172.232.159.192",
+            "port": 24959,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
+                "id": "084a9317-8908-40e8-b615-bd171fed5d02",
                 "level": 8,
-                "security": "chacha20-poly1305"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fr4.v2-teh.fun"
-          },
-          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "none"
       },

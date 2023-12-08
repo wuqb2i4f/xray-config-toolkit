@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "54.37.76.9",
+            "address": "damonconfig.king-web.site",
             "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b050824b-62a0-43dc-aac4-d2a5c8203b04",
+                "id": "DamonConfig",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
+          "serviceName": "@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1n68WaJHKHvmiU9zKyw42Q6FQlWAlCIzLJ0hJc87izo",
-          "serverName": "tuyacn.com",
-          "shortId": "e501e888",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2"],
+          "fingerprint": "",
+          "serverName": "damon-config.king-web.site",
+          "show": false
         }
       },
       "tag": "proxy"

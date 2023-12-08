@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "oliv.beauty",
-            "port": 443,
+            "address": "server.alwaysbeyonder.sbs",
+            "port": 8080,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "c155e8e8-8dc4-451a-9b70-1fdb709a8cb7",
                 "level": 8,
                 "security": "auto"
               }
@@ -70,16 +69,9 @@
           "headers": {
             "Host": ""
           },
-          "path": "linkvws"
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "oliv.beauty",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.187.109",
-            "port": 80,
+            "address": "panel.eliv2ray.top",
+            "port": 444,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "2e87cebc-977b-4fec-b079-b1ddc55b19c8",
+                "id": "e09fac3c-9e41-4eed-d102-90f110489c42",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ee1.xv2ray.net"
-          },
-          "path": "/vmess"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ELiV2ray-ELiV2ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "MCR2-loliqQE2wv4HLAEUSbrgGXnkxxY8v95jQITOGA",
+          "serverName": "www.iranserver.com",
+          "shortId": "2336f776",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
