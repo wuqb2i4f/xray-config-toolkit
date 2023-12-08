@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "23.88.41.234",
+            "address": "5.75.195.195",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2e86a45a-9515-409c-bf99-9ea12ad9e0ad",
+                "flow": "xtls-rprx-vision",
+                "id": "37e108a1-f86d-4c5b-ac86-002d65afe0a5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "x2pkmo0n8yPKGlPJh1CB6qcoeeZdr8IH4R6HuKTBTU8",
-          "serverName": "greenpepper.ir",
-          "shortId": "f5361167",
+          "fingerprint": "chrome",
+          "publicKey": "4zG3v4RYqpxLaxR_-iQ3n0tQGn8Lg-E_J_2n5a-Tb2o",
+          "serverName": "vflatow.de",
+          "shortId": "e9733d83",
           "show": false,
-          "spiderX": "/"
+          "spiderX": "/@ELiV2ray,@ELiV2ray,@ELiV2ray,@ELiV2ray"
         }
       },
       "tag": "proxy"

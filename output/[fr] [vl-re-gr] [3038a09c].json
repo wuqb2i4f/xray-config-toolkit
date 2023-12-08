@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia-to4.unlimiteddev.shop",
-            "port": 80,
+            "address": "54.37.76.9",
+            "port": 25365,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "323bb776-a9eb-4c00-b754-bd17e022dbee",
+                "id": "a8a533e1-53c2-4c8b-8fa5-1a003c366ac2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel3.unlimiteddev.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "1KEdKyaE1_sYl8wkF4d7zISQm6JWzrAP9L6IPVMv21I",
+          "serverName": "www.discord.com",
+          "shortId": "89d5d1c3",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

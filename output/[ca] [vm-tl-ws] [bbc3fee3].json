@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "57.128.122.148",
+            "address": "104.21.53.12",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "6e0afdc3-aafa-4a13-d275-fd204840d743",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ophelia.mom"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "edge",
-          "publicKey": "JBU3u_7Af5O-Y6MWSePv4YCLajQ7t60XI6Hmlr4QVWo",
-          "serverName": "yahoo.com",
-          "shortId": "c7c78b",
-          "show": false,
-          "spiderX": "/qwe"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ophelia.mom",
+          "show": false
         }
       },
       "tag": "proxy"

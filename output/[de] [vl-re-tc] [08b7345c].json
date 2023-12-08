@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.shhproxy.cam",
-            "port": 443,
+            "address": "5.75.254.127",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fdb7dd74-5b29-4cf3-973c-5e0b494ad5a2",
+                "id": "6b394b88-2fc6-4e65-be1c-c8d60dc1a178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "ShprxyV2rayy.digitalciity.Tech",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "D-cNGgrrJDKuQTLPCaxM9lO3r-d4u_yorJS8f4Ij22I",
+          "serverName": "google.com",
+          "shortId": "1e19b907",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
