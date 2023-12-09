@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.51.254.68",
-            "port": 8443,
+            "address": "def.irimcs.org",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "3c1395ac-0f01-45ff-b7be-fd3021914577",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@CatVpns"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "OzX5HJ5bS-V3lo1ioQ2xuic7tmjC8TcVE4t--r3JW1k",
-          "serverName": "www.makers.com",
-          "shortId": "3c",
+          "fingerprint": "firefox",
+          "publicKey": "nw5p42lKknkOxt2REHCHPwThSaNIqbwGrz5WNCfh9U4",
+          "serverName": "greenpepper.ir",
+          "shortId": "df91",
           "show": false,
           "spiderX": ""
         }

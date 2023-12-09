@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.22.51.45",
-            "port": 2083,
+            "address": "104.20.2.1",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f0eac3c4-ee42-4ab5-e18a-3acbf235ffbb",
+                "id": "2a269c03-fd20-46e2-8464-60b10a244801",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "RFDJCK.سیسی.wOrLd"
+          },
+          "path": "/dl/index.php"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "chrome",
-          "serverName": "public.alpanel.top",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

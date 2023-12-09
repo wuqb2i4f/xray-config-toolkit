@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "reallity.svnteam.online",
-            "port": 443,
+            "address": "190.93.246.241",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c7f2ac91-c9ce-46c6-98f3-7204178e4b7c",
+                "id": "f2d7ab89-5f5f-4d76-dc3f-26972c7c8bbc",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["TELEGRAM:+@proxy_mtm+|+TELEGRAM:+@proxy_mtm"],
           "fingerprint": "chrome",
-          "publicKey": "d35k8hJ0aMt0SQ7DPprVNf6nm_QKabQsbfVmpg819lE",
-          "serverName": "tunnel.svnreallity.online",
-          "shortId": "3fdec952",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "udp.HiV2ray.cfd",
+          "show": false
         }
       },
       "tag": "proxy"
