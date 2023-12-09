@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "damonconfig.king-web.site",
-            "port": 2096,
+            "address": "173.245.59.101",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "DamonConfig",
+                "id": "5961ec7a-6dfb-4936-a0bd-19765de63ff9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig@DamonConfig"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "myistanbul.cloud"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "",
-          "serverName": "damon-config.king-web.site",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "myistanbul.cloud",
           "show": false
         }
       },

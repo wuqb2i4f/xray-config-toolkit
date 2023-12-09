@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tr4.iranbax.cfd",
-            "port": 8443,
+            "address": "104.18.71.193",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "71f08cc5-76c1-44ac-9d29-c8d2efdc39fc",
+                "id": "f0eac3c4-ee42-4ab5-e18a-3acbf235ffbb",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "TelegramID:@iranbaxvpn"
+          "serviceName": "@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["http/1.1,h2"],
           "fingerprint": "chrome",
-          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
-          "serverName": "greenpepper.ir",
-          "shortId": "9825",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "public.alpanel.top",
+          "show": false
         }
       },
       "tag": "proxy"

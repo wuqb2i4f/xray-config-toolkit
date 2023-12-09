@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "free1.v2rayn.cfd",
-            "port": 443,
+            "address": "51.75.162.199",
+            "port": 61570,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "68444b81-d697-4a00-e24e-d65245621074",
+                "id": "e6aab1e0-ede0-47c3-b01c-f34a498db838",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@iranbaxvpn-@iranbaxvpn-@iranbaxvpn-@iranbaxvpn"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "skowtu_zROaa0Y7h0Gss2-4mPXvEAngSPxQVukyWO1U",
-          "serverName": "iranbax.spacex.com",
-          "shortId": "9ff0c049e20b",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

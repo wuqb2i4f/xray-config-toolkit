@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.184.213",
-            "port": 443,
+            "address": "13.51.254.68",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "27c52152-b227-4794-92b2-21a9fca47334",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
-          "serverName": "gsmarena.com",
-          "shortId": "a786cf49",
+          "publicKey": "OzX5HJ5bS-V3lo1ioQ2xuic7tmjC8TcVE4t--r3JW1k",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

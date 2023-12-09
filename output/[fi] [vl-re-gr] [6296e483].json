@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "3.140.3.176",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "65.109.241.89",
+            "port": 2096,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "bfa4e1dd-9f9f-4ae8-b462-c95df7464902",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "g4MGENJH_-e5bXqnD4KVlc-Nfi6kCpBg-_yuGfN943I",
+          "serverName": "sourceforge.net",
+          "shortId": "c747ebe9",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.vipxali.cfd",
-            "port": 2083,
+            "address": "95.217.243.4",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "23e6ac0b-2abf-44fa-8ffa-a2df912a5c3e",
+                "id": "a87387cc-7a9f-4e8c-c653-d422425897b0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "fe.XsV2ray.cfd",
-          "show": false
+          "fingerprint": "safari",
+          "publicKey": "QcDX3RiYqqDQE7Pfnt_MzB2e7D4RcaVhb8sgGhZ5Oho",
+          "serverName": "khømëiñí.çom",
+          "shortId": "49a0",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

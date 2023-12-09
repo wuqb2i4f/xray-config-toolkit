@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "65.109.197.193",
-            "port": 443,
+            "address": "v2line.telegram.channel.1377.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "850d2fc9-06b2-4278-82a5-1cb78831fea6",
+                "id": "788744c4-968d-4263-a38b-f2952bf12db2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ee1.xv2ray.net"
+          },
+          "path": "/vmess"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "dTGmUPDOGQhE1VI97cGpw-DOnsW_rzm7a-YMDcDkx2c",
-          "serverName": "gsmarena.com",
-          "shortId": "a786cf49",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

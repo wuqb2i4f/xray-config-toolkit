@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "mtn.moienmusic.space",
-            "port": 2053,
+            "address": "5.75.200.207",
+            "port": 2086,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "28ea2f0c-8b0e-4cc1-da94-9deb7c216805",
+                "id": "4de8c64c-4047-4c25-c29f-9ef5e9a9c2c6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "Polproxy.Bluemoien.space",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

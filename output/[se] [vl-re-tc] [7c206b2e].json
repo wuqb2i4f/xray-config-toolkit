@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "panel.eliv2ray.top",
-            "port": 444,
+            "address": "16.170.222.147",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e09fac3c-9e41-4eed-d102-90f110489c42",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ELiV2ray-ELiV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "MCR2-loliqQE2wv4HLAEUSbrgGXnkxxY8v95jQITOGA",
-          "serverName": "www.iranserver.com",
-          "shortId": "2336f776",
+          "fingerprint": "chrome",
+          "publicKey": "GksFbE4lAXOVdNrTwvddbrFi49hCc0RyXo-0148-wnk",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "hp.hqv2ray.cfd",
-            "port": 443,
+            "address": "pl2-vmess.sshmax.xyz",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "88300368-49fa-4a7b-9813-6cacd38b2cdb",
+                "id": "900fbb93-4dba-40c1-be96-9aef165a7c2e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@HpV2rayNG,@HpV2rayNG,@HpV2rayNG,@HpV2rayNG,@HpV2rayNG"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pl2-vmess.sshmax.xyz"
+          },
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "hp.XsV2ray.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

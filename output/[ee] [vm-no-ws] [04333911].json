@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "172.232.159.192",
-            "port": 24959,
+            "address": "172.67.187.109",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "084a9317-8908-40e8-b615-bd171fed5d02",
+                "id": "2e87cebc-977b-4fec-b079-b1ddc55b19c8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,10 +65,12 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ee1.xv2ray.net"
+          },
+          "path": "/vmess"
         },
         "security": "none"
       },
