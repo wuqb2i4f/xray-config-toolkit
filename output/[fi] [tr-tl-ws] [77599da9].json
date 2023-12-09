@@ -49,29 +49,30 @@
       "settings": {
         "servers": [
           {
-            "address": "54.72.120.247",
+            "address": "195.74.93.162",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "password": "I864rxBP9tLYy6OdZ_3SrQ",
+            "port": 995
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fi.pqmin.online"
+          },
+          "path": "/twcdn-warp"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "alpn": [""],
+          "fingerprint": "random",
+          "serverName": "pubtlx.pqmin.online",
           "show": false
         }
       },

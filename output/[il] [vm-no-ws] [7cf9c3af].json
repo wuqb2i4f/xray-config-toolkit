@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "78.46.240.115",
-            "port": 443,
+            "address": "v2line.telegram.channel.1381.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "ab97e6ee-3e00-4612-bb63-83cf5e354383",
+                "id": "224a1664-6b67-4a57-9cb3-d8e9139dbb38",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@TLS_v2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "il1.xv2ray.net"
+          },
+          "path": "/vmess"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "GTVnubp-q8gRkQt8FynkMWNgyP-PAOEZgCFtCLfGYxI",
-          "serverName": "greenpepper.ir",
-          "shortId": "d60895c1",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

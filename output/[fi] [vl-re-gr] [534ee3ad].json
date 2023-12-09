@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.216.212",
-            "port": 15557,
+            "address": "65.109.142.20",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "945a6635-9884-46e4-b7e8-78fb7c79359b",
+                "id": "b0d2e8f5-64a2-46b8-8e1d-42335bbd2e0a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "firefox",
-          "publicKey": "7XKXjQ8Y3TxGnBhqERCzRqVeWI2Mf7BpZ6cJulAI7yA",
-          "serverName": "telegram-id.jokerv2ray.store",
-          "shortId": "7dd63855",
+          "publicKey": "lFJ8DyfaxMhMrSiy8MR0TNNlLbV3smWRDsC_ogsvpEM",
+          "serverName": "greenpepper.ir",
+          "shortId": "07f57087",
           "show": false,
-          "spiderX": "/@ELiV2ray"
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

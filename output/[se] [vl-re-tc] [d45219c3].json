@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.46.240.115",
-            "port": 443,
+            "address": "16.16.75.165",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "ab97e6ee-3e00-4612-bb63-83cf5e354383",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@TLS_v2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "GTVnubp-q8gRkQt8FynkMWNgyP-PAOEZgCFtCLfGYxI",
-          "serverName": "greenpepper.ir",
-          "shortId": "d60895c1",
+          "fingerprint": "chrome",
+          "publicKey": "xHI_5KKsdF2BvqJXcmMNjNz_qcg8Gv1pSd7e0aAyNhE",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

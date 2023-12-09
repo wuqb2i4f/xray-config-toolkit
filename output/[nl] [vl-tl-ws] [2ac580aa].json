@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.46.240.115",
-            "port": 443,
+            "address": "173.245.59.226",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ab97e6ee-3e00-4612-bb63-83cf5e354383",
+                "id": "3a0b2a38-a674-46cc-a85e-d8492e55adc5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@TLS_v2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dailyconfigs.darkmood.cfd"
+          },
+          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "GTVnubp-q8gRkQt8FynkMWNgyP-PAOEZgCFtCLfGYxI",
-          "serverName": "greenpepper.ir",
-          "shortId": "d60895c1",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "dailyconfiGs.darkmood.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

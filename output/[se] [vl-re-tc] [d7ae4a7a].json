@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "hmrah.zedmodeon.lat",
-            "port": 443,
+            "address": "13.48.132.43",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2131d0f4-7518-4619-a807-8d9a9e8cc6a8",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ZEDMODEON"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "yoyoyo.zedmodeon.lat",
-          "show": false
+          "publicKey": "ntXskM_uHHTYqGyqcC-KajH0shNtyRRKt6KNd1k2pnw",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

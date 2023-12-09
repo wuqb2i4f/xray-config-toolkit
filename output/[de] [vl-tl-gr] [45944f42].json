@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.46.240.115",
-            "port": 443,
+            "address": "all.tlgram-polproxy.space",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ab97e6ee-3e00-4612-bb63-83cf5e354383",
+                "id": "152fb59d-cc68-4b05-9c74-1703fdc90cb3",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@TLS_v2ray"
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "GTVnubp-q8gRkQt8FynkMWNgyP-PAOEZgCFtCLfGYxI",
-          "serverName": "greenpepper.ir",
-          "shortId": "d60895c1",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "chrome",
+          "serverName": "Sni.Tlgram-Polproxy.space",
+          "show": false
         }
       },
       "tag": "proxy"

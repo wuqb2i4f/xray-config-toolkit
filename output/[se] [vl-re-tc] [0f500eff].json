@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "94.131.14.177",
-            "port": 80,
+            "address": "16.16.138.13",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "2c5fee13-f08b-4ba8-86db-27dd51cb9781",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lt2-vmess.sshmax.xyz"
-          },
-          "path": "/vmess"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "i39B01Q91N0W1b9h49fiR49v6IpXZjWr2eNxqIrfOzc",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

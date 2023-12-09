@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.72.194",
-            "port": 443,
+            "address": "cltechip-mci.argha-v2pedia.monster",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2fb17e69-5b6f-49d4-991f-8bf26c001eb3",
+                "flow": "",
+                "id": "ee797f86-e248-40be-b8fc-200b977f4bfb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "IOJu9lxe2-fXVJ9z0-v2_5puh1NFagIr_nFHsBQty0w",
-          "serverName": "ftp.debian.org",
-          "shortId": "e241272d",
-          "show": false,
-          "spiderX": ""
+          "serverName": "footlo.argha-v2pedia.monster",
+          "show": false
         }
       },
       "tag": "proxy"

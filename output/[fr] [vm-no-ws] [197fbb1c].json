@@ -45,38 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.65.133",
-            "port": 2087,
+            "address": "fx2.iranray.online",
+            "port": 8880,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "67736622-d2b2-49fa-84eb-6259d61b0223",
+                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "IP_CF"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr7.v2-teh.fun"
+          },
+          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "kyyugkuyuygutf.mic-mokhaderat-shatel-irancel-digikala.shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
