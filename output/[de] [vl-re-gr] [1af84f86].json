@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.238.190.156",
-            "port": 443,
+            "address": "dovomi.nufilter.store",
+            "port": 34727,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b2fbaeb0-e27b-4434-a8e3-9c5ad41885e6",
+                "flow": "",
+                "id": "4fac19d8-599f-4dbb-d919-5a0e21895027",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "EEdYwWnUDb8mHEydop69C-oUacORf-aA5JFrRhIW8CI",
-          "serverName": "www.wikimedia.org",
-          "shortId": "15d928cc4f9042",
+          "fingerprint": "firefox",
+          "publicKey": "eyypMYPc0DLzywAD5bRTjj7k4ycSZT7X3GMBDfQefyU",
+          "serverName": "kukala.ir",
+          "shortId": "f3e1",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

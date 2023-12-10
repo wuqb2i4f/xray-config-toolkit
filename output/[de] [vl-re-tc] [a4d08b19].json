@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.125.171.13",
-            "port": 8443,
+            "address": "yellowcow.uk",
+            "port": 36508,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+                "flow": "xtls-rprx-vision",
+                "id": "4904e98f-3775-4849-9971-85af74f31d3d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "g2com"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "partner.g2.com",
-          "shortId": "",
+          "fingerprint": "firefox",
+          "publicKey": "dJfY4gvkndU4GEjNg5Sih4WkVKlW4ER_rqWLWZi-Cw0",
+          "serverName": "discord.com",
+          "shortId": "418195b7",
           "show": false,
           "spiderX": ""
         }

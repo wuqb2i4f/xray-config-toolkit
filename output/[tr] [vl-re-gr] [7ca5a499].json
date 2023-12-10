@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "46.29.166.237",
-            "port": 47555,
+            "address": "83.217.9.129",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "0c49cd19-2758-4d38-e6a8-11f2d6635860",
+                "id": "f709c090-e26f-451a-9e38-d263c408142d",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,13 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "JDhF4NrXRQyxA7jXWwarLtQtiKGK8hHEfyYqFK7BHmU",
+          "serverName": "pantercon.net",
+          "shortId": "716e7677",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },
