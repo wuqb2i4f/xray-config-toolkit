@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
-            "port": 2083,
+            "address": "94.131.14.177",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "546c61f0-1eb6-410e-85ad-8b03581f5950",
+                "id": "2c5fee13-f08b-4ba8-86db-27dd51cb9781",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "dailyconfigs.darkmood.cfd"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "lt2-vmess.sshmax.xyz"
+          },
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "dailyconfigs.DarkMood.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

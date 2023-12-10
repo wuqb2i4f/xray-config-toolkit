@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
-            "port": 2083,
+            "address": "::ffff:5.75.204.51",
+            "port": 34782,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "546c61f0-1eb6-410e-85ad-8b03581f5950",
+                "id": "40abc17b-b527-4163-9bc5-30615b0592a0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "dailyconfigs.darkmood.cfd"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "dailyconfigs.DarkMood.cfd",
-          "show": false
+          "publicKey": "IbSV9OnRyp0C7t5HuUpapZ6Z3HEVd0m7P8D5Wb4olBM",
+          "serverName": "kodular.io",
+          "shortId": "22e9d71e",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

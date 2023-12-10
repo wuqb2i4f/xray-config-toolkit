@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
-            "port": 2083,
+            "address": "::ffff:159.69.31.165",
+            "port": 20484,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "546c61f0-1eb6-410e-85ad-8b03581f5950",
+                "id": "11710a27-cc86-45c1-90b0-6f05b69565a9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "dailyconfigs.darkmood.cfd"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "dailyconfigs.DarkMood.cfd",
-          "show": false
+          "publicKey": "2R-nVvvE949B16TFWmNm5UBKH6BOfhlCrqIz4JrU-kc",
+          "serverName": "canva.com",
+          "shortId": "9b7f7cdc",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

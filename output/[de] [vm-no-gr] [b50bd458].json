@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
-            "port": 2083,
+            "address": "forward2.maryam1500.top",
+            "port": 8443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "546c61f0-1eb6-410e-85ad-8b03581f5950",
+                "id": "53bd9284-d100-4ee0-92b8-33b8f1381de4",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,16 +68,9 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "dailyconfigs.darkmood.cfd"
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "dailyconfigs.DarkMood.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

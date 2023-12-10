@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
-            "port": 2083,
+            "address": "104.238.190.156",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "546c61f0-1eb6-410e-85ad-8b03581f5950",
+                "flow": "xtls-rprx-vision",
+                "id": "b2fbaeb0-e27b-4434-a8e3-9c5ad41885e6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "dailyconfigs.darkmood.cfd"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "dailyconfigs.DarkMood.cfd",
-          "show": false
+          "publicKey": "EEdYwWnUDb8mHEydop69C-oUacORf-aA5JFrRhIW8CI",
+          "serverName": "www.wikimedia.org",
+          "shortId": "15d928cc4f9042",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

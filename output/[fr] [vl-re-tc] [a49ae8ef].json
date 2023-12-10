@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
-            "port": 2083,
+            "address": "185.231.205.43",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "546c61f0-1eb6-410e-85ad-8b03581f5950",
+                "flow": "xtls-rprx-vision",
+                "id": "d39e7f86-4fa1-4f80-b9e1-0e7178d3ae4c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "dailyconfigs.darkmood.cfd"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "dailyconfigs.DarkMood.cfd",
-          "show": false
+          "fingerprint": "ios",
+          "publicKey": "bipoTqiHv7UfPnGOItOQ5_fyEQk4-asjTDvImoDUpRk",
+          "serverName": "foxrayiranchannel.com",
+          "shortId": "95d2",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
