@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.antiv2ray.sbs",
-            "port": 8443,
+            "address": "159.69.43.123",
+            "port": 49193,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1148adab-1d41-4376-d30f-f036813b66c4",
+                "id": "a21c127a-054b-463d-ab1a-9b9524290520",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "fn.AnV2ray.site",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "b3ybIyfay5HKxmq3LpI3TZXH9kcaxhUSTezc-Qz4AE4",
+          "serverName": "www.speedtest.net",
+          "shortId": "73fa2a0d",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

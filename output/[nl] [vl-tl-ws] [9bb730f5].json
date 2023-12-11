@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "116.203.217.38",
-            "port": 18234,
+            "address": "104.21.12.150",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "---Telegram-Parsashonam---",
+                "id": "d5242f37-92f9-475d-9563-9113e564f3d7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl52.vlessx.us"
+          },
+          "path": "Made+by[CHANNEL+:+@Archive_Android]"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "KHfFYxpO_zPxD5tnHXL4syFgjcpzhBg_wegvsay1uFk",
-          "serverName": "www.speedtest.net",
-          "shortId": "ec35bffc",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "randomized",
+          "serverName": "nl52.vlessx.us",
+          "show": false
         }
       },
       "tag": "proxy"

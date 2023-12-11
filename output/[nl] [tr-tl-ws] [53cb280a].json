@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.21.69.44",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "f308fcb0-f47b-47eb-8b08-f88eb834bc66",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "cf.network383.online",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "ZjzcW3LXeJ",
+            "port": 2096
           }
         ]
       },
@@ -67,16 +63,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "de9.vlessx.xyz"
+            "Host": "amsb.carfin.tech"
           },
-          "path": "Telgram-@ip_cf"
+          "path": "/@apt_mahdi"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
-          "fingerprint": "randomized",
-          "serverName": "de9.vlessx.xyz",
+          "fingerprint": "chrome",
+          "serverName": "amsb.carfin.tech",
           "show": false
         }
       },
