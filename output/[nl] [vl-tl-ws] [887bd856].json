@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.47.123.139",
-            "port": 2096,
+            "address": "104.21.12.150",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ee696290-16e7-4222-9deb-0a38a7fc1594",
+                "id": "a2dadb95-3f15-4e1c-b517-0b54c336a5fd",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl57.vlessx.us"
+          },
+          "path": "Made+by[CHANNEL+:+@Archive_Android]"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "EE5RY4-glZzKje0wiXYOBYJNmeL-Hjx37YDvjEJXLjs",
-          "serverName": "sourceforge.net",
-          "shortId": "3db4f53f",
-          "show": false,
-          "spiderX": ""
+          "serverName": "nl57.Vlessx.us",
+          "show": false
         }
       },
       "tag": "proxy"

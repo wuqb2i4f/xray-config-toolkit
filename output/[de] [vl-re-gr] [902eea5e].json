@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "server.alwaysbeyonder.sbs",
-            "port": 8880,
+            "address": "116.203.217.38",
+            "port": 18234,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ffd25ae6-86d9-4926-a1e1-cb450c0933b1",
+                "id": "---Telegram-Parsashonam---",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "KHfFYxpO_zPxD5tnHXL4syFgjcpzhBg_wegvsay1uFk",
+          "serverName": "www.speedtest.net",
+          "shortId": "ec35bffc",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.75.169.142",
-            "port": 25365,
+            "address": "13.48.132.43",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9bb639b3-aaba-40fd-875f-85623357c9e1",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "GTfLU5cswXXDh7mKJvslO2hbp22mlluOHRD1HVryqnU",
-          "serverName": "www.discord.com",
-          "shortId": "9f2316e8",
+          "fingerprint": "chrome",
+          "publicKey": "ntXskM_uHHTYqGyqcC-KajH0shNtyRRKt6KNd1k2pnw",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
           "show": false,
           "spiderX": ""
         }

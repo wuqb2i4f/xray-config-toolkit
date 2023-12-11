@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "195.201.32.108",
-            "port": 8081,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "9d866259-794d-42bc-a658-d55a6d3a98ae",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.50.152.186",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "ACTxP6V5rI1TWFO720IJu5Y2GN49St1rQ3dqxrhAAEk",
-          "serverName": "microsoft.com",
-          "shortId": "e7b8",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

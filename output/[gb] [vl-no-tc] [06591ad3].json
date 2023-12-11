@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "bia2.zedmodeon.lat",
-            "port": 443,
+            "address": "64.176.191.44",
+            "port": 36975,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c07bc702-6787-4c93-8e28-9bb90ccf81a4",
+                "id": "ac670d50-3a45-4b86-9955-7a24bf61e412",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,28 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ZEDMODEON"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["discord.gg"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "",
-          "serverName": "bia2.zedmodeon.lat",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

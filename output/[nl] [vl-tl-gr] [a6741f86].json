@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.49.158.83",
-            "port": 8443,
+            "address": "173.245.59.145",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "59fad477-e56b-47ac-b31e-fee6e31131a0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "dailyconfigs.darkmood.cfd"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "oLcmlSGMbtpxYBN-BJ1rZnWOOstKf_eMEyGlRF7BhF0",
-          "serverName": "www.makers.com",
-          "shortId": "3c",
-          "show": false,
-          "spiderX": ""
+          "serverName": "dailyconfigs.DarkMood.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

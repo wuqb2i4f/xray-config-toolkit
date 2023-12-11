@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.200.134",
-            "port": 2087,
+            "address": "104.21.69.44",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ef3c0e94-f92d-4558-92d2-31f7d02c3a50",
+                "id": "f308fcb0-f47b-47eb-8b08-f88eb834bc66",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de9.vlessx.xyz"
+          },
+          "path": "Telgram-@ip_cf"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "GicA8fPbS9LksttApqa8gzOstomRFncKNoYGLCOqQF8",
-          "serverName": "dash.cloudflare.com",
-          "shortId": "fc805835",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "randomized",
+          "serverName": "de9.vlessx.xyz",
+          "show": false
         }
       },
       "tag": "proxy"

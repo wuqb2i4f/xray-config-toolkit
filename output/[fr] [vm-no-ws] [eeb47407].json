@@ -49,27 +49,28 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.75.162.199",
-            "port": 61570,
+            "address": "fx.iranray.online",
+            "port": 2095,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "e6aab1e0-ede0-47c3-b01c-f34a498db838",
+                "id": "617c9bc4-4116-41c6-99e0-ace49a38fcdb",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr4.v2-teh.fun"
+          },
+          "path": "/Jnv8ViZOUVgijjOh0p5uGjHnXIiY"
         },
         "security": "none"
       },
