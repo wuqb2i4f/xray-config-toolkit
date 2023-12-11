@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 22,
+            "address": "join.v2raytz.sbs",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ba7570cd-b6a6-4205-8664-81a669146415",
+                "id": "1ce90b6e-155c-45ae-90da-54894b540c0f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@global_net_vpn"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "lx9xre8OM847pyZA72Xk-u5VMLjrgZW8TrIHNT--YSM",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "68683636",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "global.globalnetvpn.site",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "16.16.138.13",
-            "port": 8443,
+            "address": "51.75.162.199",
+            "port": 61570,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "e6aab1e0-ede0-47c3-b01c-f34a498db838",
                 "level": 8,
                 "security": "auto"
               }
@@ -70,16 +71,7 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "i39B01Q91N0W1b9h49fiR49v6IpXZjWr2eNxqIrfOzc",
-          "serverName": "www.makers.com",
-          "shortId": "3c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

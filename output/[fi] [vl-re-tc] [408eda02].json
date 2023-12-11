@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.64.199.79",
-            "port": 2053,
+            "address": "65.21.144.212",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a6051151-0239-4d60-f60c-5b92fbc90f02",
+                "flow": "xtls-rprx-vision",
+                "id": "96057133-9ede-4928-a7e2-f6c456831ceb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "-VRZmnWBoMG-v3la_SZ2V6OAuPzIUBzk7zlyVw0fKSQ",
-          "serverName": "greenpepper.ir",
-          "shortId": "750abe",
+          "fingerprint": "firefox",
+          "publicKey": "xC01x8oOgvACbM1XN7wlz9JbgjJRofEoHUV7poLJrX8",
+          "serverName": "yahoo.com",
+          "shortId": "29bc7efd",
           "show": false,
           "spiderX": ""
         }

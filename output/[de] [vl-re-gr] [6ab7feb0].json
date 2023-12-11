@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "103.35.190.65",
-            "port": 443,
+            "address": "91.107.200.134",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "ed531ebe-4971-47f9-a881-636d0b101a45",
+                "id": "ef3c0e94-f92d-4558-92d2-31f7d02c3a50",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "GicA8fPbS9LksttApqa8gzOstomRFncKNoYGLCOqQF8",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "fc805835",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

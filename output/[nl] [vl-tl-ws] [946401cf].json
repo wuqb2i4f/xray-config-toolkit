@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 2053,
+            "address": "ip2.nofiltering2.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "802f5c94-6042-490e-a182-21af20f9ef48",
+                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "lmn37.sbs"
+          },
+          "path": "/fflsws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "lx9xre8OM847pyZA72Xk-u5VMLjrgZW8TrIHNT--YSM",
-          "serverName": "magicbus.ca",
-          "shortId": "68683636",
-          "show": false,
-          "spiderX": "/doggo"
+          "serverName": "lmn37.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
