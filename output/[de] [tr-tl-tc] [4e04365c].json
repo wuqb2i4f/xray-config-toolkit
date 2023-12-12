@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "83.217.9.129",
-            "port": 22,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "2d8ee319-8e6c-47ff-8219-591a9721bfe2",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.125.235.60",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Svjrd1eGn1EP4EFITutEhi4yWbHQMar8SMqNc1YiaTI",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "36346134",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

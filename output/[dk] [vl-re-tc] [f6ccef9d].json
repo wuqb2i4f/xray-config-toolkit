@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.12.150",
-            "port": 443,
+            "address": "46.29.235.21",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d5242f37-92f9-475d-9563-9113e564f3d7",
+                "id": "e7fc8d39-7a2e-4031-af78-39213f7d45c3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nl52.vlessx.us"
-          },
-          "path": "Made+by[CHANNEL+:+@Archive_Android]"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "randomized",
-          "serverName": "nl52.vlessx.us",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "discordapp.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

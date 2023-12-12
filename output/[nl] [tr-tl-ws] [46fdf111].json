@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "83.217.9.129",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "f29c0ddf-3de2-4d06-9859-354446e494d0",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "172.67.221.114",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "ZjzcW3LXeJ",
+            "port": 2096
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "amsb.carfin.tech"
+          },
+          "path": "/@apt_mahdi"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "Svjrd1eGn1EP4EFITutEhi4yWbHQMar8SMqNc1YiaTI",
-          "serverName": "pantercon.net",
-          "shortId": "36346134",
-          "show": false,
-          "spiderX": "/doggo"
+          "serverName": "amsb.carfin.tech",
+          "show": false
         }
       },
       "tag": "proxy"

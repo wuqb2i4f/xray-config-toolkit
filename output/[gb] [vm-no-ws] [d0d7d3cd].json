@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "84.32.230.160",
-            "port": 443,
+            "address": "103.179.143.40",
+            "port": 58108,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "9175264d-11b6-431f-86a7-69adf9fa24f2",
+                "id": "372015b8-1cb7-4131-e8f9-6155209d19ba",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "T0wremSR3w3SOIHUGuPda"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "cY7T3CiF0ysvFgyTXliMsXSTBM0Icd_VOhuDkxM9nFY",
-          "serverName": "ftp.debian.org",
-          "shortId": "75e19bf5087c4f0c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

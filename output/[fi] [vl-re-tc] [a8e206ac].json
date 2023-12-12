@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "digitalocean.com",
-            "port": 2053,
+            "address": "95.217.240.156",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "754ac3c1-e660-4f7f-bf05-76a7c15556ed",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "896efe15-7363-4d6c-97aa-cb0bb5499228",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zUla.eSMaIlkOrEa.sHOp"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "zUla.eSMaIlkOrEa.sHOp",
-          "show": false
+          "publicKey": "gB2mHBv8PQXA0HSxOlOcB91nq5luio58GPdkjAgmk2M",
+          "serverName": "www.speedtest.net",
+          "shortId": "10ff054b",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

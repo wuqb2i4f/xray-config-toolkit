@@ -45,40 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ophelia.mom",
+            "address": "128.140.26.147",
             "port": 443,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
-                "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "896efe15-7363-4d6c-97aa-cb0bb5499228",
                 "level": 8,
-                "security": "aes-128-gcm"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ophelia.mom"
-          },
-          "path": "linkvws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "ophelia.mom",
-          "show": false
+          "publicKey": "gB2mHBv8PQXA0HSxOlOcB91nq5luio58GPdkjAgmk2M",
+          "serverName": "www.speedtest.net",
+          "shortId": "10ff054b",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
