@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fi2.iranbax.cfd",
+            "address": "16.16.233.19",
             "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "41a7bbee-fc27-48ec-ce69-cf4214e9b93b",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TelegramID:@iranbaxvpn"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
-          "serverName": "greenpepper.ir",
-          "shortId": "9825",
+          "publicKey": "GRCxsTrscQDh9hY5rXtwbX62T62tKK7n9UnmhsplN1c",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

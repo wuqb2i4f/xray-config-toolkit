@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "81.19.137.214",
-            "port": 18717,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "7451eb8a-9f02-412d-812a-eae123f225c7",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.248.16.96",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Boobies"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "y6MeJ8DkPH55XwH3LXA72wiG6c6dt2zZmmZ6Qrk232o",
-          "serverName": "www.bahmanbroker.com",
-          "shortId": "5dc6f469",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

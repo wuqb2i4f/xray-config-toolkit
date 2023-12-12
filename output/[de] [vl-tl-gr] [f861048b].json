@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip2.nofiltering2.sbs",
-            "port": 443,
+            "address": "join.v2raytz.sbs",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
+                "id": "1fac0e66-13a0-443f-fd7a-8c0b027e4632",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lmn37.sbs"
-          },
-          "path": "/fflsws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "lmn37.sbs",
+          "fingerprint": "",
+          "serverName": "de.MsV2ray.sbs",
           "show": false
         }
       },
