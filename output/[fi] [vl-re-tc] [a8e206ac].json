@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.217.7.210",
+            "address": "95.217.240.156",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "a0562dec-26ac-43d4-ba1d-785c334e644f",
+                "flow": "xtls-rprx-vision",
+                "id": "896efe15-7363-4d6c-97aa-cb0bb5499228",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "2UMM-SRXeIpGQDpJeH9-4jK-y5Sot0xhKbcGqg3EgkU",
-          "serverName": "apecs.com",
-          "shortId": "fada4f5f",
+          "fingerprint": "chrome",
+          "publicKey": "gB2mHBv8PQXA0HSxOlOcB91nq5luio58GPdkjAgmk2M",
+          "serverName": "www.speedtest.net",
+          "shortId": "10ff054b",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

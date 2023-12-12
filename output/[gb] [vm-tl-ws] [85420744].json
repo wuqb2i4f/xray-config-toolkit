@@ -45,39 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "95.217.7.210",
+            "address": "ophelia.mom",
             "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 1,
+                "encryption": "",
                 "flow": "",
-                "id": "a0562dec-26ac-43d4-ba1d-785c334e644f",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
-                "security": "auto"
+                "security": "aes-128-gcm"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ophelia.mom"
+          },
+          "path": "linkvws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "2UMM-SRXeIpGQDpJeH9-4jK-y5Sot0xhKbcGqg3EgkU",
-          "serverName": "apecs.com",
-          "shortId": "fada4f5f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ophelia.mom",
+          "show": false
         }
       },
       "tag": "proxy"

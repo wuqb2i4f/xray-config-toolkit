@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.217.7.210",
-            "port": 443,
+            "address": "104.21.12.150",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a0562dec-26ac-43d4-ba1d-785c334e644f",
+                "id": "d5242f37-92f9-475d-9563-9113e564f3d7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl52.vlessx.us"
+          },
+          "path": "Made+by[CHANNEL+:+@Archive_Android]"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "2UMM-SRXeIpGQDpJeH9-4jK-y5Sot0xhKbcGqg3EgkU",
-          "serverName": "apecs.com",
-          "shortId": "fada4f5f",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.217.7.210",
-            "port": 443,
+            "address": "channell.zedmodeon.lat",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a0562dec-26ac-43d4-ba1d-785c334e644f",
+                "id": "bb19f8dd-455b-48e8-9b45-e642d097b913",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ipV2Ray"
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "2UMM-SRXeIpGQDpJeH9-4jK-y5Sot0xhKbcGqg3EgkU",
-          "serverName": "apecs.com",
-          "shortId": "fada4f5f",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "bia1.zedmodeon.lat",
+          "show": false
         }
       },
       "tag": "proxy"
