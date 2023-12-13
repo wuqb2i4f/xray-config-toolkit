@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.32",
-            "port": 443,
+            "address": "157.230.28.129",
+            "port": 14542,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "0dd1347e-e342-456c-b802-779b859cca42",
+                "id": "9997530c-7841-4746-ac88-935039f0a3ac",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "oniyx.tech"
+            "Host": "v2.vipstore.cfd"
           },
-          "path": "/mhdshws"
+          "path": "/?ed=2048"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "oniyx.tech",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

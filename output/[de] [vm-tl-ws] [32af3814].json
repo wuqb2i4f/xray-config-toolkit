@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "49.13.53.137",
-            "port": 443,
+            "address": "digitalocean.com",
+            "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "7bae8768-b725-4190-9cd4-2eedd5f63bfa",
+                "id": "754ac3c1-e660-4f7f-bf05-76a7c15556ed",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zUla.eSMaIlkOrEa.sHOp"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "USZppFNoeIzC7nymX7d4ogUWSXE78hj-dImsezuq0Bk",
-          "serverName": "greenpepper.ir",
-          "shortId": "f5361167",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "zUla.eSMaIlkOrEa.sHOp",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cf.fsub.uno",
-            "port": 2083,
+            "address": "ip2.nofiltering2.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "08149f12-2315-4a08-b6ba-78bb8e2f7306",
+                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "endoflife"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "lmn37.sbs"
+          },
+          "path": "/fflsws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "cdn.fsub.uno",
+          "serverName": "lmn37.sbs",
           "show": false
         }
       },

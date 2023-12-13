@@ -45,35 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "cf.network383.online",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "ZjzcW3LXeJ",
-            "port": 2096
+            "address": "::ffff:5.75.204.51",
+            "port": 34782,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "40abc17b-b527-4163-9bc5-30615b0592a0",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ams-trojan-ws.carfin.tech"
-          },
-          "path": "/@apt_mahdi"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "ams-trojan-ws.carfin.tech",
-          "show": false
+          "publicKey": "IbSV9OnRyp0C7t5HuUpapZ6Z3HEVd0m7P8D5Wb4olBM",
+          "serverName": "kodular.io",
+          "shortId": "22e9d71e",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

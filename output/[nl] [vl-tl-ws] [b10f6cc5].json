@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.47.106.136",
-            "port": 8443,
+            "address": "ip.nofiltering2.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b76564b3-ebfa-4b64-ad90-81eba775f639",
+                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "lmn37.sbs"
+          },
+          "path": "/fflsws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "RgJRVd_kytq-QpQ8eTAo0djaOArTCERcvShwXVoo1i4",
-          "serverName": "cdn.discordapp.com",
-          "shortId": "5a06e34d",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "lmn37.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
