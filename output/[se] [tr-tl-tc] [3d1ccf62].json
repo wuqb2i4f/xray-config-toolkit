@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "173.245.59.101",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "206cbf43-c050-4be1-87d0-b0db774a244e",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "51.20.99.131",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "FreeIran.DarkMood.cfd"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "FreeIran.DarkMood.cfd",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

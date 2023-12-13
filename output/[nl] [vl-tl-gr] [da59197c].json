@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "vmessorg.join.bede.mokhin.me",
-            "port": 8443,
+            "address": "ip2.nofiltering2.sbs",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7f364ff8-ed12-44d1-b083-0265a45190bc",
+                "id": "59fad477-e56b-47ac-b31e-fee6e31131a0",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@VmessOrg"
+          "serviceName": "dailyconfigs.darkmood.cfd"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "9U3GO-mx3W6XsFh1pdQQ8T98Fy8n3TcGcKZINWVy23w",
-          "serverName": "ftp.debian.org",
-          "shortId": "5c4b8ba1",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "dailyconfigs.DarkMood.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

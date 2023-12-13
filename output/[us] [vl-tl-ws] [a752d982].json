@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.64.199.79",
-            "port": 443,
+            "address": "sh1001.s25id.buzz",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0af0090b-4223-4e21-84a6-46b192ff2a60",
+                "id": "706a9e3e-89a6-4ebe-baba-3f348aa635b1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Catvpns"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zoro.zerozoro.cfd"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "6JqJJ-wIZpy62AitE3hxzdv1DiosZ3UCPwaJQhuq4Qg",
-          "serverName": "trendyol.com",
-          "shortId": "de",
-          "show": false,
-          "spiderX": ""
+          "serverName": "zoro.zerozoro.cfd",
+          "show": false
         }
       },
       "tag": "proxy"
