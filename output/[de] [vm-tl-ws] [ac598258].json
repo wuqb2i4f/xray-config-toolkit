@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "128.140.123.35",
+            "address": "amini2.ddns.net",
             "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "3c1395ac-0f01-45ff-b7be-fd3021914577",
+                "id": "5cd723e8-6f2b-45fc-bb07-07af31a106eb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +65,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@CatVpns"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "paNeL168.MOoKoMeilz.homes"
+          },
+          "path": "/wlwowo"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "nw5p42lKknkOxt2REHCHPwThSaNIqbwGrz5WNCfh9U4",
-          "serverName": "greenpepper.ir",
-          "shortId": "df91",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "dpsskG.MOoKoMeilZ.homes",
+          "show": false
         }
       },
       "tag": "proxy"

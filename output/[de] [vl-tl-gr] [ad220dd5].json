@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sjoin.outline-vpn.cloud",
-            "port": 443,
+            "address": "discord.gg",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
+                "flow": "",
+                "id": "82e578b7-839c-4887-9a0e-3c2823443e61",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
-          "serverName": "microsoft.com",
-          "shortId": "2d123271",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "bashe.seyyedmt.shop",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "alpha.novinsystem.online",
-            "port": 443,
+            "address": "45.91.169.229",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "f3fbc92d-ca67-4b77-bb8e-58d4f7970f20",
+                "flow": "xtls-rprx-vision",
+                "id": "4f3da57b-66b0-4745-a98d-a1de5c07fac0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "alpha.novinsystem.online"
-          },
-          "path": "/n1"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "alpha.novinsystem.online",
-          "show": false
+          "publicKey": "grdKosNih3AG5ChgVxaUDJWeOWtFToqs98b_pChfOEc",
+          "serverName": "www.dioptima.nl",
+          "shortId": "c58c0a6421dc87ae",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
