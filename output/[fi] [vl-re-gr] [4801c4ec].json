@@ -45,17 +45,21 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "cf.network383.online",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "8Ka1hu4r3g",
-            "port": 8443
+            "address": "65.108.244.106",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "a0562dec-26ac-43d4-ba1d-785c334e644f",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
@@ -63,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@apt_mahdi"
+          "serviceName": "@ipV2Ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "ams-trojan-grpc.carfin.tech",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "eteX_P_Ul3G3dZ7OO33NrZQdd4E1Z8WB_HDHjN-AAmY",
+          "serverName": "greenpepper.ir",
+          "shortId": "fada4f5f",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cf.network383.online",
-            "port": 443,
+            "address": "free2.1alphaomega.org",
+            "port": 8880,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "7d7fe4c4-7dfb-4435-9dbc-52dedbf5b48d",
+                "id": "AlphaVPN",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ams-vless-ws.carfin.tech"
+            "Host": "free.1alphaomega.org"
           },
-          "path": "/@apt_mahdi"
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "ams-vless-ws.carfin.tech",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

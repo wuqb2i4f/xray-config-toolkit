@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "digitalocean.com",
-            "port": 2053,
+            "address": "173.245.59.101",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "754ac3c1-e660-4f7f-bf05-76a7c15556ed",
+                "id": "5961ec7a-6dfb-4936-a0bd-19765de63ff9",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,16 +67,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "zUla.eSMaIlkOrEa.sHOp"
+            "Host": "myistanbul.cloud"
           },
           "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "zUla.eSMaIlkOrEa.sHOp",
+          "serverName": "myistanbul.cloud",
           "show": false
         }
       },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "1yaran11yara11yara111yaram11yara11.store",
-            "port": 2087,
+            "address": "104.21.235.75",
+            "port": 8080,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "db5afae4-ac23-41a6-8378-f307a9a47436",
+                "id": "b55aa818-8be0-4fe5-9da6-41a2624cc88a",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl43.vlessx.us"
+          },
+          "path": "Telegram+:+@https_config_injector"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "51619232.amomehti2024.xyz",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
