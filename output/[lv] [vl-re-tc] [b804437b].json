@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.101",
+            "address": "sjoin.outline-vpn.cloud",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "5961ec7a-6dfb-4936-a0bd-19765de63ff9",
+                "flow": "xtls-rprx-vision",
+                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "myistanbul.cloud"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "myistanbul.cloud",
-          "show": false
+          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
+          "serverName": "microsoft.com",
+          "shortId": "2d123271",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

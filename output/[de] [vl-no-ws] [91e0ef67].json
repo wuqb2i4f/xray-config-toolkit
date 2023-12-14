@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 2052,
+            "address": "190.93.247.155",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "72ac84f6-f527-4c99-8ed7-c595d4426726",
+                "id": "bfad1a25-f5b5-41e6-98b3-438de77b524e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "hamrah.academiwollf.sbs"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "ABSQmKAkJ5UnXQTuYDhRoEyqUY4JVoi3BbggDbfulHg",
-          "serverName": "www.who.int",
-          "shortId": "73376c67",
-          "show": false,
-          "spiderX": "/doggo"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "dns3.nufilter.store",
-            "port": 2053,
+            "address": "172.67.172.214",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9b11a198-d26c-4586-aeab-0ad6c6b565cd",
+                "id": "23ac55ff-4092-46fe-8334-235d5452d324",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "QanBt4.MahDAviAT.Uk"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "yek.kanal-tel-nufilter.store",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
