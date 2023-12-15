@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "16.16.90.208",
-            "port": 8443,
+            "address": "forward4.maryam1500.top",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "38b47994-0cd4-4421-8c22-58610486587d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "Yn49IhQTL0168CopSMu4N65-1iV_UF3XJZU2TRvQoAA",
-          "serverName": "www.makers.com",
-          "shortId": "3c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

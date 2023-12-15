@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "45.138.183.78",
-            "port": 443,
+            "address": "129.146.247.135",
+            "port": 42598,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "3986600a-5786-46e3-9165-fa0c8798673d",
+                "id": "1773b226-0bdb-43c5-87d8-270d26211dda",
                 "level": 8,
                 "security": "auto"
               }
@@ -70,16 +71,7 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "jGnIGg7CTk-F1vIxyB4hJZET8xprxBqQPRz3ZnNH8lk",
-          "serverName": "google.com",
-          "shortId": "1f8cabd5",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

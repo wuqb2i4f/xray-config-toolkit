@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 22,
+            "address": "xn--3kqs65g.xn--10-pv2cvtb955crx5ecgcl73at36a.tech",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b1792d2f-faac-46af-9d91-6530986f247a",
+                "id": "3c05dc89-8b85-4094-9014-eddf7f5b52bc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "9TChSNA@W8S8GuTi0vQsQRqQ1BTURE4XPhryTuXZLmSJ76aXb7QidqtyyJ1gItqyP10CqXGjwx@IwrdT3g1Qbp6ddFhCwXiB7jQGafEu34wr7kD4xSsS41gaZKlX2ApheIwaql9gBhpPg8TaVYLNtpku1onesR@VqmmughgfuvDhP6A3YwQVU1rHDgPvzjFDVRfDDvXhS@R1jdlnpSJilqV0kwtteyko5zBZnk"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "pTtLmZwr61C75FZvJKwrse73WHykcnqDAyHB-p3QfQg",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "6c676366",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "xn--MGBgELdalguL2PBBIBGDHdbGFBb74k.QURaN313.CFd",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,35 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "172.67.221.114",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "ZjzcW3LXeJ",
-            "port": 2096
+            "address": "tr4.iranbax.cfd",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "c3024a15-0cd5-461a-d99c-14c64efea3f8",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "amsb.carfin.tech"
-          },
-          "path": "/@apt_mahdi"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "TelegramID:@iranbaxvpn"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "amsb.carfin.tech",
-          "show": false
+          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
+          "serverName": "greenpepper.ir",
+          "shortId": "9825",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
