@@ -45,39 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "helix-2.helixservers.space",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "be4d26e1-cb70-4fe2-94d6-8a584f1f1bb1",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "amini2.ddns.net",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "biwe49r2Tv",
+            "port": 2096
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pANeL159.moOkoMEilz.homes"
+          },
+          "path": "/mskqq"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "fdUiEyEbucq_DdC594rOJx_5l-Ev0GRgsNhYCHLr6n4",
-          "serverName": "makers.com",
-          "shortId": "70659eec",
-          "show": false,
-          "spiderX": "/partner-with-us//"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "Qoakq.mookomeilz.homes",
+          "show": false
         }
       },
       "tag": "proxy"

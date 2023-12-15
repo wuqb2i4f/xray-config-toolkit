@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 2058,
+            "address": "5.42.73.152",
+            "port": 2053,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "d9d81b2e-0d1e-472f-9a70-7d03294a9721",
+                "id": "3d4ed5eb-a284-4825-b926-f7b782c6941d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "84Vrc7hpmfwPPtB62xxQMAYQ75FwMwLZV4ZUIcWRzVU",
-          "serverName": "blogs.windows.com",
-          "shortId": "6d736e65",
-          "show": false,
-          "spiderX": "/doggo"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

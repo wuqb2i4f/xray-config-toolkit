@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "115.126.50.111",
-            "port": 16399,
+            "address": "20.218.133.29",
+            "port": 55059,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "0a824660-8b17-4665-d2b4-a86c7f15d32a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "eecc0859-67f6-43d3-c158-0ddaa7afd17f",
                 "level": 8,
                 "security": "auto"
               }
@@ -71,7 +70,16 @@
             "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "AetkU8K-xS0z4Vw-siXNNTePySpO6jTK7bDGinqXHSw",
+          "serverName": "discord.com",
+          "shortId": "b6",
+          "show": false,
+          "spiderX": "/@ELiV2ray-@ELiV2ray-@ELiV2ray-@ELiV2ray"
+        }
       },
       "tag": "proxy"
     },
