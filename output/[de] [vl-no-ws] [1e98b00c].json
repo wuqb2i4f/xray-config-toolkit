@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.91.169.229",
-            "port": 2083,
+            "address": "cdn.mamad.mohamad420.sbs",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "0d8558ab-6b66-4bb4-a905-a7e1c95fdea0",
+                "flow": "",
+                "id": "9449acef-936a-4e4a-87d5-c8146d05e88f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "panel-032fegv.libraryriazi.sbs"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "grdKosNih3AG5ChgVxaUDJWeOWtFToqs98b_pChfOEc",
-          "serverName": "www.dioptima.nl",
-          "shortId": "c58c0a6421dc87ae",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

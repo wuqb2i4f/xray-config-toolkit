@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "190.93.247.155",
-            "port": 2095,
+            "address": "1019-join.v2raytz.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "bfad1a25-f5b5-41e6-98b3-438de77b524e",
+                "id": "telegram-id-ArV2ray",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "hamrah.academiwollf.sbs"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "tWxp3qWxdlVZDY_qDMfXejil6vRu-H2Yj8-qimozgAk",
+          "serverName": "ftp.debian.org",
+          "shortId": "0bdfbef1",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.204.84",
-            "port": 2083,
+            "address": "45.138.183.78",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0850c3d6-2aba-49f3-de79-0589ef07cf9d",
+                "id": "3986600a-5786-46e3-9165-fa0c8798673d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "De.Melobigg.Site",
-          "show": false
+          "publicKey": "jGnIGg7CTk-F1vIxyB4hJZET8xprxBqQPRz3ZnNH8lk",
+          "serverName": "google.com",
+          "shortId": "1f8cabd5",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

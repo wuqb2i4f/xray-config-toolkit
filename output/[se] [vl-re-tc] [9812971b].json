@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2083,
+            "address": "13.50.252.1",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "6f79a212-d04c-43ac-d16d-f9bf0cb431ce",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "fl.ZoV2ray.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "F12GXaH9ZHZRiv9tcZkVAPZwdX5eeGlSudmXUV_7qTY",
+          "serverName": "www.makers.com",
+          "shortId": "3c",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
