@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "0000:0000:0000:0000:0000:ffff:a45a:c471",
+            "address": "190.93.246.241",
             "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "c6fde613-c821-492e-ae8b-9d00a3ca29d8",
+                "flow": "",
+                "id": "4730ee46-a9c1-464f-dd30-da9712d11041",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "oiw.glassmonitor.top",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "serverName": "mt.AntiV2ray.site",
+          "show": false
         }
       },
       "tag": "proxy"

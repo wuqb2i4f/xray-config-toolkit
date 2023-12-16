@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "170.114.45.24",
-            "port": 80,
+            "address": "16.171.53.150",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "440a5fc6-4d97-46d5-93f7-adf90996081e",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel4.unlimiteddev.shop"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "PqFV_xk0IqK1EWVarWeV2wsl1srTWpBW25m6coDvLS8",
+          "serverName": "www.mozorg.moz.works",
+          "shortId": "3c",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

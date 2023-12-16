@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip.nofiltering2.sbs",
-            "port": 443,
+            "address": "16.16.121.52",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lmn37.sbs"
-          },
-          "path": "/fflsws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "lmn37.sbs",
-          "show": false
+          "publicKey": "ly7H0COX5ZsWmZlqHxaNRA96jhky0U74pW_9CDkGS2g",
+          "serverName": "www.mozorg.moz.works",
+          "shortId": "3c",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
