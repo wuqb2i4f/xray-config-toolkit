@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.2.136",
-            "port": 80,
+            "address": "185.113.223.104",
+            "port": 21330,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "440a5fc6-4d97-46d5-93f7-adf90996081e",
+                "id": "0cf302df-ad44-44ae-938f-2bf0770e5f07",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel4.unlimiteddev.shop"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "j4cmNWv3qIRWa5c6oUe285FIjkVqWj7iLDc_RZfIDnE",
+          "serverName": "www.iranserver.com",
+          "shortId": "7ae9a3b8",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "20.218.133.29",
-            "port": 55059,
+            "address": "104.20.184.151",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "eecc0859-67f6-43d3-c158-0ddaa7afd17f",
+                "flow": "",
+                "id": "95671424-6668-49f7-9d88-1661c2ca0d1c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "AetkU8K-xS0z4Vw-siXNNTePySpO6jTK7bDGinqXHSw",
-          "serverName": "discord.com",
-          "shortId": "b6",
-          "show": false,
-          "spiderX": "/@ELiV2ray-@ELiV2ray-@ELiV2ray-@ELiV2ray"
+          "serverName": "FREE.vpngaming.shop",
+          "show": false
         }
       },
       "tag": "proxy"

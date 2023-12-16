@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "xn--3kqs65g.xn--10-pv2cvtb955crx5ecgcl73at36a.tech",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "3c05dc89-8b85-4094-9014-eddf7f5b52bc",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.47.132.83",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "9TChSNA@W8S8GuTi0vQsQRqQ1BTURE4XPhryTuXZLmSJ76aXb7QidqtyyJ1gItqyP10CqXGjwx@IwrdT3g1Qbp6ddFhCwXiB7jQGafEu34wr7kD4xSsS41gaZKlX2ApheIwaql9gBhpPg8TaVYLNtpku1onesR@VqmmughgfuvDhP6A3YwQVU1rHDgPvzjFDVRfDDvXhS@R1jdlnpSJilqV0kwtteyko5zBZnk"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "xn--MGBgELdalguL2PBBIBGDHdbGFBb74k.QURaN313.CFd",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

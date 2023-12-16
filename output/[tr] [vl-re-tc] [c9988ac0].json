@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.2.136",
-            "port": 80,
+            "address": "83.217.9.129",
+            "port": 22,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "440a5fc6-4d97-46d5-93f7-adf90996081e",
+                "id": "90707985-02f8-42f3-a18c-a6b69041a1a6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel4.unlimiteddev.shop"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "84Vrc7hpmfwPPtB62xxQMAYQ75FwMwLZV4ZUIcWRzVU",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "6d736e65",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },

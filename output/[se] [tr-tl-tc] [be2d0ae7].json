@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.20.156.248",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "12e296fb-dc24-4c4c-a43c-ecb1ed0a1b86",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "13.51.35.221",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@HpV2rayNG,Telegram:@HpV2rayNG,@HpV2rayNG,@HpV2rayNG,@HpV2rayNG,@HpV2ryaNG,@HpV2rayNG,@Telegram:@HpV2rayNG"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran,@mehrosaboran,@mehrosaboran"],
+          "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "hp.XsV2ray.cfd",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

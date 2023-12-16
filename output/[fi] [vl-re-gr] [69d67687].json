@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.2.136",
-            "port": 80,
+            "address": "static.120.29.181.135.clients.your-server.de",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "440a5fc6-4d97-46d5-93f7-adf90996081e",
+                "id": "8ca98c98-fb0b-4007-a6e8-c8294e546763",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to-channel4.unlimiteddev.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "6eenmFpWJ6RknrPH6qK9"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "EwDqXy7Y1vZTco-H12ftBu7xX0k0s0lvuSJ4MiQFnBo",
+          "serverName": "www.wix.com",
+          "shortId": "af",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

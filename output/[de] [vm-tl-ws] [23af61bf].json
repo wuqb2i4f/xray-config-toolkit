@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "173.245.58.41",
-            "port": 2096,
+            "address": "amini3.ddns.net",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "889ead0c-83a2-4f0a-a55e-ab0455649d3d",
+                "id": "8fada9c0-c348-4465-aade-ff0311454178",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pAnel159.moOkomeILz.homes"
+          },
+          "path": "/kqlqqv"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "arx.amsh.shop",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "uFGYa.mookomeilz.homes",
           "show": false
         }
       },
