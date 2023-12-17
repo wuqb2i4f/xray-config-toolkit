@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.171.53.150",
-            "port": 8443,
+            "address": "mtn.vpnprosec.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "SvnTeam",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "PqFV_xk0IqK1EWVarWeV2wsl1srTWpBW25m6coDvLS8",
-          "serverName": "www.mozorg.moz.works",
-          "shortId": "3c",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "Grm.Join-SvnTeam.Online",
+          "show": false
         }
       },
       "tag": "proxy"
