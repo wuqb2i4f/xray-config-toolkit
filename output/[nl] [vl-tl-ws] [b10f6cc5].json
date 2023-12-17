@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.161.140.0",
+            "address": "ip.nofiltering2.sbs",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "77daf7c5-d218-4efc-ab8b-5995b861283b",
+                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "lmn37.sbs"
+          },
+          "path": "/fflsws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "3q4iHmKEqWwjbmX2O0HizwYlI6KH4VXOw3tXODdOjhw",
-          "serverName": "sourceforge.net",
-          "shortId": "81bba4e6",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "lmn37.sbs",
+          "show": false
         }
       },
       "tag": "proxy"
