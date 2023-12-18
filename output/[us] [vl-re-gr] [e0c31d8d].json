@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip2.nofiltering2.sbs",
-            "port": 443,
+            "address": "37.59.166.156",
+            "port": 48576,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
+                "id": "d8253715-9664-4c3b-9ecd-e4805c8430f8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lmn37.sbs"
-          },
-          "path": "/fflsws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "lmn37.sbs",
-          "show": false
+          "publicKey": "i-TBCDM3b7W2NE5JavNy7XBTsQwIjYD7qG9VEVfnxjg",
+          "serverName": "ea.com",
+          "shortId": "b1b454f6",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
