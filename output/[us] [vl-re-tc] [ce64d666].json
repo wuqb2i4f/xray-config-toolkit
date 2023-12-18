@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.vpnprosec.com",
+            "address": "45.67.85.111",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "SvnTeam",
+                "flow": "xtls-rprx-vision",
+                "id": "join-channel-foxrayiran",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "Grm.Join-SvnTeam.Online",
-          "show": false
+          "fingerprint": "ios",
+          "publicKey": "oSBCQtFYo78mD4BFlVVx6J6ykyXUQRoiOtfLdDnkGzI",
+          "serverName": "ftp.debian.org",
+          "shortId": "289ce33d",
+          "show": false,
+          "spiderX": "/foxrayiran"
         }
       },
       "tag": "proxy"
