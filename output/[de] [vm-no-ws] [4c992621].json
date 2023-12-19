@@ -45,40 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "65.109.195.124",
-            "port": 443,
+            "address": "fx2.iranray.online",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "de41d050-140c-4511-8dbf-0911d2dd6ee9",
+                "id": "7300c5af-8657-48ea-ba35-4cc1176c5220",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "de55.v2-teh.fun"
+          },
+          "path": "/RO4vpgRqVSLPRRQi97uOJujdeO"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "xmfvn--IL9hSagkQbBHcj9SEn57GzsYVDDj2ghc3rBg",
-          "serverName": "www.makers.com",
-          "shortId": "637e551c",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
