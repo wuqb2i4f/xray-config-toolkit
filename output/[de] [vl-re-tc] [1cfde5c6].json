@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.184.66",
-            "port": 443,
+            "address": "::ffff:5.75.204.51",
+            "port": 34782,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "499e2986-4ff0-4a80-a698-64073d16f31d",
+                "id": "40abc17b-b527-4163-9bc5-30615b0592a0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "cmKa5W4GjeZjpu1EW-yK-4v0JaOdm1X_T6E7yM5mJAQ",
-          "serverName": "sourceforge.net",
-          "shortId": "9945b406",
+          "publicKey": "IbSV9OnRyp0C7t5HuUpapZ6Z3HEVd0m7P8D5Wb4olBM",
+          "serverName": "kodular.io",
+          "shortId": "22e9d71e",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

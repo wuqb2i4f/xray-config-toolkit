@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.184.66",
+            "address": "195.201.135.201",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "499e2986-4ff0-4a80-a698-64073d16f31d",
+                "id": "Tech_Tube_ORG",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,34 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": ["www.speedtest.net"],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/Tel:@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG"],
+              "version": "1.1"
+            }
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "cmKa5W4GjeZjpu1EW-yK-4v0JaOdm1X_T6E7yM5mJAQ",
-          "serverName": "sourceforge.net",
-          "shortId": "9945b406",
+          "publicKey": "o6AhBdPgfvpsSKVERqKZ3ZTFxz1VXPK7gFaiBwM0a2c",
+          "serverName": "www.pcmag.com",
+          "shortId": "890c0f81",
           "show": false,
           "spiderX": "/"
         }

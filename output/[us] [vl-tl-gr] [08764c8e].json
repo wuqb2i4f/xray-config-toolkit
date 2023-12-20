@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.184.66",
-            "port": 443,
+            "address": "172.67.81.238",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "499e2986-4ff0-4a80-a698-64073d16f31d",
+                "id": "fb3ab81c-d13c-4199-878b-5636d53cc344",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "cmKa5W4GjeZjpu1EW-yK-4v0JaOdm1X_T6E7yM5mJAQ",
-          "serverName": "sourceforge.net",
-          "shortId": "9945b406",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "mc.irdonald.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

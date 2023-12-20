@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.184.66",
+            "address": "sjoin.outline-vpn.cloud",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "499e2986-4ff0-4a80-a698-64073d16f31d",
+                "flow": "xtls-rprx-vision",
+                "id": "d0dd95b5-a063-4a67-c05c-265d08531e4c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "cmKa5W4GjeZjpu1EW-yK-4v0JaOdm1X_T6E7yM5mJAQ",
-          "serverName": "sourceforge.net",
-          "shortId": "9945b406",
+          "publicKey": "x3azUw_JKB7nAKTWfCXaHf2XtKEpuH5XfLBhCTWieSE",
+          "serverName": "microsoft.com",
+          "shortId": "2d123271",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"

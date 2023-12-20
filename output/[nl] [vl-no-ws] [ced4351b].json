@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.184.66",
-            "port": 443,
+            "address": "tel.metaanet.monster",
+            "port": 43959,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "499e2986-4ff0-4a80-a698-64073d16f31d",
+                "id": "facb7af0-6711-4fc5-a42b-b1cddda6d849",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "taaghche.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "cmKa5W4GjeZjpu1EW-yK-4v0JaOdm1X_T6E7yM5mJAQ",
-          "serverName": "sourceforge.net",
-          "shortId": "9945b406",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
