@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip2.nofiltering2.sbs",
-            "port": 443,
+            "address": "95.216.222.116",
+            "port": 25365,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
+                "id": "3f62e7b9-001e-4979-920b-74c7660871dc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lmn37.sbs"
-          },
-          "path": "/fflsws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "lmn37.sbs",
-          "show": false
+          "publicKey": "St8DeepfZfbaRDS8__LTATyQIb6rPwlD-NzEw4kwn0k",
+          "serverName": "sourceforge.net",
+          "shortId": "cab5996a",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

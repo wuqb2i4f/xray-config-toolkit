@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "128.140.123.35",
-            "port": 2087,
+            "address": "channel5.zedmodeon.lat",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3c1395ac-0f01-45ff-b7be-fd3021914577",
+                "id": "9b403cf8-12b9-461b-be00-bb31dd46262a",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@CatVpns"
+          "serviceName": "@ZEDMODEONVPN"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "nw5p42lKknkOxt2REHCHPwThSaNIqbwGrz5WNCfh9U4",
-          "serverName": "greenpepper.ir",
-          "shortId": "df91",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "bia1.zedmodeon.lat",
+          "show": false
         }
       },
       "tag": "proxy"
