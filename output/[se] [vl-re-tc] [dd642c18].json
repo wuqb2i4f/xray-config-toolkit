@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "biadg.zedmodeon.lat",
-            "port": 2096,
+            "address": "16.16.120.22",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9fd41bd7-58a0-4e19-baff-a22ba6df881e",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TELEGRAM:@ZEDMODEON"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "rus.zedmodeon.lat",
-          "show": false
+          "publicKey": "2WR_AomeV_I8CWLaJrEo1YGxC-WFPjefNgjGf-gQ2lM",
+          "serverName": "www.mozorg.moz.works",
+          "shortId": "3c",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

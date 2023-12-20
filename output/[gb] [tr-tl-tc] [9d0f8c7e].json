@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "pubh2.ddns.net",
-            "port": 3074,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "ephemeral-echoes",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "18.134.222.179",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "h2",
-        "httpSettings": {
-            "host": ["x.amazonaws.com"],
-            "path": "/blog"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "46KO_FrwTcMNhzKsraWywJBL8wFp17B35bFpiw1UF1Q",
-          "serverName": "hercules-deployment.eu-west-1.amazonaws.com",
-          "shortId": "ada726ec488af7e0",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

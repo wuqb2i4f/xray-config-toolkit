@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.233.57.232",
-            "port": 443,
+            "address": "srv3.helixservers.space",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c7f2ac91-c9ce-46c6-98f3-7204178e4b7c",
+                "id": "7d55578b-3bb6-4aff-aabd-34f01200db6d",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers-Telegram-Channel:@HELIX_Servers"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "d35k8hJ0aMt0SQ7DPprVNf6nm_QKabQsbfVmpg819lE",
-          "serverName": "tunnel.svnreallity.online",
-          "shortId": "3fdec952",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "helix-3.mahoraga.space",
+          "show": false
         }
       },
       "tag": "proxy"

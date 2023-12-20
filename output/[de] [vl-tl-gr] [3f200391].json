@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.125.171.13",
+            "address": "bia2.icv2ray.top",
             "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+                "id": "26c2126a-7b9b-4806-febb-5dbeb037e218",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "g2com"
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "partner.g2.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "serverName": "AntiV2ray.godratmand.link",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "173.245.58.100",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "b964bcd7-f9d4-4f9f-ed4e-b4dd06ff0daa",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "cf.network383.online",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8Ka1hu4r3g",
+            "port": 8443
           }
         ]
       },
@@ -67,14 +63,14 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+          "serviceName": "@apt_mahdi"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "mt.AntiV2ray.site",
+          "serverName": "fracukayi0pixif.carfin.tech",
           "show": false
         }
       },

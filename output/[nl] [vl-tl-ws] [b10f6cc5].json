@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.172.214",
-            "port": 80,
+            "address": "ip.nofiltering2.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7f1ae6b4-e4b5-47da-9672-b9147bf01991",
+                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "i1nsat.tAhARAt.ApP"
+            "Host": "lmn37.sbs"
           },
-          "path": "/backup"
+          "path": "/fflsws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "lmn37.sbs",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
