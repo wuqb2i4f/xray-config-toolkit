@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.67.85.111",
-            "port": 443,
+            "address": "162.159.136.234",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "join-channel-foxrayiran",
+                "flow": "",
+                "id": "739a0de0-a8a4-4382-85ee-77c9ead1d0fb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "ios",
-          "publicKey": "oSBCQtFYo78mD4BFlVVx6J6ykyXUQRoiOtfLdDnkGzI",
-          "serverName": "ftp.debian.org",
-          "shortId": "289ce33d",
-          "show": false,
-          "spiderX": "/foxrayiran"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "ash.mcidonald.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

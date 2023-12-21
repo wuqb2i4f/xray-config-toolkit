@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "channel.zedmodeon.lat",
-            "port": 2053,
+            "address": "128.140.123.68",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "df3f0b0e-2295-4d9a-8f98-efcf05d02ba9",
+                "id": "79c2083e-08d1-4c47-9069-4737aea00efd",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ZEDMODEONVPN"
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "all.zedmodeon.lat",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "KuZOpuz0L4H-VNikILS8NP9oA6Ra9uTGEZLHH0FODFM",
+          "serverName": "dash.cloudflare.com",
+          "shortId": "83cdb009",
+          "show": false,
+          "spiderX": "/@ELiV2ray-@ELiV2ray-@ELiV2ray-@ELiV2ray"
         }
       },
       "tag": "proxy"

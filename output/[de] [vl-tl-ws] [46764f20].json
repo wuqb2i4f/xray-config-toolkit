@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "canva.com",
-            "port": 2053,
+            "address": "c1.shoplandtr.xyz",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b3452c84-d32e-4e8a-91f8-576a16c2af4d",
+                "id": "a27302aa-0f64-4d27-8153-63398c834984",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMTTelegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT-Telegram:@SeyyedMT"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "firefox",
-          "serverName": "pingpong.seyyedmt-gamer.tech",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "C1.shoplandtr.xyz",
           "show": false
         }
       },

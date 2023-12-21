@@ -49,29 +49,30 @@
       "settings": {
         "servers": [
           {
-            "address": "13.53.252.96",
+            "address": "104.20.128.75",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "password": "8f2a62a0-f6ae-40c9-bdfa-f2adfd6788fa",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdnhid.vpweb.cfd"
+          },
+          "path": "/v2qAAYBGDaSpqCvGVMHKx1"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "cdnhid.vpweb.cfd",
           "show": false
         }
       },

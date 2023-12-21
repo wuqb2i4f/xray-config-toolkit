@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "198.41.202.5",
-            "port": 2087,
+            "address": "83.217.9.129",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "41e44171-5c4c-430a-9a57-1785bcac463b",
+                "id": "f0f81432-fed5-4027-963c-83cda25a6872",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran"],
           "fingerprint": "chrome",
-          "serverName": "mk.AntiV2ray.space",
-          "show": false
+          "publicKey": "YX5wyReOgJyhuXCWzoYqRPq_UGEu9pCj4lfLWk0J8GI",
+          "serverName": "www.who.int",
+          "shortId": "68337931",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"

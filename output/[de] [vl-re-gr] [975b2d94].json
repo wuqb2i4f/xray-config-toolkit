@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "cf.network383.online",
-            "port": 2083,
+            "address": "159.69.108.202",
+            "port": 59823,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "055079b7-84cb-4619-8b46-f21e642232ef",
+                "id": "246e9a6c-9838-494a-a2db-847db5366183",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fracukayi0pixif.carfin.tech"
-          },
-          "path": "/@apt_mahdi"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "fracukayi0pixif.carfin.tech",
-          "show": false
+          "publicKey": "8weeh-rQ0CEtf_2ULUte4Q3tSj9uyIFA7NdUgbN6VA0",
+          "serverName": "greenpepper.ir",
+          "shortId": "9f7af9a1",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "223.165.6.75",
-            "port": 58922,
+            "address": "::ffff:67a0:cc8d",
+            "port": 8880,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "18d05f9f-a7e8-4603-da64-da15790611a3",
+                "id": "@V2Group7",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,11 +65,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "BhV2ray.PLUSULTRA.FUN"
+          },
+          "path": "/@v2group7?ed=2048"
         },
         "security": "none"
       },
