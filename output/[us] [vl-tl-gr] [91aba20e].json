@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "iranbaxvpn.mci.1vpn.cfd",
-            "port": 2053,
+            "address": "104.24.176.7",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "66350a41-8947-48b5-dc48-0f0682b4e23a",
+                "id": "fb3ab81c-d13c-4199-878b-5636d53cc344",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@iranbaxvpn-@iranbaxvpn-@iranbaxvpn-@iranbaxvpn"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "skowtu_zROaa0Y7h0Gss2-4mPXvEAngSPxQVukyWO1U",
-          "serverName": "iranbax.kodular.io",
-          "shortId": "9ff0c049e20b",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "mc.irdonald.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

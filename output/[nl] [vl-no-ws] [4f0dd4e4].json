@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "iranbaxvpn.mci.1vpn.cfd",
-            "port": 2053,
+            "address": "77.73.131.253",
+            "port": 43959,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "66350a41-8947-48b5-dc48-0f0682b4e23a",
+                "id": "facb7af0-6711-4fc5-a42b-b1cddda6d849",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@iranbaxvpn-@iranbaxvpn-@iranbaxvpn-@iranbaxvpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "taaghche.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "skowtu_zROaa0Y7h0Gss2-4mPXvEAngSPxQVukyWO1U",
-          "serverName": "iranbax.kodular.io",
-          "shortId": "9ff0c049e20b",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

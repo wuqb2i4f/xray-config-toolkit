@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "iranbaxvpn.mci.1vpn.cfd",
-            "port": 2053,
+            "address": "13.48.85.170",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "66350a41-8947-48b5-dc48-0f0682b4e23a",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@iranbaxvpn-@iranbaxvpn-@iranbaxvpn-@iranbaxvpn"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "skowtu_zROaa0Y7h0Gss2-4mPXvEAngSPxQVukyWO1U",
-          "serverName": "iranbax.kodular.io",
-          "shortId": "9ff0c049e20b",
+          "publicKey": "6PcmAVTd2ovV95rcnTdSBvLkOJWPEdMvKVI2YfaUGxI",
+          "serverName": "www.mozilla.org",
+          "shortId": "3c",
           "show": false,
-          "spiderX": "/"
+          "spiderX": ""
         }
       },
       "tag": "proxy"
