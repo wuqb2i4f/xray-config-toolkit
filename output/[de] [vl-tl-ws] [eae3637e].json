@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.210.170",
-            "port": 8443,
+            "address": "tel.arv2ray.host",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "vpn_xw",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "meters-warehouse-band-principal.trycloudflare.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "mvG9FmrQEVHRx2CT6Vk_RNY3xt_8yYUthl2Zm2fqlCU",
-          "serverName": "www.mozorg.moz.works",
-          "shortId": "3c",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "safari",
+          "serverName": "meters-warehouse-band-principal.trycloudflare.com",
+          "show": false
         }
       },
       "tag": "proxy"

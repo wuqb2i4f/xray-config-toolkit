@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.120.22",
-            "port": 8443,
+            "address": "65.109.185.86",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "18ec1952-5696-4953-8f26-a665d7d84fa5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Everyday_VPN"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "2WR_AomeV_I8CWLaJrEo1YGxC-WFPjefNgjGf-gQ2lM",
-          "serverName": "www.mozorg.moz.works",
-          "shortId": "3c",
+          "publicKey": "pfn0LfpllyB_V5uqxKMSzliA_S-JE-9OC2Er5-WU6gQ",
+          "serverName": "gsmarena.com",
+          "shortId": "c4ede1c0",
           "show": false,
-          "spiderX": ""
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

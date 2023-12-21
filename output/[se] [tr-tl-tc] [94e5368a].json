@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "team.2.opeta.cfd",
-            "port": 39292,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "82c8fb1e-4757-4b9e-86f0-1c55acb81473",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "16.170.14.148",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@proxyforopeta"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "XQvlhg_Z8D6SZnuYMxYcO3O8qVH-nLQUPTNYsc-14jY",
-          "serverName": "hev.cc",
-          "shortId": "d536bb7e",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

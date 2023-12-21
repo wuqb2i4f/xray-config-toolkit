@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.81.238",
-            "port": 8443,
+            "address": "104.16.29.8",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fb3ab81c-d13c-4199-878b-5636d53cc344",
+                "id": "7f1ae6b4-e4b5-47da-9672-b9147bf01991",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "i1nsat.tAhARAt.ApP"
+          },
+          "path": "/backup"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "mc.irdonald.sbs",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
