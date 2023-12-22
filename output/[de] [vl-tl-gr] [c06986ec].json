@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "85.192.40.92",
-            "port": 443,
+            "address": "162.159.137.232",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "95616dce-98b9-42d6-be11-6f59fa3138fc",
+                "id": "4a1ffbea-e8d0-4cfa-9d02-963bd9dd5667",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@FNET00"
+          "serviceName": "ger.renetvip.shop"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "XE3b2cF5enA1BY2KmyBrEH--hEAwufn9hqtFiG6WZhM",
-          "serverName": "c.amazon-adsystem.com",
-          "shortId": "c1cfae3b",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "ger.renetvip.shop",
+          "show": false
         }
       },
       "tag": "proxy"

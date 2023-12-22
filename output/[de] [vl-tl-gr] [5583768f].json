@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.75.91.144",
-            "port": 23300,
+            "address": "104.18.202.212",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "52e194ba-cdf5-4a7d-d146-d8b06f8a698b",
+                "id": "2bacd375-1c12-4f90-87c6-14259b4756b5",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +67,16 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "google"
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "fl.ZoV2ray.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "77.73.131.253",
-            "port": 43959,
+            "address": "190.93.246.241",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "facb7af0-6711-4fc5-a42b-b1cddda6d849",
+                "id": "4d770f75-877f-42c2-d5a4-b643694280d1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "taaghche.com"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "mt.AntiV2ray.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

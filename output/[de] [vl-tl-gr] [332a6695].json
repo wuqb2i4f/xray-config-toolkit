@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 443,
+            "address": "gold.rovamask.top",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "55bc29cf-ea65-40a5-8469-3cbd13998d97",
+                "id": "21b5fbe4-e599-45a7-b0b1-4942912072c6",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@V2rayMask@V2rayMask"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "YX5wyReOgJyhuXCWzoYqRPq_UGEu9pCj4lfLWk0J8GI",
-          "serverName": "pantercon.net",
-          "shortId": "68337931",
-          "show": false,
-          "spiderX": "/doggo"
+          "serverName": "gold.rovamask.top",
+          "show": false
         }
       },
       "tag": "proxy"
