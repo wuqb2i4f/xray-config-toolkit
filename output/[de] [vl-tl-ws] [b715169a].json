@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "DISCORD.GG",
-            "port": 8880,
+            "address": "ip.1alpha1.shop",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "@V2Group7",
+                "id": "Tech_Tube_ORG",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "BhV2ray.PLUSULTRA.FUN"
+            "Host": "cdn10.1alpha1.shop"
           },
-          "path": "/@v2group7?ed=2048"
+          "path": "/Tel:@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "cdn10.1alpha1.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

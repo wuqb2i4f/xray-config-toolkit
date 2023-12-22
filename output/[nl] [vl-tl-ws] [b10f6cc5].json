@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.185.86",
+            "address": "ip.nofiltering2.sbs",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "18ec1952-5696-4953-8f26-a665d7d84fa5",
+                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "lmn37.sbs"
+          },
+          "path": "/fflsws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "pfn0LfpllyB_V5uqxKMSzliA_S-JE-9OC2Er5-WU6gQ",
-          "serverName": "gsmarena.com",
-          "shortId": "c4ede1c0",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "lmn37.sbs",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:67a0:cc8d",
-            "port": 8880,
+            "address": "83.217.9.129",
+            "port": 22,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "@V2Group7",
+                "id": "c3eb29f1-095c-4d78-90c2-a47de5a400a4",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "BhV2ray.PLUSULTRA.FUN"
-          },
-          "path": "/@v2group7?ed=2048"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "YX5wyReOgJyhuXCWzoYqRPq_UGEu9pCj4lfLWk0J8GI",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "68337931",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },

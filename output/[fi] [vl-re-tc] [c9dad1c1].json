@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.159.136.234",
-            "port": 2096,
+            "address": "37.27.25.95",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "739a0de0-a8a4-4382-85ee-77c9ead1d0fb",
+                "flow": "xtls-rprx-vision",
+                "id": "Tech_Tube_ORG",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "ash.mcidonald.sbs",
-          "show": false
+          "publicKey": "fkdX9au9mqKF8sEF6WLI_TR7Da6xDIOa0Qqj5sTmyyU",
+          "serverName": "www.pcmag.com",
+          "shortId": "a353c5af",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

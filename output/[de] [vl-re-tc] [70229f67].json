@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "91.107.255.228",
+            "address": "168.119.173.56",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "8c4ebfd8-da31-4527-b5ec-07b2a0a9e969",
+                "flow": "xtls-rprx-vision",
+                "id": "Tech_Tube_ORG",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "-5hFjVVmQeeLiMAuhwxSJsGaOsFkbOdTSOcwtaB8ons",
-          "serverName": "gsmarena.com",
-          "shortId": "3ebb4846",
+          "publicKey": "0gCqWCKWYRpwxWcxfLevqHJI0LzanF8ObD5b_EdTukk",
+          "serverName": "www.pcmag.com",
+          "shortId": "f4ecd674",
           "show": false,
           "spiderX": "/"
         }
