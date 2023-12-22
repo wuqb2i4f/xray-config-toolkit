@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip2.nofiltering2.sbs",
-            "port": 443,
+            "address": "mtn.vpnprosec.com",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
+                "id": "SvnTeamm",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lmn37.sbs"
-          },
-          "path": "/fflsws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "lmn37.sbs",
+          "serverName": "V2rayGrmnl.MmdNet.Online",
           "show": false
         }
       },

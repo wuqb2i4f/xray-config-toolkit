@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "103.184.44.57",
-            "port": 80,
+            "address": "veri7fo4rse.filterchy.cfd",
+            "port": 443,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "023c9d68-d3bc-4a5d-9568-0edb64fcddea",
+                "id": "9a8aa902-6f0a-4f53-adac-53b40d981392",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "buyvm.nagisa.cyou"
-          },
-          "path": "/023c9d68"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "ch.hopev2ray.link",
-            "port": 80,
+            "address": "ophelia.mom",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 1,
                 "encryption": "",
                 "flow": "",
-                "id": "b4b4b2bd-68e4-4ab7-bbf7-4d0e2d61951a",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "fi1-vmess.sshmax.xyz"
+            "Host": "ophelia.mom"
           },
-          "path": "/vmess"
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ophelia.mom",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

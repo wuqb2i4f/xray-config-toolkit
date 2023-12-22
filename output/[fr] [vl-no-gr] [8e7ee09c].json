@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip.nofiltering2.sbs",
+            "address": "163.5.79.65",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "376b9861-2fc6-4647-959c-18185cd9c95a",
+                "id": "c49fcfa7-53d7-4c33-892c-5f56a1ad070b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "lmn37.sbs"
-          },
-          "path": "/fflsws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "grpc"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "lmn37.sbs",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
