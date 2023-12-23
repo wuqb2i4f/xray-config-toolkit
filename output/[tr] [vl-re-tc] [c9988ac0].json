@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "upload.ir",
-            "port": 80,
+            "address": "83.217.9.129",
+            "port": 22,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a89c9199-0b1d-4470-f3ea-94725589deb8",
+                "id": "e7aef492-edcb-421f-8fce-7f44edadd77f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "GzfMVr.sPAMdEtEcTOr.WORLD"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "wcvw9ztmKUh96CmY9NEtUi47oNqSwh85aGZ07BNfgxQ",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "30717062",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "node2.loadbalance.tech",
-            "port": 5443,
+            "address": "185.125.171.13",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "3b19da95-e9ad-4664-8182-d9442631fc5a",
+                "flow": "",
+                "id": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "g2com"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
           "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "discordapp.com",
+          "serverName": "partner.g2.com",
           "shortId": "",
           "show": false,
           "spiderX": ""

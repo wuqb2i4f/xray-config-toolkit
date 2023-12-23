@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.161.153.141",
-            "port": 443,
+            "address": "filter.turk.coffee",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f0ca34ba-b4e3-41fc-a5c5-6fef36d7ba1d",
+                "id": "8704372e-e6b6-44ed-d11d-35b77252ad12",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/,Turk"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "vtUa7jdhymLNbzrhq3V9Mk0CxWZtXrBGNc4elOd0wXc",
-          "serverName": "gsmarena.com",
-          "shortId": "079d8b6e",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

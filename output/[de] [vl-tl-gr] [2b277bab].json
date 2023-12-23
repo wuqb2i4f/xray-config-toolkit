@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "discord.com",
-            "port": 443,
+            "address": "mci.bluemoien.space",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "77d104fd-b578-4af7-ae66-ad5a4dbd93d1",
+                "id": "7abd6b5f-17fc-4401-b532-26c51a703ac4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Vip.hsza.site"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "firefox",
-          "serverName": "Vip.hsza.site",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "Kanal-Polproxy.Bluemoien.space",
           "show": false
         }
       },

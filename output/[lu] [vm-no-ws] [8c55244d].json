@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.32",
-            "port": 443,
+            "address": "103.184.44.57",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "c17ee8d1-c7a3-4666-83da-d923ae45c31d",
+                "id": "023c9d68-d3bc-4a5d-9568-0edb64fcddea",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "oniyx.fun"
+            "Host": "buyvm.nagisa.cyou"
           },
-          "path": "/uorpws"
+          "path": "/023c9d68"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "oniyx.fun",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.76.38",
-            "port": 8443,
+            "address": "163.5.79.65",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "c49fcfa7-53d7-4c33-892c-5f56a1ad070b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "grpc"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "XQOdFalGc4GsG9ZGFjSrGoK5SAJg44iyuJTtoaKaZQw",
-          "serverName": "www.mozorg.moz.works",
-          "shortId": "3c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "80.92.205.70",
-            "port": 8080,
+            "address": "172.233.57.232",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1f67fa85-1472-464b-935b-f40e71fefb15",
+                "id": "c7f2ac91-c9ce-46c6-98f3-7204178e4b7c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "d35k8hJ0aMt0SQ7DPprVNf6nm_QKabQsbfVmpg819lE",
+          "serverName": "tunnel.svnreallity.online",
+          "shortId": "3fdec952",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

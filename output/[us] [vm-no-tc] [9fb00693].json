@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.19.124",
-            "port": 80,
+            "address": "144.202.112.204",
+            "port": 50051,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "80ce8c17-f249-471b-b78a-17a60f17b1be",
+                "id": "609f376e-2d8f-4509-e733-5e4580aa614c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,12 +65,11 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "www.moji1372.buzz"
-          },
-          "path": "/telegram/id/ov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "none"
       },
