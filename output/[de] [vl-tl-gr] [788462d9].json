@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "filter.turk.coffee",
-            "port": 80,
+            "address": "titaniom.gogoli.monster",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8704372e-e6b6-44ed-d11d-35b77252ad12",
+                "id": "c313b088-0fac-4b04-a95c-b1a8e3b6861c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/,Turk"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL,@TITANIOM_OFFICIAL"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "titaniom.gogoli.monster",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

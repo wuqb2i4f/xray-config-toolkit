@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "ch.hopev2ray.link",
-            "port": 80,
+            "address": "kanal.zedmodeon.lat",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "b4b4b2bd-68e4-4ab7-bbf7-4d0e2d61951a",
+                "id": "6f74a88c-f184-43cb-8857-9665027f5d66",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fi1-vmess.sshmax.xyz"
-          },
-          "path": "/vmess"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "chn3.zedmodeon.lat",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

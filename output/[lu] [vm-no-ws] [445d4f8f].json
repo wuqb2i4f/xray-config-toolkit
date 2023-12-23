@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 443,
+            "address": "154.92.9.122",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "90109363-ad4a-4289-9aa9-992cc326a75d",
+                "id": "023c9d68-d3bc-4a5d-9568-0edb64fcddea",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "buyvm.nagisa.cyou"
+          },
+          "path": "/023c9d68"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "wcvw9ztmKUh96CmY9NEtUi47oNqSwh85aGZ07BNfgxQ",
-          "serverName": "pantercon.net",
-          "shortId": "30717062",
-          "show": false,
-          "spiderX": "/doggo"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
