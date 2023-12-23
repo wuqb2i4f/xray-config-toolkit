@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "172.233.57.232",
-            "port": 443,
+            "address": "46.29.166.237",
+            "port": 47555,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "c7f2ac91-c9ce-46c6-98f3-7204178e4b7c",
+                "id": "0c49cd19-2758-4d38-e6a8-11f2d6635860",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "d35k8hJ0aMt0SQ7DPprVNf6nm_QKabQsbfVmpg819lE",
-          "serverName": "tunnel.svnreallity.online",
-          "shortId": "3fdec952",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

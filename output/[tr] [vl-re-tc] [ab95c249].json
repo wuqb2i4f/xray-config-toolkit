@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 443,
+            "address": "83.217.9.129",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fd3b19ef-9d92-48be-9472-4d98d1b4b3ea",
+                "id": "b382fcd6-06cf-49c8-837b-f6ce1e0c65a0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "ShhProxy-V2rayNg-Free.snappfoodd.site",
-          "show": false
+          "publicKey": "wcvw9ztmKUh96CmY9NEtUi47oNqSwh85aGZ07BNfgxQ",
+          "serverName": "www.who.int",
+          "shortId": "30717062",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"

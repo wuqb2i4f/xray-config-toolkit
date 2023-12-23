@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "join.v2raytz.sbs",
-            "port": 443,
+            "address": "104.21.19.124",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fd3b19ef-9d92-48be-9472-4d98d1b4b3ea",
+                "id": "80ce8c17-f249-471b-b78a-17a60f17b1be",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "www.moji1372.buzz"
+          },
+          "path": "/telegram/id/ov2ray"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "ShhProxy-V2rayNg-Free.snappfoodd.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
