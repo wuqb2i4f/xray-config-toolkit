@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.32",
+            "address": "128.140.86.66",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c17ee8d1-c7a3-4666-83da-d923ae45c31d",
+                "id": "c084e53f-c642-4339-b163-0f972a2893b7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "oniyx.fun"
-          },
-          "path": "/uorpws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "oniyx.fun",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "jHJQ1xZ72Rk9I29I2V57mfK0hWYw5MLUzJpuu0z-B1Q",
+          "serverName": "ftp.debian.org",
+          "shortId": "b1f54cff",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

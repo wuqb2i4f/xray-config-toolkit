@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "gozargahvpn.vazagh.top",
+            "address": "all.shhproxy.monster",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "-GozargahVPN-",
+                "id": "0cdaa48f-bf69-4266-a5d0-eeb1d80801b0",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bademjoon.vazagh.top"
-          },
-          "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Shh_Proxy,@Shh_Proxy"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "bademjoon.vazagh.top",
+          "serverName": "shhV2ray.DIGTALCITY.xyz",
           "show": false
         }
       },

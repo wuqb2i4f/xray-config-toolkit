@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 443,
+            "address": "104.21.91.134",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d498fdbf-3932-4434-8d70-d3e58f89ffd3",
+                "id": "4de96660-1c4b-44b5-ad6c-0e34c99f338e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "nl.DarkMood.cfd"
+          },
+          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "BEPkYk6YNlZYANC2pQ2GPXb81hvpKxQgtKweaC3lK30",
-          "serverName": "pantercon.net",
-          "shortId": "6f366c6e",
-          "show": false,
-          "spiderX": "/doggo"
+          "serverName": "nl.DarkMood.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "mrz6.gsmxreality.com",
+            "port": 8443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "7bd5c898-5739-4442-b934-97b193b65e1f",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "join-sho-to.freev2alpha.cfd"
-          },
-          "path": "/?ed=2048"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "cdn3.gsmvp.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cdn1.cachexy.cf",
-            "port": 80,
+            "address": "172.66.46.14",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "f71fa550-fe5d-444e-917e-6bdf9c644a24",
+                "id": "08ec6a06-8c15-4069-a781-8c725a30b7e7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "hk1.rtacg.com"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "my.tooters.ir",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

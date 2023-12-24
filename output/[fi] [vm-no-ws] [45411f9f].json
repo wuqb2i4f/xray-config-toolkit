@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "gozargahvpn.vazagh.top",
-            "port": 443,
+            "address": "kom645yj.sbs",
+            "port": 35189,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "-GozargahVPN-",
+                "id": "52ef45f6-88b1-48ea-8e44-69814e11e6e4",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "bademjoon.vazagh.top"
+            "Host": ""
           },
-          "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN"
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "bademjoon.vazagh.top",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

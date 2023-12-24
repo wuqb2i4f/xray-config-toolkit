@@ -45,38 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "gozargahvpn.vazagh.top",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "-GozargahVPN-",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "3.136.242.112",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bademjoon.vazagh.top"
-          },
-          "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "bademjoon.vazagh.top",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

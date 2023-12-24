@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "gozargahvpn.vazagh.top",
+            "address": "channel.zedmodeon.lat",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "-GozargahVPN-",
+                "id": "9be4a1b8-c28f-40fd-954a-29b076c8d832",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bademjoon.vazagh.top"
-          },
-          "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "bademjoon.vazagh.top",
+          "serverName": "kanale.zedmodeon.lat",
           "show": false
         }
       },

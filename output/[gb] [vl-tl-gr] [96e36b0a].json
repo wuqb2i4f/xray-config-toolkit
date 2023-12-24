@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "gozargahvpn.vazagh.top",
-            "port": 443,
+            "address": "speed.cloudflare.com",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "-GozargahVPN-",
+                "id": "1e4b8e38-9aed-4d99-9358-a1237425d60a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bademjoon.vazagh.top"
-          },
-          "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@vbox_speed-@vbox_speed"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "bademjoon.vazagh.top",
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "",
+          "serverName": "vip.lockey-vip.xyz",
           "show": false
         }
       },
