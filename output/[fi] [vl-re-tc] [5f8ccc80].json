@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.155.88",
-            "port": 2096,
+            "address": "49.13.169.240",
+            "port": 8585,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4d770f75-877f-42c2-d5a4-b643694280d1",
+                "id": "d5d844e0-ab22-44da-aa64-05b92ecef4ad",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran"],
           "fingerprint": "firefox",
-          "serverName": "mt.AntiV2ray.site",
-          "show": false
+          "publicKey": "39O6fWzeUxklEb1DKaXuhB60zrJxHK6dvoY8Jq7O6lA",
+          "serverName": "www.iranserver.com",
+          "shortId": "c068",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

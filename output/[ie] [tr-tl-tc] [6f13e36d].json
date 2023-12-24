@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "poland.royal-network.site",
-            "port": 26139,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "2a7e1af2-8136-4f5a-9bfb-d47bfda6d043",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "108.128.22.119",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "TFQ1lNxqYrZDux5HurRlmE017lc5dQe-5ANBuNZQSlA",
-          "serverName": "discord.com",
-          "shortId": "31a14d57",
-          "show": false,
-          "spiderX": "/"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

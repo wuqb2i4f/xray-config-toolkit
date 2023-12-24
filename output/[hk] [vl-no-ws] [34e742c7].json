@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "veri7fo4rse.filterchy.cfd",
-            "port": 443,
+            "address": "cdn1.cachexy.cf",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3ba1ac9a-1a72-4767-b6c9-92bb406528a2",
+                "id": "f71fa550-fe5d-444e-917e-6bdf9c644a24",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "hk1.rtacg.com"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

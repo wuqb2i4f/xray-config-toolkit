@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "154.92.9.122",
-            "port": 80,
+            "address": "all.shhproxy.monster",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "023c9d68-d3bc-4a5d-9568-0edb64fcddea",
+                "id": "32e526d1-9f22-4d85-86b6-09c046fca1c8",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "buyvm.nagisa.cyou"
-          },
-          "path": "/023c9d68"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Shh_Proxy,@Shh_Proxy"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "SHHPROXY-V2rayNg-Free.snappfoodd.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

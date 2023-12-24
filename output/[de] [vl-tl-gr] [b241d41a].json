@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.216.222.116",
-            "port": 25365,
+            "address": "190.93.246.241",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "476d7958-9eda-4e7c-9df7-58a63e4cad1a",
+                "id": "5a7df103-809c-44fc-dbde-6f595f7a53c8",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@ZEDMODEON"
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "QKtEDK-OYgpUxrgUgc3SLy7dy-cNZ9G9ZQF_-VHa030",
-          "serverName": "sourceforge.net",
-          "shortId": "685db47c",
-          "show": false,
-          "spiderX": ""
+          "serverName": "mk.AntiV2ray.space",
+          "show": false
         }
       },
       "tag": "proxy"

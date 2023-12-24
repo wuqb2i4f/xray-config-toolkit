@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "65.109.210.88",
-            "port": 443,
+            "address": "172.67.166.206",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "eb998627-5a32-4371-91fb-17c25b48587c",
+                "id": "db5afae4-ac23-41a6-8378-f307a9a47436",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +68,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@Everyday_VPN"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "TXQeijC6QCZt0IhxgSyd-5I_r65479YwnBDNKfARLCU",
-          "serverName": "gsmarena.com",
-          "shortId": "a116cfd3",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "516175230.f23milad.shop",
+          "show": false
         }
       },
       "tag": "proxy"
