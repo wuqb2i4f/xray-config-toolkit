@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2096,
+            "address": "suratquran18.xyz",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c6aadd02-d378-49f2-fc36-ae4ff99980b9",
+                "id": "962a733d-2614-0b9b-7ffe-9ac92ffea8eb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/current_time"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
+          "fingerprint": "safari",
+          "serverName": "",
           "show": false
         }
       },

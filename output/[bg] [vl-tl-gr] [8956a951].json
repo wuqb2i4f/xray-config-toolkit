@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.91.134",
-            "port": 2096,
+            "address": "all.globalnetvpn.site",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4de96660-1c4b-44b5-ad6c-0e34c99f338e",
+                "id": "5ac553a4-de91-49b9-b313-fcb29ba4cde2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nl.DarkMood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@global_net_vpn"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "nl.DarkMood.cfd",
+          "serverName": "global.globalnetvpn.site",
           "show": false
         }
       },

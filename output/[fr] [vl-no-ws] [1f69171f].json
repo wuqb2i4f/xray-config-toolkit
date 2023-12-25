@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "english.vbox778.info",
-            "port": 54952,
+            "address": "104.21.13.125",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "88780ef6-a4f0-419e-adda-e7ae75a0e9c9",
+                "id": "a89c9199-0b1d-4470-f3ea-94725589deb8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@vbox_speed-@vbox_speed-@vbox_speed-@vbox_speed"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "GzfMVr.sPAMdEtEcTOr.WORLD"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "oGRXas_tQkO4MJGFs7cRGp3LEUeMHHDIV6ddxdrUD3A",
-          "serverName": "c.amazon-adsystem.com",
-          "shortId": "8d856495",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.175.21",
-            "port": 2096,
+            "address": "45.84.196.14",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "4de96660-1c4b-44b5-ad6c-0e34c99f338e",
+                "flow": "xtls-rprx-vision",
+                "id": "3c41abaa-4054-479b-8cff-08ebdc075fd1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nl.DarkMood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "nl.DarkMood.cfd",
-          "show": false
+          "publicKey": "JMAzAzC8yE_H2xPUZyY1MYfr3Z_AhjtsZdVbvoQmlHw",
+          "serverName": "www.speedtest.net",
+          "shortId": "ed297c1b",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

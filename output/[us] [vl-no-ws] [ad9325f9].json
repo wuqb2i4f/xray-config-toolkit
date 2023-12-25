@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "141.101.123.167",
-            "port": 2083,
+            "address": "172.67.172.214",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f568f5cd-4dd8-4c2e-8645-ec996c4e0d72",
+                "id": "7f1ae6b4-e4b5-47da-9672-b9147bf01991",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Daily_Configs.DarkMood.cfd"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "i1nsat.tAhARAt.ApP"
+          },
+          "path": "/backup"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "Daily_Configs.DarkMood.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

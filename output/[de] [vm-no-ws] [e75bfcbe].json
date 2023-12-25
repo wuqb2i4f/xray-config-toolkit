@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "hatunnel-vpn.camdvr.org",
-            "port": 443,
+            "address": "104.27.102.105",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "457b5137-afd6-477a-84e7-1906ef25c90f",
+                "id": "Telegram-V2ray_alpha",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Hatunnel_vpn,@Hatunnel_vpn,@Hatunnel_vpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "join-sho.freev2alpha.cfd"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "QloMGl_VaEtq9JJ3XhCS9JvTn5DYuHVEeAg46yGX9GE",
-          "serverName": "mihanyas.ir",
-          "shortId": "15ed3de4",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.159.153.4",
-            "port": 2096,
+            "address": "104.16.155.88",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "4de96660-1c4b-44b5-ad6c-0e34c99f338e",
+                "id": "9776b9c1-eb53-4ec9-9a1b-46c34497dbac",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "nl.DarkMood.cfd"
-          },
-          "path": "@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs@daily_configs"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["@bored_vpn,@bored_vpn"],
           "fingerprint": "chrome",
-          "serverName": "nl.DarkMood.cfd",
+          "serverName": "AntiV2ray.godratmand.link",
           "show": false
         }
       },
