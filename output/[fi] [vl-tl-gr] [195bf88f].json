@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.172.214",
-            "port": 80,
+            "address": "206.238.236.1",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7f1ae6b4-e4b5-47da-9672-b9147bf01991",
+                "id": "6584ed53-90b2-45d6-aa78-ff34867c814c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "i1nsat.tAhARAt.ApP"
-          },
-          "path": "/backup"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "freevpn"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "yalda20232112.freedns.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

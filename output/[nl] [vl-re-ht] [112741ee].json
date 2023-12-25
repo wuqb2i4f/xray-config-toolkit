@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.75.102",
-            "port": 8443,
+            "address": "193.203.51.15",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "d48e8f9f-25ff-4795-acb7-b01c0a96297a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "h2",
+        "httpSettings": {
+            "host": ["play.parsgamesonline.tech"],
+            "path": "/"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "WR1RWk9_F9oUq3D-6MrBLsMOxGizGejFXn-R7GWRano",
-          "serverName": "www.mozorg.moz.works",
-          "shortId": "3c",
+          "fingerprint": "ios",
+          "publicKey": "wbgbRBXas-xHjm59gSQ39-NU3uHM9tmkg7ipS93Y1nU",
+          "serverName": "discordapp.com",
+          "shortId": "178a8544",
           "show": false,
           "spiderX": ""
         }

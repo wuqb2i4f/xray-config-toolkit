@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.66.46.14",
-            "port": 2087,
+            "address": "biatosh.zedmodeon.lat",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "08ec6a06-8c15-4069-a781-8c725a30b7e7",
+                "id": "8a652007-3387-4ffd-941d-e8bc66b67714",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,14 +67,14 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@ZEDMODEONVPN"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "firefox",
-          "serverName": "my.tooters.ir",
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "finni.zedmodeon.lat",
           "show": false
         }
       },
