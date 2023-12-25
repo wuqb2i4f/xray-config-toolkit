@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.32",
-            "port": 443,
+            "address": "130.61.111.167",
+            "port": 21872,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "c17ee8d1-c7a3-4666-83da-d923ae45c31d",
+                "id": "9a7a75d4-ab7e-4ba0-bbfa-a4acddc18084",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "oniyx.fun"
-          },
-          "path": "/uorpws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "oniyx.fun",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

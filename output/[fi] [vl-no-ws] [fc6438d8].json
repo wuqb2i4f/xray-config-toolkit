@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "94.228.168.165",
-            "port": 443,
+            "address": "bia-to1.unlimiteddev.shop",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "a0cbf5fd-e2d3-431e-9016-d7c62cfcbc0a",
+                "id": "bef01b0b-c92b-481d-bdac-21816a3e596c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "CEntr1QlHMZ8ByD1lfrkK38P"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel4.unlimiteddev.shop"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "TCzR0UCeTg-Fd51_nsplD77dilfT8HTxjIUDzBdsE38",
-          "serverName": "sourceforge.net",
-          "shortId": "4a03c386e2f54c",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

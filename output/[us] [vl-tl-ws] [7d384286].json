@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.238.236.1",
-            "port": 8443,
+            "address": "104.21.44.223",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6584ed53-90b2-45d6-aa78-ff34867c814c",
+                "id": "bf86d355-289a-455f-9b60-5e85f54bb83d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "freevpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bbbb.eshkinsike.click"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "yalda20232112.freedns.site",
+          "serverName": "bbbb.eshkinsike.click",
           "show": false
         }
       },
