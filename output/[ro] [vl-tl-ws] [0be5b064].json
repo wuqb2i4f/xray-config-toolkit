@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "159.69.221.242",
-            "port": 45163,
+            "address": "gozargahvpn.vazagh.top",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "7507d12d-1b60-48b8-8fc5-7bb878078aee",
+                "flow": "",
+                "id": "-GozargahVPN-",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bademjoon.vazagh.top"
+          },
+          "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "u_LpzVFLwn4F4CQrM_jN1dwDwvYxkj7LSMxq75KxyxY",
-          "serverName": "Snifinder.faraelm.fun",
-          "shortId": "e701d69c",
-          "show": false,
-          "spiderX": ""
+          "serverName": "bademjoon.vazagh.top",
+          "show": false
         }
       },
       "tag": "proxy"

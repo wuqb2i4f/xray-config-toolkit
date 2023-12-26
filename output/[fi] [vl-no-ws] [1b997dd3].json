@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.76.130.111",
-            "port": 25365,
+            "address": "104.18.203.232",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "79193653-54ed-4d1e-ba90-80ebf39f404e",
+                "id": "6584ed53-90b2-45d6-aa78-ff34867c814c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ZEDMODEON"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "yalda20232112.freedns.site"
+          },
+          "path": "/freevpn"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "LOYQ7taidY0lhwoLGzM9wOro4fR3nJoDPFW0Qn2I0xs",
-          "serverName": "sourceforge.net",
-          "shortId": "53c15978",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

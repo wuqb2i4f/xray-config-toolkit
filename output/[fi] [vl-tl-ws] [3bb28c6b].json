@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "139.59.136.133",
+            "address": "cdn.moeinrayan.xyz",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cb4a0005-db1f-42ab-a21a-714ea85ba4b1",
+                "id": "c2b06eba-7c8f-4652-be09-55f24b9ed790",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn.moeinrayan.xyz"
+          },
+          "path": "/ditows"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "HnLAHoRfNHI9tPnB0FK874U8YjFc9pgZUDcd3ULQh10",
-          "serverName": "debian.org",
-          "shortId": "8e4c9a47",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cdn.moeinrayan.xyz",
+          "show": false
         }
       },
       "tag": "proxy"
