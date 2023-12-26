@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "16.171.13.95",
-            "port": 43921,
+            "address": "159.69.221.242",
+            "port": 45163,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "e209e3e9-e690-40d7-a19f-e7c46eb5decc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "7507d12d-1b60-48b8-8fc5-7bb878078aee",
                 "level": 8,
                 "security": "auto"
               }
@@ -71,7 +70,16 @@
             "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "u_LpzVFLwn4F4CQrM_jN1dwDwvYxkj7LSMxq75KxyxY",
+          "serverName": "Snifinder.faraelm.fun",
+          "shortId": "e701d69c",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

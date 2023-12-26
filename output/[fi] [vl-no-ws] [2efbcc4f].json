@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 443,
+            "address": "www.speedtest.net",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f4de7055-5ff9-4a8d-862c-d98e7ac49aad",
+                "id": "6584ed53-90b2-45d6-aa78-ff34867c814c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "yalda20232112.freedns.site"
+          },
+          "path": "/freevpn"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "KingSpeedV2rayng.VPNCUSTOMIZE.tech",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
