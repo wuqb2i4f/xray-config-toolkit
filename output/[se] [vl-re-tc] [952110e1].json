@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.155.88",
-            "port": 443,
+            "address": "16.16.173.220",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "9776b9c1-eb53-4ec9-9a1b-46c34497dbac",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn"],
           "fingerprint": "chrome",
-          "serverName": "AntiV2ray.godratmand.link",
-          "show": false
+          "publicKey": "r1X-lpRCeFJFkcdSCJmY5CdLgaJy0SzIpPmTH0JUkXs",
+          "serverName": "coinmarketcap.com",
+          "shortId": "fe",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

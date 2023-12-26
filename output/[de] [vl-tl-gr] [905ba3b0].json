@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.58.133",
-            "port": 2052,
+            "address": "104.18.202.212",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "10b8a441-59b2-4b06-9ec9-81a4957f054e",
+                "id": "f4de7055-5ff9-4a8d-862c-d98e7ac49aad",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "IAqQQA.diGIKALa.NETwOrK"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "KingSpeedV2rayng.VPNCUSTOMIZE.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

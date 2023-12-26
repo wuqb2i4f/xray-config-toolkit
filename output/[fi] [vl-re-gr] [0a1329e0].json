@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.13.32",
+            "address": "95.216.190.225",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9776b9c1-eb53-4ec9-9a1b-46c34497dbac",
+                "id": "a0562dec-26ac-43d4-ba1d-785c334e644f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,15 +67,17 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+          "serviceName": "@ipV2Ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "AntiV2ray.godratmand.link",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "LYJKYSuEuF7h-klyUZUiExZIJk6LNGHeMqxKnB_gjRs",
+          "serverName": "greenpepper.ir",
+          "shortId": "fada4f5f",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.151.134.25",
-            "port": 443,
+            "address": "joinbede.zedmodeon.online",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "06e2cfc6-ef9a-43e9-a0f1-5bbc44667a65",
+                "id": "130761f8-d296-40c4-ad4e-f3ae981abbe3",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@v2raymask"
+          "serviceName": "ZEDMODEON"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "h931glgUkJ0WTQUbjqiZMShKRFfLcweRQoMweZCvdwk",
-          "serverName": "sourceforge.net",
-          "shortId": "e069b644",
-          "show": false,
-          "spiderX": "/"
+          "serverName": "usa.zedmodeon.online",
+          "show": false
         }
       },
       "tag": "proxy"

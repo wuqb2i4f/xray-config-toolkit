@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.7",
-            "port": 443,
+            "address": "16.171.13.95",
+            "port": 43921,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "9776b9c1-eb53-4ec9-9a1b-46c34497dbac",
+                "id": "e209e3e9-e690-40d7-a19f-e7c46eb5decc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "AntiV2ray.godratmand.link",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

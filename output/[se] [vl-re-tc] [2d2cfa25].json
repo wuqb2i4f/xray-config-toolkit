@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.30.39",
-            "port": 80,
+            "address": "16.16.198.128",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "7f1ae6b4-e4b5-47da-9672-b9147bf01991",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "i1nsat.tAhARAt.ApP"
-          },
-          "path": "/backup"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "1ChSWuxfHDS8E1yz0ONXuFhH8aJSRrKRLO5ZRIp89xE",
+          "serverName": "coinmarketcap.com",
+          "shortId": "fe",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },
