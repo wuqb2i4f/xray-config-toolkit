@@ -45,36 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.18.202.212",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "f611a17f-b88e-43d3-a00a-5ad524ccca0e",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "cf.xyzquant.cloud",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "8ca98c98-fb0b-4007-a6e8-c8294e546763",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@VPNCUSTOMIZE"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "srv10.xyzquant.cloud"
+          },
+          "path": "/UIKk38G1Cb4ORi4fyf8bW"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "KingSpeedV2rayng.VPNCUSTOMIZE.tech",
+          "serverName": "srv10.xyzquant.cloud",
           "show": false
         }
       },

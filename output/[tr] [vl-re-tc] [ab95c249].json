@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "64.176.167.233",
-            "port": 25917,
+            "address": "83.217.9.129",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "21cbd837-2b77-47e6-98f8-b3e12e0512f1",
+                "id": "d13848c8-1a01-4528-b7c3-29df2487386e",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,25 +67,19 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "http",
-            "request": {
-              "headers": {
-                "Connection": ["keep-alive"],
-                "Host": ["t.me/mfbpn"],
-                "Pragma": "no-cache",
-                "Accept-Encoding": ["gzip, deflate"],
-                "User-Agent": [
-                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
-                ]
-              },
-              "method": "GET",
-              "path": ["/"],
-              "version": "1.1"
-            }
+            "type": "none"
           }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "gx5W59k3eliDd9I8IYLg8x05x_gcY0j8sie5_MpTSw0",
+          "serverName": "www.who.int",
+          "shortId": "746a7866",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },

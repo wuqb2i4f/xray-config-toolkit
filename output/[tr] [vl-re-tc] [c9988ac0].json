@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "all.vpncustomize.cam",
-            "port": 443,
+            "address": "83.217.9.129",
+            "port": 22,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f611a17f-b88e-43d3-a00a-5ad524ccca0e",
+                "id": "bdd27ce3-4c4c-4d98-b595-976443eb8097",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "‌@VPNCUSTOMIZE"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "FreeV2rayng.VPNCUSTOMIZE.online",
-          "show": false
+          "publicKey": "gx5W59k3eliDd9I8IYLg8x05x_gcY0j8sie5_MpTSw0",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "746a7866",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"

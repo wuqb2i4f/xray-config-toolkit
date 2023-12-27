@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "80.92.205.112",
+            "address": "172.67.143.112",
             "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "4c90ba75-230b-4f8b-bbff-8efa0eb0415f",
+                "id": "b5e23758-51d4-4803-a4dc-0b9ccb050ac2",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "main2.i-v2rayng.cam",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

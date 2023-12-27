@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "turkws.configforvpn.fun",
-            "port": 2087,
+            "address": "95.217.242.194",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "462acb01-a275-433c-9fc6-074de3d68ba0",
+                "id": "759867ef-c1ff-47c8-86bc-76a118112c82",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "turkws.configforvpn.fun",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "GHHs_iVXqtoPvNNKYbFKB6RjZ_leRvhOzc8tNXSAdxg",
+          "serverName": "account.zula.ir",
+          "shortId": "14ae156a",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
