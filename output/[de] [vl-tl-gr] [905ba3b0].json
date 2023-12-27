@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 2053,
+            "address": "104.18.202.212",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ef707ff7-e458-48c2-b952-b66a7fab5a67",
+                "id": "f611a17f-b88e-43d3-a00a-5ad524ccca0e",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "YFjZe0zxF_pzUyNREyE6tm10oGmoXT1Z7R9DtR2BQEk",
-          "serverName": "magicbus.ca",
-          "shortId": "64386864",
-          "show": false,
-          "spiderX": "/doggo"
+          "serverName": "KingSpeedV2rayng.VPNCUSTOMIZE.tech",
+          "show": false
         }
       },
       "tag": "proxy"

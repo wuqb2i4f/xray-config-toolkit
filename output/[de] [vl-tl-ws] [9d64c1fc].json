@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.219.101",
+            "address": "de.melov2ray.shop",
             "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f561225c-af22-4211-a83a-7cb81d25225c",
+                "id": "c6bb4efa-cdf0-4354-bd8c-ea0a8073a8db",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/melov2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "FreakV2.tm-online.xyz",
+          "serverName": "de.melov2ray.shop",
           "show": false
         }
       },

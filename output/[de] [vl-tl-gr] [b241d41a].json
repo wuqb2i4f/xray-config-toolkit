@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.135.88.62",
-            "port": 13721,
+            "address": "190.93.246.241",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "90d6125c-70f0-4d9c-a139-85a9cb8d66ec",
+                "id": "ab1b4f44-6469-4c11-950b-c5c94e452dbf",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
           "fingerprint": "chrome",
-          "publicKey": "y7XdKKxDvYnIpmwUpubmjBMKmIzOETLTI4sKUMf82H8",
-          "serverName": "www.speedtest.net",
-          "shortId": "88a1b080",
-          "show": false,
-          "spiderX": ""
+          "serverName": "AntiV2ray.godratmand.link",
+          "show": false
         }
       },
       "tag": "proxy"

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "tapsell.ir",
-            "port": 2052,
+            "address": "turkws.configforvpn.fun",
+            "port": 2087,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "5e1e4530-f36f-4b89-a952-c45968ed4e94",
+                "id": "462acb01-a275-433c-9fc6-074de3d68ba0",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "de5.biqibao.site"
+            "Host": ""
           },
-          "path": "/public"
+          "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "turkws.configforvpn.fun",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
