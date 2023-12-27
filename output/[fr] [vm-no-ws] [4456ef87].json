@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2087,
+            "address": "172.67.189.60",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "94af2a61-4316-4b93-c8cc-1a2eb1427d01",
+                "id": "892ebb75-7055-3007-8d16-356e65c6a49a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fr2c.newliving.top"
+          },
+          "path": "/skincare"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

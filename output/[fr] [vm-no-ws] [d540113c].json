@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2087,
+            "address": "fra.yj2022.gq",
+            "port": 8880,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "94af2a61-4316-4b93-c8cc-1a2eb1427d01",
+                "id": "4b5e4565-322f-4223-a891-78a84f189726",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "fra.yj2022.gq"
+          },
+          "path": "/9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

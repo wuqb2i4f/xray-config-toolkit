@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.203.232",
-            "port": 80,
+            "address": "www.speedtest.net",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6584ed53-90b2-45d6-aa78-ff34867c814c",
+                "id": "fd4066d2-0904-43ad-af48-62f514c89cfe",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "yalda20232112.freedns.site"
-          },
-          "path": "/freevpn"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@melov2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "random",
+          "serverName": "FIn.Melov2ray.Shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

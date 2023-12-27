@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 443,
+            "address": "172.67.229.179",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "30d4c303-17ca-4d87-add6-0c90e75d8f77",
+                "id": "cf37227e-d438-4292-8d43-56413fb5d8f1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pdHexy.sHapaRak.bio"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1,h3"],
-          "fingerprint": "random",
-          "serverName": "FIn.Melov2ray.Shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

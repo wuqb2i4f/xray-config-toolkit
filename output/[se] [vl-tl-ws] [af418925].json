@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2087,
+            "address": "public.rebeetb.eu.org",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "94af2a61-4316-4b93-c8cc-1a2eb1427d01",
+                "id": "62074df5-98ea-4adc-a2c6-bd5b31f7c19d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pubIic.rebeetb.eu.org"
+          },
+          "path": "/kUlM9uzqYLSQHr9iE1kHtJOhYBM"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
+          "serverName": "pubIic.rebeetb.eu.org",
           "show": false
         }
       },

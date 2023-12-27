@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.18.202.212",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "94af2a61-4316-4b93-c8cc-1a2eb1427d01",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.16.109.118",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

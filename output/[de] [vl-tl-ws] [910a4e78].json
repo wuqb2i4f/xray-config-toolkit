@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
+            "address": "190.93.247.155",
             "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "94af2a61-4316-4b93-c8cc-1a2eb1427d01",
+                "id": "8e556711-ac12-4671-b414-f2b9def01b85",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ConneCtion-FreeV2rayNg.Digiv2ray.shop"
+          },
+          "path": "/@Digiv2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
+          "serverName": "ConneCtion-FreeV2rayNg.Digiv2ray.shop",
           "show": false
         }
       },

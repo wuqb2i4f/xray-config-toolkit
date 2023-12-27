@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2087,
+            "address": "172.67.172.214",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "94af2a61-4316-4b93-c8cc-1a2eb1427d01",
+                "id": "0e84d7f3-f3d2-4063-8e53-caf291f651d1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "chats.rubika.bio"
+          },
+          "path": "/backup"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

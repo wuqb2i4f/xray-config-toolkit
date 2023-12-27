@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn.moeinrayan.xyz",
-            "port": 443,
+            "address": "freakv2.tm-online.xyz",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c2b06eba-7c8f-4652-be09-55f24b9ed790",
+                "id": "f561225c-af22-4211-a83a-7cb81d25225c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cdn.moeinrayan.xyz"
-          },
-          "path": "/ditows"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "cdn.moeinrayan.xyz",
+          "serverName": "FreakV2.tm-online.xyz",
           "show": false
         }
       },

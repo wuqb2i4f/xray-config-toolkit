@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2087,
+            "address": "104.16.54.99",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "94af2a61-4316-4b93-c8cc-1a2eb1427d01",
+                "id": "5befc1c3-b676-408d-d4c4-4acbd7cbc1ee",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "aji.config-rayegan-nufilter.space"
+          },
+          "path": "/Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "fl.ZoV2ray.cfd",
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "aji.config-rayegan-nufilter.space",
           "show": false
         }
       },
