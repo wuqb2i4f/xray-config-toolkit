@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.25.21.218",
-            "port": 2053,
+            "address": "104.31.16.32",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8fd15be9-0955-43e6-aeaf-2776de3da979",
+                "id": "c17ee8d1-c7a3-4666-83da-d923ae45c31d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "oniyx.fun"
+          },
+          "path": "/uorpws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
-          "fingerprint": "firefox",
-          "serverName": "mt.AntiV2ray.site",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "oniyx.fun",
           "show": false
         }
       },
