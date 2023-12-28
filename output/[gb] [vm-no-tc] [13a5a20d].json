@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 2053,
+            "address": "172.99.190.12",
+            "port": 22324,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "b40ee36e-41d5-4fce-b802-f7fe681c8c73",
+                "id": "04621bae-ab36-11ec-b909-0242ac120002",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "gx5W59k3eliDd9I8IYLg8x05x_gcY0j8sie5_MpTSw0",
-          "serverName": "magicbus.ca",
-          "shortId": "746a7866",
-          "show": false,
-          "spiderX": "/doggo"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

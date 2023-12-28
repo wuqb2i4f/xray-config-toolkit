@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 2096,
+            "address": "dash.cloudsan.top",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fd4066d2-0904-43ad-af48-62f514c89cfe",
+                "id": "4ff92ca2-9b2b-4890-a69e-d5cf826fa7e3",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1,h3"],
-          "fingerprint": "random",
-          "serverName": "FIn.Melov2ray.Shop",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "discordapp.com",
+          "shortId": "",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

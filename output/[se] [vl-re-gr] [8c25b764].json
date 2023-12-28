@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "18.168.87.179",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "address": "eu.eecdn.r-yu.me",
+            "port": 23333,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "6fd4ce3d-e8ef-4a0a-8113-289945b15b43",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "JAVAService"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "qq",
+          "publicKey": "YGpm4nnzh-ZF9aBk2F4OnBGDfTx08_CzUaeBk8UILho",
+          "serverName": "www.lovelive-anime.jp",
+          "shortId": "b1522635",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

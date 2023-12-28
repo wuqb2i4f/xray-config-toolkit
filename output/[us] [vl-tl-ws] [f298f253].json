@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "190.93.246.241",
-            "port": 443,
+            "address": "m1002.s25id.buzz",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "294e1313-5f78-40dd-b95b-d5df10b1da16",
+                "id": "706a9e3e-89a6-4ebe-baba-3f348aa635b1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "zoro.zerozoro.cfd"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["TELEGRAM:+@proxy_mtm+|+TELEGRAM:+@proxy_mtm"],
-          "fingerprint": "",
-          "serverName": "AntiV2ray.godratmand.link",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "zoro.zerozoro.cfd",
           "show": false
         }
       },

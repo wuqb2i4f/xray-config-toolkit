@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.1",
-            "port": 443,
+            "address": "forward3.maryam1700.com",
+            "port": 2083,
             "users": [
               {
-                "alterId": 1,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "0ff7a7fb-ef31-4229-a600-d1d5fcd503c2",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "odelia.autos"
-          },
-          "path": "linkvws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "odelia.autos",
+          "alpn": ["http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "forward22.maryam1500.top",
           "show": false
         }
       },

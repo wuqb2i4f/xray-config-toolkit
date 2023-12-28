@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "190.93.246.241",
-            "port": 2087,
+            "address": "perfectfree.mpm378.xyz",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8a8bfbad-e6ef-4776-d62c-e790c3da5683",
+                "id": "1aa3c654-ae53-470e-be87-9a1020873400",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["TELEGRAM:+@proxy_mtm+|+TELEGRAM:+@proxy_mtm"],
-          "fingerprint": "",
-          "serverName": "mt.AntiV2ray.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
