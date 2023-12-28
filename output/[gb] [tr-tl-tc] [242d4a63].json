@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "83.217.9.129",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "d13848c8-1a01-4528-b7c3-29df2487386e",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "18.171.111.22",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
@@ -70,15 +66,13 @@
             "type": "none"
           }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "gx5W59k3eliDd9I8IYLg8x05x_gcY0j8sie5_MpTSw0",
-          "serverName": "www.who.int",
-          "shortId": "746a7866",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

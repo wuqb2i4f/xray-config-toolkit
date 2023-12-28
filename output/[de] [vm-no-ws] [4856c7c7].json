@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 443,
+            "address": "104.21.20.148",
+            "port": 2086,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "cfd53964-189e-475f-ab9a-524413b9c9b3",
+                "id": "Telegram-V2ray_alpha",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "kanal-tel.freev2alpha.cfd"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "gx5W59k3eliDd9I8IYLg8x05x_gcY0j8sie5_MpTSw0",
-          "serverName": "pantercon.net",
-          "shortId": "746a7866",
-          "show": false,
-          "spiderX": "/doggo"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

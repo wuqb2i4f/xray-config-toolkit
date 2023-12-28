@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "beris5.alonext.com",
-            "port": 2083,
+            "address": "bia-to5.unlimiteddev.shop",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "857a4ae2-4153-4ada-bf4f-e2c08e58e3f8",
+                "id": "707aacf1-f397-42dd-a527-93516977d418",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,@beris_one,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to5.unlimiteddev.shop"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "",
-          "serverName": "beris5.alonext.com",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

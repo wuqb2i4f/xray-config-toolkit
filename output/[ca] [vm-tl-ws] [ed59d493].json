@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.185.26",
-            "port": 8880,
+            "address": "188.114.97.1",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
+                "alterId": 1,
                 "encryption": "",
                 "flow": "",
-                "id": "4b5e4565-322f-4223-a891-78a84f189726",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "fra.yj2022.gq"
+            "Host": "odelia.autos"
           },
-          "path": "/9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b"
+          "path": "linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "odelia.autos",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

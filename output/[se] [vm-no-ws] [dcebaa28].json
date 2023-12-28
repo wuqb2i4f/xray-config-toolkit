@@ -45,38 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 443,
+            "address": "mehdi20.goodbyefilteringchannel.space",
+            "port": 2082,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "294e1313-5f78-40dd-b95b-d5df10b1da16",
+                "id": "819aa317-b82f-45a4-8226-c1de31361f97",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AntiFilterChV2,@AntiFilterChV2,@AntiFilterChV2"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "mehdi20.goodbyefilteringchannel.space"
+          },
+          "path": "/forwardv2ray1forwardv2ray4"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["TELEGRAM:+@proxy_mtm+|+TELEGRAM:+@proxy_mtm"],
-          "fingerprint": "",
-          "serverName": "AntiV2ray.godratmand.link",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
