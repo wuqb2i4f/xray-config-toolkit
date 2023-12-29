@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "fin.melov2ray.shop",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "6f7301df-a440-4905-b4ba-4b4acce18f4d",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "us5.msio.uk",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "801725d8-08df-4a20-b69a-e534b8c4ede7",
+            "port": 50089
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1,h3"],
-          "fingerprint": "random",
-          "serverName": "FIn.Melov2ray.Shop",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "us5.msio.uk",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.135.88.62",
-            "port": 13721,
+            "address": "172.67.81.238",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "90d6125c-70f0-4d9c-a139-85a9cb8d66ec",
+                "id": "5988aeb9-fc19-4181-b458-ee2cb0f89aae",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@ipV2Ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "y7XdKKxDvYnIpmwUpubmjBMKmIzOETLTI4sKUMf82H8",
-          "serverName": "www.speedtest.net",
-          "shortId": "88a1b080",
-          "show": false,
-          "spiderX": ""
+          "serverName": "tm.ipV2Ray.fun",
+          "show": false
         }
       },
       "tag": "proxy"

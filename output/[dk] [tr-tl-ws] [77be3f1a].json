@@ -45,40 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "orangebat.uk",
-            "port": 23491,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "fb7b77ed-242b-419d-9141-965f6c2d870e",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "www.unpkg.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "qG9K8AGnn9XH5jUqeFu96g",
+            "port": 2083
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn13.cdn2cdn.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "vRNYEw_GpDdcdltG2qVNhUbtl8YEAUtmQ3VgYGp3Wm0",
-          "serverName": "discord.com",
-          "shortId": "de926578",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cdn13.cdn2cdn.com",
+          "show": false
         }
       },
       "tag": "proxy"

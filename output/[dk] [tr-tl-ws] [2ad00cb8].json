@@ -45,40 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "dash.cloudsan.top",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "4ff92ca2-9b2b-4890-a69e-d5cf826fa7e3",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "cdn-13.cdn2cdn.com",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "qG9K8AGnn9XH5jUqeFu96g",
+            "port": 2083
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn13.cdn2cdn.com"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "discordapp.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "serverName": "cdn13.cdn2cdn.com",
+          "show": false
         }
       },
       "tag": "proxy"

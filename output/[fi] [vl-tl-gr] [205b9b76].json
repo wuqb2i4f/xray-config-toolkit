@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.131.209.25",
-            "port": 8443,
+            "address": "104.24.177.7",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "9c6aa738-d07d-4b38-9e39-2a9c9ee4c70f",
+                "id": "d6f6e848-6c11-4ac9-94b8-cd46d9503344",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "vfffddfh.onlineshop8177.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "vfffddfh.onlineshop8177.shop",
+          "serverName": "fm.ipV2Ray.fun",
           "show": false
         }
       },

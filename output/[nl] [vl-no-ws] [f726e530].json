@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.24.177.7",
-            "port": 443,
+            "address": "fontyab.info",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "77cc5926-49f2-47f5-8a33-e452dad46be2",
+                "id": "e1ff95b8-048d-4388-f4fd-67146c992822",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/sitemap.xml"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "tel.ArV2ray.shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
