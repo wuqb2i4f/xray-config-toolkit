@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "96.30.197.59",
-            "port": 56272,
+            "address": "104.27.102.105",
+            "port": 8080,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "8e8d5a10-7fd0-4818-8265-a4dc4a569d31",
+                "id": "Telegram-V2ray_alpha",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,11 +65,12 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "join-sho-to.freev2alpha.cfd"
+          },
+          "path": "/?ed=2048"
         },
         "security": "none"
       },
