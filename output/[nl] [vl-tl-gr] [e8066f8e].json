@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "2bbiozh7wbc.servecounterstrike.com",
-            "port": 2096,
+            "address": "104.24.177.7",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "c7ccf81e-2f35-4170-aeb8-f84fb2ec2b29",
+                "id": "77cc5926-49f2-47f5-8a33-e452dad46be2",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "PAnEl128.MookomeIlz.Homes"
-          },
-          "path": "/@FreeVPNHomes@FreeVPNHomes"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "SkamAmmLLLmawm.mookomeIlz.Homes",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "tel.ArV2ray.shop",
           "show": false
         }
       },

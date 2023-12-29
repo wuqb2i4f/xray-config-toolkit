@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.25.0",
-            "port": 2052,
+            "address": "172.67.163.123",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1a83ce83-70c6-47ad-831e-a1a4be29f82a",
+                "id": "d9b3934c-8065-4ff4-9f01-1693d0a55e6a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "home.khamenei.bio"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1,h2"],
+          "fingerprint": "chrome",
+          "serverName": "rightelV2ray.irantunnel.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

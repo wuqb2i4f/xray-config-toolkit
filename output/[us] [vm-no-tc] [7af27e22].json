@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "bia-to5.unlimiteddev.shop",
-            "port": 80,
+            "address": "96.30.197.59",
+            "port": 56272,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "707aacf1-f397-42dd-a527-93516977d418",
+                "id": "8e8d5a10-7fd0-4818-8265-a4dc4a569d31",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,12 +65,11 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "bia-to5.unlimiteddev.shop"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "none"
       },

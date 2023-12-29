@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fin.melov2ray.shop",
-            "port": 2096,
+            "address": "orangebat.uk",
+            "port": 23491,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "fd4066d2-0904-43ad-af48-62f514c89cfe",
+                "flow": "xtls-rprx-vision",
+                "id": "fb7b77ed-242b-419d-9141-965f6c2d870e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1,h3"],
-          "fingerprint": "random",
-          "serverName": "FIn.Melov2ray.Shop",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "vRNYEw_GpDdcdltG2qVNhUbtl8YEAUtmQ3VgYGp3Wm0",
+          "serverName": "discord.com",
+          "shortId": "de926578",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

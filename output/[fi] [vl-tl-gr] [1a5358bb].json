@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "sh1001.s25id.buzz",
-            "port": 8443,
+            "address": "fin.melov2ray.shop",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "706a9e3e-89a6-4ebe-baba-3f348aa635b1",
+                "id": "6f7301df-a440-4905-b4ba-4b4acce18f4d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "zoro.zerozoro.cfd"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@melov2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "zoro.zerozoro.cfd",
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "random",
+          "serverName": "FIn.Melov2ray.Shop",
           "show": false
         }
       },
