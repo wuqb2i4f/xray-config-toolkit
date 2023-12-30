@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.26.11.144",
-            "port": 2083,
+            "address": "npmjs.com",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "fdb52e73-f1aa-429d-9c6f-a40455ff88a2",
+                "id": "712772c2-f7d7-4d33-bf02-b7a7e5f729c4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "snaPPfood1.eSMaIlkorEa.sHoP"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "safari",
-          "serverName": "dm.XsV2ray.cfd",
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "snaPPfood1.eSMaIlkorEa.sHoP",
           "show": false
         }
       },

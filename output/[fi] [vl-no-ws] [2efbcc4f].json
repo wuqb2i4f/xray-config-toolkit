@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "web.tata-fox-tata-1402.site",
-            "port": 28506,
+            "address": "www.speedtest.net",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "82d22a15-47ea-407c-956d-17bf5344826b",
+                "id": "6f549c04-8fc3-4885-8cdf-c2492c0bf257",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "yalda20232912.freedns.site"
+          },
+          "path": "/freevpn"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "d2nmrwxk6TZt36feMWvWMgguXdT7oY1waIPlby8ytSY",
-          "serverName": "ilovepdf.com",
-          "shortId": "e1ac4cea",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
