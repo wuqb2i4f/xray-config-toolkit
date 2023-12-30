@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.53.103.197",
-            "port": 3074,
+            "address": "104.21.0.165",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "flow": "",
+                "id": "---Telegram-Parsashonam--10-",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Parsashonam"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "f2oD6xgRje7Pc7HvyKIwYmfbt7_k-WEqCQM5sNb89wk",
-          "serverName": "coinmarketcap.com",
-          "shortId": "fe",
-          "show": false,
-          "spiderX": ""
+          "serverName": "NEW0.Parsashonam.TECH",
+          "show": false
         }
       },
       "tag": "proxy"

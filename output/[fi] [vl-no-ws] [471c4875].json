@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 443,
+            "address": "bia-to2.unlimiteddev.shop",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0d268fab-5a97-4314-bb4a-6adb5c2a499e",
+                "id": "ef8b3746-ace1-4301-9e04-84159d75c933",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to-channel4.unlimiteddev.shop"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "eVScC98SbhLdsUmzJ3yUfaY2p5YOXrXSKU4wlt_AuDM",
-          "serverName": "pantercon.net",
-          "shortId": "736a796b",
-          "show": false,
-          "spiderX": "/doggo"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

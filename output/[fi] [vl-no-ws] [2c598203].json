@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.zula.ir",
-            "port": 8443,
+            "address": "bia-to5.unlimiteddev.shop",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f6ba58ec-d11d-4c98-8572-84936bd72aa3",
+                "id": "ef8b3746-ace1-4301-9e04-84159d75c933",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "me"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "bia-to5.unlimiteddev.shop"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "Fin.Melobigg.Site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
