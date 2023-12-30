@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.67.189.60",
-            "port": 80,
+            "address": "188.114.96.0",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "892ebb75-7055-3007-8d16-356e65c6a49a",
+                "id": "f527e0af-7fbe-4ca9-bb7d-8c054cf264a6",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "fr2c.newliving.top"
+            "Host": "cdn10.gsmvp.com"
           },
-          "path": "/skincare"
+          "path": "/tbplws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cdn10.gsmvp.com",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

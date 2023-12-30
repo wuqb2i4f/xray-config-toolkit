@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "198.41.202.5",
-            "port": 2087,
+            "address": "104.27.102.105",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "8e556711-ac12-4671-b414-f2b9def01b87",
+                "id": "Telegram-V2ray_alpha",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ConneCtion-FreeV2rayNg.Digiv2ray.shop"
+            "Host": "join-sho-to.freev2alpha.cfd"
           },
-          "path": "/@Digiv2ray"
+          "path": "/?ed=2048"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "ConneCtion-FreeV2rayNg.Digiv2ray.shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.2",
-            "port": 2087,
+            "address": "13.53.46.155",
+            "port": 3074,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "8e556711-ac12-4671-b414-f2b9def01b87",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ConneCtion-FreeV2rayNg.Digiv2ray.shop"
-          },
-          "path": "/@Digiv2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "ConneCtion-FreeV2rayNg.Digiv2ray.shop",
-          "show": false
+          "publicKey": "9Lue8ung5joKJ0lL0AYQdq0WjZaSuJdjcemcz8oMPhc",
+          "serverName": "coinmarketcap.com",
+          "shortId": "fe",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

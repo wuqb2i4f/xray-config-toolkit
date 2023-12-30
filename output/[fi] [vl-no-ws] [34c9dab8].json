@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.24.92",
-            "port": 2087,
+            "address": "172.67.229.179",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8505cde3-d59f-43d6-8def-c5ab0d7806f6",
+                "id": "cf37227e-d438-4292-8d43-56413fb5d8f1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pdHexy.sHapaRak.bio"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "giti29.cofggv2.online",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

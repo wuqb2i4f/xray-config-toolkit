@@ -45,35 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "www.unpkg.com",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "qG9K8AGnn9XH5jUqeFu96g",
-            "port": 2083
+            "address": "13.53.103.197",
+            "port": 3074,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cdn13.cdn2cdn.com"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "cdn13.cdn2cdn.com",
-          "show": false
+          "publicKey": "f2oD6xgRje7Pc7HvyKIwYmfbt7_k-WEqCQM5sNb89wk",
+          "serverName": "coinmarketcap.com",
+          "shortId": "fe",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

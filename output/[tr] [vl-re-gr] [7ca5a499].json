@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "fontyab.info",
-            "port": 80,
+            "address": "83.217.9.129",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e1ff95b8-048d-4388-f4fd-67146c992822",
+                "id": "0d268fab-5a97-4314-bb4a-6adb5c2a499e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/sitemap.xml"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "eVScC98SbhLdsUmzJ3yUfaY2p5YOXrXSKU4wlt_AuDM",
+          "serverName": "pantercon.net",
+          "shortId": "736a796b",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },
