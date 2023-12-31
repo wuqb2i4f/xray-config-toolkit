@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.167.98.190",
-            "port": 8443,
+            "address": "104.25.70.57",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "7bd5c898-5739-4442-b934-97b193b65e1f",
+                "flow": "",
+                "id": "a0cdf51b-e97d-4e87-9976-ed272b617c09",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "vi117.vipsaparat.store"
+          },
+          "path": "/apiapp"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "cdn3.gsmvp.com",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
+          "serverName": "vi117.vipsaparat.store",
+          "show": false
         }
       },
       "tag": "proxy"

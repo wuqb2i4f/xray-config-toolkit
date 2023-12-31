@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.229.179",
-            "port": 2052,
+            "address": "172.104.148.48",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cf37227e-d438-4292-8d43-56413fb5d8f1",
+                "id": "07402610-3f00-4384-b54b-eb8cd5037b4c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "pdHexy.sHapaRak.bio"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "MFhTxw6M0UU7nAoxP-jAw8szA2vhXy6KYmBCrDwbpRw",
+          "serverName": "digg.com",
+          "shortId": "99d38a68",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

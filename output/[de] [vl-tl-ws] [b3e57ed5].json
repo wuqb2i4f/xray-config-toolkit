@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "deragv2ray.net",
-            "port": 17693,
+            "address": "bisabt.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1b90efcb-891c-4eb5-a653-34d2e2c15466",
+                "id": "89a3e5dc-2a6b-4759-80cb-2cf8630ec8a2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@deragv2ray,@deragv2ray,@deragv2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn5.gsmvp.com"
+          },
+          "path": "/bylews"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "AKoaNVYZJyC4_pM320wz2IijClB0jlw8276E4n-YC1I",
-          "serverName": "mihanyas.ir",
-          "shortId": "98cb4588",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cdn5.gsmvp.com",
+          "show": false
         }
       },
       "tag": "proxy"
