@@ -49,16 +49,16 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "173.245.59.99",
+            "port": 443,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "id": "a407ba33-b69f-405d-9156-fe38edcf78d7",
                 "level": 8,
-                "security": "auto"
+                "security": "chacha20-poly1305"
               }
             ]
           }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "join-sho.freev2alpha.cfd"
+            "Host": "vip.osalizx.cfd"
           },
-          "path": "/?ed=2048"
+          "path": "/fBB9TuCG0IPgGqmgbWQRdvK"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "vip.osalizx.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.0",
-            "port": 443,
+            "address": "104.16.245.65",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b00c0af2-620a-4cd5-9ba7-f7e5f4f0b1b4",
+                "id": "13a3e5e4-dcab-4590-e6fd-36a450774e55",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cdn14.gsmvp.com"
-          },
-          "path": "/njmiws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "cdn14.gsmvp.com",
+          "serverName": "Panel3.Bia-Polproxy.space",
           "show": false
         }
       },

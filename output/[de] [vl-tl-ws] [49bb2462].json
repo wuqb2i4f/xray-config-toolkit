@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "avazbek-russian.duckdns.org",
-            "port": 8080,
+            "address": "190.93.247.155",
+            "port": 2083,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "d0fd80a1-0a99-43ea-a18c-046c5106a961",
+                "id": "8e556711-ac12-4671-b414-f2b9def01b89",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "ConneCtion-SpeedV2rayNg.Digiv2ray.shop"
           },
-          "path": "/"
+          "path": "/@Digiv2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ConneCtion-SpeedV2rayNg.Digiv2ray.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "npmjs.com",
-            "port": 2087,
+            "address": "49.12.114.141",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "712772c2-f7d7-4d33-bf02-b7a7e5f729c4",
+                "id": "d8265da8-d5cd-45de-a93e-7fc993eb0c5d",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "snaPPfood1.eSMaIlkorEa.sHoP"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray,@mainV2ray"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "firefox",
-          "serverName": "snaPPfood1.eSMaIlkorEa.sHoP",
-          "show": false
+          "publicKey": "GHHs_iVXqtoPvNNKYbFKB6RjZ_leRvhOzc8tNXSAdxg",
+          "serverName": "account.zula.ir",
+          "shortId": "14ae156a",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
