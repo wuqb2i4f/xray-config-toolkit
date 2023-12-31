@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 443,
+            "address": "83.217.9.129",
+            "port": 22,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "44680726-6001-424f-bb1c-e25bd0343540",
+                "id": "cfdcc757-0b2f-441d-8174-791579998b18",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["TELEGRAM:+@proxy_mtm+|+TELEGRAM:+@proxy_mtm"],
-          "fingerprint": "",
-          "serverName": "po.ZoV2ray.cfd",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "HmWTUYUCXdBO00BubYxhBAPt8fZci8zKJ6C2GYhZNGM",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "66323338",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"

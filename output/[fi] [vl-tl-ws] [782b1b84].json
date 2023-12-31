@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.3",
+            "address": "104.21.28.62",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1741b5b8-6f79-48b6-d82e-403b8ed07824",
+                "id": "c17ee8d1-c7a3-4666-83da-d923ae45c31d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "oniyx.fun"
+          },
+          "path": "/uorpws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran"],
-          "fingerprint": "",
-          "serverName": "money.vipconnected.cfd",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "oniyx.fun",
           "show": false
         }
       },

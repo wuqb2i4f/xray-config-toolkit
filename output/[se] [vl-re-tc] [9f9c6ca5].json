@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "23.227.38.85",
-            "port": 443,
+            "address": "5.42.86.225",
+            "port": 22,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0773256c-d020-436d-afea-6eee7cb6c872",
+                "id": "2c34ea48-6f40-4aa3-9ddb-69718b48c3f8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "xray1.freegradely.xyz"
-          },
-          "path": "/bodhws"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "xray1.freegradely.xyz",
-          "show": false
+          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
+          "serverName": "ftp.debian.org",
+          "shortId": "76753364",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"

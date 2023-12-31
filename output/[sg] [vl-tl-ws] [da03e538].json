@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.3",
-            "port": 443,
+            "address": "darksideofmoon.sooshiant.link",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "5a3f721c-eb24-4f6a-bdb3-a73d4cfb88bc",
+                "id": "d222aee4-239e-47b6-81d7-21e3d8ef07ba",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["http/1.1,h2,h3"],
           "fingerprint": "chrome",
-          "serverName": "MaybeNotTomorrowButSoonAndForTheRestOfYourLife.ISydI.Cloud",
+          "serverName": "darksideofmoon.sooshiant.link",
           "show": false
         }
       },

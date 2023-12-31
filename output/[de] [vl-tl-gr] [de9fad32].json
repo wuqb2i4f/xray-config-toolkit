@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "98.66.160.227",
-            "port": 29494,
+            "address": "shvi.vonbar.top",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "f89dfd86-7994-46ed-8846-6ea38f76a4dd",
+                "id": "56e0a5e8-47ea-42c4-8033-fe8fc8972044",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@enani5"
+          "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "NSzxLt7w8kfyxl7C4kjH3Mg7mxW1UZKiTNI_3SsddBU",
-          "serverName": "dnschecker.org",
-          "shortId": "86ee9777",
-          "show": false,
-          "spiderX": ""
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "amir.vonbar.top",
+          "show": false
         }
       },
       "tag": "proxy"
