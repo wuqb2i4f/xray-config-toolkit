@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "hanoi4.5gsieutocdo.com",
-            "port": 80,
+            "address": "tel.arv2ray.tech",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
+                "id": "de9466e7-d58c-4ec2-a597-32ecb60620e8",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "dl.kgvn.garenanow.com"
+            "Host": "www.ArV2ray.shop"
           },
-          "path": "/5gsieutocdo.club"
+          "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "www.ArV2ray.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

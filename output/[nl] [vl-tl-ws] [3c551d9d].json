@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.5.46",
+            "address": "ip4.opeta.cfd",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1a95bc58-e851-4699-b88d-5332e79b2da9",
+                "id": "379f47d4-ba0d-4ce1-87b9-80bb9aa0dab9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "opetaTm"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "v2rayfree.wancloudfa.shop",
+          "serverName": "minecraft.opeta.cfd",
           "show": false
         }
       },

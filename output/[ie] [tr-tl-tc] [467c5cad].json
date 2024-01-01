@@ -45,33 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "172.67.172.214",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "f6618dfb-4a09-4821-c565-28746bce6f1b",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.19.143.75",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "help.khamenei.bio"
-          },
-          "path": "/backup"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
