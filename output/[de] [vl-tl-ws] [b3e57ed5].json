@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 8443,
+            "address": "bisabt.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b99e2825-839c-4396-fffe-8f2931f114b6",
+                "id": "89a3e5dc-2a6b-4759-80cb-2cf8630ec8a2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn5.gsmvp.com"
+          },
+          "path": "/bylews"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["TELEGRAM:+@proxy_mtm+|+TELEGRAM:+@proxy_mtm"],
-          "fingerprint": "",
-          "serverName": "go.MpV2ray.cfd",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "cdn5.gsmvp.com",
           "show": false
         }
       },

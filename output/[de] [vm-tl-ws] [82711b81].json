@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "shvi.vonbar.top",
-            "port": 2053,
+            "address": "45.131.209.25",
+            "port": 8443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "56e0a5e8-47ea-42c4-8033-fe8fc8972044",
+                "id": "9c6aa738-d07d-4b38-9e39-2a9c9ee4c70f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "vfffddfh.onlineshop8177.shop"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "amir.vonbar.top",
+          "serverName": "vfffddfh.onlineshop8177.shop",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "198.41.202.5",
-            "port": 2087,
+            "address": "45.147.7.40",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "137a35c9-b178-452f-9c52-7798e7ba8b56",
+                "flow": "xtls-rprx-vision",
+                "id": "fd8469bf-bcd9-4124-a989-7f8e75b2b89d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
           "fingerprint": "chrome",
-          "serverName": "poq.AntiV2ray.site",
-          "show": false
+          "publicKey": "F3o_6vrExNUALBHqzqZqvuHL4DHTDIryOvez3gcntVY",
+          "serverName": "www.speedtest.net",
+          "shortId": "e86fc128",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

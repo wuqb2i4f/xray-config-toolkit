@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.93.152",
-            "port": 8443,
+            "address": "16.16.126.54",
+            "port": 5222,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "b99e2825-839c-4396-fffe-8f2931f114b6",
+                "flow": "xtls-rprx-vision",
+                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn"],
           "fingerprint": "chrome",
-          "serverName": "go.MpV2ray.cfd",
-          "show": false
+          "publicKey": "9phXvxA9Bm7NTIjBAc97fm330uFeMl-dMqM63XYnvH0",
+          "serverName": "coinmarketcap.com",
+          "shortId": "1db3",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

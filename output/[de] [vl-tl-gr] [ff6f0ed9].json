@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.86.225",
-            "port": 443,
+            "address": "104.18.202.212",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ac79f82a-6563-4b55-9236-bf5eb9004178",
+                "id": "e07b673a-9b23-4c86-a0b6-0b06219d8b66",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
-          "serverName": "discord.com",
-          "shortId": "76753364",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "",
+          "serverName": "profile.joinzedmodeon.top",
+          "show": false
         }
       },
       "tag": "proxy"

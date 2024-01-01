@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "happy.turk.coffee",
-            "port": 80,
+            "address": "83.217.9.129",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "happy-turk-coffee",
+                "id": "11b055fb-dbe3-4f20-9625-5c84550935cb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "happy.turk.coffee"
-          },
-          "path": "/,Turk"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "HmWTUYUCXdBO00BubYxhBAPt8fZci8zKJ6C2GYhZNGM",
+          "serverName": "www.who.int",
+          "shortId": "66323338",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "darksideofmoon.sooshiant.link",
-            "port": 2083,
+            "address": "188.114.97.10",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "d222aee4-239e-47b6-81d7-21e3d8ef07ba",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,16 +68,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "odelia.autos"
           },
-          "path": "/"
+          "path": "linkvws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "chrome",
-          "serverName": "darksideofmoon.sooshiant.link",
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "odelia.autos",
           "show": false
         }
       },
