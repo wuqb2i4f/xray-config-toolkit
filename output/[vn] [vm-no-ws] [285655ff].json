@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "16.16.126.54",
-            "port": 5222,
+            "address": "hanoi4.5gsieutocdo.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "f553d0ca-701d-4f95-90e9-2851d055291e",
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dl.kgvn.garenanow.com"
+          },
+          "path": "/5gsieutocdo.club"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "9phXvxA9Bm7NTIjBAc97fm330uFeMl-dMqM63XYnvH0",
-          "serverName": "coinmarketcap.com",
-          "shortId": "1db3",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

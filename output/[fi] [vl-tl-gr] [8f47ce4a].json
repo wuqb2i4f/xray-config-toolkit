@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.131.209.25",
-            "port": 8443,
+            "address": "metrix.anvary.ir",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "9c6aa738-d07d-4b38-9e39-2a9c9ee4c70f",
+                "id": "266f480d-ab52-40e1-bf67-65b9ccadcad0",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "vfffddfh.onlineshop8177.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "vfffddfh.onlineshop8177.shop",
+          "serverName": "dash.joinzedmodeon.top",
           "show": false
         }
       },
