@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.153.213",
-            "port": 2087,
+            "address": "cdnjs.com",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "60968315-97f0-4a31-8299-ec1ef57a8793",
+                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ws.nastoh1.sbs"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1,h3"],
-          "fingerprint": "chrome",
-          "serverName": "Panel3.Bia-Polproxy.space",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

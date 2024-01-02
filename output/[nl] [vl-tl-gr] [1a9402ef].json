@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "83.217.9.129",
-            "port": 22,
+            "address": "mtn.persiangolf.online",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "9aa2a965-2157-4fad-be0e-eb8f8ca8646b",
+                "id": "04732e46-011c-4031-aca3-dac6b1fedf18",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@pingmaster_bot"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "vxiOQMd5FENxKt4Iij5xvkaxGgH01SRcUR0zrHmrBx0",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "6e36707a",
-          "show": false,
-          "spiderX": "/doggo"
+          "serverName": "cart.persiangolf.online",
+          "show": false
         }
       },
       "tag": "proxy"

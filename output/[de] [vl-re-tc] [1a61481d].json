@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.212",
-            "port": 2083,
+            "address": "45.147.7.40",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "c94884c4-f112-4528-9fcc-bc83477fc7ac",
+                "flow": "xtls-rprx-vision",
+                "id": "fd8469bf-bcd9-4124-a989-7f8e75b2b89d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran"],
           "fingerprint": "chrome",
-          "serverName": "po.ZoV2ray.cfd",
-          "show": false
+          "publicKey": "F3o_6vrExNUALBHqzqZqvuHL4DHTDIryOvez3gcntVY",
+          "serverName": "www.speedtest.net",
+          "shortId": "e86fc128",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

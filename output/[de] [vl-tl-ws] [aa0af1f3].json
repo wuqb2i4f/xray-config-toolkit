@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.245.65",
-            "port": 2087,
+            "address": "cdn-1.cdn2cdn.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "13a3e5e4-dcab-4590-e6fd-36a450774e55",
+                "id": "c80b7665-6b69-49fe-bfe6-0ebbb187fa18",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn1.cdn2cdn.com"
+          },
+          "path": "/qgetws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "Panel3.Bia-Polproxy.space",
+          "serverName": "cdn1.cdn2cdn.com",
           "show": false
         }
       },

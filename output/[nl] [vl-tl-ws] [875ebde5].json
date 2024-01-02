@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.25.254.88",
-            "port": 2096,
+            "address": "vip.cdn2cdn.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "909c4045-2d62-444c-bf70-75d05fe1793f",
+                "id": "b00c0af2-620a-4cd5-9ba7-f7e5f4f0b1b4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn14.gsmvp.com"
+          },
+          "path": "/njmiws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "kq.porya.fun",
+          "serverName": "cdn14.gsmvp.com",
           "show": false
         }
       },

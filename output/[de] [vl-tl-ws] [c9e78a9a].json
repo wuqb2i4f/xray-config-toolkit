@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "198.41.202.5",
-            "port": 443,
+            "address": "104.20.189.123",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "135ec1fa-287a-4126-e36b-5e8b12842a24",
+                "id": "e7ff2196-206a-41b1-d85d-de07e8645250",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "vpnlime.fv2.site"
+          },
+          "path": "/Channel:@VPNLime"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran"],
-          "fingerprint": "chrome",
-          "serverName": "poq.AntiV2ray.site",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "vpnlime.fv2.site",
           "show": false
         }
       },
