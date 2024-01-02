@@ -49,29 +49,30 @@
       "settings": {
         "servers": [
           {
-            "address": "52.213.52.182",
+            "address": "ironone.libertasiran.cloud",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "password": "xaafTz903F",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/n89"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ironone.libertasiran.cloud",
           "show": false
         }
       },

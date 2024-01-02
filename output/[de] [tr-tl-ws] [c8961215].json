@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "tel.arv2ray.tech",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "de9466e7-d58c-4ec2-a597-32ecb60620e8",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "de.melov2ray.shop",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "fWUFlpXHsW",
+            "port": 2083
           }
         ]
       },
@@ -67,16 +63,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "www.ArV2ray.shop"
+            "Host": ""
           },
-          "path": "/"
+          "path": "/melov2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "www.ArV2ray.shop",
+          "serverName": "De.Melov2ray.Shop",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "vip.cdn2cdn.com",
-            "port": 443,
+            "address": "104.18.202.212",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b00c0af2-620a-4cd5-9ba7-f7e5f4f0b1b4",
+                "id": "c94884c4-f112-4528-9fcc-bc83477fc7ac",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cdn14.gsmvp.com"
-          },
-          "path": "/njmiws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["@mehrosaboran,@mehrosaboran"],
           "fingerprint": "chrome",
-          "serverName": "cdn14.gsmvp.com",
+          "serverName": "po.ZoV2ray.cfd",
           "show": false
         }
       },

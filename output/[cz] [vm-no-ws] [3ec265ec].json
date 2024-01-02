@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "www.mrzedmodeon.top",
-            "port": 443,
+            "address": "94.131.97.10",
+            "port": 2095,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "30c6a5ec-3de5-4eec-afe6-e9a13e1a30cb",
+                "id": "13c4fa1d-c558-4cd0-8108-c1f64cd399ff",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "94.131.97.10"
+          },
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "dash.zedmodeon.fun",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

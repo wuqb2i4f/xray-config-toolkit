@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ip4.opeta.cfd",
-            "port": 443,
+            "address": "104.25.254.88",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "379f47d4-ba0d-4ce1-87b9-80bb9aa0dab9",
+                "id": "909c4045-2d62-444c-bf70-75d05fe1793f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "opetaTm"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "minecraft.opeta.cfd",
+          "serverName": "kq.porya.fun",
           "show": false
         }
       },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "173.245.58.51",
-            "port": 443,
+            "address": "de1-vmess.greenssh.xyz",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "97c8c33a-10d9-411b-bf6e-eecc441f07a8",
+                "id": "12612b4e-e426-4b7c-84bd-4a02850abb1e",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "testingcloudflare123.masoudsystem1.shop"
+            "Host": ""
           },
-          "path": "/adminCpanel"
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "testingcloudflare123.masoudsystem1.shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

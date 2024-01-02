@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "suratquran18.xyz",
+            "address": "fin.melov2ray.shop",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "962a733d-2614-0b9b-7ffe-9ac92ffea8eb",
+                "id": "049af1db-d937-41a2-b7d4-fb77b75976e5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/current_time"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@melov2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "safari",
-          "serverName": "",
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "random",
+          "serverName": "FIn.Melov2ray.Shop",
           "show": false
         }
       },

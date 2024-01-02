@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.131.209.25",
-            "port": 8443,
+            "address": "128.140.86.218",
+            "port": 25365,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "9c6aa738-d07d-4b38-9e39-2a9c9ee4c70f",
+                "id": "3c68dae2-4b46-4d98-927e-f59dc0e5e648",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "vfffddfh.onlineshop8177.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "vfffddfh.onlineshop8177.shop",
-          "show": false
+          "publicKey": "lZR3SH3TTE5be5cQXvblw93wq-L9byEgiQOk4_iOZHE",
+          "serverName": "sourceforge.net",
+          "shortId": "7c177ee1",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"
