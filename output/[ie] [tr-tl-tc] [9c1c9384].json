@@ -45,39 +45,34 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "83.217.9.129",
-            "port": 2058,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "d92f12a4-a860-4d33-9374-361301e9d454",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.213.52.182",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "vxiOQMd5FENxKt4Iij5xvkaxGgH01SRcUR0zrHmrBx0",
-          "serverName": "blogs.windows.com",
-          "shortId": "6e36707a",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
         }
       },
       "tag": "proxy"

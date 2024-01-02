@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "45.131.209.25",
+            "port": 8443,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "id": "9c6aa738-d07d-4b38-9e39-2a9c9ee4c70f",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "join-sho-to.freev2alpha.cfd"
+            "Host": "vfffddfh.onlineshop8177.shop"
           },
-          "path": "/?ed=2048"
+          "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "vfffddfh.onlineshop8177.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

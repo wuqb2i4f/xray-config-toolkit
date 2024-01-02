@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "::ffff:5.75.204.51",
-            "port": 34782,
+            "address": "gama.ir",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "40abc17b-b527-4163-9bc5-30615b0592a0",
+                "id": "e058f33d-3064-4345-884a-4c6078935409",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,22 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "apimain.ninidoost.cfd"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "IbSV9OnRyp0C7t5HuUpapZ6Z3HEVd0m7P8D5Wb4olBM",
-          "serverName": "kodular.io",
-          "shortId": "22e9d71e",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

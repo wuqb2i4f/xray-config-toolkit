@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.58.31",
+            "address": "173.245.58.51",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "30c6a5ec-3de5-4eec-afe6-e9a13e1a30cb",
+                "id": "97c8c33a-10d9-411b-bf6e-eecc441f07a8",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "testingcloudflare123.masoudsystem1.shop"
+          },
+          "path": "/adminCpanel"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "dash.zedmodeon.fun",
+          "serverName": "testingcloudflare123.masoudsystem1.shop",
           "show": false
         }
       },

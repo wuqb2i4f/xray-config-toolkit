@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "5.42.86.225",
+            "port": 6280,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "id": "cc1e73d6-283a-4c35-8b8c-72fb8f43e25c",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "join-sho-to.freev2alpha.cfd"
-          },
-          "path": "/?ed=2048"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
+          "serverName": "blogs.windows.com",
+          "shortId": "76753364",
+          "show": false,
+          "spiderX": "/doggo"
+        }
       },
       "tag": "proxy"
     },
