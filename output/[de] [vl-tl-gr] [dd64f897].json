@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.50.247.78",
-            "port": 443,
+            "address": "104.18.202.209",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "flow": "",
+                "id": "22bcd819-ffa8-4d93-8d3c-b53334ddffaa",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@V2rayZs"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "XcOn3tULCoYoOTNRDoUmzwU3izXizHKH1ZScINLEmmU",
-          "serverName": "coinmarketcap.com",
-          "shortId": "1db3",
-          "show": false,
-          "spiderX": "/headlines/news/"
+          "serverName": "tm.NaderShah.fun",
+          "show": false
         }
       },
       "tag": "proxy"

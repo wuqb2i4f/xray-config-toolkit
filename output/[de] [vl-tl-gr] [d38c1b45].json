@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "hanoi4.5gsieutocdo.com",
-            "port": 80,
+            "address": "forward3.maryam1700.com",
+            "port": 2096,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
+                "id": "16e3cc71-c99f-4ab5-bff3-6247ca6cbd80",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "dl.kgvn.garenanow.com"
-          },
-          "path": "/5gsieutocdo.club"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "forward333.maryam1500.top",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

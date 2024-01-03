@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.170.216.158",
+            "address": "104.31.16.33",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "flow": "",
+                "id": "1e6e2ad6-de63-4c29-c242-47e98194676d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "BKkwOJLhFgHSqMURvrFT4qPT0QvX1RQQhoe487fLvkk",
-          "serverName": "coinmarketcap.com",
-          "shortId": "1db3",
-          "show": false,
-          "spiderX": "/headlines/news/"
+          "alpn": ["@mehrosaboran,@mehrosaboran"],
+          "fingerprint": "",
+          "serverName": "money.vipconnected.cfd",
+          "show": false
         }
       },
       "tag": "proxy"
