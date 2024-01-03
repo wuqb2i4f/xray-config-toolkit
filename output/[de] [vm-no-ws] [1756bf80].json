@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.16.29.8",
-            "port": 8080,
+            "address": "172.67.170.103",
+            "port": 2082,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "a57f3fbc-221a-4f9b-89b6-7757c23e328b",
+                "id": "Telegram-V2ray_alpha",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +68,9 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "media.khamenei.bio"
+            "Host": "web-ws.drs.lol"
           },
-          "path": "/backup"
+          "path": "/?ed=2048"
         },
         "security": "none"
       },
