@@ -45,33 +45,40 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "hdfy8d1.cpi1.eu.org",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "a6292090-afe1-4640-97a7-4f1d1d877cf1",
-            "port": 443
+            "address": "16.16.96.19",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "8bHUAD5IX0lC5KffvrsN6rqb"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "hdfy8d1.cpi1.eu.org",
-          "show": false
+          "publicKey": "xHQGMkNV3eT4Zia5lWuEiSX1N-4cY4MByjneuuB9b24",
+          "serverName": "coinmarketcap.com",
+          "shortId": "1db3",
+          "show": false,
+          "spiderX": "/headlines/news/"
         }
       },
       "tag": "proxy"

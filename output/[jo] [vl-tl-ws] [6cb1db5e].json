@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.21.146.248",
+            "address": "suratquran18.xyz",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fa86036b-fe46-467c-e359-749e4d996f6b",
+                "id": "962a733d-2614-0b9b-7ffe-9ac92ffea8eb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/current_time"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "TQjiOIf7-e7Dr8xUAZVRtxm-IkfBb6M6JYndcnDfgGI",
-          "serverName": "mihanyas.ir",
-          "shortId": "1b27a6b1",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [""],
+          "fingerprint": "safari",
+          "serverName": "",
+          "show": false
         }
       },
       "tag": "proxy"

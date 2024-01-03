@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "de.melov2ray.shop",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cbcceb3e-63be-42b3-ab9c-c36563c73526",
+                "id": "b98edf3e-77ab-457d-9228-4b7a3cfb5ac0",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ws.nastoh1.sbs"
+            "Host": ""
           },
-          "path": "/"
+          "path": "/melov2ray"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "De.Melov2ray.Shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

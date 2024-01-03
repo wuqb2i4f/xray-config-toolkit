@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.20.189.123",
-            "port": 2087,
+            "address": "5.42.86.225",
+            "port": 6272,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e7ff2196-206a-41b1-d85d-de07e8645250",
+                "id": "e2c1bd38-554e-4b1e-ac41-8883df4184d1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "vpnlime.fv2.site"
-          },
-          "path": "/Channel:@VPNLime"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "vpnlime.fv2.site",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
+          "serverName": "magicbus.ca",
+          "shortId": "76753364",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"
