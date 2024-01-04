@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.53.43.14",
+            "address": "are.mahigirgaming.cfd",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "flow": "",
+                "id": "7d3bf7cf-7cb3-4736-8f06-fdd99a7e1c6b",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/ws"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "9CfJITEruycGaXHjyP-ZXyR87MdMhlPZ6mBRhyjEqnE",
-          "serverName": "coinmarketcap.com",
-          "shortId": "1db3",
-          "show": false,
-          "spiderX": "/headlines/news/"
+          "serverName": "are.mahigirgaming.cfd",
+          "show": false
         }
       },
       "tag": "proxy"

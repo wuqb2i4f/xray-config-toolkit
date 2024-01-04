@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "15.204.245.168",
-            "port": 51574,
+            "address": "108.61.164.197",
+            "port": 53170,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "c0393889-0a0f-47d6-ba43-fe38a7f23d92",
+                "id": "93eb4411-67bb-40f6-b689-2cc161ed80c0",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,7 +68,22 @@
         "network": "tcp",
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "type": "http",
+            "request": {
+              "headers": {
+                "Connection": ["keep-alive"],
+                "Host": [""],
+                "Pragma": "no-cache",
+                "Accept-Encoding": ["gzip, deflate"],
+                "User-Agent": [
+                  "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36",
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+                ]
+              },
+              "method": "GET",
+              "path": ["/"],
+              "version": "1.1"
+            }
           }
         },
         "security": "none"

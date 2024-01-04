@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "198.41.202.5",
-            "port": 443,
+            "address": "test.saeedgalaxy.xyz",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "1e6e2ad6-de63-4c29-c242-47e98194676d",
+                "id": "6807c545-8ae7-4e0a-860c-56fc9ca527f1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/ws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["@mehrosaboran,@mehrosaboran"],
-          "fingerprint": "",
-          "serverName": "money.vipconnected.cfd",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "test.saeedgalaxy.xyz",
           "show": false
         }
       },
