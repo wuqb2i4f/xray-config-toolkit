@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "www.mrzedmodeon.top",
+            "port": 2053,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "id": "266f480d-ab52-40e1-bf67-65b9ccadcad0",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Bia-tel.freev2alpha.cfd"
-          },
-          "path": "/?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "dash.joinzedmodeon.top",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

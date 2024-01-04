@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "ger-service.sinasv.ir",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "id": "4bcadbf8-7fa5-48a5-873a-2049d1c4736c",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "Bia-tel.freev2alpha.cfd"
+            "Host": ""
           },
-          "path": "/?ed=2048"
+          "path": "/lasso"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "ger-service.sinasv.ir",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

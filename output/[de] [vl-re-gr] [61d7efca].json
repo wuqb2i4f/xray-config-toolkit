@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "159.89.99.116",
+            "port": 25365,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "id": "8acf3bdb-4714-47f8-b173-0925cb44da2e",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Bia-tel.freev2alpha.cfd"
-          },
-          "path": "/?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "gAujE8Bta6c1g4iJ-IQ-XMYOHKDsYM1GIlPahDgSHWo",
+          "serverName": "www.discord.com",
+          "shortId": "a34d3baa",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

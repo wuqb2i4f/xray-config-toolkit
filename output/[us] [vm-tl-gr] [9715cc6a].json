@@ -49,14 +49,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.27.102.105",
-            "port": 8080,
+            "address": "172.66.46.59",
+            "port": 2087,
             "users": [
               {
                 "alterId": 0,
                 "encryption": "",
                 "flow": "",
-                "id": "Telegram-V2ray_alpha",
+                "id": "08ec6a06-8c15-4069-a781-8c725a30b7e7",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +65,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Bia-tel.freev2alpha.cfd"
-          },
-          "path": "/?ed=2048"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "my.tooters.ir",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
