@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "free3.riflvpn.tech",
-            "port": 8443,
+            "address": "172.67.170.103",
+            "port": 2082,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "a636c0fd-c580-469c-b32b-a8be341e0f15",
+                "id": "Telegram-V2ray_alpha",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "f"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "web-ws.drs.lol"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "free3.riflvpn.tech",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

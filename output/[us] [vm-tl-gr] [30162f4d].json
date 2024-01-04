@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.84",
+            "address": "172.66.46.28",
             "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "65a61ea9-c959-40a7-a1e3-31a0eb968c0c",
+                "id": "08ec6a06-8c15-4069-a781-8c725a30b7e7",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,14 +68,14 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "Sni18.Tlgram-Polproxy.space",
+          "fingerprint": "firefox",
+          "serverName": "my.tooters.ir",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.persiangolf.online",
-            "port": 2053,
+            "address": "vip.cdn2cdn.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "04732e46-011c-4031-aca3-dac6b1fedf18",
+                "id": "b00c0af2-620a-4cd5-9ba7-f7e5f4f0b1b4",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@pingmaster_bot"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdn14.gsmvp.com"
+          },
+          "path": "/njmiws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "cart.persiangolf.online",
+          "serverName": "cdn14.gsmvp.com",
           "show": false
         }
       },
