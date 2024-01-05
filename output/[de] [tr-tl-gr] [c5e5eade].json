@@ -49,29 +49,28 @@
       "settings": {
         "servers": [
           {
-            "address": "54.78.48.222",
+            "address": "dns.rasha.cfd",
             "flow": "",
             "level": 8,
             "method": "chacha20-poly1305",
             "ota": false,
-            "password": "telegram-id-privatevpns",
-            "port": 22222
+            "password": "vxbytyepXn",
+            "port": 443
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "da.walterwhite2100.fun",
           "show": false
         }
       },

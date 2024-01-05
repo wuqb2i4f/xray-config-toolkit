@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "zula.ir",
-            "port": 8443,
+            "address": "172.66.46.59",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "v2ray_best_iran_11",
+                "id": "08ec6a06-8c15-4069-a781-8c725a30b7e7",
                 "level": 8,
                 "security": "auto"
               }
@@ -72,9 +73,9 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "germany1.meloni.pics",
+          "alpn": [""],
+          "fingerprint": "firefox",
+          "serverName": "my.tooters.ir",
           "show": false
         }
       },

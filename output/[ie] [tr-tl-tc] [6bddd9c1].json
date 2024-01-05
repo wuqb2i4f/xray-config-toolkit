@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.16.3.189",
-            "port": 2083,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "310f3ef3-9b2f-4fc8-8438-30c68d834978",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.213.142.43",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "LikeVPN"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": ["http/1.1"],
           "fingerprint": "",
-          "serverName": "dash.cloudzoom.online",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

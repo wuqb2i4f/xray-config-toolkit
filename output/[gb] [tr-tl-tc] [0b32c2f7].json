@@ -45,36 +45,33 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "190.93.246.241",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "e46daa7a-cf5e-46fe-8a49-4b393fb21eb0",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "52.56.159.254",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-privatevpns",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "cfV2ray.guitarist.cfd",
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
           "show": false
         }
       },

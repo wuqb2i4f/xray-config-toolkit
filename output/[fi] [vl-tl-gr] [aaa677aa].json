@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.86.225",
-            "port": 443,
+            "address": "fin.melov2ray.shop",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "ac79f82a-6563-4b55-9236-bf5eb9004178",
+                "id": "ae78e867-0ff7-4d3e-a847-9ef17728cc5f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
-          "serverName": "discord.com",
-          "shortId": "76753364",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["h2,http/1.1,h3"],
+          "fingerprint": "random",
+          "serverName": "FIn.Melov2ray.Shop",
+          "show": false
         }
       },
       "tag": "proxy"
