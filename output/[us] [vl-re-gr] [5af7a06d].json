@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.146.173.20",
-            "port": 80,
+            "address": "146.190.2.170",
+            "port": 25365,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "319e3dc1-ceb3-4258-b069-675db969ad62",
+                "id": "66a98130-7146-4df6-8ef7-fc6051e3636e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "crtU6u.dl-aPARaT.coM"
-          },
-          "path": "/backup"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ZEDMODEON"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "AJgczSVooXamRbfZ1XGejQRiXHeFEI4vtD534MWFMlo",
+          "serverName": "www.discord.com",
+          "shortId": "46158348",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

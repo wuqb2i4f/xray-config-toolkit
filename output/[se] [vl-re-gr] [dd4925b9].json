@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.28.62",
-            "port": 443,
+            "address": "5.42.86.225",
+            "port": 6272,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c17ee8d1-c7a3-4666-83da-d923ae45c31d",
+                "id": "e2c1bd38-554e-4b1e-ac41-8883df4184d1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "oniyx.fun"
-          },
-          "path": "/uorpws"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "oniyx.fun",
-          "show": false
+          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
+          "serverName": "magicbus.ca",
+          "shortId": "76753364",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"
