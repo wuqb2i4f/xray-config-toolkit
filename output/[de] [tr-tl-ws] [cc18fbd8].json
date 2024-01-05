@@ -45,22 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.18.202.212",
-            "port": 80,
-            "users": [
-              {
-                "alterId": 0,
-                "encryption": "",
-                "flow": "",
-                "id": "Telegram-V2ray_alpha",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "ironone.libertasiran.cloud",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "LibertasLibertas",
+            "port": 443
           }
         ]
       },
@@ -68,11 +63,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "web-ws.drs.lol"
+            "Host": ""
           },
-          "path": "/?ed=2048"
+          "path": "/n89"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ironone.libertasiran.cloud",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

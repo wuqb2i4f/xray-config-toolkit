@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "173.245.58.31",
-            "port": 2096,
+            "address": "104.18.154.42",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "1b3047d5-4445-4a95-c453-17d8435a11e9",
+                "id": "a2f27205-5b59-4a1d-e9ed-c78f7ab4b633",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "Quran14.eSmAIlkORea.sHop"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["@bored_vpn,@bored_vpn,@bored_vpn,@bored_vpn"],
-          "fingerprint": "chrome",
-          "serverName": "tel-afV2ray.vipconfig.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
