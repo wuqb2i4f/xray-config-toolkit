@@ -55,7 +55,7 @@
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "22bcd819-ffa8-4d93-8d3c-b53334ddffaa",
+                "id": "59d41026-71d3-40d7-b53e-35c95f92b243",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@V2rayZs"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "signal.alpha4.top"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "tm.NaderShah.fun",
+          "serverName": "signal.alpha4.top",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.24.176.7",
-            "port": 8443,
+            "address": "16.16.92.78",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "0d135026-8fa1-445a-9389-0f8318a5fe32",
+                "flow": "xtls-rprx-vision",
+                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,18 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir,@NIM_VPN_ir"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "",
-          "serverName": "allgeus.cheetahmh45.shop",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "BuPKkhe3_eX4FYpuBHAQrXhFA3N9ESOjb1gbUwDhwWc",
+          "serverName": "lolstatic-a.akamaihd.net",
+          "shortId": "34",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "91.107.181.102",
-            "port": 29790,
+            "address": "hanoi4.5gsieutocdo.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "75a747f3-f914-47dd-af5c-ec2f0a1438a6",
+                "id": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dl.kgvn.garenanow.com"
+          },
+          "path": "/5gsieutocdo.club"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "gHpgh7fQoB9kzze4I6Pwvo8sXiAPIbja2ieX03dVjkE",
-          "serverName": "ea.com",
-          "shortId": "1bd52d06",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

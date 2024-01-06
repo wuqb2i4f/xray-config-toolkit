@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "shhproxy.varzesh3-cnd.site",
-            "port": 443,
+            "address": "104.21.32.9",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "46df0cce-e115-4c28-927c-70450bf4ec2e",
+                "id": "5f67cd3d-7737-4e2f-a940-83a8ae82e717",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@Shh_Proxy,@Shh_Proxy"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "ipple.atashserver.xyz"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "",
-          "serverName": "shhV2ray.snappfoodd.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

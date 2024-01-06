@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "uk1.xv2ray.net",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "ffb792e9-f974-48f9-9914-4441481b43a3",
+                "id": "3b871117-3a4e-4df2-a8af-08ecc7db6887",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,9 +68,9 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "fire.abrarvan.xyz"
+            "Host": "uk1.xv2ray.net"
           },
-          "path": "/"
+          "path": "/vmess"
         },
         "security": "none"
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.70.117",
+            "address": "rose.dermalux.ir",
             "port": 2053,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c6744af7-57bc-496e-90bc-e2c627214c41",
+                "id": "f1c47db1-ed32-472d-b495-3108037bba1d",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@xbest_speed"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "arp.rustnodes.site"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "p.xbestspeed.cam",
+          "fingerprint": "random",
+          "serverName": "arp.rustnodes.site",
           "show": false
         }
       },
