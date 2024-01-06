@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.209",
-            "port": 2087,
+            "address": "46.148.39.23",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "59d41026-71d3-40d7-b53e-35c95f92b243",
+                "id": "802c5557-0058-4f49-80bb-bc8acb3d9711",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,13 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "signal.alpha4.top"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "signal.alpha4.top",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

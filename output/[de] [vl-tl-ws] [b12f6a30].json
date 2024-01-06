@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.139.172",
-            "port": 443,
+            "address": "de.melov2ray.shop",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "flow": "",
+                "id": "e3206e46-4bdd-4f37-87e4-c4cb4e7f8a81",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "hbifFNdBWbBy7IA0zWLaCsDbg1K7gi_iTGe1AzO94iE",
-          "serverName": "lolstatic-a.akamaihd.net",
-          "shortId": "3344b39b",
-          "show": false,
-          "spiderX": ""
+          "serverName": "De.Melov2ray.Shop",
+          "show": false
         }
       },
       "tag": "proxy"

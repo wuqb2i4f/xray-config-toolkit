@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.92.78",
-            "port": 443,
+            "address": "www.speedtest.net",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "flow": "",
+                "id": "ae78e867-0ff7-4d3e-a847-9ef17728cc5f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@melov2ray"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "BuPKkhe3_eX4FYpuBHAQrXhFA3N9ESOjb1gbUwDhwWc",
-          "serverName": "lolstatic-a.akamaihd.net",
-          "shortId": "34",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "random",
+          "serverName": "FIn.Melov2ray.Shop",
+          "show": false
         }
       },
       "tag": "proxy"

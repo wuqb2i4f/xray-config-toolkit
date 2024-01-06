@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.49.159.247",
+            "address": "www.gozargahvpn.top",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "flow": "",
+                "id": "080afd7f-c11d-4a39-abbc-7fc618517b7f",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "cdnx.vazagh.top"
+          },
+          "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "publicKey": "2kFalTuNFrCI4cnIqoNVkKKeQ4DwPZZIqsZLv13_sAg",
-          "serverName": "lolstatic-a.akamaihd.net",
-          "shortId": "90031b",
-          "show": false,
-          "spiderX": ""
+          "serverName": "cdnx.vazagh.top",
+          "show": false
         }
       },
       "tag": "proxy"

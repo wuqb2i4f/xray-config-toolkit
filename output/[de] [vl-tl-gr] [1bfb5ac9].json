@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "16.16.146.169",
-            "port": 443,
+            "address": "free3.riflvpn.tech",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
+                "flow": "",
+                "id": "3bdf55e8-8c01-4f9b-9b54-332d039f1dfc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,18 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "f"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": [""],
           "fingerprint": "chrome",
-          "publicKey": "Zlo5Ch8_Dc0VXQmLHPY34yN_EMWCSuUl3LUjyYa9yzc",
-          "serverName": "lolstatic-a.akamaihd.net",
-          "shortId": "d2",
-          "show": false,
-          "spiderX": ""
+          "serverName": "free3.riflvpn.tech",
+          "show": false
         }
       },
       "tag": "proxy"
