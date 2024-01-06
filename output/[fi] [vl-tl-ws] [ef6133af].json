@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.238.236.11",
-            "port": 8443,
+            "address": "dlcf2.v2rez.tech",
+            "port": 2096,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "06c912d6-2727-40f5-8f26-f295dfaacf6e",
+                "id": "3a378793-f70c-4f81-84e0-ace674cc5d43",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "freevpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "yalda20230103.freedns.site",
+          "serverName": "dlcf2.v2rez.tech",
           "show": false
         }
       },

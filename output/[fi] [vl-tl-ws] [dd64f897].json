@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.84.196.148",
-            "port": 8443,
+            "address": "104.18.202.209",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "9701c8b3-b2c0-4a70-b5af-da5cf5361a47",
+                "flow": "",
+                "id": "59d41026-71d3-40d7-b53e-35c95f92b243",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "signal.alpha4.top"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "SuZTEyms4vQtWwsT7PC6tP1HZFAStjxuzvnI1-xRogU",
-          "serverName": "speed.cloudflare.com",
-          "shortId": "90462b6a",
-          "show": false,
-          "spiderX": ""
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "signal.alpha4.top",
+          "show": false
         }
       },
       "tag": "proxy"

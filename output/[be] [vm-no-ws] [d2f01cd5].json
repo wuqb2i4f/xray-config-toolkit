@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "146.190.2.170",
-            "port": 25365,
+            "address": "be1.vpnjantit.com",
+            "port": 10000,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "66a98130-7146-4df6-8ef7-fc6051e3636e",
+                "id": "72a8fea4-abb4-11ee-815b-c3606abe6f87",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ZEDMODEON"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": ""
+          },
+          "path": "/vpnjantit"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "AJgczSVooXamRbfZ1XGejQRiXHeFEI4vtD534MWFMlo",
-          "serverName": "www.discord.com",
-          "shortId": "46158348",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

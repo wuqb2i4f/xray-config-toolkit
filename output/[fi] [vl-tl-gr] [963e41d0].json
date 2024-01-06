@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "tel.antiv2ray.sbs",
-            "port": 80,
+            "address": "all.v2rez.tech",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2a3ce329-c18d-4a5c-ad74-8d2e1e9999c1",
+                "id": "3a378793-f70c-4f81-84e0-ace674cc5d43",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "vip.AhV2ray.cfd"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "Alls.v2rez.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
