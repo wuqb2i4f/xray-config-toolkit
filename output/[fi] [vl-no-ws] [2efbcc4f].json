@@ -49,8 +49,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.238.236.11",
-            "port": 8443,
+            "address": "www.speedtest.net",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "freevpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "yalda20230103.freedns.site"
+          },
+          "path": "/freevpn"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "yalda20230103.freedns.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

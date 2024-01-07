@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "77-join.v2raytz.sbs",
-            "port": 443,
+            "address": "hanoi4.5gsieutocdo.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "1f9a988d-ca29-4762-a489-9b86c9524b55",
+                "id": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "dl.kgvn.garenanow.com"
+          },
+          "path": "/5gsieutocdo.club"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "www.ArV2ray.host",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

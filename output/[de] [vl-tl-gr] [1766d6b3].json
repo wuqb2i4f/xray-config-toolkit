@@ -45,34 +45,38 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.17.171.34",
-            "port": 80,
+            "address": "all.vpncustomize.cam",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "60be5ddb-c9f1-48ec-b0ee-f6bd4364b3ce",
+                "id": "8c061198-cfa1-42fb-918e-4af35ddb33ee",
                 "level": 8,
-                "security": "aes-128-gcm"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ccs.hostmjj.com"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@VPNCUSTOMIZE"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2"],
+          "fingerprint": "chrome",
+          "serverName": "KingSpeedV2rayng.VPNCUSTOMIZE.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
