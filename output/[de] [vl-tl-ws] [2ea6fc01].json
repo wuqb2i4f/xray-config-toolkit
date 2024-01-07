@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "45.155.249.151",
-            "port": 80,
+            "address": "ip.1alpha1.shop",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "9d5e69d2-46cf-4865-95fe-a2ee8c52a013",
+                "id": "Tech_Tube_ORG",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "tms.dingtalk.com"
+            "Host": "cdnfree1.1alpha1.shop"
           },
-          "path": "/"
+          "path": "/@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG-@Tech_Tube_ORG"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "cdnfree2.1alpha1.shop",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

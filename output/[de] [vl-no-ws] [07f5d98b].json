@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.27.4.17",
-            "port": 443,
+            "address": "173.245.58.133",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "02aa594a-af2e-4b35-8a17-5986ce15c7b5",
+                "id": "f36ce5ac-feb8-467c-8c70-63271854a2b1",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@ipV2Ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "tu2hVA.tAHARAT.apP"
+          },
+          "path": "/backup"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "FCSi3ZigbnUJZn18TvvshvRfjjlcxpH1grw87kV6mTA",
-          "serverName": "www.forcespeed.fun",
-          "shortId": "483211d3",
-          "show": false,
-          "spiderX": "/"
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

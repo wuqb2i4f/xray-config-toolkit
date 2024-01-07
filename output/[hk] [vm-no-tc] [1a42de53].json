@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 8443,
+            "address": "34.92.50.99",
+            "port": 26389,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "ae78e867-0ff7-4d3e-a847-9ef17728cc5f",
+                "id": "3415f6ed-0880-43bb-85aa-d6c064cc968c",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,13 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@melov2ray"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1,h3"],
-          "fingerprint": "random",
-          "serverName": "FIn.Melov2ray.Shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
