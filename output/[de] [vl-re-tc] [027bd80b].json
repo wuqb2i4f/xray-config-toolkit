@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "rose.dermalux.ir",
-            "port": 2053,
+            "address": "blacktiger.uk",
+            "port": 47488,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "49a5b1d3-0994-4339-a6ff-5d10adbfdf25",
+                "flow": "xtls-rprx-vision",
+                "id": "778cc5f0-20b8-4afe-905c-057f0bd6eda6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cm.dermalux.ir"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "random",
-          "serverName": "cm.dermalux.ir",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "Re82xVW3zNsAShbzzB-FQF9tb68CeipYH9yrnyHEvRE",
+          "serverName": "discord.com",
+          "shortId": "815bfa1f",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "rose.dermalux.ir",
-            "port": 2053,
+            "address": "104.16.245.65",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "49a5b1d3-0994-4339-a6ff-5d10adbfdf25",
+                "id": "13a3e5e4-dcab-4590-e6fd-36a450774e55",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cm.dermalux.ir"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,@Polproxy,"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "random",
-          "serverName": "cm.dermalux.ir",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "Ajab.Moienmusic.space",
           "show": false
         }
       },

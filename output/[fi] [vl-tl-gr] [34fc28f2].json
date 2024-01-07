@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "rose.dermalux.ir",
-            "port": 2053,
+            "address": "206.238.236.11",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "49a5b1d3-0994-4339-a6ff-5d10adbfdf25",
+                "id": "06c912d6-2727-40f5-8f26-f295dfaacf6e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "cm.dermalux.ir"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "freevpn"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "random",
-          "serverName": "cm.dermalux.ir",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "yalda20230103.freedns.site",
           "show": false
         }
       },

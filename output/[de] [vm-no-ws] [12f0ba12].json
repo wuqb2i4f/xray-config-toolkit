@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "rose.dermalux.ir",
-            "port": 2053,
+            "address": "DE1.ircf.eu.ORG",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "49a5b1d3-0994-4339-a6ff-5d10adbfdf25",
+                "id": "d612bbf3-14d0-4d1d-a21c-166e98a3b49c",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "cm.dermalux.ir"
+            "Host": "DE.ircf.eu.ORG"
           },
-          "path": "/"
+          "path": "/@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "random",
-          "serverName": "cm.dermalux.ir",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
