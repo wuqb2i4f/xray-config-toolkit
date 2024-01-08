@@ -45,21 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "ironone.libertasiran.cloud",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "Libertasone*",
+            "port": 443
           }
         ]
       },
@@ -67,11 +63,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ws.nastoh1.sbs"
+            "Host": ""
           },
-          "path": "/"
+          "path": "/n89"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "ironone.libertasiran.cloud",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

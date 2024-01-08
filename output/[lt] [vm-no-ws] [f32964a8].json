@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "iris.dermalux.ir",
-            "port": 2087,
+            "address": "lt1-vmess.sshmax.xyz",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "f45d56fe-54d7-4d02-b858-9d670d344b08",
+                "id": "d3e40d59-b53c-4f4e-8867-bb598be864d2",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "cm.dermalux.ir"
+            "Host": "lt1-vmess.sshmax.xyz"
           },
-          "path": "/"
+          "path": "/vmess"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "random",
-          "serverName": "cm.dermalux.ir",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

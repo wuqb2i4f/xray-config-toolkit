@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "105-join.v2raytz.sbs",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
+                "id": "--MsV2ray--MsV2ray--",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ws.nastoh1.sbs"
+            "Host": "de.MsV2ray.space"
           },
           "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "de.MsV2ray.space",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

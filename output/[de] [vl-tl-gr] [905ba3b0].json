@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.209",
-            "port": 2087,
+            "address": "104.18.202.212",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "59d41026-71d3-40d7-b53e-35c95f92b243",
+                "id": "a99cbf1e-031d-401e-ae97-0b3db53d0c52",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "signal.alpha4.top"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "‌@VPNCUSTOMIZE"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "serverName": "signal.alpha4.top",
+          "serverName": "FreaV2rayng.VPNCUSTOMIZE.tech",
           "show": false
         }
       },

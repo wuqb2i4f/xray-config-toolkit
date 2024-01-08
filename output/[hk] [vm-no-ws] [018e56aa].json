@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "159.69.178.98",
-            "port": 443,
+            "address": "scadn.yydsii.com",
+            "port": 2052,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "b1cc4182-a1e1-4e19-e4e1-ec862c55b324",
+                "id": "2dbeeb76-a71f-493f-bd92-33f0193291c5",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "hkyx.651568.xyz"
+          },
+          "path": "/"
         },
-        "security": "reality",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "vdOZy1mmzOEG8GaaePhroQPCwa-lBhbRbw0co2KEnGg",
-          "serverName": "ns1.cloudflare.com",
-          "shortId": "8206",
-          "show": false,
-          "spiderX": ""
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

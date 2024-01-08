@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "api.rustbridge.site",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
+                "flow": "xtls-rprx-vision",
+                "id": "0f2ce67a-3357-432f-b077-77f355ad8eec",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ws.nastoh1.sbs"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "random",
+          "publicKey": "oKi0Ug592nOWRJ2tAE_xMffJ6z76c9vv3NDovWU4MgM",
+          "serverName": "bodyfit.com.au",
+          "shortId": "2acc3b65d4ae54c9",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "5.75.200.225",
+            "port": 52881,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
+                "flow": "xtls-rprx-vision",
+                "id": "09eb5c0d-8e59-4428-ac45-93cdd522a143",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,22 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ws.nastoh1.sbs"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "xatmYKQWUBDL2t3b3lh9eUfzhRbVzlXANsGrtiLLc3U",
+          "serverName": "discord.com",
+          "shortId": "df257c60",
+          "show": false,
+          "spiderX": ""
+        }
       },
       "tag": "proxy"
     },

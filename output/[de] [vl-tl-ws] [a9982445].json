@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "lily.javanodes.site",
+            "port": 2083,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
+                "id": "da6d7755-c14f-4430-a2a6-f2a7b6d76e47",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ws.nastoh1.sbs"
+            "Host": "gtex.javanodes.site"
           },
           "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "random",
+          "serverName": "gtex.javanodes.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

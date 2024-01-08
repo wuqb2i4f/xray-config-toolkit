@@ -45,19 +45,20 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "104.17.184.241",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
+                "id": "bf3d038a-93a2-4e24-886c-6bc64e3c3a90",
                 "level": 8,
-                "security": "auto"
+                "security": "aes-128-gcm"
               }
             ]
           }
@@ -67,7 +68,7 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ws.nastoh1.sbs"
+            "Host": "mg_cdn.yunjisuan.cf"
           },
           "path": "/"
         },

@@ -45,33 +45,35 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "172.66.47.74",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "da8d0369-0121-4d2b-9fe1-c071833604cf",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
+            "address": "16.16.226.180",
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "telegram-id-directvpn",
+            "port": 22222
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "fl.gooldeneaglee.eu.org"
-          },
-          "path": "@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android,@Archive_Android"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["http/1.1"],
+          "fingerprint": "",
+          "serverName": "trj.rollingnext.co.uk",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

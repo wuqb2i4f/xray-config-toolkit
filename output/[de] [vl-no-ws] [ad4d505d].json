@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.136.239",
-            "port": 443,
+            "address": "103-join.v2raytz.sbs",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "73adb640-1a42-4d6b-8f8d-d04834791c21",
+                "id": "6c859c60-37cf-4e97-a8f6-97f31ed83743",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "Digi-V2rayng-ConneCtion.Digiv2ray.shop"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
-          "fingerprint": "chrome",
-          "serverName": "zanbor1.v2raynngg.top",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

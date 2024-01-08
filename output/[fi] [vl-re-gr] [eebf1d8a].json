@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "DE1.ircf.eu.ORG",
-            "port": 8080,
+            "address": "97-join.v2raytz.sbs",
+            "port": 443,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "d612bbf3-14d0-4d1d-a21c-166e98a3b49c",
+                "id": "057a1dcd-86ac-45d6-a9b4-a8f3fa650d68",
                 "level": 8,
                 "security": "auto"
               }
@@ -65,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "DE.ircf.eu.ORG"
-          },
-          "path": "/@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "zK0EUXkCYg-rLjpZaKhE-5ZgUjxrTsrmA5TSK0C2IA0",
+          "serverName": "www.forcespeed.fun",
+          "shortId": "d9597abd",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },
