@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "206.238.236.36",
-            "port": 8443,
+            "address": "104.27.102.150",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "06c912d6-2727-40f5-8f26-f295dfaacf6e",
+                "id": "Telegram-V2ray_alpha",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "freevpn"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "join-sho-to.freev2alpha.cfd"
+          },
+          "path": "/?ed=2048"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "yalda20230103.freedns.site",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "102-join.v2raytz.sbs",
-            "port": 2053,
+            "address": "all.msv2ray.online",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "7bf1c642-bc10-4a6e-8f01-a6411f051423",
+                "id": "1e6797e9-16d3-4390-91d7-3e1be61a944a",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Digi-V2rayng-ConneCtion.Digiv2ray.shop"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
+          "alpn": ["h2,http/1.1"],
           "fingerprint": "chrome",
-          "serverName": "Digi-V2rayng-ConneCtion.Digiv2ray.shop",
+          "serverName": "de.MsV2ray.space",
           "show": false
         }
       },

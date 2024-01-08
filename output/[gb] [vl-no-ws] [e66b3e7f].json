@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.202.209",
-            "port": 2096,
+            "address": "tel.hopev2ray.link",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "0fe0c570-e5fc-4815-af5b-bc67df290019",
+                "id": "f69823a3-1607-4da6-9a1e-cd6d6594b464",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON-TELEGRAM:@ZEDMODEON,TELEGRAM:@ZEDMODEON"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "uk2-vless.sshmax.xyz"
+          },
+          "path": "/vless"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "chrome",
-          "serverName": "dash.zedmodeon1.store",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

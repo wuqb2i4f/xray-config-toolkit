@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.29.8",
-            "port": 80,
+            "address": "ars2.pingreducer.top",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "319e3dc1-ceb3-4258-b069-675db969ad62",
+                "id": "58d04d0d-e4b1-40d2-81df-d175f030424c",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "crtU6u.dl-aPARaT.coM"
+            "Host": ""
           },
-          "path": "/backup"
+          "path": "/pingreducer"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "ars2.pingreducer.top",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

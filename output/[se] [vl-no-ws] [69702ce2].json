@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "free3.riflvpn.tech",
-            "port": 8443,
+            "address": "ch.hopev2ray.link",
+            "port": 80,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3bdf55e8-8c01-4f9b-9b54-332d039f1dfc",
+                "id": "743f940b-ee69-415e-9774-b4ca9e92d9e2",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "f"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "se2-vless.sshmax.xyz"
+          },
+          "path": "/vless"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "free3.riflvpn.tech",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
