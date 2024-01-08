@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnjs.com",
-            "port": 8080,
+            "address": "77.73.131.224",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "20a3c960-a9ef-4227-baff-f28406ece4dc",
+                "id": "ef689033-65ec-45df-9b41-4bb538b5f5e6",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ws.nastoh1.sbs"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "none"
+        "security": "reality",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "safari",
+          "publicKey": "e3chWiqd0KiXBqdO0Jpip4yUTWqGPjsDE4NYggq3MDU",
+          "serverName": "ftp.debian.org",
+          "shortId": "76c9f3ad",
+          "show": false,
+          "spiderX": "/"
+        }
       },
       "tag": "proxy"
     },

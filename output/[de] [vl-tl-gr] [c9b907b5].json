@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "173.245.59.16",
-            "port": 80,
+            "address": "172.67.170.33",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "46d0dc28-e6b6-4453-909c-c6bc90a8f5c4",
+                "id": "32a4737f-8b3f-40a4-a039-3a021d752069",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "JCYjrF.سیسی.WORlD"
-          },
-          "path": "/dl/index.php"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "f"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "free4.riflvpn.tech",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

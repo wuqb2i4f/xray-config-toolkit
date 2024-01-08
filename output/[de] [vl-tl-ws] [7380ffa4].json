@@ -45,18 +45,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.234.11.159",
-            "port": 80,
+            "address": "120-join.v2raytz.sbs",
+            "port": 2083,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "48d0d388-ea9d-48f4-929c-e53d7ecb46ba",
+                "id": "--MsV2ray--MsV2ray--",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,11 +67,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": ""
+            "Host": "de.MsV2ray.space"
           },
-          "path": "/48d0d388"
+          "path": "/"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "chrome",
+          "serverName": "fe.MsV2ray.space",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

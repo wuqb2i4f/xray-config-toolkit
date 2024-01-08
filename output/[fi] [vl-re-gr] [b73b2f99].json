@@ -45,34 +45,39 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "35.181.75.32",
-            "flow": "",
-            "level": 8,
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "telegram-id-directvpn",
-            "port": 22222
+            "address": "65.109.199.189",
+            "port": 10974,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "94fd9e77-1804-4d25-a8e1-c5b5ba514063",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1"],
-          "fingerprint": "",
-          "serverName": "trj.rollingnext.co.uk",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "QbLsx0oV7dQVz4wXbm1ggmEVQ_bQKqiWHXa1sjsntGM",
+          "serverName": "Chir",
+          "shortId": "9c55cb07",
+          "show": false,
+          "spiderX": ""
         }
       },
       "tag": "proxy"

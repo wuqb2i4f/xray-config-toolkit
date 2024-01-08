@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.86.225",
-            "port": 6272,
+            "address": "mtn.vpnprosec.com",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "e2c1bd38-554e-4b1e-ac41-8883df4184d1",
+                "id": "SvnTeam",
                 "level": 8,
                 "security": "auto"
               }
@@ -69,15 +69,13 @@
           "multiMode": false,
           "serviceName": ""
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
-          "serverName": "magicbus.ca",
-          "shortId": "76753364",
-          "show": false,
-          "spiderX": "/doggo"
+          "alpn": ["h3,h2,http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "fnV2rayfnn.svnteamfree.com",
+          "show": false
         }
       },
       "tag": "proxy"

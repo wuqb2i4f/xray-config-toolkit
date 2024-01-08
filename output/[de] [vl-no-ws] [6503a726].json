@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "mtn.vpnprosec.com",
-            "port": 443,
+            "address": "172.66.47.158",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "SvnTeam",
+                "id": "ca510fb3-9a46-4b3c-a2a6-4c80a6431bd9",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "KCAGlE.eiTAa.biO"
+          },
+          "path": "/"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "firefox",
-          "serverName": "gmV2raygm.svnteamfree.com",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

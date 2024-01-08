@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.42.86.225",
-            "port": 6280,
+            "address": "49.12.97.39",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cc1e73d6-283a-4c35-8b8c-72fb8f43e25c",
+                "id": "3c332141-9f03-4ba6-9dd2-bb092ec4db82",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,21 +64,20 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "@ipV2Ray"
         },
         "security": "reality",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
-          "serverName": "blogs.windows.com",
-          "shortId": "76753364",
+          "fingerprint": "firefox",
+          "publicKey": "qAmBWJl2aO0mMoWHNNpNBAefvTmGUc5B2L4Uhxjpe0E",
+          "serverName": "www.speedq.fun",
+          "shortId": "481a1d68",
           "show": false,
-          "spiderX": "/doggo"
+          "spiderX": "/"
         }
       },
       "tag": "proxy"
