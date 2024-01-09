@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "web.bbv2ry.pics",
-            "port": 443,
+            "address": "us2e-preventintent.v2freevpn.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "2cc6dcba-19f0-434d-87fa-ca19168c0718",
+                "id": "2a8a10fb-9ca3-367e-a234-cf09f841be4f",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "Skyy.bbv2ry.pics"
+            "Host": "us2e-preventintent.v2freevpn.com"
           },
-          "path": "/"
+          "path": "/v103-udkjds3nay"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "chrome",
-          "serverName": "Skyy.bbv2ry.pics",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "rose.dermalux.ir",
-            "port": 2053,
+            "address": "188.114.97.1",
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "1aff0ab3-13fb-41b8-93a0-0c0924349373",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,16 +68,16 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "cm.dermalux.ir"
+            "Host": "odelia.autos"
           },
-          "path": "/"
+          "path": "linkvws"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2"],
-          "fingerprint": "random",
-          "serverName": "cm.dermalux.ir",
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "odelia.autos",
           "show": false
         }
       },

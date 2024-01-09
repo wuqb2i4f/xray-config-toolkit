@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.95.147",
-            "port": 2053,
+            "address": "discord.com",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "b48ee0fe-db2c-4e32-9d57-ac70c88ffa8d",
+                "id": "9ccdd19a-80bf-4f2d-a202-180015ba7893",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,14 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "Ml.ircf.eu.org"
+          },
+          "path": "/@x2rayn_vpn@x2rayn_vpn@x2rayn_vpn"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2,h3"],
-          "fingerprint": "chrome",
-          "serverName": "t5.funlifea.shop",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

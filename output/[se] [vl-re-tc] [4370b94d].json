@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "web.bbv2ry.pics",
-            "port": 443,
+            "address": "5.42.86.225",
+            "port": 2052,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "2cc6dcba-19f0-434d-87fa-ca19168c0718",
+                "id": "7eafa388-42bd-4281-ba9b-93a6bd74f9be",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Skyy.bbv2ry.pics"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
           "fingerprint": "chrome",
-          "serverName": "Skyy.bbv2ry.pics",
-          "show": false
+          "publicKey": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
+          "serverName": "speed.cloudflare.com",
+          "shortId": "76753364",
+          "show": false,
+          "spiderX": "/doggo"
         }
       },
       "tag": "proxy"

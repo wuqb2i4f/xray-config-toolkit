@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "web.bbv2ry.pics",
+            "address": "16.16.70.138",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "2cc6dcba-19f0-434d-87fa-ca19168c0718",
+                "flow": "xtls-rprx-vision",
+                "id": "2c59ff33-916d-459b-a4c0-8b7432c4c3bb",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,20 +64,21 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "Skyy.bbv2ry.pics"
-          },
-          "path": "/"
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
+        "security": "reality",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
           "fingerprint": "chrome",
-          "serverName": "Skyy.bbv2ry.pics",
-          "show": false
+          "publicKey": "a0HNz4nqwMocjpOIEcyNtmAfIjmjIcI4h9AhDx2F_SM",
+          "serverName": "coinmarketcap.com",
+          "shortId": "1db3",
+          "show": false,
+          "spiderX": "/"
         }
       },
       "tag": "proxy"

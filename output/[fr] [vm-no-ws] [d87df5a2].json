@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "web.bbv2ry.pics",
-            "port": 443,
+            "address": "web.parspack.com",
+            "port": 80,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "2cc6dcba-19f0-434d-87fa-ca19168c0718",
+                "id": "7fc27c1c-5052-4d6b-8099-1a8c04f1cd7b",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,18 +68,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "Skyy.bbv2ry.pics"
+            "Host": "PArspAcK51.eSMAILkOrEA.sHoP"
           },
-          "path": "/"
+          "path": "/?ed=2048"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": ["http/1.1,h2"],
-          "fingerprint": "chrome",
-          "serverName": "Skyy.bbv2ry.pics",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },

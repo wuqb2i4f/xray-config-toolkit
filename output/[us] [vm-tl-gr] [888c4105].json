@@ -45,17 +45,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "rose.javanodes.site",
-            "port": 2053,
+            "address": "172.66.46.34",
+            "port": 2087,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "da6d7755-c14f-4430-a2a6-f2a7b6d76e47",
+                "id": "08ec6a06-8c15-4069-a781-8c725a30b7e7",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +65,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "gtex.javanodes.site"
-          },
-          "path": "/"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": ""
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [""],
-          "fingerprint": "random",
-          "serverName": "gtex.javanodes.site",
+          "fingerprint": "firefox",
+          "serverName": "my.tooters.ir",
           "show": false
         }
       },

@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.229.179",
-            "port": 80,
+            "address": "206.238.236.36",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "135f588d-3fa1-4088-97f1-c43ba6fd5c1a",
+                "id": "06c912d6-2727-40f5-8f26-f295dfaacf6e",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,14 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "ys9llX.BLackmASTER.org"
-          },
-          "path": "/backup"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "freevpn"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "yalda20230103.freedns.site",
+          "show": false
+        }
       },
       "tag": "proxy"
     },

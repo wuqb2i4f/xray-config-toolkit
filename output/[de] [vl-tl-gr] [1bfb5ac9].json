@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ars2.pingreducer.top",
-            "port": 443,
+            "address": "free3.riflvpn.tech",
+            "port": 8443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "58d04d0d-e4b1-40d2-81df-d175f030424c",
+                "id": "3bdf55e8-8c01-4f9b-9b54-332d039f1dfc",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,19 +64,17 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/pingreducer"
+        "network": "grpc",
+        "grpcSettings": {
+          "multiMode": false,
+          "serviceName": "f"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": ["h2,http/1.1"],
+          "alpn": [""],
           "fingerprint": "chrome",
-          "serverName": "ars2.pingreducer.top",
+          "serverName": "free3.riflvpn.tech",
           "show": false
         }
       },
