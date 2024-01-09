@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.31.16.85",
+            "address": "173-join.v2raytz.sbs",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "6b9bd30a-3409-439c-d15e-60ecf9f0b99b",
+                "id": "66f5d038-a73a-4041-a6d6-955854b12649",
                 "level": 8,
                 "security": "auto"
               }
@@ -64,17 +64,19 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": "@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray,@AfV2ray"
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "SHHPROXY.snnapp.monster"
+          },
+          "path": "/"
         },
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "Ac-V2rayng-ConneCtionV2ray.snakedady.link",
+          "alpn": ["h2"],
+          "fingerprint": "firefox",
+          "serverName": "SHHPROXY.snnapp.monster",
           "show": false
         }
       },

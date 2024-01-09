@@ -49,13 +49,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "65.109.199.189",
-            "port": 10974,
+            "address": "174-join.v2raytz.sbs",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "94fd9e77-1804-4d25-a8e1-c5b5ba514063",
+                "id": "5113d7b0-27cb-4467-a9ff-05b5cd8b8974",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,17 +67,15 @@
         "network": "grpc",
         "grpcSettings": {
           "multiMode": false,
-          "serviceName": ""
+          "serviceName": "@Shh_Proxy,@Shh_Proxy"
         },
-        "security": "reality",
-        "realitySettings": {
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
+          "alpn": ["h2"],
           "fingerprint": "chrome",
-          "publicKey": "QbLsx0oV7dQVz4wXbm1ggmEVQ_bQKqiWHXa1sjsntGM",
-          "serverName": "Chir",
-          "shortId": "9c55cb07",
-          "show": false,
-          "spiderX": ""
+          "serverName": "shhV2ray.snappfoodd.site",
+          "show": false
         }
       },
       "tag": "proxy"
