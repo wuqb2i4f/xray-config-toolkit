@@ -40,18 +40,17 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
             "address": "iranserver.com",
-            "port": 443,
+            "port": 80,
             "users": [
               {
-                "alterId": 0,
-                "encryption": "",
+                "encryption": "none",
                 "flow": "",
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "id": "eaa0d1c9-c9b7-4a83-ba61-24c21aadca56",
                 "level": 8,
                 "security": "auto"
               }
@@ -68,18 +67,11 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "vip2323.cfd"
+            "Host": "vmessorg1.xn--54qv00ez5ar77g.co"
           },
-          "path": "/linkvws"
+          "path": "/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [""],
-          "fingerprint": "chrome",
-          "serverName": "vip2323.cfd",
-          "show": false
-        }
+        "security": "none"
       },
       "tag": "proxy"
     },
@@ -87,9 +79,9 @@
       "protocol": "freedom",
       "settings": {
         "fragment": {
-          "packets": "tlshello",
-          "length": "5-30",
-          "interval": "10-20"
+          "packets": "1-1",
+          "length": "3-5",
+          "interval": "5"
         }
       },
       "streamSettings": {
