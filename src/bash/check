@@ -1,0 +1,56 @@
+#!/bin/bash
+
+function check_configs() {
+    local src_dir="$1"
+    local num_count=0
+    local num_passed=0
+    local num_total=$(count_items "$src_dir" "f")
+    local response_check=
+    echo "Processing $num_total file(s) in $src_dir directory."
+    for file in "$src_dir"/*; do
+        ((num_count++))
+        IFS=',' read -r response_check pid <<<"$(xray_connection_check "$file" true)"
+        if [[ "$response_check" == true ]]; then
+            ((num_passed++))
+        fi
+        kill_process "$pid" >/dev/null 2>&1
+        progress_bar "$num_count" "$num_total"
+    done
+    echo -ne "\n"
+    echo "TOTAL: $num_total - PASSED: $num_passed"
+}
+
+function xray_connection_check() {
+    local file="$1"
+    local country="${2:false}"
+    $xray_app run -c "$file" >/dev/null 2>&1 &
+    local pid=$!
+    sleep 2
+    local attempts=0
+    local response_check=false
+    while ((attempts < 3)); do
+        local response_curl=$(curl -x http://127.0.0.1:10809 -s -m 5 https://api.country.is)
+        if [[ -n "$response_curl" && $(jq -r '.country' <<<"$response_curl") != "null" ]]; then
+            if [[ "$country" == true ]]; then
+                append_country_code_to_filename "$file" "$response_curl"
+            fi
+            response_check=true
+            break
+        fi
+        ((attempts++))
+    done
+    echo "$response_check,$pid"
+}
+
+function append_country_code_to_filename() {
+    local file="$1"
+    local response_curl="$2"
+    local filename=$(basename "$file")
+    local filedir=$(dirname "$file")
+    local pattern="^\[.*\] \[.*\] \[.*\]\.json$"
+    if [[ ! $filename =~ $pattern ]]; then
+        local country_code=$(jq -r '.country' <<<"$response_curl" | tr '[:upper:]' '[:lower:]')
+        local filerename=$(sed -E "s/^(\[[^]]+])( \[[^]]+])(.json)$/\[$country_code] \1\2\3/" <<<"$filename")
+        mv -f "$file" "$filedir/$filerename"
+    fi
+}

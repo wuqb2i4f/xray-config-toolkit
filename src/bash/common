@@ -1,0 +1,218 @@
+#!/bin/bash
+
+function convert_percent_encoding() {
+    local input="$1"
+    printf '%b' "${input//%/\\x}"
+}
+
+function url_encode() {
+    local input="$1"
+    local encoded_string=""
+    for ((i = 0; i < ${#input}; i++)); do
+        character="${input:i:1}"
+        if [[ "$character" =~ [a-zA-Z0-9._~-] ]]; then
+            encoded_string+="$character"
+        else
+            encoded_string+="$(printf '%%%02X' "'$character")"
+        fi
+    done
+    echo "$encoded_string"
+}
+
+function base64_encode() {
+    local input="$1"
+    base64 <<<"$input" | tr -d '\n'
+}
+
+function get_value() {
+    local key="$1"
+    local query_string="$2"
+    local default_value="${3:-}"
+    local value=""
+    if [[ "$query_string" =~ "$key=" ]]; then
+        value=${query_string##*"$key="}
+        value=${value%%;*}
+    fi
+    if [[ -z "$value" ]]; then
+        value=$default_value
+    fi
+    echo "$value"
+}
+
+function query_value_for_key() {
+    local key="$1"
+    local input="$2"
+    IFS="&" read -ra pairs <<<"$input"
+    for pair in "${pairs[@]}"; do
+        IFS="=" read -r k v <<<"$pair"
+        if [[ "$k" == "$key" ]]; then
+            echo "$v"
+            return
+        fi
+    done
+    echo ""
+}
+
+function remove_empty_values() {
+    local input="$1"
+    local prefix="${input%%\?*}"
+    local query_string="${input#*\?}"
+    local modified_query=""
+    IFS='&' read -ra pairs <<<"$query_string"
+    for pair in "${pairs[@]}"; do
+        IFS='=' read -ra parts <<<"$pair"
+        key="${parts[0]}"
+        value="${parts[1]:-}"
+        if [[ -n "$value" ]]; then
+            modified_query+="&$key=$value"
+        fi
+    done
+    modified_query="${modified_query#&}"
+    local output="$prefix?$modified_query"
+    echo "$output"
+}
+
+function extract() {
+    local query="$1"
+    local input="$2"
+    jq -r "$query" "$input"
+}
+
+function short_name() {
+    input=$1
+    output=${input:0:2}
+    echo $output
+}
+
+function date_time() {
+    local time="$(TZ='Asia/Tehran' date '+%I%P-%M%S%3N')"
+    echo "$time"
+}
+
+function progress_bar() {
+    local count="$1"
+    local total="$2"
+    local width=75
+    local percent=$((count * 100 / total))
+    local progress=$((count * width / total))
+    printf "[%-${width}s] %d%%\r" "$(printf '%*s' "$progress" '' | tr ' ' '#')" "$percent"
+}
+
+function kill_process() {
+    local pid="$1"
+    if [[ -n "$pid" ]]; then
+        kill -9 "$pid"
+        while ps -p "$pid"; do
+            sleep 1
+        done
+    fi
+}
+
+function count_items() {
+    local src_dir="$1"
+    local item_type="$2"
+    local count=0
+    if [ "$item_type" == "f" ]; then
+        count=$(find "$src_dir" -maxdepth 1 -type f | wc -l)
+    elif [ "$item_type" == "d" ]; then
+        count=$(find "$src_dir" -mindepth 1 -type d | wc -l)
+    fi
+    echo "$count"
+}
+
+function remove_items() {
+    local src_dir="$1"
+    local pattern="$2"
+    local item_type="$3"
+    if [ "$item_type" == "f" ]; then
+        find "$src_dir" -type f \( -name "$pattern" -o -regex "$pattern" \) -exec rm -- {} +
+    elif [ "$item_type" == "d" ]; then
+        find "$src_dir" -mindepth 1 -maxdepth 1 -type d -name "$pattern" -exec rm -r -- {} +
+    elif [ "$item_type" == "fd" ]; then
+        find "$src_dir" -mindepth 1 -maxdepth 1 -name "$pattern" -exec rm -r -- {} +
+    fi
+    echo "Removed items in $src_dir matching $pattern (Type: $item_type)"
+}
+
+function copy_items() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local pattern="$3"
+    find "$src_dir" -type f \( -name "$pattern" -o -regex "$pattern" \) -exec cp -t "$dest_dir" -- {} +
+    echo "Copied items from $src_dir matching $pattern to $dest_dir"
+}
+
+function remove_duplicate_file() {
+    local dir="$1"
+    fdupes -Nrd "$dir"
+    echo "Removed duplicate files in $dir"
+}
+
+function git_update() {
+    git config --global user.name 'wuqb2i4f'
+    git config --global user.email 'wuqb2i4f@duck.com'
+    if ! git diff --quiet; then
+        git add .
+        git commit -m "Updated"
+        git fetch --all
+        git reset --hard HEAD
+        git merge @{u}
+        git push -f origin main
+    else
+        echo "No changes detected"
+    fi
+}
+
+function git_reset() {
+    git config --global user.name 'wuqb2i4f'
+    git config --global user.email 'wuqb2i4f@duck.com'
+    if ! git diff --quiet; then
+        git add .
+        git commit -m "Updated"
+    fi
+    git fetch --all
+    git reset --hard HEAD
+    git merge @{u}
+    git checkout --orphan latest_branch
+    git add .
+    git commit -am "Updated"
+    git branch -D main
+    git branch -m main
+    git push -f origin main
+}
+
+function move_jsons_to_subdir() {
+    local src_dir="$1"
+    local divisor=25
+    local counter=0
+    local count=$(count_items "$src_dir" "f")
+    local num_folders=$((($count + $divisor - 1) / $divisor))
+    for ((i = 1; i <= num_folders; i++)); do
+        mkdir -p "$src_dir/$i"
+    done
+    for file in "$src_dir"/*; do
+        if [[ -f $file ]]; then
+            counter=$((counter + 1))
+            sub_dir=$((($counter - 1) / $divisor + 1))
+            mv "$file" "$src_dir/$sub_dir"
+        fi
+    done
+    echo "Moved JSON files to subdirectories in $src_dir"
+}
+
+function generate_workflow() {
+    local src_dir="$1"
+    local count=$(count_items "$src_dir" "d")
+    if [ "$count" -gt 0 ]; then
+        for ((i = 1; i <= count; i++)); do
+            local data_workflow=$(<"$template_dir/workflow-stage-2.md")
+            local file_path="$workflows_dir/workflow-stage-2-$i.yml"
+            echo "$data_workflow" >"$file_path"
+            local sed_cmd="s#\[\s*NUM\s*\]#$i#g"
+            sed -i "$sed_cmd" "$file_path"
+        done
+        echo "Generated $count workflow files in $workflows_dir"
+    else
+        echo "No workflows generated as there are no subdirectories in $src_dir"
+    fi
+}

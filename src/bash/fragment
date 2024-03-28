@@ -1,0 +1,108 @@
+#!/bin/bash
+
+function check_fragment_configs() {
+    local src_dir="$1"
+    local mix_file="$src_dir/mix.json"
+    local response_check=
+    local file_list=("$src_dir"/*)
+    local length=${#file_list[@]}
+    local indices=($(seq 0 $((length - 1)) | shuf))
+    for index in "${indices[@]}"; do
+        local file="${file_list[$index]}"
+        if [[ "$file" == "$mix_file" ]]; then
+            continue
+        fi
+        local sed_cmd_fragment_address=$(sed_cmd_fragment_address)
+        local sed_cmd_fragment_sockopt=$(sed_cmd_fragment_sockopt)
+        local sed_cmd_fragment=$(sed_cmd_fragment "$file")
+        sed -i "$sed_cmd_fragment_address" "$file"
+        sed -i "$sed_cmd_fragment_sockopt" "$file"
+        sed -i "$sed_cmd_fragment" "$file"
+        IFS=',' read -r response_check pid <<<"$(xray_connection_check "$file")"
+        if [[ "$response_check" == true ]]; then
+            mv "$file" "$mix_file"
+            kill_process "$pid" >/dev/null 2>&1
+            echo "Updated fragment configurations and moved file in '$src_dir'."
+            return
+        else
+            rm "$file"
+        fi
+        kill_process "$pid" >/dev/null 2>&1
+    done
+    echo "No valid configurations found in '$src_dir' that can be connected."
+}
+
+function sed_cmd_fragment() {
+    local file="$1"
+    local filename=$(basename "$file")
+    local sed_cmd_fragment=
+    local pattern_security_tls="^\[.*\] \[[^ ]*-tl-[^ ]*\] \[.*\]\.json$"
+    local pattern_security_no="^\[.*\] \[[^ ]*-no-[^ ]*\] \[.*\]\.json$"
+    if [[ $filename =~ $pattern_security_tls ]]; then
+        sed_cmd_fragment=$(sed_cmd_fragment_tls)
+    elif [[ $filename =~ $pattern_security_no ]]; then
+        sed_cmd_fragment=$(sed_cmd_fragment_no)
+    fi
+    echo "$sed_cmd_fragment"
+}
+
+function sed_cmd_fragment_address() {
+    local sed_cmd='s#"address": ".*",#"address": "iranserver.com",#g'
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_sockopt() {
+    local sed_cmd='s#"streamSettings": {#"streamSettings": {\
+        "sockopt": {\
+          "dialerProxy": "fragment",\
+          "tcpKeepAliveIdle": 100,\
+          "mark": 255\
+        },#g'
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_tls() {
+    local sed_cmd='s#"protocol": "freedom",#"protocol": "freedom",\
+      "settings": {\
+        "fragment": {\
+          "packets": "tlshello",\
+          "length": "5-30",\
+          "interval": "10-20"\
+        }\
+      },\
+      "streamSettings": {\
+        "sockopt": {\
+          "TcpNoDelay": true,\
+          "tcpKeepAliveIdle": 100,\
+          "mark": 255\
+        }\
+      },\
+      "tag": "fragment"\
+    },\
+    {\
+      "protocol": "freedom",#g'
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_no() {
+    local sed_cmd='s#"protocol": "freedom",#"protocol": "freedom",\
+      "settings": {\
+        "fragment": {\
+          "packets": "1-1",\
+          "length": "3-5",\
+          "interval": "5"\
+        }\
+      },\
+      "streamSettings": {\
+        "sockopt": {\
+          "TcpNoDelay": true,\
+          "tcpKeepAliveIdle": 100,\
+          "mark": 255\
+        }\
+      },\
+      "tag": "fragment"\
+    },\
+    {\
+      "protocol": "freedom",#g'
+    echo "$sed_cmd"
+}

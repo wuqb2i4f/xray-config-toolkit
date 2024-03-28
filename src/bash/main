@@ -1,0 +1,64 @@
+#!/bin/bash
+
+function cleanup() {
+    echo "Script interrupted."
+    exit 1
+}
+
+trap cleanup INT
+trap '' SIGTERM
+
+base_dir="."
+workflows_dir="$base_dir/.github/workflows"
+template_dir="$base_dir/src/template"
+xray_app="$base_dir/src/xray/xray"
+raw_dir="$base_dir/output/raw"
+json_dir="$base_dir/output/json"
+base64_dir="$base_dir/output/base64"
+fragment_dir="$base_dir/output/fragment"
+source "$base_dir/src/bash/fetch"
+source "$base_dir/src/bash/check"
+source "$base_dir/src/bash/base64"
+source "$base_dir/src/bash/fragment"
+source "$base_dir/src/bash/common"
+
+function main() {
+    case "$1" in
+    fetch)
+        remove_items "$raw_dir" "*" "fd"
+        process_configuration_urls
+        remove_duplicate_file "$raw_dir"
+        move_jsons_to_subdir "$raw_dir"
+        generate_workflow "$raw_dir"
+        ;;
+    check)
+        check_configs "$raw_dir/$2"
+        ;;
+    base64)
+        remove_items "$workflows_dir" "workflow-stage-2-*.yml" "f"
+        remove_items "$json_dir" "*" "fd"
+        copy_items "$raw_dir" "$json_dir" ".*\[.*\] \[.*\] \[.*\]\.json$"
+        copy_items "$raw_dir" "$raw_dir" "*"
+        remove_items "$raw_dir" "*" "d"
+        remove_items "$raw_dir" ".*\[.*\] \[.*\] \[.*\]\.json$" "f"
+        remove_items "$base64_dir" "*" "f"
+        base64_configs "$json_dir" "$base64_dir"
+        ;;
+    checkfragment)
+        copy_items "$json_dir" "$fragment_dir" ".*\[.*\] \[.*-.*-ws\] \[.*\]\.json$"
+        check_fragment_configs "$fragment_dir"
+        remove_items "$fragment_dir" ".*\[.*\] \[.*\] \[.*\]\.json$" "f"
+        ;;
+    gitupdate)
+        git_update
+        ;;
+    gitreset)
+        git_reset
+        ;;
+    *)
+        exit 1
+        ;;
+    esac
+}
+
+main "$@"

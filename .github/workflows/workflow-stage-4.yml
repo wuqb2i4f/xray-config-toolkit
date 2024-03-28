@@ -1,0 +1,22 @@
+name: Stage-4
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Fetch Repository Code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+
+      - name: Step 2 - Filter and Cleanup Fragment
+        run: src/bash/main checkfragment
+
+      - name: Step 3 - Commit and Push Changes
+        run: src/bash/main gitupdate

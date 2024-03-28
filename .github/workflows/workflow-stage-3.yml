@@ -1,0 +1,32 @@
+name: Stage-3
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Stage-2"]
+    types:
+      - completed
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 0
+
+      - name: Step 2 - Fetch Repository Code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+
+      - name: Step 3 - Encode to Base64
+        run: src/bash/main base64
+
+      - name: Step 4 - Commit and Push Changes
+        run: src/bash/main gitreset
