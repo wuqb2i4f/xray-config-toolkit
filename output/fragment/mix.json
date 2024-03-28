@@ -40,17 +40,18 @@
         "concurrency": 8,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
             "address": "iranserver.com",
-            "port": 80,
+            "port": 443,
             "users": [
               {
-                "encryption": "none",
+                "alterId": 0,
+                "encryption": "",
                 "flow": "",
-                "id": "-DIGiV2RAY--",
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
                 "level": 8,
                 "security": "auto"
               }
@@ -67,11 +68,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "ædígí.RadioTeHran.oRG."
+            "Host": "vip2323.cfd"
           },
-          "path": "/Digiv2ray-"
+          "path": "/linkvws"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [""],
+          "fingerprint": "chrome",
+          "serverName": "vip2323.cfd",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
@@ -79,9 +87,9 @@
       "protocol": "freedom",
       "settings": {
         "fragment": {
-          "packets": "1-1",
-          "length": "3-5",
-          "interval": "5"
+          "packets": "tlshello",
+          "length": "5-30",
+          "interval": "10-20"
         }
       },
       "streamSettings": {
