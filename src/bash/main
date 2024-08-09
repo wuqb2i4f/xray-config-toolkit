@@ -1,0 +1,98 @@
+#!/bin/bash
+
+function cleanup() {
+    echo "Script interrupted."
+    exit 1
+}
+
+trap cleanup INT
+trap '' SIGTERM
+
+base_dir="."
+workflows_dir="$base_dir/.github/workflows"
+bash_dir="$base_dir/src/bash"
+template_dir="$base_dir/src/template"
+xray_dir="$base_dir/src/xray"
+base64_dir="$base_dir/output/base64"
+json_dir="$base_dir/output/json"
+custom_dir="$json_dir/custom"
+private_dir="$json_dir/private"
+public_dir="$json_dir/public"
+raw_dir="$json_dir/raw"
+tmp_dir="$json_dir/tmp"
+xray_app="$xray_dir/xray"
+source "$base_dir/src/bash/base64"
+source "$base_dir/src/bash/check"
+source "$base_dir/src/bash/common"
+source "$base_dir/src/bash/custom"
+source "$base_dir/src/bash/fetch"
+source "$base_dir/src/bash/local"
+source "$base_dir/src/bash/sed"
+
+function init() {
+    mkdir -p "$base64_dir" "$json_dir" "$custom_dir" "$private_dir" "$public_dir" "$raw_dir" "$tmp_dir"
+}
+
+function main() {
+    init
+    case "$1" in
+    fetch)
+        remove_items "$raw_dir" "*" "fd"
+        fetch_configs
+        remove_duplicate_file "$raw_dir"
+        move_jsons_to_subdir "$raw_dir"
+        generate_workflow "$raw_dir"
+        ;;
+    check)
+        check_configs "$raw_dir/$2"
+        ;;
+    base64)
+        remove_items "$workflows_dir" "workflow-stage-2-*.yml" "f"
+        remove_items "$public_dir" "*" "fd"
+        copy_items "$raw_dir" "$public_dir" ".*\[.*\] \[.*\] \[.*\]\.json$"
+        copy_items "$raw_dir" "$raw_dir" "*"
+        remove_items "$raw_dir" "*" "d"
+        remove_items "$raw_dir" ".*\[.*\] \[.*\] \[.*\]\.json$" "f"
+        remove_items "$base64_dir" "*" "f"
+        base64_configs "$public_dir" "$base64_dir"
+        ;;
+    fragment)
+        copy_items "$public_dir" "$tmp_dir" ".*\[.*\] \[.*-.*-ws\] \[.*\]\.json$"
+        fragment_configs "$tmp_dir" "$custom_dir"
+        remove_items "$tmp_dir" "*" "fd"
+        ;;
+    balancer)
+        copy_items "$public_dir" "$tmp_dir" "*"
+        balancer_configs "$tmp_dir" "$custom_dir" "$template_dir"
+        remove_items "$tmp_dir" "*" "fd"
+        ;;
+    updatecore)
+        remove_items "$xray_dir" "*" "f"
+        update_core
+        ;;
+    localswitchprivate)
+        switch_config_private "$private_dir"
+        ;;
+    localswitchpublicbalancer)
+        fetch_output "$base_dir"
+        switch_config_public_balancer "$custom_dir" "$private_dir"
+        ;;
+    localswitchpublicrandom)
+        fetch_output "$base_dir"
+        copy_items "$public_dir" "$tmp_dir" "*"
+        switch_config_public_random "$tmp_dir" "$private_dir"
+        remove_items "$tmp_dir" "*" "fd"
+        ;;
+    gitupdate)
+        git_update
+        ;;
+    gitreset)
+        git_reset
+        ;;
+    *)
+        exit 1
+        ;;
+    esac
+}
+
+main "$@"

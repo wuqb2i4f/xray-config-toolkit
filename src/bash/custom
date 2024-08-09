@@ -1,0 +1,78 @@
+#!/bin/bash
+
+function fragment_configs() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local mix_file="$dest_dir/mix-fragment.json"
+    local file_list=("$src_dir"/*)
+    local length=${#file_list[@]}
+    local indices=($(seq 0 $((length - 1)) | shuf))
+    local connected_configs=()
+    local max_connected=20
+    local connected_count=0
+
+    for ((i = 0; i < ${#indices[@]} && connected_count < max_connected; i++)); do
+        file="${file_list[${indices[$i]}]}"
+        local sed_cmd_fragment_address=$(sed_cmd_fragment_address)
+        local sed_cmd_fragment_sockopt=$(sed_cmd_fragment_sockopt)
+        local sed_cmd_fragment_remarks=$(sed_cmd_fragment_remarks "$file")
+        local sed_cmd_fragment=$(sed_cmd_fragment "$file")
+        sed -i "$sed_cmd_fragment_address" "$file"
+        sed -i "$sed_cmd_fragment_sockopt" "$file"
+        sed -i "$sed_cmd_fragment_remarks" "$file"
+        sed -i "$sed_cmd_fragment" "$file"
+
+        IFS=',' read -r response_check pid <<<"$(xray_connection_check "$file" false 10809)"
+        if [[ "$response_check" == true ]]; then
+            connected_configs+=("$(cat "$file")")
+            connected_count=$((connected_count + 1))
+            kill_process "$pid" >/dev/null 2>&1
+            echo "Added config from '$file' ($connected_count)"
+        else
+            rm "$file"
+            kill_process "$pid" >/dev/null 2>&1
+        fi
+    done
+
+    {
+        echo "["
+        for ((i = 0; i < ${#connected_configs[@]}; i++)); do
+            if [ $i -ne 0 ]; then
+                echo ","
+            fi
+            echo "  ${connected_configs[i]}"
+        done
+        echo "]"
+    } | jq . >"$mix_file"
+}
+
+function sed_cmd_fragment() {
+    local file="$1"
+    local filename=$(basename "$file")
+    local sed_cmd_fragment=
+    local pattern_security_tls="^\[.*\] \[[^ ]*-tl-[^ ]*\] \[.*\]\.json$"
+    local pattern_security_no="^\[.*\] \[[^ ]*-no-[^ ]*\] \[.*\]\.json$"
+    if [[ $filename =~ $pattern_security_tls ]]; then
+        sed_cmd_fragment=$(sed_cmd_fragment_tls)
+    elif [[ $filename =~ $pattern_security_no ]]; then
+        sed_cmd_fragment=$(sed_cmd_fragment_no)
+    fi
+    echo "$sed_cmd_fragment"
+}
+
+function balancer_configs() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local temp_dir="$3"
+    local mix_file="$dest_dir/mix-balancer.json"
+    local data_base=$(<"$temp_dir/0-base-balancer.md")
+    local proxies=()
+    for file in "$src_dir"/*; do
+        sed_cmd_tag=$(sed_cmd_tag "$file")
+        sed -i "$sed_cmd_tag" "$file"
+        proxy=$(jq -r -c '.outbounds[0]' "$file")
+        proxies+=("$proxy",)
+    done
+    data_base="${data_base//\[PUBLICPROXY\]/${proxies[@]}}"
+    echo "$data_base" | jq . >"$mix_file"
+}
