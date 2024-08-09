@@ -45,13 +45,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 8880,
+            "address": "speedtest.net",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "fac5d63f-c66d-4e8e-838e-68c2177244fc",
+                "id": "SAVTEAM5",
                 "level": 8,
                 "security": "auto"
               }
@@ -63,11 +63,18 @@
         "network": "ws",
         "wsSettings": {
           "headers": {
-            "Host": "www.speedtest.net.B.lightning-6.LiVE."
+            "Host": "SAV.TEAM"
           },
-          "path": "/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=8880"
+          "path": "/?ed=1024"
         },
-        "security": "none"
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": ["h2,http/1.1"],
+          "fingerprint": "firefox",
+          "serverName": "speedtest.net",
+          "show": false
+        }
       },
       "tag": "proxy"
     },
