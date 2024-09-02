@@ -9,8 +9,9 @@ on:
 
 jobs:
   run-script:
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Step 1 - Wait for 7 minutes
-        run: sleep 420
+      - name: Step 1 - Wait for 1 minutes
+        run: sleep 60

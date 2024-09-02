@@ -15,57 +15,61 @@ function fetch_configs() {
 
 function cleanup_uri() {
     local mix_uri="$1"
-    local temp_file=$(mktemp)
+    local num_total=$(wc -l <"$mix_uri")
     local valid_lines=()
-    local credentials_list=()
+    declare -A credentials_set
+    echo "Starting cleanup process. This may take a while, please be patient..."
+    local start_time=$(date +%s)
+    local processed_lines=0
     while IFS= read -r line; do
-        ((num_count++))
         for protocol in "${VALID_PROTOCOLS[@]}"; do
             if [[ "$line" =~ ^$protocol:// ]]; then
-                valid_lines+=("$line")
                 credentials=$(parse_credentials "$line" "$protocol")
-                if [[ ! " ${credentials_list[@]} " =~ " ${credentials} " ]]; then
-                    credentials_list+=("$credentials")
-                    echo "$line" >>"$temp_file"
+                if [[ -z "${credentials_set[$credentials]}" ]]; then
+                    credentials_set["$credentials"]=1
+                    valid_lines+=("$line")
                 fi
                 break
             fi
         done
+        ((processed_lines++))
+        if ((processed_lines % 100 == 0)); then
+            local elapsed_time=$(($(date +%s) - start_time))
+            local remaining_time=$((elapsed_time * num_total / processed_lines - elapsed_time))
+            echo "Processed $processed_lines of $num_total lines. Estimated remaining time: $remaining_time seconds."
+        fi
     done <"$mix_uri"
-    sort -u "$temp_file" >"$mix_uri"
-    rm "$temp_file"
+    printf "%s\n" "${valid_lines[@]}" | sort -u >"$mix_uri"
+    local end_time=$(date +%s)
+    local duration=$((end_time - start_time))
+    echo "Cleanup process completed in $duration seconds."
 }
 
 function generate_configs() {
-    local mix_uri=$(<"$tmp_dir/mix-uri")
-    local num_total=$(wc -l <<<"$mix_uri")
+    local mix_uri="$tmp_dir/mix-uri"
+    local num_total=$(wc -l <"$mix_uri")
     local num_count=0
-    local num_ss=0
-    local num_ssr=0
-    local num_trojan=0
-    local num_vless=0
-    local num_vmess=0
-    mapfile -t uri_array < <(echo "$mix_uri")
-    if [[ $MAX_URI_LIMIT -gt 0 && $MAX_URI_LIMIT -lt $num_total ]]; then
-        local indices=($(seq 0 $((num_total - 1)) | shuf))
-        num_total=$MAX_URI_LIMIT
-    else
-        local indices=($(seq 0 $((num_total - 1))))
-    fi
-    for i in "${indices[@]:0:num_total}"; do
-        proxy_link_raw="${uri_array[$i]}"
+    declare -A num_protocols
+    for protocol in "${VALID_PROTOCOLS[@]}"; do
+        num_protocols["$protocol"]=0
+    done
+    while IFS= read -r proxy_link_raw; do
         ((num_count++))
         for protocol in "${VALID_PROTOCOLS[@]}"; do
             if [[ "$proxy_link_raw" =~ ^$protocol:// ]]; then
                 "generate_${protocol}_config" "$proxy_link_raw"
-                ((num_${protocol}++))
+                ((num_protocols["$protocol"]++))
                 break
             fi
         done
-        progress_bar "$num_count" "$num_total"
-    done
+        if ((num_count % 100 == 0)); then
+            progress_bar "$num_count" "$num_total"
+        fi
+    done <"$mix_uri"
     echo -ne "\n"
-    echo -e "TOTAL: $num_total - VLESS: $num_vless - VMESS: $num_vmess - TROJAN: $num_trojan - SS: $num_ss\n"
+    echo -e "TOTAL: $num_count" && for protocol in "${VALID_PROTOCOLS[@]}"; do echo -n "$protocol: ${num_protocols[$protocol]} "; done
+    echo
+    distribute_files_to_dirs
 }
 
 function generate_vless_config() {
@@ -236,4 +240,37 @@ function make_config_file() {
     local file_path="$raw_dir/[$pr-$se-$ne] [$time].json"
     echo "$data_base" >"$file_path"
     echo "$file_path"
+}
+
+function distribute_files_to_dirs() {
+    local counter=0
+    local count=$(count_items "$raw_dir" "f")
+    local files_per_dir=$((count / MAX_WORKFLOW_RUN))
+    local extra_files=$((count % MAX_WORKFLOW_RUN))
+    for ((i = 1; i <= MAX_WORKFLOW_RUN; i++)); do
+        mkdir -p "$raw_dir/$i"
+    done
+    for file in "$raw_dir"/*; do
+        if [[ -f $file && "$(basename "$file")" != "lock" ]]; then
+            counter=$((counter + 1))
+            local sub_dir=$((counter / files_per_dir + 1))
+            if ((sub_dir > MAX_WORKFLOW_RUN)); then
+                sub_dir=MAX_WORKFLOW_RUN
+            fi
+            mv "$file" "$raw_dir/$sub_dir"
+        fi
+    done
+    echo "Moved JSON files to subdirectories in $raw_dir"
+    local added_second=$(((files_per_dir + MAX_WORKFLOW_RUN - 1) * 10))
+    local new_minute=$(date -d "+$added_second seconds" +%M)
+    local new_hour=$(date -d "+$added_second seconds" +%H)
+    local new_day=$(date -d "+$added_second seconds" +%u)
+    sed -i "s/cron: '[^']*'/cron: '${new_minute} ${new_hour} * * ${new_day}'/" "$workflows_dir/workflow-stage-4.yml"
+    for ((i = 1; i <= MAX_WORKFLOW_RUN; i++)); do
+        local data_workflow=$(<"$template_dir/workflow-stage-3.md")
+        local file_path="$workflows_dir/workflow-stage-3-$i.yml"
+        echo "$data_workflow" >"$file_path"
+        local sed_cmd="s#\[\s*NUM\s*\]#$i#g"
+        sed -i "$sed_cmd" "$file_path"
+    done
 }

@@ -3,10 +3,11 @@ name: Stage-1
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 */1 * * *' 
+    - cron: '30 22 * * *'
 
 jobs:
   run-script:
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
 
     steps:
@@ -14,12 +15,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
+          ref: dev
 
       - name: Step 2 - Setup Dependencies
-        run: sudo apt-get install -y fdupes
+        run: sudo apt-get install -y unzip
 
-      - name: Step 3 - Fetch Data
+      - name: Step 3 - Download and Place iran.dat and xray
+        run: src/bash/main updatecore
+
+      - name: Step 4 - Fetch Data
         run: src/bash/main fetch
 
-      - name: Step 4 - Commit and Push Changes
+      - name: Step 5 - Commit and Push Changes
         run: src/bash/main gitupdate

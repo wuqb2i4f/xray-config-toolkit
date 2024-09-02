@@ -51,6 +51,9 @@ function append_country_code_to_filename() {
     local pattern="^\[.*\] \[.*\] \[.*\]\.json$"
     if [[ ! $filename =~ $pattern ]]; then
         local country_code=$(jq -r '.country' <<<"$response_curl" | tr '[:upper:]' '[:lower:]')
+        if [[ -z "$country_code" ]]; then
+            country_code="xx"
+        fi
         local filerename=$(sed -E "s/^(\[[^]]+])( \[[^]]+])(.json)$/\[$country_code] \1\2\3/" <<<"$filename")
         mv -f "$file" "$filedir/$filerename"
     fi

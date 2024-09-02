@@ -157,12 +157,6 @@ function copy_items() {
     echo "Copied items from $src_dir matching $pattern to $dest_dir"
 }
 
-function remove_duplicate_file() {
-    local dir="$1"
-    fdupes -Nrd "$dir"
-    echo "Removed duplicate files in $dir"
-}
-
 function git_update() {
     git config --global user.name 'wuqb2i4f'
     git config --global user.email 'wuqb2i4f@duck.com'
@@ -172,7 +166,7 @@ function git_update() {
         git fetch --all
         git reset --hard HEAD
         git merge @{u}
-        git push -f origin main
+        git push -f origin dev
     else
         echo "No changes detected"
     fi
@@ -191,44 +185,9 @@ function git_reset() {
     git checkout --orphan latest_branch
     git add .
     git commit -am "Updated"
-    git branch -D main
-    git branch -m main
-    git push -f origin main
-}
-
-function move_jsons_to_subdir() {
-    local src_dir="$1"
-    local counter=0
-    local count=$(count_items "$src_dir" "f")
-    local num_folders=$((($count + $MAX_CONFIG_PER_DIR - 1) / $MAX_CONFIG_PER_DIR))
-    for ((i = 1; i <= num_folders; i++)); do
-        mkdir -p "$src_dir/$i"
-    done
-    for file in "$src_dir"/*; do
-        if [[ -f $file && "$(basename "$file")" != "lock" ]]; then
-            counter=$((counter + 1))
-            sub_dir=$((($counter - 1) / $MAX_CONFIG_PER_DIR + 1))
-            mv "$file" "$src_dir/$sub_dir"
-        fi
-    done
-    echo "Moved JSON files to subdirectories in $src_dir"
-}
-
-function generate_workflow() {
-    local src_dir="$1"
-    local count=$(count_items "$src_dir" "d")
-    if [ "$count" -gt 0 ]; then
-        for ((i = 1; i <= count; i++)); do
-            local data_workflow=$(<"$template_dir/workflow-stage-2.md")
-            local file_path="$workflows_dir/workflow-stage-2-$i.yml"
-            echo "$data_workflow" >"$file_path"
-            local sed_cmd="s#\[\s*NUM\s*\]#$i#g"
-            sed -i "$sed_cmd" "$file_path"
-        done
-        echo "Generated $count workflow files in $workflows_dir"
-    else
-        echo "No workflows generated as there are no subdirectories in $src_dir"
-    fi
+    git branch -D dev
+    git branch -m dev
+    git push -f origin dev
 }
 
 function update_core() {
