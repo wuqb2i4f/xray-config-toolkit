@@ -1,0 +1,26 @@
+#!/bin/bash
+
+URLS_ENCODE=(
+    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/base64/mix"
+    # "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
+    # "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"
+    # "https://raw.githubusercontent.com/Leon406/SubCrawler/master/sub/share/vless"
+    # "https://raw.githubusercontent.com/a2470982985/getNode/main/v2ray.txt"
+)
+
+URLS_DECODE=(
+    "https://raw.githubusercontent.com/itsyebekhe/HiN-VPN/main/subscription/normal/mix"
+    # "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt"
+    # "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt"
+)
+
+VALID_PROTOCOLS=(
+    "vless"
+    "trojan"
+    "vmess"
+    # "ss"
+)
+
+MAX_URI_LIMIT=450
+MAX_CONFIG_PER_DIR=30
+MAX_CONFIG_FRAGMENT=20
