@@ -245,28 +245,32 @@ function make_config_file() {
 function distribute_files_to_dirs() {
     local counter=0
     local count=$(count_items "$raw_dir" "f")
-    local files_per_dir=$((count / MAX_WORKFLOW_RUN))
-    local extra_files=$((count % MAX_WORKFLOW_RUN))
-    for ((i = 1; i <= MAX_WORKFLOW_RUN; i++)); do
+    local files_per_dir=$((count / $MAX_WORKFLOW_RUN))
+    local extra_files=$((count % $MAX_WORKFLOW_RUN))
+    for ((i = 1; i <= $MAX_WORKFLOW_RUN; i++)); do
         mkdir -p "$raw_dir/$i"
     done
     for file in "$raw_dir"/*; do
         if [[ -f $file && "$(basename "$file")" != "lock" ]]; then
             counter=$((counter + 1))
             local sub_dir=$((counter / files_per_dir + 1))
-            if ((sub_dir > MAX_WORKFLOW_RUN)); then
-                sub_dir=MAX_WORKFLOW_RUN
+            if ((sub_dir > $MAX_WORKFLOW_RUN)); then
+                sub_dir=$MAX_WORKFLOW_RUN
             fi
             mv "$file" "$raw_dir/$sub_dir"
         fi
     done
+    for ((i = 0; i < extra_files; i++)); do
+        local file_to_move=$(ls "$raw_dir"/* | tail -n $((i + 1)) | head -n 1)
+        mv "$file_to_move" "$raw_dir/$MAX_WORKFLOW_RUN"
+    done
     echo "Moved JSON files to subdirectories in $raw_dir"
-    local added_second=$(((files_per_dir + MAX_WORKFLOW_RUN - 1) * 10))
+    local added_second=$(((files_per_dir + $MAX_WORKFLOW_RUN - 1) * 10))
     local new_minute=$(date -d "+$added_second seconds" +%M)
     local new_hour=$(date -d "+$added_second seconds" +%H)
     local new_day=$(date -d "+$added_second seconds" +%u)
     sed -i "s/cron: '[^']*'/cron: '${new_minute} ${new_hour} * * ${new_day}'/" "$workflows_dir/workflow-stage-4.yml"
-    for ((i = 1; i <= MAX_WORKFLOW_RUN; i++)); do
+    for ((i = 1; i <= $MAX_WORKFLOW_RUN; i++)); do
         local data_workflow=$(<"$template_dir/workflow-stage-3.md")
         local file_path="$workflows_dir/workflow-stage-3-$i.yml"
         echo "$data_workflow" >"$file_path"
