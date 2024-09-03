@@ -7,17 +7,21 @@ function check_configs() {
     local num_total=$(count_items "$src_dir" "f")
     local response_check=
     echo "Processing $num_total file(s) in $src_dir directory."
+    local port_socks=10000
+    local port_http=13000
     for file in "$src_dir"/*; do
         ((num_count++))
-        IFS=',' read -r response_check pid <<<"$(xray_connection_check "$file" true 10809)"
-        if [[ "$response_check" == true ]]; then
-            ((num_passed++))
-        fi
-        kill_process "$pid" >/dev/null 2>&1
+        local new_port_socks=$((port_socks + num_count))
+        local new_port_http=$((port_http + num_count))
+        sed -i -e "13s/[0-9]\+/$new_port_socks/" -e "29s/[0-9]\+/$new_port_http/" "$file"
+        {
+            IFS=',' read -r pid <<<"$(xray_connection_check "$file" true "$new_port_http")"
+            kill_process "$pid" >/dev/null 2>&1
+        } &
         progress_bar "$num_count" "$num_total"
     done
+    wait
     echo -ne "\n"
-    echo "TOTAL: $num_total - PASSED: $num_passed"
 }
 
 function xray_connection_check() {
@@ -26,13 +30,15 @@ function xray_connection_check() {
     local port="$3"
     $xray_app run -c "$file" >/dev/null 2>&1 &
     local pid=$!
-    sleep 2
+    sleep 15
     local attempts=0
     local response_check=false
     while ((attempts < 3)); do
-        local response_curl=$(curl -x http://127.0.0.1:"$port" -s -m 5 https://api.country.is)
+        sleep 2
+        local response_curl=$(curl -x http://127.0.0.1:"$port" -s -m 10 https://api.country.is)
         if [[ -n "$response_curl" && $(jq -r '.country' <<<"$response_curl") != "null" ]]; then
             if [[ "$country" == true ]]; then
+                sed -i -e "13s/[0-9]\+/10808/" -e "29s/[0-9]\+/10809/" "$file"
                 append_country_code_to_filename "$file" "$response_curl"
             fi
             response_check=true
@@ -40,7 +46,7 @@ function xray_connection_check() {
         fi
         ((attempts++))
     done
-    echo "$response_check,$pid"
+    echo "$pid"
 }
 
 function append_country_code_to_filename() {

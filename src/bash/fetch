@@ -33,7 +33,7 @@ function cleanup_uri() {
             fi
         done
         ((processed_lines++))
-        if ((processed_lines % 100 == 0)); then
+        if ((processed_lines % 500 == 0)); then
             local elapsed_time=$(($(date +%s) - start_time))
             local remaining_time=$((elapsed_time * num_total / processed_lines - elapsed_time))
             echo "Processed $processed_lines of $num_total lines. Estimated remaining time: $remaining_time seconds."
@@ -62,9 +62,7 @@ function generate_configs() {
                 break
             fi
         done
-        if ((num_count % 100 == 0)); then
-            progress_bar "$num_count" "$num_total"
-        fi
+        progress_bar "$num_count" "$num_total"
     done <"$mix_uri"
     echo -ne "\n"
     echo -e "TOTAL: $num_count" && for protocol in "${VALID_PROTOCOLS[@]}"; do echo -n "$protocol: ${num_protocols[$protocol]} "; done
