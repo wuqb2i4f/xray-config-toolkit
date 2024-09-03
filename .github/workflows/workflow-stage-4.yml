@@ -31,8 +31,8 @@ jobs:
       # - name: Step 4 - Make Mix Fragment
       #   run: src/bash/main fragment
 
-      # - name: Step 5 - Make Mix Balancer
-      #   run: src/bash/main balancer
+      - name: Step 5 - Make Mix Balancer
+        run: src/bash/main balancer
 
       - name: Step 6 - Commit and Push Changes
         run: src/bash/main gitreset
