@@ -28,8 +28,8 @@ jobs:
       - name: Step 3 - Encode to Base64
         run: src/bash/main base64
 
-      # - name: Step 4 - Make Mix Fragment
-      #   run: src/bash/main fragment
+      - name: Step 4 - Make Mix Fragment
+        run: src/bash/main fragment
 
       - name: Step 5 - Make Mix Balancer
         run: src/bash/main balancer
