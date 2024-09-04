@@ -7,7 +7,6 @@ on:
 
 jobs:
   run-script:
-    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +22,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
-          ref: dev
 
       - name: Step 3 - Encode to Base64
         run: src/bash/main base64

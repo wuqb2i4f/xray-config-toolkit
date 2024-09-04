@@ -8,7 +8,6 @@ on:
 
 jobs:
   run-script:
-    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +15,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
-          ref: dev
 
       - name: Step 2 - Filter and Cleanup Configs
         run: src/bash/main check [NUM]
