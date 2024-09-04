@@ -166,7 +166,7 @@ function git_update() {
         git fetch --all
         git reset --hard HEAD
         git merge @{u}
-        git push -f origin dev
+        git push -f origin main
     else
         echo "No changes detected"
     fi
@@ -185,9 +185,9 @@ function git_reset() {
     git checkout --orphan latest_branch
     git add .
     git commit -am "Updated"
-    git branch -D dev
-    git branch -m dev
-    git push -f origin dev
+    git branch -D main
+    git branch -m main
+    git push -f origin main
 }
 
 function update_core() {
