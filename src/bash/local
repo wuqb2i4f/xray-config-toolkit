@@ -1,0 +1,81 @@
+#!/bin/bash
+
+function manage_service() {
+    local action="$1"
+    local service="$2"
+    sudo sv "$1" "$2"
+}
+
+function fetch_output() {
+    local src_dir="$1"
+    echo "Performing git pull..."
+    git -C "$src_dir" pull
+    git -C "$src_dir" repack -a -d --depth=250 --window=250
+}
+
+function switch_config() {
+    local private_dir="$1"
+    local public_dir="$2"
+    local custom_dir="$3"
+    local tmp_dir="$4"
+    local base_dir="$5"
+    local action="$6"
+    case "$action" in
+    private)
+        switch_config_choice "$private_dir" "$private_dir"
+        ;;
+    public)
+        fetch_output "$base_dir"
+        switch_config_choice "$public_dir" "$private_dir"
+        ;;
+    balancer)
+        fetch_output "$base_dir"
+        switch_config_balancer "$custom_dir" "$private_dir"
+        ;;
+    update)
+        fetch_output "$base_dir"
+        ;;
+    esac
+}
+
+function switch_config_choice() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    ls "$src_dir" | grep -vE 'config.json' | cat -n
+    read -p "Enter the number of the proxy you want to copy: " selection
+    filename=$(ls "$src_dir" | grep -vE 'config.json' | sed -n "${selection}p")
+    cp "${src_dir}/${filename}" "${dest_dir}/config.json"
+    manage_service restart xray
+}
+
+function switch_config_balancer() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local mix_file="$src_dir/mix-balancer-rules-ir.json"
+    local config_file="$dest_dir/config.json"
+    cp "$mix_file" "$config_file"
+    manage_service restart xray
+}
+
+function switch_config_random() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local config_file="$dest_dir/config.json"
+    local response_check=
+    local file_list=("$src_dir"/*)
+    local length=${#file_list[@]}
+    local indices=($(seq 0 $((length - 1)) | shuf))
+    manage_service stop xray
+    for index in "${indices[@]}"; do
+        local file="${file_list[$index]}"
+        IFS=',' read -r response_check pid <<<"$(xray_connection_check "$file" false 10809)"
+        if [[ "$response_check" == true ]]; then
+            cp "$file" "$config_file"
+            kill_process "$pid" >/dev/null 2>&1
+            break
+        else
+            kill_process "$pid" >/dev/null 2>&1
+        fi
+    done
+    manage_service start xray
+}
