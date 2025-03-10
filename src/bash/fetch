@@ -1,0 +1,295 @@
+#!/bin/bash
+
+function fetch_configs() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local mix_uri="$src_dir/mix-uri-raw"
+    >"$mix_uri"
+    for url in "${URLS_ENCODE[@]}"; do
+        curl -s "$url" | base64 -d >>"$mix_uri"
+    done
+    for url in "${URLS_DECODE[@]}"; do
+        curl -s "$url" >>"$mix_uri"
+    done
+    cleanup_uri "$mix_uri"
+    generate_configs "$dest_dir" "$mix_uri"
+    distribute_files_to_dirs "$dest_dir"
+}
+
+function cleanup_uri() {
+    local mix_uri="$1"
+    local num_total=$(wc -l <"$mix_uri")
+    local valid_lines=()
+    declare -A credentials_set
+    echo "Starting cleanup process. This may take a while, please be patient..."
+    local start_time=$(date +%s)
+    local processed_lines=0
+    while IFS= read -r line; do
+        for protocol in "${VALID_PROTOCOLS[@]}"; do
+            if [[ "$line" =~ ^$protocol:// ]]; then
+                credentials=$(parse_credentials "$line" "$protocol")
+                if [[ -z "$credentials" ]]; then
+                    continue
+                fi
+                if [[ -z "${credentials_set[$credentials]}" ]]; then
+                    credentials_set["$credentials"]=1
+                    valid_lines+=("$line")
+                fi
+                break
+            fi
+        done
+        ((processed_lines++))
+        if ((processed_lines % 500 == 0)); then
+            local elapsed_time=$(($(date +%s) - start_time))
+            local remaining_time=$((elapsed_time * num_total / processed_lines - elapsed_time))
+            echo "Processed $processed_lines of $num_total lines. Estimated remaining time: $remaining_time seconds."
+        fi
+    done <"$mix_uri"
+    printf "%s\n" "${valid_lines[@]}" | sort -u >"$mix_uri"
+    local end_time=$(date +%s)
+    local duration=$((end_time - start_time))
+    echo "Cleanup process completed in $duration seconds."
+}
+
+function generate_configs() {
+    local src_dir="$1"
+    local mix_uri="$2"
+    local num_total=$(wc -l <"$mix_uri")
+    local num_count=0
+    declare -A num_protocols
+    for protocol in "${VALID_PROTOCOLS[@]}"; do
+        num_protocols["$protocol"]=0
+    done
+    while IFS= read -r proxy_link_raw; do
+        ((num_count++))
+        for protocol in "${VALID_PROTOCOLS[@]}"; do
+            if [[ "$proxy_link_raw" =~ ^$protocol:// ]]; then
+                "generate_${protocol}_config" "$proxy_link_raw"
+                ((num_protocols["$protocol"]++))
+                break
+            fi
+        done
+        progress_bar "$num_count" "$num_total"
+    done <"$mix_uri"
+    echo -ne "\n"
+    echo -e "TOTAL: $num_count" && for protocol in "${VALID_PROTOCOLS[@]}"; do echo -n "$protocol: ${num_protocols[$protocol]} "; done
+}
+
+function generate_vless_config() {
+    local url="$1"
+    proxy_link=$(convert_percent_encoding "$url")
+    protocol=$(parse_protocol "$proxy_link")
+    id=$(parse_credentials "$proxy_link" "$protocol")
+    address=$(parse_address "$proxy_link")
+    port=$(parse_port "$proxy_link")
+    query_string=$(parse_query_string "$proxy_link")
+    network=$(parse_network "$query_string" "raw")
+    security=$(parse_security "$query_string" "none")
+    if ! validate_network_security "$network" "$security" "$proxy_link"; then
+        return
+    fi
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+    sed_cmd_protocol=$(sed_cmd_protocol_vless "$address" "$port" "$id" "$query_string")
+    sed_cmd_network=$(sed_cmd_network "$network" "$query_string")
+    sed_cmd_security=$(sed_cmd_security "$security" "$query_string")
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function generate_trojan_config() {
+    local url="$1"
+    proxy_link=$(convert_percent_encoding "$url")
+    protocol=$(parse_protocol "$proxy_link")
+    password=$(parse_credentials "$proxy_link" "$protocol")
+    address=$(parse_address "$proxy_link")
+    port=$(parse_port "$proxy_link")
+    query_string=$(parse_query_string "$proxy_link")
+    network=$(parse_network "$query_string" "raw")
+    security=$(parse_security "$query_string" "tls")
+    if ! validate_network_security "$network" "$security" "$proxy_link"; then
+        return
+    fi
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+    sed_cmd_protocol=$(sed_cmd_protocol_trojan "$address" "$port" "$password" "$query_string")
+    sed_cmd_network=$(sed_cmd_network "$network" "$query_string")
+    sed_cmd_security=$(sed_cmd_security "$security" "$query_string")
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function generate_vmess_config() {
+    local url="$1"
+    protocol=$(parse_protocol "$url")
+    credentials=$(parse_credentials "$url" "$protocol")
+    query_string=$(jq -r 'del(.ps, .v) | to_entries | map(select(.value != "") | "\(.key | gsub("type"; "headerType") | gsub("net"; "type") | gsub("scy"; "method") | gsub("security"; "method") | gsub("tls"; "security"))=\(.value|tostring)") | join(";")' <<<"$credentials")
+    address=$(get_value "add" "$query_string")
+    port=$(get_value "port" "$query_string")
+    network=$(parse_network "$query_string")
+    security=$(parse_security "$query_string" "none")
+    if ! validate_network_security "$network" "$security" "$url"; then
+        return
+    fi
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+    sed_cmd_protocol=$(sed_cmd_protocol_vmess "$address" "$query_string")
+    sed_cmd_network=$(sed_cmd_network "$network" "$query_string")
+    sed_cmd_security=$(sed_cmd_security "$security" "$query_string")
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function generate_ss_config() {
+    local url="$1"
+    proxy_link=$(convert_percent_encoding "$url")
+    protocol=$(parse_protocol "$proxy_link")
+    credentials=$(parse_credentials "$proxy_link" "$protocol")
+    method=$(awk -F ':' '{print $1}' <<<"$credentials")
+    password=$(awk -F ':' '{print $2}' <<<"$credentials")
+    address=$(parse_address "$proxy_link")
+    port=$(parse_port "$proxy_link")
+    query_string=$(parse_query_string "$proxy_link")
+    network=$(parse_network "$query_string" "raw")
+    security=$(parse_security "$query_string" "none")
+    if ! validate_network_security "$network" "$security" "$proxy_link"; then
+        return
+    fi
+    file_path=$(make_config_file "$protocol" "$network" "$security" "$address" "$port")
+    sed_cmd_protocol=$(sed_cmd_protocol_ss "$address" "$port" "$password" "$method")
+    sed_cmd_network=$(sed_cmd_network "$network" "$query_string")
+    sed_cmd_security=$(sed_cmd_security "$security" "$query_string")
+    sed -i "$sed_cmd_protocol" "$file_path"
+    sed -i "$sed_cmd_network" "$file_path"
+    sed -i "$sed_cmd_security" "$file_path"
+}
+
+function parse_protocol() {
+    local input="$1"
+    awk -F '://' '{print $1}' <<<"$input"
+}
+
+function parse_credentials() {
+    local input="$1"
+    local protocol="$2"
+    case "$protocol" in
+    vless | trojan)
+        awk -F '://' '{print $2}' <<<"$input" | awk -F '@' '{print $1}'
+        ;;
+    ss)
+        awk -F '://' '{print $2}' <<<"$input" | awk -F '@' '{print $1}' | base64 -d
+        ;;
+    vmess)
+        awk -F '://' '{print $2}' <<<"$input" | base64 -d
+        ;;
+    esac
+}
+
+function parse_address() {
+    local input="$1"
+    local address=$(cut -d'@' -f2 <<<"$input" | cut -d'?' -f1 | cut -d'#' -f1 | rev | cut -d':' -f2- | rev | tr '[:upper:]' '[:lower:]')
+    if [[ ${address:0:1} == "[" && ${address: -1} == "]" ]]; then
+        address=${address:1:-1}
+    fi
+    echo "$address"
+}
+
+function parse_port() {
+    local input="$1"
+    awk -F '@' '{print $2}' <<<"$input" | awk -F '[?#]' '{print $1}' | awk -F ':' '{print $NF}'
+}
+
+function parse_query_string() {
+    local input="$1"
+    local query_string=""
+    local key
+    local value
+    local input=$(echo "$input" | sed -e 's/^[^?]*?//' -e 's/#.*$//')
+    IFS='&' read -ra params <<<"$input"
+    for param in "${params[@]}"; do
+        key=${param%%=*}
+        value=${param#*=}
+        query_string="$query_string$key=$value;"
+    done
+    query_string=${query_string%?}
+    echo $query_string
+}
+
+function parse_network() {
+    local query_string="$1"
+    local default_value="$2"
+    local type=$(get_value "type" "$query_string" "$default_value")
+    local headerType=$(get_value "headerType" "$query_string")
+    if [[ "$type" == "tcp" ]]; then
+        type="raw"
+    fi
+    if [[ "$headerType" == "http" ]]; then
+        network="${type}-${headerType}"
+    else
+        network="$type"
+    fi
+    echo "$network"
+}
+
+function parse_security() {
+    local query_string="$1"
+    local default_value="$2"
+    local security=$(get_value "security" "$query_string" "$default_value")
+    echo "$security"
+}
+
+function validate_network_security() {
+    local network="$1"
+    local security="$2"
+    local url="$3"
+    if [[ ! " ${VALID_NETWORKS[@]} " =~ " ${network} " ]] || [[ ! " ${VALID_SECURITY[@]} " =~ " ${security} " ]]; then
+        echo "$url"
+        return 1
+    fi
+    return 0
+}
+
+function make_config_file() {
+    local protocol="$1"
+    local network="$2"
+    local security="$3"
+    local address="$4"
+    local port="$5"
+    data_base=$(<"$TEMPLATE_DIR/0-base.md")
+    data_protocol=$(<"$TEMPLATE_DIR/1-protocol-$protocol.md")
+    data_network=$(<"$TEMPLATE_DIR/2-network-$network.md")
+    data_security=$(<"$TEMPLATE_DIR/3-security-$security.md")
+    data_base="${data_base//\[PROTOCOL\]/$data_protocol}"
+    data_base="${data_base//\[NETWORK\]/$data_network}"
+    data_base="${data_base//\[SECURITY\]/$data_security}"
+    local pr=$(short_name "$protocol")
+    local ne=$(short_name "$network")
+    local se=$(short_name "$security")
+    local time=$(date_time)
+    local file_path="$TMP_DIR/[$pr-$se-$ne] [$time].json"
+    echo "$data_base" >"$file_path"
+    echo "$file_path"
+}
+
+function distribute_files_to_dirs() {
+    local src_dir="$1"
+    local counter=0
+    for ((i = 1; i <= $MAX_WORKFLOW_RUN; i++)); do
+        mkdir -p "$src_dir/$i"
+    done
+    for file in "$src_dir"/*; do
+        if [[ -f $file ]]; then
+            local sub_dir=$((counter % $MAX_WORKFLOW_RUN + 1))
+            mv "$file" "$src_dir/$sub_dir"
+            ((counter++))
+        fi
+    done
+    echo "Moved JSON files to subdirectories in $src_dir"
+    for ((i = 1; i <= $MAX_WORKFLOW_RUN; i++)); do
+        local data_workflow=$(<"$TEMPLATE_DIR/workflow-tmp.md")
+        local file_path="$WORKFLOWS_DIR/workflow-tmp-$i.yml"
+        echo "$data_workflow" >"$file_path"
+        local sed_cmd="s#\[\s*NUM\s*\]#$i#g"
+        sed -i "$sed_cmd" "$file_path"
+    done
+}
