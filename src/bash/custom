@@ -1,0 +1,76 @@
+#!/bin/bash
+
+function fragment_configs() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local mix_file_rules="$dest_dir/mix-fragment-rules-ir.json"
+    local mix_file="$dest_dir/mix-fragment.json"
+    local connected_configs=()
+    for file in "$src_dir"/*; do
+        local sed_cmd_fragment_address=$(sed_cmd_fragment_address)
+        local sed_cmd_fragment_sockopt=$(sed_cmd_fragment_sockopt)
+        local sed_cmd_fragment=$(sed_cmd_fragment "$file")
+        sed -i "$sed_cmd_fragment_address" "$file"
+        sed -i "$sed_cmd_fragment_sockopt" "$file"
+        sed -i "$sed_cmd_fragment" "$file"
+        local filename=$(basename "$file")
+        local new_filename=$(echo "$filename" | sed 's/^\[[^]]*\] //')
+        mv "$file" "$src_dir/$new_filename"
+    done
+    check_configs "$src_dir"
+    for file in "$src_dir"/*; do
+        local filename=$(basename "$file")
+        local pattern="^\[.*\] \[.*\] \[.*\]\.json$"
+        if [[ $filename =~ $pattern ]]; then
+            local sed_cmd_fragment_remarks=$(sed_cmd_fragment_remarks "$file")
+            sed -i "$sed_cmd_fragment_remarks" "$file"
+            connected_configs+=("$(cat "$file")")
+        fi
+    done
+    {
+        echo "["
+        for ((i = 0; i < ${#connected_configs[@]}; i++)); do
+            if [ $i -ne 0 ]; then
+                echo ","
+            fi
+            echo "  ${connected_configs[i]}"
+        done
+        echo "]"
+    } | jq . >"$mix_file_rules"
+    jq 'map(.routing.rules |= map(select((.domain != ["ext:iran.dat:ir", "ext:iran.dat:other"]) and (.ip != ["geoip:ir"]) and (.domain != ["ext:iran.dat:ads"]))))' "$mix_file_rules" >"$mix_file"
+}
+
+function sed_cmd_fragment() {
+    local file="$1"
+    local filename=$(basename "$file")
+    local sed_cmd_fragment=
+    local pattern_security_tls="^\[.*\] \[[^ ]*-tl-[^ ]*\] \[.*\]\.json$"
+    local pattern_security_no="^\[.*\] \[[^ ]*-no-[^ ]*\] \[.*\]\.json$"
+    if [[ $filename =~ $pattern_security_tls ]]; then
+        sed_cmd_fragment=$(sed_cmd_fragment_tls)
+    elif [[ $filename =~ $pattern_security_no ]]; then
+        sed_cmd_fragment=$(sed_cmd_fragment_no)
+    fi
+    echo "$sed_cmd_fragment"
+}
+
+function balancer_configs() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local temp_dir="$3"
+    local mix_file_rules="$dest_dir/mix-balancer-rules-ir.json"
+    local mix_file="$dest_dir/mix-balancer.json"
+    local data_base=$(<"$temp_dir/0-base-balancer.md")
+    local proxies=()
+    local time=$(date_time)
+    for file in "$src_dir"/*; do
+        sed_cmd_tag=$(sed_cmd_tag "$file")
+        sed -i "$sed_cmd_tag" "$file"
+        proxy=$(jq -r -c '.outbounds[0]' "$file")
+        proxies+=("$proxy",)
+    done
+    data_base="${data_base//\[REMARKS\]/$time}"
+    data_base="${data_base//\[PUBLICPROXY\]/${proxies[@]}}"
+    echo "$data_base" | jq . >"$mix_file_rules"
+    jq '(.routing.rules) |= map(select((.domain != ["ext:iran.dat:ir", "ext:iran.dat:other"]) and (.ip != ["geoip:ir"]) and (.domain != ["ext:iran.dat:ads"])))' "$mix_file_rules" >"$mix_file"
+}
