@@ -1,0 +1,134 @@
+#!/bin/bash
+
+function cleanup() {
+    echo "Script interrupted."
+    exit 1
+}
+
+trap cleanup INT
+trap '' SIGTERM
+
+URLS_ENCODE=(
+    "https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt"
+    "https://raw.githubusercontent.com/a2470982985/getNode/main/v2ray.txt"
+    "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2"
+    "https://raw.githubusercontent.com/Flik6/getNode/main/v2ray.txt"
+    "https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/vless"
+    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"
+    "https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt"
+    "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
+    "https://raw.githubusercontent.com/mlabalabala/v2ray-node/main/nodefree_nodes_mod.txt"
+    "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+    "https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_google.com_base64.txt"
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed"
+)
+
+URLS_DECODE=(
+    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt"
+    "https://raw.githubusercontent.com/davudsedft/newpurnet/main/purkow.txt"
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt"
+    "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector_Py/main/sub/Mix/mix.txt"
+    "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt"
+    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/splitted/vmess.txt"
+    "https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/default.txt"
+    "https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/speed.txt"
+)
+
+VALID_PROTOCOLS=(
+    # "ss"
+    "trojan"
+    "vless"
+    "vmess"
+)
+
+VALID_NETWORKS=(
+    "grpc"
+    "httpupgrade"
+    "raw-http"
+    "raw"
+    "ws"
+    "xhttp"
+)
+
+VALID_SECURITY=(
+    "none"
+    "reality"
+    "tls"
+)
+
+MAX_WORKFLOW_RUN=15
+BASE_DIR="."
+WORKFLOWS_DIR="$BASE_DIR/.github/workflows"
+BASH_DIR="$BASE_DIR/src/bash"
+TEMPLATE_DIR="$BASE_DIR/src/template"
+XRAY_DIR="$BASE_DIR/src/xray"
+BASE64_DIR="$BASE_DIR/output/base64"
+JSON_DIR="$BASE_DIR/output/json"
+CUSTOM_DIR="$JSON_DIR/custom"
+PRIVATE_DIR="$JSON_DIR/private"
+PUBLIC_DIR="$JSON_DIR/public"
+TMP_DIR="$JSON_DIR/tmp"
+XRAY_APP="$XRAY_DIR/xray"
+source "$BASH_DIR/base64"
+source "$BASH_DIR/check"
+source "$BASH_DIR/common"
+source "$BASH_DIR/custom"
+source "$BASH_DIR/fetch"
+source "$BASH_DIR/sed"
+
+function init() {
+    mkdir -p "$BASE64_DIR" "$JSON_DIR" "$CUSTOM_DIR" "$PRIVATE_DIR" "$PUBLIC_DIR" "$TMP_DIR"
+}
+
+function main() {
+    init
+    case "$1" in
+    fetch)
+        remove_items "$TMP_DIR" "*" "fd"
+        fetch_configs "$BASE64_DIR" "$TMP_DIR"
+        check_output "$TMP_DIR"
+        ;;
+    check)
+        check_configs "$TMP_DIR/$2"
+        ;;
+    base64)
+        remove_items "$WORKFLOWS_DIR" "workflow-tmp-*.yml" "fd"
+        remove_items "$PUBLIC_DIR" "*" "fd"
+        copy_items "$TMP_DIR" "$PUBLIC_DIR" ".*\[.*\] \[.*\] \[.*\]\.json$"
+        remove_items "$TMP_DIR" "*" "fd"
+        remove_items "$BASE64_DIR" "*" "fd"
+        base64_configs "$PUBLIC_DIR" "$BASE64_DIR"
+        check_output "$PUBLIC_DIR"
+        check_output "$BASE64_DIR"
+        check_output "$TMP_DIR"
+        ;;
+    fragment)
+        remove_items "$TMP_DIR" "*" "fd"
+        copy_items "$PUBLIC_DIR" "$TMP_DIR" ".*\[.*\] \[.*-.*-ws\] \[.*\]\.json$"
+        fragment_configs "$TMP_DIR" "$CUSTOM_DIR"
+        remove_items "$TMP_DIR" "*" "fd"
+        check_output "$CUSTOM_DIR"
+        check_output "$TMP_DIR"
+        ;;
+    balancer)
+        remove_items "$TMP_DIR" "*" "fd"
+        copy_items "$PUBLIC_DIR" "$TMP_DIR" "*"
+        balancer_configs "$TMP_DIR" "$CUSTOM_DIR" "$TEMPLATE_DIR"
+        remove_items "$TMP_DIR" "*" "fd"
+        check_output "$CUSTOM_DIR"
+        check_output "$TMP_DIR"
+        ;;
+    updatecore)
+        remove_items "$XRAY_DIR" "*" "fd"
+        update_core
+        ;;
+    git)
+        git_action "$2" "$3"
+        ;;
+    *)
+        exit 1
+        ;;
+    esac
+}
+
+main "$@"
