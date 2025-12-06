@@ -1,0 +1,205 @@
+#!/bin/bash
+
+function sed_cmd_protocol_vless() {
+    local address="$1"
+    local port="$2"
+    local id="$3"
+    local query_string="$4"
+    local flow=$(get_value "flow" "$query_string")
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s#\[\s*PORT\s*\]#$port#g;
+        s#\[\s*FLOW\s*\]#$flow#g;
+        s#\[\s*ID\s*\]#$id#g
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_protocol_trojan() {
+    local address="$1"
+    local port="$2"
+    local password="$3"
+    local query_string="$4"
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s|\[\s*PASSWORD\s*\]|$password|g;
+        s#\[\s*PORT\s*\]#$port#g    
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_protocol_vmess() {
+    local address="$1"
+    local query_string="$2"
+    local port=$(get_value "port" "$query_string")
+    local id=$(get_value "id" "$query_string")
+    local method=$(get_value "method" "$query_string" "auto")
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s#\[\s*PORT\s*\]#$port#g;
+        s#\[\s*ID\s*\]#$id#g;
+        s#\[\s*METHOD\s*\]#$method#g  
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_protocol_ss() {
+    local address="$1"
+    local port="$2"
+    local password="$3"
+    local method="$4"
+    local sed_cmd="
+        s#\[\s*ADDRESS\s*\]#$address#g;
+        s#\[\s*METHOD\s*\]#$method#g;
+        s|\[\s*PASSWORD\s*\]|$password|g;
+        s#\[\s*PORT\s*\]#$port#g    
+    "
+    echo "$sed_cmd"
+}
+
+function sed_cmd_network() {
+    local network="$1"
+    local query_string="$2"
+    local sed_cmd
+    case "$network" in
+    raw-http | ws | httpupgrade)
+        local host=$(get_value "host" "$query_string")
+        local path=$(get_value "path" "$query_string" "/")
+        sed_cmd="
+            s#\[\s*HOST\s*\]#$host#g;
+            s#\[\s*PATH\s*\]#$path#g
+        "
+        ;;
+    grpc)
+        local serviceName=$(get_value "serviceName" "$query_string")
+        sed_cmd="s#\[\s*SERVICENAME\s*\]#$serviceName#g"
+        ;;
+    xhttp)
+        local mode=$(get_value "mode" "$query_string" "auto")
+        local host=$(get_value "host" "$query_string")
+        local path=$(get_value "path" "$query_string" "/")
+        sed_cmd="
+            s#\[\s*MODE\s*\]#$mode#g;
+            s#\[\s*HOST\s*\]#$host#g;
+            s#\[\s*PATH\s*\]#$path#g
+        "
+        ;;
+    esac
+    echo "$sed_cmd"
+}
+
+function sed_cmd_security() {
+    local security="$1"
+    local query_string="$2"
+    local sed_cmd
+    case "$security" in
+    tls)
+        local alpn=$(get_value "alpn" "$query_string")
+        local fp=$(get_value "fp" "$query_string")
+        local sni=$(get_value "sni" "$query_string")
+        sed_cmd="
+            s#\[\s*ALPN\s*\]#$alpn#g;
+            s#\[\s*FP\s*\]#$fp#g;
+            s#\[\s*SNI\s*\]#$sni#g
+        "
+        ;;
+    reality)
+        local fp=$(get_value "fp" "$query_string")
+        local pbk=$(get_value "pbk" "$query_string")
+        local sni=$(get_value "sni" "$query_string")
+        local sid=$(get_value "sid" "$query_string")
+        local spx=$(get_value "spx" "$query_string")
+        sed_cmd="
+            s#\[\s*FP\s*\]#$fp#g;
+            s#\[\s*PBK\s*\]#$pbk#g;
+            s#\[\s*SNI\s*\]#$sni#g;
+            s#\[\s*SID\s*\]#$sid#g;
+            s#\[\s*SPX\s*\]#$spx#g
+        "
+        ;;
+    none)
+        #
+        ;;
+    esac
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_address() {
+    local sed_cmd='s#"address": ".*",#"address": "www.perplexity.ai",#g'
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_sockopt() {
+    local sed_cmd='s#"streamSettings": {#"streamSettings": {\
+        "sockopt": {\
+          "dialerProxy": "fragment",\
+          "tcpKeepAliveIdle": 100,\
+          "tcpNoDelay": true\
+        },#g'
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_remarks() {
+    local file="$1"
+    local filename=$(get_filename "$file")
+    local sed_cmd="s#\"log\": {#\"remarks\": \"$filename\",\\
+  \"log\": {#g"
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_tls() {
+    local sed_cmd='s#"protocol": "dns",#"protocol": "freedom",\
+      "settings": {\
+        "fragment": {\
+          "packets": "tlshello",\
+          "length": "10-20",\
+          "interval": "10-20"\
+        }\
+      },\
+      "streamSettings": {\
+        "sockopt": {\
+          "tcpKeepAliveIdle": 100,\
+          "TcpNoDelay": true\
+        }\
+      },\
+      "tag": "fragment"\
+    },\
+    {\
+      "protocol": "dns",\
+      "sockopt": {\
+        "dialerProxy": "fragment"\
+      },#g'
+    echo "$sed_cmd"
+}
+
+function sed_cmd_fragment_no() {
+    local sed_cmd='s#"protocol": "dns",#"protocol": "freedom",\
+      "settings": {\
+        "fragment": {\
+          "packets": "1-1",\
+          "length": "3-5",\
+          "interval": "5"\
+        }\
+      },\
+      "streamSettings": {\
+        "sockopt": {\
+          "tcpKeepAliveIdle": 100,\
+          "TcpNoDelay": true\
+        }\
+      },\
+      "tag": "fragment"\
+    },\
+    {\
+      "protocol": "dns",\
+      "sockopt": {\
+        "dialerProxy": "fragment"\
+      },#g'
+    echo "$sed_cmd"
+}
+
+function sed_cmd_tag() {
+    local file="$1"
+    local filename=$(get_filename "$file")
+    local sed_cmd="s#\"tag\": \"proxy\"#\"tag\": \"proxy $filename\"#g"
+    echo "$sed_cmd"
+}
