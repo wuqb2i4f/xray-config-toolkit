@@ -1,0 +1,16 @@
+name: Stage-2
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Stage-1"]
+    types:
+      - completed
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Wait for 20 minutes
+        run: sleep 1200
