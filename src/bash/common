@@ -1,0 +1,279 @@
+#!/bin/bash
+
+function convert_percent_encoding() {
+    local input="$1"
+    printf '%b' "${input//%/\\x}"
+}
+
+function url_encode() {
+    local input="$1"
+    local encoded_string=""
+    for ((i = 0; i < ${#input}; i++)); do
+        character="${input:i:1}"
+        if [[ "$character" =~ [a-zA-Z0-9._~-] ]]; then
+            encoded_string+="$character"
+        else
+            encoded_string+="$(printf '%%%02X' "'$character")"
+        fi
+    done
+    echo "$encoded_string"
+}
+
+function base64_encode() {
+    local input="$1"
+    base64 <<<"$input" | tr -d '\n'
+}
+
+function encode_file_to_base64() {
+    local input="$1"
+    local output="$2"
+    base64 <"$input" | awk "{ printf \$0 }" >"$output"
+}
+
+function encode_files_in_directory_to_base64() {
+    local src_dir="$1"
+    find "$src_dir" -type f -exec bash -c '
+        for file do
+            encode_file_to_base64 "$file" "$file"
+        done
+    ' bash {} +
+}
+
+function get_value() {
+    local key="$1"
+    local query_string="$2"
+    local default_value="${3:-}"
+    local value=""
+    if [[ "$query_string" =~ "$key=" ]]; then
+        value=${query_string##*"$key="}
+        value=${value%%;*}
+    fi
+    if [[ -z "$value" ]]; then
+        value=$default_value
+    fi
+    echo "$value"
+}
+
+function query_value_for_key() {
+    local key="$1"
+    local input="$2"
+    IFS="&" read -ra pairs <<<"$input"
+    for pair in "${pairs[@]}"; do
+        IFS="=" read -r k v <<<"$pair"
+        if [[ "$k" == "$key" ]]; then
+            echo "$v"
+            return
+        fi
+    done
+    echo ""
+}
+
+function remove_empty_values() {
+    local input="$1"
+    local prefix="${input%%\?*}"
+    local query_string="${input#*\?}"
+    local modified_query=""
+    IFS='&' read -ra pairs <<<"$query_string"
+    for pair in "${pairs[@]}"; do
+        IFS='=' read -ra parts <<<"$pair"
+        key="${parts[0]}"
+        value="${parts[1]:-}"
+        if [[ -n "$value" ]]; then
+            modified_query+="&$key=$value"
+        fi
+    done
+    modified_query="${modified_query#&}"
+    local output="$prefix?$modified_query"
+    echo "$output"
+}
+
+function extract() {
+    local query="$1"
+    local input="$2"
+    jq -r "$query" "$input"
+}
+
+function format_address() {
+    local address="$1"
+    if [[ "$address" =~ ^[0-9a-fA-F:]+$ ]]; then
+        echo "[$address]"
+    else
+        echo "$address"
+    fi
+}
+
+function short_name() {
+    input=$1
+    output=${input:0:2}
+    echo $output
+}
+
+function gregorian_to_jalali() {
+    local gy=$1 gm=$2 gd=$3
+    local jy jm jd
+    local g_d_m=(0 31 59 90 120 151 181 212 243 273 304 334)
+    if ((gm > 2)); then
+        local gy2=$((gy + 1))
+    else
+        local gy2=$gy
+    fi
+    local days=$((355666 + (365 * gy) + ((gy2 + 3) / 4) - ((gy2 + 99) / 100) + ((gy2 + 399) / 400) + gd + g_d_m[gm - 1]))
+    jy=$((-1595 + (33 * (days / 12053))))
+    days=$((days % 12053))
+    jy=$((jy + (4 * (days / 1461))))
+    days=$((days % 1461))
+    if ((days > 365)); then
+        jy=$((jy + ((days - 1) / 365)))
+        days=$(((days - 1) % 365))
+    fi
+    if ((days < 186)); then
+        jm=$((1 + (days / 31)))
+        jd=$((1 + (days % 31)))
+    else
+        jm=$((7 + ((days - 186) / 30)))
+        jd=$((1 + ((days - 186) % 30)))
+    fi
+    printf "%s %02d %02d" "$jy" $jm $jd
+}
+
+function date_time() {
+    local time="$(TZ='Asia/Tehran' date '+%y%m%d-%H%M%S.%3N' | tr '[:upper:]' '[:lower:]')"
+    echo "$time"
+}
+
+function progress_bar() {
+    local count="$1"
+    local total="$2"
+    local width=75
+    local percent=$((count * 100 / total))
+    local progress=$((count * width / total))
+    printf "[%-${width}s] %d%%\r" "$(printf '%*s' "$progress" '' | tr ' ' '#')" "$percent"
+}
+
+function kill_process() {
+    local pid="$1"
+    if [[ -n "$pid" ]]; then
+        kill -9 "$pid"
+        while ps -p "$pid"; do
+            sleep 1
+        done
+    fi
+}
+
+function count_items() {
+    local src_dir="$1"
+    local item_type="$2"
+    local count=0
+    if [ "$item_type" == "f" ]; then
+        count=$(find "$src_dir" -maxdepth 1 -type f | wc -l)
+    elif [ "$item_type" == "d" ]; then
+        count=$(find "$src_dir" -mindepth 1 -type d | wc -l)
+    fi
+    echo "$count"
+}
+
+function remove_items() {
+    local src_dir="$1"
+    local pattern="$2"
+    local item_type="$3"
+    if [ "$item_type" == "f" ]; then
+        find "$src_dir" -type f \( -name "$pattern" -o -regex "$pattern" \) -exec rm -- {} +
+    elif [ "$item_type" == "d" ]; then
+        find "$src_dir" -mindepth 1 -maxdepth 1 -type d -name "$pattern" -exec rm -r -- {} +
+    elif [ "$item_type" == "fd" ]; then
+        find "$src_dir" -mindepth 1 -maxdepth 1 -name "$pattern" -exec rm -r -- {} +
+    fi
+    echo "Removed items in $src_dir matching $pattern (Type: $item_type)"
+}
+
+function copy_items() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local pattern="$3"
+    find "$src_dir" -type f \( -name "$pattern" -o -regex "$pattern" \) -exec cp -t "$dest_dir" -- {} +
+    echo "Copied items from $src_dir matching $pattern to $dest_dir"
+}
+
+function get_filename() {
+    local file="$1"
+    basename "$file" | sed 's/\.json$//'
+}
+
+function check_output() {
+    local src_dir="$1"
+    local lock_file="$src_dir/lock"
+    local file_count=$(count_items "$src_dir" "f")
+    local dir_count=$(count_items "$src_dir" "d")
+    if [ "$file_count" -eq 0 ] && [ "$dir_count" -eq 0 ]; then
+        >"$lock_file"
+    fi
+}
+
+function git_action() {
+    case "$1" in
+    update)
+        git_update "$2"
+        ;;
+    merge)
+        git_merge
+        ;;
+    reset)
+        git_reset
+        ;;
+    esac
+}
+
+function git_update() {
+    local branch_name="${1:-main}"
+    git config --global user.name 'wuqb2i4f'
+    git config --global user.email 'wuqb2i4f@duck.com'
+    if ! git diff --quiet; then
+        git add .
+        git commit -m "Updated"
+        git fetch --all
+        git reset --hard HEAD
+        git merge @{u}
+        git push -f origin "$branch_name"
+    else
+        echo "No changes detected"
+    fi
+}
+
+function git_merge() {
+    git config --global user.name 'wuqb2i4f'
+    git config --global user.email 'wuqb2i4f@duck.com'
+    for i in {1..15}; do
+        branch="stage-2-$i"
+        git merge origin/$branch --no-ff -X theirs -m "Merge $branch into main"
+        git branch -d "$branch"
+        git push origin --delete "$branch"
+    done
+}
+
+function git_reset() {
+    git config --global user.name 'wuqb2i4f'
+    git config --global user.email 'wuqb2i4f@duck.com'
+    if ! git diff --quiet; then
+        git add .
+        git commit -m "Updated"
+    fi
+    git fetch --all
+    git reset --hard HEAD
+    git merge @{u}
+    git checkout --orphan latest_branch
+    git add .
+    git commit -am "Updated"
+    git branch -D main
+    git branch -m main
+    git push -f origin main
+}
+
+function update_core() {
+    curl -LJO https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+    unzip -o Xray-linux-64.zip -d "$XRAY_DIR"
+    rm Xray-linux-64.zip
+    chmod +x "$XRAY_APP"
+    curl -L -o "$XRAY_DIR/iran.dat" https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/iran.dat
+    curl -L -o "$XRAY_DIR/geoip.dat" https://github.com/Chocolate4U/Iran-v2ray-rules/releases/latest/download/geoip.dat
+    curl -L -o "$XRAY_DIR/geosite.dat" https://github.com/Chocolate4U/Iran-v2ray-rules/releases/latest/download/geosite.dat
+}
