@@ -1,0 +1,28 @@
+name: Stage-1
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 */3 * * *'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Fetch Repository Code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+
+      - name: Step 2 - Setup Dependencies
+        run: sudo apt-get install -y unzip
+
+      - name: Step 3 - Download and Place iran.dat and xray
+        run: src/bash/main updatecore
+
+      - name: Step 4 - Fetch Data
+        run: src/bash/main fetch
+
+      - name: Step 5 - Commit and Push Changes
+        run: src/bash/main git update
