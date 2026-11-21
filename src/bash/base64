@@ -1,0 +1,222 @@
+#!/bin/bash
+
+function base64_configs() {
+    local src_dir="$1"
+    local dest_dir="$2"
+    local num_count=0
+    local num_total=$(count_items "$src_dir" "f")
+    echo "Processing $num_total file(s) in $src_dir directory."
+    if [ "$num_total" -eq 0 ]; then
+        echo "No files to process in $src_dir."
+        return
+    fi
+    for file in "$src_dir"/*; do
+        ((num_count++))
+        filename=$(get_filename "$file")
+        network=$(compose_network_configuration "$file")
+        security=$(compose_security_configuration "$file")
+        uri=$(compose_uri_configuration "$file" "$network" "$security" "$filename")
+        pr=${filename:6:2}
+        se=${filename:9:2}
+        ne=${filename:12:2}
+        echo "$uri" >>"$dest_dir/mix-uri"
+        echo "$uri" >>"$dest_dir/mix-protocol-$pr"
+        echo "$uri" >>"$dest_dir/mix-security-$se"
+        echo "$uri" >>"$dest_dir/mix-network-$ne"
+        progress_bar "$num_count" "$num_total"
+    done
+    echo -ne "\n"
+    encode_file_to_base64 "$dest_dir/mix-uri" "$dest_dir/mix"
+}
+
+function compose_network_configuration() {
+    local input="$1"
+    local query=".outbounds[0].streamSettings"
+    network=$(extract "$query.network" "$input")
+
+    case "$network" in
+    grpc)
+        serviceName=$(extract "$query.grpcSettings.serviceName" "$input")
+        serviceName=$(url_encode "$serviceName")
+        echo "type=$network&serviceName=$serviceName"
+        ;;
+    h2)
+        host=$(extract "$query.httpSettings.host[]" "$input")
+        path=$(extract "$query.httpSettings.path" "$input")
+        path=$(url_encode "$path")
+        echo "type=$network&host=$host&path=$path"
+        ;;
+    raw)
+        headerType=$(extract "$query.rawSettings.header.type" "$input")
+        if [[ "$headerType" == "http" ]]; then
+            Host=$(extract "$query.rawSettings.header.request.headers.Host[]" "$input")
+            path=$(extract "$query.rawSettings.header.request.path[]" "$input")
+            path=$(url_encode "$path")
+            echo "type=$network&headerType=$headerType&host=$Host&path=$path"
+        else
+            echo "type=$network&headerType=$headerType"
+        fi
+        ;;
+    ws)
+        host=$(extract "$query.wsSettings.host" "$input")
+        path=$(extract "$query.wsSettings.path" "$input")
+        path=$(url_encode "$path")
+        echo "type=$network&host=$host&path=$path"
+        ;;
+    httpupgrade)
+        host=$(extract "$query.httpupgradeSettings.host" "$input")
+        path=$(extract "$query.httpupgradeSettings.path" "$input")
+        path=$(url_encode "$path")
+        echo "type=$network&host=$host&path=$path"
+        ;;
+    xhttp)
+        mode=$(extract "$query.xhttpSettings.mode" "$input")
+        host=$(extract "$query.xhttpSettings.host" "$input")
+        path=$(extract "$query.xhttpSettings.path" "$input")
+        path=$(url_encode "$path")
+        echo "type=$network&mode=$mode&host=$host&path=$path"
+        ;;
+    esac
+}
+
+function compose_security_configuration() {
+    local input="$1"
+    local query=".outbounds[0].streamSettings"
+    security=$(extract "$query.security" "$input")
+
+    case "$security" in
+    none)
+        echo "security=$security"
+        ;;
+    reality)
+        fingerprint=$(extract "$query.realitySettings.fingerprint" "$input")
+        publicKey=$(extract "$query.realitySettings.publicKey" "$input")
+        serverName=$(extract "$query.realitySettings.serverName" "$input")
+        shortId=$(extract "$query.realitySettings.shortId" "$input")
+        spiderX=$(extract "$query.realitySettings.spiderX" "$input")
+        spiderX=$(url_encode "$spiderX")
+        echo "security=$security&fp=$fingerprint&pbk=$publicKey&sni=$serverName&sid=$shortId&spx=$spiderX"
+        ;;
+    tls)
+        alpn=$(extract "$query.tlsSettings.alpn[]" "$input")
+        alpn=$(url_encode "$alpn")
+        fingerprint=$(extract "$query.tlsSettings.fingerprint" "$input")
+        serverName=$(extract "$query.tlsSettings.serverName" "$input")
+        echo "security=$security&alpn=$alpn&fp=$fingerprint&sni=$serverName"
+        ;;
+    esac
+}
+
+function compose_uri_configuration() {
+    local input="$1"
+    local network="$2"
+    local security="$3"
+    local filename="$4"
+    local uri=""
+    protocol=$(extract ".outbounds[0].protocol" "$input")
+    case "$protocol" in
+    vless)
+        local query=".outbounds[0].settings.vnext[0]"
+        address=$(extract "$query.address" "$input")
+        address=$(format_address "$address")
+        port=$(extract "$query.port" "$input")
+        encryption=$(extract "$query.users[0].encryption" "$input")
+        flow=$(extract "$query.users[0].flow" "$input")
+        id=$(extract "$query.users[0].id" "$input")
+        uri="$protocol://$id@$address:$port?encryption=$encryption&flow=$flow"
+        ;;
+    trojan)
+        local query=".outbounds[0].settings.servers[0]"
+        address=$(extract "$query.address" "$input")
+        address=$(format_address "$address")
+        password=$(extract "$query.password" "$input")
+        port=$(extract "$query.port" "$input")
+        uri="$protocol://$password@$address:$port"
+        ;;
+    shadowsocks)
+        local query=".outbounds[0].settings.servers[0]"
+        address=$(extract "$query.address" "$input")
+        address=$(format_address "$address")
+        method=$(extract "$query.method" "$input")
+        password=$(extract "$query.password" "$input")
+        method_password_base64=$(base64_encode "$method:$password")
+        port=$(extract "$query.port" "$input")
+        uri="ss://$method_password_base64@$address:$port"
+        ;;
+    vmess)
+        local query=".outbounds[0].settings.vnext[0]"
+        address=$(extract "$query.address" "$input")
+        port=$(extract "$query.port" "$input")
+        id=$(extract "$query.users[0].id" "$input")
+        scy=$(extract "$query.users[0].security" "$input")
+        net=$(query_value_for_key "type" "$network")
+        tls=$(query_value_for_key "security" "$security")
+        ps="\"ps\":\"$filename\""
+
+        case "$net" in
+        ws | h2 | httpupgrade)
+            host=$(query_value_for_key "host" "$network")
+            path=$(query_value_for_key "path" "$network")
+            path=$(convert_percent_encoding $path)
+            net="\"net\":\"$net\",\"host\":\"$host\",\"path\":\"$path\""
+            ;;
+        grpc)
+            path=$(query_value_for_key "path" "$network")
+            path=$(convert_percent_encoding $path)
+            net="\"net\":\"$net\",\"path\":\"$path\",\"type\":\"gun\""
+            ;;
+        raw)
+            host=$(query_value_for_key "host" "$network")
+            path=$(query_value_for_key "path" "$network")
+            path=$(convert_percent_encoding $path)
+            type=$(query_value_for_key "headerType" "$network")
+            if [[ $type == "http" ]]; then
+                net="\"net\":\"$net\",\"host\":\"$host\",\"path\":\"$path\",\"type\":\"$type\""
+            else
+                net="\"net\":\"$net\",\"type\":\"$type\""
+            fi
+            ;;
+        xhttp)
+            mode=$(query_value_for_key "mode" "$network")
+            host=$(query_value_for_key "host" "$network")
+            path=$(query_value_for_key "path" "$network")
+            path=$(convert_percent_encoding $path)
+            net="\"net\":\"$net\",\"mode\":\"$mode\",\"host\":\"$host\",\"path\":\"$path\""
+            ;;
+        esac
+
+        case "$tls" in
+        tls)
+            alpn=$(query_value_for_key "alpn" "$security")
+            alpn=$(convert_percent_encoding $alpn)
+            fp=$(query_value_for_key "fp" "$security")
+            sni=$(query_value_for_key "sni" "$security")
+            tls="\"tls\":\"$tls\",\"alpn\":\"$alpn\",\"fp\":\"$fp\",\"sni\":\"$sni\""
+            ;;
+        *)
+            tls="\"tls\":\"$tls\""
+            ;;
+        esac
+        code="{\"add\":\"$address\",\"id\":\"$id\",\"port\":\"$port\",\"scy\":\"$scy\",\"v\":\"2\",$net,$tls,$ps}"
+        base64_part=$(base64_encode "$code")
+        uri="$protocol://$base64_part"
+        ;;
+    esac
+    if [[ $uri != "vmess://"* ]]; then
+        if [[ $uri != *"?"* ]]; then
+            uri="${uri}?"
+        fi
+        if [[ "${uri: -1}" != "?" ]]; then
+            uri="${uri}&"
+        fi
+        if [[ "${uri: -1}" != "&" ]]; then
+            uri="${uri}&"
+        fi
+        uri="${uri}${network}&${security}"
+        uri=$(remove_empty_values "$uri")
+        uri="${uri}#${filename}"
+    else
+        uri="${uri}"
+    fi
+    echo "$uri"
+}
